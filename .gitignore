@@ -1,17 +1,30 @@
 # Dependencies
 node_modules/
 kafaah/node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
 # Next.js build output
 .next/
 kafaah/.next/
 out/
 kafaah/out/
+build/
+kafaah/build/
 
 # Environment files
 .env*
 *.env
 kafaah/.env*
+
+# testing
+coverage/
+kafaah/coverage/
 
 # System & IDE files
 .DS_Store
@@ -21,9 +34,24 @@ Thumbs.db
 .idea/
 *.pyc
 __pycache__/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# vercel
+.vercel
+kafaah/.vercel/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
 # Large data files
+public/data/
+kafaah/public/data/
 *.html
+kafaah/*.html
 *.zip
 *.rar
 *.tar.gz
