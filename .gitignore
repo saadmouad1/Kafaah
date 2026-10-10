@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+kafaah/node_modules/
+
+# Next.js build output
+.next/
+kafaah/.next/
+out/
+kafaah/out/
+
+# Environment files
+.env*
+*.env
+kafaah/.env*
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+*.pyc
+__pycache__/
+
+# Large data files
+*.html
+*.zip
+*.rar
+*.tar.gz

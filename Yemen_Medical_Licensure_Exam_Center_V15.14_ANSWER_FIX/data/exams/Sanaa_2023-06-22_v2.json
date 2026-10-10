@@ -1,0 +1,3975 @@
+{
+  "examMetadata": {
+    "medicalProfession": "General Medicine",
+    "specialty": "General Practice",
+    "governorate": "Sanaa",
+    "year": 2023,
+    "month": "June",
+    "exactDate": "2023-06-22",
+    "language": "English",
+    "source": "نموذج_مزاوله_المهنة_بك_طب_عام_صنعاء_2023_6_22.pdf fileciteturn0file0L5-L35",
+    "examTitle": "إختبار مزاولة المهنة بك طب عام صنعاء 2023.6.22",
+    "numberOfQuestions": 52
+  },
+  "questions": [
+    {
+      "id": "2023-06-22-Sanaa-GM-001",
+      "questionNumber": 1,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Obstetrics",
+      "topic": "Medication Safety in Pregnancy",
+      "title": "Contraindicated Drug in Pregnancy",
+      "originalQuestion": "1. CI in Pregnancy is",
+      "originalOptions": {
+        "A": "Penicillin",
+        "B": "Paracetamol",
+        "C": "Tetracycline ..",
+        "D": "Erythromycin"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Penicillin",
+        "B": "Paracetamol",
+        "C": "Tetracycline",
+        "D": "Erythromycin"
+      },
+      "optionStatus": {
+        "A": "Original",
+        "B": "Original",
+        "C": "Corrected",
+        "D": "Original"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Tetracycline"
+      },
+      "whyCorrectAnswer": "Tetracyclines can cross the placenta and affect fetal teeth and bone development, particul",
+      "explanation": "Tetracyclines are avoided in pregnancy because of fetal tooth discoloration and effects on",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Pregnancy",
+        "Pharmacology",
+        "Antibiotic safety"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Tetracycline"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-002",
+      "questionNumber": 2,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Internal Medicine",
+      "topic": "Electrolytes",
+      "title": "Hypokalemia",
+      "originalQuestion": "2. Hypokaemia is:",
+      "originalOptions": {
+        "A": "Cause metabolic alkalosis",
+        "B": "Induced by Insulin therapy",
+        "C": "Decrease total k in body",
+        "D": "Rapid ttt by rapid potassium chloride"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement best describes hypokalemia?",
+      "correctedOptions": {
+        "A": "Can be associated with metabolic alkalosis",
+        "B": "May be induced by insulin-mediated intracellular shift",
+        "C": "Can reflect decreased total-body potassium",
+        "D": "Requires controlled potassium replacement; rapid IV..."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Decrease total K in body"
+      },
+      "whyCorrectAnswer": "Hypokalemia means a low serum potassium concentration and may reflect either total-body po",
+      "explanation": "Insulin shifts potassium into cells and can lower serum potassium. Potassium depletion low",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Electrolytes",
+        "Hypokalemia",
+        "Potassium"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Decrease total K in body"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Hypokalemia means a low serum potassium concentration and may reflect either total-body po"
+      },
+      "correctedExplanation": "Insulin shifts potassium into cells and can lower serum potassium. Potassium depletion low"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-003",
+      "questionNumber": 3,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Internal Medicine",
+      "topic": "Gastroenterology",
+      "title": "Metabolic Effects of Gastric Outlet Obstruction",
+      "originalQuestion": "3. Gastric outlet obstruction leads to",
+      "originalOptions": {
+        "A": "Hypokalemia ..",
+        "B": "Hypermagnesemia",
+        "C": "Hypocholoremia",
+        "D": "Hypocalcemia"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "What electrolyte abnormalities are classically associated with prolonged gastric outlet ob",
+      "correctedOptions": {
+        "A": "Hypokalemia",
+        "B": "Hypermagnesemia",
+        "C": "Hypochloremia",
+        "D": "Hypocalcemia"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Original",
+        "C": "Corrected",
+        "D": "Original"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "C"
+        ],
+        "text": "A — Hypokalemia; C — Hypochloremia"
+      },
+      "whyCorrectAnswer": "Persistent vomiting or gastric suction causes loss of hydrochloric acid and chloride and p",
+      "explanation": "The source lists two correct electrolyte abnormalities, making a single-answer format ambi",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Electrolytes",
+        "Gastric outlet obstruction"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A",
+          "C"
+        ],
+        "text": "A — Hypokalemia; C — Hypochloremia"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Persistent vomiting or gastric suction causes loss of hydrochloric acid and chloride and p"
+      },
+      "correctedExplanation": "The source lists two correct electrolyte abnormalities, making a single-answer format ambi"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-004",
+      "questionNumber": 4,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Cardiology",
+      "topic": "Blood Pressure",
+      "title": "Ideal Blood Pressure",
+      "originalQuestion": "4. Ideal blood pressure",
+      "originalOptions": {
+        "A": "120/80",
+        "B": "130/90",
+        "C": "Age dependant ..",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "See medical verification.",
+      "correctedQuestion": "What blood pressure is conventionally considered ideal in a healthy adult?",
+      "correctedOptions": {
+        "A": "120/80 mmHg",
+        "B": "130/90 mmHg",
+        "C": "Blood pressure varies with age and clinical context",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 120/80"
+      },
+      "whyCorrectAnswer": "120/80 mmHg is a conventional reference value for normal adult blood pressure, although in",
+      "explanation": "The source is using the traditional examination convention rather than a patient-specific ",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Cardiology",
+        "Hypertension",
+        "Blood pressure"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 120/80"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "120/80 mmHg is a conventional reference value for normal adult blood pressure, although in"
+      },
+      "correctedExplanation": "The source is using the traditional examination convention rather than a patient-specific "
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-005",
+      "questionNumber": 5,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Gastroenterology",
+      "topic": "Gastric Physiology",
+      "title": "Components of Gastric Juice",
+      "originalQuestion": "5. Gastric juice is following false except",
+      "originalOptions": {
+        "A": "about 2-5 liter",
+        "B": "PH 5-6",
+        "C": "Gastrin from the mucosa of antram",
+        "D": "Hcl from parital cell"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statements about gastric secretion are true?",
+      "correctedOptions": {
+        "A": "About 2–5 L/day",
+        "B": "Gastric pH is normally about 1–3",
+        "C": "Gastrin is produced mainly by antral G cells",
+        "D": "HCl is secreted by parietal cells"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "C",
+          "D"
+        ],
+        "text": "A — about 2–5 liter; C — Gastrin from antrum; D — HCl from parietal cells"
+      },
+      "whyCorrectAnswer": "Gastric juice volume is roughly 1.5–2 L/day, gastrin is produced by G cells in the antrum,",
+      "explanation": "The source's 'pH 5–6' is incorrect for gastric juice; the other listed statements are broa",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Correct."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Physiology",
+        "Gastric secretion"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A",
+          "C",
+          "D"
+        ],
+        "text": "A — about 2–5 liter; C — Gastrin from antrum; D — HCl from parietal cells"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Correct."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Gastric juice volume is roughly 1.5–2 L/day, gastrin is produced by G cells in the antrum,"
+      },
+      "correctedExplanation": "The source's 'pH 5–6' is incorrect for gastric juice; the other listed statements are broa"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-006",
+      "questionNumber": 6,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Hepatology",
+      "topic": "Alcohol-Related Liver Disease",
+      "title": "Alcoholic Fatty Liver",
+      "originalQuestion": "6. Alcohol is",
+      "originalOptions": {
+        "A": "Direct effect on hepatocyte",
+        "B": "Fatty liver is irreversible damage",
+        "C": "Non of above",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Alcohol can exert direct toxic effects on hepatocytes",
+        "B": "Alcoholic fatty liver is generally reversible with...",
+        "C": "Alcoholic cirrhosis is irreversible fibrosis",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Direct effect on hepatocyte"
+      },
+      "whyCorrectAnswer": "Ethanol and its metabolites cause direct hepatocellular injury and alter hepatic metabolis",
+      "explanation": "The key distinction is reversible steatosis versus irreversible advanced fibrosis/cirrhosi",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Hepatology",
+        "Alcohol",
+        "Fatty liver"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Direct effect on hepatocyte"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-007",
+      "questionNumber": 7,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Infectious Diseases",
+      "topic": "Syphilis",
+      "title": "Transplacental Transmission of Syphilis",
+      "originalQuestion": "7. Spirochate:",
+      "originalOptions": {
+        "A": "Transmitted in 1st trimester",
+        "B": "Doesn't Transmitted from mother to baby in all pregnancy",
+        "C": "Not transmitted In 3d trimester due to full development of placenta",
+        "D": "Non of above"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement about maternal spirochetal infection (syphilis) in pregnancy is correct?",
+      "correctedOptions": {
+        "A": "Treponema pallidum can cross the placenta",
+        "B": "Transmission can occur during pregnancy",
+        "C": "Risk and severity vary with maternal stage and timing",
+        "D": "None of the above"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — None of the above"
+      },
+      "whyCorrectAnswer": "Treponema pallidum can cross the placenta and cause congenital syphilis. It is incorrect t",
+      "explanation": "The source options incorrectly define the timing of congenital transmission.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Correct."
+      },
+      "tags": [
+        "Infectious Diseases",
+        "Syphilis",
+        "Pregnancy"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — None of the above"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Correct."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Treponema pallidum can cross the placenta and cause congenital syphilis. It is incorrect t"
+      },
+      "correctedExplanation": "The source options incorrectly define the timing of congenital transmission."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-008",
+      "questionNumber": 8,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Infectious Diseases",
+      "topic": "Tuberculosis",
+      "title": "Characteristics of Mycobacterium tuberculosis",
+      "originalQuestion": "8. In Tb all true except",
+      "originalOptions": {
+        "A": "Cause by mycobactrium tuberculosis",
+        "B": "Growth in 2-3 c° temperature",
+        "C": "Spore forming",
+        "D": "Droplets infection"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement about Mycobacterium tuberculosis is false?",
+      "correctedOptions": {
+        "A": "Caused by Mycobacterium tuberculosis",
+        "B": "Grows optimally around 37°C",
+        "C": "Does not form bacterial spores",
+        "D": "Usually transmitted by airborne droplet nuclei"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Spore forming"
+      },
+      "whyCorrectAnswer": "M. tuberculosis is an acid-fast bacillus that grows best near 37°C and does not form bacte",
+      "explanation": "The source contains at least two false statements, making the single-answer question ambig",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Tuberculosis",
+        "Microbiology",
+        "Infectious Diseases"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Spore forming"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "M. tuberculosis is an acid-fast bacillus that grows best near 37°C and does not form bacte"
+      },
+      "correctedExplanation": "The source contains at least two false statements, making the single-answer question ambig"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-009",
+      "questionNumber": 9,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Gynecology",
+      "topic": "Contraception",
+      "title": "Combined Oral Contraceptive",
+      "originalQuestion": "9. COC is",
+      "originalOptions": {
+        "A": "Estrogen and progesterone is most effective",
+        "B": "Not provided in source.",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "See medical verification.",
+      "correctedQuestion": "What is a combined oral contraceptive (COC)?",
+      "correctedOptions": {
+        "A": "Contains an estrogen and a progestin",
+        "B": "Contains progestin only",
+        "C": "Contains copper",
+        "D": "Contains no hormonal component"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Reconstructed",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Estrogen and progesterone is most effective"
+      },
+      "whyCorrectAnswer": "COCs contain an estrogen component plus a progestin and primarily prevent ovulation by sup",
+      "explanation": "The source concept is correct but the terminology and grammar require correction.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Contraception",
+        "Gynecology",
+        "COC"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Estrogen and progesterone is most effective"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "COCs contain an estrogen component plus a progestin and primarily prevent ovulation by sup"
+      },
+      "correctedExplanation": "The source concept is correct but the terminology and grammar require correction."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-010",
+      "questionNumber": 10,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Gynecology",
+      "topic": "Contraception",
+      "title": "Effects of Combined Oral Contraceptives",
+      "originalQuestion": "10. Coc except",
+      "originalOptions": {
+        "A": "Increase total thyroxine",
+        "B": "Prevent ovulation Direct in ovary",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement about combined oral contraceptives is incorrect?",
+      "correctedOptions": {
+        "A": "Increase total thyroxine through increased...",
+        "B": "Suppress ovulation through hypothalamic-pituitary...",
+        "C": "Act by direct ovarian destruction",
+        "D": "Increase sex-hormone-binding globulin"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Prevent ovulation Direct in ovary"
+      },
+      "whyCorrectAnswer": "COCs increase hepatic production of binding globulins and suppress the LH surge required f",
+      "explanation": "The source's second statement is incorrect because the main mechanism is endocrine suppres",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Contraception",
+        "Pharmacology",
+        "Oral contraceptives"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Prevent ovulation Direct in ovary"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "COCs increase hepatic production of binding globulins and suppress the LH surge required f"
+      },
+      "correctedExplanation": "The source's second statement is incorrect because the main mechanism is endocrine suppres"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-011",
+      "questionNumber": 11,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Gynecology",
+      "topic": "Menstrual Cycle",
+      "title": "Hormonal Trigger of Ovulation",
+      "originalQuestion": "11. About MC all true except",
+      "originalOptions": {
+        "A": "Post menopause high fsh",
+        "B": "Ovulation occurs in Progesterone surge",
+        "C": "Ovulation occurs Estradiol surge",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "FSH is elevated after menopause",
+        "B": "Ovulation is triggered by an LH surge, not a...",
+        "C": "Ovulation follows the estradiol-positive-feedback surge",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Ovulation occurs in progesterone surge"
+      },
+      "whyCorrectAnswer": "The mid-cycle LH surge triggers follicular rupture and ovulation. Progesterone rises after",
+      "explanation": "The key examination distinction is LH surge versus progesterone surge.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Gynecology",
+        "Menstrual cycle",
+        "Ovulation"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Ovulation occurs in progesterone surge"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-012",
+      "questionNumber": 12,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Gastroenterology",
+      "topic": "Celiac Disease",
+      "title": "Definitive Diagnosis of Celiac Disease",
+      "originalQuestion": "12. Diffinetve diagnostic in celiac dis:",
+      "originalOptions": {
+        "A": "Response to Celiac gluten free diet",
+        "B": "By biopsy",
+        "C": "History of 1st degree family",
+        "D": "Jujenal atrophy seen by endoscope"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "See medical verification.",
+      "correctedQuestion": "What is the traditional definitive diagnostic method for celiac disease in this question?",
+      "correctedOptions": {
+        "A": "Clinical response to a gluten-free diet",
+        "B": "Duodenal/small-bowel biopsy",
+        "C": "Family history",
+        "D": "Endoscopic visualization alone of jejunal atrophy"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — By biopsy"
+      },
+      "whyCorrectAnswer": "Diagnosis is supported by tissue transglutaminase IgA and, when indicated, duodenal biopsy",
+      "explanation": "A response to diet is not sufficiently specific, and family history is supportive rather t",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Celiac disease",
+        "Malabsorption"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — By biopsy"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Diagnosis is supported by tissue transglutaminase IgA and, when indicated, duodenal biopsy"
+      },
+      "correctedExplanation": "A response to diet is not sufficiently specific, and family history is supportive rather t"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-013",
+      "questionNumber": 13,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Internal Medicine",
+      "topic": "Jaundice",
+      "title": "Clinical Recognition of Jaundice",
+      "originalQuestion": "13. In jaundice all true except",
+      "originalOptions": {
+        "A": "Clinically seen if total billurubin > 5",
+        "B": "Cause by fursemide",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "See medical verification.",
+      "correctedQuestion": "At approximately what total bilirubin level does jaundice usually become clinically apparent?",
+      "correctedOptions": {
+        "A": "About 2–3 mg/dL",
+        "B": "About 5 mg/dL",
+        "C": "It may result from hemolysis or hepatobiliary disease",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Clinically seen if total bilirubin > 5"
+      },
+      "whyCorrectAnswer": "Scleral icterus usually becomes visible when serum bilirubin reaches roughly 2–3 mg/dL. Fu",
+      "explanation": "The source threshold is too high; the question also contains too few options.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Jaundice",
+        "Hepatology",
+        "Bilirubin"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — About 2–3 mg/dL"
+      },
+      "whyCorrectedAnswer": "Jaundice, particularly scleral icterus, is usually clinically detectable when the serum total bilirubin is approximately 2–3 mg/dL. The original value of >5 mg/dL is higher than the usual clinical threshold.",
+      "correctedExplanation": "The original question is poorly worded and contains an incorrect/overly high bilirubin threshold. The corrected version clarifies the intended clinical concept and distinguishes the usual threshold for visible jaundice from the original wording.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording was rewritten for clarity, the spelling of bilirubin was corrected, the clinical threshold was corrected to approximately 2–3 mg/dL, and the incomplete option set was reconstructed for study purposes.",
+        "why": "The original wording is abbreviated and the stated >5 mg/dL threshold is higher than the usual level at which jaundice becomes clinically apparent.",
+        "medicalInformation": "Visible jaundice/scleral icterus is generally detectable at approximately 2–3 mg/dL total serum bilirubin; the exact visibility threshold can vary with examination conditions and patient factors."
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-014",
+      "questionNumber": 14,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Dermatology",
+      "topic": "Pruritus",
+      "title": "Systemic Causes of Pruritus",
+      "originalQuestion": "14. Pruritis caused by all except",
+      "originalOptions": {
+        "A": "Scabies",
+        "B": "1ry bailary cirrhosis",
+        "C": "Myxedema",
+        "D": "Chronic renal failure"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Scabies",
+        "B": "Primary biliary cholangitis",
+        "C": "Myxedema",
+        "D": "Chronic renal failure"
+      },
+      "optionStatus": {
+        "A": "Original",
+        "B": "Corrected",
+        "C": "Original",
+        "D": "Original"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Myxedema"
+      },
+      "whyCorrectAnswer": "Pruritus is common in scabies, cholestatic liver disease such as PBC, and chronic kidney d",
+      "explanation": "This is a classic systemic-pruritus differential question.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Dermatology",
+        "Pruritus",
+        "PBC"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Myxedema"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-015",
+      "questionNumber": 15,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Cardiology",
+      "topic": "Arrhythmias",
+      "title": "Atrial Arrhythmias",
+      "originalQuestion": "15. All following true except",
+      "originalOptions": {
+        "A": "All the atria arrhythmia always ass with ventricular arrhythmia",
+        "B": "Atrial fibrillation relived by carotid massage",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statements about atrial arrhythmias are incorrect?",
+      "correctedOptions": {
+        "A": "Atrial arrhythmias are not always associated with...",
+        "B": "Carotid massage does not terminate atrial fibrillation",
+        "C": "Atrial fibrillation can cause thromboembolism",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "B"
+        ],
+        "text": "A — Atrial arrhythmias are not always associated with ventricular arrhythmias; B — atrial fibrillation is not relieved by carotid massage"
+      },
+      "whyCorrectAnswer": "Atrial fibrillation persists despite vagal maneuvers because the arrhythmogenic activity i",
+      "explanation": "The source does not provide a valid single false statement.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Cardiology",
+        "Arrhythmia",
+        "Atrial fibrillation"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A",
+          "B"
+        ],
+        "text": "A — Atrial arrhythmias are not always associated with ventricular arrhythmias; B — atrial fibrillation is not relieved by carotid massage"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Atrial fibrillation persists despite vagal maneuvers because the arrhythmogenic activity i"
+      },
+      "correctedExplanation": "The source does not provide a valid single false statement."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-016",
+      "questionNumber": 16,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Cardiology",
+      "topic": "Atrial Fibrillation",
+      "title": "Thromboembolism",
+      "originalQuestion": "16.Atrial fibrillation cause embolism",
+      "originalOptions": {
+        "A": "Atrial flutter ...",
+        "B": "Not provided in source.",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "See medical verification.",
+      "correctedQuestion": "What major complication is associated with atrial fibrillation?",
+      "correctedOptions": {
+        "A": "Systemic thromboembolism and ischemic stroke",
+        "B": "Ventricular fibrillation in every case",
+        "C": "Permanent cure with carotid massage",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Reconstructed",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the information provided"
+      },
+      "whyCorrectAnswer": "The source question and its option set are incomplete, so a medically verified answer cann",
+      "explanation": "The source text is insufficient to establish a complete original option set.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Cardiology",
+        "Atrial fibrillation",
+        "Stroke"
+      ],
+      "correctedAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the information provided"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "The source question and its option set are incomplete, so a medically verified answer cann"
+      },
+      "correctedExplanation": "The source text is insufficient to establish a complete original option set."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-017",
+      "questionNumber": 17,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Anatomy",
+      "topic": "Skeletal Muscle",
+      "title": "Structural Features of Skeletal Muscle",
+      "originalQuestion": "17. Skeletal muscle false except",
+      "originalOptions": {
+        "A": "Nerve supply 90 motor",
+        "B": "Voluntary but some time involuntary",
+        "C": "Multinucleatid striated muscle Fibre",
+        "D": "Has one side attachment"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statements are characteristic of skeletal muscle?",
+      "correctedOptions": {
+        "A": "Most skeletal muscle is under somatic motor control",
+        "B": "Skeletal muscle fibers are multinucleated and striated",
+        "C": "Skeletal muscle is generally voluntary",
+        "D": "Skeletal muscle fibers do not characteristically have..."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "B",
+          "C"
+        ],
+        "text": "A, B and C are true; D is false"
+      },
+      "whyCorrectAnswer": "Skeletal muscle fibers are striated and usually multinucleated, with somatic motor innerva",
+      "explanation": "The question is poorly constructed because several options are true.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Correct.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Anatomy",
+        "Skeletal muscle",
+        "Histology"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A",
+          "B",
+          "C"
+        ],
+        "text": "A, B and C are true; D is false"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Correct.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Skeletal muscle fibers are striated and usually multinucleated, with somatic motor innerva"
+      },
+      "correctedExplanation": "The question is poorly constructed because several options are true."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-018",
+      "questionNumber": 18,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Physiology",
+      "topic": "Skeletal Muscle",
+      "title": "Skeletal Muscle Innervation and Blood Flow",
+      "originalQuestion": "18. Skeletal muscle which true",
+      "originalOptions": {
+        "A": "motor supply",
+        "B": "Supplied by autonomic nerve",
+        "C": "Blood circulation increased by contraction",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statements about skeletal muscle are true?",
+      "correctedOptions": {
+        "A": "Has somatic motor innervation",
+        "B": "Is primarily supplied for motor control by autonomic...",
+        "C": "Muscle blood flow can increase during contraction",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "C"
+        ],
+        "text": "A — Motor supply; C — Blood circulation increased by contraction"
+      },
+      "whyCorrectAnswer": "Skeletal muscle is controlled by somatic motor neurons. Contracting muscle releases local ",
+      "explanation": "The source contains two true statements.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Physiology",
+        "Skeletal muscle",
+        "Motor control"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A",
+          "C"
+        ],
+        "text": "A — Motor supply; C — Blood circulation increased by contraction"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Skeletal muscle is controlled by somatic motor neurons. Contracting muscle releases local "
+      },
+      "correctedExplanation": "The source contains two true statements."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-019",
+      "questionNumber": 19,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Neurology",
+      "topic": "Cranial Nerves",
+      "title": "Trochlear Nerve",
+      "originalQuestion": "19. Cranial nerve Trochlear nerve is true",
+      "originalOptions": {
+        "A": "Medial side of cavernous sinus",
+        "B": "Pure sensory",
+        "C": "Mixed",
+        "D": "Supply superior oblique"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "It lies in the lateral wall of the cavernous sinus",
+        "B": "It is purely sensory",
+        "C": "It is a mixed sensory-motor nerve",
+        "D": "It supplies the superior oblique muscle"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Supply superior oblique"
+      },
+      "whyCorrectAnswer": "CN IV is purely motor and supplies the superior oblique muscle. It travels in the lateral ",
+      "explanation": "The superior oblique is the defining motor target of CN IV.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Correct."
+      },
+      "tags": [
+        "Neurology",
+        "Cranial nerves",
+        "Trochlear nerve"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Supply superior oblique"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Correct."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-020",
+      "questionNumber": 20,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Physiology",
+      "topic": "Cardiovascular Physiology",
+      "title": "Normal Physiological Changes During Sleep",
+      "originalQuestion": "20. Normal human man true except",
+      "originalOptions": {
+        "A": "Central venuse pressure 0-5",
+        "B": "BP decrease during sleep",
+        "C": "Blood volume decreased during sleep",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Central venous pressure is approximately 0–5 mmHg",
+        "B": "Blood pressure normally falls during sleep",
+        "C": "Circulating blood volume is not normally reduced...",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Blood volume decreased during sleep"
+      },
+      "whyCorrectAnswer": "Blood pressure and sympathetic activity normally decline during sleep, but total circulati",
+      "explanation": "The source's blood-volume statement is the incorrect one.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Physiology",
+        "Sleep",
+        "Cardiovascular physiology"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Blood volume decreased during sleep"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-021",
+      "questionNumber": 21,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Cardiology",
+      "topic": "Hypertension",
+      "title": "Pathophysiology of Essential Hypertension",
+      "originalQuestion": "21. In essential HTN true except",
+      "originalOptions": {
+        "A": "Ass with increase Cardiac output االجابه",
+        "B": "Reflex bradycardia which ass increase BP is reduced",
+        "C": "Muscular hypertrophy in small arteries",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Ass with increase Cardiac output االجابه"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement about established essential hypertension is least accurate?",
+      "correctedOptions": {
+        "A": "It is characteristically associated with persistently...",
+        "B": "Baroreflex-mediated responses may be reset",
+        "C": "Small arteries may undergo structural hypertrophy",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Associated with increased cardiac output"
+      },
+      "whyCorrectAnswer": "Established essential hypertension is driven largely by increased systemic vascular resist",
+      "explanation": "The source's marked answer is consistent with the distinction between early and establishe",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Cardiology",
+        "Hypertension",
+        "Vascular resistance"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Associated with increased cardiac output"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Established essential hypertension is driven largely by increased systemic vascular resist"
+      },
+      "correctedExplanation": "The source's marked answer is consistent with the distinction between early and establishe"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-022",
+      "questionNumber": 22,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Physiology",
+      "topic": "Body Fluid Compartments",
+      "title": "Distribution of Total Body Water",
+      "originalQuestion": "22. Volume of body fluids:",
+      "originalOptions": {
+        "A": "8% intravascular",
+        "B": "Thired in interstitial",
+        "C": "45% intracellular",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "What is the normal distribution of body water among major fluid compartments?",
+      "correctedOptions": {
+        "A": "Intracellular fluid is about two-thirds of total body...",
+        "B": "Extracellular fluid is about one-third of total body...",
+        "C": "Interstitial fluid is about three-quarters of...",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the information provided"
+      },
+      "whyCorrectAnswer": "The source uses imprecise percentages without specifying whether they refer to body weight",
+      "explanation": "The question needs clearer denominators and standardized percentages.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Physiology",
+        "Body fluids",
+        "Fluid compartments"
+      ],
+      "correctedAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the information provided"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "The source uses imprecise percentages without specifying whether they refer to body weight"
+      },
+      "correctedExplanation": "The question needs clearer denominators and standardized percentages."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-023",
+      "questionNumber": 23,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Obstetrics",
+      "topic": "Fetal Biometry",
+      "title": "Fetal Measurement at 15 Weeks",
+      "originalQuestion": "23. In 15th week pregnancy fetus measurement by :",
+      "originalOptions": {
+        "A": "Vertix to cocyx ( Crown rump length )",
+        "B": "Head circumference",
+        "C": "Vertex to heel",
+        "D": "Femoral length"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which fetal biometric measurement is appropriate at approximately 15 weeks?",
+      "correctedOptions": {
+        "A": "Crown-rump length",
+        "B": "Head circumference",
+        "C": "Vertex-to-heel length",
+        "D": "Femoral length"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Original",
+        "C": "Corrected",
+        "D": "Original"
+      },
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Femoral length"
+      },
+      "whyCorrectAnswer": "After the first trimester, fetal biometry commonly uses parameters such as biparietal diam",
+      "explanation": "The source's femoral-length option is the best among those listed.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Correct."
+      },
+      "tags": [
+        "Obstetrics",
+        "Fetal biometry",
+        "Pregnancy"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Femoral length"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Correct."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "After the first trimester, fetal biometry commonly uses parameters such as biparietal diam"
+      },
+      "correctedExplanation": "The source's femoral-length option is the best among those listed."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-024",
+      "questionNumber": 24,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Parasitology",
+      "topic": "Echinococcosis",
+      "title": "Definitive Host of Hydatid Disease",
+      "originalQuestion": "24. Definitive host in hyadatid cyst:",
+      "originalOptions": {
+        "A": "Human",
+        "B": "Sheep",
+        "C": "Dog ",
+        "D": "Non of above"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Human",
+        "B": "Sheep",
+        "C": "Dog",
+        "D": "None of the above"
+      },
+      "optionStatus": {
+        "A": "Original",
+        "B": "Original",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Dog"
+      },
+      "whyCorrectAnswer": "Adult Echinococcus granulosus worms live in the intestines of dogs and other canids, which",
+      "explanation": "The dog is the classic definitive host in hydatid disease.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Parasitology",
+        "Hydatid cyst",
+        "Echinococcus"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Dog"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-025",
+      "questionNumber": 25,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Obstetrics",
+      "topic": "Labor",
+      "title": "Blood-Stained Show",
+      "originalQuestion": "25.Blood saurce in show secretion",
+      "originalOptions": {
+        "A": "Dilatation of IO",
+        "B": "Dilatation of EO",
+        "C": "Start Separation of placenta",
+        "D": "Separation of lower membrane of amniotic"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "See medical verification.",
+      "correctedQuestion": "What is the usual source of blood in the blood-stained show of labor?",
+      "correctedOptions": {
+        "A": "Rupture of small cervical vessels during cervical...",
+        "B": "Dilation of the internal os alone",
+        "C": "Placental separation",
+        "D": "Separation of the amniotic membrane"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [],
+        "text": "No valid single answer"
+      },
+      "whyCorrectAnswer": "The source options do not include the correct mechanism: the blood in a normal show comes ",
+      "explanation": "The available source options do not contain the correct mechanism.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Obstetrics",
+        "Labor",
+        "Bloody show"
+      ],
+      "correctedAnswer": {
+        "letters": [],
+        "text": "No valid single answer"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "The source options do not include the correct mechanism: the blood in a normal show comes "
+      },
+      "correctedExplanation": "The available source options do not contain the correct mechanism."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-026",
+      "questionNumber": 26,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Pharmacology",
+      "topic": "Antimuscarinic Drugs",
+      "title": "Clinical Uses of Atropine and Hyoscine",
+      "originalQuestion": "26. Clinical use of atropine and hyocine all true except",
+      "originalOptions": {
+        "A": "Use in motion sickness",
+        "B": "Decrease intraocular pressure ..",
+        "C": "Broncodilator",
+        "D": "Decrease bronchial secretion"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Hyoscine can be used for motion sickness",
+        "B": "They decrease intraocular pressure",
+        "C": "Antimuscarinics can cause bronchodilation",
+        "D": "They decrease bronchial secretions"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Decrease intraocular pressure"
+      },
+      "whyCorrectAnswer": "Antimuscarinics reduce parasympathetic effects, producing bronchodilation and reduced secr",
+      "explanation": "The key adverse effect is increased intraocular pressure.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Pharmacology",
+        "Antimuscarinic",
+        "Atropine",
+        "Hyoscine"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Decrease intraocular pressure"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-027",
+      "questionNumber": 27,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Anatomy",
+      "topic": "Salivary Glands",
+      "title": "Submandibular Gland",
+      "originalQuestion": "27. Supmandipular salivary gland all true except",
+      "originalOptions": {
+        "A": "Open in Lower second molar ..",
+        "B": "Supply by salivary nucleus",
+        "C": "Contain mucus and acini",
+        "D": "Risk of malignancy more than parotid gland"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement about the submandibular gland is incorrect?",
+      "correctedOptions": {
+        "A": "Its duct opens opposite the lower second premolar",
+        "B": "Its secretomotor supply originates from the superior...",
+        "C": "It contains both serous and mucous acini",
+        "D": "Its tumors have a higher proportion of malignancy than..."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Opens opposite the lower second molar"
+      },
+      "whyCorrectAnswer": "Wharton's duct opens at the sublingual papilla beside the frenulum, opposite the lower sec",
+      "explanation": "The source's location is the anatomical error.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Anatomy",
+        "Salivary glands",
+        "Submandibular gland"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Opens opposite the lower second molar"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Wharton's duct opens at the sublingual papilla beside the frenulum, opposite the lower sec"
+      },
+      "correctedExplanation": "The source's location is the anatomical error."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-028",
+      "questionNumber": 28,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Physiology",
+      "topic": "Salivary Secretion",
+      "title": "Drug Effects on Salivation",
+      "originalQuestion": "28. Salivary secretion",
+      "originalOptions": {
+        "A": "Not affected by antidepressants",
+        "B": "Not affectid By antipsychotic",
+        "C": "Decrease by antihistamines ..",
+        "D": "Increase secretion by sympathetic flow"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statements correctly describe drug/autonomic effects on salivary secretion?",
+      "correctedOptions": {
+        "A": "Many antidepressants can reduce salivation",
+        "B": "Many antipsychotics can reduce salivation",
+        "C": "Antihistamines can reduce salivation",
+        "D": "Sympathetic stimulation can increase protein-rich..."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C",
+          "D"
+        ],
+        "text": "C — Decrease by antihistamines; D — Sympathetic stimulation can increase protein-rich secretion"
+      },
+      "whyCorrectAnswer": "Anticholinergic effects from several drug classes reduce salivary flow. Sympathetic stimul",
+      "explanation": "The source contains multiple statements that conflict with well-known drug effects.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Correct."
+      },
+      "tags": [
+        "Physiology",
+        "Salivary secretion",
+        "Pharmacology"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C",
+          "D"
+        ],
+        "text": "C — Decrease by antihistamines; D — Sympathetic stimulation can increase protein-rich secretion"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Correct."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Anticholinergic effects from several drug classes reduce salivary flow. Sympathetic stimul"
+      },
+      "correctedExplanation": "The source contains multiple statements that conflict with well-known drug effects."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-029",
+      "questionNumber": 29,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Anatomy",
+      "topic": "Patient Positioning",
+      "title": "Supine Position",
+      "originalQuestion": "29. Supine position",
+      "originalOptions": {
+        "A": "Lying on back",
+        "B": "Lying on face",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Lying on the back",
+        "B": "Lying on the face",
+        "C": "Lying on the side",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Lying on back"
+      },
+      "whyCorrectAnswer": "Supine positioning places the patient on the back. Prone positioning places the patient fa",
+      "explanation": "This is a standard anatomical-positioning definition.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Anatomy",
+        "Positioning",
+        "Supine"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Lying on back"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-030",
+      "questionNumber": 30,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Anatomy",
+      "topic": "Pelvic Venous Drainage",
+      "title": "Prostatic Venous Plexus",
+      "originalQuestion": "30. Prostatic venos plexus draining",
+      "originalOptions": {
+        "A": "Inferior mesentric vein to spleenic vein",
+        "B": "Testicular vein to renal vein",
+        "C": "Inferior vsical vein to internal iliac vein ..",
+        "D": "Obtrator vein to internal iliac vein"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Inferior mesenteric vein to splenic vein",
+        "B": "Testicular vein to renal vein",
+        "C": "Prostatic/vesical veins to the internal iliac vein",
+        "D": "Obturator vein to internal iliac vein"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Original",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Inferior vesical vein to internal iliac vein"
+      },
+      "whyCorrectAnswer": "The prostatic venous plexus communicates with the vesical plexus and drains toward the int",
+      "explanation": "The source's third option is the best answer.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Anatomy",
+        "Pelvis",
+        "Prostatic venous plexus"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Inferior vesical vein to internal iliac vein"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-031",
+      "questionNumber": 31,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Anatomy",
+      "topic": "Skin",
+      "title": "Dermis",
+      "originalQuestion": "31. In demis All true except",
+      "originalOptions": {
+        "A": "In female is thiner than male ..",
+        "B": "Inner most layer",
+        "C": "No lymphatic vessels",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "The dermis is generally thinner in females than males",
+        "B": "The dermis has superficial and deep layers",
+        "C": "The dermis contains lymphatic vessels",
+        "D": "Collagen fibers are abundant in the dermis"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — No lymphatic vessels"
+      },
+      "whyCorrectAnswer": "The dermis contains blood vessels, nerves, and lymphatic vessels. It is organized into pap",
+      "explanation": "The absence of lymphatics is the incorrect statement.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Anatomy",
+        "Skin",
+        "Dermis"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — No lymphatic vessels"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-032",
+      "questionNumber": 32,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Anesthesiology",
+      "topic": "Neuraxial Anesthesia",
+      "title": "Safe Level for Spinal Anesthesia",
+      "originalQuestion": "32. Spinal anesthesia in between",
+      "originalOptions": {
+        "A": "L1 and L2",
+        "B": "L 2 and L 3 ..",
+        "C": "T12 and L1",
+        "D": "Any of above"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "See medical verification.",
+      "correctedQuestion": "At which level is spinal anesthesia safely performed in an adult?",
+      "correctedOptions": {
+        "A": "L1–L2",
+        "B": "L2–L3",
+        "C": "T12–L1",
+        "D": "Any of the above"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — L2 and L3"
+      },
+      "whyCorrectAnswer": "The spinal cord usually ends around L1–L2 in adults. Therefore, lumbar puncture/spinal ane",
+      "explanation": "Among the source options, L2–L3 is the closest acceptable level, but the ideal answer is u",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Anesthesiology",
+        "Spinal anesthesia",
+        "Lumbar puncture"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — L2 and L3"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "The spinal cord usually ends around L1–L2 in adults. Therefore, lumbar puncture/spinal ane"
+      },
+      "correctedExplanation": "Among the source options, L2–L3 is the closest acceptable level, but the ideal answer is u"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-033",
+      "questionNumber": 33,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Infectious Diseases",
+      "topic": "Streptococcal Pharyngitis",
+      "title": "Rheumatic Fever and Post-Streptococcal Disease",
+      "originalQuestion": "33.Tonsillitis that complicated with renal and Rheumatic caused by",
+      "originalOptions": {
+        "A": "Staphylococcus",
+        "B": "Alpha hemolytic group",
+        "C": "Beta hemolytic group",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which organism classically causes streptococcal tonsillitis associated with rheumatic feve",
+      "correctedOptions": {
+        "A": "Staphylococcus aureus",
+        "B": "Alpha-hemolytic streptococci",
+        "C": "Group A beta-hemolytic Streptococcus pyogenes",
+        "D": "Group B streptococci"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Beta-hemolytic group"
+      },
+      "whyCorrectAnswer": "Group A Streptococcus causes acute pharyngitis and can lead to acute rheumatic fever and p",
+      "explanation": "The source's 'beta hemolytic group' should be specified as group A Streptococcus.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Infectious Diseases",
+        "Streptococcus pyogenes",
+        "Rheumatic fever"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Beta-hemolytic group"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Group A Streptococcus causes acute pharyngitis and can lead to acute rheumatic fever and p"
+      },
+      "correctedExplanation": "The source's 'beta hemolytic group' should be specified as group A Streptococcus."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-034",
+      "questionNumber": 34,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Hematology",
+      "topic": "Megaloblastic Anemia",
+      "title": "Folate and Vitamin B12 Deficiency",
+      "originalQuestion": "34. All true except:",
+      "originalOptions": {
+        "A": "In prenisios anemia effectively treated by eat raw liver",
+        "B": "Folic acid deficiency treated by eat raw liver",
+        "C": "Folate deficiency lead to megaloplastic macrocytic anemia",
+        "D": "Non of the above"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Pernicious anemia is not effectively treated by eating...",
+        "B": "Liver is a dietary source of folate",
+        "C": "Folate deficiency causes megaloblastic macrocytic...",
+        "D": "None of the above"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Pernicious anemia is not effectively treated by eating raw liver"
+      },
+      "whyCorrectAnswer": "Pernicious anemia is caused by impaired vitamin B12 absorption, classically due to intrins",
+      "explanation": "The first statement is false; dietary liver is not definitive therapy for pernicious anemi",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Hematology",
+        "Megaloblastic anemia",
+        "Vitamin B12",
+        "Folate"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Pernicious anemia is not effectively treated by eating raw liver"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-035",
+      "questionNumber": 35,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Cardiology",
+      "topic": "Valvular Heart Disease",
+      "title": "Mitral Stenosis Murmur",
+      "originalQuestion": "35. In Mitral stenosis which true",
+      "originalOptions": {
+        "A": "Mid diastolic murmur increase by exercise..",
+        "B": "Opening snap increase with age",
+        "C": "Decrease intensity in pulmonary HTN",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "The mid-diastolic murmur may become louder with...",
+        "B": "The opening snap necessarily becomes louder with age",
+        "C": "The murmur decreases with pulmonary hypertension",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Mid-diastolic murmur increases with exercise"
+      },
+      "whyCorrectAnswer": "The mitral stenosis murmur is a low-pitched diastolic rumble that may increase with exerci",
+      "explanation": "The source's first statement is the correct characteristic.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Cardiology",
+        "Mitral stenosis",
+        "Valvular disease"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Mid-diastolic murmur increases with exercise"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-036",
+      "questionNumber": 36,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Obstetrics",
+      "topic": "Puerperal Sepsis",
+      "title": "Prevention of Puerperal Infection",
+      "originalQuestion": "36. perperial Sepsis",
+      "originalOptions": {
+        "A": "Clean perineum iodine 10%",
+        "B": "Give her antibiotics post delivery",
+        "C": "Stay in hospital 24 hours with iv antibiotics",
+        "D": "Keep it in dry and clean .."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which measure is appropriate for prevention of puerperal infection among the listed choice",
+      "correctedOptions": {
+        "A": "Use appropriate hygiene and clean technique",
+        "B": "Give antibiotics to every woman after delivery",
+        "C": "Keep every woman hospitalized for 24 hours for IV...",
+        "D": "Keep the perineal area clean and dry"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Keep the perineum clean and dry"
+      },
+      "whyCorrectAnswer": "Prevention focuses on aseptic obstetric practice, hand hygiene, appropriate management of ",
+      "explanation": "Because the stem is incomplete, the source cannot support a fully reliable single-answer i",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Correct."
+      },
+      "tags": [
+        "Obstetrics",
+        "Puerperal sepsis",
+        "Infection prevention"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Keep the perineum clean and dry"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Correct."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Prevention focuses on aseptic obstetric practice, hand hygiene, appropriate management of "
+      },
+      "correctedExplanation": "Because the stem is incomplete, the source cannot support a fully reliable single-answer i"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-037",
+      "questionNumber": 37,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Obstetrics",
+      "topic": "Fetal Circulation",
+      "title": "Umbilical Cord Vessels",
+      "originalQuestion": "37. About fetus circulation",
+      "originalOptions": {
+        "A": "2 umblical arteries and one umblical vein",
+        "B": "Not provided in source.",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Two umbilical arteries and one umbilical vein",
+        "B": "One artery and two veins",
+        "C": "Two arteries and two veins",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Reconstructed",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Two umbilical arteries and one umbilical vein"
+      },
+      "whyCorrectAnswer": "The normal umbilical cord has two umbilical arteries and one umbilical vein.",
+      "explanation": "This is a standard fetal-circulation fact.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Obstetrics",
+        "Fetal circulation",
+        "Umbilical cord"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Two umbilical arteries and one umbilical vein"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-038",
+      "questionNumber": 38,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Emergency Medicine",
+      "topic": "Blood Transfusion",
+      "title": "Principles of Blood Transfusion",
+      "originalQuestion": "38. About blood transfusion all true except",
+      "originalOptions": {
+        "A": "First 2 hours the BT according to hemoglobin ..",
+        "B": "BT should be godjous according to clinical diagnosis",
+        "C": "Massive BT Manifested by traumatic coaglupathy",
+        "D": "In crystaliod iv can lead to dilution"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Early transfusion should be based only on hemoglobin...",
+        "B": "Transfusion should be guided by clinical diagnosis and...",
+        "C": "Massive transfusion can cause trauma-associated...",
+        "D": "Large crystalloid volumes can cause dilutional..."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Transfusion should not be based solely on hemoglobin during the first two hours after trauma"
+      },
+      "whyCorrectAnswer": "Hemoglobin may remain near baseline early after acute hemorrhage. Major trauma requires cl",
+      "explanation": "The first statement is unsafe because Hb alone does not reflect acute blood loss early.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Emergency Medicine",
+        "Transfusion",
+        "Trauma"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Transfusion should not be based solely on hemoglobin during the first two hours after trauma"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-039",
+      "questionNumber": 39,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Endocrinology",
+      "topic": "Calcium Disorders",
+      "title": "Hypocalcemia After Neck Surgery",
+      "originalQuestion": "39. Hypercalcemia All following false except",
+      "originalOptions": {
+        "A": "Hypocalcemia lead to increase muscle excitability ..",
+        "B": "Caused by total thyroidectomy",
+        "C": "Caused by removed 2 parathyroid",
+        "D": "Ca glocanate 10% in 10ml cc n.s during 10 minutes"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement correctly describes hypocalcemia?",
+      "correctedOptions": {
+        "A": "Hypocalcemia can increase neuromuscular excitability",
+        "B": "Total thyroidectomy can cause hypocalcemia",
+        "C": "Removal/damage of parathyroid glands can cause...",
+        "D": "10% calcium gluconate can be used for symptomatic..."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Hypocalcemia leads to increased neuromuscular excitability"
+      },
+      "whyCorrectAnswer": "Hypocalcemia increases neuronal and neuromuscular excitability and may cause tetany, pares",
+      "explanation": "The source heading is incorrect; the options describe hypocalcemia rather than hypercalcem",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Endocrinology",
+        "Hypocalcemia",
+        "Calcium"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Hypocalcemia leads to increased neuromuscular excitability"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Hypocalcemia increases neuronal and neuromuscular excitability and may cause tetany, pares"
+      },
+      "correctedExplanation": "The source heading is incorrect; the options describe hypocalcemia rather than hypercalcem"
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-040",
+      "questionNumber": 40,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Psychiatry",
+      "topic": "Anxiety and Panic",
+      "title": "Panic Symptoms Versus Organic Symptoms",
+      "originalQuestion": "40. All following is Organic symptoms except one is related to anxiety:",
+      "originalOptions": {
+        "A": "Pain radiated to left hand",
+        "B": "Constricting chest pain",
+        "C": "Impending of death",
+        "D": "Doubling in vision"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which symptom is classically associated with panic/anxiety?",
+      "correctedOptions": {
+        "A": "Pain radiating to the left arm",
+        "B": "Constricting chest pain",
+        "C": "A feeling of impending death",
+        "D": "Diplopia"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Original",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Impending of death"
+      },
+      "whyCorrectAnswer": "Panic attacks commonly cause intense fear, palpitations, dyspnea, chest discomfort, and a ",
+      "explanation": "The examination pearl is the characteristic cognitive symptom of panic.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Psychiatry",
+        "Anxiety",
+        "Panic attack"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Impending of death"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Panic attacks commonly cause intense fear, palpitations, dyspnea, chest discomfort, and a "
+      },
+      "correctedExplanation": "The examination pearl is the characteristic cognitive symptom of panic."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-041",
+      "questionNumber": 41,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Emergency Medicine",
+      "topic": "Shock",
+      "title": "Neurogenic Shock",
+      "originalQuestion": "41. Neurogenic shock all true except",
+      "originalOptions": {
+        "A": "Lead to vacular constriction ..",
+        "B": "Decrease blood supply to brain",
+        "C": "Caused by impulses sympathetic",
+        "D": "Caused by sever pain"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement best describes neurogenic shock?",
+      "correctedOptions": {
+        "A": "Causes loss of sympathetic vascular tone and...",
+        "B": "May reduce effective perfusion to organs",
+        "C": "Results from loss of sympathetic outflow, commonly...",
+        "D": "Is not simply caused by severe pain"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "C",
+          "D"
+        ],
+        "text": "A — Neurogenic shock causes vasodilation rather than vasoconstriction; C and D are also incorrect as written"
+      },
+      "whyCorrectAnswer": "Neurogenic shock is distributive shock caused by interruption of sympathetic pathways, pro",
+      "explanation": "The source contains multiple incorrect statements, so a single-answer format is not valid.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Correct."
+      },
+      "tags": [
+        "Emergency Medicine",
+        "Shock",
+        "Neurogenic shock"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A",
+          "C",
+          "D"
+        ],
+        "text": "A — Neurogenic shock causes vasodilation rather than vasoconstriction; C and D are also incorrect as written"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Correct."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Neurogenic shock is distributive shock caused by interruption of sympathetic pathways, pro"
+      },
+      "correctedExplanation": "The source contains multiple incorrect statements, so a single-answer format is not valid."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-042",
+      "questionNumber": 42,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Physiology",
+      "topic": "Respiratory Physiology",
+      "title": "Mechanics of Inspiration",
+      "originalQuestion": "42. About normal respiration",
+      "originalOptions": {
+        "A": "Contraction of diaphragm lead to increase thoracic volume ..",
+        "B": "Alveolar sub-atmospheric pressure",
+        "C": "Dead space ,,",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statements are true about normal respiration?",
+      "correctedOptions": {
+        "A": "Diaphragm contraction increases thoracic volume",
+        "B": "Alveolar pressure falls below atmospheric pressure...",
+        "C": "Physiologic dead space is present",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "B",
+          "C"
+        ],
+        "text": "A, B and C are true"
+      },
+      "whyCorrectAnswer": "During inspiration, diaphragmatic contraction increases thoracic volume, lowering alveolar",
+      "explanation": "The source asks a single-answer style question despite multiple true options.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Correct.",
+        "C": "Correct.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Physiology",
+        "Respiration",
+        "Ventilation"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A",
+          "B",
+          "C"
+        ],
+        "text": "A, B and C are true"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Correct.",
+        "C": "Correct.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "During inspiration, diaphragmatic contraction increases thoracic volume, lowering alveolar"
+      },
+      "correctedExplanation": "The source asks a single-answer style question despite multiple true options."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-043",
+      "questionNumber": 43,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Hepatology",
+      "topic": "Liver Enzymes",
+      "title": "Alkaline Phosphatase",
+      "originalQuestion": "43 . Alkaline phosphate increase in :",
+      "originalOptions": {
+        "A": "Intra and extra biliary duct obstruction",
+        "B": "Multiple myeloma ..",
+        "C": "Senile osteoprosis",
+        "D": "Non of above"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Intrahepatic and extrahepatic biliary obstruction",
+        "B": "Multiple myeloma",
+        "C": "Uncomplicated senile osteoporosis",
+        "D": "None of the above"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Intrahepatic and extrahepatic biliary obstruction"
+      },
+      "whyCorrectAnswer": "A cholestatic pattern produces a disproportionate rise in alkaline phosphatase and gamma-g",
+      "explanation": "The biliary-obstruction option is the classic answer.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Hepatology",
+        "Alkaline phosphatase",
+        "Cholestasis"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Intrahepatic and extrahepatic biliary obstruction"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-044",
+      "questionNumber": 44,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Physiology",
+      "topic": "Renal Physiology",
+      "title": "Aldosterone Effects",
+      "originalQuestion": "44. About aldosterone :",
+      "originalOptions": {
+        "A": "Na deliver increases k secretion ..",
+        "B": "Increase permeability of urea",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement about aldosterone is correct?",
+      "correctedOptions": {
+        "A": "It promotes sodium reabsorption and potassium...",
+        "B": "It primarily increases urea permeability throughout...",
+        "C": "It decreases sodium reabsorption",
+        "D": "It decreases potassium secretion"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Increased distal sodium delivery can increase potassium secretion"
+      },
+      "whyCorrectAnswer": "Aldosterone acts mainly on principal cells in the late distal tubule and collecting duct, ",
+      "explanation": "The source's first statement is the correct renal effect.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Renal Physiology",
+        "Aldosterone",
+        "Electrolytes"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Increased distal sodium delivery can increase potassium secretion"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Aldosterone acts mainly on principal cells in the late distal tubule and collecting duct, "
+      },
+      "correctedExplanation": "The source's first statement is the correct renal effect."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-046",
+      "questionNumber": 46,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Hepatology",
+      "topic": "Alcohol-Related Liver Disease",
+      "title": "Alcoholic Fatty Liver",
+      "originalQuestion": "46- alcohol\n- has dirrect effect on hepatocyte\n- it cause fatty liver, and its irreversible.",
+      "originalOptions": {
+        "A": "has dirrect effect on hepatocyte",
+        "B": "it cause fatty liver, and its irreversible.",
+        "C": "",
+        "D": ""
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement about alcohol-related liver disease is correct?",
+      "correctedOptions": {
+        "A": "Alcohol can directly injure hepatocytes",
+        "B": "Alcoholic fatty liver is always irreversible",
+        "C": "Alcohol never causes hepatic steatosis",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Corrected"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Alcohol has a direct effect on hepatocytes"
+      },
+      "whyCorrectAnswer": "Ethanol and its metabolites can directly injure hepatocytes and promote steatosis. Simple ",
+      "explanation": "This is a repeated alcohol question in a different wording.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Hepatology",
+        "Alcohol",
+        "Fatty liver"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Alcohol has a direct effect on hepatocytes"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Ethanol and its metabolites can directly injure hepatocytes and promote steatosis. Simple "
+      },
+      "correctedExplanation": "This is a repeated alcohol question in a different wording."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-047",
+      "questionNumber": 47,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Obstetrics",
+      "topic": "Delivery",
+      "title": "Mode of Delivery",
+      "originalQuestion": "47- save pregnancy\n-Vaginal with episetomy\n- c/s\n-What ever the way which wil save mother and baby",
+      "originalOptions": {
+        "A": "Vaginal with episetomy",
+        "B": "c/s",
+        "C": "What ever the way which wil save mother and baby",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which principle should guide the choice of mode of delivery?",
+      "correctedOptions": {
+        "A": "Vaginal delivery with episiotomy when indicated",
+        "B": "Cesarean section when indicated",
+        "C": "Choose the mode that provides the safest appropriate...",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Whatever mode of delivery safely protects the mother and baby"
+      },
+      "whyCorrectAnswer": "There is no universally safest delivery route. Vaginal delivery is preferred when appropri",
+      "explanation": "The source's concept is that maternal and fetal safety determines the delivery route.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Obstetrics",
+        "Labor",
+        "Cesarean section"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Whatever mode of delivery safely protects the mother and baby"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Correct.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "There is no universally safest delivery route. Vaginal delivery is preferred when appropri"
+      },
+      "correctedExplanation": "The source's concept is that maternal and fetal safety determines the delivery route."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-048",
+      "questionNumber": 48,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Hematology",
+      "topic": "Folate Deficiency",
+      "title": "Folate Deficiency Anemia",
+      "originalQuestion": "48- folic acid defficiency\n- can be prevented by eating raw liver\n- can lead to meglaocytic anemia!\n- none of above",
+      "originalOptions": {
+        "A": "can be prevented by eating raw liver",
+        "B": "can lead to meglaocytic anemia!",
+        "C": "none of above",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement about folate deficiency is correct?",
+      "correctedOptions": {
+        "A": "Eating raw liver is the standard preventive strategy",
+        "B": "Folate deficiency can cause megaloblastic anemia",
+        "C": "Folate deficiency cannot affect red-cell morphology",
+        "D": "None of the above"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Can lead to megaloblastic anemia"
+      },
+      "whyCorrectAnswer": "Folate is required for DNA synthesis. Deficiency impairs nuclear maturation and produces m",
+      "explanation": "The second source statement is medically correct.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Hematology",
+        "Folate",
+        "Megaloblastic anemia"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Can lead to megaloblastic anemia"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Folate is required for DNA synthesis. Deficiency impairs nuclear maturation and produces m"
+      },
+      "correctedExplanation": "The second source statement is medically correct."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-049",
+      "questionNumber": 49,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Infectious Diseases",
+      "topic": "Syphilis",
+      "title": "Congenital Syphilis",
+      "originalQuestion": "49- spirochete\n- in 1st trimester will lead to growth abnormality !!\n- none of above",
+      "originalOptions": {
+        "A": "in 1st trimester will lead to growth abnormality !!",
+        "B": "none of above",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "See medical verification.",
+      "correctedQuestion": "Which statement best describes congenital syphilis?",
+      "correctedOptions": {
+        "A": "First-trimester infection invariably causes growth...",
+        "B": "Syphilis can cross the placenta and cause fetal...",
+        "C": "It cannot be transmitted to the fetus",
+        "D": "None of the above"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — None of the above"
+      },
+      "whyCorrectAnswer": "Maternal syphilis can cross the placenta and cause fetal infection, miscarriage, stillbirt",
+      "explanation": "The source's first statement is not reliably true as an absolute rule.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Infectious Diseases",
+        "Syphilis",
+        "Congenital infection"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — None of the above"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer.",
+      "correctionDetails": {
+        "whatWasCorrected": "The question wording/medical phrasing and one or more options was clarified or corrected for educational use.",
+        "why": "The original wording/options required clarification, correction, or reconstruction as indicated by the correction status.",
+        "medicalInformation": "Maternal syphilis can cross the placenta and cause fetal infection, miscarriage, stillbirt"
+      },
+      "correctedExplanation": "The source's first statement is not reliably true as an absolute rule."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-050",
+      "questionNumber": 50,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Internal Medicine",
+      "topic": "Electrolytes",
+      "title": "Treatment of Hypokalemia",
+      "originalQuestion": "50- hypokalemia\n- treated by infusion sodium bicarb!\n-none",
+      "originalOptions": {
+        "A": "treated by infusion sodium bicarb!",
+        "B": "none",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Hypokalemia is routinely treated with IV sodium...",
+        "B": "None of the above",
+        "C": "Hypokalemia is treated with appropriate potassium...",
+        "D": "Rapid IV potassium is always safe"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Corrected",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — None of the above"
+      },
+      "whyCorrectAnswer": "Treatment depends on severity and cause but generally involves oral or carefully controlle",
+      "explanation": "The source's proposed bicarbonate treatment is incorrect.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Electrolytes",
+        "Hypokalemia",
+        "Treatment"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — None of the above"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-051",
+      "questionNumber": 51,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Parasitology",
+      "topic": "Echinococcosis",
+      "title": "Definitive Host of Hydatid Cyst",
+      "originalQuestion": "51- hydatid cyst deffinitve host\n- human\n-Dogs\n-Sheep\n-None",
+      "originalOptions": {
+        "A": "human",
+        "B": "Dogs",
+        "C": "Sheep",
+        "D": "None"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Human",
+        "B": "Dogs",
+        "C": "Sheep",
+        "D": "None"
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Original",
+        "C": "Original",
+        "D": "Original"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Dogs"
+      },
+      "whyCorrectAnswer": "Adult Echinococcus worms live in dogs and other canids. Humans and sheep act as intermedia",
+      "explanation": "This is a repeated hydatid-cyst question.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Parasitology",
+        "Hydatid cyst",
+        "Echinococcus"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Dogs"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-052",
+      "questionNumber": 52,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Pharmacology",
+      "topic": "Pregnancy",
+      "title": "Antibiotic Safety in Pregnancy",
+      "originalQuestion": "52- in pegnancy all save except",
+      "originalOptions": {
+        "A": "Erythromycine",
+        "B": "Doxycycline",
+        "C": "Pincillin",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "Erythromycin",
+        "B": "Doxycycline",
+        "C": "Penicillin",
+        "D": "Not provided in source."
+      },
+      "optionStatus": {
+        "A": "Corrected",
+        "B": "Original",
+        "C": "Corrected",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Doxycycline"
+      },
+      "whyCorrectAnswer": "Doxycycline is a tetracycline and is generally avoided in pregnancy, particularly after ea",
+      "explanation": "Penicillins and erythromycin are commonly used when indicated in pregnancy.",
+      "optionExplanations": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "tags": [
+        "Pharmacology",
+        "Pregnancy",
+        "Antibiotics"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Doxycycline"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Incorrect/less appropriate.",
+        "B": "Correct.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Not provided."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    },
+    {
+      "id": "2023-06-22-Sanaa-GM-053",
+      "questionNumber": 53,
+      "medicalProfession": "General Medicine",
+      "specialty": "General Practice",
+      "governorate": "Sanaa",
+      "year": 2023,
+      "month": "June",
+      "exactDate": "2023-06-22",
+      "subject": "Emergency Medicine",
+      "topic": "Burns",
+      "title": "Total Body Surface Area in Adult Burns",
+      "originalQuestion": "53- 2nd degree burn whole right upper limp, whole right lower limp and perenium",
+      "originalOptions": {
+        "A": "28%",
+        "B": "34%",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": ""
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "",
+      "correctedQuestion": "Same as original question.",
+      "correctedOptions": {
+        "A": "28%",
+        "B": "34%",
+        "C": "18%",
+        "D": "36%"
+      },
+      "optionStatus": {
+        "A": "Original",
+        "B": "Original",
+        "C": "Reconstructed",
+        "D": "Reconstructed"
+      },
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 28%"
+      },
+      "whyCorrectAnswer": "The adult Rule of Nines assigns 9% to each upper limb, 18% to each lower limb, and 1% to t",
+      "explanation": "The calculation is 28% TBSA.",
+      "optionExplanations": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "tags": [
+        "Emergency Medicine",
+        "Burns",
+        "Rule of Nines"
+      ],
+      "correctedAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 28%"
+      },
+      "sourceAnswerExplanation": {
+        "A": "Correct.",
+        "B": "Incorrect/less appropriate.",
+        "C": "Incorrect/less appropriate.",
+        "D": "Incorrect/less appropriate."
+      },
+      "sourceAnswerWhy": "The answer shown above is the answer retained for the original question in this application. It is not replaced by the corrected-version answer."
+    }
+  ],
+  "schemaVersion": "2.0",
+  "answerSeparation": {
+    "originalQuestionAnswerField": "correctAnswer",
+    "correctedQuestionAnswerField": "correctedAnswer",
+    "rule": "correctAnswer remains the answer displayed for the original question; correctedAnswer is used only with correctedQuestion/correctedOptions."
+  }
+}

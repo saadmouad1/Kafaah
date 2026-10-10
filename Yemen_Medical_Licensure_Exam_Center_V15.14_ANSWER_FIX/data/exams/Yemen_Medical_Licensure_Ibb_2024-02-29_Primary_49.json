@@ -1,0 +1,3011 @@
+{
+  "examMetadata": {
+    "databaseType": "licensure",
+    "questionBank": "Yemen Medical Licensure Examination",
+    "examType": "Professional Licensure",
+    "medicalProfession": "Human Medicine (General Medicine)",
+    "specialty": "General Medicine",
+    "qualification": "Bachelor's Degree",
+    "country": "Yemen",
+    "city": "Ibb",
+    "governorate": "Ibb",
+    "region": "Not provided in source.",
+    "year": 2024,
+    "month": "February",
+    "exactDate": "2024-02-29",
+    "language": "English (with Arabic metadata/header)",
+    "source": "Yemen Medical Licensure Examination — Bachelor of General Medicine, Ibb",
+    "sourceFile": "اختبار_مزاولة_المهمة_بك_طب_عام_إب29_2_2024.pdf",
+    "examProvider": "Not provided in source.",
+    "institution": "Not provided in source.",
+    "department": "Not provided in source.",
+    "subject": "General Medicine",
+    "section": "Not provided in source.",
+    "timeLimit": "Not provided in source.",
+    "examTitle": "إختبار مزاولة المهنة بكالوريوس طب عام إب 29/2/2024",
+    "numberOfQuestions": 49,
+    "form": "Printed model"
+  },
+  "questions": [
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-001",
+      "questionNumber": 1,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "Mumps",
+      "subject": "Complications of Mumps",
+      "title": "Most Common Complication of Mumps",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "The most common complication of mumps in childhood is:",
+      "originalOptions": {
+        "A": "Conjunctivitis.",
+        "B": "Meningitis.",
+        "C": "Pneumonia.",
+        "D": "................"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Meningitis."
+      },
+      "explanation": "Meningitis is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Meningitis is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Mumps",
+        "Complications of Mumps"
+      ],
+      "sourcePage": 1,
+      "sourceQuestionNumber": "1"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-002",
+      "questionNumber": 2,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "Post-streptococcal Disease",
+      "subject": "Acute Rheumatic Fever",
+      "title": "Diagnosis of Acute Rheumatic Fever",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "An 8-yr-old boy presents with fever of 2 weeks' duration, shortness of breath, ankle edema, intermittent painful swelling of the wrists, elbows, and knees unrelated to edema, and a new systolic murmur. One month ago he had a sore throat that lasted for 5 days, which resolved spontaneously. The most likely diagnosis is:",
+      "originalOptions": {
+        "A": "Endocarditis.",
+        "B": "Rheumatoid arthritis.",
+        "C": "Meningococcal sepsis.",
+        "D": "Glomerulonephritis.",
+        "E": "Rheumatic fever."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "E"
+        ],
+        "text": "E — Rheumatic fever."
+      },
+      "explanation": "Rheumatic fever is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Correct. Rheumatic fever is the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Post-streptococcal Disease",
+        "Acute Rheumatic Fever"
+      ],
+      "sourcePage": 1,
+      "sourceQuestionNumber": "2"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-003",
+      "questionNumber": 3,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Pulmonology",
+      "topic": "Granulomatous Lung Disease",
+      "subject": "Sarcoidosis",
+      "title": "Diagnosis of Sarcoidosis",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": true,
+      "originalQuestion": "A 13-yr-old boy has had chronic cough, fever, and fatigue for the past 4 wk and also has experienced weight loss. Physical examination shows slender habitus, mild tachypnea but no crackles or wheezes, and enlarged lymph nodes, most notably the axillary and particular nodes. Chest radiograph shows hilar lymphadenopathy. A biopsy of the particular node shows noncaseating granulomas. The most likely diagnosis is:",
+      "originalOptions": {
+        "A": "Tuberculosis.",
+        "B": "Non-Hodgkin lymphoma.",
+        "C": "Infectious mononucleosis.",
+        "D": "Sarcoidosis."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Sarcoidosis."
+      },
+      "explanation": "Sarcoidosis is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Correct. Sarcoidosis is the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Granulomatous Lung Disease",
+        "Sarcoidosis"
+      ],
+      "sourcePage": 1,
+      "sourceQuestionNumber": "3"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-004",
+      "questionNumber": 4,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Pediatric Emergency Medicine",
+      "topic": "Croup",
+      "subject": "Severe Croup",
+      "title": "Emergency Transport in Severe Croup",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Emergency",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "A 15-mo-old child is in your office with stridor at rest and cyanosis with the presumptive diagnosis of viral croup. You should do all of the following EXCEPT:",
+      "originalOptions": {
+        "A": "Transport immediately in the parent's car to the nearest emergency department .",
+        "B": "Administer oxygen.",
+        "C": "Administer dexamethasone.",
+        "D": "Administer racemic epinephrine.",
+        "E": "Transport after EMS personnel arrive 20 min later."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "The source item/answer requires correction or the source wording is medically unsafe.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Transport immediately in the parent's car to the nearest emergency department."
+      },
+      "explanation": "Transport immediately in the parent's car to the nearest emergency department is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Transport immediately in the parent's car to the nearest emergency department is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Croup",
+        "Severe Croup"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": "4"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-005",
+      "questionNumber": 5,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Hematology & Oncology",
+      "topic": "Acute Lymphoblastic Leukemia",
+      "subject": "Extramedullary Relapse",
+      "title": "Most Important Extramedullary Site of ALL Relapse",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "The most important extra medullary site of relapse in childhood ALL is:",
+      "originalOptions": {
+        "A": "Adrenal glands.",
+        "B": "Kidney.",
+        "C": "Lung.",
+        "D": "Heart.",
+        "E": "Central nervous system."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "E"
+        ],
+        "text": "E — Central nervous system."
+      },
+      "explanation": "Central nervous system is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Correct. Central nervous system is the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Acute Lymphoblastic Leukemia",
+        "Extramedullary Relapse"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": "5"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-006",
+      "questionNumber": 6,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Developmental Pediatrics",
+      "topic": "Cognitive Development",
+      "subject": "Object Permanence",
+      "title": "Age of Object Permanence",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "Child look about hidden objects at :",
+      "originalOptions": {
+        "A": "7 month.",
+        "B": "9 month.",
+        "C": "11 month.",
+        "D": "15 month."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 9 month."
+      },
+      "explanation": "9 month is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. 9 month is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Cognitive Development",
+        "Object Permanence"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": "6"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-007",
+      "questionNumber": 7,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Surgery",
+      "subSpecialty": "Breast Surgery",
+      "topic": "Postoperative Nerve Injury",
+      "subject": "Long Thoracic Nerve Injury",
+      "title": "Nerve Injury Causing Winging of the Scapula",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Swinging of scapula after excessive exaction of lymph nodes in mastectomy due injury of which of the following nerves :",
+      "originalOptions": {
+        "A": "Axillary nerve.",
+        "B": "Long thoracic nerve.",
+        "C": "Subscapular nerve.",
+        "D": "Musculoskeletal nerve."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Long thoracic nerve."
+      },
+      "explanation": "Long thoracic nerve is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Long thoracic nerve is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Postoperative Nerve Injury",
+        "Long Thoracic Nerve Injury"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": "7"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-008",
+      "questionNumber": 8,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Hepatology",
+      "topic": "Wilson Disease",
+      "subject": "Systemic Manifestations of Wilson Disease",
+      "title": "Manifestations of Wilson Disease",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "Wilson disease associated with all of the following EXCEPT:",
+      "originalOptions": {
+        "A": "Cardiomyopathy",
+        "B": "Hepatomegaly. C Portal hypertension.",
+        "D": "Ascites. واحده على ليتم وصولك إلى كل النماذج السابقة 2024",
+        "E": "Hemolysis."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The source item does not permit a unique single medically defensible answer.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "No valid single answer can be established from the listed options."
+      },
+      "explanation": "No valid single answer can be established from the listed options is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Wilson Disease",
+        "Systemic Manifestations of Wilson Disease"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": "8"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-009",
+      "questionNumber": 9,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Urogynecology",
+      "topic": "Pelvic Organ Prolapse",
+      "subject": "Risk Factors for Prolapse",
+      "title": "Risk Factors for Pelvic Organ Prolapse",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "The following are risk factors for the development of prolapse :-",
+      "originalOptions": {
+        "A": "Null parity.",
+        "B": "Forceps delivery.",
+        "C": "Twins.",
+        "D": "Caesarean section.",
+        "E": "Genetic"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Forceps delivery."
+      },
+      "explanation": "Forceps delivery is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Forceps delivery is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Pelvic Organ Prolapse",
+        "Risk Factors for Prolapse"
+      ],
+      "sourcePage": 3,
+      "sourceQuestionNumber": "9"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-010",
+      "questionNumber": 10,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Gynecologic Oncology",
+      "topic": "Endometrial Cancer",
+      "subject": "Risk Factors",
+      "title": "Risk Factors for Endometrial Cancer",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "The following are risk factors for the development of endometrial cancer :-",
+      "originalOptions": {
+        "A": "Obesity.",
+        "B": "Diabetes.",
+        "C": "Multiparty.",
+        "D": "late menopause.",
+        "E": "Tamoxifen."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The source item does not permit a unique single medically defensible answer.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "text": "A, B, D and E are risk factors; multiparty is not."
+      },
+      "explanation": "A, B, D and E are risk factors; multiparty is not is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. A, B, D and E are risk factors; multiparty is not is the best-supported answer for the question as written.",
+        "B": "Correct. A, B, D and E are risk factors; multiparty is not is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Correct. A, B, D and E are risk factors; multiparty is not is the best-supported answer for the question as written.",
+        "E": "Correct. A, B, D and E are risk factors; multiparty is not is the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Endometrial Cancer",
+        "Risk Factors"
+      ],
+      "sourcePage": 3,
+      "sourceQuestionNumber": "10"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-011",
+      "questionNumber": 11,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Menopause",
+      "topic": "Hormone Replacement Therapy",
+      "subject": "Estrogen-Related Adverse Effects",
+      "title": "Estrogen-Related HRT Side Effects",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "All of The following are common oestrogen-related side effects to HRT EXCEPT:-",
+      "originalOptions": {
+        "A": "Fluid retention.",
+        "B": "Breast enlargement.",
+        "C": "Leg cramps.",
+        "D": "Dyspepsia.",
+        "E": "Acne."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "E"
+        ],
+        "text": "E — Acne."
+      },
+      "explanation": "Acne is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Correct. Acne is the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Hormone Replacement Therapy",
+        "Estrogen-Related Adverse Effects"
+      ],
+      "sourcePage": 3,
+      "sourceQuestionNumber": "11"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-012",
+      "questionNumber": 12,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Menopause",
+      "topic": "Hormone Replacement Therapy",
+      "subject": "Contraindications",
+      "title": "Contraindications to HRT",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "The following are absolute contraindications to taking HRT :-",
+      "originalOptions": {
+        "A": "fibroids.",
+        "B": "Endometrial cancer.",
+        "C": "Acute sever liver disease.",
+        "D": "Migraine with aura.",
+        "E": "Otosclerosis. واحده على ليتم وصولك إلى كل النماذج السابقة 2024"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The source item does not permit a unique single medically defensible answer.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B",
+          "C"
+        ],
+        "text": "B and C — Endometrial cancer and acute severe liver disease."
+      },
+      "explanation": "Endometrial cancer and acute severe liver disease is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Endometrial cancer and acute severe liver disease is the best-supported answer for the question as written.",
+        "C": "Correct. Endometrial cancer and acute severe liver disease is the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Hormone Replacement Therapy",
+        "Contraindications"
+      ],
+      "sourcePage": 3,
+      "sourceQuestionNumber": "12"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-013",
+      "questionNumber": 13,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Early Pregnancy",
+      "topic": "Miscarriage",
+      "subject": "Epidemiology and Causes of Miscarriage",
+      "title": "Risk of Miscarriage in Early Pregnancy",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "In early pregnancy all true EXCEPT :",
+      "originalOptions": {
+        "A": "Total loss of conception after fertilization is around 50–70 per cent.",
+        "B": "The total rate of clinical miscarriage is around one-quarter to one-third of all pregnancies.",
+        "C": "Miscarriage is much greater before 6 weeks than after 9 weeks.",
+        "D": "The rate of miscarriage is the same in women over forty years of age as with women under forty.",
+        "E": "The most common cause of spontaneous miscarriage is chromosomal abnormalities."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — The rate of miscarriage is the same in women over forty years of age as with women under forty."
+      },
+      "explanation": "The rate of miscarriage is the same in women over forty years of age as with women under forty is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Correct. The rate of miscarriage is the same in women over forty years of age as with women under forty is the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Miscarriage",
+        "Epidemiology and Causes of Miscarriage"
+      ],
+      "sourcePage": 4,
+      "sourceQuestionNumber": "13"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-014",
+      "questionNumber": 14,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Hypertensive Disorders of Pregnancy",
+      "topic": "Preeclampsia",
+      "subject": "Management of Preeclampsia",
+      "title": "Management of Preeclampsia",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "The management of pre-eclampsia includes all of the following EXCEPT : -",
+      "originalOptions": {
+        "A": "Hospital assessment.",
+        "B": "Labetalol.",
+        "C": "Early delivery.",
+        "D": "Furosemide.",
+        "E": "Magnesium sulphate."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Furosemide."
+      },
+      "explanation": "Furosemide is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Correct. Furosemide is the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Preeclampsia",
+        "Management of Preeclampsia"
+      ],
+      "sourcePage": 4,
+      "sourceQuestionNumber": "14"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-015",
+      "questionNumber": 15,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Maternal-Fetal Medicine",
+      "topic": "Amniotic Fluid Disorders",
+      "subject": "Oligohydramnios",
+      "title": "Associations of Oligohydramnios",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Oligohydramnios is associated with the following :-",
+      "originalOptions": {
+        "A": "Renal agenesis.",
+        "B": "Tulips.",
+        "C": "Intrauterine growth restriction.",
+        "D": "Anencephaly.",
+        "E": "Premature rupture of the fetal membranes"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The source item does not permit a unique single medically defensible answer.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A",
+          "C",
+          "E"
+        ],
+        "text": "A, C and E."
+      },
+      "explanation": "A, C and E is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. A, C and E is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Correct. A, C and E is the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Correct. A, C and E is the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Amniotic Fluid Disorders",
+        "Oligohydramnios"
+      ],
+      "sourcePage": 4,
+      "sourceQuestionNumber": "15"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-016",
+      "questionNumber": 16,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Pregnancy Physiology",
+      "topic": "Cardiovascular Changes",
+      "subject": "Blood Pressure in Pregnancy",
+      "title": "Physiologic Blood Pressure Change in Pregnancy",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "of the following is true:-",
+      "originalOptions": {
+        "A": "Blood pressure falls in the second trimester.",
+        "B": "Plasma volume decreases throughout gestation.",
+        "C": "There is a 50 per cent reduction in erythrocyte production.",
+        "D": "80 per cent of women have a transient diastolic murmur. واحده على ليتم وصولك إلى كل النماذج السابقة 2024",
+        "E": "There is an increase in lymphocytes."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Blood pressure falls in the second trimester."
+      },
+      "explanation": "Blood pressure falls in the second trimester is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Blood pressure falls in the second trimester is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Cardiovascular Changes",
+        "Blood Pressure in Pregnancy"
+      ],
+      "sourcePage": 4,
+      "sourceQuestionNumber": "16"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-017",
+      "questionNumber": 17,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "Osteomyelitis",
+      "subject": "Diagnosis of Pediatric Osteomyelitis",
+      "title": "Radiographic Timing in Pediatric Osteomyelitis",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "About osteomyelitis in children:",
+      "originalOptions": {
+        "A": "Children with only bear problem Is non consistent with osteomyelitis.",
+        "B": "Most common cause in children is hemophilus influenza.",
+        "C": "Radiographic result need over one week.",
+        "D": "Inflammatory markers routinely normal."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Radiographic result need over one week."
+      },
+      "explanation": "Radiographic result need over one week is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Correct. Radiographic result need over one week is the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Osteomyelitis",
+        "Diagnosis of Pediatric Osteomyelitis"
+      ],
+      "sourcePage": 5,
+      "sourceQuestionNumber": "17"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-018",
+      "questionNumber": 18,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Epidemiology",
+      "topic": "Mortality",
+      "subject": "Case Fatality of Infectious Diseases",
+      "title": "Disease with Highest Case Fatality",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "Which of the following disease has highest fatality rate:",
+      "originalOptions": {
+        "A": "TB.",
+        "B": "Diphtheria.",
+        "C": "Measles.",
+        "D": ".........."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Diphtheria."
+      },
+      "explanation": "Diphtheria is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Diphtheria is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Mortality",
+        "Case Fatality of Infectious Diseases"
+      ],
+      "sourcePage": 5,
+      "sourceQuestionNumber": "18"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-019",
+      "questionNumber": 19,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Epidemiology",
+      "topic": "Mortality Measures",
+      "subject": "Case Fatality Rate",
+      "title": "Measure of Killing Power of Disease",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "Killing power of a disease is best expressed by:",
+      "originalOptions": {
+        "A": "Attack Rate.",
+        "B": "Secondary Attack rate.",
+        "C": "Case fatality rate.",
+        "D": "Survival index. e. Proportionate mortality rate."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Case fatality rate."
+      },
+      "explanation": "Case fatality rate is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Correct. Case fatality rate is the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Mortality Measures",
+        "Case Fatality Rate"
+      ],
+      "sourcePage": 5,
+      "sourceQuestionNumber": "19"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-020",
+      "questionNumber": 20,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Cardiology",
+      "topic": "Cardiac Auscultation",
+      "subject": "Loud Second Heart Sound",
+      "title": "Cause of Loud Second Heart Sound",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "A 56 year old man presents with a history of headache. He is noted to have a loud second heart sound on auscultation. Which of the following pathologies could explain this finding :",
+      "originalOptions": {
+        "A": "Aortic incompetence.",
+        "B": "Essential hypertension.",
+        "C": "Mechanical mitral valve replacement.",
+        "D": "Mitral incompetence.",
+        "E": "Postural hypotension."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Essential hypertension."
+      },
+      "explanation": "Essential hypertension is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Essential hypertension is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Cardiac Auscultation",
+        "Loud Second Heart Sound"
+      ],
+      "sourcePage": 5,
+      "sourceQuestionNumber": "20"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-021",
+      "questionNumber": 21,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Neurology",
+      "topic": "Headache",
+      "subject": "Secondary Headache Red Flags",
+      "title": "Feature Suggesting Secondary Headache",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "25 year old woman presents to the emergency department with a واحده على ليتم وصولك إلى كل النماذج السابقة 2024 rapidly evolving severe headache. She has a family history of cerebral neoplasm and is worried that this is the cause of her headaches. Which of these accompanying features would suggest a diagnosis other than migraine:",
+      "originalOptions": {
+        "A": "Asymmetrical reflexes.",
+        "B": "Exacerbation by exercise.",
+        "C": "Photophobia.",
+        "D": "Unilateral site.",
+        "E": "Vomiting."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Asymmetrical reflexes."
+      },
+      "explanation": "Asymmetrical reflexes is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Asymmetrical reflexes is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Headache",
+        "Secondary Headache Red Flags"
+      ],
+      "sourcePage": 6,
+      "sourceQuestionNumber": "21"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-022",
+      "questionNumber": 22,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Psychiatry",
+      "subSpecialty": "Cognitive Disorders",
+      "topic": "Delirium",
+      "subject": "Delirium versus Dementia",
+      "title": "Feature Distinguishing Delirium from Dementia",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": false,
+      "originalQuestion": "Which one of these features is associated with delirium but not dementia:",
+      "originalOptions": {
+        "A": "Anxiety.",
+        "B": "Cognitive impairment.",
+        "C": "Disorientation.",
+        "D": "Reversibility.",
+        "E": "Visual hallucinatio"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Reversibility."
+      },
+      "explanation": "Reversibility is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Correct. Reversibility is the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Delirium",
+        "Delirium versus Dementia"
+      ],
+      "sourcePage": 6,
+      "sourceQuestionNumber": "22"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-023",
+      "questionNumber": 23,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Allergy & Immunology",
+      "topic": "Autoimmunity",
+      "subject": "General Features of Autoimmune Disease",
+      "title": "General Description of Autoimmune Disease",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": false,
+      "originalQuestion": "Which of these statements most accurately describes autoimmune disease :",
+      "originalOptions": {
+        "A": "It can affect multiple organ systems.",
+        "B": "It is not influenced by environmental factors. c. It is typically life- threatening.",
+        "D": "It is typically monogenic.",
+        "E": "It requires immunosuppressive therapy."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — It can affect multiple organ systems."
+      },
+      "explanation": "It can affect multiple organ systems is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. It can affect multiple organ systems is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Autoimmunity",
+        "General Features of Autoimmune Disease"
+      ],
+      "sourcePage": 6,
+      "sourceQuestionNumber": "23"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-024",
+      "questionNumber": 24,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pharmacology",
+      "subSpecialty": "Endocrine Pharmacology",
+      "topic": "Incretins",
+      "subject": "GLP-1 and Insulin Secretion",
+      "title": "Hormonal Augmentation of Glucose-Stimulated Insulin Secretion",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pharmacology",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "Glucose-stimulated insulin secretion by the pancreas is augmented by which of the following :",
+      "originalOptions": {
+        "A": "Dipeptidyl peptidase-4.",
+        "B": "Glucagon-like peptide-1.",
+        "C": "Insulin-like growth factor-1. واحده على ليتم وصولك إلى كل النماذج السابقة 2024",
+        "D": "Leptin.",
+        "E": "Somatostatin."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Glucagon-like peptide-1."
+      },
+      "explanation": "Glucagon-like peptide-1 is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Glucagon-like peptide-1 is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Incretins",
+        "GLP-1 and Insulin Secretion"
+      ],
+      "sourcePage": 6,
+      "sourceQuestionNumber": "24"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-025",
+      "questionNumber": 25,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "Varicella",
+      "subject": "Varicella Pneumonia",
+      "title": "Antiviral Treatment of Severe Varicella Pneumonia",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pharmacology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "A 33 year old man develops chicken pox with pulmonary involvement. He is previously fit and well and has had no prior therapy for viral infections. He is hypoxic and has tachypnea. His chest X-ray reveals widespread nodules. In addition to oxygen, which antiviral agent should he receive:",
+      "originalOptions": {
+        "A": "Acyclovir.",
+        "B": "Amantadine.",
+        "C": "Cidofovir.",
+        "D": "Foscarnet.",
+        "E": "Valaciclovir."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Acyclovir."
+      },
+      "explanation": "Acyclovir is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Acyclovir is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Varicella",
+        "Varicella Pneumonia"
+      ],
+      "sourcePage": 7,
+      "sourceQuestionNumber": "25"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-026",
+      "questionNumber": 26,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Public Health",
+      "topic": "Primary Health Care",
+      "subject": "Community Participation",
+      "title": "Health-Care Level Supporting Community Participation",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": false,
+      "originalQuestion": "Ensure maximum community participation, which level of health care system should be strengthened:",
+      "originalOptions": {
+        "A": "Primary health care.",
+        "B": "Secondary health care.",
+        "C": "Tertiary health care.",
+        "D": "1 st level referral facility.",
+        "E": "Higher level referral facility."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Primary health care."
+      },
+      "explanation": "Primary health care is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Primary health care is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Primary Health Care",
+        "Community Participation"
+      ],
+      "sourcePage": 7,
+      "sourceQuestionNumber": "26"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-027",
+      "questionNumber": 27,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Hematology & Oncology",
+      "topic": "Chronic Myeloid Leukemia",
+      "subject": "Philadelphia Chromosome",
+      "title": "Philadelphia Chromosome in CML",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "A 56 year old man presents to hospital with abdominal discomfort and is found to have splenomegaly and an abnormal full blood count. In CML, which of the following statements is correct :",
+      "originalOptions": {
+        "A": "Allogeneic stem cell transplantation remains the first-choice therapy in chronic phase.",
+        "B": "At presentation a majority of white cells are blast cells.",
+        "C": "The disease arises from a mutated stem cell containing the t(15;17) translocation. واحده على ليتم وصولك إلى كل النماذج السابقة 2024",
+        "D": "The Philadelphia (Ph) chromosome is a small chromosome 22 resulting from the translocation t(9;22).",
+        "E": "The platelet count is usually reduced."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — The Philadelphia (Ph) chromosome is a small chromosome 22 resulting from the translocation t(9;22)."
+      },
+      "explanation": "The Philadelphia (Ph) chromosome is a small chromosome 22 resulting from the translocation t(9;22) is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Correct. The Philadelphia (Ph) chromosome is a small chromosome 22 resulting from the translocation t(9;22) is the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Chronic Myeloid Leukemia",
+        "Philadelphia Chromosome"
+      ],
+      "sourcePage": 7,
+      "sourceQuestionNumber": "27"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-028",
+      "questionNumber": 28,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Biostatistics",
+      "topic": "Descriptive Statistics",
+      "subject": "Median",
+      "title": "Calculation of Median",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Calculation",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "The median of following data is ; 1,2,4,6,8,10,11,13:",
+      "originalOptions": {
+        "A": "6",
+        "B": "8",
+        "C": "7",
+        "D": "10"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 7."
+      },
+      "explanation": "7 is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Correct. 7 is the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Descriptive Statistics",
+        "Median"
+      ],
+      "sourcePage": 8,
+      "sourceQuestionNumber": "28"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-029",
+      "questionNumber": 29,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Emergency Medicine",
+      "subSpecialty": "Emergency Medicine",
+      "topic": "Glasgow Coma Scale",
+      "subject": "GCS Calculation",
+      "title": "Glasgow Coma Scale Calculation",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Calculation",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "fall down , opens eyes to painful stimulus , withdraw to pain , uses incomprehensible sound , what is his GCS score:",
+      "originalOptions": {
+        "A": "8b",
+        "B": "9",
+        "C": "10",
+        "D": "11"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "Minor notation/typographical issue in the source.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 8."
+      },
+      "explanation": "8 is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. 8 is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Glasgow Coma Scale",
+        "GCS Calculation"
+      ],
+      "sourcePage": 8,
+      "sourceQuestionNumber": "29"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-030",
+      "questionNumber": 30,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Biostatistics",
+      "topic": "Data Presentation",
+      "subject": "Histogram",
+      "title": "Graph for Continuous Height Data",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": false,
+      "originalQuestion": "Study was conducted to assess the height of students of 4 th year in 10 Medical colleges. The values of heights ranged between 5.5 – 5.10 feet. Which graph should be used by the researcher to present the obtained data:",
+      "originalOptions": {
+        "A": "Bar chart.",
+        "B": "Histogram.",
+        "C": "Pie chart.",
+        "D": "Scatter diagram.",
+        "E": "Line graph."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Histogram."
+      },
+      "explanation": "Histogram is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Histogram is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Data Presentation",
+        "Histogram"
+      ],
+      "sourcePage": 8,
+      "sourceQuestionNumber": "30"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-031",
+      "questionNumber": 31,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Family Planning",
+      "topic": "Combined Hormonal Contraception",
+      "subject": "Benefits and Risks",
+      "title": "Combined Contraceptive Statements",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pharmacology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Regarding combined contraceptive all true EXCEPT:",
+      "originalOptions": {
+        "A": "Decrease breast cancer واحده على ليتم وصولك إلى كل النماذج السابقة 2024",
+        "B": "Improves cycle control.",
+        "C": "contraindicated in patients with acute/severe liver disease.",
+        "D": "increase risk of venous thromboembolism ."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "The source item/answer requires correction or the source wording is medically unsafe.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Decrease breast cancer."
+      },
+      "explanation": "Decrease breast cancer is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Decrease breast cancer is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Combined Hormonal Contraception",
+        "Benefits and Risks"
+      ],
+      "sourcePage": 8,
+      "sourceQuestionNumber": "31"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-032",
+      "questionNumber": 32,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Hypertensive Disorders of Pregnancy",
+      "topic": "Preeclampsia",
+      "subject": "Risk Factors",
+      "title": "Risk Factor for Preeclampsia",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "Accurate statement about development of preeclampsia:",
+      "originalOptions": {
+        "A": "Previous smoking increase risk.",
+        "B": "Occur in mother with first pregnancy.",
+        "C": "........",
+        "D": "......."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Occur in mother with first pregnancy."
+      },
+      "explanation": "Occur in mother with first pregnancy is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Occur in mother with first pregnancy is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Preeclampsia",
+        "Risk Factors"
+      ],
+      "sourcePage": 9,
+      "sourceQuestionNumber": "32"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-033",
+      "questionNumber": 33,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Rheumatology",
+      "topic": "Osteoporosis",
+      "subject": "Bisphosphonates",
+      "title": "Most Common Bisphosphonate Adverse Effect",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pharmacology",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "Which of the following is most common side effects of bisphosphonate :",
+      "originalOptions": {
+        "A": "Upper GIT upset.",
+        "B": "........",
+        "C": "........",
+        "D": "......."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Upper GIT upset."
+      },
+      "explanation": "Upper GIT upset is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Upper GIT upset is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Osteoporosis",
+        "Bisphosphonates"
+      ],
+      "sourcePage": 9,
+      "sourceQuestionNumber": "33"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-034",
+      "questionNumber": 34,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Ophthalmology",
+      "subSpecialty": "Nutrition",
+      "topic": "Vitamin A Deficiency",
+      "subject": "Night Blindness",
+      "title": "Nutrition for Night Blindness",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": false,
+      "originalQuestion": "Which of the following benefits for night blindness:",
+      "originalOptions": {
+        "A": "Cod liver oil.",
+        "B": "........",
+        "C": "........",
+        "D": "........"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Acceptable",
+      "correction": "The source item is broadly acceptable but has wording or completeness limitations.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Cod liver oil."
+      },
+      "explanation": "Cod liver oil is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Cod liver oil is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Vitamin A Deficiency",
+        "Night Blindness"
+      ],
+      "sourcePage": 9,
+      "sourceQuestionNumber": "34"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-035",
+      "questionNumber": 35,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Rheumatology",
+      "subSpecialty": "Rheumatology",
+      "topic": "Rheumatoid Arthritis",
+      "subject": "Pregnancy and DMARDs",
+      "title": "Methotrexate in Pregnancy",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pharmacology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "25 year old woman with a 5-year history of rheumatoid arthritis is planning her first pregnancy. Which of the following drugs should be avoided in pregnancy :",
+      "originalOptions": {
+        "A": "Azathioprine.",
+        "B": "Hydroxychloroquine.",
+        "C": "Methotrexate.",
+        "D": "Prednisolone.",
+        "E": "Sulfasalazine. واحده على ليتم وصولك إلى كل النماذج السابقة 2024"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Methotrexate."
+      },
+      "explanation": "Methotrexate is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Correct. Methotrexate is the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Rheumatoid Arthritis",
+        "Pregnancy and DMARDs"
+      ],
+      "sourcePage": 9,
+      "sourceQuestionNumber": "35"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-036",
+      "questionNumber": 36,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Pregnancy Care",
+      "topic": "Folic Acid",
+      "subject": "Neural Tube Defects",
+      "title": "Folic Acid in Pregnancy",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "Folic acid given in pregnancy for which of the following system will protect:",
+      "originalOptions": {
+        "A": "Nervous system.",
+        "B": ".......",
+        "C": ".......",
+        "D": "........"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Nervous system."
+      },
+      "explanation": "Nervous system is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Nervous system is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Folic Acid",
+        "Neural Tube Defects"
+      ],
+      "sourcePage": 10,
+      "sourceQuestionNumber": "36"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-037",
+      "questionNumber": 37,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Pregnancy Physiology",
+      "topic": "Normal Pregnancy",
+      "subject": "Physical Signs",
+      "title": "Normal Physical Sign in Pregnancy",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "40 year old woman is examined at 32 weeks’ gestation in the antenatal clinic. She has upper abdominal pain and pruritus. Which of the following physical signs can be part of normal pregnancy :",
+      "originalOptions": {
+        "A": "Ascites.",
+        "B": "Palmar pigmentation.",
+        "C": "Spider naevi.",
+        "D": "Upper abdominal tenderness. e. Yellow sclerae."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Spider naevi."
+      },
+      "explanation": "Spider naevi is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Correct. Spider naevi is the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Normal Pregnancy",
+        "Physical Signs"
+      ],
+      "sourcePage": 10,
+      "sourceQuestionNumber": "37"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-038",
+      "questionNumber": 38,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Oncology",
+      "topic": "Cancer Risk Factors",
+      "subject": "Smoking",
+      "title": "Smoking and Esophageal Cancer",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": false,
+      "originalQuestion": "Smoking is risk factor for which of the following tumor :",
+      "originalOptions": {
+        "A": "Esophageal tumor.",
+        "B": "Hepatic.",
+        "C": "Ovary.",
+        "D": "........."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Esophageal tumor."
+      },
+      "explanation": "Esophageal tumor is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Esophageal tumor is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Cancer Risk Factors",
+        "Smoking"
+      ],
+      "sourcePage": 10,
+      "sourceQuestionNumber": "38"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-039",
+      "questionNumber": 39,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Gastroenterology",
+      "topic": "Giardiasis",
+      "subject": "Persistent Giardiasis",
+      "title": "Feature Not Consistent with Persistent Giardiasis",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "Which of the following is not consistent with persistent giardiasis:",
+      "originalOptions": {
+        "A": "Acute diarrhea.",
+        "B": "Malabsorption.",
+        "C": "Failure to thrive.",
+        "D": "Watery diarrhea.",
+        "E": "Chronic crimpy abdominal pain."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Acute diarrhea."
+      },
+      "explanation": "Acute diarrhea is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Acute diarrhea is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Giardiasis",
+        "Persistent Giardiasis"
+      ],
+      "sourcePage": 10,
+      "sourceQuestionNumber": "39"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-040",
+      "questionNumber": 40,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Epidemiology",
+      "topic": "Cholera",
+      "subject": "Transmission",
+      "title": "Cholera Transmission",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "All of the following is true regarding cholera transmission EXCEPT :",
+      "originalOptions": {
+        "A": "Infected fly's.",
+        "B": "Direct contact.",
+        "C": "Bottle feeding.",
+        "D": "Poor sanitation."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The source item does not permit a unique single medically defensible answer.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Direct contact."
+      },
+      "explanation": "Direct contact is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Direct contact is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Cholera",
+        "Transmission"
+      ],
+      "sourcePage": 10,
+      "sourceQuestionNumber": "40"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-041",
+      "questionNumber": 41,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Surgery",
+      "subSpecialty": "Urology",
+      "topic": "Scrotal Mass",
+      "subject": "Hydrocele",
+      "title": "Diagnosis of Scrotal Swelling",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "22 years old male patient complain from swilling in left testis , can't be separated from the testis , the ma's is firm , with bright trans illumination , which of the following is true :",
+      "originalOptions": {
+        "A": "Testicular tumor.",
+        "B": "Hydrocele.",
+        "C": "Varicocele.",
+        "D": "..............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The source item does not permit a unique single medically defensible answer.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Hydrocele."
+      },
+      "explanation": "Hydrocele is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Hydrocele is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Scrotal Mass",
+        "Hydrocele"
+      ],
+      "sourcePage": 11,
+      "sourceQuestionNumber": "41"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-042",
+      "questionNumber": 42,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Surgery",
+      "subSpecialty": "General Surgery",
+      "topic": "Inguinal Canal",
+      "subject": "Anatomy",
+      "title": "Roof of the Inguinal Canal",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "Which of the following is represent roof of indirect inguinal hernia:",
+      "originalOptions": {
+        "A": "Internal oblique and transverses abdomens.",
+        "B": ".......",
+        "C": "........",
+        "D": "......."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Internal oblique and transversus abdominis."
+      },
+      "explanation": "Internal oblique and transversus abdominis is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Internal oblique and transversus abdominis is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Inguinal Canal",
+        "Anatomy"
+      ],
+      "sourcePage": 11,
+      "sourceQuestionNumber": "42"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-043",
+      "questionNumber": 43,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Pediatric Gastroenterology",
+      "topic": "Lower GI Bleeding",
+      "subject": "Meckel Diverticulum",
+      "title": "Cause of Painless Rectal Bleeding in a Child",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "2 years old male patient complain from black red stool and patient appear pale , without vomiting , and abdominal examination is unremarkable :",
+      "originalOptions": {
+        "A": "Meckel's diverticulum.",
+        "B": "Intuscusption.",
+        "C": "........",
+        "D": "........"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Meckel's diverticulum."
+      },
+      "explanation": "Meckel's diverticulum is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. Meckel's diverticulum is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Lower GI Bleeding",
+        "Meckel Diverticulum"
+      ],
+      "sourcePage": 11,
+      "sourceQuestionNumber": "43"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-044",
+      "questionNumber": 44,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Surgery",
+      "subSpecialty": "Endocrine Surgery",
+      "topic": "Graves Disease",
+      "subject": "Thyroidectomy",
+      "title": "Indications for Thyroid Surgery in Graves Disease",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "All of the following is considered true regarding surgery of thyroid gland EXCEPT:",
+      "originalOptions": {
+        "A": "Severe symptoms of graves disease not respond to medical therapy.",
+        "B": "Pregnant woman on medical therapy with control.",
+        "C": ".......",
+        "D": "....... واحده على ليتم وصولك إلى كل النماذج السابقة 2024"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Pregnant woman on medical therapy with control."
+      },
+      "explanation": "Pregnant woman on medical therapy with control is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Correct. Pregnant woman on medical therapy with control is the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Graves Disease",
+        "Thyroidectomy"
+      ],
+      "sourcePage": 11,
+      "sourceQuestionNumber": "44"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-045",
+      "questionNumber": 45,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Psychiatry",
+      "subSpecialty": "Substance Use",
+      "topic": "Khat",
+      "subject": "Effects of Khat",
+      "title": "Positive and Negative Findings of Khat Use",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pharmacology",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "All of the following is positive finding of qat EXCEPT:",
+      "originalOptions": {
+        "A": "Slightly depressed mood.",
+        "B": "Mild Stimulant. c. No addiction.",
+        "D": "Part of cultural…… .",
+        "E": "Harmless past time."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "The source item/answer requires correction or the source wording is medically unsafe.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "E"
+        ],
+        "text": "E — Harmless past time."
+      },
+      "explanation": "Harmless past time is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written.",
+        "E": "Correct. Harmless past time is the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Khat",
+        "Effects of Khat"
+      ],
+      "sourcePage": 12,
+      "sourceQuestionNumber": "45"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-046",
+      "questionNumber": 46,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Breastfeeding",
+      "topic": "Lactation",
+      "subject": "Contraindications",
+      "title": "Contraindication to Breastfeeding",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "Which of the following is absolute contraindication of breastfeeding:",
+      "originalOptions": {
+        "A": "Active pulmonary tuberculosis.",
+        "B": ".........",
+        "C": ".........",
+        "D": "..........."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The source item does not permit a unique single medically defensible answer.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "No single absolute contraindication can be established from the visible options."
+      },
+      "explanation": "No single absolute contraindication can be established from the visible options is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Lactation",
+        "Contraindications"
+      ],
+      "sourcePage": 12,
+      "sourceQuestionNumber": "46"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-047",
+      "questionNumber": 47,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Pharmacology",
+      "subSpecialty": "Prescribing",
+      "topic": "Prescription Writing",
+      "subject": "Medication Units",
+      "title": "Appropriate Prescribing Notation",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pharmacology",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "Dose violate is appropriate in prescribing practice :",
+      "originalOptions": {
+        "A": "1.4 g sachet.",
+        "B": "20 ml.",
+        "C": "100 u.",
+        "D": "......."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "The source item is incomplete or lacks enough information for reliable verification.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete and unclear wording/options."
+      },
+      "explanation": "Cannot be determined from the incomplete and unclear wording/options is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Incorrect. This is not the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Prescription Writing",
+        "Medication Units"
+      ],
+      "sourcePage": 12,
+      "sourceQuestionNumber": "47"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-048",
+      "questionNumber": 48,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Microbiology",
+      "subSpecialty": "Bacteriology",
+      "topic": "Anaerobic Bacteria",
+      "subject": "Bacteroides",
+      "title": "Bacteroides Oxygen Requirement",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "All of the following is true EXCEPT :",
+      "originalOptions": {
+        "A": "Bacteriode is aerobic bacteria.",
+        "B": "Staph epidermis may cause hospital acquired infection.",
+        "C": "......",
+        "D": "......"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "The source item/answer requires correction or the source wording is medically unsafe.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 'Bacteriode is aerobic bacteria.'"
+      },
+      "explanation": "'Bacteriode is aerobic bacteria.' is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "A": "Correct. 'Bacteriode is aerobic bacteria.' is the best-supported answer for the question as written.",
+        "B": "Incorrect. This is not the best-supported answer for the question as written.",
+        "C": "Incorrect. This is not the best-supported answer for the question as written.",
+        "D": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Anaerobic Bacteria",
+        "Bacteroides"
+      ],
+      "sourcePage": 12,
+      "sourceQuestionNumber": "48"
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-IBB-049",
+      "questionNumber": 49,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure Examination",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "February",
+      "exactDate": "2024-02-29",
+      "majorSection": "Microbiology",
+      "subSpecialty": "Sterilization",
+      "topic": "Sterilization",
+      "subject": "Bacterial Spores",
+      "title": "Temperature for Spore Destruction",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": true,
+      "originalQuestion": "The amount of temperature sufficient to kill spore,,,:",
+      "originalOptions": {
+        "unlabeled_1": "120-140",
+        "unlabeled_2": "160-180",
+        "unlabeled_3": "180-200",
+        "unlabeled_4": "200-220"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "The source item is incomplete or lacks enough information for reliable verification.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "No exact option can be validated because the source provides unlabeled temperature ranges without time or sterilization method."
+      },
+      "explanation": "No exact option can be validated because the source provides unlabeled temperature ranges without time or sterilization method is the best-supported answer for the question as written.",
+      "optionExplanations": {
+        "unlabeled_1": "Incorrect. This is not the best-supported answer for the question as written.",
+        "unlabeled_2": "Incorrect. This is not the best-supported answer for the question as written.",
+        "unlabeled_3": "Incorrect. This is not the best-supported answer for the question as written.",
+        "unlabeled_4": "Incorrect. This is not the best-supported answer for the question as written."
+      },
+      "tags": [
+        "Sterilization",
+        "Bacterial Spores"
+      ],
+      "sourcePage": 12,
+      "sourceQuestionNumber": "49"
+    }
+  ]
+}

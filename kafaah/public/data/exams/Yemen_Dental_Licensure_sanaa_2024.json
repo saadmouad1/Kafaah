@@ -1,0 +1,2580 @@
+{
+  "examMetadata": {
+    "databaseType": "licensure",
+    "questionBank": "Yemen Medical Licensure",
+    "examType": "Professional Licensure",
+    "medicalProfession": "Dentistry",
+    "specialty": "Dentistry",
+    "qualification": "Not provided in source.",
+    "country": "Yemen",
+    "city": "Sana'a",
+    "governorate": "Sana'a",
+    "region": "Not provided in source.",
+    "year": 2024,
+    "month": "October",
+    "exactDate": "2024-10-24",
+    "language": "English",
+    "source": "Yemen Medical Licensure Examination — Dental model",
+    "sourceFile": "آخرنماذج_مزاولة_المهنة_بك_اسنان_صنعاء_24_10_2024.pdf",
+    "examTitle": "إختبار مزاولة المهنة بك اسنان صنعاء 24/10/2024",
+    "examProvider": "Not provided in source.",
+    "institution": "Not provided in source.",
+    "department": "Dentistry",
+    "subject": "Dentistry",
+    "section": "Dentistry",
+    "numberOfQuestions": 40,
+    "timeLimit": "Not provided in source."
+  },
+  "questions": [
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-001",
+      "questionNumber": 1,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Dental Materials",
+      "topic": "Optical Properties",
+      "subject": "Metamerism",
+      "title": "Color Matching Under Different Light Sources",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "1-When the color is matched under one light source but it is unmatched under a different light source, this is called:-",
+      "originalOptions": {
+        "A": "1-Fluorescence",
+        "B": "2-Radioopacity",
+        "C": "3-Transluscency",
+        "D": "4-metamerism ✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-metamerism ✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-metamerism ✔"
+      },
+      "explanation": "Metamerism is the phenomenon in which two colors match under one illuminant but appear different under another.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Correct: Metamerism is the phenomenon in which two colors match under one illuminant but appear different under another."
+      },
+      "tags": [
+        "Dental Materials",
+        "Optical Properties",
+        "Metamerism",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 1,
+      "sourceQuestionNumber": 1
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-002",
+      "questionNumber": 2,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Prefabricated Crowns",
+      "subject": "Celluloid Crowns",
+      "title": "Anterior Prefabricated Crown",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "2-Prefabricated crowns mainly used for anterior teeth and they are supplied in different size and shape:-",
+      "originalOptions": {
+        "A": "1-Polycarbonate crowns",
+        "B": "2-Celluloid crowns✔",
+        "C": "3-Nickel-chromium"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 2-Celluloid crowns✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 2-Celluloid crowns✔"
+      },
+      "explanation": "Celluloid crowns are prefabricated anterior crowns available in different sizes and shapes.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Correct: Celluloid crowns are prefabricated anterior crowns available in different sizes and shapes.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Prosthodontics",
+        "Prefabricated Crowns",
+        "Celluloid Crowns",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 1,
+      "sourceQuestionNumber": 2
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-003",
+      "questionNumber": 3,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Complete Denture Border Molding",
+      "subject": "Masseteric Notch",
+      "title": "Distobuccal Border Molding",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "3-When designing a lower complete denture, what should we take into consideration while performing the border molding in the distobuccal region:-",
+      "originalOptions": {
+        "A": "1-The masseter muscle attachment✔",
+        "B": "2-The height of the buccal frenum",
+        "C": "3-the attachment of leteral pytergiod",
+        "D": "4-The ramus of the mandible"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-The masseter muscle attachment✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-The masseter muscle attachment✔"
+      },
+      "explanation": "The masseter muscle influences the distobuccal extension of a mandibular complete-denture border during functional molding.",
+      "optionExplanations": {
+        "A": "Correct: The masseter muscle influences the distobuccal extension of a mandibular complete-denture border during functional molding.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Prosthodontics",
+        "Complete Denture Border Molding",
+        "Masseteric Notch",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 1,
+      "sourceQuestionNumber": 3
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-004",
+      "questionNumber": 4,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Fixed and Removable Prosthodontics",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "4-The overdenture has several advantages over the complete denture( all are true except):-",
+      "originalOptions": {
+        "A": "1-It give a better sensory feedback",
+        "B": "2-Less bone resorption",
+        "C": "3-increase biting forces",
+        "D": "4-more esthetic ✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-more esthetic ✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-more esthetic ✔"
+      },
+      "explanation": "Overdentures can improve sensory feedback, reduce bone resorption, and improve function, but increased esthetics is not a universal advantage over complete dentures.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Correct: Overdentures can improve sensory feedback, reduce bone resorption, and improve function, but increased esthetics is not a universal advantage over complete dentures."
+      },
+      "tags": [
+        "Prosthodontics",
+        "Fixed and Removable Prosthodontics",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": 4
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-005",
+      "questionNumber": 5,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "5-The quality of a restoration being firm, stady, and does not change in position under occlusal forces:-",
+      "originalOptions": {
+        "A": "1-Retention",
+        "B": "2-stability✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 2-stability✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 2-stability✔"
+      },
+      "explanation": "Stability describes resistance to horizontal or rotational displacement under functional forces; retention primarily resists dislodgement along the path of insertion.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Correct: Stability describes resistance to horizontal or rotational displacement under functional forces; retention primarily resists dislodgement along the path of insertion."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": 5
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-006",
+      "questionNumber": 6,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Dental Materials",
+      "topic": "Dental Materials and Instruments",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Materials",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "6-About laser in dentistry",
+      "originalOptions": {
+        "A": "1-efficient productivity",
+        "B": "2-patient comfort",
+        "C": "3-easy to work",
+        "D": "4-all✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-all✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-all✔"
+      },
+      "explanation": "Dental lasers may improve efficiency and patient comfort in selected procedures, and the intended inclusive answer is “all.”",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Correct: Dental lasers may improve efficiency and patient comfort in selected procedures, and the intended inclusive answer is “all.”"
+      },
+      "tags": [
+        "Dental Materials",
+        "Dental Materials and Instruments",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": 6
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-007",
+      "questionNumber": 7,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Operative Dentistry",
+      "topic": "Restorative Dentistry",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "7-Which is ture about etching:-",
+      "originalOptions": {
+        "A": "1-It decreases the surface area",
+        "B": "2-It increases the surface area✔",
+        "C": "3-It does not change the surface area",
+        "D": "4-it increases the chemical bonding of composite"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 2-It increases the surface area✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 2-It increases the surface area✔"
+      },
+      "explanation": "Acid etching increases enamel surface area and microporosity, improving micromechanical retention.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Correct: Acid etching increases enamel surface area and microporosity, improving micromechanical retention.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Operative Dentistry",
+        "Restorative Dentistry",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 2,
+      "sourceQuestionNumber": 7
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-008",
+      "questionNumber": 8,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "8-which technique of the impression that requires medium single viscosity with special tray",
+      "originalOptions": {
+        "A": "1-Double mix in one step",
+        "B": "3-Double mix in two step",
+        "C": "3-single mix impression technique✔",
+        "D": "4-No one"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-single mix impression technique✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-single mix impression technique✔"
+      },
+      "explanation": "The intended impression technique in the source is the single-mix technique using a medium-viscosity material with a special tray.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: The intended impression technique in the source is the single-mix technique using a medium-viscosity material with a special tray.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 3,
+      "sourceQuestionNumber": 8
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-009",
+      "questionNumber": 9,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Periodontology",
+      "topic": "Periodontal Health and Therapy",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Management",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "9-Which of the following is in the basic periodontal treatment in the general dental practice(all except one):-",
+      "originalOptions": {
+        "A": "1-using anti-smoker device",
+        "B": "2-removal of the plaque from the tooth surface",
+        "C": "3-Changing the plaque-retentive surfaces",
+        "D": "4-surgical periodontal treatment✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-surgical periodontal treatment✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-surgical periodontal treatment✔"
+      },
+      "explanation": "Basic periodontal therapy includes plaque control and correction of plaque-retentive factors; surgical periodontal therapy is not basic non-surgical care.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Correct: Basic periodontal therapy includes plaque control and correction of plaque-retentive factors; surgical periodontal therapy is not basic non-surgical care."
+      },
+      "tags": [
+        "Periodontology",
+        "Periodontal Health and Therapy",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 3,
+      "sourceQuestionNumber": 9
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-010",
+      "questionNumber": 10,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Oral Radiology",
+      "topic": "Dental Radiology",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Investigation",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "10-The device that is used in the capturing of digital radiograph is called:-",
+      "originalOptions": {
+        "A": "1-Convential film with digital radiograph",
+        "B": "2-MRI sensor",
+        "C": "3-Electronic sensor✔",
+        "D": "4-No one"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-Electronic sensor✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-Electronic sensor✔"
+      },
+      "explanation": "Digital intraoral radiography uses an electronic sensor rather than conventional film.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: Digital intraoral radiography uses an electronic sensor rather than conventional film.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Oral Radiology",
+        "Dental Radiology",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 3,
+      "sourceQuestionNumber": 10
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-011",
+      "questionNumber": 11,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "11-The burs used in preparation of a lower posterior teeth for full metal restoration (all except):-",
+      "originalOptions": {
+        "A": "1-should diamond✔",
+        "B": "2-Chamfer diamond",
+        "C": "3-Chamfer carbide",
+        "D": "4-short needle"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-should diamond✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-should diamond✔"
+      },
+      "explanation": "A shoulder diamond is not the typical bur for a lower posterior full-metal crown preparation; chamfer instruments are used for a chamfer finish line.",
+      "optionExplanations": {
+        "A": "Correct: A shoulder diamond is not the typical bur for a lower posterior full-metal crown preparation; chamfer instruments are used for a chamfer finish line.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 4,
+      "sourceQuestionNumber": 11
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-012",
+      "questionNumber": 12,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Fixed and Removable Prosthodontics",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "12-which of the following is true about porcelain fused to metal (all except one):-",
+      "originalOptions": {
+        "A": "1-Stronger than porcelain jacket crown",
+        "B": "2-It resists wear extremely well",
+        "C": "3-it can be used in anterior and posterior teeth",
+        "D": "4-excellent esthetics✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-excellent esthetics✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 4-excellent esthetics✔"
+      },
+      "explanation": "PFM restorations are strong and versatile and can be used anteriorly and posteriorly; excellent esthetics is less characteristic than with modern all-ceramic restorations.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Correct: PFM restorations are strong and versatile and can be used anteriorly and posteriorly; excellent esthetics is less characteristic than with modern all-ceramic restorations."
+      },
+      "tags": [
+        "Prosthodontics",
+        "Fixed and Removable Prosthodontics",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 4,
+      "sourceQuestionNumber": 12
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-013",
+      "questionNumber": 13,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Biologic Width",
+      "subject": "Dimensions of Biologic Width",
+      "title": "2.04 mm",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "13-The measurement of a biological width is:-",
+      "originalOptions": {
+        "A": "1-.97",
+        "B": "2-1.66",
+        "C": "3-2.04✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-2.04✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-2.04✔"
+      },
+      "explanation": "The classic combined biologic width is approximately 2.04 mm.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: The classic combined biologic width is approximately 2.04 mm."
+      },
+      "tags": [
+        "Prosthodontics",
+        "Biologic Width",
+        "Dimensions of Biologic Width",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 4,
+      "sourceQuestionNumber": 13
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-014",
+      "questionNumber": 14,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "14-where is the best position of the finishing margin:-",
+      "originalOptions": {
+        "A": "1-it should be used in a supragingival area about 0.5mm from the gingival margin whenever possible✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-it should be used in a supragingival area about 0.5mm from the gingival margin whenever possible✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-it should be used in a supragingival area about 0.5mm from the gingival margin whenever possible✔"
+      },
+      "explanation": "When possible, supragingival margins are preferred and may be placed about 0.5 mm coronal to the gingival margin.",
+      "optionExplanations": {
+        "A": "Correct: When possible, supragingival margins are preferred and may be placed about 0.5 mm coronal to the gingival margin."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 4,
+      "sourceQuestionNumber": 14
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-015",
+      "questionNumber": 15,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Periodontology",
+      "topic": "Periodontal Health and Therapy",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "15-which is true about the subgingival margin (all except one):-",
+      "originalOptions": {
+        "A": "1-when adequate retention is available✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-when adequate retention is available✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-when adequate retention is available✔"
+      },
+      "explanation": "A subgingival margin is not indicated merely because adequate retention already exists; it is reserved for specific clinical indications.",
+      "optionExplanations": {
+        "A": "Correct: A subgingival margin is not indicated merely because adequate retention already exists; it is reserved for specific clinical indications."
+      },
+      "tags": [
+        "Periodontology",
+        "Periodontal Health and Therapy",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 5,
+      "sourceQuestionNumber": 15
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-016",
+      "questionNumber": 16,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "16-Which of the following is inelastic impresion material:-",
+      "originalOptions": {
+        "A": "1-alginate",
+        "B": "2-addisional silicone",
+        "C": "3-ZOE✔",
+        "D": "4-polysulfide"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-ZOE✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-ZOE✔"
+      },
+      "explanation": "Zinc oxide-eugenol impression material is rigid/essentially inelastic after setting compared with elastomeric materials.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: Zinc oxide-eugenol impression material is rigid/essentially inelastic after setting compared with elastomeric materials.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 5,
+      "sourceQuestionNumber": 16
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-017",
+      "questionNumber": 17,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "17-an anterior tooth is extensively restored, which restoration is the proper type in this case:-",
+      "originalOptions": {
+        "A": "1-Laminate veneer",
+        "B": "2-Partial covarge crown",
+        "C": "3-full coverge crown✔"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-full coverge crown✔"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-full coverge crown✔"
+      },
+      "explanation": "An extensively restored anterior tooth generally requires a full-coverage restoration when clinically indicated.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: An extensively restored anterior tooth generally requires a full-coverage restoration when clinically indicated."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 5,
+      "sourceQuestionNumber": 17
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-023",
+      "questionNumber": 23,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Endodontics",
+      "topic": "Root Canal Treatment and Pulp Disease",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "23- Constructed on endodontically treated teeth to restore the coronal part of the anatomical crown & extending inside the root canal portion of the tooth:-",
+      "originalOptions": {
+        "A": "1-intaradicular restoration 👍",
+        "B": "2-extra-coronal restoration",
+        "C": "3-complete veneer crown",
+        "D": "4-laminate veneer"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-intaradicular restoration 👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-intaradicular restoration 👍"
+      },
+      "explanation": "An intraradicular restoration extends into the root canal and restores the coronal portion of an endodontically treated tooth.",
+      "optionExplanations": {
+        "A": "Correct: An intraradicular restoration extends into the root canal and restores the coronal portion of an endodontically treated tooth.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Endodontics",
+        "Root Canal Treatment and Pulp Disease",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 5,
+      "sourceQuestionNumber": 23
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-024",
+      "questionNumber": 24,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Endodontics",
+      "topic": "Pulpal Diagnosis",
+      "subject": "Irreversible Pulpitis",
+      "title": "Pain Characteristics",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "24- all are true about irreversible pulpitis , except :-",
+      "originalOptions": {
+        "A": "1-sever shooting pain",
+        "B": "2-spontaneous pain",
+        "C": "3-welll localized pain 👍",
+        "D": "4-pain on heat"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-welll localized pain 👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-welll localized pain 👍"
+      },
+      "explanation": "Irreversible pulpitis is classically associated with spontaneous, lingering, and often poorly localized pain; well-localized pain is the exception.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: Irreversible pulpitis is classically associated with spontaneous, lingering, and often poorly localized pain; well-localized pain is the exception.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Endodontics",
+        "Pulpal Diagnosis",
+        "Irreversible Pulpitis",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 6,
+      "sourceQuestionNumber": 24
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-025",
+      "questionNumber": 25,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Endodontics",
+      "topic": "Root Canal Treatment and Pulp Disease",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "25+26 - The most cause of canal perforation:",
+      "originalOptions": {
+        "A": "1-Creating ledge than continous until perforationand stripping👍",
+        "B": "2-long H file",
+        "C": "3-creating ledge than continous until perforation",
+        "D": "4-stripping"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-Creating ledge than continous until perforationand stripping👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-Creating ledge than continous until perforationand stripping👍"
+      },
+      "explanation": "The source marks the first option for the canal-perforation question; ledge formation followed by continued instrumentation and/or stripping can cause perforation.",
+      "optionExplanations": {
+        "A": "Correct: The source marks the first option for the canal-perforation question; ledge formation followed by continued instrumentation and/or stripping can cause perforation.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Endodontics",
+        "Root Canal Treatment and Pulp Disease",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 6,
+      "sourceQuestionNumber": 25
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-026-02",
+      "questionNumber": 26,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Endodontics",
+      "topic": "Root Canal Treatment and Pulp Disease",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "25+26 - The most cause of canal perforation:",
+      "originalOptions": {
+        "A": "1-Creating ledge than continous until perforationand stripping👍",
+        "B": "2-long H file",
+        "C": "3-creating ledge than continous until perforation",
+        "D": "4-stripping"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-Creating ledge than continous until perforationand stripping👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-Creating ledge than continous until perforationand stripping👍"
+      },
+      "explanation": "This is the same question repeated in the source; it is preserved as a separate occurrence.",
+      "optionExplanations": {
+        "A": "Correct: This is the same question repeated in the source; it is preserved as a separate occurrence.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Endodontics",
+        "Root Canal Treatment and Pulp Disease",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 6,
+      "sourceQuestionNumber": 26
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-027",
+      "questionNumber": 27,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Fixed and Removable Prosthodontics",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "27 - powder in mix of acrylic resin is as :-",
+      "originalOptions": {
+        "A": "1-polymer 👍",
+        "B": "2-monomer",
+        "C": "3-all",
+        "D": "4-water"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-polymer 👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-polymer 👍"
+      },
+      "explanation": "The powder component of conventional acrylic resin is the polymer; the liquid component is primarily monomer.",
+      "optionExplanations": {
+        "A": "Correct: The powder component of conventional acrylic resin is the polymer; the liquid component is primarily monomer.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Prosthodontics",
+        "Fixed and Removable Prosthodontics",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 6,
+      "sourceQuestionNumber": 27
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-028",
+      "questionNumber": 28,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "28- which of the following statement is true :-",
+      "originalOptions": {
+        "A": "1-attrition caused by non bacterial chemical cause",
+        "B": "2-abrasion caused by the surface of teeth",
+        "C": "3-abrasion caused by surface other than of teeth 👍",
+        "D": "3-erosion caused by other surface of teeth"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-abrasion caused by surface other than of teeth 👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 3-abrasion caused by surface other than of teeth 👍"
+      },
+      "explanation": "Abrasion is tooth wear caused by an external mechanical agent other than tooth-to-tooth contact.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: Abrasion is tooth wear caused by an external mechanical agent other than tooth-to-tooth contact.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 7,
+      "sourceQuestionNumber": 28
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-029",
+      "questionNumber": 29,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "29- periapical healing by :-",
+      "originalOptions": {
+        "A": "1-calcium hydroxide 👍",
+        "B": "2-corticosteroids",
+        "C": "3-eugenol",
+        "D": "4-none"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-calcium hydroxide 👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-calcium hydroxide 👍"
+      },
+      "explanation": "Calcium hydroxide is used in endodontics in contexts related to intracanal disinfection and periapical healing.",
+      "optionExplanations": {
+        "A": "Correct: Calcium hydroxide is used in endodontics in contexts related to intracanal disinfection and periapical healing.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 7,
+      "sourceQuestionNumber": 29
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-030",
+      "questionNumber": 30,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Fixed and Removable Prosthodontics",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "30- disadvantage of porcelain:-",
+      "originalOptions": {
+        "A": "1-expensive",
+        "B": "2-brittleness👍",
+        "C": "3-esthetic",
+        "D": "4-good color"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 2-brittleness👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 2-brittleness👍"
+      },
+      "explanation": "Porcelain is highly esthetic but relatively brittle compared with ductile metal-based materials.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Correct: Porcelain is highly esthetic but relatively brittle compared with ductile metal-based materials.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Prosthodontics",
+        "Fixed and Removable Prosthodontics",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 7,
+      "sourceQuestionNumber": 30
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-031",
+      "questionNumber": 31,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Fixed Prosthodontic Clinical Sequence",
+      "subject": "Clinical Steps for Crown Fabrication",
+      "title": "Correct Clinical Sequence for Fixed Prosthodontic Treatment",
+      "questionType": "Other",
+      "clinicalDomain": "Management",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "31 - The Correct order for clincal step is:- prepration gingival retruction, Final impersion, bite registration, provisional restoration.",
+      "originalOptions": {},
+      "sourceAnswer": {
+        "letters": [],
+        "text": "primary impersion, Tooth retraction prepration gingival retruction, Final impersion, bite registration, provisional restoration."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "The source presents an answer sequence rather than a standard lettered MCQ.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "The source gives a clinical sequence rather than lettered options: primary impression, tooth preparation, gingival retraction, final impression, bite registration, and provisional restoration."
+      },
+      "explanation": "The source gives a clinical sequence rather than lettered options: primary impression, tooth preparation, gingival retraction, final impression, bite registration, and provisional restoration.",
+      "optionExplanations": {},
+      "tags": [
+        "Prosthodontics",
+        "Fixed Prosthodontic Clinical Sequence",
+        "Clinical Steps for Crown Fabrication",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 8,
+      "sourceQuestionNumber": 31
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-032",
+      "questionNumber": 32,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "32- Comperison b/w Full Metad and PFM is:-",
+      "originalOptions": {
+        "A": "The incisal reduction is the same.",
+        "B": "The Finishing Line is the same.",
+        "C": "less reduction from Lingual surface in PFM.👍",
+        "D": "The Facial reduction is the same"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — less reduction from Lingual surface in PFM.👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — less reduction from Lingual surface in PFM.👍"
+      },
+      "explanation": "The source answer states less lingual reduction for PFM than for the comparison restoration; the original wording is preserved.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: The source answer states less lingual reduction for PFM than for the comparison restoration; the original wording is preserved.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 8,
+      "sourceQuestionNumber": 32
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-033",
+      "questionNumber": 33,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Periodontology",
+      "topic": "Periodontal Health and Therapy",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "33-Maintaining of periodontal health by :-",
+      "originalOptions": {
+        "A": "reshaping",
+        "B": "recontact",
+        "C": "recontovering",
+        "D": "All👍"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — All👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — All👍"
+      },
+      "explanation": "Periodontal health around restorations is supported by appropriate reshaping/recontouring and contact management; the source answer is “all.”",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Correct: Periodontal health around restorations is supported by appropriate reshaping/recontouring and contact management; the source answer is “all.”"
+      },
+      "tags": [
+        "Periodontology",
+        "Periodontal Health and Therapy",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 8,
+      "sourceQuestionNumber": 33
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-034",
+      "questionNumber": 34,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "34- Mesiopalatal Cusp of upper 6 occluded in:-",
+      "originalOptions": {
+        "A": "distal Fossa of lower 6",
+        "B": "Mesial Fossa of lower 6 Central fossa of lower 6👍",
+        "D": "Mesral fossa of lower 7"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Unclear in source."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Verified answer"
+      },
+      "explanation": "The mesiolingual/mesiopalatal cusp of the maxillary first molar normally contacts the central fossa region of the mandibular first molar in ideal occlusion.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 8,
+      "sourceQuestionNumber": 34
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-035",
+      "questionNumber": 35,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Periodontology",
+      "topic": "Periodontal Health and Therapy",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "35 -after subgingival margin tooth prepration ,We do:-",
+      "originalOptions": {
+        "A": "Final imperssion",
+        "B": "retraction Cord👍",
+        "C": "bite registration",
+        "D": "None"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — retraction Cord👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — retraction Cord👍"
+      },
+      "explanation": "After preparing a subgingival margin, gingival retraction is performed before the definitive impression.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Correct: After preparing a subgingival margin, gingival retraction is performed before the definitive impression.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Periodontology",
+        "Periodontal Health and Therapy",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 9,
+      "sourceQuestionNumber": 35
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-036",
+      "questionNumber": 36,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "36-in Chemico-mechanical retruction the tissue well be :",
+      "originalOptions": {
+        "A": "displaced laterally from the tooth👍",
+        "B": "preserved From Inflamation.",
+        "C": "displaced vertically from the tooth",
+        "D": "None"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — displaced laterally from the tooth👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — displaced laterally from the tooth👍"
+      },
+      "explanation": "Chemicomechanical retraction displaces gingival tissue laterally away from the tooth to expose the finish line.",
+      "optionExplanations": {
+        "A": "Correct: Chemicomechanical retraction displaces gingival tissue laterally away from the tooth to expose the finish line.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 9,
+      "sourceQuestionNumber": 36
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-037",
+      "questionNumber": 37,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "37- prepration All tooth except thre mesiobuccal Cusp of upper First molar is:",
+      "originalOptions": {
+        "A": "7/8 Crown👍",
+        "B": "314 Crown",
+        "C": "revese 3/4 crown",
+        "D": "none"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 7/8 Crown👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 7/8 Crown👍"
+      },
+      "explanation": "A 7/8 crown is a partial-coverage restoration used to preserve the specified cusp pattern in the source question.",
+      "optionExplanations": {
+        "A": "Correct: A 7/8 crown is a partial-coverage restoration used to preserve the specified cusp pattern in the source question.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 9,
+      "sourceQuestionNumber": 37
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-038",
+      "questionNumber": 38,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Periodontology",
+      "topic": "Periodontal Health and Therapy",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "38-indication of subgingival margin except-",
+      "originalOptions": {
+        "A": "dental Caries extend subgingivally",
+        "B": "root Sensitivity C There is enough retention👍",
+        "D": "Unclear in source."
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Unclear in source."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Verified answer"
+      },
+      "explanation": "Adequate retention is not an indication for placing a subgingival margin; subgingival placement is used for specific clinical indications.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Periodontology",
+        "Periodontal Health and Therapy",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 10,
+      "sourceQuestionNumber": 38
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-039",
+      "questionNumber": 39,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "39- preservation of tooth structure except :-",
+      "originalOptions": {
+        "A": "use full Cavarage restoration rather than partial covering 👍",
+        "B": "avore of annecessary apical extension",
+        "C": "prepration of teeth with minimum tapering.",
+        "D": "Reduction of occlusal scarface followi The anatomical plane"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — use full Cavarage restoration rather than partial covering 👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — use full Cavarage restoration rather than partial covering 👍"
+      },
+      "explanation": "The source also contains a stray second question numbered 39: respiratory rate in children is generally higher than in adults.",
+      "optionExplanations": {
+        "A": "Correct: The source also contains a stray second question numbered 39: respiratory rate in children is generally higher than in adults.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 10,
+      "sourceQuestionNumber": 39
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-040",
+      "questionNumber": 40,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "General Dentistry",
+      "topic": "General Dental Knowledge",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "40- 10 years old patient lost his primary lower second molar we need to:",
+      "originalOptions": {
+        "A": "do band and loop",
+        "B": "we make radiograph then decide👍",
+        "C": "3-all",
+        "D": "4-none"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — we make radiograph then decide👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — we make radiograph then decide👍"
+      },
+      "explanation": "At age 10, loss of a primary second molar requires assessment of eruption status and successor development; a radiograph helps determine the appropriate space-management decision.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Correct: At age 10, loss of a primary second molar requires assessment of eruption status and successor development; a radiograph helps determine the appropriate space-management decision.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "General Dentistry",
+        "General Dental Knowledge",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 10,
+      "sourceQuestionNumber": 40
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-041",
+      "questionNumber": 41,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Endodontics",
+      "topic": "Root Canal Treatment and Pulp Disease",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "41-we obturate canal if (all correct) except:",
+      "originalOptions": {
+        "A": "dry canal",
+        "B": "no odur",
+        "C": "sympatomatic👍",
+        "D": "the canal is optimum shaping"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — sympatomatic👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — sympatomatic👍"
+      },
+      "explanation": "A root canal is generally obturated when it is adequately shaped, dry, asymptomatic, and free of signs such as foul odor or swelling.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: A root canal is generally obturated when it is adequately shaped, dry, asymptomatic, and free of signs such as foul odor or swelling.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Endodontics",
+        "Root Canal Treatment and Pulp Disease",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 11,
+      "sourceQuestionNumber": 41
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-042",
+      "questionNumber": 42,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Operative Dentistry",
+      "topic": "Restorative Dentistry",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "42- to restoration tooth with deep caries during preparation we removal :-",
+      "originalOptions": {
+        "A": "1-we start to remove caries from walls of cavity then from the pulpal floor 👍",
+        "B": "2-we start to remove caries from pulp floor then from the walls cavity .",
+        "C": "3-direct pulp caping"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-we start to remove caries from walls of cavity then from the pulpal floor 👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 1-we start to remove caries from walls of cavity then from the pulpal floor 👍"
+      },
+      "explanation": "In deep caries, peripheral caries is removed before caries close to the pulpal floor to reduce the risk of pulpal exposure.",
+      "optionExplanations": {
+        "A": "Correct: In deep caries, peripheral caries is removed before caries close to the pulpal floor to reduce the risk of pulpal exposure.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Operative Dentistry",
+        "Restorative Dentistry",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 11,
+      "sourceQuestionNumber": 42
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-043",
+      "questionNumber": 43,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Endodontics",
+      "topic": "Root Canal Treatment and Pulp Disease",
+      "subject": "General Dental Concept",
+      "title": "Dental Knowledge Question",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "43.All are true about reversible pulpitis except:",
+      "originalOptions": {
+        "A": "Pain on percussion👍",
+        "B": "Short duration of pain",
+        "C": "pain with heat",
+        "D": "Unclear in source."
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Pain on percussion👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Pain on percussion👍"
+      },
+      "explanation": "Pain on percussion suggests apical/periodontal involvement rather than uncomplicated reversible pulpitis.",
+      "optionExplanations": {
+        "A": "Correct: Pain on percussion suggests apical/periodontal involvement rather than uncomplicated reversible pulpitis.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "D": "Incorrect for the clinical concept tested; it does not best answer the question as written."
+      },
+      "tags": [
+        "Endodontics",
+        "Root Canal Treatment and Pulp Disease",
+        "General Dental Concept",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 11,
+      "sourceQuestionNumber": 43
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-044",
+      "questionNumber": 44,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Prosthodontics",
+      "topic": "Ceramic Crown Preparation",
+      "subject": "Finish Line for Full Porcelain Crown",
+      "title": "Radial/Rounded Shoulder",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "44-The Finishing Line of full porceline:",
+      "originalOptions": {
+        "A": "Shoulder with bevel",
+        "B": "Chamfer",
+        "C": "Rounel or Radial Shoulder👍"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Rounel or Radial Shoulder👍"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Rounel or Radial Shoulder👍"
+      },
+      "explanation": "A rounded/radial shoulder is a standard finish-line design for many full-porcelain crowns.",
+      "optionExplanations": {
+        "A": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "B": "Incorrect for the clinical concept tested; it does not best answer the question as written.",
+        "C": "Correct: A rounded/radial shoulder is a standard finish-line design for many full-porcelain crowns."
+      },
+      "tags": [
+        "Prosthodontics",
+        "Ceramic Crown Preparation",
+        "Finish Line for Full Porcelain Crown",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 12,
+      "sourceQuestionNumber": 44
+    },
+    {
+      "id": "LIC-YEMEN-DENTAL-2024-039-02",
+      "questionNumber": 39,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Dentistry",
+      "qualification": "Not provided in source.",
+      "specialty": "Dentistry",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "October",
+      "exactDate": "2024-10-24",
+      "majorSection": "Dentistry",
+      "subSpecialty": "Pediatrics",
+      "topic": "Respiratory Physiology",
+      "subject": "Respiratory Rate in Children",
+      "title": "Respiratory Rate in Children",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Physiology",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "39. Respiration in the children is :",
+      "originalOptions": {
+        "A": "Higher than adult."
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Higher than adult."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Higher than adult."
+      },
+      "explanation": "The source also contains a stray second question numbered 39: respiratory rate in children is generally higher than in adults.",
+      "optionExplanations": {
+        "A": "Correct: The source also contains a stray second question numbered 39: respiratory rate in children is generally higher than in adults."
+      },
+      "tags": [
+        "Pediatrics",
+        "Respiratory Physiology",
+        "Respiratory Rate in Children",
+        "Yemen Dental Licensure",
+        "2024"
+      ],
+      "sourcePage": 12,
+      "sourceQuestionNumber": 39
+    }
+  ]
+}

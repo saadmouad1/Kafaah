@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="titaniumEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <filter id="phoneShadowLight" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="35" flood-color="#0f172a" flood-opacity="0.15"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#10b981" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- SMARTPHONE IN CRISP TITANIUM SILVER -->
+  <g transform="translate(120, 25)" filter="url(#phoneShadowLight)">
+    <!-- Outer Bezel -->
+    <rect x="0" y="0" width="300" height="570" rx="46" fill="url(#titaniumEdge)" stroke="#ffffff" stroke-width="4"/>
+    <!-- Inner Screen Canvas -->
+    <rect x="10" y="10" width="280" height="550" rx="38" fill="#ffffff"/>
+    
+    <!-- Dynamic Island / Speaker Notch -->
+    <rect x="95" y="22" width="110" height="24" rx="12" fill="#0f172a"/>
+    <circle cx="185" cy="34" r="4" fill="#334155"/>
+
+    <!-- App Content Inside Phone -->
+    <!-- App Header -->
+    <g transform="translate(24, 62)">
+      <circle cx="20" cy="20" r="18" fill="#fef3c7"/>
+      <text x="20" y="26" font-size="15" text-anchor="middle">👑</text>
+      <text x="232" y="18" font-family="'Cairo', sans-serif" font-size="14" font-weight="900" fill="#0f172a" text-anchor="end">أهلاً بك يا بطل</text>
+      <text x="232" y="32" font-family="'Cairo', sans-serif" font-size="10.5" font-weight="600" fill="#64748b" text-anchor="end">خطة البورد • متبقي 28 يوماً</text>
+    </g>
+
+    <!-- Quick Stats Emerald Banner Inside Screen -->
+    <g transform="translate(24, 116)">
+      <rect x="0" y="0" width="252" height="92" rx="16" fill="linear-gradient(135deg, #10b981 0%, #059669 100%)"/>
+      <text x="232" y="26" font-family="'Cairo', sans-serif" font-size="13" font-weight="900" fill="#ffffff" text-anchor="end">جاهزية اجتياز الامتحان</text>
+      <text x="232" y="60" font-family="sans-serif" font-size="30" font-weight="900" fill="#ffffff" text-anchor="end">94.8%</text>
+      <text x="232" y="78" font-family="'Cairo', sans-serif" font-size="10" font-weight="800" fill="#fef08a" text-anchor="end">مستوى متقدم • تدربت على 1,420 سؤالاً</text>
+      <circle cx="48" cy="46" r="26" fill="rgba(255, 255, 255, 0.2)"/>
+      <text x="48" y="54" font-size="22" text-anchor="middle">🎯</text>
+    </g>
+
+    <!-- Action Shortcuts -->
+    <g transform="translate(24, 222)">
+      <!-- Box 1 -->
+      <rect x="0" y="0" width="120" height="74" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="105" y="24" font-size="16">⏱</text>
+      <text x="105" y="48" font-family="'Cairo', sans-serif" font-size="11.5" font-weight="900" fill="#0f172a" text-anchor="end">امتحان مؤقت</text>
+      <text x="105" y="62" font-family="'Cairo', sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">محاكاة فورية</text>
+
+      <!-- Box 2 -->
+      <rect x="132" y="0" width="120" height="74" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="237" y="24" font-size="16">🤖</text>
+      <text x="237" y="48" font-family="'Cairo', sans-serif" font-size="11.5" font-weight="900" fill="#0284c7" text-anchor="end">المعلم الذكي</text>
+      <text x="237" y="62" font-family="'Cairo', sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">مدعوم بـ Groq AI</text>
+    </g>
+
+    <!-- Today's Schedule Card -->
+    <g transform="translate(24, 310)">
+      <rect x="0" y="0" width="252" height="155" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="232" y="24" font-family="'Cairo', sans-serif" font-size="11.5" font-weight="900" fill="#d97706" text-anchor="end">جلسة اليوم المقترحة من AI</text>
+      
+      <!-- item 1 -->
+      <rect x="12" y="38" width="228" height="34" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="226" y="58" font-family="'Cairo', sans-serif" font-size="10.5" font-weight="700" fill="#1e293b" text-anchor="end">50 سؤال في الحالات الحرجة</text>
+      <text x="28" y="58" font-size="10" font-weight="800" fill="#10b981">مكتمل ✓</text>
+
+      <!-- item 2 -->
+      <rect x="12" y="78" width="228" height="34" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="226" y="98" font-family="'Cairo', sans-serif" font-size="10.5" font-weight="700" fill="#1e293b" text-anchor="end">مراجعة الأسئلة الخاطئة السابقة</text>
+      <text x="28" y="98" font-size="10" font-weight="800" fill="#f59e0b">قيد المراجعة</text>
+
+      <!-- item 3 button -->
+      <rect x="12" y="120" width="228" height="26" rx="8" fill="#10b981"/>
+      <text x="126" y="137" font-family="'Cairo', sans-serif" font-size="10.5" font-weight="900" fill="#ffffff" text-anchor="middle">بدء التدريب الآن</text>
+    </g>
+
+    <!-- App Bottom Nav in Phone -->
+    <g transform="translate(24, 482)">
+      <rect x="0" y="0" width="252" height="52" rx="22" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow)"/>
+      <text x="35" y="30" font-size="16" text-anchor="middle">👤</text>
+      <text x="85" y="30" font-size="16" text-anchor="middle">📊</text>
+      <text x="135" y="30" font-size="16" text-anchor="middle">⚡</text>
+      <text x="185" y="30" font-size="16" text-anchor="middle">📖</text>
+      <text x="225" y="30" font-size="16" text-anchor="middle">🏠</text>
+      <circle cx="225" cy="42" r="2.5" fill="#f59e0b"/>
+    </g>
+
+    <!-- Home indicator bar -->
+    <rect x="95" y="546" width="110" height="4" rx="2" fill="#0f172a" opacity="0.3"/>
+  </g>
+</svg>

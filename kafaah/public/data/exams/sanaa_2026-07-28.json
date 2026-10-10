@@ -1,0 +1,2364 @@
+{
+  "examMetadata": {
+    "medicalProfession": "Human Medicine",
+    "specialty": "General Medicine & Surgery",
+    "governorate": "Sana'a",
+    "year": 2026,
+    "month": "July",
+    "exactDate": "2026-07-28",
+    "language": "English",
+    "source": "امتحان مزاولة صنعاء 2026/7/28",
+    "examTitle": "Medical Licensure Examination — Sana'a 2026/07/28",
+    "numberOfQuestions": 50
+  },
+  "questions": [
+    {
+      "id": "2026-07-28-Sanaa-GMS-001",
+      "questionNumber": 1,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Cardiology",
+      "topic": "Beta-blockers",
+      "title": "Uses and contraindications of propranolol",
+      "originalQuestion": "Propranolol is used in all of the following EXCEPT:",
+      "originalOptions": {
+        "A": "Angina pectoris",
+        "B": "Systemic hypertension",
+        "C": "Congestive heart failure",
+        "D": "Esophageal varices"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Congestive heart failure"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Propranolol is used in all of the following EXCEPT:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Congestive heart failure"
+      },
+      "explanation": "C is not routinely used as standard therapy for congestive heart failure; propranolol is used for angina, hypertension and portal hypertension/variceal prophylaxis.",
+      "optionExplanations": {
+        "A": "Angina pectoris is not the best answer for the question as written.",
+        "B": "Systemic hypertension is not the best answer for the question as written.",
+        "C": "C is not routinely used as standard therapy for congestive heart failure; propranolol is used for angina, hypertension and portal hypertension/variceal prophylaxis.",
+        "D": "Esophageal varices is not the best answer for the question as written."
+      },
+      "tags": [
+        "Cardiology",
+        "Beta-blockers"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-002",
+      "questionNumber": 2,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Respiratory Medicine",
+      "topic": "Clubbing",
+      "title": "Earliest clubbing in pulmonary disease",
+      "originalQuestion": "Earliest appearance of clubbing is seen in:",
+      "originalOptions": {
+        "A": "Tetralogy of Fallot",
+        "B": "Lung abscess",
+        "C": "Bronchiectasis",
+        "D": "Mesothelioma"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Bronchiectasis"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Earliest appearance of clubbing is seen in:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Bronchiectasis"
+      },
+      "explanation": "Bronchiectasis is a classic chronic suppurative pulmonary cause of clubbing.",
+      "optionExplanations": {
+        "A": "Tetralogy of Fallot is not the best answer for the question as written.",
+        "B": "Lung abscess is not the best answer for the question as written.",
+        "C": "Bronchiectasis is a classic chronic suppurative pulmonary cause of clubbing.",
+        "D": "Mesothelioma is not the best answer for the question as written."
+      },
+      "tags": [
+        "Respiratory Medicine",
+        "Clubbing"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-003",
+      "questionNumber": 3,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gynecology",
+      "topic": "Pelvic inflammatory disease",
+      "title": "Anatomic involvement of PID",
+      "originalQuestion": "Pelvic inflammatory disease (PID) is inflammation of:",
+      "originalOptions": {
+        "A": "Cervix only",
+        "B": "Endometrium only",
+        "C": "Endometrium and fallopian tubes (± ovaries)",
+        "D": "Ovary only"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Endometrium and fallopian tubes (± ovaries)"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Pelvic inflammatory disease (PID) is inflammation of:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Endometrium and fallopian tubes (± ovaries)"
+      },
+      "explanation": "PID is an ascending infection involving the upper genital tract, including endometrium and fallopian tubes and sometimes ovaries.",
+      "optionExplanations": {
+        "A": "Cervix only is not the best answer for the question as written.",
+        "B": "Endometrium only is not the best answer for the question as written.",
+        "C": "PID is an ascending infection involving the upper genital tract, including endometrium and fallopian tubes and sometimes ovaries.",
+        "D": "Ovary only is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gynecology",
+        "Pelvic inflammatory disease"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-004",
+      "questionNumber": 4,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Respiratory Medicine",
+      "topic": "Respiratory failure",
+      "title": "Common causes of respiratory failure",
+      "originalQuestion": "The most common cause of respiratory failure is:",
+      "originalOptions": {
+        "A": "Emphysema",
+        "B": "Fibrosing alveolitis",
+        "C": "Bronchial asthma",
+        "D": "Chronic bronchitis"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Chronic bronchitis"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common cause of respiratory failure is:",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Chronic bronchitis"
+      },
+      "explanation": "In chronic obstructive lung disease, chronic bronchitis is a major cause of chronic respiratory failure.",
+      "optionExplanations": {
+        "A": "Emphysema is not the best answer for the question as written.",
+        "B": "Fibrosing alveolitis is not the best answer for the question as written.",
+        "C": "Bronchial asthma is not the best answer for the question as written.",
+        "D": "In chronic obstructive lung disease, chronic bronchitis is a major cause of chronic respiratory failure."
+      },
+      "tags": [
+        "Respiratory Medicine",
+        "Respiratory failure"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-005",
+      "questionNumber": 5,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Nephrology",
+      "topic": "Acute kidney injury",
+      "title": "Definition of oliguria",
+      "originalQuestion": "Oliguria is defined as:",
+      "originalOptions": {
+        "A": "<100 mL/24 h",
+        "B": "<400 mL/24 h",
+        "C": "<800 mL/24 h",
+        "D": "<1000 mL/24 h"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — <400 mL/24 h"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Oliguria is defined as:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — <400 mL/24 h"
+      },
+      "explanation": "Oliguria is commonly defined in adults as urine output below about 400 mL/day.",
+      "optionExplanations": {
+        "A": "<100 mL/24 h is not the best answer for the question as written.",
+        "B": "Oliguria is commonly defined in adults as urine output below about 400 mL/day.",
+        "C": "<800 mL/24 h is not the best answer for the question as written.",
+        "D": "<1000 mL/24 h is not the best answer for the question as written."
+      },
+      "tags": [
+        "Nephrology",
+        "Acute kidney injury"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-006",
+      "questionNumber": 6,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gynecology",
+      "topic": "Vesicovaginal fistula",
+      "title": "Etiology of vesicovaginal fistula in Yemen",
+      "originalQuestion": "The most common cause of vesicovaginal fistula in Yemen is:",
+      "originalOptions": {
+        "A": "Radiotherapy",
+        "B": "Obstetric trauma",
+        "C": "Pelvic malignancy",
+        "D": "Tuberculosis"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Obstetric trauma"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common cause of vesicovaginal fistula in Yemen is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Obstetric trauma"
+      },
+      "explanation": "In low-resource settings, prolonged obstructed labor and obstetric trauma are major causes of vesicovaginal fistula.",
+      "optionExplanations": {
+        "A": "Radiotherapy is not the best answer for the question as written.",
+        "B": "In low-resource settings, prolonged obstructed labor and obstetric trauma are major causes of vesicovaginal fistula.",
+        "C": "Pelvic malignancy is not the best answer for the question as written.",
+        "D": "Tuberculosis is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gynecology",
+        "Vesicovaginal fistula"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-007",
+      "questionNumber": 7,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gastroenterology",
+      "topic": "Functional gastrointestinal disorders",
+      "title": "Common gastrointestinal disorder",
+      "originalQuestion": "The most common gastrointestinal disorder in the community is:",
+      "originalOptions": {
+        "A": "Irritable bowel syndrome (IBS)",
+        "B": "Diverticulitis",
+        "C": "Reflux esophagitis",
+        "D": "Duodenal ulcer"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Irritable bowel syndrome (IBS)"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common gastrointestinal disorder in the community is:",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Irritable bowel syndrome (IBS)"
+      },
+      "explanation": "IBS is a common functional gastrointestinal disorder in the community.",
+      "optionExplanations": {
+        "A": "IBS is a common functional gastrointestinal disorder in the community.",
+        "B": "Diverticulitis is not the best answer for the question as written.",
+        "C": "Reflux esophagitis is not the best answer for the question as written.",
+        "D": "Duodenal ulcer is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Functional gastrointestinal disorders"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-008",
+      "questionNumber": 8,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gastroenterology",
+      "topic": "Helicobacter pylori",
+      "title": "Drugs used for H. pylori eradication",
+      "originalQuestion": "Which drug is NOT used in eradication of H. pylori?",
+      "originalOptions": {
+        "A": "Pantoprazole",
+        "B": "Cefixime",
+        "C": "Clarithromycin",
+        "D": "Tinidazole"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Cefixime"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Which drug is NOT used in eradication of H. pylori?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Cefixime"
+      },
+      "explanation": "Cefixime is not a standard component of conventional H. pylori eradication regimens.",
+      "optionExplanations": {
+        "A": "Pantoprazole is not the best answer for the question as written.",
+        "B": "Cefixime is not a standard component of conventional H. pylori eradication regimens.",
+        "C": "Clarithromycin is not the best answer for the question as written.",
+        "D": "Tinidazole is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Helicobacter pylori"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-009",
+      "questionNumber": 9,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Obstetrics",
+      "topic": "Drugs in pregnancy",
+      "title": "Placental transfer of heparin",
+      "originalQuestion": "Which drug does NOT cross the placenta?",
+      "originalOptions": {
+        "A": "Warfarin",
+        "B": "Heparin",
+        "C": "Digoxin",
+        "D": "Diazepam"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Heparin"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Which drug does NOT cross the placenta?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Heparin"
+      },
+      "explanation": "Unfractionated and low-molecular-weight heparins do not cross the placenta to a clinically significant extent.",
+      "optionExplanations": {
+        "A": "Warfarin is not the best answer for the question as written.",
+        "B": "Unfractionated and low-molecular-weight heparins do not cross the placenta to a clinically significant extent.",
+        "C": "Digoxin is not the best answer for the question as written.",
+        "D": "Diazepam is not the best answer for the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Drugs in pregnancy"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-010",
+      "questionNumber": 10,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Obstetrics",
+      "topic": "Multiple pregnancy",
+      "title": "Complications of twin pregnancy",
+      "originalQuestion": "Regarding twin pregnancy, which is TRUE?",
+      "originalOptions": {
+        "A": "Increased risk of postpartum hemorrhage",
+        "B": "Always delivered at term",
+        "C": "Cephalic-breech is the commonest presentation",
+        "D": "Lower risk of preeclampsia"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Increased risk of postpartum hemorrhage"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Regarding twin pregnancy, which is TRUE?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Increased risk of postpartum hemorrhage"
+      },
+      "explanation": "Twin pregnancy increases the risk of postpartum hemorrhage, including from uterine overdistension.",
+      "optionExplanations": {
+        "A": "Twin pregnancy increases the risk of postpartum hemorrhage, including from uterine overdistension.",
+        "B": "Always delivered at term is not the best answer for the question as written.",
+        "C": "Cephalic-breech is the commonest presentation is not the best answer for the question as written.",
+        "D": "Lower risk of preeclampsia is not the best answer for the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Multiple pregnancy"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-011",
+      "questionNumber": 11,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gynecology",
+      "topic": "Cervical cancer",
+      "title": "Causes of death in cervical cancer",
+      "originalQuestion": "The most common cause of death in carcinoma of cervix is:",
+      "originalOptions": {
+        "A": "Hemorrhage",
+        "B": "Uremia",
+        "C": "Liver metastasis",
+        "D": "Sepsis"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Uremia"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common cause of death in carcinoma of cervix is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Uremia"
+      },
+      "explanation": "Advanced cervical cancer can cause obstructive uropathy and renal failure, historically described as uremia.",
+      "optionExplanations": {
+        "A": "Hemorrhage is not the best answer for the question as written.",
+        "B": "Advanced cervical cancer can cause obstructive uropathy and renal failure, historically described as uremia.",
+        "C": "Liver metastasis is not the best answer for the question as written.",
+        "D": "Sepsis is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gynecology",
+        "Cervical cancer"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-012",
+      "questionNumber": 12,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gastroenterology",
+      "topic": "Portal hypertension",
+      "title": "Etiology of portal hypertension",
+      "originalQuestion": "The most common cause of portal hypertension is:",
+      "originalOptions": {
+        "A": "Acute viral hepatitis",
+        "B": "Portal vein thrombosis",
+        "C": "Cirrhosis of liver",
+        "D": "Hepatic carcinoma"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Cirrhosis of liver"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common cause of portal hypertension is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Cirrhosis of liver"
+      },
+      "explanation": "Cirrhosis is the most common overall cause of portal hypertension in many populations.",
+      "optionExplanations": {
+        "A": "Acute viral hepatitis is not the best answer for the question as written.",
+        "B": "Portal vein thrombosis is not the best answer for the question as written.",
+        "C": "Cirrhosis is the most common overall cause of portal hypertension in many populations.",
+        "D": "Hepatic carcinoma is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Portal hypertension"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-013",
+      "questionNumber": 13,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Hepatology",
+      "topic": "Acute liver failure",
+      "title": "Causes of fulminant hepatic failure",
+      "originalQuestion": "The most common cause of fulminant hepatic failure is:",
+      "originalOptions": {
+        "A": "Cirrhosis",
+        "B": "Hepatic carcinoma",
+        "C": "Acute viral hepatitis",
+        "D": "Alcoholic hepatitis"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Acute viral hepatitis"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common cause of fulminant hepatic failure is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Acute viral hepatitis"
+      },
+      "explanation": "Acute viral hepatitis is a recognized major cause of fulminant hepatic failure, particularly in regions where viral hepatitis is prevalent.",
+      "optionExplanations": {
+        "A": "Cirrhosis is not the best answer for the question as written.",
+        "B": "Hepatic carcinoma is not the best answer for the question as written.",
+        "C": "Acute viral hepatitis is a recognized major cause of fulminant hepatic failure, particularly in regions where viral hepatitis is prevalent.",
+        "D": "Alcoholic hepatitis is not the best answer for the question as written."
+      },
+      "tags": [
+        "Hepatology",
+        "Acute liver failure"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-014",
+      "questionNumber": 14,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Nephrology",
+      "topic": "Nephrotic syndrome",
+      "title": "Diagnostic features of nephrotic syndrome",
+      "originalQuestion": "Which of the following is NOT a criterion for nephrotic syndrome?",
+      "originalOptions": {
+        "A": "Hypertension",
+        "B": "Massive proteinuria",
+        "C": "Hyperlipidemia",
+        "D": "Anasarca"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Hypertension"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Which of the following is NOT a criterion for nephrotic syndrome?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Hypertension"
+      },
+      "explanation": "Hypertension is not a defining criterion of nephrotic syndrome; massive proteinuria, hypoalbuminemia/edema and hyperlipidemia are characteristic.",
+      "optionExplanations": {
+        "A": "Hypertension is not a defining criterion of nephrotic syndrome; massive proteinuria, hypoalbuminemia/edema and hyperlipidemia are characteristic.",
+        "B": "Massive proteinuria is not the best answer for the question as written.",
+        "C": "Hyperlipidemia is not the best answer for the question as written.",
+        "D": "Anasarca is not the best answer for the question as written."
+      },
+      "tags": [
+        "Nephrology",
+        "Nephrotic syndrome"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-015",
+      "questionNumber": 15,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Nephrology",
+      "topic": "Minimal change disease",
+      "title": "Clinical response in minimal change disease",
+      "originalQuestion": "A recognized feature of minimal change disease is:",
+      "originalOptions": {
+        "A": "Hematuria",
+        "B": "Response to corticosteroids",
+        "C": "Hypertension",
+        "D": "Absence of edema"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Response to corticosteroids"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "A recognized feature of minimal change disease is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Response to corticosteroids"
+      },
+      "explanation": "Minimal change disease typically responds dramatically to corticosteroids, especially in children.",
+      "optionExplanations": {
+        "A": "Hematuria is not the best answer for the question as written.",
+        "B": "Minimal change disease typically responds dramatically to corticosteroids, especially in children.",
+        "C": "Hypertension is not the best answer for the question as written.",
+        "D": "Absence of edema is not the best answer for the question as written."
+      },
+      "tags": [
+        "Nephrology",
+        "Minimal change disease"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-016",
+      "questionNumber": 16,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gastroenterology",
+      "topic": "Acute cholangitis",
+      "title": "Common organism in cholangitis",
+      "originalQuestion": "The most common organism causing cholangitis is:",
+      "originalOptions": {
+        "A": "Salmonella",
+        "B": "E. coli",
+        "C": "Streptococcus",
+        "D": "Klebsiella"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — E. coli"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common organism causing cholangitis is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — E. coli"
+      },
+      "explanation": "Enteric Gram-negative organisms, especially E. coli, are common causes of acute bacterial cholangitis.",
+      "optionExplanations": {
+        "A": "Salmonella is not the best answer for the question as written.",
+        "B": "Enteric Gram-negative organisms, especially E. coli, are common causes of acute bacterial cholangitis.",
+        "C": "Streptococcus is not the best answer for the question as written.",
+        "D": "Klebsiella is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Acute cholangitis"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-017",
+      "questionNumber": 17,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Nephrology",
+      "topic": "Chronic pyelonephritis",
+      "title": "Complications of chronic pyelonephritis",
+      "originalQuestion": "All are complications of chronic pyelonephritis EXCEPT:",
+      "originalOptions": {
+        "A": "Chronic renal failure",
+        "B": "Septicemia",
+        "C": "Renal calculi",
+        "D": "Hypertension"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Septicemia"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "All are complications of chronic pyelonephritis EXCEPT:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Septicemia"
+      },
+      "explanation": "Chronic pyelonephritis is associated with scarring, hypertension and chronic renal impairment; septicemia is not a characteristic chronic complication.",
+      "optionExplanations": {
+        "A": "Chronic renal failure is not the best answer for the question as written.",
+        "B": "Chronic pyelonephritis is associated with scarring, hypertension and chronic renal impairment; septicemia is not a characteristic chronic complication.",
+        "C": "Renal calculi is not the best answer for the question as written.",
+        "D": "Hypertension is not the best answer for the question as written."
+      },
+      "tags": [
+        "Nephrology",
+        "Chronic pyelonephritis"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-018",
+      "questionNumber": 18,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "General Surgery",
+      "topic": "Strangulated hernia",
+      "title": "Clinical sign of strangulation",
+      "originalQuestion": "The surest sign of strangulated hernia is:",
+      "originalOptions": {
+        "A": "Irreducibility",
+        "B": "Tense tender swelling",
+        "C": "Absence of cough impulse",
+        "D": "Reducible swelling"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Tense tender swelling"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "The surest sign of strangulated hernia is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Tense tender swelling"
+      },
+      "explanation": "A tense, tender, irreducible swelling strongly suggests compromised bowel and strangulation.",
+      "optionExplanations": {
+        "A": "Irreducibility is not the best answer for the question as written.",
+        "B": "A tense, tender, irreducible swelling strongly suggests compromised bowel and strangulation.",
+        "C": "Absence of cough impulse is not the best answer for the question as written.",
+        "D": "Reducible swelling is not the best answer for the question as written."
+      },
+      "tags": [
+        "General Surgery",
+        "Strangulated hernia"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-019",
+      "questionNumber": 19,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Neurology",
+      "topic": "Ischemic stroke",
+      "title": "Common causes of cerebrovascular accident",
+      "originalQuestion": "The most common cause of cerebrovascular accident (CVA) is:",
+      "originalOptions": {
+        "A": "Cerebral thrombosis",
+        "B": "Cerebral embolism",
+        "C": "Intracerebral hemorrhage",
+        "D": "Subarachnoid hemorrhage"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Cerebral thrombosis"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common cause of cerebrovascular accident (CVA) is:",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Cerebral thrombosis"
+      },
+      "explanation": "Cerebral thrombosis is a classic major cause of ischemic stroke, although modern classification includes several mechanisms.",
+      "optionExplanations": {
+        "A": "Cerebral thrombosis is a classic major cause of ischemic stroke, although modern classification includes several mechanisms.",
+        "B": "Cerebral embolism is not the best answer for the question as written.",
+        "C": "Intracerebral hemorrhage is not the best answer for the question as written.",
+        "D": "Subarachnoid hemorrhage is not the best answer for the question as written."
+      },
+      "tags": [
+        "Neurology",
+        "Ischemic stroke"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-020",
+      "questionNumber": 20,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Obstetrics",
+      "topic": "Preeclampsia",
+      "title": "Risk factors for preeclampsia",
+      "originalQuestion": "A risk factor for preeclampsia is:",
+      "originalOptions": {
+        "A": "Congenital heart disease",
+        "B": "Multigravida",
+        "C": "Pre-existing renal disease",
+        "D": "Singleton pregnancy"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Pre-existing renal disease"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "A risk factor for preeclampsia is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Pre-existing renal disease"
+      },
+      "explanation": "Pre-existing renal disease increases maternal risk of preeclampsia.",
+      "optionExplanations": {
+        "A": "Congenital heart disease is not the best answer for the question as written.",
+        "B": "Multigravida is not the best answer for the question as written.",
+        "C": "Pre-existing renal disease increases maternal risk of preeclampsia.",
+        "D": "Singleton pregnancy is not the best answer for the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Preeclampsia"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-021",
+      "questionNumber": 21,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gynecology",
+      "topic": "Cancer screening",
+      "title": "Effective gynecologic cancer screening",
+      "originalQuestion": "Screening is most effective for:",
+      "originalOptions": {
+        "A": "Fallopian tube cancer",
+        "B": "Ovarian cancer",
+        "C": "Cervical cancer",
+        "D": "Endometrial cancer"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Cervical cancer"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Screening is most effective for:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Cervical cancer"
+      },
+      "explanation": "Cervical cancer has effective population screening programs using cervical cytology and/or HPV testing.",
+      "optionExplanations": {
+        "A": "Fallopian tube cancer is not the best answer for the question as written.",
+        "B": "Ovarian cancer is not the best answer for the question as written.",
+        "C": "Cervical cancer has effective population screening programs using cervical cytology and/or HPV testing.",
+        "D": "Endometrial cancer is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gynecology",
+        "Cancer screening"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-022",
+      "questionNumber": 22,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gynecology",
+      "topic": "Postmenopausal bleeding",
+      "title": "Evaluation of postmenopausal bleeding",
+      "originalQuestion": "A 65-year-old woman with postmenopausal bleeding. The most appropriate next step is:",
+      "originalOptions": {
+        "A": "Dilatation & curettage with histopathology",
+        "B": "Cervical cone biopsy",
+        "C": "Hysterectomy",
+        "D": "Observation"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Dilatation & curettage with histopathology"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "The source answer reflects older examination practice. Current evaluation of postmenopausal bleeding generally begins with transvaginal ultrasound and/or office endometrial sampling depending on the clinical setting.",
+      "correctedQuestion": "A 65-year-old woman with postmenopausal bleeding. The most appropriate next step is:",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Dilatation & curettage with histopathology"
+      },
+      "explanation": "Postmenopausal bleeding requires endometrial assessment to exclude malignancy; the historical exam answer is tissue diagnosis by curettage/histopathology.",
+      "optionExplanations": {
+        "A": "Postmenopausal bleeding requires endometrial assessment to exclude malignancy; the historical exam answer is tissue diagnosis by curettage/histopathology.",
+        "B": "Cervical cone biopsy is not the best answer for the question as written.",
+        "C": "Hysterectomy is not the best answer for the question as written.",
+        "D": "Observation is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gynecology",
+        "Postmenopausal bleeding"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-023",
+      "questionNumber": 23,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Infectious Diseases",
+      "topic": "Toxoplasmosis",
+      "title": "Transmission of Toxoplasma gondii",
+      "originalQuestion": "Protozoal infection transmitted by cats and undercooked meat is:",
+      "originalOptions": {
+        "A": "Histoplasmosis",
+        "B": "Toxoplasmosis",
+        "C": "Tuberculosis",
+        "D": "Candidiasis"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Toxoplasmosis"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Protozoal infection transmitted by cats and undercooked meat is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Toxoplasmosis"
+      },
+      "explanation": "Toxoplasma gondii is associated with cat feces and ingestion of undercooked infected meat.",
+      "optionExplanations": {
+        "A": "Histoplasmosis is not the best answer for the question as written.",
+        "B": "Toxoplasma gondii is associated with cat feces and ingestion of undercooked infected meat.",
+        "C": "Tuberculosis is not the best answer for the question as written.",
+        "D": "Candidiasis is not the best answer for the question as written."
+      },
+      "tags": [
+        "Infectious Diseases",
+        "Toxoplasmosis"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-024",
+      "questionNumber": 24,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Vascular Surgery",
+      "topic": "Chronic limb ischemia",
+      "title": "Indications for amputation",
+      "originalQuestion": "Indication for amputation in chronic limb ischemia:",
+      "originalOptions": {
+        "A": "Intermittent claudication",
+        "B": "Severe rest pain",
+        "C": "Motor and sensory loss",
+        "D": "Cold limb only"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Motor and sensory loss"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "Indication for amputation in chronic limb ischemia:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Motor and sensory loss"
+      },
+      "explanation": "Established irreversible tissue/neurologic loss may require amputation; isolated claudication is not an indication.",
+      "optionExplanations": {
+        "A": "Intermittent claudication is not the best answer for the question as written.",
+        "B": "Severe rest pain is not the best answer for the question as written.",
+        "C": "Established irreversible tissue/neurologic loss may require amputation; isolated claudication is not an indication.",
+        "D": "Cold limb only is not the best answer for the question as written."
+      },
+      "tags": [
+        "Vascular Surgery",
+        "Chronic limb ischemia"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-025",
+      "questionNumber": 25,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Urology",
+      "topic": "Urethral injury",
+      "title": "Initial management of suspected urethral injury",
+      "originalQuestion": "A boy falls from a bicycle and has blood at the urethral meatus. Initial management:",
+      "originalOptions": {
+        "A": "Ask him to void",
+        "B": "Insert urethral silicone catheter",
+        "C": "Suprapubic catheterization",
+        "D": "Immediate urethral repair"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Suprapubic catheterization"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "The source answer reflects a traditional trauma algorithm. Blood at the meatus should prompt retrograde urethrography before urethral catheterization; urinary diversion is used when indicated.",
+      "correctedQuestion": "A boy falls from a bicycle and has blood at the urethral meatus. Initial management:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Suprapubic catheterization"
+      },
+      "explanation": "Blood at the urethral meatus suggests urethral injury; urinary diversion may be required, classically by suprapubic catheter when urethral catheterization is contraindicated.",
+      "optionExplanations": {
+        "A": "Ask him to void is not the best answer for the question as written.",
+        "B": "Insert urethral silicone catheter is not the best answer for the question as written.",
+        "C": "Blood at the urethral meatus suggests urethral injury; urinary diversion may be required, classically by suprapubic catheter when urethral catheterization is contraindicated.",
+        "D": "Immediate urethral repair is not the best answer for the question as written."
+      },
+      "tags": [
+        "Urology",
+        "Urethral injury"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-026",
+      "questionNumber": 26,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Obstetrics",
+      "topic": "Non-obstetric surgery",
+      "title": "Appendicitis in pregnancy",
+      "originalQuestion": "Which condition commonly requires surgery during pregnancy and carries an increased risk of preterm labor?",
+      "originalOptions": {
+        "A": "Placenta previa",
+        "B": "Acute appendicitis",
+        "C": "Intrauterine bleeding",
+        "D": "Ovarian cyst"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Acute appendicitis"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Which condition commonly requires surgery during pregnancy and carries an increased risk of preterm labor?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Acute appendicitis"
+      },
+      "explanation": "Acute appendicitis is the commonest non-obstetric surgical emergency in pregnancy and surgery can increase preterm labor risk.",
+      "optionExplanations": {
+        "A": "Placenta previa is not the best answer for the question as written.",
+        "B": "Acute appendicitis is the commonest non-obstetric surgical emergency in pregnancy and surgery can increase preterm labor risk.",
+        "C": "Intrauterine bleeding is not the best answer for the question as written.",
+        "D": "Ovarian cyst is not the best answer for the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Non-obstetric surgery"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-027",
+      "questionNumber": 27,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Urology",
+      "topic": "Renal trauma",
+      "title": "Conservative management of renal laceration",
+      "originalQuestion": "A hemodynamically stable patient with blunt renal trauma has a renal laceration without urinary extravasation. Management is:",
+      "originalOptions": {
+        "A": "Nephrectomy",
+        "B": "Hospitalization and bed rest (Observation)",
+        "C": "Immediate laparotomy",
+        "D": "Renal artery embolization"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Hospitalization and bed rest (Observation)"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "A hemodynamically stable patient with blunt renal trauma has a renal laceration without urinary extravasation. Management is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Hospitalization and bed rest (Observation)"
+      },
+      "explanation": "Hemodynamically stable renal trauma without ongoing urinary extravasation is generally managed non-operatively with observation.",
+      "optionExplanations": {
+        "A": "Nephrectomy is not the best answer for the question as written.",
+        "B": "Hemodynamically stable renal trauma without ongoing urinary extravasation is generally managed non-operatively with observation.",
+        "C": "Immediate laparotomy is not the best answer for the question as written.",
+        "D": "Renal artery embolization is not the best answer for the question as written."
+      },
+      "tags": [
+        "Urology",
+        "Renal trauma"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-028",
+      "questionNumber": 28,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gastroenterology",
+      "topic": "Choledocholithiasis",
+      "title": "Management of CBD stone",
+      "originalQuestion": "A patient has obstructive jaundice due to a CBD stone with normal INR. The next step is:",
+      "originalOptions": {
+        "A": "IV fluids and antibiotics only",
+        "B": "ERCP",
+        "C": "Open cholecystectomy with CBD exploration",
+        "D": "Laparoscopic cholecystectomy"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — ERCP"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "A patient has obstructive jaundice due to a CBD stone with normal INR. The next step is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — ERCP"
+      },
+      "explanation": "ERCP provides biliary decompression and stone extraction in appropriate patients with obstructing CBD stones.",
+      "optionExplanations": {
+        "A": "IV fluids and antibiotics only is not the best answer for the question as written.",
+        "B": "ERCP provides biliary decompression and stone extraction in appropriate patients with obstructing CBD stones.",
+        "C": "Open cholecystectomy with CBD exploration is not the best answer for the question as written.",
+        "D": "Laparoscopic cholecystectomy is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Choledocholithiasis"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-029",
+      "questionNumber": 29,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Vascular Surgery",
+      "topic": "Vascular trauma",
+      "title": "Hard signs requiring exploration",
+      "originalQuestion": "Which is an indication for immediate vascular exploration after limb trauma?",
+      "originalOptions": {
+        "A": "Absent distal (popliteal) pulse",
+        "B": "Muscle injury only",
+        "C": "Small hematoma",
+        "D": "Pain only"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Absent distal (popliteal) pulse"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Which is an indication for immediate vascular exploration after limb trauma?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Absent distal (popliteal) pulse"
+      },
+      "explanation": "An absent distal pulse after limb trauma is a hard sign of arterial injury requiring urgent vascular assessment and often exploration.",
+      "optionExplanations": {
+        "A": "An absent distal pulse after limb trauma is a hard sign of arterial injury requiring urgent vascular assessment and often exploration.",
+        "B": "Muscle injury only is not the best answer for the question as written.",
+        "C": "Small hematoma is not the best answer for the question as written.",
+        "D": "Pain only is not the best answer for the question as written."
+      },
+      "tags": [
+        "Vascular Surgery",
+        "Vascular trauma"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-030",
+      "questionNumber": 30,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Orthopedics",
+      "topic": "Open fracture",
+      "title": "Initial management of open fracture",
+      "originalQuestion": "The most important initial management of an open fracture is:",
+      "originalOptions": {
+        "A": "Wound irrigation and debridement",
+        "B": "Immediate casting",
+        "C": "Bone packing",
+        "D": "Skin closure"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Wound irrigation and debridement"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most important initial management of an open fracture is:",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Wound irrigation and debridement"
+      },
+      "explanation": "Open fractures require urgent antibiotics, sterile coverage and surgical irrigation/debridement; among the listed choices, irrigation and debridement is the key intervention.",
+      "optionExplanations": {
+        "A": "Open fractures require urgent antibiotics, sterile coverage and surgical irrigation/debridement; among the listed choices, irrigation and debridement is the key intervention.",
+        "B": "Immediate casting is not the best answer for the question as written.",
+        "C": "Bone packing is not the best answer for the question as written.",
+        "D": "Skin closure is not the best answer for the question as written."
+      },
+      "tags": [
+        "Orthopedics",
+        "Open fracture"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-031",
+      "questionNumber": 31,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Trauma Surgery",
+      "topic": "Hemorrhage control",
+      "title": "Initial control of external bleeding",
+      "originalQuestion": "A patient has a knife injury with profuse bleeding. The best initial management is:",
+      "originalOptions": {
+        "A": "Sterile dressing only",
+        "B": "Tourniquet immediately",
+        "C": "Direct pressure with the thumb",
+        "D": "Immediate suturing"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Direct pressure with the thumb"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "A patient has a knife injury with profuse bleeding. The best initial management is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Direct pressure with the thumb"
+      },
+      "explanation": "Direct pressure is the first-line method for controlling most external hemorrhage; tourniquets are used when indicated for life-threatening extremity bleeding.",
+      "optionExplanations": {
+        "A": "Sterile dressing only is not the best answer for the question as written.",
+        "B": "Tourniquet immediately is not the best answer for the question as written.",
+        "C": "Direct pressure is the first-line method for controlling most external hemorrhage; tourniquets are used when indicated for life-threatening extremity bleeding.",
+        "D": "Immediate suturing is not the best answer for the question as written."
+      },
+      "tags": [
+        "Trauma Surgery",
+        "Hemorrhage control"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-032",
+      "questionNumber": 32,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Pediatrics",
+      "topic": "Osteomyelitis",
+      "title": "Acute hematogenous osteomyelitis",
+      "originalQuestion": "A child has severe hip pain, fever (39°C), tenderness, and a normal X-ray. The diagnosis is:",
+      "originalOptions": {
+        "A": "Acute hematogenous osteomyelitis",
+        "B": "Rheumatoid arthritis",
+        "C": "Ewing sarcoma",
+        "D": "Osteosarcoma"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Acute hematogenous osteomyelitis"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "A child has severe hip pain, fever (39°C), tenderness, and a normal X-ray. The diagnosis is:",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Acute hematogenous osteomyelitis"
+      },
+      "explanation": "Fever, focal bone/joint-region tenderness and severe pain with a potentially normal early radiograph are compatible with acute hematogenous osteomyelitis.",
+      "optionExplanations": {
+        "A": "Fever, focal bone/joint-region tenderness and severe pain with a potentially normal early radiograph are compatible with acute hematogenous osteomyelitis.",
+        "B": "Rheumatoid arthritis is not the best answer for the question as written.",
+        "C": "Ewing sarcoma is not the best answer for the question as written.",
+        "D": "Osteosarcoma is not the best answer for the question as written."
+      },
+      "tags": [
+        "Pediatrics",
+        "Osteomyelitis"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-033",
+      "questionNumber": 33,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gastroenterology",
+      "topic": "Esophageal cancer",
+      "title": "Evaluation of malignant dysphagia",
+      "originalQuestion": "A patient has progressive dysphagia to solids and barium swallow shows shouldering with irregular margins. Next step:",
+      "originalOptions": {
+        "A": "Esophagoscopy with biopsy",
+        "B": "Gastrostomy",
+        "C": "Esophagectomy",
+        "D": "Chemotherapy"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Esophagoscopy with biopsy"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "A patient has progressive dysphagia to solids and barium swallow shows shouldering with irregular margins. Next step:",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Esophagoscopy with biopsy"
+      },
+      "explanation": "Progressive solid-food dysphagia with shouldering and irregular margins suggests malignancy; endoscopy with biopsy establishes the diagnosis.",
+      "optionExplanations": {
+        "A": "Progressive solid-food dysphagia with shouldering and irregular margins suggests malignancy; endoscopy with biopsy establishes the diagnosis.",
+        "B": "Gastrostomy is not the best answer for the question as written.",
+        "C": "Esophagectomy is not the best answer for the question as written.",
+        "D": "Chemotherapy is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Esophageal cancer"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-034",
+      "questionNumber": 34,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gynecology",
+      "topic": "Vaginitis in pregnancy",
+      "title": "Common cause of vaginitis in pregnancy",
+      "originalQuestion": "The most common cause of vaginitis during pregnancy is:",
+      "originalOptions": {
+        "A": "Bacterial vaginosis",
+        "B": "Candidiasis",
+        "C": "Trichomoniasis",
+        "D": "Group B Streptococcus"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Candidiasis"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common cause of vaginitis during pregnancy is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Candidiasis"
+      },
+      "explanation": "Vulvovaginal candidiasis is common during pregnancy because of hormonal and microbiologic changes.",
+      "optionExplanations": {
+        "A": "Bacterial vaginosis is not the best answer for the question as written.",
+        "B": "Vulvovaginal candidiasis is common during pregnancy because of hormonal and microbiologic changes.",
+        "C": "Trichomoniasis is not the best answer for the question as written.",
+        "D": "Group B Streptococcus is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gynecology",
+        "Vaginitis in pregnancy"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-035",
+      "questionNumber": 35,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Breast Surgery",
+      "topic": "Breast cancer",
+      "title": "Commonest breast cancer site",
+      "originalQuestion": "The most common site of breast cancer is:",
+      "originalOptions": {
+        "A": "Upper inner quadrant",
+        "B": "Lower outer quadrant",
+        "C": "Upper outer quadrant",
+        "D": "Lower inner quadrant"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Upper outer quadrant"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common site of breast cancer is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Upper outer quadrant"
+      },
+      "explanation": "The upper outer quadrant is the most common site of breast cancer, partly because it contains a large volume of breast tissue.",
+      "optionExplanations": {
+        "A": "Upper inner quadrant is not the best answer for the question as written.",
+        "B": "Lower outer quadrant is not the best answer for the question as written.",
+        "C": "The upper outer quadrant is the most common site of breast cancer, partly because it contains a large volume of breast tissue.",
+        "D": "Lower inner quadrant is not the best answer for the question as written."
+      },
+      "tags": [
+        "Breast Surgery",
+        "Breast cancer"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-036",
+      "questionNumber": 36,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "General Surgery",
+      "topic": "Post-thyroidectomy hematoma",
+      "title": "Emergency management of neck hematoma",
+      "originalQuestion": "A patient develops respiratory distress due to neck hematoma after thyroidectomy. Immediate management is:",
+      "originalOptions": {
+        "A": "Call the surgeon and wait",
+        "B": "Give oxygen only",
+        "C": "Open the wound immediately at the bedside",
+        "D": "Intubation only"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Open the wound immediately at the bedside"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "A patient develops respiratory distress due to neck hematoma after thyroidectomy. Immediate management is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Open the wound immediately at the bedside"
+      },
+      "explanation": "Expanding neck hematoma with airway compromise is a surgical airway emergency; the wound should be opened immediately if needed to relieve compression.",
+      "optionExplanations": {
+        "A": "Call the surgeon and wait is not the best answer for the question as written.",
+        "B": "Give oxygen only is not the best answer for the question as written.",
+        "C": "Expanding neck hematoma with airway compromise is a surgical airway emergency; the wound should be opened immediately if needed to relieve compression.",
+        "D": "Intubation only is not the best answer for the question as written."
+      },
+      "tags": [
+        "General Surgery",
+        "Post-thyroidectomy hematoma"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-037",
+      "questionNumber": 37,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "General Surgery",
+      "topic": "Laparoscopic surgery",
+      "title": "Advantages of laparoscopy",
+      "originalQuestion": "Which of the following is NOT an advantage of laparoscopic surgery?",
+      "originalOptions": {
+        "A": "Less postoperative pain",
+        "B": "Rapid recovery",
+        "C": "Less scar formation",
+        "D": "Longer operative time"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Longer operative time"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Which of the following is NOT an advantage of laparoscopic surgery?",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Longer operative time"
+      },
+      "explanation": "Longer operative time is a disadvantage rather than an advantage of laparoscopic surgery.",
+      "optionExplanations": {
+        "A": "Less postoperative pain is not the best answer for the question as written.",
+        "B": "Rapid recovery is not the best answer for the question as written.",
+        "C": "Less scar formation is not the best answer for the question as written.",
+        "D": "Longer operative time is a disadvantage rather than an advantage of laparoscopic surgery."
+      },
+      "tags": [
+        "General Surgery",
+        "Laparoscopic surgery"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-038",
+      "questionNumber": 38,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Obstetrics",
+      "topic": "Uterine rupture",
+      "title": "Complications of labor after cesarean",
+      "originalQuestion": "A woman with a previous cesarean section is in labor on oxytocin. The most dangerous complication is:",
+      "originalOptions": {
+        "A": "Uterine atony",
+        "B": "Uterine rupture",
+        "C": "Cervical tear",
+        "D": "Placental abruption"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Uterine rupture"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "A woman with a previous cesarean section is in labor on oxytocin. The most dangerous complication is:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Uterine rupture"
+      },
+      "explanation": "A scarred uterus exposed to labor and oxytocin carries a risk of uterine rupture, a potentially catastrophic complication.",
+      "optionExplanations": {
+        "A": "Uterine atony is not the best answer for the question as written.",
+        "B": "A scarred uterus exposed to labor and oxytocin carries a risk of uterine rupture, a potentially catastrophic complication.",
+        "C": "Cervical tear is not the best answer for the question as written.",
+        "D": "Placental abruption is not the best answer for the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Uterine rupture"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-039",
+      "questionNumber": 39,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Transfusion Medicine",
+      "topic": "Blood transfusion",
+      "title": "Complications of transfusion",
+      "originalQuestion": "All are complications of blood transfusion EXCEPT:",
+      "originalOptions": {
+        "A": "Hypokalemia",
+        "B": "Allergic reaction",
+        "C": "Hemolytic reaction",
+        "D": "Air embolism"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Hypokalemia"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "All are complications of blood transfusion EXCEPT:",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Hypokalemia"
+      },
+      "explanation": "Transfusion reactions more characteristically include allergic and hemolytic reactions; hypokalemia is not a typical transfusion complication.",
+      "optionExplanations": {
+        "A": "Transfusion reactions more characteristically include allergic and hemolytic reactions; hypokalemia is not a typical transfusion complication.",
+        "B": "Allergic reaction is not the best answer for the question as written.",
+        "C": "Hemolytic reaction is not the best answer for the question as written.",
+        "D": "Air embolism is not the best answer for the question as written."
+      },
+      "tags": [
+        "Transfusion Medicine",
+        "Blood transfusion"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-040",
+      "questionNumber": 40,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Respiratory Medicine",
+      "topic": "Pulmonary embolism",
+      "title": "Clinical presentation of pulmonary embolism",
+      "originalQuestion": "The most common presentation of pulmonary embolism is:",
+      "originalOptions": {
+        "A": "Dyspnea",
+        "B": "Hemoptysis",
+        "C": "Chest pain",
+        "D": "Syncope"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Dyspnea"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common presentation of pulmonary embolism is:",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Dyspnea"
+      },
+      "explanation": "Dyspnea is the most common presenting symptom of pulmonary embolism.",
+      "optionExplanations": {
+        "A": "Dyspnea is the most common presenting symptom of pulmonary embolism.",
+        "B": "Hemoptysis is not the best answer for the question as written.",
+        "C": "Chest pain is not the best answer for the question as written.",
+        "D": "Syncope is not the best answer for the question as written."
+      },
+      "tags": [
+        "Respiratory Medicine",
+        "Pulmonary embolism"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-041",
+      "questionNumber": 41,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "General Surgery",
+      "topic": "Postoperative hemorrhage",
+      "title": "Timing of postoperative hemorrhage",
+      "originalQuestion": "Bleeding 10 days after hemorrhoidectomy is classified as:",
+      "originalOptions": {
+        "A": "Primary hemorrhage",
+        "B": "Reactionary hemorrhage",
+        "C": "Secondary hemorrhage",
+        "D": "Delayed hemorrhage"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Secondary hemorrhage"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Bleeding 10 days after hemorrhoidectomy is classified as:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Secondary hemorrhage"
+      },
+      "explanation": "Secondary hemorrhage occurs later after surgery, often several days later, commonly from infection or sloughing of a vessel.",
+      "optionExplanations": {
+        "A": "Primary hemorrhage is not the best answer for the question as written.",
+        "B": "Reactionary hemorrhage is not the best answer for the question as written.",
+        "C": "Secondary hemorrhage occurs later after surgery, often several days later, commonly from infection or sloughing of a vessel.",
+        "D": "Delayed hemorrhage is not the best answer for the question as written."
+      },
+      "tags": [
+        "General Surgery",
+        "Postoperative hemorrhage"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-042",
+      "questionNumber": 42,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Trauma Surgery",
+      "topic": "Airway management",
+      "title": "Initial airway maneuver in trauma",
+      "originalQuestion": "A trauma patient is unconscious with no evidence of cervical spine injury. The best initial airway maneuver is:",
+      "originalOptions": {
+        "A": "Cricothyrotomy",
+        "B": "Jaw thrust",
+        "C": "Endotracheal intubation",
+        "D": "Tracheostomy"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Jaw thrust"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "The source answer is questionable because the stem explicitly states there is no evidence of cervical spine injury; in an unconscious trauma patient, airway protection with endotracheal intubation is generally the definitive airway intervention when indicated. Jaw thrust is primarily emphasized when cervical spine injury is suspected.",
+      "correctedQuestion": "A trauma patient is unconscious with no evidence of cervical spine injury. The best initial definitive airway management is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Endotracheal intubation"
+      },
+      "explanation": "In an unconscious trauma patient, airway protection and definitive airway management are prioritized. If there is no cervical spine injury concern, endotracheal intubation is generally preferred when a definitive airway is required.",
+      "optionExplanations": {
+        "A": "Cricothyrotomy is not the best answer for the question as written.",
+        "B": "Jaw thrust is not the best answer for the question as written.",
+        "C": "Jaw thrust is preferred when cervical spine injury is a concern because it minimizes neck movement; however, the stem states no cervical injury.",
+        "D": "Tracheostomy is not the best answer for the question as written."
+      },
+      "tags": [
+        "Trauma Surgery",
+        "Airway management"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-043",
+      "questionNumber": 43,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Obstetrics",
+      "topic": "Pulmonary embolism",
+      "title": "Post-cesarean sudden dyspnea and collapse",
+      "originalQuestion": "A woman develops sudden dyspnea and loss of consciousness after emergency cesarean section. The most likely diagnosis is:",
+      "originalOptions": {
+        "A": "Vasovagal attack",
+        "B": "Hypoglycemia",
+        "C": "Pulmonary embolism",
+        "D": "Epileptic seizure"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Pulmonary embolism"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "A woman develops sudden dyspnea and loss of consciousness after emergency cesarean section. The most likely diagnosis is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Pulmonary embolism"
+      },
+      "explanation": "Sudden dyspnea and loss of consciousness after cesarean delivery are concerning for pulmonary embolism in a hypercoagulable postpartum patient.",
+      "optionExplanations": {
+        "A": "Vasovagal attack is not the best answer for the question as written.",
+        "B": "Hypoglycemia is not the best answer for the question as written.",
+        "C": "Sudden dyspnea and loss of consciousness after cesarean delivery are concerning for pulmonary embolism in a hypercoagulable postpartum patient.",
+        "D": "Epileptic seizure is not the best answer for the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pulmonary embolism"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-044",
+      "questionNumber": 44,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Nephrology",
+      "topic": "Hematuria",
+      "title": "Causes of red urine",
+      "originalQuestion": "All of the following may cause red urine EXCEPT:",
+      "originalOptions": {
+        "A": "Myoglobinuria",
+        "B": "Hemoglobinuria",
+        "C": "Porphyria",
+        "D": "Microscopic hematuria"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Microscopic hematuria"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "All of the following may cause red urine EXCEPT:",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Microscopic hematuria"
+      },
+      "explanation": "Microscopic hematuria does not visibly discolor urine red; myoglobinuria, hemoglobinuria and porphyria can cause red or dark urine.",
+      "optionExplanations": {
+        "A": "Myoglobinuria is not the best answer for the question as written.",
+        "B": "Hemoglobinuria is not the best answer for the question as written.",
+        "C": "Porphyria is not the best answer for the question as written.",
+        "D": "Microscopic hematuria does not visibly discolor urine red; myoglobinuria, hemoglobinuria and porphyria can cause red or dark urine."
+      },
+      "tags": [
+        "Nephrology",
+        "Hematuria"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-045",
+      "questionNumber": 45,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Obstetrics",
+      "topic": "Physiologic changes of pregnancy",
+      "title": "Change in GFR during pregnancy",
+      "originalQuestion": "During pregnancy, the glomerular filtration rate (GFR) increases by:",
+      "originalOptions": {
+        "A": "10%",
+        "B": "25%",
+        "C": "50%",
+        "D": "75%"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 50%"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "During pregnancy, the glomerular filtration rate (GFR) increases by:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 50%"
+      },
+      "explanation": "GFR rises substantially during pregnancy, commonly by approximately 40–50%.",
+      "optionExplanations": {
+        "A": "10% is not the best answer for the question as written.",
+        "B": "25% is not the best answer for the question as written.",
+        "C": "GFR rises substantially during pregnancy, commonly by approximately 40–50%.",
+        "D": "75% is not the best answer for the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Physiologic changes of pregnancy"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-046",
+      "questionNumber": 46,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Gastroenterology",
+      "topic": "Antacids",
+      "title": "Timing of antacid administration",
+      "originalQuestion": "Antacids should be taken:",
+      "originalOptions": {
+        "A": "Immediately after meals",
+        "B": "One hour after meals and at bedtime",
+        "C": "Before meals",
+        "D": "With meals"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — One hour after meals and at bedtime"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "Timing depends on the antacid formulation and current regimen; the source reflects traditional dosing advice.",
+      "correctedQuestion": "Antacids should be taken:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — One hour after meals and at bedtime"
+      },
+      "explanation": "Traditional teaching recommends antacids after meals and at bedtime because gastric acid secretion and symptoms may increase postprandially and at night.",
+      "optionExplanations": {
+        "A": "Immediately after meals is not the best answer for the question as written.",
+        "B": "Traditional teaching recommends antacids after meals and at bedtime because gastric acid secretion and symptoms may increase postprandially and at night.",
+        "C": "Before meals is not the best answer for the question as written.",
+        "D": "With meals is not the best answer for the question as written."
+      },
+      "tags": [
+        "Gastroenterology",
+        "Antacids"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-047",
+      "questionNumber": 47,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Respiratory Medicine",
+      "topic": "Pneumoconiosis",
+      "title": "Egg-shell calcification",
+      "originalQuestion": "Egg-shell calcification on chest X-ray is classically seen in:",
+      "originalOptions": {
+        "A": "Tuberculosis",
+        "B": "Silicosis",
+        "C": "Histoplasmosis",
+        "D": "Lung cancer"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Silicosis"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "Egg-shell calcification on chest X-ray is classically seen in:",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Silicosis"
+      },
+      "explanation": "Peripheral 'egg-shell' calcification of hilar lymph nodes is classically associated with silicosis.",
+      "optionExplanations": {
+        "A": "Tuberculosis is not the best answer for the question as written.",
+        "B": "Peripheral 'egg-shell' calcification of hilar lymph nodes is classically associated with silicosis.",
+        "C": "Histoplasmosis is not the best answer for the question as written.",
+        "D": "Lung cancer is not the best answer for the question as written."
+      },
+      "tags": [
+        "Respiratory Medicine",
+        "Pneumoconiosis"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-048",
+      "questionNumber": 48,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Neonatology",
+      "topic": "Newborn care",
+      "title": "Initial delivery-room care",
+      "originalQuestion": "The first management of a newborn in the delivery room is:",
+      "originalOptions": {
+        "A": "Oxygen therapy",
+        "B": "Remove vernix",
+        "C": "Clear the airway by suctioning the mouth and nose if needed",
+        "D": "Immediate feeding"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Clear the airway by suctioning the mouth and nose if needed"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "The source answer is questionable because routine suctioning of the mouth and nose is not recommended for a vigorous newborn. Initial care is drying, warming, positioning and assessment; suction is performed only when obstruction is present or ventilation requires it.",
+      "correctedQuestion": "The initial management of a vigorous newborn in the delivery room is:",
+      "correctAnswer": {
+        "letters": [],
+        "text": "No valid single answer based on current evidence; the stem requires revision."
+      },
+      "explanation": "Routine newborn care begins with drying, warming, positioning and assessment of breathing and heart rate. Suctioning is not routinely performed unless the airway is obstructed.",
+      "optionExplanations": {
+        "A": "Oxygen therapy is not the best answer for the question as written.",
+        "B": "Remove vernix is not the best answer for the question as written.",
+        "C": "Clear the airway by suctioning the mouth and nose if needed is not the best answer for the question as written.",
+        "D": "Immediate feeding is not the best answer for the question as written."
+      },
+      "tags": [
+        "Neonatology",
+        "Newborn care"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-049",
+      "questionNumber": 49,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Obstetrics",
+      "topic": "Miscarriage",
+      "title": "Cause of first-trimester miscarriage",
+      "originalQuestion": "The most common cause of first-trimester abortion is:",
+      "originalOptions": {
+        "A": "Herpes simplex virus",
+        "B": "Toxoplasmosis",
+        "C": "Chromosomal abnormalities",
+        "D": "Diabetes mellitus"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Chromosomal abnormalities"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Correct",
+      "correction": "No correction required.",
+      "correctedQuestion": "The most common cause of first-trimester abortion is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Chromosomal abnormalities"
+      },
+      "explanation": "Chromosomal abnormalities account for a large proportion of early spontaneous miscarriages.",
+      "optionExplanations": {
+        "A": "Herpes simplex virus is not the best answer for the question as written.",
+        "B": "Toxoplasmosis is not the best answer for the question as written.",
+        "C": "Chromosomal abnormalities account for a large proportion of early spontaneous miscarriages.",
+        "D": "Diabetes mellitus is not the best answer for the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Miscarriage"
+      ]
+    },
+    {
+      "id": "2026-07-28-Sanaa-GMS-050",
+      "questionNumber": 50,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2026,
+      "month": "July",
+      "exactDate": "2026-07-28",
+      "subject": "Oncology",
+      "topic": "Bone metastases",
+      "title": "Imaging for bone metastasis",
+      "originalQuestion": "The best investigation for detecting bone metastasis is:",
+      "originalOptions": {
+        "A": "Plain X-ray",
+        "B": "CT scan",
+        "C": "Bone scan (Bone scintigraphy)",
+        "D": "MRI"
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Bone scan (Bone scintigraphy)"
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Acceptable",
+      "correction": "No correction required.",
+      "correctedQuestion": "The best investigation for detecting bone metastasis is:",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Bone scan (Bone scintigraphy)"
+      },
+      "explanation": "Bone scintigraphy is a sensitive traditional whole-skeleton survey for many osteoblastic and mixed bone metastases.",
+      "optionExplanations": {
+        "A": "Plain X-ray is not the best answer for the question as written.",
+        "B": "CT scan is not the best answer for the question as written.",
+        "C": "Bone scintigraphy is a sensitive traditional whole-skeleton survey for many osteoblastic and mixed bone metastases.",
+        "D": "MRI is not the best answer for the question as written."
+      },
+      "tags": [
+        "Oncology",
+        "Bone metastases"
+      ]
+    }
+  ]
+}

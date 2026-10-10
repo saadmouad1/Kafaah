@@ -1,0 +1,2346 @@
+{
+  "examMetadata": {
+    "medicalProfession": "Human Medicine",
+    "specialty": "General Medicine & Surgery",
+    "governorate": "Sana'a",
+    "year": 2024,
+    "month": "December",
+    "exactDate": "2024-12-26",
+    "language": "English",
+    "source": "آخر_نماذج_مزاولة_المهنة_بك_طب_عام_صنعاء_2024_12_26.pdf",
+    "examTitle": "نماذج مزاولة المهنة بكالوريوس طب عام صنعاء تاريخ 26/12/2024",
+    "numberOfQuestions": 50
+  },
+  "questions": [
+    {
+      "id": "2024-12-26-Sanaa-GMS-001",
+      "questionNumber": 1,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Rheumatology",
+      "topic": "Rheumatoid Arthritis",
+      "title": "Folic Acid Supplementation with Methotrexate",
+      "originalQuestion": "A 42 year-old female patient known having\nRheumatoid arthritis on methotrexate weekly\nwhat drug should be used with it:",
+      "originalOptions": {
+        "A": "Vitamin B6",
+        "B": "Folic acid",
+        "C": "Vitamin B12",
+        "D": "Thiamine"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A 42-year-old woman with rheumatoid arthritis is taking weekly methotrexate. Which supplement should routinely be given with methotrexate?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Folic acid"
+      },
+      "explanation": "Folic acid is routinely supplemented with low-dose methotrexate to reduce folate-related adverse effects such as mucositis and cytopenias without substantially reducing efficacy.",
+      "optionExplanations": {
+        "A": "Vitamin B6 is not the routine supplement used to reduce methotrexate toxicity.",
+        "B": "Folic acid supplementation reduces methotrexate-related folate deficiency and adverse effects.",
+        "C": "Vitamin B12 is not the standard routine supplement with methotrexate.",
+        "D": "Thiamine is not routinely co-prescribed to prevent methotrexate toxicity."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Rheumatology",
+        "Rheumatoid Arthritis",
+        "Pharmacology"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-002",
+      "questionNumber": 2,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Infectious Diseases",
+      "topic": "MRSA Cellulitis",
+      "title": "Treatment of Hospital-Acquired MRSA Cellulitis",
+      "originalQuestion": "A patient in hospital with MRSA cellulitis the\nbest antibiotic to be initiated for the treatment is:",
+      "originalOptions": {
+        "A": "CO-amoxiclav",
+        "B": "Flucloxacillin",
+        "C": "Meropenem",
+        "D": "Vancomycin"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A hospitalized patient has MRSA cellulitis. Which antibiotic is the best treatment?",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Vancomycin"
+      },
+      "explanation": "Vancomycin is a standard intravenous treatment for serious MRSA skin and soft-tissue infection in hospitalized patients.",
+      "optionExplanations": {
+        "A": "Co-amoxiclav does not reliably cover MRSA.",
+        "B": "Flucloxacillin is directed mainly at susceptible methicillin-sensitive Staphylococcus aureus, not MRSA.",
+        "C": "Meropenem does not reliably cover MRSA.",
+        "D": "Vancomycin provides reliable treatment for serious MRSA infection."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Infectious Diseases",
+        "MRSA Cellulitis",
+        "Antibiotics"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-003",
+      "questionNumber": 3,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Immunology",
+      "topic": "Type I Hypersensitivity",
+      "title": "Anaphylaxis after Amoxicillin",
+      "originalQuestion": "A Female patient with pneumonia was injected\nwith amoxicillin, then she developed dyspnea,\nhypotension and itching, what's the type of\nhypersensitivity responsible for this reaction?",
+      "originalOptions": {
+        "A": "Delayed hypersensitivity",
+        "B": "Immediate hypersensitivity",
+        "C": "Antigen-Antibody complexe"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A woman with pneumonia receives amoxicillin and then develops dyspnea, hypotension, and itching. What type of hypersensitivity reaction is responsible?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Immediate hypersensitivity"
+      },
+      "explanation": "Dyspnea, hypotension, and itching occurring rapidly after amoxicillin are characteristic of anaphylaxis, a type I IgE-mediated immediate hypersensitivity reaction.",
+      "optionExplanations": {
+        "A": "Delayed hypersensitivity is a type IV reaction and is not the typical mechanism of immediate anaphylaxis.",
+        "B": "Immediate hypersensitivity is the type I reaction responsible for acute anaphylaxis.",
+        "C": "An antigen-antibody complex mechanism describes type III hypersensitivity, not acute anaphylaxis."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Immunology",
+        "Type I Hypersensitivity",
+        "Hypersensitivity"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-004",
+      "questionNumber": 4,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Gastroenterology",
+      "topic": "Crohn Disease",
+      "title": "Angular Cheilitis with Right Iliac Fossa Mass",
+      "originalQuestion": "A Female patient came to you with malaise\nhaving fissures on the angles of her lips, on\nexamination she had a painless mass in the\nright iliac fossa with unknown cause, what is the\ncause here?",
+      "originalOptions": {
+        "A": "Alanine deficiency",
+        "B": "Folate deficiency",
+        "C": "Cron deficiency anemia",
+        "D": "Thiamine deficiency"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "The option wording “Cron deficiency anemia” is unclear in the source and appears to contain a transcription/spelling problem. The original wording is preserved unchanged.",
+      "correctedQuestion": "A woman has malaise and fissures at the angles of her lips. Examination reveals a painless right iliac fossa mass. Which condition or deficiency best explains the presentation?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Crohn deficiency anemia"
+      },
+      "explanation": "The source option appears to refer to Crohn disease/Crohn-related nutritional deficiency. A painless right iliac fossa mass with malaise can occur in Crohn disease, and nutritional deficiencies may cause angular cheilitis. The option wording is unclear.",
+      "optionExplanations": {
+        "A": "Alanine deficiency is not a recognized explanation for this presentation.",
+        "B": "Folate deficiency can cause mucosal changes but does not explain the right iliac fossa mass as well.",
+        "C": "This option is written unclearly as “Cron deficiency anemia”; it appears to intend a Crohn-related condition and is the best available option.",
+        "D": "Thiamine deficiency does not explain the characteristic right iliac fossa mass."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Gastroenterology",
+        "Crohn Disease",
+        "Inflammatory Bowel Disease"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-005",
+      "questionNumber": 5,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Neurology",
+      "topic": "Parkinson Disease",
+      "title": "Neurotransmitter Deficiency in Parkinson Disease",
+      "originalQuestion": "Parkinson disease (PD) is a neurodegenerative\ncondition, which is the neurotransmitter is\nresponsible for this disease?",
+      "originalOptions": {
+        "A": "Acetylcholine",
+        "B": "Arginine",
+        "C": "GDopamine",
+        "D": "Noradrenaline"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which neurotransmitter deficiency is most closely associated with Parkinson disease?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Dopamine"
+      },
+      "explanation": "Parkinson disease is associated with degeneration of dopaminergic neurons in the substantia nigra and reduced dopamine in the striatum.",
+      "optionExplanations": {
+        "A": "Acetylcholine is not the primary neurotransmitter deficient in Parkinson disease.",
+        "B": "Arginine is not the neurotransmitter deficiency classically responsible for Parkinson disease.",
+        "C": "Dopamine deficiency from nigrostriatal neuronal loss is central to Parkinson disease.",
+        "D": "Noradrenaline is not the primary neurotransmitter implicated in Parkinson disease."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Neurology",
+        "Parkinson Disease",
+        "Parkinson Disease"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-006",
+      "questionNumber": 6,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Infectious Diseases",
+      "topic": "Infective Endocarditis",
+      "title": "Infective Endocarditis in Intravenous Drug Use",
+      "originalQuestion": "A GP got needle stick of patient who was an IV\ndrug abuser, having infective endocarditis, what\nis the probable causative organism here?",
+      "originalOptions": {
+        "A": "Enterococci",
+        "B": "Staphylococcus epidermidis",
+        "C": "Staphylococcus aureus",
+        "D": "Streptococcus pneumonia"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A general practitioner sustains a needlestick injury from a patient who injects drugs and has infective endocarditis. Which organism is most likely to have caused the endocarditis?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Staphylococcus aureus"
+      },
+      "explanation": "Staphylococcus aureus is the most common cause of infective endocarditis among people who inject drugs, particularly involving the tricuspid valve.",
+      "optionExplanations": {
+        "A": "Enterococci can cause endocarditis but are not the most typical organism in intravenous drug use.",
+        "B": "Staphylococcus epidermidis is more associated with prosthetic material and healthcare-associated infection.",
+        "C": "Staphylococcus aureus is the classic and most common causative organism in people who inject drugs.",
+        "D": "Streptococcus pneumoniae is an uncommon cause of infective endocarditis."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Infectious Diseases",
+        "Infective Endocarditis",
+        "Endocarditis"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-007",
+      "questionNumber": 7,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Dermatology",
+      "topic": "Psoriasis",
+      "title": "Systemic Corticosteroids in Psoriasis",
+      "originalQuestion": "Which of the following drug is contraindicated\nin psoriasisis\n",
+      "originalOptions": {
+        "A": "-Prednisolone",
+        "B": "Methotrexate",
+        "C": "Cyclosporin",
+        "D": "Acitretin"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which drug is contraindicated or generally avoided in psoriasis because withdrawal may precipitate severe rebound disease?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Prednisolone"
+      },
+      "explanation": "Systemic corticosteroids are generally avoided in psoriasis because withdrawal can precipitate severe rebound psoriasis, including generalized pustular psoriasis.",
+      "optionExplanations": {
+        "A": "Systemic prednisolone is generally avoided in psoriasis because withdrawal may cause severe rebound or pustular psoriasis.",
+        "B": "Methotrexate is an established systemic treatment for psoriasis.",
+        "C": "Cyclosporin is an effective systemic treatment for severe psoriasis.",
+        "D": "Acitretin is an established systemic treatment for psoriasis."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Dermatology",
+        "Psoriasis",
+        "Psoriasis"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-008",
+      "questionNumber": 8,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Obstetrics",
+      "topic": "Antepartum Hemorrhage",
+      "title": "Placental Abruption at Term",
+      "originalQuestion": "A pregnant female patient complaining of\nsudden onset abdominal pain and vaginal\nbleeding ,she is in 38 weeks ,her BP110/80 and\nthere is lower abdominal tenderness ,her baby\npulse rate 170bpm, the most important\ndiagnosis:",
+      "originalOptions": {
+        "A": "Necrosis of fibroid",
+        "B": "Placenta previa",
+        "C": "Abruptio placenta",
+        "D": "Preterm Labour"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A pregnant woman at 38 weeks has sudden abdominal pain and vaginal bleeding, lower abdominal tenderness, and fetal tachycardia. What is the most likely diagnosis?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Abruptio placenta"
+      },
+      "explanation": "Painful vaginal bleeding with uterine/lower abdominal tenderness and fetal tachycardia at term is most consistent with placental abruption. Placenta previa classically causes painless bleeding.",
+      "optionExplanations": {
+        "A": "Fibroid degeneration can cause pain but does not best explain the acute antepartum bleeding and fetal tachycardia.",
+        "B": "Placenta previa typically causes painless vaginal bleeding.",
+        "C": "Placental abruption classically causes painful bleeding and uterine tenderness with possible fetal compromise.",
+        "D": "The pregnancy is at 38 weeks, so this is not preterm labor."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Obstetrics",
+        "Antepartum Hemorrhage",
+        "Antepartum Hemorrhage"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-009",
+      "questionNumber": 9,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Molluscum Contagiosum",
+      "title": "Diagnosis of Molluscum Contagiosum",
+      "originalQuestion": "A 5 year-old child patient with skin lesion not\nitchy,painless on his chest, no fever, and\nsystematically well ,which of the following is\nmost appropriate dignosis:",
+      "originalOptions": {
+        "A": "Chickenpox",
+        "B": "Molluscum contagiosum",
+        "C": "Eczema",
+        "D": "Hand&foot and mouth syndrome"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A 5-year-old child has a painless, non-itchy chest skin lesion, no fever, and is otherwise well. What is the most likely diagnosis?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Molluscum contagiosum"
+      },
+      "explanation": "Molluscum contagiosum commonly causes painless, non-itchy umbilicated papules in otherwise well children.",
+      "optionExplanations": {
+        "A": "Chickenpox is usually pruritic and associated with systemic symptoms and lesions at different stages.",
+        "B": "Molluscum contagiosum commonly presents as painless papules in an otherwise well child.",
+        "C": "Eczema is usually itchy and eczematous rather than a discrete painless lesion.",
+        "D": "Hand, foot and mouth disease usually includes oral lesions and lesions on the hands and feet with an acute febrile illness."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Molluscum Contagiosum",
+        "Pediatrics"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-010",
+      "questionNumber": 10,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Gastroenterology",
+      "topic": "Acute Viral Hepatitis",
+      "title": "Dark Urine with Acute Hepatitis",
+      "originalQuestion": "A young patient complaining of vomiting and\nfatigue for few days then has dark urine, the\npossible cause is:",
+      "originalOptions": {
+        "A": "Acute viral hepatitis",
+        "B": "Liver cancer",
+        "C": "Fatty liver disease",
+        "D": "Cirrhosis."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A young patient has vomiting and fatigue for several days followed by dark urine. What is the most likely cause?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Acute viral hepatitis"
+      },
+      "explanation": "Acute viral hepatitis can cause malaise, vomiting, and dark urine from conjugated hyperbilirubinemia during the icteric phase.",
+      "optionExplanations": {
+        "A": "Acute viral hepatitis can cause vomiting, fatigue, and dark urine from conjugated bilirubinuria.",
+        "B": "Liver cancer is not the most likely cause of this acute prodromal presentation in a young patient.",
+        "C": "Fatty liver disease usually does not cause this acute symptomatic syndrome.",
+        "D": "Cirrhosis is chronic liver disease and is less consistent with this acute presentation."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Gastroenterology",
+        "Acute Viral Hepatitis",
+        "Hepatitis"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-011",
+      "questionNumber": 11,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Measles",
+      "title": "Serious Neurologic Complication of Measles",
+      "originalQuestion": "The most serious complication of measles is:",
+      "originalOptions": {
+        "A": "Otitis media",
+        "B": "Subacute sclerosing panencephalitis",
+        "C": "Pneumonia",
+        "D": "Pericarditis"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "What is the most serious delayed complication of measles?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Subacute sclerosing panencephalitis"
+      },
+      "explanation": "Subacute sclerosing panencephalitis is a rare, progressive, and ultimately fatal delayed neurologic complication of measles infection.",
+      "optionExplanations": {
+        "A": "Otitis media is a common complication but is not the most serious long-term complication.",
+        "B": "SSPE is a severe progressive and usually fatal delayed complication of measles.",
+        "C": "Pneumonia can be severe and is an important acute complication, but SSPE is the classic serious delayed complication asked here.",
+        "D": "Pericarditis is not a typical major complication of measles."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Measles",
+        "Measles"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-012",
+      "questionNumber": 12,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Neurology",
+      "topic": "Trigeminal Neuralgia",
+      "title": "First-Line Drug for Trigeminal Neuralgia",
+      "originalQuestion": "A male patient with stabbing pain in jaw and\nmouth for few seconds which increased during\ntoothbrush, what is the best drug for treatment:",
+      "originalOptions": {
+        "A": "Carbamazepine",
+        "B": "Prednisolone",
+        "C": "Indomethacin",
+        "D": "Morphine"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A man has brief stabbing facial pain lasting seconds and triggered by toothbrushing. What is the best drug treatment?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Carbamazepine"
+      },
+      "explanation": "Brief electric-shock-like facial pain triggered by activities such as brushing the teeth is typical of trigeminal neuralgia; carbamazepine is a standard first-line drug.",
+      "optionExplanations": {
+        "A": "Carbamazepine is a standard first-line treatment for trigeminal neuralgia.",
+        "B": "Prednisolone is not standard first-line therapy for trigeminal neuralgia.",
+        "C": "Indomethacin is not the usual first-line drug for classic trigeminal neuralgia.",
+        "D": "Morphine is not the preferred treatment for brief paroxysmal trigeminal neuralgia."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Neurology",
+        "Trigeminal Neuralgia",
+        "Trigeminal Neuralgia"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-013",
+      "questionNumber": 13,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Cardiology",
+      "topic": "Coarctation of the Aorta",
+      "title": "Adult Coarctation of the Aorta",
+      "originalQuestion": "A 62 year-old male patient with heart rate\n72bpm and BP 220/110 mmHg with radio-\nfemoral delay, audible systolic murmer, and\nnotching in ribs at MCL on chest X.ray what is\nthe possible diagnosis?",
+      "originalOptions": {
+        "A": "Coarctation of aorta",
+        "B": "Marfan sydrome",
+        "C": "renal artery stenosis",
+        "D": "Aneurysm of aorta"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A 62-year-old man has severe hypertension, radio-femoral delay, a systolic murmur, and rib notching on chest X-ray. What is the most likely diagnosis?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Coarctation of aorta"
+      },
+      "explanation": "Radio-femoral delay, severe hypertension, a systolic murmur, and rib notching are classic findings of coarctation of the aorta.",
+      "optionExplanations": {
+        "A": "Coarctation explains radio-femoral delay, hypertension, systolic murmur, and collateral rib notching.",
+        "B": "Marfan syndrome can be associated with aortic disease but does not explain the classic radio-femoral delay and rib notching.",
+        "C": "Renal artery stenosis causes hypertension but not the characteristic radio-femoral delay and rib notching.",
+        "D": "Aortic aneurysm does not typically produce this combination of findings."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Cardiology",
+        "Coarctation of the Aorta",
+        "Coarctation"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-014",
+      "questionNumber": 14,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Emergency Medicine",
+      "topic": "Acute Coronary Syndrome",
+      "title": "Initial Drug Treatment after Aspirin",
+      "originalQuestion": "A Patient with severe central chest pain,\nwhich radiates to left shoulder and jaw, he is\nstable with BP 150/100mmHg and pulse rate 74\nbpm, he took aspirin, what is the next drug he\nshould take?",
+      "originalOptions": {
+        "A": "Fursemide",
+        "B": "Carvedilol",
+        "C": "Diamorphine",
+        "D": "Ramipril"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "The question reflects older acute-coronary-syndrome analgesia practice; modern ACS management emphasizes urgent ECG/reperfusion assessment and does not routinely recommend opioids for all patients.",
+      "correctedQuestion": "A patient has severe central chest pain radiating to the left shoulder and jaw and has already taken aspirin. What is the next appropriate medication among the options?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Diamorphine"
+      },
+      "explanation": "The question appears to refer to older acute coronary syndrome treatment where diamorphine was used for severe pain. Modern ACS care prioritizes urgent ECG/reperfusion assessment and analgesia only when needed; routine opioids are not universally recommended.",
+      "optionExplanations": {
+        "A": "Furosemide is not a routine next drug for uncomplicated suspected acute coronary syndrome without pulmonary edema.",
+        "B": "Carvedilol is not the immediate next drug simply because the patient has chest pain.",
+        "C": "Diamorphine was historically used for severe pain in suspected myocardial infarction, matching the apparent intended answer.",
+        "D": "Ramipril is useful in selected ACS patients but is not the immediate analgesic/next step in this presentation."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Emergency Medicine",
+        "Acute Coronary Syndrome",
+        "Acute Coronary Syndrome"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-015",
+      "questionNumber": 15,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Chronic Diarrhea",
+      "title": "Toddler's Diarrhea",
+      "originalQuestion": "A 3-year-old child with a history of diarrhea 6\ntimes per day for 6 months, with visible\nvegetable matter in stools. The child is thriving\nwell, and development is normal. What is the\nmost likely cause?",
+      "originalOptions": {
+        "A": "Toddler's diarrhea",
+        "B": "Celiac disease",
+        "C": "Inflammatory bowel disease (IBD)",
+        "D": "Lactose intolerance"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A thriving 3-year-old has six loose stools daily for six months with visible vegetable matter in the stool and normal development. What is the most likely cause?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Toddler's diarrhea"
+      },
+      "explanation": "Chronic loose stools with visible food particles in a thriving, normally developing 3-year-old are characteristic of toddler's diarrhea (functional diarrhea).",
+      "optionExplanations": {
+        "A": "Toddler's diarrhea typically affects otherwise healthy, thriving young children with frequent loose stools and undigested food particles.",
+        "B": "Celiac disease can cause chronic diarrhea and poor growth or nutritional consequences, which are absent here.",
+        "C": "IBD would be less consistent with a well child thriving normally for this long.",
+        "D": "Lactose intolerance may cause diarrhea and bloating but does not best fit the classic thriving-child pattern with visible food."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Chronic Diarrhea",
+        "Chronic Diarrhea"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-016",
+      "questionNumber": 16,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Infectious Diseases",
+      "topic": "Antibiotic-Associated Diarrhea",
+      "title": "Clostridioides difficile Infection",
+      "originalQuestion": "An elderly patient with watery diarrhea 6\ntimes a day was admitted to the hospital due to\nan infection exacerbation while on co-amoxiclav\nWhat is the most likely cause?",
+      "originalOptions": {
+        "A": "E. coli",
+        "B": "Campylobacter jejuni",
+        "C": "Clostridium difficile",
+        "D": "Norovirus"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "An elderly hospitalized patient develops frequent watery diarrhea after treatment with co-amoxiclav. What is the most likely cause?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Clostridium difficile"
+      },
+      "explanation": "Recent co-amoxiclav exposure followed by significant watery diarrhea in a hospitalized patient strongly suggests Clostridioides difficile infection.",
+      "optionExplanations": {
+        "A": "E. coli can cause diarrhea but the antibiotic exposure pattern strongly points elsewhere.",
+        "B": "Campylobacter can cause diarrhea but is not the classic cause of antibiotic-associated watery diarrhea.",
+        "C": "Clostridioides difficile is a classic cause of antibiotic-associated watery diarrhea, especially after broad-spectrum antibiotics.",
+        "D": "Norovirus can cause acute gastroenteritis but does not specifically explain the antibiotic-associated pattern."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Infectious Diseases",
+        "Antibiotic-Associated Diarrhea",
+        "Antibiotic-Associated Diarrhea"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-017",
+      "questionNumber": 17,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Endocrinology",
+      "topic": "Diabetic Ketoacidosis",
+      "title": "Insulin Infusion Rate in DKA",
+      "originalQuestion": "A case of diabetic ketoacidosis (DKA), what\nis the correct dose of insulin infusion?",
+      "originalOptions": {
+        "A": "0.1 unit per kg per hour",
+        "B": "1 unit per kg per hour",
+        "C": "0.5 unit per kg per hour"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "What is the usual initial intravenous insulin infusion rate for diabetic ketoacidosis?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 0.1 unit per kg per hour"
+      },
+      "explanation": "A commonly used initial intravenous regular insulin infusion rate for DKA is 0.1 unit/kg/hour, with subsequent adjustment according to glucose and metabolic response.",
+      "optionExplanations": {
+        "A": "0.1 unit/kg/hour is the standard commonly taught initial IV insulin infusion rate for DKA.",
+        "B": "1 unit/kg/hour is substantially higher than the usual initial infusion rate.",
+        "C": "0.5 unit/kg/hour is higher than the usual initial infusion rate."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Endocrinology",
+        "Diabetic Ketoacidosis",
+        "DKA"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-018",
+      "questionNumber": 18,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Endocrinology",
+      "topic": "Perioperative Diabetes",
+      "title": "Insulin Management During Fasting for Surgery",
+      "originalQuestion": "A type I diabetic patient is on 15 units of long-\nacting insulin at night and regular insulin three\ntimes at meals. The patient is preparing for an\nanesthetic operation and fasting from midnight\nWhat should be done regarding insulin?",
+      "originalOptions": {
+        "A": "Omit insulin at night and morning",
+        "B": "Give insulin at night but not in the morning",
+        "C": "Give insulin as usual",
+        "D": "Variable insulin regimen"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A patient with type 1 diabetes uses basal insulin at night and regular insulin with meals and is fasting for surgery. How should perioperative insulin be managed?",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Variable insulin regimen"
+      },
+      "explanation": "A patient with type 1 diabetes must not have basal insulin completely omitted. Perioperative insulin is adjusted with glucose monitoring, often using a variable-rate IV insulin regimen for prolonged fasting or major surgery.",
+      "optionExplanations": {
+        "A": "Stopping all insulin risks severe hyperglycemia and DKA in type 1 diabetes.",
+        "B": "Giving the usual basal dose but omitting all morning management may be unsafe without perioperative glucose monitoring and adjustment.",
+        "C": "Giving all insulin exactly as usual while fasting can cause hypoglycemia and is not appropriate for many operations.",
+        "D": "A variable perioperative insulin regimen with close glucose monitoring is appropriate, especially for prolonged fasting or major surgery."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Endocrinology",
+        "Perioperative Diabetes",
+        "Perioperative Care"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-019",
+      "questionNumber": 19,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Genetics",
+      "topic": "Hereditary Hemorrhagic Telangiectasia",
+      "title": "Inheritance Pattern of HHT",
+      "originalQuestion": "An adult wanted to start a family and he has\nHemorrhagic telangiectasia, what is the type of\ninheritance?",
+      "originalOptions": {
+        "A": "Autosomal dominant with incomplete\npenetrance",
+        "B": "Autosomal recessive with incomplete\npenetrance",
+        "C": "Codominant",
+        "D": "Autosomal dominant"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "What is the inheritance pattern of hereditary hemorrhagic telangiectasia?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Autosomal dominant with incomplete penetrance"
+      },
+      "explanation": "Hereditary hemorrhagic telangiectasia is an autosomal dominant disorder with variable expression; incomplete penetrance can occur.",
+      "optionExplanations": {
+        "A": "This best captures the usual autosomal dominant inheritance with variable/incomplete penetrance.",
+        "B": "HHT is not classically autosomal recessive.",
+        "C": "HHT is not a codominant disorder.",
+        "D": "Autosomal dominant is correct, but option A is more complete because penetrance can be incomplete."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Genetics",
+        "Hereditary Hemorrhagic Telangiectasia",
+        "Genetics"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-020",
+      "questionNumber": 20,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Genetics",
+      "topic": "Cystic Fibrosis",
+      "title": "Inheritance Risk from a Carrier Grandparent",
+      "originalQuestion": "A grandfather is a carrier of cystic fibrosis\nNhat is the risk for his grandson who is 5 year\nold?",
+      "originalOptions": {
+        "A": "case study",
+        "B": "1:4",
+        "C": "1:8",
+        "D": "1:16"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "The source does not specify the intervening parent's carrier status or the other biological parent's carrier status. Therefore, the exact risk of an affected grandson cannot be determined from the stem alone.",
+      "correctedQuestion": "A grandfather is a carrier of cystic fibrosis. What is the risk that his grandson inherits the familial CF variant, assuming the relevant intervening parent and other parent are unaffected/non-carriers as appropriate?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — 1:4"
+      },
+      "explanation": "The question is incomplete because the carrier status of the intervening parent and the other biological parent is not specified. If the intervening parent has a 1/2 chance of being a carrier and then transmits the variant with a 1/2 chance, the grandson's chance of inheriting one CF variant is 1/4; this is not the same as having cystic fibrosis.",
+      "optionExplanations": {
+        "A": "A 1/2 risk would apply to transmission from a known carrier parent to a child, not directly from a carrier grandparent.",
+        "B": "1/4 is the implied risk of inheriting the familial CF variant through two successive 1/2 transmission steps, assuming the intervening parent is the carrier pathway.",
+        "C": "1/8 does not follow from the simple two-step transmission calculation.",
+        "D": "1/16 does not follow from the simple two-step transmission calculation."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Genetics",
+        "Cystic Fibrosis",
+        "Genetics"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-021",
+      "questionNumber": 21,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Epidemiology",
+      "topic": "Measures of Disease Frequency",
+      "title": "Incidence of New HPV Cases",
+      "originalQuestion": "Which of the following give the best\ndescription to study the new cases of papilloma\nvirus infection in collage student?",
+      "originalOptions": {
+        "A": "case study",
+        "B": "Incidence",
+        "C": "median survival",
+        "D": "mortality rate"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which measure is used to describe the occurrence of new cases of papillomavirus infection in college students?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Incidence"
+      },
+      "explanation": "Incidence measures the occurrence of new cases of a disease in a population over a specified period.",
+      "optionExplanations": {
+        "A": "A case study is a descriptive report of an individual or small group and does not quantify new cases in a population.",
+        "B": "Incidence specifically measures new cases occurring in a population over time.",
+        "C": "Median survival describes time-to-event outcomes rather than new case occurrence.",
+        "D": "Mortality rate measures deaths, not new infections."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Epidemiology",
+        "Measures of Disease Frequency",
+        "Epidemiology"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-022",
+      "questionNumber": 22,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Gastroenterology",
+      "topic": "Acute Cholecystitis",
+      "title": "First-Line Imaging in Acute Cholecystitis",
+      "originalQuestion": "In a patient with acute cholecystitis, what is\nthe most common radiological imaging for the\ncase?",
+      "originalOptions": {
+        "A": "Abdominal ultrasound scan",
+        "B": "Abdominal CT scan",
+        "C": "MRI",
+        "D": "Abdominal X-ray."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "What is the usual first-line imaging test for suspected acute cholecystitis?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Abdominal ultrasound scan"
+      },
+      "explanation": "Right upper quadrant ultrasound is the usual first-line imaging test for suspected acute cholecystitis because it can detect gallstones, gallbladder wall thickening, pericholecystic fluid, and a sonographic Murphy sign.",
+      "optionExplanations": {
+        "A": "Ultrasound is the usual first-line imaging modality for suspected acute cholecystitis.",
+        "B": "CT can be useful for complications or alternative diagnoses but is not usually first-line.",
+        "C": "MRI/MRCP is useful in selected biliary cases but is not the routine first-line test.",
+        "D": "Plain abdominal X-ray has low sensitivity for acute cholecystitis."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Gastroenterology",
+        "Acute Cholecystitis",
+        "Biliary Disease"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-023",
+      "questionNumber": 23,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Ophthalmology",
+      "topic": "Red Eye",
+      "title": "Urgent Assessment of a Painful Red Eye",
+      "originalQuestion": "A patient Comies io with no discharge\npatient comes to the GP with unilateral\npainful redness of the eye, with no\nWhat should the doctor do next?",
+      "originalOptions": {
+        "A": "Referral to ophthalmology emergency\ndepartment for assessment",
+        "B": "Give local steroids eye drops",
+        "C": "Give local chloramphenicol eye drops",
+        "D": "Apply local acyclovir eye drops"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "The stem is incomplete/garbled (“with no ...”). Urgent ophthalmologic assessment is the safest interpretation among the listed options for a painful unilateral red eye.",
+      "correctedQuestion": "A patient presents to primary care with a unilateral painful red eye and no obvious discharge. What should the doctor do next?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Referral to ophthalmology emergency department for assessment"
+      },
+      "explanation": "A unilateral painful red eye is a potentially sight-threatening presentation. Urgent ophthalmologic assessment is appropriate when serious causes such as keratitis, uveitis, or acute glaucoma are possible.",
+      "optionExplanations": {
+        "A": "Urgent ophthalmology assessment is appropriate for a painful unilateral red eye because sight-threatening causes must be excluded.",
+        "B": "Topical steroids can worsen some infections, including herpetic keratitis, and should not be started without diagnosis.",
+        "C": "Chloramphenicol is not appropriate empiric treatment for every painful red eye and may delay diagnosis of a serious condition.",
+        "D": "Topical acyclovir is not appropriate without evidence of herpetic ocular disease."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Ophthalmology",
+        "Red Eye",
+        "Red Eye"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-024",
+      "questionNumber": 24,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Occupational Medicine",
+      "topic": "Needlestick Injury",
+      "title": "Initial Management of Needlestick Exposure",
+      "originalQuestion": "A GP doctor got needle stick injury while\nperforming venous cannula to patient known of\nintravenous drug use, what is the frist thing to\ndo?",
+      "originalOptions": {
+        "A": "start anti-HIV treatment",
+        "B": "Seek for prophylaxis treatment",
+        "C": "Investigate pt for HIV",
+        "D": "Encourage bleeding from site needle of the\nstick injury"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "The source does not provide immediate wound washing as an option and does not specify the source patient's HIV/HBV/HCV status. The best available option is urgent assessment for post-exposure prophylaxis.",
+      "correctedQuestion": "A general practitioner sustains a needlestick injury while cannulating a patient who injects drugs. What is the most appropriate immediate management among the options?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Seek for prophylaxis treatment"
+      },
+      "explanation": "The source patient may carry blood-borne viruses, so urgent occupational exposure assessment is required to determine HIV post-exposure prophylaxis and other testing. Immediate wound washing is also essential but is not offered as an option.",
+      "optionExplanations": {
+        "A": "Starting HIV treatment without assessment is not the correct approach; post-exposure prophylaxis is different from chronic HIV treatment.",
+        "B": "Urgent assessment for post-exposure prophylaxis is the best available option, particularly because HIV PEP is time-sensitive.",
+        "C": "Source testing is important but should occur as part of urgent exposure management rather than delaying prophylaxis assessment.",
+        "D": "The wound should be washed promptly; deliberately squeezing or encouraging bleeding is not recommended."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Occupational Medicine",
+        "Needlestick Injury",
+        "Needlestick Injury"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-025",
+      "questionNumber": 25,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Infectious Diseases",
+      "topic": "Tuberculosis",
+      "title": "Ethambutol and Optic Toxicity",
+      "originalQuestion": "Which of the following antituberculosis drugs\nrequires visual monitoring?",
+      "originalOptions": {
+        "A": "Ethambutol hydrochloride",
+        "B": "Pyrazinamide",
+        "C": "Moxifloxacin",
+        "D": "Isoniazid"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which antituberculosis drug requires visual monitoring because of potential optic toxicity?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Ethambutol hydrochloride"
+      },
+      "explanation": "Ethambutol can cause optic neuritis and visual impairment, so baseline and follow-up visual assessment are important, especially with prolonged therapy.",
+      "optionExplanations": {
+        "A": "Ethambutol can cause optic neuritis and reduced visual acuity or color discrimination, requiring visual monitoring.",
+        "B": "Pyrazinamide is mainly associated with hepatotoxicity and hyperuricemia rather than characteristic optic toxicity.",
+        "C": "Moxifloxacin can have other adverse effects but is not the classic antituberculosis drug requiring routine visual monitoring in this question.",
+        "D": "Isoniazid is associated with hepatotoxicity and peripheral neuropathy rather than the characteristic optic toxicity of ethambutol."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Infectious Diseases",
+        "Tuberculosis",
+        "Tuberculosis"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-026",
+      "questionNumber": 26,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Rheumatology",
+      "topic": "Giant Cell Arteritis",
+      "title": "Diagnostic Test for Giant Cell Arteritis",
+      "originalQuestion": "What is the best test for diagnosing giant cell\narteritis?",
+      "originalOptions": {
+        "A": "Temporal artery biopsy",
+        "B": "Ultrasound",
+        "C": "Antibodies in serum"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "What is the classic confirmatory test for giant cell arteritis?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Temporal artery biopsy"
+      },
+      "explanation": "Temporal artery biopsy has traditionally been the definitive diagnostic test for giant cell arteritis, although vascular ultrasound is increasingly used in some settings.",
+      "optionExplanations": {
+        "A": "Temporal artery biopsy provides histologic evidence of giant cell arteritis and is the classic confirmatory test.",
+        "B": "Ultrasound can support diagnosis in experienced centers but is not the traditional definitive test in this question.",
+        "C": "There is no specific serum antibody test that establishes giant cell arteritis."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Rheumatology",
+        "Giant Cell Arteritis",
+        "Vasculitis"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-027",
+      "questionNumber": 27,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Orthopedics",
+      "topic": "Finger Injuries",
+      "title": "Splinting an Extensor Tendon Injury",
+      "originalQuestion": "A patient presents with finger deformity after\ntrauma with inability to extend his finger. What\nshould be done for the deformity?",
+      "originalOptions": {
+        "A": "Finger splint",
+        "B": "Internal fixation",
+        "C": "External fixation"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A patient develops a finger deformity after trauma with inability to extend the finger. What is an appropriate initial treatment for a closed extensor tendon injury such as mallet finger?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Finger splint"
+      },
+      "explanation": "Traumatic inability to extend a finger may represent an extensor tendon injury such as mallet finger; uncomplicated injuries are commonly treated with appropriate splinting, depending on the exact lesion.",
+      "optionExplanations": {
+        "A": "Splinting is appropriate initial treatment for many closed extensor tendon injuries such as mallet finger.",
+        "B": "Internal fixation is reserved for selected fractures or injuries requiring operative stabilization.",
+        "C": "External fixation is not the routine treatment for an uncomplicated finger extensor injury."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Orthopedics",
+        "Finger Injuries",
+        "Hand Injury"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-028",
+      "questionNumber": 28,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Hematology",
+      "topic": "Pernicious Anemia",
+      "title": "Laboratory Evaluation of Pernicious Anemia",
+      "originalQuestion": "Most conforming test for Pernicious anemia\nis:",
+      "originalOptions": {
+        "A": "Serum Iron",
+        "B": "Serum Folic acid",
+        "C": "Serum protein electrophoresis",
+        "D": "Serum vitamin B12"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which laboratory test is most appropriate as an initial test for suspected pernicious anemia?",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Serum vitamin B12"
+      },
+      "explanation": "Pernicious anemia causes vitamin B12 deficiency due to intrinsic-factor-related malabsorption. Serum vitamin B12 is a key initial laboratory test, with additional testing such as anti-intrinsic factor antibodies when needed.",
+      "optionExplanations": {
+        "A": "Serum iron assesses iron status and does not diagnose pernicious anemia.",
+        "B": "Folate deficiency causes a different megaloblastic anemia and does not establish pernicious anemia.",
+        "C": "Serum protein electrophoresis is not the diagnostic test for pernicious anemia.",
+        "D": "Low serum vitamin B12 supports the diagnosis of vitamin B12 deficiency; further testing can identify pernicious anemia as the cause."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Hematology",
+        "Pernicious Anemia",
+        "Vitamin B12 Deficiency"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-029",
+      "questionNumber": 29,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Nutrition",
+      "topic": "Vitamin C Deficiency",
+      "title": "Scurvy and Gingival Bleeding",
+      "originalQuestion": "An old patient presents with gum bleeding\nand hypertrophy. Which nutritional deficiency\ncould be the cause?",
+      "originalOptions": {
+        "A": "Vitamin B12deficiency",
+        "B": "Vitamin A deficiency",
+        "C": "Vitamin Cdeficiency",
+        "D": "Folic acid"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which nutritional deficiency can cause gingival bleeding and hypertrophy?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Vitamin C deficiency"
+      },
+      "explanation": "Vitamin C deficiency causes scurvy, characterized by impaired collagen synthesis, gingival disease and bleeding, bruising, and poor wound healing.",
+      "optionExplanations": {
+        "A": "Vitamin B12 deficiency can cause anemia and neurologic manifestations but is not the classic nutritional cause of bleeding gums.",
+        "B": "Vitamin A deficiency is not the classic cause of gingival bleeding.",
+        "C": "Vitamin C deficiency causes scurvy with gingival swelling and bleeding due to impaired collagen synthesis.",
+        "D": "Folate deficiency causes megaloblastic anemia and is not the classic cause of bleeding gums."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Nutrition",
+        "Vitamin C Deficiency",
+        "Scurvy"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-030",
+      "questionNumber": 30,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Newborn Hearing Screening",
+      "title": "Objective Hearing Assessment in a Newborn",
+      "originalQuestion": "A mother with deafness from age 12 and\nusing a hearing aid wants to confirm if her new\nbaby is deaf. Which test should be used?",
+      "originalOptions": {
+        "A": "Brainstem auditory evoked response",
+        "B": "CT of the baby",
+        "C": "Brain MRI"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A mother with significant hearing loss wants to confirm whether her newborn is deaf. Which objective hearing test should be used?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Brainstem auditory evoked response"
+      },
+      "explanation": "Auditory brainstem response testing provides an objective assessment of auditory pathway function and is used for newborn hearing assessment, particularly when risk factors are present.",
+      "optionExplanations": {
+        "A": "Brainstem auditory evoked response is an objective hearing assessment suitable for newborns.",
+        "B": "CT is not a routine screening test for newborn hearing loss.",
+        "C": "Brain MRI may investigate selected causes but is not the primary hearing-screening test."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Newborn Hearing Screening",
+        "Hearing Loss"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-031",
+      "questionNumber": 31,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Neurology",
+      "topic": "Cranial Nerve XII",
+      "title": "Hypoglossal Nerve Injury after Carotid Surgery",
+      "originalQuestion": "A patient had a carotid artery surgery, the he\nhas difficulty speaking, and when protruding the\ntongue, it deviates toward the right side. Which\nnerve is affected?",
+      "originalOptions": {
+        "A": "Right glossopharyngeal nerve",
+        "B": "Left hypoglossal nerve",
+        "C": "Right hypoglossal nerve",
+        "D": "Left glossopharyngeal nerve"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "After carotid artery surgery, a patient has difficulty speaking and the tongue deviates to the right on protrusion. Which nerve is affected?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Right hypoglossal nerve"
+      },
+      "explanation": "The tongue deviates toward the side of a lower motor neuron hypoglossal lesion because the intact genioglossus pushes the tongue toward the affected side.",
+      "optionExplanations": {
+        "A": "Glossopharyngeal nerve injury does not cause tongue deviation on protrusion.",
+        "B": "A left hypoglossal lesion would cause deviation toward the left, not right.",
+        "C": "A right hypoglossal nerve lesion causes the tongue to deviate to the right on protrusion.",
+        "D": "Glossopharyngeal nerve injury does not explain the described tongue deviation."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Neurology",
+        "Cranial Nerve XII",
+        "Cranial Nerves"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-032",
+      "questionNumber": 32,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Oncology",
+      "topic": "Esophageal Cancer",
+      "title": "Palliation of Dysphagia in Advanced Esophageal Cancer",
+      "originalQuestion": "A patient complains of dysphagia and is\ndiagnosed with middle esophageal cancer that\nhas metastasized to the liver. What is the best\nmethod to improve dysphagia in this patient?",
+      "originalOptions": {
+        "A": "Esophageal stent",
+        "B": "Gastrostomy",
+        "C": "Esophageal palliative surgery",
+        "D": "Chemotherapy"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A patient with metastatic middle esophageal cancer has dysphagia. What is the best palliative method among the options to improve swallowing?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Esophageal stent"
+      },
+      "explanation": "For advanced esophageal cancer with dysphagia, an expandable esophageal stent can provide rapid luminal palliation and improve swallowing.",
+      "optionExplanations": {
+        "A": "An esophageal stent can rapidly restore luminal patency and palliate dysphagia in advanced esophageal cancer.",
+        "B": "Gastrostomy provides nutritional access but does not directly relieve swallowing obstruction.",
+        "C": "Palliative surgery is more invasive and is generally less suitable for metastatic disease when rapid dysphagia relief is needed.",
+        "D": "Chemotherapy may treat systemic disease but does not provide immediate mechanical relief of dysphagia."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Oncology",
+        "Esophageal Cancer",
+        "Esophageal Cancer"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-033",
+      "questionNumber": 33,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Rheumatology",
+      "topic": "Systemic Lupus Erythematosus",
+      "title": "Anti-dsDNA and Lupus Nephritis Activity",
+      "originalQuestion": "A patient with systemic lupus erythematosus\n(SLE) and lupus nephritis, Which marke indicates\nactivity of lupus nephritis?",
+      "originalOptions": {
+        "A": "ANA",
+        "B": "Anti-CCP",
+        "C": "RF",
+        "D": "Anti-dsDNA"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which marker is most useful among the options for indicating systemic lupus erythematosus activity, including lupus nephritis?",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Anti-dsDNA"
+      },
+      "explanation": "Anti-double-stranded DNA antibody levels often correlate with SLE disease activity and are particularly useful in monitoring lupus nephritis together with complement levels and clinical findings.",
+      "optionExplanations": {
+        "A": "ANA is sensitive for SLE but is not a reliable marker of disease activity.",
+        "B": "Anti-CCP is associated mainly with rheumatoid arthritis and is not the key marker here.",
+        "C": "Rheumatoid factor is not a standard marker of lupus nephritis activity.",
+        "D": "Anti-dsDNA levels can correlate with SLE activity and lupus nephritis, making this the best option."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Rheumatology",
+        "Systemic Lupus Erythematosus",
+        "SLE"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-034",
+      "questionNumber": 34,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Hand-Foot-and-Mouth Disease",
+      "title": "Coxsackievirus Infection",
+      "originalQuestion": "A girl had a sore throat with slight fever,\nmalaise, then she developed maculopapular and\npartially vesicular spots on the hands and feet,\nwith oral ulcers, what's the most likely cause:",
+      "originalOptions": {
+        "A": "Coxsackie virus",
+        "B": "Parovirus",
+        "C": "Chickenpox"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A girl develops mild fever and malaise followed by vesicular lesions on the hands and feet with oral ulcers. What is the most likely cause?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Coxsackie virus"
+      },
+      "explanation": "Hand-foot-and-mouth disease classically causes oral ulcers with vesicular lesions on the hands and feet and is commonly caused by Coxsackievirus, especially A16.",
+      "optionExplanations": {
+        "A": "Coxsackievirus commonly causes hand-foot-and-mouth disease with oral ulcers and hand/foot vesicles.",
+        "B": "Parvovirus B19 more typically causes a slapped-cheek rash and reticular body rash.",
+        "C": "Chickenpox usually produces a generalized pruritic vesicular eruption rather than the characteristic hand-foot-and-mouth distribution."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Hand-Foot-and-Mouth Disease",
+        "Hand Foot Mouth Disease"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-035",
+      "questionNumber": 35,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Respiratory Medicine",
+      "topic": "Tuberculosis",
+      "title": "Indication for Sputum Examination",
+      "originalQuestion": "A 62 year-old male patient with low immunity\ncame with productive cough and dyspnea and\nCXR is showing chest infection, the indication of\nsputum examination is for:",
+      "originalOptions": {
+        "A": "COVID 18",
+        "B": "Tuberculosis",
+        "C": "Influenza",
+        "D": "Lung cancer"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "An immunocompromised 62-year-old man has productive cough, dyspnea, and a chest X-ray showing infection. For which condition is sputum examination particularly indicated?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Tuberculosis"
+      },
+      "explanation": "In an immunocompromised patient with a respiratory infection, sputum testing is particularly important when pulmonary tuberculosis is suspected, especially for microbiologic confirmation and infection control.",
+      "optionExplanations": {
+        "A": "The source says “COVID 18”; this is not the standard indication intended by the question.",
+        "B": "Sputum examination is a key diagnostic method for suspected pulmonary tuberculosis, including microbiologic testing.",
+        "C": "Influenza is usually diagnosed with respiratory viral testing rather than routine sputum examination.",
+        "D": "Lung cancer may require sputum cytology in selected cases, but sputum examination is not the main general indication described here."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Respiratory Medicine",
+        "Tuberculosis",
+        "Tuberculosis"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-036",
+      "questionNumber": 36,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Urology",
+      "topic": "Scrotal Swelling",
+      "title": "Hydrocele Diagnosis by Transillumination",
+      "originalQuestion": "A 22 year-old male patient complaining of\nswelling in left testis, can't be separated from\nthe testis , the it is firm and fluctuating, with\nbright trans illumination ,which of the following\nis true",
+      "originalOptions": {
+        "A": "Testicular tumor",
+        "B": "Hydrocele",
+        "C": "Varicocele",
+        "D": "Testicular torsion"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A 22-year-old man has a fluctuant scrotal swelling that cannot be separated from the testis and transilluminates brightly. What is the diagnosis?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Hydrocele"
+      },
+      "explanation": "A hydrocele is a fluid collection around the testis that typically transilluminates brightly. It is usually fluctuant and may obscure palpation of the testis.",
+      "optionExplanations": {
+        "A": "A testicular tumor is usually a solid intratesticular mass and does not typically transilluminate brightly.",
+        "B": "Hydrocele is a fluctuant fluid collection that classically transilluminates.",
+        "C": "Varicocele feels like a bag of worms and does not brightly transilluminate.",
+        "D": "Testicular torsion is an acute painful emergency and is not characterized by bright transillumination."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Urology",
+        "Scrotal Swelling",
+        "Hydrocele"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-037",
+      "questionNumber": 37,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Gastroenterology",
+      "topic": "Hepatocellular Carcinoma",
+      "title": "Alpha-Fetoprotein in HCC",
+      "originalQuestion": "Which is MOST SINGLE investigation aid in\ndiagnosis of hepatocellular carcenoma:",
+      "originalOptions": {
+        "A": "a-fetoprotien",
+        "B": "hepatochoionicgonadotropine",
+        "C": "CA125",
+        "D": "CEA"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "AFP is a classic HCC tumor marker, but modern HCC diagnosis relies primarily on characteristic liver imaging in appropriate-risk patients; AFP alone is not sufficiently sensitive or specific.",
+      "correctedQuestion": "Which investigation or marker is classically associated with hepatocellular carcinoma among the options?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — a-fetoprotien"
+      },
+      "explanation": "Alpha-fetoprotein is a classic serum tumor marker associated with hepatocellular carcinoma, although modern diagnosis relies heavily on liver imaging and AFP is not sufficiently sensitive to diagnose HCC alone.",
+      "optionExplanations": {
+        "A": "Alpha-fetoprotein is the classic tumor marker associated with hepatocellular carcinoma, although it is not diagnostic by itself.",
+        "B": "Human chorionic gonadotropin is not the standard tumor marker for hepatocellular carcinoma.",
+        "C": "CA-125 is mainly associated with epithelial ovarian cancer and is not a standard HCC marker.",
+        "D": "CEA is associated with several gastrointestinal malignancies but is not the classic HCC marker."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Gastroenterology",
+        "Hepatocellular Carcinoma",
+        "Hepatocellular Carcinoma"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-038",
+      "questionNumber": 38,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Allergy",
+      "topic": "Urticaria",
+      "title": "Angioedema as a Dangerous Urticarial Presentation",
+      "originalQuestion": "Patient came with urticaria, what's the most\ndangerous type?",
+      "originalOptions": {
+        "A": "Dermatographism",
+        "B": "Contact urticaria",
+        "C": "Cholinergic urticaria",
+        "D": "Angioedema"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which form of urticaria-related swelling is most dangerous because of potential airway compromise?",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Angioedema"
+      },
+      "explanation": "Angioedema can involve deeper tissues of the lips, tongue, pharynx, or larynx and may threaten the airway, making it the most dangerous option listed.",
+      "optionExplanations": {
+        "A": "Dermatographism is a physical form of urticaria and is usually not life-threatening.",
+        "B": "Contact urticaria can cause localized wheals and, in some cases, systemic reactions, but is not inherently the most dangerous option listed.",
+        "C": "Cholinergic urticaria is generally triggered by heat, exertion, or emotion and is usually self-limited.",
+        "D": "Angioedema can cause upper-airway obstruction and can be life-threatening."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Allergy",
+        "Urticaria",
+        "Urticaria"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-039",
+      "questionNumber": 39,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Drug Dose Calculation",
+      "title": "Septrin Dose Calculation",
+      "originalQuestion": "A 3 vear-old airl patient in pediatrics\ndepartment suffering from lower UTI, then the\nbediatrician ordered for her septrin about 2mg/\nkg, and her weight is about 12.5 kg, what is the\nrequired amount in ml of septrin \"50mg/5ml\" she\nwill take every night?",
+      "originalOptions": {
+        "A": "2.5 ml",
+        "B": "5 ml",
+        "C": "10 ml",
+        "D": "7.5 ml"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "The arithmetic follows the concentration and dose written in the source, but the formulation of Septrin and whether 2 mg/kg refers to total co-trimoxazole or a component is not specified.",
+      "correctedQuestion": "A 3-year-old child weighs 12.5 kg and is prescribed a dose of 2 mg/kg of a suspension containing 50 mg in 5 mL. What volume is required per dose?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — 2.5 ml"
+      },
+      "explanation": "Using the dose stated in the question: 2 mg/kg × 12.5 kg = 25 mg per dose. With 50 mg in 5 mL (10 mg/mL), 25 mg corresponds to 2.5 mL.",
+      "optionExplanations": {
+        "A": "2.5 mL contains 25 mg because the concentration is 10 mg/mL, matching 2 mg/kg × 12.5 kg.",
+        "B": "5 mL contains 50 mg, which is twice the calculated 25 mg dose.",
+        "C": "10 mL contains 100 mg, which is four times the calculated dose.",
+        "D": "7.5 mL contains 75 mg, which is three times the calculated dose."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Drug Dose Calculation",
+        "Dose Calculation"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-040",
+      "questionNumber": 40,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Impetigo",
+      "title": "School Exclusion for Impetigo",
+      "originalQuestion": "A child is diagnosed with impetigo. What is\nthe minimum number of days they should be\nabsent from school?",
+      "originalOptions": {
+        "A": "One day",
+        "B": "Two days",
+        "C": "Five days",
+        "D": "Seven days"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A child is diagnosed with impetigo. What is the minimum commonly recommended period of school exclusion after starting appropriate treatment?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Two days"
+      },
+      "explanation": "Traditional school-exclusion guidance commonly allows return after at least 48 hours of appropriate antibiotic treatment and when lesions can be covered where applicable.",
+      "optionExplanations": {
+        "A": "One day is shorter than the commonly used 48-hour exclusion period after starting appropriate treatment.",
+        "B": "Two days corresponds to 48 hours, a commonly used minimum exclusion period after starting treatment.",
+        "C": "Five days is longer than the commonly used minimum exclusion period.",
+        "D": "Seven days is longer than the commonly used minimum exclusion period."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Impetigo",
+        "Infectious Diseases"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-041",
+      "questionNumber": 41,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Cardiology",
+      "topic": "Stable Angina",
+      "title": "Exertional Chest Pain in a Hypertensive Patient",
+      "originalQuestion": "A patient with a history of hypertension\npresents with exertional chest pain. What is the\nmost likely cause?",
+      "originalOptions": {
+        "A": "Angina",
+        "B": "Heart failure (HF)",
+        "C": "",
+        "D": ""
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "Options C and D are blank in the source, so the question is incomplete. The available clinical information is most consistent with angina.",
+      "correctedQuestion": "A patient with hypertension has exertional chest pain. What is the most likely diagnosis?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Angina"
+      },
+      "explanation": "Exertional chest pain in a patient with cardiovascular risk factors is typical of myocardial ischemia (stable angina), although the question is incomplete because options C and D are blank.",
+      "optionExplanations": {
+        "A": "Predictable exertional chest pain is characteristic of stable angina due to myocardial ischemia.",
+        "B": "Heart failure may cause dyspnea and exercise intolerance but is not the best explanation for typical exertional chest pain.",
+        "C": "Not provided in source.",
+        "D": "Not provided in source."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Cardiology",
+        "Stable Angina",
+        "Stable Angina"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-042",
+      "questionNumber": 42,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pharmacology",
+      "topic": "Drug-Food Interactions",
+      "title": "Grapefruit Interaction with Simvastatin",
+      "originalQuestion": "Grapefruit should not be used with which\ndrug?",
+      "originalOptions": {
+        "A": "Ramipril",
+        "B": "Amlodipine",
+        "C": "Simvastatin",
+        "D": "Amoxicillin"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "With which drug should grapefruit be avoided because it can significantly increase drug exposure?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Simvastatin"
+      },
+      "explanation": "Grapefruit juice inhibits intestinal CYP3A4 and can substantially increase simvastatin exposure, raising the risk of statin-associated myopathy and rhabdomyolysis.",
+      "optionExplanations": {
+        "A": "Ramipril is not the classic clinically important grapefruit interaction tested here.",
+        "B": "Amlodipine may have some interaction considerations, but simvastatin is the classic major interaction among these options.",
+        "C": "Grapefruit can markedly increase simvastatin concentrations through CYP3A4 inhibition.",
+        "D": "Amoxicillin does not have the classic grapefruit interaction described."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pharmacology",
+        "Drug-Food Interactions",
+        "Drug Interactions"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-043",
+      "questionNumber": 43,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Dermatology",
+      "topic": "Erysipelas",
+      "title": "Causative Organism of Erysipelas",
+      "originalQuestion": "The most common cause of erysipelasis:",
+      "originalOptions": {
+        "A": "staphylococcus",
+        "B": "streptococcus group C",
+        "C": "streptococcus group A",
+        "D": "streptococcus group G"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "What is the most common causative organism of erysipelas?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — streptococcus group A"
+      },
+      "explanation": "Erysipelas is classically caused by beta-hemolytic streptococci, especially group A Streptococcus.",
+      "optionExplanations": {
+        "A": "Staphylococcus aureus is more associated with some cellulitis and abscesses than classic erysipelas.",
+        "B": "Group C streptococci can cause skin infection but are not the classic most common cause.",
+        "C": "Group A Streptococcus is the classic and most common cause of erysipelas.",
+        "D": "Group G streptococci can cause cellulitis but are not the classic most common cause of erysipelas."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Dermatology",
+        "Erysipelas",
+        "Skin Infection"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-044",
+      "questionNumber": 44,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Musculoskeletal",
+      "topic": "Low Back Pain",
+      "title": "Analgesic Treatment of Back Pain",
+      "originalQuestion": "A patient with back pain. Which drug can be\nused?",
+      "originalOptions": {
+        "A": "Acetaminophen",
+        "B": "Indomethacin",
+        "C": "Ibuprofen"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The stem does not specify severity, duration, cause, or contraindications, so more than one listed analgesic could be appropriate. No single best drug can be established from the stem alone.",
+      "correctedQuestion": "Which analgesic can be used for a patient with back pain?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Acetaminophen"
+      },
+      "explanation": "The question is too nonspecific to identify one universally best drug. Acetaminophen can be used for pain, while NSAIDs such as ibuprofen or indomethacin may also be appropriate in selected patients if there are no contraindications.",
+      "optionExplanations": {
+        "A": "Acetaminophen is an analgesic that can be used for pain, although it may not be the preferred sole treatment for all low back pain.",
+        "B": "Indomethacin is an NSAID that can relieve inflammatory pain but has more adverse-effect concerns and is not uniquely indicated by the stem.",
+        "C": "Ibuprofen is also an NSAID that can be used for back pain when appropriate."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Musculoskeletal",
+        "Low Back Pain",
+        "Back Pain"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-045",
+      "questionNumber": 45,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Epidemiology",
+      "topic": "Study Designs",
+      "title": "Cohort Study for Incidence",
+      "originalQuestion": "Consultant wanted to find evidence about\nincidence of deep venous thrombosis, the most\naccurate study is:",
+      "originalOptions": {
+        "A": "Meta analysis trials",
+        "B": "Case study",
+        "C": "Cohort study",
+        "D": "Randomized trial study"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which study design is most appropriate for measuring the incidence of deep venous thrombosis?",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Cohort study"
+      },
+      "explanation": "A cohort study can directly measure incidence because participants who are initially free of the outcome can be followed over time for new cases.",
+      "optionExplanations": {
+        "A": "A meta-analysis can synthesize evidence but is not itself the primary design used to directly measure incidence.",
+        "B": "A case study does not provide the best estimate of incidence in a population.",
+        "C": "A cohort study follows individuals over time and can directly measure incidence.",
+        "D": "Randomized trials are designed to evaluate interventions and are not the standard study design for estimating disease incidence."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Epidemiology",
+        "Study Designs",
+        "Cohort Study"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-046",
+      "questionNumber": 46,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Dermatology",
+      "topic": "Contact Dermatitis",
+      "title": "Exogenous Dermatitis",
+      "originalQuestion": "which of the following is exogenous\ndermatitis:",
+      "originalOptions": {
+        "A": "Atopic dermatitis",
+        "B": "Eczema",
+        "C": "pemphygus",
+        "D": "irritant contact dermatitis"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "Which of the following is an exogenous dermatitis?",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — irritant contact dermatitis"
+      },
+      "explanation": "Irritant contact dermatitis is caused by external environmental or chemical exposure and is therefore an exogenous dermatitis.",
+      "optionExplanations": {
+        "A": "Atopic dermatitis is primarily an endogenous inflammatory/atopic condition rather than an exogenous contact dermatitis.",
+        "B": "“Eczema” is a broad term and is not as specific as irritant contact dermatitis for an exogenous cause.",
+        "C": "Pemphigus is an autoimmune blistering disease and is not an exogenous dermatitis.",
+        "D": "Irritant contact dermatitis results from external irritant exposure and is an exogenous dermatitis."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Dermatology",
+        "Contact Dermatitis",
+        "Contact Dermatitis"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-047",
+      "questionNumber": 47,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Dermatology",
+      "topic": "Onychomycosis",
+      "title": "Treatment of Trichophyton Toenail Infection",
+      "originalQuestion": "A patient has Trichophyton infection in the\ntoenails. What drug should be used?",
+      "originalOptions": {
+        "A": "Griseofulvin",
+        "B": "Terbinafine",
+        "C": "Itraconazole"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A patient has Trichophyton infection of the toenails. Which drug is generally preferred?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Terbinafine"
+      },
+      "explanation": "Oral terbinafine is generally first-line therapy for dermatophyte onychomycosis because of its strong activity against dermatophytes such as Trichophyton.",
+      "optionExplanations": {
+        "A": "Griseofulvin can treat dermatophyte infections but is less effective for toenail onychomycosis than terbinafine.",
+        "B": "Terbinafine is generally first-line oral therapy for dermatophyte toenail onychomycosis.",
+        "C": "Itraconazole is an effective alternative in selected patients but is not usually the first choice for Trichophyton toenail disease."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Dermatology",
+        "Onychomycosis",
+        "Onychomycosis"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-048",
+      "questionNumber": 48,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pharmacology",
+      "topic": "Metformin and Iodinated Contrast",
+      "title": "Metformin Around Contrast Imaging",
+      "originalQuestion": "patient is preparing for CTscan with contrast\nWhich drug Should be stopped?",
+      "originalOptions": {
+        "A": "amilodipin",
+        "B": "metfomin",
+        "C": "bisoprolol",
+        "D": "Gliclazide"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Minor",
+      "correction": "The traditional exam answer is metformin, but modern guidance is more nuanced and depends on renal function, the type of contrast study, and the clinical context.",
+      "correctedQuestion": "A patient is preparing for a CT scan with iodinated contrast. Which drug traditionally requires consideration of temporary withholding around contrast administration?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — metfomin"
+      },
+      "explanation": "The historical exam answer is metformin. Current guidance is more nuanced: metformin is not necessarily stopped for every iodinated contrast study, and withholding depends on kidney function and the clinical context.",
+      "optionExplanations": {
+        "A": "Amlodipine is not routinely stopped solely because iodinated contrast is being given.",
+        "B": "Metformin has traditionally been withheld around iodinated contrast in patients at risk of contrast-associated kidney injury; modern guidance uses renal function and clinical context to determine whether interruption is needed.",
+        "C": "Bisoprolol is not routinely stopped solely for iodinated contrast.",
+        "D": "Gliclazide is not routinely stopped solely because iodinated contrast is used."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pharmacology",
+        "Metformin and Iodinated Contrast",
+        "Contrast Imaging"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-049",
+      "questionNumber": 49,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Hematologic Malignancy",
+      "title": "Possible Leukemia in a Child",
+      "originalQuestion": "A child with a history of a forearm skin rash\nlater developing a rash on the chest and\npetechiae, also presents with pallor and\nhepatosplenomegaly. What is the next step?",
+      "originalOptions": {
+        "A": "Urgently send to a pediatric assessment unit",
+        "B": "Give prednisolone for 3 days and them come\nback",
+        "C": "Give penicillin and send her by ambulance to\nthe hospital",
+        "D": "Send for pediatric clinic follow-up"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No source answer was provided in the examination file; the medically verified answer is stored separately in correctAnswer.",
+      "correctedQuestion": "A child develops a rash and petechiae with pallor and hepatosplenomegaly. What is the next step?",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Urgently send to a pediatric assessment unit"
+      },
+      "explanation": "Pallor, petechiae, rash, and hepatosplenomegaly are red flags for serious hematologic disease such as leukemia and require urgent pediatric assessment rather than outpatient observation.",
+      "optionExplanations": {
+        "A": "Urgent pediatric assessment is appropriate because the combination of pallor, petechiae, rash, and hepatosplenomegaly is concerning for serious hematologic disease.",
+        "B": "Empiric prednisolone could mask leukemia and delay diagnosis.",
+        "C": "Penicillin does not treat the likely underlying hematologic condition and should not replace urgent assessment.",
+        "D": "Routine outpatient follow-up is unsafe when red-flag features suggest possible leukemia."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Hematologic Malignancy",
+        "Leukemia"
+      ]
+    },
+    {
+      "id": "2024-12-26-Sanaa-GMS-050",
+      "questionNumber": 50,
+      "medicalProfession": "Human Medicine",
+      "specialty": "General Medicine & Surgery",
+      "governorate": "Sana'a",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "2024-12-26",
+      "subject": "Pediatrics",
+      "topic": "Varicella Exposure",
+      "title": "Management of a Neonate Exposed to Varicella",
+      "originalQuestion": "A mother has a 2-day-old newborn and a 2-\nyear-old child with chickenpox. The mother has\npositive antibodies for varicella. What is the\nnext step?",
+      "originalOptions": {
+        "A": "No need to do anything",
+        "B": "Check the antibodies in the neonate",
+        "C": "Start acyclovir"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "The question omits the timing of maternal varicella infection relative to delivery and does not include varicella-zoster immune globulin among the options. Neonatal management depends on those details.",
+      "correctedQuestion": "A mother has a 2-day-old newborn and a 2-year-old child with chickenpox and is immune to varicella. What is the appropriate next step for the newborn based on the timing and nature of maternal infection and exposure?",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "explanation": "The question is incomplete because management depends on the timing and nature of maternal infection, maternal immunity, and the newborn's exposure. The provided options do not include the key prophylaxis option of varicella-zoster immune globulin when indicated.",
+      "optionExplanations": {
+        "A": "No action may be appropriate only in selected circumstances; maternal immunity alone does not resolve every neonatal exposure scenario.",
+        "B": "Routine antibody testing of the neonate is not the standard immediate management for every exposure.",
+        "C": "Acyclovir may be used for established or high-risk infection in selected circumstances, but it is not automatically indicated solely from this information."
+      },
+      "tags": [
+        "Yemen Medical Licensure",
+        "Pediatrics",
+        "Varicella Exposure",
+        "Neonatal Varicella"
+      ]
+    }
+  ]
+}

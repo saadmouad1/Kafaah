@@ -1,0 +1,2471 @@
+{
+  "examMetadata": {
+    "databaseType": "licensure",
+    "questionBank": "Yemen Medical Licensure",
+    "examType": "Professional Licensure",
+    "medicalProfession": "Human Medicine (General Medicine)",
+    "specialty": "General Medicine",
+    "qualification": "Bachelor's Degree in General Medicine",
+    "country": "Yemen",
+    "city": "Ibb",
+    "governorate": "Ibb",
+    "region": "Not provided in source.",
+    "year": 2024,
+    "month": "December",
+    "exactDate": "19/12/2024",
+    "language": "English",
+    "source": "نماذج مزاولة المهنة بكالوريوس طب عام إب",
+    "sourceFile": "آخر نماذج مزاولة المهنة بك طب عام إب 19 12 2024.pdf",
+    "examTitle": "19/12/2024 نماذج مزاولة المهنة بكالوريوس طب عام إب",
+    "examProvider": "Not provided in source.",
+    "institution": "Not provided in source.",
+    "department": "Not provided in source.",
+    "subject": "General Medicine",
+    "section": "Not provided in source.",
+    "numberOfQuestions": 41,
+    "timeLimit": "Not provided in source."
+  },
+  "questions": [
+    {
+      "id": "LIC-YEMEN-GM-2024-001",
+      "questionNumber": 1,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Public Health",
+      "topic": "Immunization",
+      "subject": "Routine Vaccination",
+      "title": "Vaccine included in the Yemeni immunization program",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Yemeni program of vaccines all following except:",
+      "originalOptions": {
+        "A": "Diphtheria",
+        "B": "MMR",
+        "C": "Influenza",
+        "D": "Hepatitis B"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Influenza"
+      },
+      "explanation": "Influenza vaccine is not part of the routine Yemeni childhood vaccination program represented by the question; diphtheria-containing vaccines, MMR, and hepatitis B are routine program vaccines.",
+      "optionExplanations": {
+        "A": "Diphtheria-containing vaccines are part of routine childhood immunization.",
+        "B": "MMR is a routine childhood vaccine.",
+        "C": "Correct: influenza vaccination is not listed as a routine vaccine in the program represented by this question.",
+        "D": "Hepatitis B vaccination is part of routine immunization."
+      },
+      "tags": [
+        "Vaccination",
+        "EPI",
+        "Yemen",
+        "Preventive Medicine"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-002",
+      "questionNumber": 2,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "Vaccination",
+      "subject": "Vaccine Adverse Events",
+      "title": "Rotavirus vaccine and intussusception",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "Which one of the following vaccines complicated by Intestinal intussusception:",
+      "originalOptions": {
+        "A": "Hepatitis B vaccine.",
+        "B": "Diphtheria vaccine.",
+        "C": "Influenza vaccine",
+        "D": "Rotavirus vaccine"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Rotavirus vaccine"
+      },
+      "explanation": "Rotavirus vaccination has a rare association with intussusception, particularly shortly after vaccination.",
+      "optionExplanations": {
+        "A": "Hepatitis B vaccine is not the classic vaccine associated with intussusception.",
+        "B": "Diphtheria-containing vaccines are not the classic cause of intussusception.",
+        "C": "Influenza vaccine is not the classic vaccine associated with intussusception.",
+        "D": "Correct: rotavirus vaccine has a small increased risk of intussusception."
+      },
+      "tags": [
+        "Rotavirus",
+        "Intussusception",
+        "Vaccination",
+        "Pediatrics"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-003",
+      "questionNumber": 3,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Maternal-Fetal Medicine",
+      "topic": "Immunization in Pregnancy",
+      "subject": "Pregnancy Vaccination",
+      "title": "Live vaccines avoided during pregnancy",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "What the vaccine avoided in 1st month of pregnancy:",
+      "originalOptions": {
+        "A": "MMR",
+        "B": "Influenza",
+        "C": "Tetanus",
+        "D": "Hepatitis B",
+        "E": "Diphtheria"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — MMR"
+      },
+      "explanation": "MMR is a live attenuated vaccine and is contraindicated during pregnancy. Inactivated influenza, tetanus-containing vaccines, and hepatitis B can be used when indicated.",
+      "optionExplanations": {
+        "A": "Correct: MMR is a live attenuated vaccine and should not be given during pregnancy.",
+        "B": "Inactivated influenza vaccination is recommended during pregnancy when indicated.",
+        "C": "Tetanus-containing vaccination can be given during pregnancy when indicated.",
+        "D": "Hepatitis B vaccination can be given when indicated during pregnancy.",
+        "E": "Diphtheria-containing vaccines may be administered as part of indicated tetanus-diphtheria-containing vaccination."
+      },
+      "tags": [
+        "Pregnancy",
+        "MMR",
+        "Live Vaccine",
+        "Immunization"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-004",
+      "questionNumber": 4,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Hematology",
+      "subSpecialty": "Coagulation",
+      "topic": "Coagulation Pathways",
+      "subject": "Intrinsic and Extrinsic Pathways",
+      "title": "Factor not assessed by the intrinsic pathway",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pathophysiology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "PTT factors are all of the following except:",
+      "originalOptions": {
+        "A": "VIII",
+        "B": "XI",
+        "C": "X",
+        "D": "XII",
+        "E": "VII"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "E"
+        ],
+        "text": "E — VII"
+      },
+      "explanation": "aPTT primarily evaluates the intrinsic and common coagulation pathways. Factor VII belongs to the extrinsic pathway and is assessed by PT rather than aPTT.",
+      "optionExplanations": {
+        "A": "Factor VIII is part of the intrinsic pathway.",
+        "B": "Factor XI is part of the intrinsic pathway.",
+        "C": "Factor X is part of the common pathway and affects aPTT.",
+        "D": "Factor XII is part of the intrinsic pathway.",
+        "E": "Correct: factor VII belongs to the extrinsic pathway and is primarily assessed by PT."
+      },
+      "tags": [
+        "aPTT",
+        "PTT",
+        "Coagulation Factors",
+        "Factor VII",
+        "Factor VIII"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-005",
+      "questionNumber": 5,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "Malaria",
+      "subject": "Plasmodium falciparum Malaria",
+      "title": "Chloroquine sensitivity in falciparum malaria",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pharmacology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "All of the following are true according to falciparum malaria except:",
+      "originalOptions": {
+        "A": "Jaundice",
+        "B": "Anemia.",
+        "C": "Sensitive to Chloroquine",
+        "D": "Traveler's period of illness (1-4 weeks)",
+        "E": "Drug of choice is Artesunate Artemether"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Sensitive to Chloroquine"
+      },
+      "explanation": "P. falciparum can cause anemia and jaundice and may present after a travel-related incubation period. Chloroquine resistance is widespread, so chloroquine sensitivity is not generally true; artemisinin-based therapy is used for uncomplicated falciparum malaria in many settings.",
+      "optionExplanations": {
+        "A": "Jaundice can occur in severe falciparum malaria.",
+        "B": "Hemolysis and malaria-related disease can produce anemia.",
+        "C": "Correct: widespread chloroquine resistance means falciparum malaria should not generally be considered chloroquine-sensitive.",
+        "D": "A travel-related illness appearing within weeks is compatible with malaria incubation and presentation.",
+        "E": "Artemisinin-based therapy is an accepted treatment approach for falciparum malaria; severe disease requires parenteral artesunate."
+      },
+      "tags": [
+        "Malaria",
+        "Falciparum",
+        "Chloroquine Resistance",
+        "Artemisinin"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-006",
+      "questionNumber": 6,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Emergency Medicine",
+      "subSpecialty": "Neurology",
+      "topic": "Neurological Assessment",
+      "subject": "Glasgow Coma Scale",
+      "title": "Components of the Glasgow Coma Scale",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "GCS are all of the following except: -",
+      "originalOptions": {
+        "A": "Eye opening",
+        "B": "Motor",
+        "C": "Verbal",
+        "D": "Pupil size.",
+        "E": "All of the above."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Pupil size."
+      },
+      "explanation": "The Glasgow Coma Scale consists of eye opening, verbal response, and motor response. Pupil size is assessed separately and is not a GCS component.",
+      "optionExplanations": {
+        "A": "Eye opening is one of the three GCS components.",
+        "B": "Motor response is one of the three GCS components.",
+        "C": "Verbal response is one of the three GCS components.",
+        "D": "Correct: pupil size is not part of the GCS.",
+        "E": "Incorrect because the preceding options include GCS components."
+      },
+      "tags": [
+        "GCS",
+        "Neurological Examination",
+        "Emergency Medicine"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-007",
+      "questionNumber": 7,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy Dating",
+      "subject": "Estimated Due Date",
+      "title": "EDD from LMP using Naegele's rule",
+      "questionType": "Calculation",
+      "clinicalDomain": "Calculation",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "LMP 30 June. What is the EDD?",
+      "originalOptions": {
+        "A": "23 March",
+        "B": "7 March",
+        "C": "7 April"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — 7 April"
+      },
+      "explanation": "Using Naegele's rule, add 7 days to the first day of the LMP and subtract 3 months: 30 June → 7 July → 7 April of the following year.",
+      "optionExplanations": {
+        "A": "23 March does not result from Naegele's rule for an LMP of 30 June.",
+        "B": "7 March is three months too early.",
+        "C": "Correct: 30 June + 7 days − 3 months = 7 April."
+      },
+      "tags": [
+        "LMP",
+        "EDD",
+        "Naegele Rule",
+        "Obstetrics"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-008",
+      "questionNumber": 8,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Surgery",
+      "subSpecialty": "Colorectal Surgery",
+      "topic": "Colorectal Cancer",
+      "subject": "Clinical Presentation",
+      "title": "Clinical features of colorectal cancer",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "All of the following are signs of Colorectal cancer except:",
+      "originalOptions": {
+        "A": "Anemia",
+        "B": "Hemorrhoids",
+        "C": "Abdominal Pain",
+        "D": "Change in bowel habits"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Hemorrhoids"
+      },
+      "explanation": "Anemia, abdominal pain, and change in bowel habits are recognized presentations of colorectal cancer. Hemorrhoids are common anorectal disease but are not a typical sign of colorectal cancer.",
+      "optionExplanations": {
+        "A": "Anemia, particularly iron-deficiency anemia, can occur with colorectal cancer.",
+        "B": "Correct: hemorrhoids are not a typical clinical sign of colorectal cancer.",
+        "C": "Abdominal pain can occur in colorectal cancer.",
+        "D": "A change in bowel habits is a classic warning symptom."
+      },
+      "tags": [
+        "Colorectal Cancer",
+        "Anemia",
+        "Bowel Habits",
+        "Colorectal Surgery"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-009",
+      "questionNumber": 9,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Rheumatology",
+      "topic": "Raynaud Phenomenon",
+      "subject": "Secondary Raynaud Phenomenon",
+      "title": "Diseases associated with Raynaud phenomenon",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Raynaud's Phenomenon is a feature of the following except.",
+      "originalOptions": {
+        "A": "Scleroderma.",
+        "B": "Buerger's Disease.",
+        "C": "Rheumatoid Arthritis",
+        "D": "Polycythemia Rubra Vera"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Polycythemia Rubra Vera"
+      },
+      "explanation": "Raynaud phenomenon is classically associated with connective-tissue disease such as systemic sclerosis and can occur with vascular disorders including Buerger disease. Polycythemia vera is not a classic association.",
+      "optionExplanations": {
+        "A": "Systemic sclerosis is a classic cause of secondary Raynaud phenomenon.",
+        "B": "Buerger disease can be associated with digital ischemia and Raynaud-type symptoms.",
+        "C": "Raynaud phenomenon can occur in connective-tissue disease including rheumatoid arthritis.",
+        "D": "Correct: polycythemia vera is not a classic association with Raynaud phenomenon."
+      },
+      "tags": [
+        "Raynaud Phenomenon",
+        "Scleroderma",
+        "Buerger Disease",
+        "Rheumatology"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-010",
+      "questionNumber": 10,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Public Health",
+      "topic": "Demography",
+      "subject": "Life Expectancy",
+      "title": "Life expectancy in Yemen",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Epidemiology",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "The expected life age (years) in Yemen is:",
+      "originalOptions": {
+        "A": "86",
+        "B": "44",
+        "C": "58",
+        "D": "66",
+        "E": "74"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — 66"
+      },
+      "explanation": "The source presents 66 years as the expected life expectancy figure. Exact life expectancy varies by year and data source, so this answer is tied to the examination's intended dataset rather than a universal current value.",
+      "optionExplanations": {
+        "A": "86 years is substantially higher than the figure represented by the source.",
+        "B": "44 years is substantially lower than the expected life expectancy figure.",
+        "C": "58 years is lower than the intended figure.",
+        "D": "Correct for the figure intended by the source: 66 years.",
+        "E": "74 years is not the intended figure in this question."
+      },
+      "tags": [
+        "Yemen",
+        "Life Expectancy",
+        "Demography",
+        "Public Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-011",
+      "questionNumber": 11,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Epidemiology",
+      "topic": "Disease Ecology",
+      "subject": "Host-Agent-Environment Relationship",
+      "title": "Equilibrium of host, agent and environment",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Epidemiology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "The equilibrium between host, agent C environment is termed:",
+      "originalOptions": {
+        "A": "Endemic",
+        "B": "Epidemic",
+        "C": "Pandemic",
+        "D": "Outbreak"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Endemic"
+      },
+      "explanation": "In the terminology used by this question, a stable equilibrium among host, agent, and environment is associated with endemicity. The epidemiologic triad itself describes the interaction among these three components.",
+      "optionExplanations": {
+        "A": "Correct in the terminology intended by the question: endemicity reflects a relatively stable disease presence in a population.",
+        "B": "An epidemic is an occurrence above the expected level, not simply equilibrium.",
+        "C": "A pandemic is an epidemic spreading across multiple countries or continents.",
+        "D": "An outbreak is a localized occurrence above expected levels."
+      },
+      "tags": [
+        "Epidemiology",
+        "Endemic",
+        "Epidemiologic Triad",
+        "Public Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-012",
+      "questionNumber": 12,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Hepatology",
+      "topic": "Wilson Disease",
+      "subject": "Diagnostic Findings",
+      "title": "Kayser-Fleischer rings in Wilson disease",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": ". One of the following is diagnostic",
+      "originalOptions": {
+        "A": "Erythema nodosum in leprosy.",
+        "B": "ANA in SLE",
+        "C": "RBC Casts in glomerulonephritis",
+        "D": "Kayser–Fleischer in Wilson's disease."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Kayser–Fleischer in Wilson's disease"
+      },
+      "explanation": "Kayser-Fleischer rings are a characteristic finding of Wilson disease and, in the appropriate clinical context, strongly support the diagnosis. ANA is supportive but not specific for SLE, and RBC casts indicate glomerular bleeding rather than a single specific disease.",
+      "optionExplanations": {
+        "A": "Erythema nodosum is a reaction pattern and is not diagnostic of leprosy.",
+        "B": "ANA is sensitive for SLE but is not specific or by itself diagnostic.",
+        "C": "RBC casts indicate glomerular inflammation or bleeding but are not specific for one diagnosis.",
+        "D": "Correct: Kayser-Fleischer rings are characteristic of Wilson disease."
+      },
+      "tags": [
+        "Wilson Disease",
+        "Kayser-Fleischer Rings",
+        "Diagnosis",
+        "Hepatology"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-013",
+      "questionNumber": 13,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Endocrinology",
+      "topic": "Diabetic Ketoacidosis",
+      "subject": "Electrolyte Disturbances",
+      "title": "Serum sodium changes in DKA",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pathophysiology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "About DKA, Hyperglycemia is associated:",
+      "originalOptions": {
+        "A": "Hypomagnesemia",
+        "B": "Hypernatremia",
+        "C": "Hyponatremia",
+        "D": "Hypocalcemia"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Hyponatremia"
+      },
+      "explanation": "Hyperglycemia causes osmotic water movement from the intracellular to extracellular space, lowering measured serum sodium concentration (translocational or dilutional hyponatremia).",
+      "optionExplanations": {
+        "A": "Magnesium abnormalities can occur in DKA but are not the characteristic association asked here.",
+        "B": "Hypernatremia is not the usual measured sodium effect of marked hyperglycemia before correction for glucose.",
+        "C": "Correct: hyperglycemia commonly produces dilutional/translocational hyponatremia.",
+        "D": "Calcium abnormalities are not the principal association described by the question."
+      },
+      "tags": [
+        "DKA",
+        "Hyperglycemia",
+        "Hyponatremia",
+        "Diabetes"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-014",
+      "questionNumber": 14,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Emergency Medicine",
+      "subSpecialty": "Neurology",
+      "topic": "Transient Loss of Consciousness",
+      "subject": "Seizure vs Syncope",
+      "title": "Feature favoring syncope rather than seizure",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Scenario about a person who fall down suddenly - Which one of the following makes you exculde seizure",
+      "originalOptions": {
+        "A": "Tonic - Clonic",
+        "B": "Awake suddenly C Return to normal state with feeling of weakness.",
+        "C": "Laceration of tongue.",
+        "D": "Aura present before falling down."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The source option B is malformed/contains an embedded option label. The clinical concept intended appears to be rapid recovery without a postictal state.",
+      "correctedQuestion": "Which feature favors syncope rather than a generalized seizure after a sudden fall?",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Sudden recovery/return to normal state favors syncope"
+      },
+      "explanation": "Rapid recovery of consciousness without a prolonged postictal state favors syncope rather than generalized tonic-clonic seizure. The source option is malformed and contains an apparent embedded option label, so its wording is preserved exactly.",
+      "optionExplanations": {
+        "A": "A tonic-clonic event strongly supports a generalized seizure.",
+        "B": "Correct in intent: rapid return to normal consciousness favors syncope, although the source wording is malformed.",
+        "C": "Tongue laceration, especially lateral tongue biting, supports seizure.",
+        "D": "An aura before loss of consciousness supports seizure."
+      },
+      "tags": [
+        "Syncope",
+        "Seizure",
+        "Transient Loss of Consciousness",
+        "Emergency Medicine"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-015",
+      "questionNumber": 15,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Public Health",
+      "topic": "Communicable Disease Control",
+      "subject": "Source/Reservoir Control",
+      "title": "Measures that control the source of infection",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "Control Source of infection by all of the following except:",
+      "originalOptions": {
+        "A": "Carrier treatment.",
+        "B": "Reservoir Control",
+        "C": "Patient treatment",
+        "D": "Good nutrition."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Good nutrition"
+      },
+      "explanation": "Control of an infection source includes treating infected patients and carriers and controlling reservoirs. Good nutrition supports host health but is not a direct source-control measure.",
+      "optionExplanations": {
+        "A": "Treating carriers can eliminate a source of infection.",
+        "B": "Reservoir control is a direct communicable-disease control measure.",
+        "C": "Treating infected patients can reduce infectious sources.",
+        "D": "Correct: good nutrition is supportive prevention, not direct source control."
+      },
+      "tags": [
+        "Infection Control",
+        "Reservoir",
+        "Carrier",
+        "Public Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-016",
+      "questionNumber": 16,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Postpartum Care",
+      "subject": "Immediate Postpartum Complications",
+      "title": "Abnormal finding requiring concern after vaginal delivery",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Emergency",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Uncomplicated vaginal delivery. What to worry about within1 hour?",
+      "originalOptions": {
+        "A": "HR 60",
+        "B": "Abdominal rigidity",
+        "C": "Single temperature 38°c.",
+        "D": "Proteinuria",
+        "E": "Leukocytosis >15,000"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Abdominal rigidity"
+      },
+      "explanation": "Marked abdominal rigidity after delivery is concerning for an acute intra-abdominal or uterine complication and warrants assessment. A heart rate of 60 can be normal, mild leukocytosis is physiologic postpartum, and isolated temperature elevation has to be interpreted in context.",
+      "optionExplanations": {
+        "A": "A heart rate of 60/min can be normal in a stable postpartum patient.",
+        "B": "Correct: abdominal rigidity is abnormal and can indicate a serious intra-abdominal or uterine problem.",
+        "C": "A single temperature of 38°C requires clinical context and confirmation rather than automatically indicating a complication.",
+        "D": "Proteinuria is not the key immediate postpartum danger represented by this question.",
+        "E": "Leukocytosis is common physiologically after labor and is not by itself diagnostic of infection."
+      },
+      "tags": [
+        "Postpartum Care",
+        "Obstetric Emergency",
+        "Vaginal Delivery",
+        "Postpartum Hemorrhage"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-017",
+      "questionNumber": 17,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Gynecology",
+      "topic": "Amenorrhea",
+      "subject": "Secondary Amenorrhea",
+      "title": "Most common cause of secondary amenorrhea",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "The most common cause of 2ry Amenorrhea is:",
+      "originalOptions": {
+        "A": "Pregnancy."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Pregnancy"
+      },
+      "explanation": "Pregnancy is the most common physiologic cause of secondary amenorrhea and should be excluded first in a reproductive-age patient.",
+      "optionExplanations": {
+        "A": "Correct: pregnancy is the most common cause of secondary amenorrhea."
+      },
+      "tags": [
+        "Secondary Amenorrhea",
+        "Pregnancy",
+        "Gynecology"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-018",
+      "questionNumber": 18,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Surgery",
+      "subSpecialty": "Orthopedics",
+      "topic": "Bone Tumors",
+      "subject": "Benign vs Malignant Bone Tumors",
+      "title": "Metastatic potential of bone tumors",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "The main difference between benign C malignant bone tumors is:",
+      "originalOptions": {
+        "A": "Growth rate",
+        "B": "Pain",
+        "C": "Location of tumor",
+        "D": "Metastasis"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Metastasis"
+      },
+      "explanation": "The key biologic distinction is malignant potential, including the ability to invade and metastasize. Growth rate, pain, and location may overlap and are not by themselves definitive.",
+      "optionExplanations": {
+        "A": "Growth rate can differ but is not the defining distinction.",
+        "B": "Pain can occur in both benign and malignant bone tumors.",
+        "C": "Location alone cannot reliably distinguish benign from malignant tumors.",
+        "D": "Correct: malignant tumors have malignant invasive/metastatic potential, unlike benign tumors."
+      },
+      "tags": [
+        "Bone Tumor",
+        "Benign Tumor",
+        "Malignant Tumor",
+        "Metastasis"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-019",
+      "questionNumber": 19,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy Loss",
+      "subject": "Early Pregnancy Loss",
+      "title": "Abortion as a major category of pregnancy loss",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "Most prominent Cause of Pregnancy loss is:",
+      "originalOptions": {
+        "A": "Stillbirth",
+        "B": "Contraceptive pills",
+        "C": "Abortion",
+        "D": "Neonatal death,"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Abortion"
+      },
+      "explanation": "Among the listed choices, abortion represents a pregnancy loss occurring before viability and is the intended answer in this question.",
+      "optionExplanations": {
+        "A": "Stillbirth is a later pregnancy outcome and is not the intended broad category here.",
+        "B": "Contraceptive pills do not constitute a cause of pregnancy loss in this classification.",
+        "C": "Correct for the terminology and choices provided: abortion is pregnancy loss before viability.",
+        "D": "Neonatal death occurs after birth and is not pregnancy loss."
+      },
+      "tags": [
+        "Pregnancy Loss",
+        "Abortion",
+        "Obstetrics"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-020",
+      "questionNumber": 20,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Psychiatry",
+      "subSpecialty": "Psychotherapy",
+      "topic": "Complementary/psychological Therapies",
+      "subject": "Imagery Therapy",
+      "title": "Classification of imagination-based therapy",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "Imagination treatment is type of",
+      "originalOptions": {
+        "A": "Herbal therapy.",
+        "B": "Subconscious therapy.",
+        "C": "virtual therapy"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The terminology in the source is nonstandard and does not permit a reliable single-best answer.",
+      "correctedQuestion": "Which type of psychological intervention uses guided imagery or therapeutic imagination?",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined reliably from the provided options"
+      },
+      "explanation": "The term 'imagination treatment' is not a sufficiently standardized medical term to map confidently to one of the three options. Guided imagery is a psychological/behavioral technique, but the source choices do not provide a clear standard classification.",
+      "optionExplanations": {
+        "A": "Herbal therapy involves medicinal plants and is not synonymous with guided imagery.",
+        "B": "'Subconscious therapy' is not a standard diagnostic classification for guided imagery.",
+        "C": "'Virtual therapy' is not a standard synonym for imagination/guided imagery therapy."
+      },
+      "tags": [
+        "Guided Imagery",
+        "Psychotherapy",
+        "Ambiguous Terminology"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-021",
+      "questionNumber": 21,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "Cholera",
+      "subject": "Acute Cholera Management",
+      "title": "First-line treatment of cholera",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "patient with vibreo Cholera, first line treatment",
+      "originalOptions": {
+        "A": "Ampicillin",
+        "B": "Ceftriaxone",
+        "C": "Azithromycin.",
+        "D": "Doxycycline"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Major",
+      "correction": "The question asks for first-line treatment but provides only antibiotics. Rehydration is the first-line treatment.",
+      "correctedQuestion": "What is the first-line treatment for a patient with cholera?",
+      "correctAnswer": {
+        "letters": [],
+        "text": "No valid single answer from the listed options; prompt should identify rehydration as first-line treatment"
+      },
+      "explanation": "The first-line treatment of cholera is prompt and adequate rehydration, preferably oral rehydration solution for patients who can drink and intravenous fluids for severe dehydration. Antibiotics are adjunctive in selected patients, not the primary first-line treatment.",
+      "optionExplanations": {
+        "A": "Ampicillin is not the primary first-line treatment of cholera.",
+        "B": "Ceftriaxone is not the routine first-line treatment of uncomplicated cholera.",
+        "C": "Azithromycin can be used as an antimicrobial option in selected cholera cases but is not the primary first-line treatment.",
+        "D": "Doxycycline is an effective antimicrobial option for cholera in appropriate patients, but rehydration remains first-line treatment."
+      },
+      "tags": [
+        "Cholera",
+        "Rehydration",
+        "ORS",
+        "Antibiotics"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-022",
+      "questionNumber": 22,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Public Health",
+      "topic": "Community Diagnosis",
+      "subject": "Community Health Assessment",
+      "title": "Steps/components of community diagnosis",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "In Community Diagnosis in Communicable disease all true except:",
+      "originalOptions": {
+        "A": "Define Community Problem",
+        "B": "Correlate problem with each other.",
+        "C": "Disaster implication",
+        "D": "Determine new proposal"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Disaster implication"
+      },
+      "explanation": "Defining community problems, correlating identified problems, and developing proposals/interventions fit community diagnosis processes. 'Disaster implication' is not a standard core step as phrased.",
+      "optionExplanations": {
+        "A": "Defining the community problem is part of community diagnosis.",
+        "B": "Relating or correlating identified problems can be part of community assessment.",
+        "C": "Correct: disaster implication is not a standard core step of community diagnosis as phrased.",
+        "D": "Developing a new proposal/intervention follows assessment and prioritization."
+      },
+      "tags": [
+        "Community Diagnosis",
+        "Public Health",
+        "Community Medicine"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-023",
+      "questionNumber": 23,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Family Medicine",
+      "subSpecialty": "Reproductive Health",
+      "topic": "Sexual and Reproductive Health",
+      "subject": "Prevention and treatment of sexual dysfunction",
+      "title": "Prevention and treatment of sexual dysfunction",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Prevention",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "Prevent C Rx of impotence is a part of",
+      "originalOptions": {
+        "A": "Reproductive health."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Reproductive health"
+      },
+      "explanation": "Prevention and treatment of sexual dysfunction are components of sexual and reproductive health services.",
+      "optionExplanations": {
+        "A": "Correct: prevention and treatment of impotence/erectile dysfunction fall within sexual and reproductive health."
+      },
+      "tags": [
+        "Reproductive Health",
+        "Sexual Health",
+        "Erectile Dysfunction"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-024",
+      "questionNumber": 24,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Surgery",
+      "subSpecialty": "Hepatobiliary Surgery",
+      "topic": "Hydatid Disease",
+      "subject": "Hepatic Hydatid Cyst",
+      "title": "Indications for surgery in hepatic hydatid cyst",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Indications of surgery in hydatid liver cyst are all except:",
+      "originalOptions": {
+        "A": "Infected cyst",
+        "B": "Compression to adjacent structures",
+        "C": "Liability to Rupture",
+        "D": "Calcified cyst"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Calcified cyst"
+      },
+      "explanation": "Indications for intervention include complications such as infection, pressure on adjacent structures, and high risk of rupture. A completely calcified inactive cyst is generally not an indication for surgery unless other complications exist.",
+      "optionExplanations": {
+        "A": "An infected hydatid cyst can require intervention.",
+        "B": "Compression of adjacent structures is an indication for intervention.",
+        "C": "High risk of rupture is an indication for treatment/intervention.",
+        "D": "Correct: a completely calcified inactive cyst is generally not an indication for surgery by itself."
+      },
+      "tags": [
+        "Hydatid Cyst",
+        "Liver",
+        "Echinococcus",
+        "Hepatobiliary Surgery"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-025",
+      "questionNumber": 25,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Gynecology",
+      "topic": "Cervical Screening",
+      "subject": "Pap Smear",
+      "title": "Indications and findings of Pap smear",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Screening",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Pap Smear indicated in all except:",
+      "originalOptions": {
+        "A": "Gonorrhea",
+        "B": "Cervical cancer",
+        "C": "Inflammatory changes",
+        "D": "Trichomonas vaginalis"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Gonorrhea"
+      },
+      "explanation": "Pap cytology is primarily used for cervical cancer screening and may report inflammatory/reactive changes and some organisms such as Trichomonas. It is not a diagnostic test for gonorrhea.",
+      "optionExplanations": {
+        "A": "Correct: gonorrhea is diagnosed using appropriate microbiologic testing, not Pap smear cytology.",
+        "B": "Cervical cancer/cervical precancer is the principal target of cervical cytology screening.",
+        "C": "Inflammatory/reactive changes may be reported on cytology.",
+        "D": "Trichomonas organisms may sometimes be identified incidentally on Pap cytology."
+      },
+      "tags": [
+        "Pap Smear",
+        "Cervical Cancer",
+        "Cervical Screening",
+        "Trichomonas"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-026",
+      "questionNumber": 26,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Neurology",
+      "subSpecialty": "Neurology",
+      "topic": "Motor Neuron Disorders",
+      "subject": "Lower Motor Neuron Signs",
+      "title": "Clinical signs of lower motor neuron lesions",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "which of the following are signs C symptoms of LMN:",
+      "originalOptions": {
+        "A": "Plantar extensor reflex",
+        "B": "Clonus",
+        "C": "Flaccid hypotonia",
+        "D": "+Ve Babinski sign",
+        "E": "Hypertonia"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Flaccid hypotonia"
+      },
+      "explanation": "Lower motor neuron lesions classically produce weakness, reduced tone, reduced reflexes, muscle wasting, and fasciculations. Flaccid hypotonia is therefore characteristic.",
+      "optionExplanations": {
+        "A": "An extensor plantar response is an upper motor neuron sign.",
+        "B": "Clonus is an upper motor neuron sign.",
+        "C": "Correct: LMN lesions produce flaccid weakness and hypotonia.",
+        "D": "A positive Babinski sign is an upper motor neuron sign.",
+        "E": "Hypertonia is associated with upper motor neuron lesions."
+      },
+      "tags": [
+        "LMN",
+        "Lower Motor Neuron",
+        "Neurology",
+        "Hypotonia"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-027",
+      "questionNumber": 27,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Pulmonology",
+      "topic": "Pneumonia",
+      "subject": "Pneumonia Complications",
+      "title": "Complications of pneumonia",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Complications of Pneumonia include all of the following except:",
+      "originalOptions": {
+        "A": "Pleural effusion",
+        "B": "Empyema",
+        "C": "Pneumothorax",
+        "D": "Endocarditis",
+        "E": "Sepsis"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Endocarditis"
+      },
+      "explanation": "Pneumonia can be complicated by parapneumonic effusion, empyema, pneumothorax, and sepsis. Endocarditis is not a typical direct complication of pneumonia.",
+      "optionExplanations": {
+        "A": "Pleural effusion is a recognized complication of pneumonia.",
+        "B": "Empyema is a recognized complication of bacterial pneumonia.",
+        "C": "Pneumothorax can occur as a complication, particularly with severe infection or necrosis.",
+        "D": "Correct: endocarditis is not a typical direct complication of pneumonia.",
+        "E": "Sepsis is a serious systemic complication of pneumonia."
+      },
+      "tags": [
+        "Pneumonia",
+        "Empyema",
+        "Pleural Effusion",
+        "Sepsis"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-028",
+      "questionNumber": 28,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Neonatology",
+      "topic": "Sick Infant",
+      "subject": "Serious Illness in Infants",
+      "title": "Differential diagnosis of a very ill infant",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Baby presented with Poor feeding lethargy and he is very ill. What could it be?",
+      "originalOptions": {
+        "A": "Sepsis.",
+        "B": "Meningitis.",
+        "C": "Inborn error of metabolism",
+        "D": "All of the above."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — All of the above"
+      },
+      "explanation": "Poor feeding and lethargy in a very ill infant are nonspecific but potentially serious signs. Sepsis, meningitis, and inborn errors of metabolism are all important possibilities requiring urgent assessment.",
+      "optionExplanations": {
+        "A": "Sepsis can present with poor feeding, lethargy, and severe illness in infants.",
+        "B": "Meningitis can present with nonspecific systemic signs in young infants.",
+        "C": "Inborn errors of metabolism can present with poor feeding, lethargy, and acute decompensation.",
+        "D": "Correct: all three are important differential diagnoses."
+      },
+      "tags": [
+        "Infant",
+        "Sepsis",
+        "Meningitis",
+        "Inborn Errors of Metabolism"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-029",
+      "questionNumber": 29,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "Tuberculosis",
+      "subject": "Pulmonary Tuberculosis Diagnosis",
+      "title": "Definitive diagnosis of pulmonary tuberculosis",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "The definitive diagnosis of Pulmonary TB:",
+      "originalOptions": {
+        "A": "Clinical Dx",
+        "B": "Radiological Dx.",
+        "C": "Serological Dx",
+        "D": "Immunological Dx",
+        "E": "Bacteriological Dx."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "E"
+        ],
+        "text": "E — Bacteriological diagnosis"
+      },
+      "explanation": "Microbiological demonstration of Mycobacterium tuberculosis, using appropriate bacteriological or molecular testing, provides definitive confirmation. Clinical and radiologic findings support but do not by themselves confirm active pulmonary TB.",
+      "optionExplanations": {
+        "A": "Clinical diagnosis can be presumptive but is not definitive confirmation.",
+        "B": "Radiology supports the diagnosis but cannot definitively identify M. tuberculosis.",
+        "C": "Serology is not the standard definitive diagnostic method for pulmonary TB.",
+        "D": "Immunologic tests such as TST/IGRA indicate infection but do not establish active pulmonary TB.",
+        "E": "Correct: bacteriological/microbiological confirmation is definitive."
+      },
+      "tags": [
+        "Tuberculosis",
+        "Pulmonary TB",
+        "Microbiology",
+        "Bacteriological Diagnosis"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-030",
+      "questionNumber": 30,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Gastroenterology",
+      "topic": "Ascites",
+      "subject": "Causes of Ascites",
+      "title": "Differential diagnosis of ascites",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "All of the following are causes of ascitis except:",
+      "originalOptions": {
+        "A": "Budd-Chairi syndrome.",
+        "B": "Pancreatitis.",
+        "C": "Myxedema.",
+        "D": "Gastric tumor.",
+        "E": "Acute liver failure."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Ambiguous",
+      "correction": "The question is poorly constructed because more than one listed condition can cause ascites.",
+      "correctedQuestion": "Which of the following is NOT a recognized cause of ascites? Provide options with only one clearly incorrect cause.",
+      "correctAnswer": {
+        "letters": [],
+        "text": "No valid single answer can be established confidently from the listed options"
+      },
+      "explanation": "Several listed conditions can be associated with ascites. Budd-Chiari syndrome, pancreatitis, severe hypothyroidism/myxedema, and malignancy can all produce ascites; severe liver disease can also be associated with fluid accumulation. The wording does not provide a reliable single exception.",
+      "optionExplanations": {
+        "A": "Budd-Chiari syndrome can cause portal hypertension and ascites.",
+        "B": "Pancreatic disease can cause pancreatic ascites.",
+        "C": "Severe hypothyroidism/myxedema can rarely cause ascites.",
+        "D": "Gastric malignancy can cause malignant ascites, especially with peritoneal spread.",
+        "E": "Severe liver disease can be associated with ascites; the exact context is insufficient to make this the unique exception."
+      },
+      "tags": [
+        "Ascites",
+        "Budd-Chiari",
+        "Pancreatitis",
+        "Myxedema",
+        "Malignancy"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-031",
+      "questionNumber": 31,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Lactation",
+      "subject": "Lactation Suppression",
+      "title": "Factors or medications that reduce lactation",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "which of the following reduce lactation",
+      "originalOptions": {},
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "Answer options are missing from the source.",
+      "correctedQuestion": "Which of the following reduces lactation?",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined because the answer options are absent"
+      },
+      "explanation": "The source contains the question stem but no answer options, so a single source-compatible correct answer cannot be selected without inventing missing content.",
+      "optionExplanations": {},
+      "tags": [
+        "Lactation",
+        "Breastfeeding",
+        "Obstetrics"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-032",
+      "questionNumber": 32,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Infectious Diseases",
+      "topic": "COVID-19",
+      "subject": "Clinical Features and Epidemiology",
+      "title": "Clinical and epidemiologic features of COVID-19",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "Covid-19 all of the following are true except:",
+      "originalOptions": {
+        "A": "Occur in extreme age.",
+        "B": "Most common manifestation is Pneumonia.",
+        "C": "IP 4- 14 days",
+        "D": "Mortality Rate 4-6"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Most common manifestation is Pneumonia"
+      },
+      "explanation": "Most SARS-CoV-2 infections are asymptomatic or mild, commonly presenting with upper-respiratory or nonspecific symptoms. Pneumonia is an important manifestation, especially in severe disease, but is not the most common manifestation overall.",
+      "optionExplanations": {
+        "A": "Risk of severe COVID-19 increases with older age, while severe disease can also occur in other age groups.",
+        "B": "Correct as the exception: pneumonia is not the most common manifestation across all infections; many cases are asymptomatic or mild.",
+        "C": "An incubation period around 2–14 days was classically used in early COVID-19 descriptions.",
+        "D": "The stated mortality figure reflects an early-pandemic estimate and varies substantially by population, variant, vaccination, and treatment."
+      },
+      "tags": [
+        "COVID-19",
+        "SARS-CoV-2",
+        "Pneumonia",
+        "Epidemiology"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-033",
+      "questionNumber": 33,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Hematology",
+      "subSpecialty": "Hematology",
+      "topic": "Erythropoiesis",
+      "subject": "RBC Maturation",
+      "title": "Changes during red blood cell maturation",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Physiology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "All are true about maturation of RBCs except:",
+      "originalOptions": {
+        "A": "Reduction in size of normoblast.with mature",
+        "B": "Change in color of normoblast with mature",
+        "C": "DNA synthesis increase in maturation RBCs",
+        "D": "Nucelus disappear with mature RBCs"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — DNA synthesis increase in maturation RBCs"
+      },
+      "explanation": "During erythroid maturation, cells become smaller, hemoglobinization changes their color, and the nucleus is ultimately extruded. DNA synthesis decreases and stops as cells mature, so an increase is false.",
+      "optionExplanations": {
+        "A": "Erythroid cells generally decrease in size during maturation.",
+        "B": "Cell color changes as hemoglobin accumulates during maturation.",
+        "C": "Correct: DNA synthesis does not increase; it progressively decreases and stops before mature RBC formation.",
+        "D": "The nucleus is extruded during terminal erythroid maturation."
+      },
+      "tags": [
+        "Erythropoiesis",
+        "RBC Maturation",
+        "Hematology",
+        "Normoblast"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-034",
+      "questionNumber": 34,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Community Medicine",
+      "subSpecialty": "Public Health",
+      "topic": "Traditional Medicine",
+      "subject": "Traditional Medicine Practices",
+      "title": "Non-traditional treatment among listed choices",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Easy",
+      "highYield": false,
+      "originalQuestion": "The following are types of traditional medicine except:",
+      "originalOptions": {
+        "A": "Drug",
+        "B": "Chemotherapy",
+        "C": "Cupping",
+        "D": "Massage",
+        "E": "Burn"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — Chemotherapy"
+      },
+      "explanation": "Cupping and massage are traditional/complementary practices. Chemotherapy is a conventional medical treatment and is not classified as traditional medicine.",
+      "optionExplanations": {
+        "A": "The term 'drug' is broad and may include traditional medicinal preparations, depending on context.",
+        "B": "Correct: chemotherapy is a conventional medical treatment, not traditional medicine.",
+        "C": "Cupping is a traditional/complementary practice.",
+        "D": "Massage can be a traditional/complementary therapeutic practice.",
+        "E": "The source wording 'Burn' is unclear; it is not a standard well-defined traditional medicine category."
+      },
+      "tags": [
+        "Traditional Medicine",
+        "Cupping",
+        "Massage",
+        "Chemotherapy"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-035",
+      "questionNumber": 35,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Surgery",
+      "subSpecialty": "Urology",
+      "topic": "Benign Prostatic Hyperplasia",
+      "subject": "Lower Urinary Tract Symptoms",
+      "title": "Symptoms of benign prostatic hyperplasia",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "The symptoms in benign prostatic hypertrophy all following are true except:",
+      "originalOptions": {
+        "A": "Hesitancy",
+        "B": "Frequency urination at night",
+        "C": "Weak urinary stream",
+        "D": "Urgency",
+        "E": "Gross hematuria"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "E"
+        ],
+        "text": "E — Gross hematuria"
+      },
+      "explanation": "BPH commonly causes obstructive and irritative lower urinary tract symptoms such as hesitancy, weak stream, nocturia, and urgency. Gross hematuria is not a classic symptom and should prompt evaluation for another cause, although bleeding can occur in BPH.",
+      "optionExplanations": {
+        "A": "Hesitancy is a common obstructive LUTS in BPH.",
+        "B": "Nocturia/frequency is common in BPH.",
+        "C": "Weak urinary stream is a common obstructive symptom.",
+        "D": "Urgency can occur as an irritative LUTS.",
+        "E": "Correct for the classic symptom profile: gross hematuria is not a typical defining symptom and requires evaluation."
+      },
+      "tags": [
+        "BPH",
+        "Prostate",
+        "LUTS",
+        "Urology"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-036",
+      "questionNumber": 36,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Orthopedics",
+      "subSpecialty": "Orthopedic Trauma",
+      "topic": "Muscle Contracture",
+      "subject": "Quadriceps Contracture",
+      "title": "Common cause of quadriceps contracture",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "The most common cause of quadriceps contracture is:",
+      "originalOptions": {
+        "A": "Post injections fibrosis",
+        "B": "Following femoral shaft fracture",
+        "C": "Ischemic myositis",
+        "D": "Congenital",
+        "E": "Following operations on thigh"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Post-injection fibrosis"
+      },
+      "explanation": "Quadriceps contracture is classically associated with fibrosis after repeated intramuscular injections into the thigh, particularly in children in settings where this practice has occurred.",
+      "optionExplanations": {
+        "A": "Correct: post-injection fibrosis is a classic cause of quadriceps contracture.",
+        "B": "Femoral shaft fracture can lead to stiffness but is not the classic common cause in this question.",
+        "C": "Ischemic muscle injury can cause contracture but is not the intended common cause.",
+        "D": "Congenital contracture is not the typical cause.",
+        "E": "Operations may cause scarring but are not the classic common cause."
+      },
+      "tags": [
+        "Quadriceps Contracture",
+        "Intramuscular Injection",
+        "Orthopedics"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-037",
+      "questionNumber": 37,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Orthopedics",
+      "subSpecialty": "Orthopedic Trauma",
+      "topic": "Fracture Fixation",
+      "subject": "Intramedullary Nailing",
+      "title": "Contraindication to intramedullary nailing",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Difficult",
+      "highYield": false,
+      "originalQuestion": "One of the following is contraindication of intramedulary nail use..:",
+      "originalOptions": {
+        "A": "Fracture at narrowest part",
+        "B": "In child",
+        "C": "In transverse fracture",
+        "D": "In un-union man",
+        "E": "Compound ."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "B"
+        ],
+        "text": "B — In child"
+      },
+      "explanation": "Traditional teaching considers intramedullary nailing relatively contraindicated in skeletally immature children depending on the bone, nail type, and growth plate. Modern pediatric techniques use age- and fracture-specific flexible or other nails, so the source statement is context-dependent.",
+      "optionExplanations": {
+        "A": "A fracture at a narrowest part can still be treated with appropriate fixation depending on location and anatomy.",
+        "B": "Correct according to the traditional teaching represented by the question: standard rigid intramedullary nailing is generally avoided in skeletally immature children when it risks the physis.",
+        "C": "Transverse fractures can be treated with intramedullary nails in appropriate bones.",
+        "D": "Nonunion is an accepted indication for revision fixation, including intramedullary nailing in suitable cases.",
+        "E": "Open/compound fractures are not an absolute contraindication; management depends on contamination, soft tissue status, and fracture characteristics."
+      },
+      "tags": [
+        "Intramedullary Nail",
+        "Pediatric Orthopedics",
+        "Fracture",
+        "Nonunion"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-038",
+      "questionNumber": 38,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Pediatrics",
+      "subSpecialty": "Pediatric Endocrinology",
+      "topic": "Diabetic Ketoacidosis",
+      "subject": "Perioperative DKA Management",
+      "title": "Insulin infusion during perioperative pediatric DKA",
+      "questionType": "Calculation",
+      "clinicalDomain": "Treatment",
+      "difficulty": "Very Difficult",
+      "highYield": true,
+      "originalQuestion": "A child with known case of DKA and Acute appendicitis prepared for surgery, Insulin given prior operation. At the OT glucose level raised to 180mg/dL, What should be given:",
+      "originalOptions": {
+        "A": "0.10 IV insulin",
+        "B": "0.3 IV insulin",
+        "C": "0.06 insulin",
+        "D": ".08 IV insulin"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": true,
+      "correctionStatus": "Incomplete",
+      "correction": "The question omits the units, weight basis, and dosing interval required to safely select an insulin infusion rate.",
+      "correctedQuestion": "In a child with DKA undergoing surgery, with blood glucose 180 mg/dL, what weight-based insulin infusion rate should be used, and should dextrose-containing fluid be added?",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined reliably from the source because the insulin units, weight basis, and intended dosing interval are missing"
+      },
+      "explanation": "In pediatric DKA, insulin is given as a weight-based continuous infusion and glucose is managed by adding dextrose and adjusting insulin rather than simply choosing a bare number. The source options omit the necessary units and patient weight, so a safe single answer cannot be verified.",
+      "optionExplanations": {
+        "A": "0.10 could be a clinically relevant insulin infusion rate only if the missing units and weight basis are specified.",
+        "B": "0.3 would generally be too high for a routine pediatric DKA insulin infusion unless a very different unit convention were intended.",
+        "C": "0.06 could be plausible under some weight-based infusion conventions, but the source does not specify units or context.",
+        "D": "0.08 could also be plausible under some weight-based conventions, but the source lacks the information needed to select it safely."
+      },
+      "tags": [
+        "DKA",
+        "Pediatrics",
+        "Insulin Infusion",
+        "Perioperative Care"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-039",
+      "questionNumber": 39,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Surgery",
+      "subSpecialty": "Vascular Surgery",
+      "topic": "Arteriovenous Fistula",
+      "subject": "Acquired AV Fistula",
+      "title": "Traumatic arteriovenous fistula",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "Most common cause of AV fistula is:",
+      "originalOptions": {
+        "A": "Blunt trauma",
+        "B": "Inflammation",
+        "C": "Penetrating trauma",
+        "D": "Immune"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C — Penetrating trauma"
+      },
+      "explanation": "Acquired traumatic arteriovenous fistulas are classically caused by penetrating vascular injury, allowing an abnormal communication between an artery and a vein.",
+      "optionExplanations": {
+        "A": "Blunt trauma can cause vascular injury but is less classically associated with traumatic AV fistula than penetrating injury.",
+        "B": "Inflammation is not the most common cause of acquired traumatic AV fistula.",
+        "C": "Correct: penetrating trauma is a classic cause of traumatic AV fistula.",
+        "D": "An immune mechanism is not the common cause of traumatic AV fistula."
+      },
+      "tags": [
+        "AV Fistula",
+        "Penetrating Trauma",
+        "Vascular Surgery"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-040",
+      "questionNumber": 40,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Obstetric Definitions",
+      "subject": "Fetal Attitude",
+      "title": "Relationship of fetal parts to one another",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Definition",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "Fetal parts related to one another is:",
+      "originalOptions": {
+        "A": "Axis",
+        "B": "Presentation",
+        "C": "Position",
+        "D": "Attitude."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "D — Attitude"
+      },
+      "explanation": "Fetal attitude describes the relationship of the fetal parts to one another, such as flexion or extension. Presentation is the fetal part entering the pelvic inlet; position describes the relation of the presenting part to the maternal pelvis.",
+      "optionExplanations": {
+        "A": "Axis refers to the longitudinal relationship of the fetus to the maternal uterus, not fetal parts to one another.",
+        "B": "Presentation is the fetal part that overlies the pelvic inlet.",
+        "C": "Position describes the relation of a selected fetal landmark to the maternal pelvis.",
+        "D": "Correct: attitude is the relationship of fetal parts to one another."
+      },
+      "tags": [
+        "Fetal Attitude",
+        "Presentation",
+        "Position",
+        "Obstetrics"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-2024-041",
+      "questionNumber": 41,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree in General Medicine",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Ibb",
+      "governorate": "Ibb",
+      "region": "Not provided in source.",
+      "year": 2024,
+      "month": "December",
+      "exactDate": "19/12/2024",
+      "majorSection": "ENT",
+      "subSpecialty": "Rhinology",
+      "topic": "Epistaxis",
+      "subject": "Anterior Epistaxis",
+      "title": "Initial management of anterior epistaxis",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Emergency",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "child with epistaxis bleeding from anterior kiesselbach plexus the first thing to do",
+      "originalOptions": {
+        "A": "apply pressure on the nose",
+        "B": "use packed Transfer to specialty"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "No correction required.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "A — Apply pressure on the nose"
+      },
+      "explanation": "Initial management of uncomplicated anterior epistaxis is firm, continuous compression of the soft part of the nose while the patient leans forward. Packing or specialist intervention is considered if bleeding persists or is severe.",
+      "optionExplanations": {
+        "A": "Correct: firm direct pressure to the soft anterior nose is the first step.",
+        "B": "Nasal packing and specialist transfer may be needed if bleeding persists, is severe, or cannot be controlled with first aid."
+      },
+      "tags": [
+        "Epistaxis",
+        "Kiesselbach Plexus",
+        "ENT",
+        "First Aid"
+      ]
+    }
+  ]
+}

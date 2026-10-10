@@ -1,0 +1,2862 @@
+{
+  "examMetadata": {
+    "databaseType": "licensure",
+    "questionBank": "Yemen Medical Licensure",
+    "examType": "Professional Licensure",
+    "medicalProfession": "Human Medicine (General Medicine)",
+    "specialty": "General Medicine",
+    "qualification": "Bachelor's Degree",
+    "country": "Yemen",
+    "city": "Sana'a",
+    "governorate": "Sana'a",
+    "region": "Not provided in source.",
+    "year": 2023,
+    "month": "September",
+    "exactDate": "2023-09-07",
+    "language": "English",
+    "source": "اختبار مزاولة المهنة بك طب عام صنعاء 2023/9/7",
+    "sourceFile": "نماذج_مزاولة_المهنة_بك_طب_عام_صنعاء_7_9_2023.pdf",
+    "examTitle": "اختبار مزاولة المهنة بك طب عام صنعاء 2023/9/7",
+    "examProvider": "Not provided in source.",
+    "institution": "Not provided in source.",
+    "department": "Not provided in source.",
+    "subject": "Not provided in source.",
+    "section": "Not provided in source.",
+    "numberOfQuestions": 51,
+    "timeLimit": "Not provided in source."
+  },
+  "questions": [
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-001",
+      "questionNumber": 1,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "all follwing causes of diffuse hair loss except..",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pathophysiology",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "1_all follwing causes of diffuse hair loss except..",
+      "originalOptions": {
+        "A": "Secondary syphllis",
+        "B": "Dermatitis",
+        "C": "Febril",
+        "D": "...."
+      },
+      "sourceAnswer": {
+        "letters": [
+          "C"
+        ],
+        "text": "C# . Febril"
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source marks C, but option D is unreadable; the complete answer set cannot be independently verified.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Not the requested exception based on the information available.",
+        "C": "Not the requested exception based on the information available.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-002",
+      "questionNumber": 2,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "ENT",
+      "subSpecialty": "Head and Neck",
+      "topic": "Salivary/Oral Conditions",
+      "subject": "Causes of Buccal Ulceration",
+      "title": "all cases of buccal ulcer except..",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "2_all cases of buccal ulcer except..",
+      "originalOptions": {
+        "A": "Crohn",
+        "B": "Candidaisis",
+        "C": "herpes",
+        "D": "Nerofibromatosis"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "D"
+        ],
+        "text": "Nerofibromatosis"
+      },
+      "explanation": "Nerofibromatosis is the best answer for the requested exception in Causes of Buccal Ulceration.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Not the requested exception based on the information available.",
+        "C": "Not the requested exception based on the information available.",
+        "D": "Correct: Nerofibromatosis."
+      },
+      "tags": [
+        "Head and Neck",
+        "Salivary/Oral Conditions",
+        "Causes of Buccal Ulceration"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-003",
+      "questionNumber": 3,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "ENT",
+      "subSpecialty": "Head and Neck",
+      "topic": "Salivary/Oral Conditions",
+      "subject": "Salivary/Oral Conditions",
+      "title": "about parotid gland which is NOTtrue",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "3_about parotid gland which is NOTtrue",
+      "originalOptions": {
+        "A": ".DRAIN into upeer second molar",
+        "B": "EXCLUSICLY serous",
+        "C": ".ancrease secretion by sympathetic",
+        "D": ".."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Salivary/Oral Conditions.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Not the best answer to the question as written.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Head and Neck",
+        "Salivary/Oral Conditions"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-004",
+      "questionNumber": 4,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "ENT",
+      "subSpecialty": "Head and Neck",
+      "topic": "Salivary/Oral Conditions",
+      "subject": "Salivary/Oral Conditions",
+      "title": "about salivation. Which false :",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "4_ about salivation. Which false :",
+      "originalOptions": {
+        "A": "Ancresae by sympathetic stim",
+        "B": "ANCRESEby tricyclic antideprssant",
+        "C": "...........",
+        "D": "..........."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Salivary/Oral Conditions.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Head and Neck",
+        "Salivary/Oral Conditions"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-005",
+      "questionNumber": 5,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "About pron position :",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "5_About pron position :",
+      "originalOptions": {
+        "A": "Is pistiin of patint abdomen",
+        "B": "............",
+        "C": "............",
+        "D": "............"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-006",
+      "questionNumber": 6,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "repaated vomiting cases :",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "6_repaated vomiting cases :",
+      "originalOptions": {
+        "A": "hyperkalemia\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023",
+        "B": "acidosis.",
+        "C": "................",
+        "D": "................"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-007",
+      "questionNumber": 7,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Physiology",
+      "topic": "Fluid, Electrolyte and Metabolic Disorders",
+      "subject": "Fluid, Electrolyte and Metabolic Disorders",
+      "title": "about hyponatriema cases eccept",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "7_about hyponatriema cases eccept",
+      "originalOptions": {
+        "A": "Adison.",
+        "B": "repeated vomiting",
+        "C": "diarea",
+        "D": "............"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Fluid, Electrolyte and Metabolic Disorders.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Not the best answer to the question as written.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Physiology",
+        "Fluid, Electrolyte and Metabolic Disorders"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-008",
+      "questionNumber": 8,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy and Reproductive Health",
+      "subject": "Pregnancy and Reproductive Health",
+      "title": "about umbilical cord in 1trimester :",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "8_about umbilical cord in 1trimester :",
+      "originalOptions": {
+        "A": "Consist of 2artery and one vein",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Pregnancy and Reproductive Health.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pregnancy and Reproductive Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-009",
+      "questionNumber": 9,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Physiology",
+      "topic": "Fluid, Electrolyte and Metabolic Disorders",
+      "subject": "Fluid, Electrolyte and Metabolic Disorders",
+      "title": "about gluconeogenesis",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "9_about gluconeogenesis",
+      "originalOptions": {
+        "A": ".insulin effect",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Fluid, Electrolyte and Metabolic Disorders.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Physiology",
+        "Fluid, Electrolyte and Metabolic Disorders"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-010",
+      "questionNumber": 10,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "about hypocacemia which false :",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "10_about hypocacemia which false :",
+      "originalOptions": {
+        "A": ".lead to increse muscular excitbility",
+        "B": ".treated by dirutic",
+        "C": "Hypercalcemia lead to rena failre",
+        "D": "............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Not the best answer to the question as written.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-010-02",
+      "questionNumber": 10,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Physiology",
+      "topic": "Fluid, Electrolyte and Metabolic Disorders",
+      "subject": "Fluid, Electrolyte and Metabolic Disorders",
+      "title": "axtion of aldosteron :",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "10_ axtion of aldosteron :",
+      "originalOptions": {
+        "A": "sodium reabsorption",
+        "B": "..............",
+        "C": "..............\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Fluid, Electrolyte and Metabolic Disorders.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Not the best answer to the question as written.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Physiology",
+        "Fluid, Electrolyte and Metabolic Disorders"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-011",
+      "questionNumber": 11,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy and Reproductive Health",
+      "subject": "Pregnancy and Reproductive Health",
+      "title": "about 2 stage of labour:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "11_about 2 stage of labour:",
+      "originalOptions": {
+        "A": "start from full cervix dilitation end with baby\nexpulsion",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Pregnancy and Reproductive Health.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pregnancy and Reproductive Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-012",
+      "questionNumber": 12,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "About coc :",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "12_About coc :",
+      "originalOptions": {
+        "A": "Alter cevical secretion",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-013",
+      "questionNumber": 13,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "About celiac disease:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "13_About celiac disease:",
+      "originalOptions": {
+        "A": "ASSOSIATED with dermatitis herpitiformis",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-014",
+      "questionNumber": 14,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "about cardiigenic shok:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "14_ about cardiigenic shok:",
+      "originalOptions": {
+        "A": "HYPOTENTION related to hypovolomia",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-015",
+      "questionNumber": 15,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Surgery",
+      "subSpecialty": "Trauma and Burns",
+      "topic": "Trauma",
+      "subject": "Trauma",
+      "title": "Electrical burn",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "15_Electrical burn",
+      "originalOptions": {
+        "A": "Considered as 2nd degree skin burn",
+        "B": "If he is stable discharge him from hospital",
+        "C": "",
+        "D": "None of the above\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Trauma.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Not the best answer to the question as written."
+      },
+      "tags": [
+        "Trauma and Burns",
+        "Trauma"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-016",
+      "questionNumber": 16,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Anatomy",
+      "subSpecialty": "Neuroanatomy",
+      "topic": "Anatomy",
+      "subject": "Conus Medullaris Level",
+      "title": "Spinal cord end in:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "16_ Spinal cord end in:",
+      "originalOptions": {
+        "A": "First Lumber Vertebrae",
+        "B": "Second Lumber Vertebrae",
+        "C": "Third Lumber Vertebrae",
+        "D": "Fourth Lumber Vertebrae"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Not applicable",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [
+          "A"
+        ],
+        "text": "First Lumber Vertebrae"
+      },
+      "explanation": "First Lumber Vertebrae is the best-supported answer for the clinical concept tested: Conus Medullaris Level.",
+      "optionExplanations": {
+        "A": "Correct: First Lumber Vertebrae.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Not the best answer to the question as written.",
+        "D": "Not the best answer to the question as written."
+      },
+      "tags": [
+        "Neuroanatomy",
+        "Anatomy",
+        "Conus Medullaris Level"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-017",
+      "questionNumber": 17,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy and Reproductive Health",
+      "subject": "Pregnancy and Reproductive Health",
+      "title": "Placenta is:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "17_Placenta is:",
+      "originalOptions": {
+        "A": "Circular sponge, 20 cm diameter, 2.5 cm thick"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Pregnancy and Reproductive Health.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pregnancy and Reproductive Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-018",
+      "questionNumber": 18,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy and Reproductive Health",
+      "subject": "Pregnancy and Reproductive Health",
+      "title": "Umbilical cord at term:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "18_Umbilical cord at term:",
+      "originalOptions": {
+        "A": "Contain one umblical vein and two arteries."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Pregnancy and Reproductive Health.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pregnancy and Reproductive Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-019",
+      "questionNumber": 19,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy and Reproductive Health",
+      "subject": "Pregnancy and Reproductive Health",
+      "title": "Amniotic fluid at term:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "19_Amniotic fluid at term:",
+      "originalOptions": {
+        "A": "500-1000 ml"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Pregnancy and Reproductive Health.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pregnancy and Reproductive Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-020",
+      "questionNumber": 20,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy and Reproductive Health",
+      "subject": "Pregnancy and Reproductive Health",
+      "title": "Bleeding due to Placental separation:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "20_ Bleeding due to Placental separation:",
+      "originalOptions": {
+        "A": "PV should be done by senior",
+        "B": "Not frequent PV should be done"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Pregnancy and Reproductive Health.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pregnancy and Reproductive Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-021",
+      "questionNumber": 21,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All of the following cause vomiting Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pathophysiology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "21All of the following cause vomiting Except:",
+      "originalOptions": {
+        "A": "Drug as promethazine",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-022",
+      "questionNumber": 22,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Physiology",
+      "topic": "Fluid, Electrolyte and Metabolic Disorders",
+      "subject": "Fluid, Electrolyte and Metabolic Disorders",
+      "title": "All are true about hyperkalemia Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "22_All are true about hyperkalemia Except:",
+      "originalOptions": {
+        "A": "Cause metabolic alkalosis",
+        "B": "..............",
+        "C": "..............",
+        "D": "..............\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in Fluid, Electrolyte and Metabolic Disorders.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Not the requested exception based on the information available."
+      },
+      "tags": [
+        "Physiology",
+        "Fluid, Electrolyte and Metabolic Disorders"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-023",
+      "questionNumber": 23,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All are true Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "23_All are true Except:",
+      "originalOptions": {
+        "A": "Hypocalcemia does not cause hyperexcitability",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-024",
+      "questionNumber": 24,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All causes hyponatermia Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pathophysiology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "24_All causes hyponatermia Except:",
+      "originalOptions": {
+        "A": "Hypoglycemia",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-025",
+      "questionNumber": 25,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Anatomy",
+      "subSpecialty": "Musculoskeletal Anatomy",
+      "topic": "Anatomy",
+      "subject": "Anatomy",
+      "title": "Injury of surgical neck of humerus cause:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pathophysiology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "25_Injury of surgical neck of humerus cause:",
+      "originalOptions": {
+        "A": "Loss of adduction",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Anatomy.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Musculoskeletal Anatomy",
+        "Anatomy"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-026",
+      "questionNumber": 26,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "Which of the following is True:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "26_Which of the following is True:",
+      "originalOptions": {
+        "A": "About Drug prescription and who will be the one that is\nresponsible for the mistake",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-027",
+      "questionNumber": 27,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "Clinical Medicine",
+      "subject": "Clinical Medicine",
+      "title": "Which is true about Respiratory System:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "27_Which is true about Respiratory System:",
+      "originalOptions": {
+        "A": "Alveoli are the site of gas exchange",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Clinical Medicine.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "Clinical Medicine"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-028",
+      "questionNumber": 28,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All are true about cardiac muscles Except:\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "28_All are true about cardiac muscles Except:\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023",
+      "originalOptions": {
+        "A": "Contain striated muscular cells",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-029",
+      "questionNumber": 29,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "Which is true about skeletal muscles:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "29_Which is true about skeletal muscles:",
+      "originalOptions": {
+        "A": "Blood flow increase during sympathetic stimulation",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-030",
+      "questionNumber": 30,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Psychiatry",
+      "subSpecialty": "Psychiatry",
+      "topic": "Schizophrenia",
+      "subject": "Schizophrenia",
+      "title": "All are true about schizophrenia Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "30_All are true about schizophrenia Except:",
+      "originalOptions": {
+        "A": "Memory loss",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in Schizophrenia.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Psychiatry",
+        "Schizophrenia"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-031",
+      "questionNumber": 31,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All are true about Vitamin B12 deficiency Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "31All are true about Vitamin B12 deficiency Except:",
+      "originalOptions": {
+        "A": "Its absorption decreased by reduced Ph of stomach",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-032",
+      "questionNumber": 32,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Physiology",
+      "topic": "Fluid, Electrolyte and Metabolic Disorders",
+      "subject": "Fluid, Electrolyte and Metabolic Disorders",
+      "title": "Which is true about gastric juice:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "32Which is true about gastric juice:",
+      "originalOptions": {
+        "A": "Ph 1-2",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Fluid, Electrolyte and Metabolic Disorders.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Physiology",
+        "Fluid, Electrolyte and Metabolic Disorders"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-033",
+      "questionNumber": 33,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "Prone posfollowin\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "33_ Prone posfollowin\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023",
+      "originalOptions": {
+        "A": "None of the above",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-034",
+      "questionNumber": 34,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "Clinical Medicine",
+      "subject": "Clinical Medicine",
+      "title": "All are true about pulmonary Hypertension Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "34_All are true about pulmonary Hypertension Except:",
+      "originalOptions": {
+        "A": "Mitral stenosis does not",
+        "B": "cause pulmonary",
+        "C": "Hypertension"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in Clinical Medicine.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Not the requested exception based on the information available.",
+        "C": "Not the requested exception based on the information available."
+      },
+      "tags": [
+        "General Medicine",
+        "Clinical Medicine"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-035",
+      "questionNumber": 35,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All are true Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "35_All are true Except:",
+      "originalOptions": {
+        "A": "Pulmonary arteries drain to left atrium",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-036",
+      "questionNumber": 36,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Surgery",
+      "subSpecialty": "Trauma and Burns",
+      "topic": "Trauma",
+      "subject": "Trauma",
+      "title": "In patient after trauma\nGiving 750 ml is not dangerous from donor.",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "36 In patient after trauma\nGiving 750 ml is not dangerous from donor.",
+      "originalOptions": {
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in Trauma.",
+      "optionExplanations": {
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Trauma and Burns",
+        "Trauma"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-037",
+      "questionNumber": 37,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "ENT",
+      "subSpecialty": "Head and Neck",
+      "topic": "Salivary/Oral Conditions",
+      "subject": "Salivary/Oral Conditions",
+      "title": "All the following are true about parotid gland Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "37_All the following are true about parotid gland Except:",
+      "originalOptions": {
+        "A": "Nerve supplie from superior Salivary nucleus",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in Salivary/Oral Conditions.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Head and Neck",
+        "Salivary/Oral Conditions"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-038",
+      "questionNumber": 38,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "Clinical Medicine",
+      "subject": "Clinical Medicine",
+      "title": "Gastric outlet obstruction causes:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pathophysiology",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "38_Gastric outlet obstruction causes:",
+      "originalOptions": {
+        "A": "Hypochloremia",
+        "B": "..............\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Clinical Medicine.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "Clinical Medicine"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-039",
+      "questionNumber": 39,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "Clinical Medicine",
+      "subject": "Clinical Medicine",
+      "title": "Which of the following about Alcohol is true :",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "39_Which of the following about Alcohol is true :",
+      "originalOptions": {
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Clinical Medicine.",
+      "optionExplanations": {
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "Clinical Medicine"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-040",
+      "questionNumber": 40,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy and Reproductive Health",
+      "subject": "Pregnancy and Reproductive Health",
+      "title": "First sign of puberty in female is:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "40_First sign of puberty in female is:",
+      "originalOptions": {
+        "A": "Appearance of Breast buds",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Pregnancy and Reproductive Health.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pregnancy and Reproductive Health"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-041",
+      "questionNumber": 41,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All the following about jaundice are false Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "41_All the following about jaundice are false Except:",
+      "originalOptions": {
+        "A": "Clinically appears when it more than 3 mg/dl",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-042",
+      "questionNumber": 42,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All are true about abducent nerve Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "42_All are true about abducent nerve Except:",
+      "originalOptions": {
+        "A": "It supplies inferior rectus muscle",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-043",
+      "questionNumber": 43,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All the following are true about atropin Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "43_All the following are true about atropin Except:",
+      "originalOptions": {
+        "A": "It lowers intraocular pressure",
+        "B": "..............",
+        "C": "..............",
+        "D": "..............\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Not the requested exception based on the information available."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-044",
+      "questionNumber": 44,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "ENT",
+      "subSpecialty": "Head and Neck",
+      "topic": "Salivary/Oral Conditions",
+      "subject": "Salivary/Oral Conditions",
+      "title": "About Salivary secretion:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "44_About Salivary secretion:",
+      "originalOptions": {
+        "A": "It increases by antihistamines",
+        "B": "It reduces by antidepressants",
+        "C": "Non"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Salivary/Oral Conditions.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Not the best answer to the question as written.",
+        "C": "Not the best answer to the question as written."
+      },
+      "tags": [
+        "Head and Neck",
+        "Salivary/Oral Conditions"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-045",
+      "questionNumber": 45,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "ENT",
+      "subSpecialty": "Head and Neck",
+      "topic": "Salivary/Oral Conditions",
+      "subject": "Salivary/Oral Conditions",
+      "title": "The most common cause of tonsillar hypertrophy in\nchildren is:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Pathophysiology",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "45_The most common cause of tonsillar hypertrophy in\nchildren is:",
+      "originalOptions": {
+        "A": "Streptococcus bacteria",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer because it is the most common or characteristic finding/cause for the concept tested: Salivary/Oral Conditions.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Head and Neck",
+        "Salivary/Oral Conditions"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-046",
+      "questionNumber": 46,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Physiology",
+      "topic": "Fluid, Electrolyte and Metabolic Disorders",
+      "subject": "Fluid, Electrolyte and Metabolic Disorders",
+      "title": "About Aldosterone hormone is true:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "46_ About Aldosterone hormone is true:",
+      "originalOptions": {
+        "A": "Reabsorption of Na",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Fluid, Electrolyte and Metabolic Disorders.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Physiology",
+        "Fluid, Electrolyte and Metabolic Disorders"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-047",
+      "questionNumber": 47,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "About antibiotics all are true Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "47_About antibiotics all are true Except:",
+      "originalOptions": {
+        "A": "Change antibiotics according to culture and sensitivity\nwhatever the result of\nempirical antibiotic was.",
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-048",
+      "questionNumber": 48,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "General Medicine",
+      "topic": "General Medical Knowledge",
+      "subject": "General Medical Knowledge",
+      "title": "All the following pathogens can pass in stool Except:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": true,
+      "originalQuestion": "48_All the following pathogens can pass in stool Except:",
+      "originalOptions": {
+        "A": "Mycobacterium TB",
+        "B": "..............",
+        "C": "..............",
+        "D": "..............\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best answer for the requested exception in General Medical Knowledge.",
+      "optionExplanations": {
+        "A": "Not the requested exception based on the information available.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Not the requested exception based on the information available."
+      },
+      "tags": [
+        "General Medicine",
+        "General Medical Knowledge"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-049",
+      "questionNumber": 49,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Internal Medicine",
+      "subSpecialty": "Physiology",
+      "topic": "Fluid, Electrolyte and Metabolic Disorders",
+      "subject": "Fluid, Electrolyte and Metabolic Disorders",
+      "title": "Which is false regarding hemodynamics of blood\nvessels:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Moderate",
+      "highYield": false,
+      "originalQuestion": "49_Which is false regarding hemodynamics of blood\nvessels:",
+      "originalOptions": {
+        "B": "..............",
+        "C": "..............",
+        "D": ".............."
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Fluid, Electrolyte and Metabolic Disorders.",
+      "optionExplanations": {
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Unclear/blank in the source; no reliable medical interpretation is possible."
+      },
+      "tags": [
+        "Physiology",
+        "Fluid, Electrolyte and Metabolic Disorders"
+      ]
+    },
+    {
+      "id": "LIC-YEMEN-GM-SANAA-2023-050",
+      "questionNumber": 50,
+      "databaseType": "licensure",
+      "questionBank": "Yemen Medical Licensure",
+      "examType": "Professional Licensure",
+      "medicalProfession": "Human Medicine (General Medicine)",
+      "qualification": "Bachelor's Degree",
+      "specialty": "General Medicine",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "governorate": "Sana'a",
+      "region": "Not provided in source.",
+      "year": 2023,
+      "month": "September",
+      "exactDate": "2023-09-07",
+      "majorSection": "Obstetrics and Gynecology",
+      "subSpecialty": "Obstetrics",
+      "topic": "Pregnancy and Reproductive Health",
+      "subject": "Pregnancy and Reproductive Health",
+      "title": "First sign of puberty in female is:",
+      "questionType": "Single Best Answer",
+      "clinicalDomain": "Diagnosis",
+      "difficulty": "Easy",
+      "highYield": true,
+      "originalQuestion": "50_First sign of puberty in female is:",
+      "originalOptions": {
+        "A": "Appearance of Breast buds",
+        "B": "..............",
+        "C": "..............",
+        "D": "..............\nإختبار مزاولة المهنةبك طب عام  صنعاء7/9/2023\nكمالا ننسى كل  من تعاون في التدوين\nد/إبراهيم شداد\nإنقرنقرة واحده على الروابط اسفل  تصلك إلى كافة النماذج"
+      },
+      "sourceAnswer": {
+        "letters": [],
+        "text": "Not provided in the source file."
+      },
+      "hasCorrection": false,
+      "correctionStatus": "Incomplete",
+      "correction": "The source is incomplete where indicated; no silent reconstruction was made.",
+      "correctedQuestion": "",
+      "correctAnswer": {
+        "letters": [],
+        "text": "Cannot be determined from the incomplete source question/options."
+      },
+      "explanation": "Cannot be determined from the incomplete source question/options. is the best-supported answer for the clinical concept tested: Pregnancy and Reproductive Health.",
+      "optionExplanations": {
+        "A": "Not the best answer to the question as written.",
+        "B": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "C": "Unclear/blank in the source; no reliable medical interpretation is possible.",
+        "D": "Not the best answer to the question as written."
+      },
+      "tags": [
+        "Obstetrics",
+        "Pregnancy and Reproductive Health"
+      ]
+    }
+  ]
+}

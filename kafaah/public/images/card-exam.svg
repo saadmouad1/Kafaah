@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#060e1e" />
+    </linearGradient>
+    <linearGradient id="accBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" rx="20" fill="url(#cBg)" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1.5"/>
+  
+  <!-- Window top bar -->
+  <rect width="600" height="44" rx="20" fill="rgba(30, 41, 59, 0.6)"/>
+  <circle cx="28" cy="22" r="5" fill="#ef4444"/>
+  <circle cx="44" cy="22" r="5" fill="#f59e0b"/>
+  <circle cx="60" cy="22" r="5" fill="#10b981"/>
+  
+  <text x="560" y="27" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="13" font-weight="700" fill="#f8fafc" text-anchor="end">
+    المحاكاة الرسمية لاختبار رخصة البورد الطبي
+  </text>
+  <rect x="85" y="12" width="70" height="20" rx="10" fill="rgba(14, 165, 233, 0.15)"/>
+  <text x="120" y="26" font-family="monospace" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle">
+    100 سؤال
+  </text>
+
+  <!-- Question Content Box -->
+  <rect x="25" y="60" width="550" height="85" rx="14" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.07)"/>
+  <text x="555" y="85" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="12" font-weight="800" fill="#f59e0b" text-anchor="end">
+    حالة سريرية (Clinical Vignette) — طب وجراحة عامة
+  </text>
+  <text x="555" y="108" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="13" fill="#e2e8f0" text-anchor="end">
+    رجل 62 سنة مع تاريخ ارتفاع ضغط الدم يشكو من ألم صدري حاد ينتشر إلى الظهر.
+  </text>
+  <text x="555" y="128" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="12" fill="#94a3b8" text-anchor="end">
+    الضغط بالذراع الأيمن 180/100 وبالأيسر 120/70. ما هو الفحص التشخيصي الأكثر حساسية ودقة؟
+  </text>
+
+  <!-- Choices -->
+  <g transform="translate(25, 160)">
+    <!-- Choice 1 -->
+    <rect x="0" y="0" width="550" height="38" rx="10" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.06)"/>
+    <text x="530" y="24" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="12" fill="#94a3b8" text-anchor="end">أ. تخطيط كهربائية القلب القياسي (12-Lead ECG)</text>
+    
+    <!-- Choice 2 (Selected - Correct) -->
+    <rect x="0" y="46" width="550" height="38" rx="10" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1.5"/>
+    <text x="530" y="70" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="12" font-weight="800" fill="#34d399" text-anchor="end">✓ ب. أشعة مقطعية مع الصبغة للشريان الأورطي (CT Aortography) — تشخيص تمزق الأورطي</text>
+
+    <!-- Choice 3 -->
+    <rect x="0" y="92" width="550" height="38" rx="10" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.06)"/>
+    <text x="530" y="116" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="12" fill="#94a3b8" text-anchor="end">ج. تحليل إنزيمات التروبونين القلبية بعد 8 ساعات فقط</text>
+
+    <!-- Choice 4 -->
+    <rect x="0" y="138" width="550" height="38" rx="10" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.06)"/>
+    <text x="530" y="162" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="12" fill="#94a3b8" text-anchor="end">د. منظار الجهاز الهضمي العلوي لاستبعاد قرحة المعدة</text>
+  </g>
+</svg>

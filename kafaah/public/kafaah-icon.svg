@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+
+    <!-- Emerald Authority Gradient -->
+    <linearGradient id="emeraldCrest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Warm Champagne Gold Gradient -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <!-- Ambient Shadow -->
+    <filter id="crestShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#047857" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Base Squircle Container (Accreditation Seal) -->
+  <rect x="28" y="28" width="456" height="456" rx="108" fill="url(#bgGrad)" stroke="#e2e8f0" stroke-width="2.5" filter="url(#crestShadow)"/>
+
+  <!-- Outer Fine Geometric Rings (ختم الاعتماد المهني) -->
+  <circle cx="256" cy="256" r="195" fill="none" stroke="#f1f5f9" stroke-width="12"/>
+  <circle cx="256" cy="256" r="182" fill="none" stroke="url(#emeraldCrest)" stroke-width="2" stroke-dasharray="6 6" opacity="0.45"/>
+  <circle cx="256" cy="256" r="170" fill="none" stroke="url(#goldAccent)" stroke-width="1.5" opacity="0.75"/>
+
+  <!-- 4 Accreditation Anchor Points -->
+  <circle cx="256" cy="74" r="4" fill="url(#goldAccent)"/>
+  <circle cx="256" cy="438" r="4" fill="url(#goldAccent)"/>
+  <circle cx="74" cy="256" r="4" fill="url(#goldAccent)"/>
+  <circle cx="438" cy="256" r="4" fill="url(#goldAccent)"/>
+
+  <!-- ── CENTRAL EMBLEM: GEOMETRIC SHIELD OF COMPETENCE (درع الكفاءة والترخيص) ── -->
+  <!-- Outer Dignified Shield Profile (Straight shoulders, pure geometric authority - NO HEART) -->
+  <path d="M 256 128 L 362 170 C 362 278, 318 350, 256 388 C 194 350, 150 278, 150 170 Z"
+        fill="none" stroke="url(#emeraldCrest)" stroke-width="12" stroke-linejoin="round"/>
+
+  <!-- Inner Gold Inlay of Shield -->
+  <path d="M 256 150 L 340 184 C 340 268, 304 326, 256 360 C 208 326, 172 268, 172 184 Z"
+        fill="none" stroke="url(#goldAccent)" stroke-width="3" stroke-linejoin="round" opacity="0.85"/>
+
+  <!-- Central Authority Spire / Pillar of Integrity -->
+  <path d="M 256 170 L 256 295" stroke="url(#goldAccent)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Geometric Wings of Progress (صرح درجات الكفاءة) -->
+  <!-- Upper Arch -->
+  <path d="M 205 235 L 256 198 L 307 235" fill="none" stroke="url(#emeraldCrest)" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Lower Arch -->
+  <path d="M 195 275 L 256 238 L 317 275" fill="none" stroke="url(#emeraldCrest)" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Foundation Pedestal (قاعدة المعايير الوطنية) -->
+  <rect x="210" y="312" width="92" height="11" rx="5.5" fill="url(#emeraldCrest)"/>
+  <rect x="232" y="329" width="48" height="5" rx="2.5" fill="url(#goldAccent)"/>
+
+  <!-- Apex Accreditation Star (نجمة التميز الثمانية) -->
+  <g transform="translate(256, 112)">
+    <path d="M 0 -17 L 5 -5 L 17 0 L 5 5 L 0 17 L -5 5 L -17 0 L -5 -5 Z" fill="url(#goldAccent)"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Academic Laurel Leaves (غصنا الغار للتميز والاعتماد) -->
+  <g fill="url(#emeraldCrest)" opacity="0.75">
+    <path d="M 372 280 C 384 270, 396 275, 392 288 C 388 296, 378 294, 372 280 Z"/>
+    <path d="M 382 312 C 394 306, 402 315, 396 325 C 390 332, 381 326, 382 312 Z"/>
+    <path d="M 372 344 C 384 343, 388 355, 380 362 C 372 367, 366 357, 372 344 Z"/>
+
+    <path d="M 140 280 C 128 270, 116 275, 120 288 C 124 296, 134 294, 140 280 Z"/>
+    <path d="M 130 312 C 118 306, 110 315, 116 325 C 122 332, 131 326, 130 312 Z"/>
+    <path d="M 140 344 C 128 343, 124 355, 132 362 C 140 367, 146 357, 140 344 Z"/>
+  </g>
+</svg>
