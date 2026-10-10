@@ -1,0 +1,77 @@
+{
+  "sectors": [
+    {
+      "id": "medical",
+      "label": "القطاع الصحي والطبي",
+      "icon": "🏥",
+      "color": "#10b981",
+      "specializations": [
+        { "id": "smle", "label": "الترخيص الطبي السعودي SMLE", "country": "السعودية" },
+        { "id": "dha", "label": "هيئة الصحة دبي DHA", "country": "الإمارات" },
+        { "id": "moh_uae", "label": "وزارة الصحة الإمارات MOH", "country": "الإمارات" },
+        { "id": "haad", "label": "دائرة الصحة أبوظبي HAAD", "country": "الإمارات" },
+        { "id": "qchp", "label": "مجلس الصحة قطر QCHP", "country": "قطر" },
+        { "id": "scfhs_nursing", "label": "ترخيص التمريض SCFHS", "country": "السعودية" },
+        { "id": "scfhs_pharmacy", "label": "ترخيص الصيدلة SCFHS", "country": "السعودية" },
+        { "id": "scfhs_dentistry", "label": "ترخيص طب الأسنان SCFHS", "country": "السعودية" },
+        { "id": "oms_yemen", "label": "هيئة الأطباء اليمنية OMS", "country": "اليمن" },
+        { "id": "medical_general", "label": "طب عام (بدون تحديد جهة)", "country": "عام" }
+      ]
+    },
+    {
+      "id": "engineering",
+      "label": "الهندسة والتقنية",
+      "icon": "⚙️",
+      "color": "#3b82f6",
+      "specializations": [
+        { "id": "eng_civil", "label": "الهندسة المدنية", "country": "عام" },
+        { "id": "eng_mechanical", "label": "الهندسة الميكانيكية", "country": "عام" },
+        { "id": "eng_electrical", "label": "الهندسة الكهربائية", "country": "عام" },
+        { "id": "eng_chemical", "label": "الهندسة الكيميائية", "country": "عام" },
+        { "id": "eng_it", "label": "تقنية المعلومات والحاسب", "country": "عام" },
+        { "id": "eng_architecture", "label": "الهندسة المعمارية", "country": "عام" },
+        { "id": "eng_environmental", "label": "الهندسة البيئية", "country": "عام" },
+        { "id": "eng_saudi_soc", "label": "هيئة المهندسين السعودية", "country": "السعودية" }
+      ]
+    },
+    {
+      "id": "law",
+      "label": "القانون والمحاماة",
+      "icon": "⚖️",
+      "color": "#f59e0b",
+      "specializations": [
+        { "id": "law_civil", "label": "القانون المدني", "country": "عام" },
+        { "id": "law_commercial", "label": "القانون التجاري", "country": "عام" },
+        { "id": "law_criminal", "label": "القانون الجنائي", "country": "عام" },
+        { "id": "law_admin", "label": "القانون الإداري", "country": "عام" },
+        { "id": "law_family", "label": "قانون الأسرة", "country": "عام" },
+        { "id": "law_saudi", "label": "النظام السعودي (عام)", "country": "السعودية" }
+      ]
+    },
+    {
+      "id": "finance",
+      "label": "المحاسبة والمالية",
+      "icon": "💰",
+      "color": "#8b5cf6",
+      "specializations": [
+        { "id": "cpa", "label": "محاسب قانوني معتمد CPA", "country": "دولي" },
+        { "id": "cma", "label": "محاسب إداري معتمد CMA", "country": "دولي" },
+        { "id": "cfa", "label": "محلل مالي معتمد CFA", "country": "دولي" },
+        { "id": "zakat_sa", "label": "هيئة الزكاة والضريبة السعودية", "country": "السعودية" },
+        { "id": "audit_general", "label": "مراجعة ومراقبة مالية", "country": "عام" }
+      ]
+    },
+    {
+      "id": "education",
+      "label": "التربية والتعليم",
+      "icon": "📚",
+      "color": "#ec4899",
+      "specializations": [
+        { "id": "edu_primary", "label": "تعليم ابتدائي", "country": "عام" },
+        { "id": "edu_secondary", "label": "تعليم ثانوي", "country": "عام" },
+        { "id": "edu_special", "label": "التربية الخاصة", "country": "عام" },
+        { "id": "edu_saudi_board", "label": "كفايات المعلمين السعودية", "country": "السعودية" }
+      ]
+    }
+  ]
+}

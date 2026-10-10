@@ -1,361 +1,226 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Clock, AlertCircle, CheckCircle2, Bookmark, ArrowRight, ArrowLeft, Send } from 'lucide-react';
-import Link from 'next/link';
+import { useState, useEffect, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Timer, CheckCircle2, XCircle, RotateCcw, ChevronRight, ChevronLeft, AlertTriangle, Flag, Award } from 'lucide-react';
+import { useQuestions, shuffle, checkIsEnglish } from '../../../lib/useData';
 
-const sampleMockQuestions = [
-  {
-    id: 1,
-    question: 'مريضة تبلغ من العمر 45 عاماً تعاني من آلام متكررة في الربع العلوي الأيمن من البطن بعد تناول الوجبات الدسمة، مع غثيان. الموجات فوق الصوتية أظهرت حصوات في المرارة مع زيادة سماكة الجدار (4mm). ما هو الإجراء الجراحي الأمثل؟',
-    options: [
-      'استئصال المرارة بالمنظار (Laparoscopic Cholecystectomy)',
-      'تفتيت الحصوات بالموجات التصادمية',
-      'إعطاء حمض اليورسوديوكسيكوليك فقط والمراقبة',
-      'استئصال الفص الكبدي الأيمن'
-    ],
-    correct: 0,
-    hint: 'التهاب المرارة الحصوي العرضي هو استطباب قياسي لاستئصال المرارة بالمنظار.'
-  },
-  {
-    id: 2,
-    question: 'طفل يبلغ من العمر 4 سنوات أحضر إلى الطوارئ بضيق تنفس حاد وصوت صرير (Stridor) وسعال نباحي مميز، بدأت الأعراض ليلاً بعد رشح بسيط. ما هو التشخيص الأرجح؟',
-    options: [
-      'التهاب الحنجرة والرغامي الفيروسي (Croup)',
-      'التهاب لسان المزمار الحاد (Epiglottitis)',
-      'استنشاق جسم غريب',
-      'نوبة ربو حادة'
-    ],
-    correct: 0,
-    hint: 'الصرير مع السعال النباحي والحمى الخفيفة علامة كلاسيكية للخناق (Croup).'
-  },
-  {
-    id: 3,
-    question: 'في مريض السكري من النوع الثاني حديث التشخيص والذي لم يستجب لتعديل نمط الحياة، ما هو خط العلاج الدوائي الفموي الأول المعتمد دولياً ما لم تكن هناك موانع استخدام؟',
-    options: [
-      'ميتفورمين (Metformin)',
-      'غليميبريد (Glimepiride)',
-      'أنسولين قاعدي طويل المفعول',
-      'بيوجليتازون (Pioglitazone)'
-    ],
-    correct: 0,
-    hint: 'الميتفورمين هو خط العلاج الأول للسكري النوع الثاني حسب توصيات ADA.'
-  }
-];
+const EXAM_SIZE = 40;
+const EXAM_MINUTES = 60;
 
-export default function MockPage() {
+export default function MockExamPage() {
+  const [phase, setPhase] = useState('setup'); // setup | exam | review
+  const [examQuestions, setExamQuestions] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [selectedAnswers, setSelectedAnswers] = useState({});
+  const [answers, setAnswers] = useState({});
   const [flagged, setFlagged] = useState({});
-  const [timeLeft, setTimeLeft] = useState(3600); // 60 mins
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(EXAM_MINUTES * 60);
+  const [selectedCategory, setSelectedCategory] = useState('all');
 
+  const { questions: allQuestions, loading } = useQuestions();
+
+  const categories = [
+    { id: 'all', label: 'جميع التخصصات' },
+    { id: 'medical', label: 'القطاع الصحي والطبي' },
+    { id: 'engineering', label: 'الهندسة والتقنية' },
+    { id: 'law', label: 'القانون' },
+    { id: 'finance', label: 'المحاسبة والمالية' },
+  ];
+
+  const startExam = useCallback(() => {
+    const pool = selectedCategory === 'all'
+      ? allQuestions
+      : allQuestions.filter(q => (q.sectorId || q.category) === selectedCategory);
+    const selected = shuffle(pool).slice(0, Math.min(EXAM_SIZE, pool.length));
+    setExamQuestions(selected);
+    setAnswers({});
+    setFlagged({});
+    setCurrentIdx(0);
+    setTimeLeft(EXAM_MINUTES * 60);
+    setPhase('exam');
+  }, [selectedCategory, allQuestions]);
+
+  // Timer
   useEffect(() => {
-    if (isSubmitted || timeLeft <= 0) return;
-    const timer = setInterval(() => {
-      setTimeLeft(prev => prev - 1);
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [isSubmitted, timeLeft]);
+    if (phase !== 'exam') return;
+    if (timeLeft <= 0) { setPhase('review'); return; }
+    const t = setTimeout(() => setTimeLeft(s => s - 1), 1000);
+    return () => clearTimeout(t);
+  }, [phase, timeLeft]);
 
-  const formatTime = (seconds) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-  };
+  const formatTime = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
-  const handleSelect = (optIdx) => {
-    if (isSubmitted) return;
-    setSelectedAnswers(prev => ({ ...prev, [currentIdx]: optIdx }));
-  };
-
-  const toggleFlag = () => {
-    setFlagged(prev => ({ ...prev, [currentIdx]: !prev[currentIdx] }));
-  };
-
-  const calculateScore = () => {
-    let correct = 0;
-    sampleMockQuestions.forEach((q, idx) => {
-      if (selectedAnswers[idx] === q.correct) correct++;
-    });
-    return {
-      correct,
-      total: sampleMockQuestions.length,
-      percentage: Math.round((correct / sampleMockQuestions.length) * 100)
-    };
-  };
-
-  const q = sampleMockQuestions[currentIdx];
-
-  return (
-    <div style={{ maxWidth: 960, margin: '0 auto' }}>
-      
-      {/* ── Top Bar: Exam Info & Countdown Timer ── */}
-      <div style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        gap: 16,
-        padding: '16px 24px',
-        background: 'rgba(255, 255, 255, 0.92)',
-        backdropFilter: 'blur(20px)',
-        border: '1.5px solid rgba(226, 232, 240, 0.85)',
-        borderRadius: 20,
-        marginBottom: 24,
-        boxShadow: 'var(--shadow-card)'
-      }}>
-        <div>
-          <span style={{ fontSize: 12, fontWeight: 800, color: '#0284c7', textTransform: 'uppercase' }}>
-            امتحان المحاكاة المعتمد • بورد المزاولة
-          </span>
-          <h2 style={{ fontSize: 18, fontWeight: 900, color: '#0f172a', marginTop: 2, fontFamily: 'var(--font-heading)' }}>
-            السؤال {currentIdx + 1} من {sampleMockQuestions.length}
-          </h2>
-        </div>
-
-        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          {/* Timer Display */}
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 8,
-            padding: '8px 18px',
-            borderRadius: 14,
-            background: timeLeft < 300 ? '#fee2e2' : '#f0fdf4',
-            border: `1.5px solid ${timeLeft < 300 ? '#ef4444' : '#10b981'}`,
-            color: timeLeft < 300 ? '#b91c1c' : '#047857',
-            fontSize: 16,
-            fontWeight: 900,
-            fontFamily: 'var(--font-numbers)'
-          }}>
-            <Clock size={18} />
-            الوقت المتبقي: {formatTime(timeLeft)}
+  // ─── SETUP PHASE ───────────────────────────────────────────────────────────
+  if (phase === 'setup') {
+    return (
+      <div style={{ maxWidth: 640, margin: '0 auto', paddingTop: 40 }}>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+          style={{ background: '#fff', borderRadius: 28, padding: 40, boxShadow: 'var(--shadow-card)', border: '1px solid var(--border-subtle)' }}>
+          <div style={{ textAlign: 'center', marginBottom: 36 }}>
+            <div style={{ width: 72, height: 72, borderRadius: 22, background: 'linear-gradient(135deg,#ef4444,#dc2626)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 18px', boxShadow: '0 8px 24px rgba(239,68,68,0.3)' }}>
+              <AlertTriangle size={34} color="#fff" />
+            </div>
+            <h1 style={{ fontSize: 26, fontWeight: 900, color: 'var(--text)', marginBottom: 8, fontFamily: 'var(--font-display)' }}>الاختبار التجريبي الشامل</h1>
+            <p style={{ color: 'var(--text-muted)', fontWeight: 600, lineHeight: 1.6 }}>
+              {loading ? 'جاري تحميل الأسئلة...' : `${allQuestions.length} سؤال متاح • سيتم اختيار ${EXAM_SIZE} سؤال عشوائياً`}
+            </p>
           </div>
 
-          <button
-            onClick={toggleFlag}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 6,
-              padding: '9px 16px',
-              borderRadius: 12,
-              background: flagged[currentIdx] ? '#fef3c7' : '#f8fafc',
-              border: `1.5px solid ${flagged[currentIdx] ? '#f59e0b' : '#cbd5e1'}`,
-              color: flagged[currentIdx] ? '#b45309' : '#475569',
-              fontSize: 13,
-              fontWeight: 800,
-              cursor: 'pointer'
-            }}
-          >
-            <Bookmark size={16} />
-            {flagged[currentIdx] ? 'مميّز للمراجعة' : 'تمييز السؤال'}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginBottom: 32 }}>
+            <div style={{ background: 'var(--bg-subtle)', borderRadius: 16, padding: '14px 20px', display: 'flex', justifyContent: 'space-between' }}>
+              <span style={{ fontWeight: 700, color: 'var(--text-secondary)' }}>عدد الأسئلة</span>
+              <span style={{ fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-numbers)' }}>{Math.min(EXAM_SIZE, allQuestions.length)} سؤال</span>
+            </div>
+            <div style={{ background: 'var(--bg-subtle)', borderRadius: 16, padding: '14px 20px', display: 'flex', justifyContent: 'space-between' }}>
+              <span style={{ fontWeight: 700, color: 'var(--text-secondary)' }}>الوقت المحدد</span>
+              <span style={{ fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-numbers)' }}>{EXAM_MINUTES} دقيقة</span>
+            </div>
+          </div>
+
+          <div style={{ marginBottom: 28 }}>
+            <label style={{ display: 'block', fontWeight: 800, color: 'var(--text-secondary)', marginBottom: 10, fontSize: 14 }}>اختر القسم</label>
+            <select value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)}
+              style={{ width: '100%', padding: '14px 18px', borderRadius: 12, border: '1px solid var(--border)', fontSize: 15, fontFamily: 'var(--font-body)', outline: 'none', background: '#fff' }}>
+              {categories.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
+            </select>
+          </div>
+
+          <button onClick={startExam} disabled={loading || allQuestions.length === 0}
+            style={{ width: '100%', padding: '18px 0', borderRadius: 14, background: loading ? '#94a3b8' : 'linear-gradient(135deg,#ef4444,#dc2626)', color: '#fff', border: 'none', fontSize: 18, fontWeight: 900, cursor: loading ? 'not-allowed' : 'pointer', boxShadow: '0 8px 24px rgba(239,68,68,0.35)' }}>
+            {loading ? 'جاري التحميل...' : 'ابدأ الاختبار الآن'}
+          </button>
+        </motion.div>
+      </div>
+    );
+  }
+
+  // ─── EXAM PHASE ────────────────────────────────────────────────────────────
+  if (phase === 'exam') {
+    const q = examQuestions[currentIdx];
+    if (!q) return null;
+    const isEng = checkIsEnglish(q.text);
+    const correctIdx = q.correctIndex ?? q.correct_index ?? 0;
+    const answered = answers[currentIdx];
+    const isFlagged = flagged[currentIdx];
+
+    return (
+      <div style={{ maxWidth: 860, margin: '0 auto' }}>
+        {/* Timer + progress */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20, background: '#fff', borderRadius: 20, padding: '14px 24px', boxShadow: 'var(--shadow-subtle)', border: '1px solid var(--border-subtle)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: timeLeft < 300 ? '#ef4444' : 'var(--text-secondary)', fontWeight: 900, fontFamily: 'var(--font-numbers)', fontSize: 18 }}>
+            <Timer size={20} /> {formatTime(timeLeft)}
+          </div>
+          <div style={{ fontWeight: 800, color: 'var(--text-muted)', fontSize: 14 }}>{currentIdx + 1} / {examQuestions.length}</div>
+          <button onClick={() => setFlagged(f => ({ ...f, [currentIdx]: !isFlagged }))}
+            style={{ padding: '8px 14px', borderRadius: 10, border: `1px solid ${isFlagged ? '#f59e0b' : 'var(--border)'}`, background: isFlagged ? '#fef3c7' : 'transparent', color: isFlagged ? '#d97706' : 'var(--text-muted)', cursor: 'pointer', fontWeight: 700, display: 'flex', alignItems: 'center', gap: 6 }}>
+            <Flag size={15} /> {isFlagged ? 'مُعلَّم' : 'تعليم'}
           </button>
         </div>
+
+        {/* Progress bar */}
+        <div style={{ height: 6, background: 'var(--bg-subtle)', borderRadius: 999, marginBottom: 24, overflow: 'hidden' }}>
+          <motion.div animate={{ width: `${((currentIdx + 1) / examQuestions.length) * 100}%` }}
+            style={{ height: '100%', background: 'linear-gradient(90deg,#10b981,#059669)', borderRadius: 999 }} />
+        </div>
+
+        {/* Question card */}
+        <AnimatePresence mode="wait">
+          <motion.div key={currentIdx} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -30 }}
+            style={{ background: '#fff', borderRadius: 24, padding: 36, boxShadow: 'var(--shadow-card)', border: '1px solid var(--border-subtle)', marginBottom: 24 }}>
+            <h2 style={{ fontSize: 20, fontWeight: 800, color: 'var(--text)', marginBottom: 28, lineHeight: 1.7, direction: isEng ? 'ltr' : 'rtl', textAlign: isEng ? 'left' : 'right' }}>
+              {q.text}
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+              {(q.options || []).map((opt, idx) => {
+                const isSelected = answered === idx;
+                const isEngOpt = checkIsEnglish(opt);
+                return (
+                  <button key={idx} onClick={() => setAnswers(a => ({ ...a, [currentIdx]: idx }))}
+                    style={{
+                      width: '100%', padding: '15px 20px', borderRadius: 14, textAlign: isEngOpt ? 'left' : 'right', direction: isEngOpt ? 'ltr' : 'rtl',
+                      background: isSelected ? 'linear-gradient(135deg,#dbeafe,#eff6ff)' : 'var(--bg-subtle)',
+                      border: `2px solid ${isSelected ? '#3b82f6' : 'transparent'}`,
+                      color: isSelected ? '#1d4ed8' : 'var(--text)', fontWeight: isSelected ? 800 : 600,
+                      cursor: 'pointer', fontSize: 15, transition: 'all 0.18s',
+                      fontFamily: isEngOpt ? 'system-ui' : 'var(--font-body)'
+                    }}>
+                    {opt}
+                  </button>
+                );
+              })}
+            </div>
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Navigation */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12 }}>
+          <button onClick={() => setCurrentIdx(i => Math.max(0, i - 1))} disabled={currentIdx === 0}
+            style={{ padding: '13px 24px', borderRadius: 12, border: '1px solid var(--border)', background: '#fff', cursor: currentIdx === 0 ? 'not-allowed' : 'pointer', opacity: currentIdx === 0 ? 0.4 : 1, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8 }}>
+            <ChevronRight size={18} /> السابق
+          </button>
+          {currentIdx === examQuestions.length - 1 ? (
+            <button onClick={() => setPhase('review')}
+              style={{ padding: '13px 28px', borderRadius: 12, background: '#10b981', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 900, fontSize: 15, boxShadow: '0 4px 16px rgba(16,185,129,0.3)' }}>
+              إنهاء وعرض النتائج
+            </button>
+          ) : (
+            <button onClick={() => setCurrentIdx(i => Math.min(examQuestions.length - 1, i + 1))}
+              style={{ padding: '13px 24px', borderRadius: 12, background: 'var(--text)', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8 }}>
+              التالي <ChevronLeft size={18} />
+            </button>
+          )}
+        </div>
       </div>
+    );
+  }
 
-      {isSubmitted ? (
-        /* ── Exam Result Card ── */
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          style={{
-            background: 'rgba(255, 255, 255, 0.94)',
-            backdropFilter: 'blur(20px)',
-            border: '2px solid #10b981',
-            borderRadius: 24,
-            padding: '3rem 2rem',
-            textAlign: 'center',
-            boxShadow: 'var(--shadow-float)'
-          }}
-        >
-          <div style={{
-            width: 80,
-            height: 80,
-            borderRadius: '50%',
-            background: '#ecfdf5',
-            border: '3px solid #10b981',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#059669',
-            margin: '0 auto 20px'
-          }}>
-            <CheckCircle2 size={44} />
+  // ─── REVIEW PHASE ──────────────────────────────────────────────────────────
+  if (phase === 'review') {
+    const correct = examQuestions.filter((q, i) => answers[i] === (q.correctIndex ?? q.correct_index ?? 0)).length;
+    const total = examQuestions.length;
+    const pct = Math.round((correct / total) * 100);
+    const passed = pct >= 60;
+
+    return (
+      <div style={{ maxWidth: 720, margin: '0 auto' }}>
+        <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
+          style={{ background: '#fff', borderRadius: 28, padding: 48, boxShadow: 'var(--shadow-float)', border: '1px solid var(--border-subtle)', textAlign: 'center', marginBottom: 32 }}>
+          <div style={{ width: 88, height: 88, borderRadius: 26, background: passed ? 'linear-gradient(135deg,#10b981,#059669)' : 'linear-gradient(135deg,#ef4444,#dc2626)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px', boxShadow: passed ? '0 8px 28px rgba(16,185,129,0.35)' : '0 8px 28px rgba(239,68,68,0.35)' }}>
+            <Award size={44} color="#fff" />
           </div>
-
-          <h3 style={{ fontSize: 26, fontWeight: 900, color: '#0f172a', marginBottom: 8, fontFamily: 'var(--font-display)' }}>
-            اكتمل امتحان المحاكاة بنجاح!
-          </h3>
-          <p style={{ color: '#475569', fontSize: 16, marginBottom: 24, fontWeight: 600 }}>
-            تم تسجيل نتيجتك وحفظها في سجلك الأكاديمي لمتابعة مؤشر الجاهزية
-          </p>
-
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: 24,
-            background: '#f8fafc',
-            border: '1.5px solid #e2e8f0',
-            borderRadius: 18,
-            padding: '16px 36px',
-            marginBottom: 32
-          }}>
-            <div>
-              <div style={{ fontSize: 13, color: '#64748b', fontWeight: 800 }}>النتيجة</div>
-              <div style={{ fontSize: 32, fontWeight: 900, color: '#059669', fontFamily: 'var(--font-numbers)' }}>
-                {calculateScore().correct} / {calculateScore().total}
-              </div>
-            </div>
-            <div style={{ width: 1, height: 40, background: '#cbd5e1' }}></div>
-            <div>
-              <div style={{ fontSize: 13, color: '#64748b', fontWeight: 800 }}>النسبة المئوية</div>
-              <div style={{ fontSize: 32, fontWeight: 900, color: '#0284c7', fontFamily: 'var(--font-numbers)' }}>
-                {calculateScore().percentage}%
-              </div>
-            </div>
-          </div>
-
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 14 }}>
-            <button
-              onClick={() => {
-                setSelectedAnswers({});
-                setFlagged({});
-                setTimeLeft(3600);
-                setCurrentIdx(0);
-                setIsSubmitted(false);
-              }}
-              className="btn btn-emerald"
-              style={{ padding: '13px 28px', fontSize: 15 }}
-            >
-              إعادة الامتحان
-            </button>
-            <Link href="/dashboard" className="btn btn-ghost" style={{ padding: '13px 24px', fontSize: 15 }}>
-              العودة للوحة التحكم
-            </Link>
-          </div>
+          <h1 style={{ fontSize: 28, fontWeight: 900, marginBottom: 8, color: 'var(--text)', fontFamily: 'var(--font-display)' }}>{passed ? 'أحسنت! اجتزت الاختبار' : 'لم تجتز الاختبار هذه المرة'}</h1>
+          <div style={{ fontSize: 64, fontWeight: 900, color: passed ? '#10b981' : '#ef4444', fontFamily: 'var(--font-numbers)', lineHeight: 1, marginBottom: 8 }}>{pct}%</div>
+          <p style={{ color: 'var(--text-muted)', fontWeight: 700 }}>{correct} صحيح من {total} سؤال</p>
+          <button onClick={() => setPhase('setup')} style={{ marginTop: 28, padding: '14px 32px', borderRadius: 14, background: 'var(--text)', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 800, fontSize: 16, display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            <RotateCcw size={18} /> اختبار جديد
+          </button>
         </motion.div>
-      ) : (
-        /* ── Active Question Card ── */
-        <motion.div
-          key={currentIdx}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          style={{
-            background: 'rgba(255, 255, 255, 0.94)',
-            backdropFilter: 'blur(20px)',
-            border: '1.5px solid rgba(226, 232, 240, 0.85)',
-            borderRadius: 24,
-            padding: 'clamp(1.8rem, 4vw, 2.6rem)',
-            boxShadow: 'var(--shadow-card)',
-            marginBottom: 24
-          }}
-        >
-          {/* Question Text */}
-          <h3 style={{
-            fontSize: 'clamp(17px, 2.5vw, 20px)',
-            fontWeight: 800,
-            lineHeight: 1.85,
-            color: '#0f172a',
-            marginBottom: 28,
-            fontFamily: 'var(--font-heading)'
-          }}>
-            {q.question}
-          </h3>
 
-          {/* Options */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 32 }}>
-            {q.options.map((opt, optIdx) => {
-              const isSelected = selectedAnswers[currentIdx] === optIdx;
-              return (
-                <button
-                  key={optIdx}
-                  onClick={() => handleSelect(optIdx)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 14,
-                    padding: '16px 20px',
-                    borderRadius: 16,
-                    background: isSelected ? '#ecfdf5' : '#ffffff',
-                    border: `2px solid ${isSelected ? '#10b981' : '#e2e8f0'}`,
-                    color: isSelected ? '#047857' : '#1e293b',
-                    fontSize: 15.5,
-                    fontWeight: isSelected ? 800 : 600,
-                    cursor: 'pointer',
-                    textAlign: 'right',
-                    fontFamily: 'inherit',
-                    transition: 'all 0.18s ease',
-                    boxShadow: isSelected ? '0 4px 14px rgba(16, 185, 129, 0.2)' : 'var(--shadow-subtle)'
-                  }}
-                >
-                  <span style={{
-                    width: 28,
-                    height: 28,
-                    borderRadius: '50%',
-                    border: `2px solid ${isSelected ? '#10b981' : '#cbd5e1'}`,
-                    background: isSelected ? '#10b981' : '#ffffff',
-                    color: isSelected ? '#ffffff' : '#64748b',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: 13,
-                    fontWeight: 900,
-                    flexShrink: 0
-                  }}>
-                    {String.fromCharCode(65 + optIdx)}
-                  </span>
-                  <span style={{ flex: 1 }}>{opt}</span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Bottom Actions */}
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            borderTop: '1px solid var(--border-subtle)',
-            paddingTop: 20
-          }}>
-            <button
-              onClick={() => setCurrentIdx(prev => Math.max(0, prev - 1))}
-              disabled={currentIdx === 0}
-              className="btn btn-ghost"
-              style={{
-                opacity: currentIdx === 0 ? 0.4 : 1,
-                cursor: currentIdx === 0 ? 'not-allowed' : 'pointer'
-              }}
-            >
-              <ArrowRight size={16} />
-              السؤال السابق
-            </button>
-
-            {currentIdx < sampleMockQuestions.length - 1 ? (
-              <button
-                onClick={() => setCurrentIdx(prev => prev + 1)}
-                className="btn btn-primary"
-                style={{ padding: '12px 28px', fontSize: 15 }}
-              >
-                السؤال التالي
-                <ArrowLeft size={16} />
-              </button>
-            ) : (
-              <button
-                onClick={() => setIsSubmitted(true)}
-                className="btn btn-emerald"
-                style={{ padding: '12px 30px', fontSize: 15.5 }}
-              >
-                <Send size={16} />
-                تسليم الامتحان وإنهاء المحاكاة
-              </button>
-            )}
-          </div>
-        </motion.div>
-      )}
-
-    </div>
-  );
+        {/* Review list */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          {examQuestions.map((q, i) => {
+            const userAns = answers[i];
+            const correctIdx = q.correctIndex ?? q.correct_index ?? 0;
+            const isRight = userAns === correctIdx;
+            const isEng = checkIsEnglish(q.text);
+            return (
+              <div key={i} style={{ background: '#fff', borderRadius: 20, padding: 24, border: `1.5px solid ${isRight ? '#10b98140' : '#ef444440'}`, boxShadow: 'var(--shadow-subtle)' }}>
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
+                  <div style={{ flexShrink: 0, width: 32, height: 32, borderRadius: 10, background: isRight ? '#d1fae5' : '#fee2e2', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    {isRight ? <CheckCircle2 size={18} color="#10b981" /> : <XCircle size={18} color="#ef4444" />}
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <p style={{ fontWeight: 700, color: 'var(--text)', marginBottom: 12, direction: isEng ? 'ltr' : 'rtl', textAlign: isEng ? 'left' : 'right' }}>{q.text}</p>
+                    {!isRight && userAns !== undefined && (
+                      <p style={{ fontSize: 13, color: '#ef4444', fontWeight: 700, marginBottom: 6 }}>إجابتك: {q.options?.[userAns]}</p>
+                    )}
+                    <p style={{ fontSize: 13, color: '#10b981', fontWeight: 700 }}>الصحيحة: {q.options?.[correctIdx]}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
 }

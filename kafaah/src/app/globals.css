@@ -549,6 +549,9 @@ body::after {
   .bottom-nav {
     display: flex;
   }
+  body:has(.bottom-nav) {
+    padding-bottom: 90px;
+  }
 }
 
 .nav-item {

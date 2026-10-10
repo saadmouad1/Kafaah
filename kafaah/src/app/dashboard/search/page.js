@@ -1,190 +1,173 @@
 'use client';
-import { useState } from 'react';
-import { Search as SearchIcon, BookOpen, CheckCircle2, Filter, ArrowLeft } from 'lucide-react';
-import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Search as SearchIcon, Filter, ChevronDown, X } from 'lucide-react';
+import questionsData from '../../../data/questions.json';
 
-const sampleSearchPool = [
-  {
-    id: 'Q-101',
-    category: 'الطب البشري • الطوارئ',
-    text: 'ما هو الإجراء السريري الفوري ذو الأولوية لمريض احتشاء عضلة القلب مع ارتفاع ST (STEMI) المؤكد تخطيطياً؟',
-    answer: 'إعطاء جرعة تحميلية من الأسبرين ومثبط P2Y12 والتنسيق الفوري للقسطرة الأولية (Primary PCI)',
-    explanation: 'إعادة التروية العاجلة خلال 90-120 دقيقة هي المعيار الذهبي دون انتظار نتائج إنزيمات القلب.'
-  },
-  {
-    id: 'Q-102',
-    category: 'الطب البشري • الباطنية',
-    text: 'ما هو المؤشر التشخيصي المعياري لارتفاع ضغط الدم المستمر لدى البالغين؟',
-    answer: 'قراءة ضغط الدم المستمرة فوق 140/90 ملم زئبقي في قراءتين منفصلتين على الأقل',
-    explanation: 'توصيات الجمعية الأوروبية والأمريكية لارتفاع ضغط الدم تعتمد 140/90 كحد أدنى للتشخيص السريري.'
-  },
-  {
-    id: 'Q-103',
-    category: 'الهندسة • الهندسة المدنية',
-    text: 'ما هو الغرض الهندسي الأساسي من استخدام حديد التسليح داخل الخرسانة المسلحة؟',
-    answer: 'مقاومة قوى الشد والانحناء التي تضعف الخرسانة غير المسلحة أمامها',
-    explanation: 'الخرسانة تتمتع بمقاومة ضغط فائقة لكنها هشة تحت إجهاد الشد، لذلك يتولى فولاذ التسليح تحمل قوى الشد.'
-  },
-  {
-    id: 'Q-104',
-    category: 'القانون والمحاماة • أصول المحاكمات',
-    text: 'ما هو الميعاد القانوني العام للطعن بالاستئناف في الأحكام المدنية والتجارية وفق قانون المرافعات؟',
-    answer: 'ثلاثون يوماً من اليوم التالي لتاريخ صدور الحكم أو إعلانه حسب الأحوال',
-    explanation: 'مواعيد الطعن من النظام العام ويسقط الحق في الاستئناف بفوات الميعاد المحدد قانوناً.'
-  },
-  {
-    id: 'Q-105',
-    category: 'المحاسبة والمالية • المعايير الدولية',
-    text: 'وفق معيار المحاسبة الدولي IFRS 15، متى يتم الاعتراف بالإيراد من العقود مع العملاء؟',
-    answer: 'عند استيفاء التزام الأداء بنقل السيطرة على السلعة أو الخدمة الموعودة إلى العميل',
-    explanation: 'المعيار يعتمد نموذج الخطوات الخمس ونقل السيطرة كمعيار جوهري للاعتراف بالإيراد.'
-  }
-];
+function checkIsEnglish(text) {
+  if (!text) return false;
+  const arabic = (text.match(/[\u0600-\u06FF]/g) || []).length;
+  const latin = (text.match(/[a-zA-Z]/g) || []).length;
+  return latin > arabic;
+}
 
 export default function SearchPage() {
   const [query, setQuery] = useState('');
-  const [selectedCat, setSelectedCat] = useState('الكل');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [results, setResults] = useState([]);
+  const [expanded, setExpanded] = useState(null);
 
-  const filteredQuestions = sampleSearchPool.filter(q => {
-    const matchesQuery = !query || q.text.includes(query) || q.answer.includes(query) || q.category.includes(query);
-    const matchesCat = selectedCat === 'الكل' || q.category.includes(selectedCat);
-    return matchesQuery && matchesCat;
-  });
+  const categories = [
+    { id: 'all', label: 'الكل' },
+    { id: 'medical', label: 'طبي' },
+    { id: 'engineering', label: 'هندسي' },
+    { id: 'law', label: 'قانوني' },
+    { id: 'finance', label: 'مالي' },
+  ];
+
+  useEffect(() => {
+    if (!query.trim()) {
+      setResults([]);
+      return;
+    }
+    const q = query.toLowerCase();
+    const filtered = questionsData.filter(item => {
+      const matchCat = selectedCategory === 'all' || item.category === selectedCategory;
+      const matchText = item.text?.toLowerCase().includes(q)
+        || item.explanation?.toLowerCase().includes(q)
+        || item.options?.some(o => o?.toLowerCase().includes(q));
+      return matchCat && matchText;
+    }).slice(0, 30);
+    setResults(filtered);
+  }, [query, selectedCategory]);
 
   return (
-    <div style={{ maxWidth: 1000, margin: '0 auto' }}>
-      
-      {/* ── Search Header ── */}
-      <div style={{
-        background: 'rgba(255, 255, 255, 0.92)',
-        backdropFilter: 'blur(20px)',
-        border: '1.5px solid rgba(226, 232, 240, 0.85)',
-        borderRadius: 22,
-        padding: '28px',
-        marginBottom: 24,
-        boxShadow: 'var(--shadow-card)'
-      }}>
-        <h1 style={{ fontSize: 24, fontWeight: 900, color: '#0f172a', marginBottom: 8, fontFamily: 'var(--font-display)' }}>
-          البحث الشامل في بنك الأسئلة والامتحانات
+    <div style={{ maxWidth: 800, margin: '0 auto' }}>
+      <div style={{ marginBottom: 32 }}>
+        <h1 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)', marginBottom: 8 }}>
+          البحث الشامل في الأسئلة
         </h1>
-        <p style={{ color: '#475569', fontSize: 14.5, fontWeight: 600, marginBottom: 20 }}>
-          ابحث بالكلمات المفتاحية، المواضيع، الأمراض، أو المصطلحات المهنية للوصول المباشر للشروحات المعتمدة
+        <p style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>
+          ابحث في كامل بنك الأسئلة — {questionsData.length.toLocaleString()} سؤال متاح
         </p>
-
-        {/* Input Box */}
-        <div style={{ position: 'relative', marginBottom: 16 }}>
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            className="input"
-            style={{
-              paddingRight: 48,
-              fontSize: 16,
-              height: 52,
-              background: '#ffffff',
-              border: '2px solid #cbd5e1'
-            }}
-            placeholder="اكتب كلمة البحث (مثال: STEMI, ضغط الدم, خرسانة, استئناف, IFRS)..."
-          />
-          <div style={{ position: 'absolute', right: 16, top: '50%', transform: 'translateY(-50%)', color: '#059669' }}>
-            <SearchIcon size={22} />
-          </div>
-        </div>
-
-        {/* Filter Badges */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center' }}>
-          <span style={{ fontSize: 13, fontWeight: 800, color: '#64748b' }}>تصفية حسب التخصص:</span>
-          {['الكل', 'الطب البشري', 'الهندسة', 'القانون', 'المحاسبة'].map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCat(cat)}
-              style={{
-                padding: '6px 14px',
-                borderRadius: 999,
-                background: selectedCat === cat ? '#0f172a' : '#f1f5f9',
-                color: selectedCat === cat ? '#ffffff' : '#334155',
-                border: '1px solid transparent',
-                fontSize: 13,
-                fontWeight: 800,
-                cursor: 'pointer',
-                fontFamily: 'inherit',
-                transition: 'all 0.18s ease'
-              }}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
       </div>
 
-      {/* ── Search Results ── */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-        <div style={{ fontSize: 14, fontWeight: 800, color: '#334155' }}>
-          نتائج البحث ({filteredQuestions.length} سؤال مطابق):
-        </div>
-
-        {filteredQuestions.length === 0 ? (
-          <div style={{
-            background: 'rgba(255, 255, 255, 0.85)',
-            border: '1.5px solid #e2e8f0',
-            borderRadius: 18,
-            padding: '3rem 1.5rem',
-            textAlign: 'center',
-            color: '#64748b'
-          }}>
-            لم يتم العثور على أسئلة تطابق بحثك. جرب كلمة بحث أخرى.
-          </div>
-        ) : (
-          filteredQuestions.map((item) => (
-            <div
-              key={item.id}
-              style={{
-                background: 'rgba(255, 255, 255, 0.94)',
-                backdropFilter: 'blur(16px)',
-                border: '1.5px solid rgba(226, 232, 240, 0.85)',
-                borderRadius: 20,
-                padding: '24px',
-                boxShadow: 'var(--shadow-subtle)'
-              }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-                <span style={{ fontSize: 12.5, fontWeight: 800, color: '#059669', background: '#ecfdf5', padding: '3px 10px', borderRadius: 8 }}>
-                  {item.category}
-                </span>
-                <span style={{ fontSize: 12, color: '#94a3b8', fontWeight: 700, fontFamily: 'var(--font-numbers)' }}>
-                  {item.id}
-                </span>
-              </div>
-
-              <h3 style={{ fontSize: 17, fontWeight: 800, color: '#0f172a', marginBottom: 14, lineHeight: 1.7, fontFamily: 'var(--font-heading)' }}>
-                {item.text}
-              </h3>
-
-              <div style={{
-                background: '#f8fafc',
-                border: '1px solid #e2e8f0',
-                borderRadius: 14,
-                padding: '14px 18px',
-                marginBottom: 12
-              }}>
-                <div style={{ fontSize: 13, fontWeight: 800, color: '#047857', marginBottom: 4, display: 'flex', alignItems: 'center', gap: 6 }}>
-                  <CheckCircle2 size={16} />
-                  الإجابة النموذجية المعتمدة:
-                </div>
-                <div style={{ fontSize: 14.5, color: '#1e293b', fontWeight: 700 }}>
-                  {item.answer}
-                </div>
-              </div>
-
-              <p style={{ fontSize: 13.5, color: '#475569', lineHeight: 1.7, fontWeight: 600 }}>
-                💡 <strong>التفسير:</strong> {item.explanation}
-              </p>
-            </div>
-          ))
+      {/* Search box */}
+      <div style={{ position: 'relative', marginBottom: 20 }}>
+        <SearchIcon size={20} style={{ position: 'absolute', right: 18, top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
+        <input
+          type="text"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="ابحث بالكلمة، التشخيص، العلاج، المادة..."
+          style={{
+            width: '100%', padding: '16px 52px 16px 16px', borderRadius: 16,
+            border: '2px solid var(--border)', outline: 'none', fontSize: 16,
+            fontFamily: 'var(--font-body)', background: '#fff', boxShadow: 'var(--shadow-subtle)',
+            transition: 'border-color 0.2s'
+          }}
+          onFocus={e => e.target.style.borderColor = 'var(--emerald)'}
+          onBlur={e => e.target.style.borderColor = 'var(--border)'}
+        />
+        {query && (
+          <button onClick={() => setQuery('')} style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)' }}>
+            <X size={20} />
+          </button>
         )}
       </div>
 
+      {/* Category filter */}
+      <div style={{ display: 'flex', gap: 8, marginBottom: 28, flexWrap: 'wrap' }}>
+        {categories.map(c => (
+          <button key={c.id} onClick={() => setSelectedCategory(c.id)} style={{
+            padding: '8px 16px', borderRadius: 999, fontWeight: 700, fontSize: 13, cursor: 'pointer',
+            background: selectedCategory === c.id ? 'var(--text)' : '#fff',
+            color: selectedCategory === c.id ? '#fff' : 'var(--text-secondary)',
+            border: '1px solid var(--border)', transition: 'all 0.2s'
+          }}>
+            {c.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Results */}
+      {!query && (
+        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+          <SearchIcon size={48} style={{ marginBottom: 16, opacity: 0.3 }} />
+          <p style={{ fontSize: 16, fontWeight: 700 }}>ابدأ الكتابة للبحث في الأسئلة</p>
+        </div>
+      )}
+
+      {query && results.length === 0 && (
+        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+          <p style={{ fontSize: 16, fontWeight: 700 }}>لم يُعثر على نتائج لـ "{query}"</p>
+          <p style={{ fontSize: 14, marginTop: 8 }}>جرب كلمات مختلفة أو غيّر الفئة</p>
+        </div>
+      )}
+
+      {results.length > 0 && (
+        <div>
+          <p style={{ fontSize: 14, color: 'var(--text-muted)', fontWeight: 700, marginBottom: 16 }}>
+            {results.length} نتيجة
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {results.map((q, i) => {
+              const isEn = checkIsEnglish(q.text);
+              const isOpen = expanded === i;
+              return (
+                <motion.div
+                  key={q.id}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.03 }}
+                  style={{ background: '#fff', borderRadius: 16, border: '1px solid var(--border)', overflow: 'hidden', boxShadow: 'var(--shadow-subtle)' }}
+                >
+                  <button
+                    onClick={() => setExpanded(isOpen ? null : i)}
+                    style={{
+                      width: '100%', padding: '18px 20px', display: 'flex', justifyContent: 'space-between',
+                      alignItems: 'flex-start', gap: 12, background: 'none', border: 'none', cursor: 'pointer', textAlign: 'right'
+                    }}
+                  >
+                    <div style={{ flex: 1 }}>
+                      <span style={{ fontSize: 11, fontWeight: 800, color: 'var(--emerald-dark)', background: 'var(--emerald-light)', padding: '2px 8px', borderRadius: 6, marginBottom: 8, display: 'inline-block' }}>
+                        {q.category === 'medical' ? 'طبي' : q.category === 'engineering' ? 'هندسي' : q.category}
+                      </span>
+                      <p style={{ fontSize: 14, color: 'var(--text)', fontWeight: 600, lineHeight: 1.7, direction: isEn ? 'ltr' : 'rtl', textAlign: isEn ? 'left' : 'right' }}>
+                        {q.text}
+                      </p>
+                    </div>
+                    <ChevronDown size={18} style={{ color: 'var(--text-muted)', transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s', flexShrink: 0, marginTop: 4 }} />
+                  </button>
+
+                  {isOpen && (
+                    <div style={{ padding: '0 20px 20px', borderTop: '1px solid var(--border-subtle)' }}>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 16 }}>
+                        {q.options.map((opt, idx) => (
+                          <div key={idx} style={{
+                            padding: '10px 14px', borderRadius: 10, fontSize: 13, fontWeight: 600,
+                            background: idx === q.correct_index ? 'var(--emerald-light)' : 'var(--bg-subtle)',
+                            color: idx === q.correct_index ? 'var(--emerald-dark)' : 'var(--text-secondary)',
+                            border: `1px solid ${idx === q.correct_index ? 'rgba(16,185,129,0.3)' : 'transparent'}`,
+                            direction: isEn ? 'ltr' : 'rtl'
+                          }}>
+                            {opt} {idx === q.correct_index && ' ✓'}
+                          </div>
+                        ))}
+                      </div>
+                      {q.explanation && (
+                        <p style={{ marginTop: 12, fontSize: 13, color: 'var(--text-muted)', fontStyle: 'italic', background: 'var(--bg-subtle)', padding: '10px 14px', borderRadius: 10 }}>
+                          {q.explanation}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

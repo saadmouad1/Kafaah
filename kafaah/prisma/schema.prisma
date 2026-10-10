@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id             String    @id @default(uuid())
+  name           String
+  email          String    @unique
+  phone          String?
+  specialization String?
+  subscription   String    @default("trial") // trial, basic, premium
+  role           String    @default("user") // admin, user
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  // Relations
+  tests          TestResult[]
+  savedQuestions SavedQuestion[]
+}
+
+model Sector {
+  id    String @id
+  label String
+  icon  String
+  color String
+
+  specializations Specialization[]
+  questions       Question[]
+}
+
+model Specialization {
+  id        String @id
+  sectorId  String
+  label     String
+  country   String
+
+  sector    Sector     @relation(fields: [sectorId], references: [id], onDelete: Cascade)
+  questions Question[]
+}
+
+model Question {
+  id               String   @id @default(uuid())
+  sectorId         String
+  specializationId String
+  text             String
+  options          String[]
+  correctIndex     Int
+  explanation      String?
+  status           String   @default("active")
+  createdAt        DateTime @default(now())
+
+  // Relations
+  sector         Sector         @relation(fields: [sectorId], references: [id])
+  specialization Specialization @relation(fields: [specializationId], references: [id])
+  savedBy        SavedQuestion[]
+}
+
+model TestResult {
+  id        String   @id @default(uuid())
+  userId    String
+  score     Int
+  total     Int
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model SavedQuestion {
+  id         String   @id @default(uuid())
+  userId     String
+  questionId String
+  savedAt    DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, questionId])
+}
