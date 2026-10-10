@@ -77,7 +77,7 @@ export default function AdminDashboardPage() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
+    <div style={{ minHeight: '100vh', color: 'var(--text)' }}>
       
       {/* ── Admin Top Navigation ── */}
       <header style={{

@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "ADEN-GMS-2026-001",
+    "category": "medical",
+    "text": "A 55-year-old woman with HTN, chest pain radiating to left arm, ECG ST elevation II/III + AF. What is the most likely diagnosis?",
+    "options": [
+      "unstable angina",
+      "NSTEMI",
+      "STEMI",
+      "PE",
+      "aortic dissection"
+    ],
+    "correct_index": 2,
+    "explanation": "ST elevation in contiguous leads II/III with acute chest pain → inferior STEMI."
+  },
+  {
+    "id": "ADEN-GMS-2026-002",
+    "category": "medical",
+    "text": "First-line uncomplicated acute brucellosis adults.",
+    "options": [
+      "metronidazole 10d",
+      "fluconazole 2w",
+      "doxycycline + rifampicin 6w",
+      "gentamicin 5d"
+    ],
+    "correct_index": 2,
+    "explanation": "Classic combination therapy reduces relapse."
+  },
+  {
+    "id": "ADEN-GMS-2026-003",
+    "category": "medical",
+    "text": "Eledery pt Came with acute chest pain radiating to the left arm started 40 min earlier, ECG showed STEMI the PCI is available with 60 min distance, what is the best immediate management for this pt",
+    "options": [
+      "nitroglycerin",
+      "aspirin 350 mg chewable",
+      "PCI.",
+      ""
+    ],
+    "correct_index": 1,
+    "explanation": "Aspirin should be given immediately; the question lacks enough information to determine definitive reperfusion strategy. Option D is blank."
+  },
+  {
+    "id": "ADEN-GMS-2026-004",
+    "category": "medical",
+    "text": "28yo T1DM, DKA labs glucose 480, pH 7.22, bicarb 12, K 5.2.",
+    "options": [
+      "IV insulin bolus",
+      "IV normal saline",
+      "calcium gluconate",
+      "bicarbonate"
+    ],
+    "correct_index": 1,
+    "explanation": "Initial DKA management is fluid resuscitation."
+  },
+  {
+    "id": "ADEN-GMS-2026-005",
+    "category": "medical",
+    "text": "65yo sudden right weakness, slurred speech, facial droop, BP 180/100.",
+    "options": [
+      "thrombolysis immediately",
+      "noncontrast CT head",
+      "oral antihypertensive",
+      "observe"
+    ],
+    "correct_index": 1,
+    "explanation": "Noncontrast CT is needed before thrombolysis to exclude hemorrhage."
+  },
+  {
+    "id": "ADEN-GMS-2026-006",
+    "category": "medical",
+    "text": "Target O2 sat acute COPD exacerbation.",
+    "options": [
+      "94–100",
+      "90–94",
+      "88–92",
+      "80–85"
+    ],
+    "correct_index": 2,
+    "explanation": "Target 88–92% in acute COPD exacerbation."
+  },
+  {
+    "id": "ADEN-GMS-2026-007",
+    "category": "medical",
+    "text": "Young woman fatigue/pallor Hb 7, MCV 88, RBC low, platelets 4500, WBC 4000.",
+    "options": [
+      "IDA",
+      "ACD",
+      "hemolytic anemia",
+      "aplastic anemia"
+    ],
+    "correct_index": 3,
+    "explanation": "Pancytopenia strongly supports aplastic anemia."
+  },
+  {
+    "id": "ADEN-GMS-2026-008",
+    "category": "medical",
+    "text": "Which of the following is the not first-line treatment for mild-to-moderate CAP outpatient?",
+    "options": [
+      "azithromycin",
+      "levofloxacin",
+      "amoxicillin",
+      "doxycycline"
+    ],
+    "correct_index": 0,
+    "explanation": "Current outpatient CAP recommendations depend on comorbidities and local macrolide resistance; wording does not yield one universal answer."
+  },
+  {
+    "id": "ADEN-GMS-2026-009",
+    "category": "medical",
+    "text": "75yo progressive LUTS, rising PSA, firm asymmetric prostate nodule.",
+    "options": [
+      "repeat PSA",
+      "TRUS-guided biopsy",
+      "tamsulosin",
+      "cystoscopy"
+    ],
+    "correct_index": 1,
+    "explanation": "Suspicious prostate examination plus rising PSA requires tissue diagnosis."
+  },
+  {
+    "id": "ADEN-GMS-2026-010",
+    "category": "medical",
+    "text": "3yo high fever 4d followed by maculopapular rash trunk after fever resolves.",
+    "options": [
+      "measles",
+      "rubella",
+      "roseola infantum HSV-6",
+      "scarlet fever"
+    ],
+    "correct_index": 2,
+    "explanation": "Classic roseola pattern."
+  },
+  {
+    "id": "ADEN-GMS-2026-011",
+    "category": "medical",
+    "text": "Pregent women, what the first line tt in uncomplicated cystitis:",
+    "options": [
+      "nitrofurantoin (avoid at term)",
+      "TMP/SMX double power dose",
+      "ciprofloxacin"
+    ],
+    "correct_index": 0,
+    "explanation": "Nitrofurantoin is commonly used for lower UTI in pregnancy with gestational considerations."
+  },
+  {
+    "id": "ADEN-GMS-2026-012",
+    "category": "medical",
+    "text": "All of them using in uncomplicated cystitis in non pregnant except:",
+    "options": [
+      "nitrofurantoin",
+      "TMP/SMX",
+      "ciprofloxacin",
+      "IV ceftriaxone"
+    ],
+    "correct_index": 3,
+    "explanation": "IV ceftriaxone is not routine first-line treatment for uncomplicated cystitis."
+  },
+  {
+    "id": "ADEN-GMS-2026-013",
+    "category": "medical",
+    "text": "Treatment of choice uncomplicated pyelonephritis:",
+    "options": [
+      "ciprofloxacin",
+      "ceftriaxone"
+    ],
+    "correct_index": 0,
+    "explanation": "Oral fluoroquinolone can be appropriate when susceptible and patient factors permit."
+  },
+  {
+    "id": "ADEN-GMS-2026-014",
+    "category": "medical",
+    "text": "Target HbA1c nonpregnant diabetic:",
+    "options": [
+      "<7",
+      "6",
+      "745"
+    ],
+    "correct_index": 0,
+    "explanation": "<7% is a common general target for many nonpregnant adults."
+  },
+  {
+    "id": "ADEN-GMS-2026-015",
+    "category": "medical",
+    "text": "Pregnant woman 28wk with GDM, most important:",
+    "options": [
+      "termination",
+      "maintain 1h postprandial glucose <140"
+    ],
+    "correct_index": 1,
+    "explanation": "Glycemic control is central to GDM management."
+  },
+  {
+    "id": "ADEN-GMS-2026-016",
+    "category": "medical",
+    "text": "Female palpitations/severe anxiety shopping mall, avoids shopping/public transport.",
+    "options": [
+      "panic disorder with agoraphobia",
+      "GAD",
+      "social anxiety",
+      "specific phobia"
+    ],
+    "correct_index": 0,
+    "explanation": "Panic disorder with agoraphobia best fits recurrent panic plus avoidance."
+  },
+  {
+    "id": "ADEN-GMS-2026-017",
+    "category": "medical",
+    "text": "All of this leading cause of mortality in pregnant women in Yemen except:",
+    "options": [
+      "PPH",
+      "hypertensive disorder",
+      "uncontrolled diabetic",
+      "unsafe abortion",
+      "sepsis"
+    ],
+    "correct_index": 2,
+    "explanation": "Major direct causes include hemorrhage, hypertensive disorders, unsafe abortion and sepsis."
+  },
+  {
+    "id": "ADEN-GMS-2026-018",
+    "category": "medical",
+    "text": null,
+    "options": [],
+    "correct_index": 0,
+    "explanation": "Question 18 is not present in the supplied file; numbering jumps from 17 to 19."
+  },
+  {
+    "id": "ADEN-GMS-2026-019",
+    "category": "medical",
+    "text": "First-line treatment Neisseria gonorrhea (CDC 2024):",
+    "options": [
+      "ceftriaxone single dose IM",
+      "doxycycline 100 BID x14d",
+      "ciprofloxacin 500 BID"
+    ],
+    "correct_index": 0,
+    "explanation": "Ceftriaxone is first-line for uncomplicated gonorrhea; dose was not part of the source question."
+  },
+  {
+    "id": "ADEN-GMS-2026-020",
+    "category": "medical",
+    "text": "Acute sinusitis purulent discharge 10d, first-line antibiotic:",
+    "options": [
+      "amoxicillin",
+      "amoxicillin-clavulanate"
+    ],
+    "correct_index": 1,
+    "explanation": "Amoxicillin-clavulanate is a standard first-line choice."
+  },
+  {
+    "id": "ADEN-GMS-2026-021",
+    "category": "medical",
+    "text": "4yo progressive walking difficulty, falls, Gowers, calf hypertrophy, high CK.",
+    "options": [
+      "Becker",
+      "Duchenne",
+      "SMA",
+      "MG"
+    ],
+    "correct_index": 1,
+    "explanation": "Classic Duchenne presentation."
+  },
+  {
+    "id": "ADEN-GMS-2026-022",
+    "category": "medical",
+    "text": "25yo painless cervical lymphadenopathy, night sweats, weight loss; biopsy Reed-Sternberg.",
+    "options": [
+      "NHL",
+      "Hodgkin",
+      "acute leukemia",
+      "myeloma"
+    ],
+    "correct_index": 1,
+    "explanation": "Reed-Sternberg cells indicate Hodgkin lymphoma."
+  },
+  {
+    "id": "ADEN-GMS-2026-023",
+    "category": "medical",
+    "text": "68yo bone pain, M-spike, hypercalcemia, anemia.",
+    "options": [
+      "leukemia",
+      "multiple myeloma",
+      "MGUS",
+      "osteoporosis"
+    ],
+    "correct_index": 1,
+    "explanation": "M-spike plus CRAB features supports multiple myeloma."
+  },
+  {
+    "id": "ADEN-GMS-2026-024",
+    "category": "medical",
+    "text": "Initial screening primary hyperaldosteronism:",
+    "options": [
+      "serum aldosterone only",
+      "aldosterone-to-renin ratio",
+      "adrenal CT",
+      "saline infusion"
+    ],
+    "correct_index": 1,
+    "explanation": "ARR is the screening test."
+  },
+  {
+    "id": "ADEN-GMS-2026-025",
+    "category": "medical",
+    "text": "Most common cause hypothyroidism worldwide:",
+    "options": [
+      "Hashimoto",
+      "iodine deficiency",
+      "drug-induced",
+      "thyroid surgery"
+    ],
+    "correct_index": 1,
+    "explanation": "Worldwide iodine deficiency remains a major cause."
+  },
+  {
+    "id": "ADEN-GMS-2026-026",
+    "category": "medical",
+    "text": "16yo girl secondary amenorrhea 6mo, BMI16, low FSH/LH.",
+    "options": [
+      "PCOS",
+      "premature ovarian insufficiency",
+      "functional hypothalamic amenorrhea",
+      "Turner"
+    ],
+    "correct_index": 2,
+    "explanation": "Low BMI with low gonadotropins suggests hypothalamic amenorrhea."
+  },
+  {
+    "id": "ADEN-GMS-2026-027",
+    "category": "medical",
+    "text": "30yo erythema migrans after hiking, Borrelia confirmed.",
+    "options": [
+      "penicillin",
+      "doxycycline",
+      "ceftriaxone",
+      "azithromycin"
+    ],
+    "correct_index": 1,
+    "explanation": "Doxycycline is a standard early Lyme treatment."
+  },
+  {
+    "id": "ADEN-GMS-2026-028",
+    "category": "medical",
+    "text": "25yo malaria, chloroquine-resistant P falciparum.",
+    "options": [
+      "chloroquine",
+      "artemether+lumefantrine",
+      "quinine+doxy",
+      "doxy alone"
+    ],
+    "correct_index": 1,
+    "explanation": "Artemisinin-based combination therapy is preferred."
+  },
+  {
+    "id": "ADEN-GMS-2026-029",
+    "category": "medical",
+    "text": "NOT major cause mortality under 5 worldwide:",
+    "options": [
+      "pneumonia",
+      "diarrhea",
+      "malaria",
+      "traffic accidents"
+    ],
+    "correct_index": 3,
+    "explanation": "D is the intended answer in this exam framing."
+  },
+  {
+    "id": "ADEN-GMS-2026-030",
+    "category": "medical",
+    "text": "Common cause acute pancreatitis EXCEPT:",
+    "options": [
+      "gallstones",
+      "alcohol",
+      "hypertriglyceridemia",
+      "pancreatic tumor"
+    ],
+    "correct_index": 3,
+    "explanation": "Gallstones, alcohol and hypertriglyceridemia are common causes; pancreatic tumor is not."
+  },
+  {
+    "id": "ADEN-GMS-2026-031",
+    "category": "medical",
+    "text": "50yo OA chronic NSAIDs, sudden severe abdominal pain aggravated by movement.",
+    "options": [
+      "pancreatitis",
+      "appendicitis",
+      "perforated peptic ulcer",
+      "SBO"
+    ],
+    "correct_index": 2,
+    "explanation": "NSAID use plus acute peritonitic pain suggests perforated peptic ulcer."
+  },
+  {
+    "id": "ADEN-GMS-2026-032",
+    "category": "medical",
+    "text": "28yo recurrent abdominal pain/bloating relieved by avoiding foods, normal endoscopy/labs, no blood.",
+    "options": [
+      "IBS",
+      "Crohn",
+      "UC",
+      "celiac"
+    ],
+    "correct_index": 0,
+    "explanation": "Typical IBS pattern."
+  },
+  {
+    "id": "ADEN-GMS-2026-033",
+    "category": "medical",
+    "text": "IBS mild-moderate diarrhea.",
+    "options": [
+      "loperamide",
+      "low FODMAP",
+      "PPI",
+      "metronidazole"
+    ],
+    "correct_index": 0,
+    "explanation": "Loperamide helps diarrhea frequency; low-FODMAP can improve global IBS symptoms."
+  },
+  {
+    "id": "ADEN-GMS-2026-034",
+    "category": "medical",
+    "text": "35yo chronic scaly silvery plaques extensor elbows/knees.",
+    "options": [
+      "eczema",
+      "psoriasis",
+      "fungal",
+      "lichen planus"
+    ],
+    "correct_index": 1,
+    "explanation": "Classic psoriasis."
+  },
+  {
+    "id": "ADEN-GMS-2026-035",
+    "category": "medical",
+    "text": "Most common cause acute bacterial meningitis adults >50:",
+    "options": [
+      "S pneumoniae",
+      "N meningitidis",
+      "H influenzae",
+      "L monocytogenes"
+    ],
+    "correct_index": 0,
+    "explanation": "S. pneumoniae is a leading cause in older adults."
+  },
+  {
+    "id": "ADEN-GMS-2026-036",
+    "category": "medical",
+    "text": "28yo fever neck stiffness photophobia, CT normal. Best immediate management:",
+    "options": [
+      "wait cultures",
+      "IV ceftriaxone+vancomycin and prepare LP",
+      "MRI",
+      "observe"
+    ],
+    "correct_index": 1,
+    "explanation": "Do not delay empiric antibiotics in suspected bacterial meningitis."
+  },
+  {
+    "id": "ADEN-GMS-2026-037",
+    "category": "medical",
+    "text": "4yo uncomplicated AOM with penicillin allergy.",
+    "options": [
+      "amoxicillin",
+      "azithro",
+      "penicillin V",
+      "ceftriaxone"
+    ],
+    "correct_index": 1,
+    "explanation": "Choice depends on allergy severity; macrolide may be used in immediate allergy."
+  },
+  {
+    "id": "ADEN-GMS-2026-038",
+    "category": "medical",
+    "text": "True regarding Trichomonas vaginalis:",
+    "options": [
+      "can be asymptomatic",
+      "metronidazole not effective",
+      "not STI",
+      "doesn’t cause pruritus"
+    ],
+    "correct_index": 0,
+    "explanation": "Trichomoniasis is an STI and may be asymptomatic."
+  },
+  {
+    "id": "ADEN-GMS-2026-039",
+    "category": "medical",
+    "text": "Cholera outbreak village 5000 limited healthcare, most effective preventive measures controlling mortality:",
+    "options": [
+      "azithro all",
+      "ORT + safe water",
+      "cholera vaccine",
+      "isolate all"
+    ],
+    "correct_index": 1,
+    "explanation": "Rapid rehydration saves lives and safe water limits transmission."
+  },
+  {
+    "id": "ADEN-GMS-2026-040",
+    "category": "medical",
+    "text": "Best screening latent TB immunocompetent:",
+    "options": [
+      "TST or IGRA",
+      "sputum culture",
+      "CT",
+      "PCR"
+    ],
+    "correct_index": 0,
+    "explanation": "TST and IGRA are standard tests for TB infection."
+  },
+  {
+    "id": "ADEN-GMS-2026-041",
+    "category": "medical",
+    "text": "30yo female chronic greasy diarrhea, distension, fat droplets/muscle fibers, tTG positive, best initial treatment.",
+    "options": [
+      "gluten-free",
+      "loperamide",
+      "metronidazole",
+      ""
+    ],
+    "correct_index": 0,
+    "explanation": "Gluten-free diet is treatment, but adult diagnosis should be appropriately confirmed before lifelong restriction. Option D is blank."
+  },
+  {
+    "id": "ADEN-GMS-2026-042",
+    "category": "medical",
+    "text": "12yo jaundice/dark urine after fava beans, Heinz bodies/bite cells.",
+    "options": [
+      "sickle",
+      "G6PD",
+      "thalassemia",
+      "IDA"
+    ],
+    "correct_index": 1,
+    "explanation": "Classic oxidative hemolysis in G6PD deficiency."
+  },
+  {
+    "id": "ADEN-GMS-2026-043",
+    "category": "medical",
+    "text": "5yo honey-colored crust lesion leg.",
+    "options": [
+      "HSV",
+      "impetigo",
+      "psoriasis",
+      "eczema"
+    ],
+    "correct_index": 1,
+    "explanation": "Honey-colored crusts are classic impetigo."
+  },
+  {
+    "id": "ADEN-GMS-2026-044",
+    "category": "medical",
+    "text": "55yo severe first MTP pain/swelling, negative birefringent crystals, acute treatment normal renal function:",
+    "options": [
+      "colchicine",
+      "allopurinol",
+      "probenecid",
+      "prednisone"
+    ],
+    "correct_index": 0,
+    "explanation": "Negatively birefringent monosodium urate crystals indicate gout; colchicine is appropriate."
+  },
+  {
+    "id": "ADEN-GMS-2026-045",
+    "category": "medical",
+    "text": "60yo distension, colicky pain, vomiting, constipation 24h; Xray dilated small bowel air-fluid levels, no free air.",
+    "options": [
+      "appendicitis",
+      "SBO",
+      "cholecystitis",
+      "LBO"
+    ],
+    "correct_index": 1,
+    "explanation": "Findings indicate small bowel obstruction."
+  },
+  {
+    "id": "ADEN-GMS-2026-046",
+    "category": "medical",
+    "text": "Initial imaging choice nephrolithiasis nonpregnant women:",
+    "options": [
+      "US",
+      "noncontrast CT",
+      "KUB",
+      "MRI"
+    ],
+    "correct_index": 1,
+    "explanation": "Noncontrast CT is highly sensitive and specific in nonpregnant adults."
+  },
+  {
+    "id": "ADEN-GMS-2026-047",
+    "category": "medical",
+    "text": "Elderly dysphagia solids>liquids, weight loss, iron deficiency anemia, lower esophageal ulceration.",
+    "options": [
+      "Barrett",
+      "Plummer-Vinson",
+      "esophageal adenocarcinoma",
+      "spasm"
+    ],
+    "correct_index": 2,
+    "explanation": "PVS classically involves iron deficiency and upper esophageal webs; lower esophageal ulceration with weight loss is concerning for malignancy."
+  },
+  {
+    "id": "ADEN-GMS-2026-048",
+    "category": "medical",
+    "text": "70yo progressive dysphagia solids/liquids, regurgitation, foul vomit, weight loss, dilated lower esophagus, bird-beak.",
+    "options": [
+      "cancer",
+      "achalasia",
+      "diffuse spasm",
+      "scleroderma"
+    ],
+    "correct_index": 1,
+    "explanation": "Bird-beak appearance and dysphagia to solids/liquids indicate achalasia."
+  },
+  {
+    "id": "ADEN-GMS-2026-049",
+    "category": "medical",
+    "text": "Earliest symptom SBO:",
+    "options": [
+      "colicky pain",
+      "vomiting",
+      "distension",
+      "absolute constipation"
+    ],
+    "correct_index": 0,
+    "explanation": "Colicky pain is typically early."
+  },
+  {
+    "id": "ADEN-GMS-2026-050",
+    "category": "medical",
+    "text": "50yo asymptomatic man, 30 pack-years, quit 8 months, best screening.",
+    "options": [
+      "annual CXR",
+      "annual low-dose CT with risk-benefit",
+      "MRI",
+      "none"
+    ],
+    "correct_index": 1,
+    "explanation": "LDCT is the modality for eligible high-risk patients, but age eligibility is incomplete in the question."
+  },
+  {
+    "id": "ADEN-GMS-2026-051",
+    "category": "medical",
+    "text": "55yo 20 pack-year smoker, single best intervention lower CV risk:",
+    "options": [
+      "aspirin",
+      "smoking cessation",
+      "statin",
+      "exercise"
+    ],
+    "correct_index": 1,
+    "explanation": "Smoking cessation is a highly effective modifiable intervention."
+  },
+  {
+    "id": "ADEN-GMS-2026-052",
+    "category": "medical",
+    "text": "High-intensity statins are used for secondary prevention in patient with?",
+    "options": [
+      "LDL≥100 alone",
+      "established ASCVD",
+      "",
+      "low-risk ASCVD"
+    ],
+    "correct_index": 1,
+    "explanation": "Secondary prevention means established ASCVD. Option C is blank."
+  },
+  {
+    "id": "ADEN-GMS-2026-053",
+    "category": "medical",
+    "text": "COPD best treatment to relieve acute attacks and prevent exacerbations:",
+    "options": [
+      "SABA PRN",
+      "ICS",
+      "LAMA+LABA",
+      "oral steroids"
+    ],
+    "correct_index": 0,
+    "explanation": "SABA gives rapid relief; LABA/LAMA is maintenance therapy and helps reduce exacerbations. The question combines two goals."
+  },
+  {
+    "id": "ADEN-GMS-2026-054",
+    "category": "medical",
+    "text": "26yo OCD, which NOT routine treatment?",
+    "options": [
+      "imipramine",
+      "risperidone",
+      "fluoxetine",
+      "ERP"
+    ],
+    "correct_index": 0,
+    "explanation": "SSRIs and ERP are standard; risperidone can augment resistant OCD."
+  },
+  {
+    "id": "ADEN-GMS-2026-055",
+    "category": "medical",
+    "text": "50yo sudden brief severe jaw pain triggered by touch/brush teeth, electric shock.",
+    "options": [
+      "migraine",
+      "trigeminal neuralgia",
+      "temporal arteritis",
+      "Bell palsy"
+    ],
+    "correct_index": 1,
+    "explanation": "Classic trigeminal neuralgia."
+  },
+  {
+    "id": "ADEN-GMS-2026-056",
+    "category": "medical",
+    "text": "Best treatment painful diabetic peripheral neuropathy:",
+    "options": [
+      "paracetamol",
+      "gabapentin and duloxetine",
+      "ibuprofen",
+      "steroids"
+    ],
+    "correct_index": 1,
+    "explanation": "Gabapentinoids and duloxetine are evidence-based options."
+  },
+  {
+    "id": "ADEN-GMS-2026-057",
+    "category": "medical",
+    "text": "58yo T2DM + established CVD, poor control metformin.",
+    "options": [
+      "glipizide",
+      "empagliflozin",
+      "insulin",
+      "sitagliptin"
+    ],
+    "correct_index": 1,
+    "explanation": "SGLT2 inhibitor provides cardiovascular benefit in appropriate T2DM patients with ASCVD."
+  },
+  {
+    "id": "ADEN-GMS-2026-058",
+    "category": "medical",
+    "text": "55yo recently diagnosed HTN + T2DM. Best initial treatment:",
+    "options": [
+      "ACE inhibitor (captopril)",
+      "beta blocker",
+      "CCB",
+      "diuretic"
+    ],
+    "correct_index": 0,
+    "explanation": "ACE inhibitor is particularly favored with albuminuria/CKD; without renal data several first-line classes are possible."
+  },
+  {
+    "id": "ADEN-GMS-2026-059",
+    "category": "medical",
+    "text": "32yo pregnant 14wk BP150/95, FHx HTN, LVH ECG.",
+    "options": [
+      "gestational HTN",
+      "chronic essential HTN",
+      "preeclampsia",
+      "eclampsia"
+    ],
+    "correct_index": 1,
+    "explanation": "Hypertension before 20 weeks is chronic hypertension."
+  },
+  {
+    "id": "ADEN-GMS-2026-060",
+    "category": "medical",
+    "text": "NOT contributor postoperative infection risk:",
+    "options": [
+      "controlled diabetes",
+      "malnutrition",
+      "long-term corticosteroid",
+      "remote infection",
+      "age >70"
+    ],
+    "correct_index": 0,
+    "explanation": "The source says controlled diabetes; uncontrolled diabetes increases infection risk."
+  },
+  {
+    "id": "ADEN-GMS-2026-061",
+    "category": "medical",
+    "text": "Pregnancy warning symptoms EXCEPT:",
+    "options": [
+      "vaginal bleeding",
+      "sudden fluid passage",
+      "ptyalism",
+      "visual disturbance"
+    ],
+    "correct_index": 2,
+    "explanation": "Ptyalism is not a classic pregnancy danger sign."
+  },
+  {
+    "id": "ADEN-GMS-2026-062",
+    "category": "medical",
+    "text": "30yo pregnant 34wk BP160/100 +2 proteinuria, headache/visual disturbance.",
+    "options": [
+      "observation",
+      "hospitalization + Mg sulfate + delivery planning",
+      "outpatient labetalol"
+    ],
+    "correct_index": 1,
+    "explanation": "Severe features require hospital management, magnesium seizure prophylaxis and delivery planning."
+  },
+  {
+    "id": "ADEN-GMS-2026-063",
+    "category": "medical",
+    "text": "22yo med student intense itching wrist, burrows interdigital, close contacts same.",
+    "options": [
+      "ketoconazole",
+      "permethrin 5%",
+      "steroids",
+      "fluconazole"
+    ],
+    "correct_index": 1,
+    "explanation": "Classic scabies."
+  },
+  {
+    "id": "ADEN-GMS-2026-064",
+    "category": "medical",
+    "text": "28yo severe chest pain after cocaine, BP210/100.",
+    "options": [
+      "IV morphine",
+      "SL nitroglycerin",
+      "",
+      "IV labetalol 10–20mg"
+    ],
+    "correct_index": 1,
+    "explanation": "Nitroglycerin is appropriate initial therapy for cocaine-associated vasoconstriction; pure beta blockade is generally avoided acutely. Option C is blank."
+  },
+  {
+    "id": "ADEN-GMS-2026-065",
+    "category": "medical",
+    "text": "50yo urgency/frequency/urge incontinence, no stress, no infection, PVR50 mL.",
+    "options": [
+      "pelvic floor exercises",
+      "anticholinergic oxybutynin",
+      "midurethral sling",
+      "botulinum toxin"
+    ],
+    "correct_index": 0,
+    "explanation": "Behavioral/bladder training is fundamental initial management; antimuscarinics are also appropriate pharmacologic therapy."
+  },
+  {
+    "id": "ADEN-GMS-2026-066",
+    "category": "medical",
+    "text": "2yo fever/irritability/refusal move hip, normal xray, CT fluid in hip.",
+    "options": [
+      "transient synovitis",
+      "septic arthritis",
+      "juvenile arthritis",
+      "osteomyelitis"
+    ],
+    "correct_index": 1,
+    "explanation": "Fever and refusal to move the hip with an effusion are red flags for septic arthritis; aspiration/labs are often required."
+  },
+  {
+    "id": "ADEN-GMS-2026-067",
+    "category": "medical",
+    "text": "Which vaccine recommended annually after 6mo?",
+    "options": [
+      "DTP",
+      "pneumococcal",
+      "influenza",
+      "MMR"
+    ],
+    "correct_index": 2,
+    "explanation": "Annual influenza vaccine begins at 6 months."
+  },
+  {
+    "id": "ADEN-GMS-2026-068",
+    "category": "medical",
+    "text": "Most common cause death CKD stage 5:",
+    "options": [
+      "infection",
+      "CVD",
+      "hyperkalemia",
+      "uremic encephalopathy"
+    ],
+    "correct_index": 1,
+    "explanation": "Cardiovascular disease is the leading cause."
+  },
+  {
+    "id": "ADEN-GMS-2026-069",
+    "category": "medical",
+    "text": "Most characteristic electrolyte abnormality Addison:",
+    "options": [
+      "hyperK",
+      "hyperNa",
+      "hypoK",
+      "hyperCa"
+    ],
+    "correct_index": 0,
+    "explanation": "Aldosterone deficiency causes hyperkalemia."
+  },
+  {
+    "id": "ADEN-GMS-2026-070",
+    "category": "medical",
+    "text": "Recurrent calcium stones, high serum calcium, hypercalciuria, low citrate, normal oxalate. Best:",
+    "options": [
+      "thiazide",
+      "low sodium diet/animal protein",
+      "high calcium",
+      "vitamin C"
+    ],
+    "correct_index": 0,
+    "explanation": "Thiazides reduce urinary calcium; sodium restriction is also important."
+  },
+  {
+    "id": "ADEN-GMS-2026-071",
+    "category": "medical",
+    "text": "42yo acute pancreatitis after alcohol, amylase 900, CT inflammation no necrosis.",
+    "options": [
+      "NPO/analgesics/IV fluids",
+      "emergency cholecystectomy",
+      "antibiotics",
+      "ERCP"
+    ],
+    "correct_index": 0,
+    "explanation": "Supportive care is the intended answer; modern practice favors early enteral/oral feeding when tolerated rather than routine prolonged NPO."
+  },
+  {
+    "id": "ADEN-GMS-2026-072",
+    "category": "medical",
+    "text": "67yo long-standing constipation only, evaluation.",
+    "options": [
+      "colonoscopy",
+      "abdominal X-ray",
+      "barium enema",
+      "rigid sigmoidoscopy"
+    ],
+    "correct_index": 0,
+    "explanation": "At age 67 colonoscopy is appropriate for CRC screening when indicated."
+  },
+  {
+    "id": "ADEN-GMS-2026-073",
+    "category": "medical",
+    "text": "Most common cause bright red blood per rectum adults:",
+    "options": [
+      "hemorrhoids",
+      "CRC",
+      "anal fissure",
+      "diverticular disease"
+    ],
+    "correct_index": 0,
+    "explanation": "Hemorrhoids are a common cause of bright-red bleeding; diverticular disease can cause major acute bleeding."
+  },
+  {
+    "id": "ADEN-GMS-2026-074",
+    "category": "medical",
+    "text": "50yo vertigo triggered head turning, positive Dix-Hallpike torsional nystagmus.",
+    "options": [
+      "Epley",
+      "meclizine",
+      "surgery"
+    ],
+    "correct_index": 0,
+    "explanation": "Canalith repositioning is first-line."
+  },
+  {
+    "id": "ADEN-GMS-2026-075",
+    "category": "medical",
+    "text": "70yo AF ventricular rate 130, BP110/70.",
+    "options": [
+      "no treatment",
+      "immediate electrical cardioversion",
+      "amiodarone",
+      "IV metoprolol slow rate"
+    ],
+    "correct_index": 3,
+    "explanation": "Stable AF with RVR can receive IV beta blocker for rate control; unstable patients need cardioversion."
+  },
+  {
+    "id": "ADEN-GMS-2026-076",
+    "category": "medical",
+    "text": "Definition shock:",
+    "options": [
+      "hypovolemia",
+      "hypoperfusion",
+      "hypoxemia",
+      "all of the above"
+    ],
+    "correct_index": 1,
+    "explanation": "Shock is fundamentally tissue hypoperfusion/circulatory failure; hypovolemia is a cause and hypoxemia is not the definition."
+  },
+  {
+    "id": "ADEN-GMS-2026-077",
+    "category": "medical",
+    "text": "Most common cause community acquired AKI adults:",
+    "options": [
+      "ATN due to hypoperfusion",
+      "intrinsic glomerular",
+      "obstruction",
+      "interstitial nephritis"
+    ],
+    "correct_index": 0,
+    "explanation": "Initial hypoperfusion causes prerenal AKI; prolonged ischemia may lead to ATN, so the wording is not exact."
+  },
+  {
+    "id": "ADEN-GMS-2026-078",
+    "category": "medical",
+    "text": "Southern Yemen man painless raised forearm lesion central ulceration, sandfly exposure, macrophages with amastigotes.",
+    "options": [
+      "sporotrichosis",
+      "cutaneous leishmaniasis",
+      "BCC",
+      "fungal"
+    ],
+    "correct_index": 1,
+    "explanation": "Sandfly exposure and intracellular amastigotes are classic."
+  },
+  {
+    "id": "ADEN-GMS-2026-079",
+    "category": "medical",
+    "text": "Young male shot left chest HR130 JVD hypotension.",
+    "options": [
+      "needle decompression 2nd ICS",
+      "subxiphoid pericardiocentesis",
+      "pericardiotomy",
+      "immediate thoracic surgery to repair aorta"
+    ],
+    "correct_index": 1,
+    "explanation": "JVD + hypotension suggests tamponade; penetrating traumatic tamponade often requires operative management, while decompression may be lifesaving in selected settings."
+  },
+  {
+    "id": "ADEN-GMS-2026-080",
+    "category": "medical",
+    "text": "NOT characteristic PCOS:",
+    "options": [
+      "increased androgen",
+      "decreased estrogen",
+      "android obesity",
+      "increased LH"
+    ],
+    "correct_index": 1,
+    "explanation": "Hyperandrogenism and metabolic features are characteristic; decreased estrogen is not defining."
+  },
+  {
+    "id": "ADEN-GMS-2026-081",
+    "category": "medical",
+    "text": "Best investigation suspected PE:",
+    "options": [
+      "CXR",
+      "CTPA",
+      "V/Q only",
+      "echo"
+    ],
+    "correct_index": 1,
+    "explanation": "CT pulmonary angiography is standard imaging in many stable patients."
+  },
+  {
+    "id": "ADEN-GMS-2026-082",
+    "category": "medical",
+    "text": "35yo Bell palsy within 72h.",
+    "options": [
+      "prednisolone",
+      "acyclovir",
+      "valacyclovir",
+      "observation"
+    ],
+    "correct_index": 0,
+    "explanation": "Corticosteroids within 72 hours improve recovery."
+  },
+  {
+    "id": "ADEN-GMS-2026-083",
+    "category": "medical",
+    "text": "30yo Hb8 MCV88 ferritin450 transferrin saturation8%, treatment:",
+    "options": [
+      "ferrous sulfate tabs",
+      "ESA",
+      "IV iron sucrose"
+    ],
+    "correct_index": 0,
+    "explanation": "Treatment depends on underlying disease, especially CKD status; iron-restricted erythropoiesis is suggested but ESA cannot be selected from these data alone."
+  },
+  {
+    "id": "ADEN-GMS-2026-084",
+    "category": "medical",
+    "text": "TRUE hypovolemic shock:",
+    "options": [
+      "Hct/Hb always decreased",
+      "management same regardless cause",
+      "hemorrhagic complications after treatment less serious than septic",
+      "inotropes early"
+    ],
+    "correct_index": 0,
+    "explanation": "Initial treatment is volume/blood replacement and source control; inotropes are not routine early therapy."
+  },
+  {
+    "id": "ADEN-GMS-2026-085",
+    "category": "medical",
+    "text": "Causes acute perianal pain:",
+    "options": [
+      "fissure",
+      "thrombosed hemorrhoids",
+      "perianal abscess",
+      "all"
+    ],
+    "correct_index": 3,
+    "explanation": "All listed causes can cause acute perianal pain."
+  },
+  {
+    "id": "ADEN-GMS-2026-086",
+    "category": "medical",
+    "text": "Active pulmonary TB best initial treatment:",
+    "options": [
+      "rifampin+isoniazid 4mo",
+      "rifampin+isoniazid+pyrazinamide+ethambutol daily 2mo",
+      "isoniazid 9mo",
+      ""
+    ],
+    "correct_index": 1,
+    "explanation": "The standard intensive phase contains four drugs; option D is blank."
+  },
+  {
+    "id": "ADEN-GMS-2026-087",
+    "category": "medical",
+    "text": "During massive blood transfusion for acute blood loss: 1-Packed RBC with crystalloid solution are transfused to replace fluid loss. 2-Give 2 units FFP for each 5 units PRBC.",
+    "options": [
+      "1-Packed RBC with crystalloid solution are transfused to replace fluid loss.",
+      "2-Give 2 units FFP for each 5 units PRBC."
+    ],
+    "correct_index": 0,
+    "explanation": "No A/B/C/D options are supplied. Modern massive transfusion uses balanced components rather than a universal fixed 2:5 ratio."
+  },
+  {
+    "id": "ADEN-GMS-2026-088",
+    "category": "medical",
+    "text": "NOT common cause death SLE:",
+    "options": [
+      "CNS disease",
+      "CVD",
+      "lupus nephritis",
+      "GI bleeding"
+    ],
+    "correct_index": 3,
+    "explanation": "GI bleeding is not a classic major cause of mortality compared with cardiovascular, renal and infectious complications."
+  },
+  {
+    "id": "ADEN-GMS-2026-089",
+    "category": "medical",
+    "text": "Aspirin used secondary prevention >40 with:",
+    "options": [
+      ">10% 10y CV risk",
+      "DM",
+      "smoker",
+      "hyperlipidemia"
+    ],
+    "correct_index": 0,
+    "explanation": "Secondary prevention requires established ASCVD. >10% 10-year risk is a primary-prevention risk concept."
+  },
+  {
+    "id": "ADEN-GMS-2026-090",
+    "category": "medical",
+    "text": "Spasmodic dysmenorrhea all true EXCEPT:",
+    "options": [
+      "suprapubic colicky pain",
+      "starts first day and decreases",
+      "abdominal massage increases pain",
+      "radiates back/thighs"
+    ],
+    "correct_index": 2,
+    "explanation": "Typical pain is crampy, begins around menstruation and may radiate to back/thighs."
+  },
+  {
+    "id": "ADEN-GMS-2026-091",
+    "category": "medical",
+    "text": "Pulmonary interstitial edema true:",
+    "options": [
+      "mannitol contraindicated may worsen",
+      "",
+      "Drug [unclear] not used because weak inotrope",
+      "salt-poor albumin fluid transuding alveoli into interstitial"
+    ],
+    "correct_index": 0,
+    "explanation": "Option B is absent and option C is unclear. A is the most plausible visible intended answer."
+  },
+  {
+    "id": "ADEN-GMS-2026-092",
+    "category": "medical",
+    "text": "ECF true:",
+    "options": [
+      "plasma 1/4 ECF, interstitial 3/4",
+      "K primary cation ECF",
+      "ECF 40% total body fluid",
+      "plasma proteins weak cations"
+    ],
+    "correct_index": 0,
+    "explanation": "ECF consists mainly of plasma and interstitial fluid; interstitial fluid is about three-quarters of ECF."
+  },
+  {
+    "id": "ADEN-GMS-2026-093",
+    "category": "medical",
+    "text": "Septic shock true:",
+    "options": [
+      "gram negative sepsis clinical picture different",
+      "endogenous fluid balance exists but exogenous fluid support also necessary"
+    ],
+    "correct_index": 1,
+    "explanation": "Sepsis-associated circulatory dysfunction often requires IV fluid resuscitation."
+  },
+  {
+    "id": "ADEN-GMS-2026-094",
+    "category": "medical",
+    "text": "Best treatment uncomplicated bronchiolitis children:",
+    "options": [
+      "oral steroid",
+      "supportive (oxygen, suction nasal fluids)",
+      "inhaled epinephrine",
+      "antivirals"
+    ],
+    "correct_index": 1,
+    "explanation": "Treatment is primarily supportive."
+  },
+  {
+    "id": "ADEN-GMS-2026-095",
+    "category": "medical",
+    "text": "Adult female TSH elevated, T4 normal, symptoms. Initial treatment?",
+    "options": [
+      "observe/repeat 6mo",
+      "iodine",
+      "levothyroxine 25-50mcg",
+      "selenium"
+    ],
+    "correct_index": 0,
+    "explanation": "Treatment depends on TSH level, symptoms, antibodies, pregnancy and age; not automatic from these data."
+  },
+  {
+    "id": "ADEN-GMS-2026-096",
+    "category": "medical",
+    "text": "1yo chronic diarrhea, failure to thrive, recurrent chest infection, positive sweat chloride.",
+    "options": [
+      "CF",
+      "cow milk allergy",
+      "gastroenteritis",
+      "celiac"
+    ],
+    "correct_index": 0,
+    "explanation": "Positive sweat chloride plus respiratory/GI features supports CF."
+  },
+  {
+    "id": "ADEN-GMS-2026-097",
+    "category": "medical",
+    "text": "Factors interfere wound healing:",
+    "options": [
+      "chemotherapy",
+      "radiotherapy",
+      "chronic steroids",
+      "vascular disease",
+      "all"
+    ],
+    "correct_index": 4,
+    "explanation": "All listed factors can impair wound healing."
+  },
+  {
+    "id": "ADEN-GMS-2026-098",
+    "category": "medical",
+    "text": "60yo severe back pain after lifting, neuro normal.",
+    "options": [
+      "bed rest 3d",
+      "NSAID + continue activities as tolerated",
+      "MRI",
+      "surgery"
+    ],
+    "correct_index": 1,
+    "explanation": "Conservative management and activity as tolerated are preferred without red flags."
+  },
+  {
+    "id": "ADEN-GMS-2026-099",
+    "category": "medical",
+    "text": "30yo female proximal weakness, violaceous eyelid rash, Gottron papules.",
+    "options": [
+      "MG",
+      "dermatomyositis",
+      "systemic sclerosis"
+    ],
+    "correct_index": 1,
+    "explanation": "Heliotrope rash + Gottron papules + proximal weakness are classic."
+  },
+  {
+    "id": "ADEN-GMS-2026-100",
+    "category": "medical",
+    "text": "Most common cause death long-standing RA:",
+    "options": [
+      "infection",
+      "renal",
+      "joint deformity",
+      "cardiovascular"
+    ],
+    "correct_index": 3,
+    "explanation": "Cardiovascular disease is a major cause of excess mortality in longstanding RA."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-001",
+    "category": "medical",
+    "text": "Patient came with hemorrhagic shock, what is the first priority in management?",
+    "options": [
+      "Control bleeding",
+      "Diamorphine",
+      "Start intravenous lines",
+      "Analgesics"
+    ],
+    "correct_index": 0,
+    "explanation": "In hemorrhagic shock, the priority is control of the source of bleeding while simultaneously initiating resuscitation. Definitive hemorrhage control is critical to prevent ongoing blood loss."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-002",
+    "category": "medical",
+    "text": "A 42 year-old female patient known having Rheumatoid arthritis on methotrexate weekly what drug should be used with it:",
+    "options": [
+      "Vitamin B6",
+      "Folic acid",
+      "Vitamin B12",
+      "Thiamine"
+    ],
+    "correct_index": 1,
+    "explanation": "Methotrexate inhibits folate metabolism and can cause mucositis, cytopenias and hepatotoxicity. Folic acid supplementation reduces adverse effects while maintaining therapeutic efficacy."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-003",
+    "category": "medical",
+    "text": "A patient in hospital with MRSA cellulitis the best antibiotic to be initiated for the treatment is:",
+    "options": [
+      "CO-amoxiclav",
+      "Flucloxacillin",
+      "Meropenem",
+      "Vancomycin"
+    ],
+    "correct_index": 3,
+    "explanation": "MRSA is resistant to standard anti-staphylococcal β-lactams such as flucloxacillin. Vancomycin is a standard treatment for serious hospitalized MRSA infection."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-004",
+    "category": "medical",
+    "text": "A woman taking oral contraceptive, which drug will interact with it:",
+    "options": [
+      "Cephalexin",
+      "Erythromycin",
+      "Amoxicillin",
+      "Rifampicin"
+    ],
+    "correct_index": 3,
+    "explanation": "Rifampicin is a potent hepatic enzyme inducer and increases metabolism of estrogen/progestogen, reducing the effectiveness of combined hormonal contraceptives."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-005",
+    "category": "medical",
+    "text": "A Female patient with pneumonia was injected with amoxicillin, then she developed dyspnea, hypotension and itching, what's the type of hypersensitivity responsible for this reaction?",
+    "options": [
+      "Delayed hypersensitivity",
+      "Immediate hypersensitivity",
+      "Antigen-Antibody complexe"
+    ],
+    "correct_index": 1,
+    "explanation": "Dyspnea, hypotension and itching immediately after a β-lactam strongly indicate anaphylaxis, which is a Type I IgE-mediated immediate hypersensitivity reaction."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-006",
+    "category": "medical",
+    "text": "Patient had trauma and on abdominal examination, he had Cullen's sign, what is the cause here?",
+    "options": [
+      "Acute appendicitis",
+      "Intra-abdominal hemorrhage",
+      "Pancreatitis"
+    ],
+    "correct_index": 1,
+    "explanation": "Cullen's sign is periumbilical ecchymosis caused by intra-abdominal or retroperitoneal bleeding. In a trauma patient, intra-abdominal hemorrhage is an important cause."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-007",
+    "category": "medical",
+    "text": "A Female patient came to you with malaise, having fissures on the angles of her lips, on examination she had a painless mass in the right iliac fossa with unknown cause, what is the cause here?",
+    "options": [
+      "Alanine deficiency",
+      "Folate deficiency",
+      "Iron deficiency anemia",
+      "Thiamine deficiency"
+    ],
+    "correct_index": 2,
+    "explanation": "Angular cheilitis can occur with iron deficiency. Iron deficiency may also cause fatigue, pallor, glossitis and other mucocutaneous manifestations."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-008",
+    "category": "medical",
+    "text": "Which of the following causing mucocutaneous Leishmaniasis?",
+    "options": [
+      "L. aethiopica",
+      "L. braziliensis",
+      "L. donovani",
+      "L. infantum"
+    ],
+    "correct_index": 1,
+    "explanation": "Leishmania braziliensis is classically associated with mucocutaneous leishmaniasis, particularly in South America."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-009",
+    "category": "medical",
+    "text": "Parkinson disease (PD) is a neurodegenerative condition, which is the neurotransmitter is responsible for this disease?",
+    "options": [
+      "Acetylcholine",
+      "Arginine",
+      "Dopamine",
+      "Noradrenaline"
+    ],
+    "correct_index": 2,
+    "explanation": "Parkinson disease is associated with degeneration of dopaminergic neurons in the substantia nigra, resulting in reduced dopamine in the striatum."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-010",
+    "category": "medical",
+    "text": "A GP got needle stick of patient who was an IV drug abuser, having infective endocarditis, what is the probable causative organism here?",
+    "options": [
+      "Enterococci",
+      "Staphylococcus epidermidis",
+      "Staphylococcus aureus",
+      "Streptococcus pneumonia"
+    ],
+    "correct_index": 2,
+    "explanation": "S. aureus is the most common cause of infective endocarditis in intravenous drug users."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-011",
+    "category": "medical",
+    "text": "What is the most common cause of Hospital-acquired pneumonia?",
+    "options": [
+      "Staphylococcus aureus",
+      "Klebsiella pneumoniae",
+      "Haemophilus influenzae",
+      "Streptococcus pneumoniae"
+    ],
+    "correct_index": 0,
+    "explanation": "Among the options given, Staphylococcus aureus is the best answer. Hospital-acquired pneumonia is commonly caused by aerobic Gram-negative bacilli and S. aureus."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-012",
+    "category": "medical",
+    "text": "Which of the following drug is contraindicated in psoriasisis:",
+    "options": [
+      "Prednisolone",
+      "Methotrexate",
+      "Cyclosporin",
+      "Acitretin"
+    ],
+    "correct_index": 0,
+    "explanation": "Systemic corticosteroids are generally avoided in psoriasis because withdrawal can precipitate severe rebound psoriasis, including generalized pustular psoriasis. Methotrexate, cyclosporine and acitretin are all established psoriasis treatments."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-013",
+    "category": "medical",
+    "text": "A pregnant female patient complaining of sudden onset abdominal pain and vaginal bleeding ,she is in 38 weeks ,her BP110/80 and there is lower abdominal tenderness ,her baby pulse rate 170bpm, the most important diagnosis:",
+    "options": [
+      "Necrosis of fibroid",
+      "Placenta previa",
+      "Abruptio placenta",
+      "Preterm Labour"
+    ],
+    "correct_index": 2,
+    "explanation": "Placental abruption typically presents with painful vaginal bleeding, abdominal/uterine tenderness and fetal distress. Placenta previa classically causes painless bleeding."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-014",
+    "category": "medical",
+    "text": "Consultant wanted to find evidence about incidence of deep venous thrombosis, the most accurate study is:",
+    "options": [
+      "Meta analysis trials",
+      "Case study",
+      "Cohort study",
+      "Randomized trial study"
+    ],
+    "correct_index": 2,
+    "explanation": "Incidence means the occurrence of new cases over time. A cohort study can follow disease-free individuals and measure the incidence of DVT."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-015",
+    "category": "medical",
+    "text": "A 5 year-old child patient with skin lesion not itchy,painless on his chest, no fever, and systematically well ,which of the following is most appropriate dignosis:",
+    "options": [
+      "Chickenpox",
+      "Molluscum contagiosum",
+      "Eczema",
+      "Hand&foot and mouth syndrome"
+    ],
+    "correct_index": 1,
+    "explanation": "Molluscum contagiosum produces painless, usually non-itchy, pearly papules with central umbilication. The child is usually systemically well."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-016",
+    "category": "medical",
+    "text": "A young patient complaining of vomiting and fatigue for few days then has dark urine, the possible cause is:",
+    "options": [
+      "Acute viral hepatitis",
+      "Liver cancer",
+      "Fatty liver disease",
+      "Cirrhosis."
+    ],
+    "correct_index": 0,
+    "explanation": "Acute viral hepatitis can cause constitutional symptoms followed by jaundice and dark urine due to conjugated bilirubinuria."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-017",
+    "category": "medical",
+    "text": "Terry's nails are found in patients with:",
+    "options": [
+      "Renal failure",
+      "Liver cirrhosis",
+      "Respiratory disease"
+    ],
+    "correct_index": 1,
+    "explanation": "Terry's nails are characterized by whitening of most of the nail with a distal band and are classically associated with chronic liver disease, especially cirrhosis."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-018",
+    "category": "medical",
+    "text": "The most serious complication of measles is:",
+    "options": [
+      "Otitis media",
+      "Subacute sclerosing panencephalitis",
+      "Pneumonia",
+      "Pericarditis"
+    ],
+    "correct_index": 1,
+    "explanation": "SSPE is a rare but devastating, progressive neurological complication occurring years after measles infection. It causes progressive cognitive and neurological deterioration and is usually fatal."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-019",
+    "category": "medical",
+    "text": "A male patient with stabbing pain in jaw and mouth for few seconds which increased during toothbrush, what is the best drug for treatment:",
+    "options": [
+      "Carbamazepine",
+      "Prednisolone",
+      "Indomethacin",
+      "Morphine"
+    ],
+    "correct_index": 0,
+    "explanation": "Brief, severe, electric-shock-like facial pain triggered by touching the face or brushing teeth is characteristic of trigeminal neuralgia. Carbamazepine is a classic first-line treatment."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-020",
+    "category": "medical",
+    "text": "A 62 year-old male patient with heart rate 72bpm and BP 220/110 mmHg with radio-femoral delay, audible systolic murmer, and notching in ribs at MCL on chest X.ray what is the possible diagnosis?",
+    "options": [
+      "Coarctation of aorta",
+      "Marfan sydrome",
+      "renal artery stenosis",
+      "Aneurysm of aorta"
+    ],
+    "correct_index": 0,
+    "explanation": "Radio-femoral delay, severe hypertension and rib notching due to collateral circulation are classic findings of coarctation of the aorta."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-021",
+    "category": "medical",
+    "text": "A Patient with severe central chest pain, which radiates to left shoulder and jaw, he is stable with BP 150/100mmHg and pulse rate 74 bpm, he took aspirin, what is the next drug he should take?",
+    "options": [
+      "Fursemide",
+      "Carvedilol",
+      "Diamorphine",
+      "Ramipril"
+    ],
+    "correct_index": 2,
+    "explanation": "In the context of the options provided, diamorphine is used for severe persistent pain associated with suspected acute coronary syndrome. Aspirin has already been given."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-022",
+    "category": "medical",
+    "text": "A 3-year-old child with a history of diarrhea 6 times per day for 6 months, with visible vegetable matter in stools. The child is thriving well, and development is normal. What is the most likely cause?",
+    "options": [
+      "Toddler’s diarrhea",
+      "Celiac disease",
+      "Inflammatory bowel disease (IBD)",
+      "Lactose intolerance"
+    ],
+    "correct_index": 0,
+    "explanation": "Toddler's diarrhea is a common cause of chronic loose stools in otherwise healthy children who have normal growth and development. Undigested food particles may be visible in stool."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-023",
+    "category": "medical",
+    "text": "An elderly patient with watery diarrhea 6 times a day was admitted to the hospital due to an infection exacerbation while on co-amoxiclav. What is the most likely cause?",
+    "options": [
+      "E. coli",
+      "Campylobacter jejuni",
+      "Clostridium difficile",
+      "Norovirus"
+    ],
+    "correct_index": 2,
+    "explanation": "Recent antibiotic exposure, particularly broad-spectrum antibiotics such as co-amoxiclav, predisposes to C. difficile infection causing antibiotic-associated watery diarrhea."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-024",
+    "category": "medical",
+    "text": "A case of diabetic ketoacidosis (DKA), what is the correct dose of insulin infusion?",
+    "options": [
+      "0.1 unit per kg per hour",
+      "1 unit per kg per hour",
+      "0.5 unit per kg per hour."
+    ],
+    "correct_index": 0,
+    "explanation": "Standard IV insulin infusion for DKA is commonly 0.1 units/kg/hour, with monitoring and adjustment according to glucose, ketones and metabolic response."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-025",
+    "category": "medical",
+    "text": "A type I diabetic patient is on 15 units of long-acting insulin at night and regular insulin three times at meals. The patient is preparing for an anesthetic operation and fasting from midnight. What should be done regarding insulin?",
+    "options": [
+      "Omit insulin at night and morning",
+      "Give insulin at night but not in the morning",
+      "Give insulin as usual",
+      "Variable insulin regimen"
+    ],
+    "correct_index": 3,
+    "explanation": "A patient with type 1 diabetes must not be left completely without insulin because of the risk of DKA. During surgery/fasting, insulin requirements need adjustment and often a variable-rate IV insulin regimen with glucose monitoring is used."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-026",
+    "category": "medical",
+    "text": "An adult wanted to start a family and he has Hemorrhagic telangiectasia, what is the type of inheritance?",
+    "options": [
+      "Autosomal dominant with incomplete penetrance",
+      "Autosomal recessive with incomplete penetrance",
+      "X-linked recessive",
+      "Codominant"
+    ],
+    "correct_index": 0,
+    "explanation": "HHT is usually inherited as an autosomal dominant disorder. Variable expression and incomplete penetrance can occur."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-027",
+    "category": "medical",
+    "text": "A grandfather is a carrier of cystic fibrosis. What is the risk for his grandson who is 5 year- old?",
+    "options": [
+      "1:2",
+      "1:4",
+      "1:8",
+      "1:16"
+    ],
+    "correct_index": 2,
+    "explanation": "Assuming the grandfather is a carrier and the child's parent is his child, the carrier probability for that parent is 1/2. If the other parent is assumed not to be a carrier, the probability of passing the CF allele to the grandson is 1/4 if considering only transmission from a carrier parent. However, the exact pedigree is incompletely specified; 1:8 is the intended exam answer in the supplied model."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-028",
+    "category": "medical",
+    "text": "A patient with hypertension and radio-femoral delay, with rib notching seen on X-ray at the midclavicular line. What is the most likely diagnosis?",
+    "options": [
+      "Coarctation of the aorta",
+      "Marfan syndrome",
+      "Aortic dissection"
+    ],
+    "correct_index": 0,
+    "explanation": "The combination of hypertension, radio-femoral delay and rib notching is highly characteristic of coarctation of the aorta."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-029",
+    "category": "medical",
+    "text": "Which of the following give the best description to study the new cases of papilloma virus infection in collage student?",
+    "options": [
+      "case study",
+      "Incidence",
+      "median survival",
+      "mortality rate"
+    ],
+    "correct_index": 1,
+    "explanation": "The question asks about new cases. Incidence measures the number/rate of new cases occurring in a defined population during a specified period."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-030",
+    "category": "medical",
+    "text": "In a patient with acute cholecystitis, what is the most common radiological imaging for the case?",
+    "options": [
+      "Abdominal ultrasound scan",
+      "Abdominal CT scan",
+      "MRI",
+      "Abdominal X-ray."
+    ],
+    "correct_index": 0,
+    "explanation": "Ultrasound is the usual first-line imaging investigation for suspected acute cholecystitis and is particularly useful for detecting gallstones, gallbladder wall thickening and sonographic Murphy sign."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-031",
+    "category": "medical",
+    "text": "A patient comes to the GP with unilateral painful redness of the eye, with no discharge. What should the doctor do next?",
+    "options": [
+      "Referral to ophthalmology emergency department for assessment",
+      "Give local steroids eye drops",
+      "Give local chloramphenicol eye drops",
+      "Apply local acyclovir eye drops"
+    ],
+    "correct_index": 0,
+    "explanation": "A painful unilateral red eye without discharge can represent serious ocular disease such as acute glaucoma, keratitis or uveitis. Steroid drops should not be given without appropriate ophthalmological assessment."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-032",
+    "category": "medical",
+    "text": "A GP doctor got needle stick injury while performing venous cannula to patient known of intravenous drug use, what is the frist thing to do?",
+    "options": [
+      "Report the incident",
+      "Seek for prophylaxis treatment",
+      "Investigate pt for HIV",
+      "Encourage bleeding from site needle of the stick injury"
+    ],
+    "correct_index": 0,
+    "explanation": "The incident should be immediately reported through the occupational exposure protocol so that risk assessment and appropriate HIV/HBV post-exposure management can be initiated promptly."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-033",
+    "category": "medical",
+    "text": "Which of the following antituberculosis drugs requires visual monitoring?",
+    "options": [
+      "Ethambutol hydrochloride",
+      "Pyrazinamide",
+      "Moxifloxacin",
+      "Isoniazid"
+    ],
+    "correct_index": 0,
+    "explanation": "Ethambutol can cause optic neuritis, resulting in reduced visual acuity and red-green color discrimination abnormalities. Baseline and appropriate follow-up visual assessment is therefore important."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-034",
+    "category": "medical",
+    "text": "What is the best test for diagnosing giant cell arteritis?",
+    "options": [
+      "Temporal artery biopsy",
+      "Ultrasound",
+      "Antibodies in serum"
+    ],
+    "correct_index": 0,
+    "explanation": "Temporal artery biopsy is the classic confirmatory diagnostic test for giant cell arteritis. Treatment with corticosteroids should not be unnecessarily delayed when clinical suspicion is high."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-035",
+    "category": "medical",
+    "text": "A patient presents with finger deformity after trauma with inability to extend his finger. What should be done for the deformity?",
+    "options": [
+      "Finger splint",
+      "Internal fixation",
+      "External fixation"
+    ],
+    "correct_index": 0,
+    "explanation": "Inability to actively extend the distal interphalangeal joint after trauma suggests a mallet finger. Most uncomplicated cases are treated initially with continuous extension splinting."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-036",
+    "category": "medical",
+    "text": "Most conforming test for Pernicious anemia is:",
+    "options": [
+      "Serum Iron",
+      "Serum Folic acid",
+      "Serum protein electrophoresis",
+      "Serum vitamin B12"
+    ],
+    "correct_index": 3,
+    "explanation": "Pernicious anemia causes vitamin B12 deficiency due to autoimmune destruction of gastric parietal cells and intrinsic-factor deficiency. Serum B12 demonstrates the deficiency, although anti-intrinsic-factor antibodies can help establish the specific cause."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-037",
+    "category": "medical",
+    "text": "An old patient presents with gum bleeding and hypertrophy. Which nutritional deficiency could be the cause?",
+    "options": [
+      "Vitamin B12deficiency",
+      "Vitamin A deficiency",
+      "Vitamin C deficiency",
+      "Folic acid"
+    ],
+    "correct_index": 2,
+    "explanation": "Vitamin C deficiency causes defective collagen synthesis, leading to fragile capillaries, bleeding gums, gingival swelling and poor wound healing."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-038",
+    "category": "medical",
+    "text": "A mother with deafness from age 12 and using a hearing aid wants to confirm if her new baby is deaf. Which test should be used?",
+    "options": [
+      "Brainstem auditory evoked response",
+      "CTof the baby",
+      "Brain MRI"
+    ],
+    "correct_index": 0,
+    "explanation": "Auditory brainstem response (ABR/BAER) is an objective test used for hearing assessment in newborns, especially when behavioral hearing testing is not possible."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-039",
+    "category": "medical",
+    "text": "A patient had a carotid artery surgery, the he has difficulty speaking, and when protruding the tongue, it deviates toward the right side. Which nerve is affected?",
+    "options": [
+      "Right glossopharyngeal nerve",
+      "Left hypoglossal nerve",
+      "Right hypoglossal nerve",
+      "Left glossopharyngeal nerve"
+    ],
+    "correct_index": 2,
+    "explanation": "The hypoglossal nerve supplies the tongue muscles. With a unilateral lower motor neuron lesion, the protruded tongue deviates toward the side of the lesion."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-040",
+    "category": "medical",
+    "text": "A patient complains of dysphagia and is diagnosed with middle esophageal cancer that has metastasized to the liver. What is the best method to improve dysphagia in this patient?",
+    "options": [
+      "Esophageal stent",
+      "Gastrostomy",
+      "Esophageal palliative surgery",
+      "Chemotherapy"
+    ],
+    "correct_index": 0,
+    "explanation": "In advanced esophageal cancer with metastatic disease, an esophageal stent can provide rapid palliation of dysphagia and improve oral intake."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-041",
+    "category": "medical",
+    "text": "A patient with systemic lupus erythematosus (SLE) and lupus nephritis, Which marker indicates activity of lupus nephritis?",
+    "options": [
+      "ANA",
+      "Anti-CCP",
+      "RF",
+      "Anti-dsDNA"
+    ],
+    "correct_index": 3,
+    "explanation": "Anti-double-stranded DNA antibodies correlate with SLE disease activity, particularly renal disease, and rising levels can be associated with lupus nephritis activity."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-042",
+    "category": "medical",
+    "text": "A girl had a sore throat with slight fever, malaise, then she developed maculopapular and partially vesicular spots on the hands and feet, with oral ulcers, what's the most likely cause:",
+    "options": [
+      "Coxsackie virus",
+      "Parovirus",
+      "Chickenpox"
+    ],
+    "correct_index": 0,
+    "explanation": "Hand-foot-and-mouth disease is classically caused by enteroviruses, especially Coxsackie A viruses. It causes oral ulcers and vesicular lesions on the hands and feet."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-043",
+    "category": "medical",
+    "text": "A 62 year-old male patient with low immunity came with productive cough and dyspnea and CXR is showing chest infection, the indication of sputum examination is for:",
+    "options": [
+      "COVID 18",
+      "Tuberculosis",
+      "Influenza",
+      "Lung cancer."
+    ],
+    "correct_index": 1,
+    "explanation": "In an immunocompromised patient with respiratory symptoms, particularly when TB is clinically suspected, sputum examination is important for detecting Mycobacterium tuberculosis."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-044",
+    "category": "medical",
+    "text": "A 22 year- old male patient complaining of swelling in left testis, can't be separated from the testis ,the it is firm and fluctuating, with bright trans illumination ,which of the following is true :",
+    "options": [
+      "Testicular tumor",
+      "Hydrocele",
+      "Varicocele",
+      "Testicular torsion"
+    ],
+    "correct_index": 1,
+    "explanation": "A hydrocele is a fluid collection around the testis and classically transilluminates. The description of bright transillumination strongly supports hydrocele."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-045",
+    "category": "medical",
+    "text": "Which is MOST SINGLE investigation aid in diagnosis of hepatocellular carcenoma:",
+    "options": [
+      "a-fetoprotien",
+      "hepatochoionicgonadotropine",
+      "CA125",
+      "CEA"
+    ],
+    "correct_index": 0,
+    "explanation": "Alpha-fetoprotein (AFP) is a commonly used tumor marker in hepatocellular carcinoma. It is not sufficiently sensitive or specific to be used alone for diagnosis, but among the listed options it is clearly the best answer."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-046",
+    "category": "medical",
+    "text": "Patient came with urticaria, what's the most dangerous type?",
+    "options": [
+      "Dermatographism",
+      "Contact urticaria",
+      "Cholinergic urticaria",
+      "Angioedema"
+    ],
+    "correct_index": 3,
+    "explanation": "Angioedema involving the tongue, pharynx or larynx can cause life-threatening airway obstruction."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-047",
+    "category": "medical",
+    "text": "A 3 year-old girl patient in pediatrics department suffering from lower UTI, then the pediatrician ordered for her septrin about 2mg/kg, and her weight is about 12.5 kg, what is the required amount in ml of septrin \"50mg/5ml\" she will take every night?",
+    "options": [
+      "2.5 ml",
+      "5 ml",
+      "10 ml",
+      "7.5 ml"
+    ],
+    "correct_index": 0,
+    "explanation": "Dose = 2 mg/kg × 12.5 kg = 25 mg. Concentration = 50 mg/5 mL = 10 mg/mL. Volume = 25 mg ÷ 10 mg/mL = 2.5 mL."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-048",
+    "category": "medical",
+    "text": "Which is of the following about acute respiratory distress syndrome is correct?",
+    "options": [
+      "Normal respiratory rate",
+      "Elevated pulmonary arterial pressure",
+      "Decreased PaO2/FiO2 ratio"
+    ],
+    "correct_index": 2,
+    "explanation": "ARDS causes severe impairment of oxygenation, resulting in a reduced PaO2/FiO2 ratio."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-049",
+    "category": "medical",
+    "text": "Which of the following may be present in patient with hyperthyrodism:",
+    "options": [
+      "Plethora",
+      "Pretibial myxedema",
+      "Pallor"
+    ],
+    "correct_index": 1,
+    "explanation": "Pretibial myxedema is an extrathyroidal manifestation of Graves disease and may occur in patients with hyperthyroidism."
+  },
+  {
+    "id": "SANAA-GMB-2024-10-24-050",
+    "category": "medical",
+    "text": "The best initial test to do in patient with Tinea infestation:",
+    "options": [
+      "KOH preparation",
+      "Wood lamp",
+      "Biopsy"
+    ],
+    "correct_index": 0,
+    "explanation": "KOH preparation of a skin scraping is a simple initial investigation for suspected dermatophyte infection and can demonstrate fungal hyphae."
+  }
+]
