@@ -1,0 +1,133 @@
+{
+ "specId": "radiology",
+ "sectorId": "medical",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "radiology-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "medical",
+     "specId": "radiology",
+     "subject": "التصوير العصبي",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما التصوير الأولي المعتمد لاستبعاد النزف في السكتة الدماغية الحادة؟",
+     "options": [
+      "التصوير المقطعي المحوسب بدون صبغة",
+      "الرنين المغناطيسي",
+      "الأشعة المقطعية بالصبغة",
+      "الموجات فوق الصوتية"
+     ],
+     "correctIndex": 0,
+     "explanation": "يُبدأ بالتصوير المقطعي بدون صبغة لاستبعاد النزف قبل قرار التخثر.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التصوير العصبي"
+     ],
+     "id": "radiology-0001",
+     "bankId": "radiology-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "radiology",
+     "subject": "الحماية الإشعاعية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما مبدأ العمل الأساسي في الوقاية من الإشعاع؟",
+     "options": [
+      "مبدأ ALARA/ALADA — أقل جرعة ممكنة",
+      "زيادة الجرعة لتحسين الجودة دائمًا",
+      "تجنّب الحماية للمرضى الأطفال",
+      "استخدام الصبغة لكل الفحوصات"
+     ],
+     "correctIndex": 0,
+     "explanation": "مبدأ ALARA يوجب إبقاء الجرعة معقولة وقابلة للتطبيق عند أدنى حد.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الحماية الإشعاعية"
+     ],
+     "id": "radiology-0002",
+     "bankId": "radiology-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "radiology",
+     "subject": "الأشعة الرقمية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "متى يُمنع إجراء الرنين المغناطيسي (MRI)؟",
+     "options": [
+      "وجود ناظم قلب غير مطابق لـ MR",
+      "وجود حشوات أسنان",
+      "الحمل في الثلث الأول دون ضرورة",
+      "ارتفاع السكر"
+     ],
+     "correctIndex": 0,
+     "explanation": "أجهزة مثل ناظم القلب غير المتوافقة مع MR من موانع الرنين المغناطيسي المطلقة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الأشعة الرقمية"
+     ],
+     "id": "radiology-0003",
+     "bankId": "radiology-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "radiology",
+     "subject": "أشعة الصدر",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "أي وضعية أفضل لكشف استسقاء أو انصباب جنبي بسيط في صورة الصدر؟",
+     "options": [
+      "الواقف (Erect) مع مسح جانبي",
+      "الراقد فقط",
+      "الأمامية دون مسح جانبي",
+      "المائلة 45 درجة"
+     ],
+     "correctIndex": 0,
+     "explanation": "الوضعية الواقفة تكشف المستويات الحرة للانصباب وقد تظهر الانصباب الصغير في المسح الجانبي.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "أشعة الصدر"
+     ],
+     "id": "radiology-0004",
+     "bankId": "radiology-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "radiology",
+     "subject": "الجودة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "أي عامل يقلل الجرعة على المريض في التصوير المقطعي؟",
+     "options": [
+      "ضبط بروتوكولات الجرعة حسب الوزن والسبب",
+      "زيادة زمن التصوير",
+      "إزالة الفلاتر",
+      "تصوير المنطقة كاملة دائمًا"
+     ],
+     "correctIndex": 0,
+     "explanation": "استخدام بروتوكولات تلقائية لضبط التيار حسب حجم المريض يقلل الجرعة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الجودة"
+     ],
+     "id": "radiology-0005",
+     "bankId": "radiology-b1"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,826 @@
+{
+ "specId": "lab",
+ "sectorId": "medical",
+ "updatedAt": "2026-10-17",
+ "count": 31,
+ "banks": [
+  {
+   "id": "lab-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Oocyst Diagnosis",
+     "topic": "Toxoplasmosis",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "Oocyst benefited to diagnose:",
+     "options": [
+      "E.histolytica",
+      "E.coli",
+      "Toxoplasma gondii",
+      "Giaradia lamblia",
+      "Typanosoma cruzi"
+     ],
+     "correctIndex": 2,
+     "explanation": "Toxoplasma gondii is the protozoan associated with oocysts produced in felids, its definitive hosts.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Microbiology",
+      "Parasitology",
+      "Toxoplasmosis",
+      "Oocyst Diagnosis"
+     ],
+     "id": "lab-0001",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Intracellular Parasite",
+     "topic": "Toxoplasmosis",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "intracellular parasite:",
+     "options": [
+      "E.coli",
+      "Toxoplasma gondii",
+      "Giaradia lamblia",
+      "Typanosoma cruzi",
+      "Trichomonas vaginalis"
+     ],
+     "correctIndex": 1,
+     "explanation": "Toxoplasma gondii is an obligate intracellular protozoan.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Microbiology",
+      "Parasitology",
+      "Toxoplasmosis",
+      "Intracellular Parasite"
+     ],
+     "id": "lab-0002",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Definitive Host",
+     "topic": "Toxoplasmosis",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "An animal is a definitive host:",
+     "options": [
+      "E.histolytica",
+      "E.coli",
+      "Toxoplasma gondii",
+      "Giaradia lamblia",
+      "Typanosoma cruzi"
+     ],
+     "correctIndex": 2,
+     "explanation": "Felids are the definitive hosts for Toxoplasma gondii.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Microbiology",
+      "Parasitology",
+      "Toxoplasmosis",
+      "Definitive Host"
+     ],
+     "id": "lab-0003",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Ketose",
+     "topic": "Carbohydrates",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "cosnider ketose:",
+     "options": [
+      "Glucose",
+      "Fructose",
+      "Mannose"
+     ],
+     "correctIndex": 1,
+     "explanation": "Fructose is a ketose; glucose and mannose are aldoses.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Biochemistry",
+      "Carbohydrate Metabolism",
+      "Carbohydrates",
+      "Ketose"
+     ],
+     "id": "lab-0004",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Protozoa Motility",
+     "topic": "Protozoa Motility",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "Non motile protozoa:",
+     "options": [
+      "E.histolytica",
+      "E.coli",
+      "Toxoplasma gondii",
+      "Giaradia lamblia",
+      "Typanosoma cruzi"
+     ],
+     "correctIndex": 2,
+     "explanation": "Toxoplasma gondii is non-motile.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Microbiology",
+      "Parasitology",
+      "Protozoa Motility",
+      "Protozoa Motility"
+     ],
+     "id": "lab-0005",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Vector",
+     "topic": "Malaria",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "malaria transmitted by :",
+     "options": [
+      "Female anopheline mospuito",
+      "Male anopheline mospuito"
+     ],
+     "correctIndex": 0,
+     "explanation": "Female Anopheles mosquitoes transmit malaria because females take blood meals.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Microbiology",
+      "Parasitology",
+      "Malaria",
+      "Vector"
+     ],
+     "id": "lab-0006",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Flame Photometer Components",
+     "topic": "Flame Photometry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "not find in the flam photometry :",
+     "options": [
+      "Burner",
+      "Filter",
+      "Fuel source",
+      "Cuvete for sample",
+      "Photocell"
+     ],
+     "correctIndex": 3,
+     "explanation": "A sample cuvette is not a standard component of a conventional flame photometer; the instrument uses a flame/burner, optical system and detector.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Clinical Chemistry",
+      "Instrumentation",
+      "Flame Photometry",
+      "Flame Photometer Components"
+     ],
+     "id": "lab-0007",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Alcohol Disinfection",
+     "topic": "Disinfection",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "low effective sterilization with:",
+     "options": [
+      "Ethyl  alcohol 70%",
+      "Methyl alcohol",
+      "chloroform",
+      "5%phenol",
+      "5% cresol"
+     ],
+     "correctIndex": 0,
+     "explanation": "70% ethanol is a disinfectant and is not a reliable sterilizing agent.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Laboratory Science",
+      "Sterilization",
+      "Disinfection",
+      "Alcohol Disinfection"
+     ],
+     "id": "lab-0008",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Hormone-Organ Pairing",
+     "topic": "Reproductive Endocrinology",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "One is not correctly paired :",
+     "options": [
+      "α- cells →glucagon",
+      "β- cells → insulin",
+      "Estrogen → seminiferous tubules",
+      "Corpus luteum  → Progesterone",
+      "Parathyroid → calcium"
+     ],
+     "correctIndex": 2,
+     "explanation": "Seminiferous tubules are the site of spermatogenesis, not estrogen production; the pairing is incorrect.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Physiology",
+      "Endocrinology",
+      "Reproductive Endocrinology",
+      "Hormone-Organ Pairing"
+     ],
+     "id": "lab-0009",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Bacterial Motility",
+     "topic": "Gram-negative Rods",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "bacteria motile gram-rods:",
+     "options": [
+      "Shigella",
+      "Bordetela pertusis",
+      "Pseudomonas aeruginoea",
+      "Yersenia pestis"
+     ],
+     "correctIndex": 2,
+     "explanation": "Pseudomonas aeruginosa is a motile Gram-negative rod.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Microbiology",
+      "Bacteriology",
+      "Gram-negative Rods",
+      "Bacterial Motility"
+     ],
+     "id": "lab-0010",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Glycosuria",
+     "topic": "Urine Abnormalities",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "presence one from this substance in urine detect abnormal codition;",
+     "options": [
+      "Calcium",
+      "Phosphates",
+      "Glucose",
+      "Urates"
+     ],
+     "correctIndex": 2,
+     "explanation": "Glucose in urine is an abnormal finding in routine urinalysis and may indicate glycosuria.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Clinical Chemistry",
+      "Urinalysis",
+      "Urine Abnormalities",
+      "Glycosuria"
+     ],
+     "id": "lab-0011",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Neutrophil Morphology",
+     "topic": "Neutrophils",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "with romanowsky stain ,2-5 lobes and give violet or pinkish granules:",
+     "options": [
+      "Nutrophile",
+      "Eiosinophile",
+      "Basophile",
+      "Monocyte"
+     ],
+     "correctIndex": 0,
+     "explanation": "Neutrophils have segmented nuclei with multiple lobes and characteristic pale granules on Romanowsky stains.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Hematology",
+      "White Blood Cells",
+      "Neutrophils",
+      "Neutrophil Morphology"
+     ],
+     "id": "lab-0012",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Microscope Lenses",
+     "topic": "Light Microscope",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "lense near the slid in light microscope :",
+     "options": [
+      "Objective",
+      "Eye lenses"
+     ],
+     "correctIndex": 0,
+     "explanation": "The objective lens is closest to the specimen/slide in a conventional light microscope.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Laboratory Science",
+      "Microscopy",
+      "Light Microscope",
+      "Microscope Lenses"
+     ],
+     "id": "lab-0013",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Cholesterol Distribution",
+     "topic": "Lipoproteins",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "One of the following has highest conc. of cholesterol:",
+     "options": [
+      "C",
+      "hylomicron",
+      "LDL",
+      "HDL",
+      "VLDL",
+      "Apolipoprtein"
+     ],
+     "correctIndex": 2,
+     "explanation": "LDL has the highest cholesterol proportion among the listed major lipoproteins; apolipoprotein is not a lipoprotein class.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Biochemistry",
+      "Lipid Metabolism",
+      "Lipoproteins",
+      "Cholesterol Distribution"
+     ],
+     "id": "lab-0014",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Hot Air Oven",
+     "topic": "Dry Heat",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "does not sterile with hot air oven:",
+     "options": [
+      "Dry glassware",
+      "Oil",
+      "Powder",
+      "Waxes",
+      "Rubber gloves"
+     ],
+     "correctIndex": 4,
+     "explanation": "Rubber gloves may be damaged by hot-air-oven temperatures; dry heat is suitable for compatible glassware, oils, powders and waxes.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Laboratory Science",
+      "Sterilization",
+      "Dry Heat",
+      "Hot Air Oven"
+     ],
+     "id": "lab-0015",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Lymphocytosis",
+     "topic": "Lymphocytosis",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "lymphocyte is  elevated in :",
+     "options": [
+      "Viral infection",
+      "Acute bacterial infection",
+      "Iron deficiency anemia",
+      "Megaloblastic anemia",
+      "Non of the above"
+     ],
+     "correctIndex": 0,
+     "explanation": "Lymphocytosis is commonly associated with viral infections.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Hematology",
+      "White Blood Cells",
+      "Lymphocytosis",
+      "Lymphocytosis"
+     ],
+     "id": "lab-0016",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Immunoglobulin Molecular Weight",
+     "topic": "Antibodies",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "The smallest molecular weight Ig is:",
+     "options": [
+      "1-IgG",
+      "2-IgM",
+      "3-IgD",
+      "4-IgE",
+      "5-IgA"
+     ],
+     "correctIndex": 0,
+     "explanation": "IgG has the lowest molecular mass among the immunoglobulins listed.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Immunology",
+      "Immunoglobulins",
+      "Antibodies",
+      "Immunoglobulin Molecular Weight"
+     ],
+     "id": "lab-0017",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Gram-negative Appearance",
+     "topic": "Gram Stain",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "gram-v bacteria colonies  color :",
+     "options": [
+      "Dark purple",
+      "Pale to dark red",
+      "Orange"
+     ],
+     "correctIndex": 1,
+     "explanation": "Gram-negative organisms appear pink/red after Gram staining.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Microbiology",
+      "Bacteriology",
+      "Gram Stain",
+      "Gram-negative Appearance"
+     ],
+     "id": "lab-0018",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Citrate Utilization",
+     "topic": "Biochemical Tests",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "citrate test assis :",
+     "options": [
+      "Mycobacterias",
+      "Staph",
+      "Strept",
+      "Colistridia sp"
+     ],
+     "correctIndex": 0,
+     "explanation": "The citrate utilization test is classically used for selected Gram-negative bacteria; none of the listed choices is a standard answer.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Microbiology",
+      "Bacteriology",
+      "Biochemical Tests",
+      "Citrate Utilization"
+     ],
+     "id": "lab-0019",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Hypoparathyroidism",
+     "topic": "Parathyroid",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "Hypoparathyrodism hormone cause:",
+     "options": [
+      "Elevated ca level",
+      "Decrease ca level"
+     ],
+     "correctIndex": 1,
+     "explanation": "Reduced parathyroid hormone activity causes hypocalcemia.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Physiology",
+      "Endocrinology",
+      "Parathyroid",
+      "Hypoparathyroidism"
+     ],
+     "id": "lab-0020",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "O Cells",
+     "topic": "ABO Testing",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "Use O cell tube on lab for:",
+     "options": [
+      "As control",
+      "To detect Ag",
+      "To detect Ab"
+     ],
+     "correctIndex": 2,
+     "explanation": "O cells are used in antibody screening procedures to detect antibodies because they lack A and B antigens.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Hematology",
+      "Transfusion Medicine",
+      "ABO Testing",
+      "O Cells"
+     ],
+     "id": "lab-0021",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Alkali Burn First Aid",
+     "topic": "Chemical Burns",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "alkali skin burn treatment by neutralization with:",
+     "options": [
+      "Sodium bicarbonate powder",
+      "Boric  acid",
+      "Acetic acid 1%",
+      "Cold water",
+      "Hot water"
+     ],
+     "correctIndex": 3,
+     "explanation": "Chemical burns should be irrigated immediately and copiously with water rather than neutralized with another chemical; among these choices, cold water is appropriate.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Emergency Medicine",
+      "Toxicology",
+      "Chemical Burns",
+      "Alkali Burn First Aid"
+     ],
+     "id": "lab-0022",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Acid Burn First Aid",
+     "topic": "Chemical Burns",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "acid skin burn treatment by neutralization with:",
+     "options": [
+      "Sodium bicarbonate powder",
+      "Boric  acid",
+      "Acetic acid 1%",
+      "Cold water",
+      "Hot water"
+     ],
+     "correctIndex": 3,
+     "explanation": "Chemical burns should be irrigated immediately and copiously with water rather than neutralized with another chemical; among these choices, cold water is appropriate.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Emergency Medicine",
+      "Toxicology",
+      "Chemical Burns",
+      "Acid Burn First Aid"
+     ],
+     "id": "lab-0023",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Frozen RBC Storage",
+     "topic": "Red Blood Cell Storage",
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "Store RBC at  -80 ْc:",
+     "options": [
+      "1year",
+      "1month",
+      "4 year",
+      "2 year",
+      "6year"
+     ],
+     "correctIndex": 0,
+     "explanation": "Frozen RBC storage duration depends on validated temperature and blood-bank standards; the listed choices do not establish a reliable standard maximum.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Hematology",
+      "Transfusion Medicine",
+      "Red Blood Cell Storage",
+      "Frozen RBC Storage"
+     ],
+     "id": "lab-0024",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "First Aid",
+     "topic": "Minor Wounds",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "you do not take this stage for  treatment small cut In emergency :",
+     "options": [
+      "Clean with soap and water",
+      "Do pressure with piece",
+      "Immediately rinse mouth well and water",
+      "Cover it with water dressing",
+      "Sterilize"
+     ],
+     "correctIndex": 2,
+     "explanation": "Rinsing the mouth is unrelated to treatment of a small skin cut, so it is the inappropriate step.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Emergency Medicine",
+      "Wound Care",
+      "Minor Wounds",
+      "First Aid"
+     ],
+     "id": "lab-0025",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "β-Globin Mutation",
+     "topic": "Sickle Cell Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "S hemoglobin is the same defect of  thalassemia but the different is :",
+     "options": [
+      "Long B chain",
+      "Glutamic acid on B chain is substituted with valine",
+      "Glutamic acid on a chain is substitutes with valine"
+     ],
+     "correctIndex": 1,
+     "explanation": "HbS results from substitution of valine for glutamic acid in the beta-globin chain.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Hematology",
+      "Hemoglobin Disorders",
+      "Sickle Cell Disease",
+      "β-Globin Mutation"
+     ],
+     "id": "lab-0026",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Slide Cleaning",
+     "topic": "Slide Preparation",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "use for clean slide:",
+     "options": [
+      "Ethyle alcohol",
+      "Methyle alcohol"
+     ],
+     "correctIndex": 0,
+     "explanation": "Ethyl alcohol is commonly used for slide cleaning/disinfection; methanol is more commonly used to fix blood films.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Laboratory Science",
+      "Microscopy",
+      "Slide Preparation",
+      "Slide Cleaning"
+     ],
+     "id": "lab-0027",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Calcium Regulation",
+     "topic": "Calcium Homeostasis",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "regulation of calcium level in serum by:",
+     "options": [
+      "Calcitonine hormone  only",
+      "Parathyroid hormone only",
+      "Calcionine with parathyroid hormone",
+      "Vitamin D",
+      "PTH+Vitamin D+calcitonin"
+     ],
+     "correctIndex": 4,
+     "explanation": "Calcium homeostasis involves PTH, vitamin D and calcitonin; the source option is incomplete.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Physiology",
+      "Endocrinology",
+      "Calcium Homeostasis",
+      "Calcium Regulation"
+     ],
+     "id": "lab-0028",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Globin Synthesis",
+     "topic": "Thalassemia",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "the defect of thalassemia occur in:",
+     "options": [
+      "Cycle of heme",
+      "Glubin chain"
+     ],
+     "correctIndex": 1,
+     "explanation": "Thalassemia is caused by reduced synthesis of alpha- or beta-globin chains.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Hematology",
+      "Hemoglobin Disorders",
+      "Thalassemia",
+      "Globin Synthesis"
+     ],
+     "id": "lab-0029",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Pyrimidines",
+     "topic": "Nucleic Acids",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "pyrimidin base:",
+     "options": [
+      "Adenine",
+      "Guanine",
+      "Thymine",
+      "Uric acid",
+      "Urea"
+     ],
+     "correctIndex": 2,
+     "explanation": "Thymine is a pyrimidine base found in DNA.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Nucleic Acids",
+      "Pyrimidines"
+     ],
+     "id": "lab-0030",
+     "bankId": "lab-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "lab",
+     "subject": "Blood Group O Positive",
+     "topic": "ABO System",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "in O+v person",
+     "options": [
+      "No presence of Ag",
+      "No presence of Ab"
+     ],
+     "correctIndex": 0,
+     "explanation": "An O-positive person has no A or B antigens but does have the Rh(D) antigen and normally has anti-A and anti-B antibodies; neither listed statement is correct as written.",
+     "source": "Yemen Medical Licensure Examination",
+     "tags": [
+      "Hematology",
+      "Transfusion Medicine",
+      "ABO System",
+      "Blood Group O Positive"
+     ],
+     "id": "lab-0031",
+     "bankId": "lab-b1"
+    }
+   ]
+  }
+ ]
+}

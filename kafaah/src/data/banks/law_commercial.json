@@ -1,0 +1,133 @@
+{
+ "specId": "law_commercial",
+ "sectorId": "law",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "law_commercial-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "law",
+     "specId": "law_commercial",
+     "subject": "الشركات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "أي من التالي يُعدّ شركة ذات مسؤولية محدودة؟",
+     "options": [
+      "مسؤولية الشريك بقدر حصته في رأس المال",
+      "مسؤولية غير محدودة للشركاء",
+      "شركة شخص واحد لا يمكن",
+      "مسؤولية تضامنية مطلقة"
+     ],
+     "correctIndex": 0,
+     "explanation": "في الشركة ذات المسؤولية المحدودة تكون مسؤولية الشريك محدودة بمقدار حصته.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الشركات"
+     ],
+     "id": "law_commercial-0001",
+     "bankId": "law_commercial-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_commercial",
+     "subject": "الإفلاس",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الهدف الأساسي من نظام الإفلاس الحديث؟",
+     "options": [
+      "إعادة الهيكلة والوفاء بالديون عادلًا",
+      "إغلاق المنشأة فورًا دائمًا",
+      "شطب الديون كليًا",
+      "تعليق نشاط الدائنين"
+     ],
+     "correctIndex": 0,
+     "explanation": "الأنظمة الحديثة توازن بين حقوق الدائنين وإمكانية إنقاذ النشاط.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإفلاس"
+     ],
+     "id": "law_commercial-0002",
+     "bankId": "law_commercial-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_commercial",
+     "subject": "الأوراق التجارية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما خصيصة الكمبيالة (الكامنة)?",
+     "options": [
+      "الصورية وقابلية التداول بالتحويل/التظهير",
+      "عدم قابلية التداول",
+      "ربطها بعقد أساسي فقط",
+      "عدم التزام الساحب"
+     ],
+     "correctIndex": 0,
+     "explanation": "الأوراق التجارية صورية قابلة للتداول؛ التزام الساحب مستقل عن العلاقة الأصلية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الأوراق التجارية"
+     ],
+     "id": "law_commercial-0003",
+     "bankId": "law_commercial-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_commercial",
+     "subject": "العقود",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما أركان العقد الأساسية؟",
+     "options": [
+      "التراضي والمحل والسبب والأهلية",
+      "الكتابة دائمًا",
+      "الشهود دائمًا",
+      "التصديق الحكومي دائمًا"
+     ],
+     "correctIndex": 0,
+     "explanation": "التراضي والمحل والسبب والأهلية أركان أساسية لصحة العقد.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "العقود"
+     ],
+     "id": "law_commercial-0004",
+     "bankId": "law_commercial-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_commercial",
+     "subject": "الوكالة التجارية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يميّز الوكيل التجاري عن الوسيط؟",
+     "options": [
+      "الوكيل يمثّل الموكّل في التصرفات باسمه لمصلحته",
+      "الوسيط يوقّع العقد باسم نفسه دائمًا",
+      "لا فرق",
+      "الوكيل لا يستلم عمولة"
+     ],
+     "correctIndex": 0,
+     "explanation": "الوكيل يبرم التصرفات باسم الموكّل ولمصلحته، بخلاف الوسيط الذي يقرّب المتعاقدين.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الوكالة التجارية"
+     ],
+     "id": "law_commercial-0005",
+     "bankId": "law_commercial-b1"
+    }
+   ]
+  }
+ ]
+}

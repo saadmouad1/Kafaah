@@ -1,0 +1,133 @@
+{
+ "specId": "eng_elec",
+ "sectorId": "engineering",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "eng_elec-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "engineering",
+     "specId": "eng_elec",
+     "subject": "الدوائر",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما نص قانون أوم؟",
+     "options": [
+      "الجهد = التيار × المقاومة",
+      "الجهد = القدرة × الزمن",
+      "التيار = الجهد × المقاومة",
+      "المقاومة = الجهد × التيار"
+     ],
+     "correctIndex": 0,
+     "explanation": "V = I × R، وكلما زادت المقاومة قل التيار لجهد ثابت.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الدوائر"
+     ],
+     "id": "eng_elec-0001",
+     "bankId": "eng_elec-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_elec",
+     "subject": "القوى",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الهدف من تحسين معامل القدرة Power Factor في المنشآت؟",
+     "options": [
+      "تقليل التيار غير الفعّال وخفض الفاقد",
+      "زيادة الجهد فقط",
+      "إلغاء الحاجة للتأريض",
+      "زيادة التردد"
+     ],
+     "correctIndex": 0,
+     "explanation": "تحسين معامل القدرة يقلل التيار الظاهر والفاقد ويحسّن كفاءة النظام.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "القوى"
+     ],
+     "id": "eng_elec-0002",
+     "bankId": "eng_elec-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_elec",
+     "subject": "السلامة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الوظيفة الأساسية للتأريض (Earthing)؟",
+     "options": [
+      "حماية الأفراد والمعدات بتفريغ تيار الأعطال بأمان",
+      "زيادة الجهد",
+      "تقليل التردد",
+      "تحسين الإضاءة"
+     ],
+     "correctIndex": 0,
+     "explanation": "التأريض يوفّر مسارًا آمنًا لتيار العطل ويحمي الأرواح والمعدات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "السلامة"
+     ],
+     "id": "eng_elec-0003",
+     "bankId": "eng_elec-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_elec",
+     "subject": "الحمايات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يحمي الدائرة عند ارتفاع التيار؟",
+     "options": [
+      "قاطع الدائرة المصغّر MCB",
+      "المحول فقط",
+      "المكثف",
+      "المقاومة المتغيرة"
+     ],
+     "correctIndex": 0,
+     "explanation": "قاطع الدائرة (MCB) أو المنصهر يفتح الدائرة عند تجاوز التيار المحدد.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الحمايات"
+     ],
+     "id": "eng_elec-0004",
+     "bankId": "eng_elec-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_elec",
+     "subject": "الأنظمة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "في نظام ثلاثي الأطوار متوازن، ما العلاقة التقريبية بين الجهد الخطي والطوري؟",
+     "options": [
+      "الخطي = الطوري × √3",
+      "الخطي = الطوري",
+      "الخطي = الطوري ÷ √3",
+      "لا علاقة"
+     ],
+     "correctIndex": 0,
+     "explanation": "الجهد الخطي أكبر من الطوري بمقدار √3 في الأنظمة الثلاثية المتوازنة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الأنظمة"
+     ],
+     "id": "eng_elec-0005",
+     "bankId": "eng_elec-b1"
+    }
+   ]
+  }
+ ]
+}

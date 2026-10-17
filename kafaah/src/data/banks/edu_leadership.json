@@ -1,0 +1,133 @@
+{
+ "specId": "edu_leadership",
+ "sectorId": "education",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "edu_leadership-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "education",
+     "specId": "edu_leadership",
+     "subject": "القيادة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما نمط القيادة الأنسب للموقف فائق الخطورة؟",
+     "options": [
+      "القيادة التوجيهية الحاسمة",
+      "القيادة المتساهلة دائمًا",
+      "القيادة الديمقراطية المطلقة دائمًا",
+      "غياب القرار"
+     ],
+     "correctIndex": 0,
+     "explanation": "القيادة الموقفية: في الأزمات الحاسمة قد يكون النمط التوجيهي الأنسب.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "القيادة"
+     ],
+     "id": "edu_leadership-0001",
+     "bankId": "edu_leadership-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_leadership",
+     "subject": "التطوير",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما جوهر خطة تحسين الأداء المدرسي؟",
+     "options": [
+      "تحليل الوضع ووضع أهداف وبرامج قابلة للقياس والمتابعة",
+      "قائمة شكاوى",
+      "زيادة الحصص",
+      "تغيير الأثاث"
+     ],
+     "correctIndex": 0,
+     "explanation": "الخطة تقوم على تشخيص واقعي وأهداف ذكية وبرامج ومؤشرات متابعة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التطوير"
+     ],
+     "id": "edu_leadership-0002",
+     "bankId": "edu_leadership-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_leadership",
+     "subject": "الإشراف",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الهدف من الإشراف التربوي؟",
+     "options": [
+      "تطوير ممارسات المعلم مهنيًا وتدعيمه",
+      "محاسبة المعلم فقط",
+      "تكثيف الزيارات دون دعم",
+      "تصنيف المعلمين"
+     ],
+     "correctIndex": 0,
+     "explanation": "الإشراف التربوي تنمية مهنية داعمة تُحسّن ممارسات التدريس ومخرجات التعلّم.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإشراف"
+     ],
+     "id": "edu_leadership-0003",
+     "bankId": "edu_leadership-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_leadership",
+     "subject": "الشراكة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما أهمية إشراك الأسرة والمجتمع في المدرسة؟",
+     "options": [
+      "دعم التعلّم وتحسين البيئة المدرسية والنتائج",
+      "زيادة الأعباء فقط",
+      "لا أهمية",
+      "تشكيل ضغط سلبي"
+     ],
+     "correctIndex": 0,
+     "explanation": "الشراكة المجتمعية تدعم التعلّم والبيئة المدرسية والنتائج.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الشراكة"
+     ],
+     "id": "edu_leadership-0004",
+     "bankId": "edu_leadership-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_leadership",
+     "subject": "القرار",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما مبنى القرار التربوي السليم؟",
+     "options": [
+      "البيانات والأدلة والمصلحة التربوية",
+      "التقدير الشخصي فقط",
+      "الأقدمية",
+      "العشوائية"
+     ],
+     "correctIndex": 0,
+     "explanation": "القرار الجيد مبني على البيانات والأدلة بما يخدم مصلحة المتعلّمين.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "القرار"
+     ],
+     "id": "edu_leadership-0005",
+     "bankId": "edu_leadership-b1"
+    }
+   ]
+  }
+ ]
+}

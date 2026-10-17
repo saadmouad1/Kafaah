@@ -1,129 +1,171 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { motion } from 'framer-motion';
+import { usePathname, useRouter } from 'next/navigation';
 import {
-  LayoutDashboard, BrainCircuit, Activity, BookOpen,
-  BarChart3, Search, AlertTriangle, Star, Repeat,
-  Globe, Plus, Settings, User, LogOut, ChevronRight, ChevronLeft
+  LayoutDashboard, BrainCircuit, Activity, BookOpen, BarChart3, Search,
+  AlertTriangle, Star, Settings, LogOut, UserRound, Moon, Sun, Repeat, Languages,
 } from 'lucide-react';
-import { localDB } from '../../lib/mockDb';
+import { useKafaah } from '../../lib/context/KafaahProvider';
 
-const navItems = [
-  { label: 'الرئيسية', path: '/dashboard', icon: LayoutDashboard },
-  { label: 'التدريب الذكي', path: '/dashboard/practice', icon: BrainCircuit },
-  { label: 'محاكاة الاختبار', path: '/dashboard/mock', icon: Activity },
-  { label: 'بنك الأسئلة', path: '/dashboard/bank', icon: BookOpen },
-  { label: 'تحليل الأداء', path: '/dashboard/analytics', icon: BarChart3 },
-  { label: 'البحث الشامل', path: '/dashboard/search', icon: Search },
-  { label: 'سجل الأخطاء', path: '/dashboard/mistakes', icon: AlertTriangle },
-  { label: 'المفضلة', path: '/dashboard/saved', icon: Star },
-  { label: 'الإعدادات', path: '/dashboard/settings', icon: Settings },
-];
+function useTheme() {
+  const [theme, setTheme] = useState('light');
+  useEffect(() => {
+    const saved = localStorage.getItem('kafaah_theme');
+    const initial = saved || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    setTheme(initial);
+    document.documentElement.dataset.theme = initial === 'dark' ? 'dark' : 'light';
+  }, []);
+  const toggle = () => {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+    localStorage.setItem('kafaah_theme', next);
+    document.documentElement.dataset.theme = next === 'dark' ? 'dark' : 'light';
+  };
+  return { theme, toggle };
+}
 
 export default function DashboardLayout({ children }) {
   const pathname = usePathname();
-  const [user, setUser] = useState({
-    name: 'طالب كفاءة',
-    subscription: 'الباقة الشاملة',
-  });
+  const router = useRouter();
+  const { profile, sector, spec, logout, ready, hasName, t, lang, setLang, sectorShortName, specName } = useKafaah();
+  const { theme, toggle } = useTheme();
 
   useEffect(() => {
-    const session = localStorage.getItem('kafaah_session');
-    if (session) {
-      try {
-        const data = JSON.parse(session);
-        setUser({
-          name: data.name || 'طالب كفاءة',
-          subscription: 'الباقة الشاملة',
-        });
-      } catch (e) {}
-    }
-  }, []);
+    if (!ready) return;
+    if (!hasName) router.replace('/login');
+    else if (!profile.specId) router.replace('/onboarding');
+  }, [ready, hasName, profile.specId, router]);
+
+  const nav = [
+    { label: t('nav.home'), path: '/dashboard', icon: LayoutDashboard },
+    { label: t('nav.practice'), path: '/dashboard/practice', icon: BrainCircuit },
+    { label: t('nav.mock'), path: '/dashboard/mock', icon: Activity },
+    { label: t('nav.bank'), path: '/dashboard/bank', icon: BookOpen },
+    { label: t('nav.analytics'), path: '/dashboard/analytics', icon: BarChart3 },
+    { label: t('nav.search'), path: '/dashboard/search', icon: Search },
+    { label: t('nav.mistakes'), path: '/dashboard/mistakes', icon: AlertTriangle },
+    { label: t('nav.saved'), path: '/dashboard/saved', icon: Star },
+  ];
+
+  const bottom = [
+    { label: t('bottom.home'), path: '/dashboard', icon: LayoutDashboard },
+    { label: t('bottom.practice'), path: '/dashboard/practice', icon: BrainCircuit },
+    { label: t('bottom.mock'), path: '/dashboard/mock', icon: Activity },
+    { label: t('bottom.bank'), path: '/dashboard/bank', icon: BookOpen },
+    { label: t('bottom.account'), path: '/dashboard/settings', icon: Settings },
+  ];
+
+  const isActive = (p) => pathname === p || (p !== '/dashboard' && pathname?.startsWith(p));
+
+  const initials = (profile.name || t('nav.user')).trim().charAt(0);
+  const nextLangLabel = lang === 'ar' ? 'English' : 'العربية';
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--bg)' }}>
-      {/* ── Sidebar ── */}
-      <aside style={{
-        width: 280,
-        background: '#ffffff',
-        borderLeft: '1px solid var(--border)',
-        display: 'flex',
-        flexDirection: 'column',
-        position: 'sticky',
-        top: 0,
-        height: '100vh',
-        boxShadow: 'var(--shadow-subtle)',
-        zIndex: 10
-      }}>
-        <div style={{ padding: '32px 24px', borderBottom: '1px solid var(--border-subtle)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div style={{ width: 44, height: 44, borderRadius: 12, background: 'var(--emerald)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-              <User size={24} />
+    <div className="dash">
+      {/* ── Sidebar (desktop) ── */}
+      <aside className="side">
+        <Link href="/" className="brand" style={{ padding: '4px 6px 14px' }}>
+          <img src="/icon.svg" alt="" className="brand-logo-img" width="38" height="38" />
+          <span className="brand-text-wrap">
+            <span className="brand-title">كـفـاءة<span className="brand-dot" /></span>
+          </span>
+        </Link>
+
+        <div className="card soft-sector" style={{ padding: 12, borderRadius: 16 }}>
+          <div className="row" style={{ gap: 10 }}>
+            <div style={{ width: 38, height: 38, borderRadius: 12, background: 'var(--sector)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900 }}>
+              {initials}
             </div>
-            <div>
-              <h3 style={{ fontSize: 16, fontWeight: 800, color: 'var(--text)', marginBottom: 2 }}>{user.name}</h3>
-              <p style={{ fontSize: 12, color: 'var(--emerald-dark)', fontWeight: 700, background: 'var(--emerald-light)', padding: '2px 8px', borderRadius: 999, display: 'inline-block' }}>
-                {user.subscription}
-              </p>
+            <div style={{ minWidth: 0 }}>
+              <div style={{ fontWeight: 800, fontSize: 14, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{profile.name || t('nav.user')}</div>
+              <div style={{ fontSize: 11.5, color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{specName(spec)}</div>
             </div>
           </div>
-        </div>
-
-        <div style={{ padding: '24px 16px', flex: 1, overflowY: 'auto' }}>
-          <div style={{ fontSize: 11, fontWeight: 800, color: 'var(--text-muted)', marginBottom: 16, paddingRight: 8 }}>القائمة الرئيسية</div>
-          <nav style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-            {navItems.map(({ label, path, icon: Icon }) => {
-              const isActive = pathname === path || (path !== '/dashboard' && pathname?.startsWith(path));
-              return (
-                <Link key={path} href={path} style={{ textDecoration: 'none' }}>
-                  <motion.div
-                    whileHover={{ x: -4 }}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: 12,
-                      padding: '12px 16px',
-                      borderRadius: 12,
-                      background: isActive ? 'var(--emerald-light)' : 'transparent',
-                      color: isActive ? 'var(--emerald-dark)' : 'var(--text-secondary)',
-                      fontWeight: isActive ? 800 : 600,
-                      transition: 'all 0.2s ease',
-                      border: isActive ? '1px solid var(--emerald-glow)' : '1px solid transparent'
-                    }}
-                  >
-                    <Icon size={18} strokeWidth={isActive ? 2.5 : 2} />
-                    <span style={{ flex: 1 }}>{label}</span>
-                    {isActive && <ChevronLeft size={16} />}
-                  </motion.div>
-                </Link>
-              );
-            })}
-          </nav>
-        </div>
-
-        <div style={{ padding: '20px 24px', borderTop: '1px solid var(--border-subtle)' }}>
-          <Link href="/" style={{ textDecoration: 'none' }}>
-            <button style={{ display: 'flex', alignItems: 'center', gap: 12, color: 'var(--danger)', background: 'none', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: 14 }}>
-              <LogOut size={18} />
-              تسجيل الخروج
-            </button>
+          <Link href="/onboarding" className="btn btn-ghost btn-sm btn-block" style={{ marginTop: 10 }}>
+            <Repeat size={13} /> {t('nav.changeSection')}
           </Link>
+        </div>
+
+        <div className="side-group">{t('nav.menu')}</div>
+        <nav style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+          {nav.map(({ label, path, icon: Icon }) => (
+            <Link key={path} href={path} className={`side-link${isActive(path) ? ' active' : ''}`}>
+              <Icon size={18} strokeWidth={isActive(path) ? 2.5 : 2} />
+              <span>{label}</span>
+            </Link>
+          ))}
+        </nav>
+
+        <div className="side-group">{t('nav.account')}</div>
+        <Link href="/dashboard/settings" className={`side-link${isActive('/dashboard/settings') ? ' active' : ''}`}>
+          <Settings size={18} /> {t('nav.settings')}
+        </Link>
+        <Link href="/dashboard/profile" className={`side-link${isActive('/dashboard/profile') ? ' active' : ''}`}>
+          <UserRound size={18} /> {t('nav.profile')}
+        </Link>
+
+        <div style={{ marginTop: 'auto', paddingTop: 14 }}>
+          <button
+            onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
+            className="side-link"
+            style={{ width: '100%', border: 0, background: 'none', cursor: 'pointer' }}
+          >
+            <Languages size={18} /> {nextLangLabel}
+          </button>
+          <button onClick={toggle} className="side-link" style={{ width: '100%', border: 0, background: 'none', cursor: 'pointer' }}>
+            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />} {theme === 'dark' ? t('nav.lightMode') : t('nav.darkMode')}
+          </button>
+          <button
+            onClick={() => { logout(); router.replace('/'); }}
+            className="side-link"
+            style={{ width: '100%', border: 0, background: 'none', cursor: 'pointer', color: 'var(--danger)' }}
+          >
+            <LogOut size={18} /> {t('nav.logout')}
+          </button>
         </div>
       </aside>
 
-      {/* ── Main Content ── */}
-      <main style={{ flex: 1, overflowY: 'auto', padding: 'clamp(1rem, 4vw, 3rem)' }}>
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          style={{ maxWidth: 1100, margin: '0 auto' }}
-        >
-          {children}
-        </motion.div>
-      </main>
+      {/* ── Main ── */}
+      <div className="dash-main">
+        {/* Mobile app bar */}
+        <div className="row-between dash-appbar" style={{ marginBottom: 16 }}>
+          <Link href="/dashboard" className="brand">
+            <img src="/icon.svg" alt="" className="brand-logo-img" width="34" height="34" />
+            <span className="brand-title" style={{ fontSize: '1.05rem' }}>كـفـاءة</span>
+          </Link>
+          <div className="row" style={{ gap: 8 }}>
+            <span className="badge badge-brand">{sectorShortName(sector)}</span>
+            <button
+              className="icon-btn"
+              onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
+              aria-label={nextLangLabel}
+              title={nextLangLabel}
+              style={{ fontWeight: 900, fontSize: 12 }}
+            >
+              {lang === 'ar' ? 'EN' : 'ع'}
+            </button>
+            <Link href="/onboarding" className="icon-btn" aria-label={t('nav.changeSectionSpec')} title={t('nav.changeSectionSpec')}>
+              <Repeat size={18} />
+            </Link>
+            <button className="icon-btn" onClick={toggle} aria-label={t('nav.toggleTheme')}>
+              {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
+          </div>
+        </div>
+
+        <div className="dash-inner fade-up">{children}</div>
+      </div>
+
+      {/* ── Bottom nav (mobile) ── */}
+      <nav className="bottom-nav" aria-label={t('nav.bottomAria')}>
+        {bottom.map(({ label, path, icon: Icon }) => (
+          <Link key={path} href={path} className={`nav-item${isActive(path) ? ' active' : ''}`}>
+            <span className="nav-ico"><Icon size={20} strokeWidth={isActive(path) ? 2.6 : 2} /></span>
+            <span>{label}</span>
+          </Link>
+        ))}
+      </nav>
     </div>
   );
 }

@@ -1,0 +1,133 @@
+{
+ "specId": "eng_civil",
+ "sectorId": "engineering",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "eng_civil-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "engineering",
+     "specId": "eng_civil",
+     "subject": "مواد البناء",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما العمر القياسي لاختبار مقاومة الضغط للخرسانة قبل اعتماد المقاومة المميزة؟",
+     "options": [
+      "28 يومًا",
+      "7 أيام",
+      "3 أيام",
+      "90 يومًا"
+     ],
+     "correctIndex": 0,
+     "explanation": "المقاومة المميزة للخرسانة تُقاس عادة بعد 28 يومًا من الصب.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "مواد البناء"
+     ],
+     "id": "eng_civil-0001",
+     "bankId": "eng_civil-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_civil",
+     "subject": "الخرسانة الطازجة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يقيسه اختبار الهبوط (Slump)؟",
+     "options": [
+      "قابلية التشغيل Workability",
+      "المقاومة النهائية",
+      "النفاذية",
+      "المتانة"
+     ],
+     "correctIndex": 0,
+     "explanation": "اختبار الهبوط مؤشر على قابلية تشغيل الخرسانة الطازجة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الخرسانة الطازجة"
+     ],
+     "id": "eng_civil-0002",
+     "bankId": "eng_civil-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_civil",
+     "subject": "التحليل الإنشائي",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما العلاقة بين الإجهاد والانفعال ضمن الحد المرن؟",
+     "options": [
+      "خطية حسب قانون هوك",
+      "أسّية",
+      "عكسية",
+      "لا علاقة"
+     ],
+     "correctIndex": 0,
+     "explanation": "ضمن الحد المرن، الإجهاد يتناسب طرديًا مع الانفعال (قانون هوك).",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التحليل الإنشائي"
+     ],
+     "id": "eng_civil-0003",
+     "bankId": "eng_civil-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_civil",
+     "subject": "التصميم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما نسبة العمق الفعّال التقريبية لبلاطة باتجاه واحد مجردة مقارنة بالبحر؟",
+     "options": [
+      "حوالي البحر/20",
+      "البحر/2",
+      "البحر×2",
+      "لا تحدّد"
+     ],
+     "correctIndex": 0,
+     "explanation": "قواعد التقدير تضع عمق البلاطة البسيطة حول البحر/20 لضبط الترخيم.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التصميم"
+     ],
+     "id": "eng_civil-0004",
+     "bankId": "eng_civil-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_civil",
+     "subject": "التنفيذ",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "كيف يُحدَّد البحر الفعّال لكمرة بسيطة الاستناد؟",
+     "options": [
+      "البحر الصافي + العمق الفعّال",
+      "البحر الصافي فقط",
+      "ضعف البحر الصافي",
+      "المسافة بين الأعمدة دائمًا"
+     ],
+     "correctIndex": 0,
+     "explanation": "البحر الفعّال = البحر الصافي + العمق الفعّال وفق الأكواد التقريبية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التنفيذ"
+     ],
+     "id": "eng_civil-0005",
+     "bankId": "eng_civil-b1"
+    }
+   ]
+  }
+ ]
+}

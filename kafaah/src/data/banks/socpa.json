@@ -1,0 +1,133 @@
+{
+ "specId": "socpa",
+ "sectorId": "finance",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "socpa-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "finance",
+     "specId": "socpa",
+     "subject": "المعايير السعودية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الإطار المحاسبي المعتمد في السعودية للمنشآت المدرجة؟",
+     "options": [
+      "معايير المحاسبة الدولية IFRS كما تُعتمد محليًا",
+      "US GAAP مباشرة",
+      "معايير محلية منفصلة تمامًا",
+      "لا معايير"
+     ],
+     "correctIndex": 0,
+     "explanation": "اعتمدت السعودية معايير IFRS مع تعديلات/إضافات محلية محدودة من SOCPA.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المعايير السعودية"
+     ],
+     "id": "socpa-0001",
+     "bankId": "socpa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "socpa",
+     "subject": "الزكاة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يهدف إليه وعاء الزكاة في الشركات؟",
+     "options": [
+      "حساب الوعاء الخاضع للزكاة وفق النظام",
+      "تحديد ضريبة الدخل",
+      "حساب الإهلاك",
+      "توزيع الأرباح"
+     ],
+     "correctIndex": 0,
+     "explanation": "وعاء الزكاة يُحتسب وفق قواعد نظام الزكاة على الشركات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الزكاة"
+     ],
+     "id": "socpa-0002",
+     "bankId": "socpa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "socpa",
+     "subject": "الضرائب",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما نسبة ضريبة القيمة المضافة المعيارية في السعودية حاليًا؟",
+     "options": [
+      "15%",
+      "5%",
+      "10%",
+      "0%"
+     ],
+     "correctIndex": 0,
+     "explanation": "نسبة ضريبة القيمة المضافة المعيارية في السعودية 15%.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الضرائب"
+     ],
+     "id": "socpa-0003",
+     "bankId": "socpa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "socpa",
+     "subject": "الاستقطاع",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما ضريبة الاستقطاع؟",
+     "options": [
+      "ضريبة تُخصم عند الدفع لغير مقيم على بعض المدفوعات",
+      "ضريبة على المرتبات فقط",
+      "ضريبة أصول ثابتة",
+      "لا توجد"
+     ],
+     "correctIndex": 0,
+     "explanation": "ضريبة الاستقطاع تُخصم من مدفوعات معيّنة لغير المقيمين وفق الأنظمة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الاستقطاع"
+     ],
+     "id": "socpa-0004",
+     "bankId": "socpa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "socpa",
+     "subject": "التقارير",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما مكوّنات القوائم المالية الأساسية؟",
+     "options": [
+      "قائمة المركز المالي والدخل والدخل الشامل والتغيرات في الحقوق والتدفقات",
+      "قائمة الأرباح فقط",
+      "الفاتورة والمخزون",
+      "لا شيء"
+     ],
+     "correctIndex": 0,
+     "explanation": "القوائم الأساسية تشمل المركز المالي، الدخل، الدخل الشامل، التغيرات في حقوق الملكية، والتدفقات النقدية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التقارير"
+     ],
+     "id": "socpa-0005",
+     "bankId": "socpa-b1"
+    }
+   ]
+  }
+ ]
+}

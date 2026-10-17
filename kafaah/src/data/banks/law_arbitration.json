@@ -1,0 +1,133 @@
+{
+ "specId": "law_arbitration",
+ "sectorId": "law",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "law_arbitration-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "law",
+     "specId": "law_arbitration",
+     "subject": "اتفاق التحكيم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الخصيصة الأساسية لاتفاق التحكيم؟",
+     "options": [
+      "اتفاق على اللجوء للتحكيم والامتناع عن القضاء",
+      "إلزام بالتصالح فقط",
+      "تنازل عن الحق",
+      "عقد بيع"
+     ],
+     "correctIndex": 0,
+     "explanation": "اتفاق التحكيم يوجّه النزاع إلى التحكيم ويحُول دون نظر المحكمة له حسب شروطه.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "اتفاق التحكيم"
+     ],
+     "id": "law_arbitration-0001",
+     "bankId": "law_arbitration-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_arbitration",
+     "subject": "مقارنة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما ميزة التحكيم على القضاء عادة؟",
+     "options": [
+      "المرونة والسرعة والسرّية وتخصص المحكّم",
+      "إلغاء الحاجة للقانون",
+      "عدم قابلية التنفيذ",
+      "مجانية دائمة"
+     ],
+     "correctIndex": 0,
+     "explanation": "التحكيم يوفّر مرونة وسرّية وخبرة متخصصة مقارنة بالإجراءات القضائية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "مقارنة"
+     ],
+     "id": "law_arbitration-0002",
+     "bankId": "law_arbitration-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_arbitration",
+     "subject": "التنفيذ",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يسهّل تنفيذ أحكام التحكيم الأجنبية؟",
+     "options": [
+      "اتفاقية نيويورك 1958",
+      "اتفاقية باريس",
+      "لا يوجد إطار",
+      "قانون البلد فقط"
+     ],
+     "correctIndex": 0,
+     "explanation": "اتفاقية نيويورك 1958 تنظّم الاعتراف بأحكام التحكيم الأجنبية وتنفيذها.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التنفيذ"
+     ],
+     "id": "law_arbitration-0003",
+     "bankId": "law_arbitration-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_arbitration",
+     "subject": "هيئة التحكيم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "كيف تُشكّل هيئة التحكيم عادة في النزاعات الكبيرة؟",
+     "options": [
+      "ثلاثة محكّمين أو محكّم فرد حسب الاتفاق",
+      "خمسة دائمًا",
+      "المحكمة تعيّن الكل",
+      "لا هيئة"
+     ],
+     "correctIndex": 0,
+     "explanation": "الشائع محكّم واحد في النزاعات الصغيرة وثلاثة في الكبيرة، بتعيين حسب الاتفاق.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "هيئة التحكيم"
+     ],
+     "id": "law_arbitration-0004",
+     "bankId": "law_arbitration-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_arbitration",
+     "subject": "البطلان",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما سبب شائع لبطلان حكم التحكيم؟",
+     "options": [
+      "تجاوز المحكّم نطاق الاتفاق أو مخالفة النظام العام",
+      "طول الجلسة",
+      "كثرة الأدلة",
+      "تخصص المحكّم"
+     ],
+     "correctIndex": 0,
+     "explanation": "من أسباب البطلان تجاوز حدود اتفاق التحكيم أو مخالفة النظام العام.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "البطلان"
+     ],
+     "id": "law_arbitration-0005",
+     "bankId": "law_arbitration-b1"
+    }
+   ]
+  }
+ ]
+}

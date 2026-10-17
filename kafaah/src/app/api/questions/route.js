@@ -1,26 +1,34 @@
 import { NextResponse } from 'next/server';
-import { prisma } from '@/lib/prisma';
+import { queryQuestions, subjectsFor } from '@/lib/banks';
 
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
+// GET /api/questions?sector=&spec=&specs=&bank=&banks=&subject=&difficulty=&search=&limit=&offset=
 export async function GET(request) {
   try {
-    const { searchParams } = new URL(request.url);
-    const sector = searchParams.get('sector') || null;
-    const spec = searchParams.get('spec') || null;
-    const limit = parseInt(searchParams.get('limit') || '0');
+    const sp = new URL(request.url).searchParams;
+    const sector = sp.get('sector');
+    const spec = sp.get('spec');
+    const specs = sp.get('specs');
+    const bank = sp.get('bank');
+    const banks = sp.get('banks');
+    const subject = sp.get('subject');
+    const difficulty = sp.get('difficulty');
+    const search = sp.get('search');
 
-    const where = {};
-    if (sector && sector !== 'all') where.sectorId = sector;
-    if (spec && spec !== 'all') where.specializationId = spec;
+    if (sp.get('subjects') === '1') {
+      return NextResponse.json({ subjects: subjectsFor({ sector, spec, specs }) });
+    }
 
-    const questions = await prisma.question.findMany({
-      where,
-      orderBy: { createdAt: 'asc' },
-      ...(limit > 0 ? { take: limit } : {}),
+    const result = queryQuestions({
+      sector, spec, specs, bank, banks, subject, difficulty, search,
+      limit: sp.get('limit') || 20,
+      offset: sp.get('offset') || 0,
     });
-
-    return NextResponse.json({ questions, total: questions.length });
+    return NextResponse.json(result);
   } catch (error) {
     console.error('Questions API Error:', error);
-    return NextResponse.json({ error: 'Failed to fetch questions' }, { status: 500 });
+    return NextResponse.json({ error: 'تعذّر تحميل الأسئلة' }, { status: 500 });
   }
 }

@@ -1,0 +1,133 @@
+{
+ "specId": "eng_it",
+ "sectorId": "engineering",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "eng_it-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "الخوارزميات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما التعقيد الزمني للبحث الثنائي في مصفوفة مرتبة؟",
+     "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n²)",
+      "O(1)"
+     ],
+     "correctIndex": 0,
+     "explanation": "البحث الثنائي ينصّف مجال البحث في كل خطوة => تعقيد لوغاريتمي O(log n).",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الخوارزميات"
+     ],
+     "id": "eng_it-0001",
+     "bankId": "eng_it-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "قواعد البيانات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما هدف التطبيع إلى الشكل الثالث 3NF؟",
+     "options": [
+      "إزالة الاعتماد المتعدّي وتقليل التكرار",
+      "زيادة التكرار",
+      "دمج كل الجداول",
+      "إلغاء المفاتيح"
+     ],
+     "correctIndex": 0,
+     "explanation": "3NF يزيل الاعتمادات العابرة لتقليل التكرار وتناقض البيانات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "قواعد البيانات"
+     ],
+     "id": "eng_it-0002",
+     "bankId": "eng_it-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "الشبكات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الفرق الأساسي بين TCP و UDP؟",
+     "options": [
+      "TCP موثوق ومرتّب، UDP أسرع دون ضمان",
+      "UDP موثوق أكثر",
+      "كلاهما غير موثوق",
+      "لا فرق"
+     ],
+     "correctIndex": 0,
+     "explanation": "TCP يضمن الوصول والترتيب عبر المصافحة، بينما UDP أخف وأسرع دون ضمانات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الشبكات"
+     ],
+     "id": "eng_it-0003",
+     "bankId": "eng_it-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "الأمن",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما أفضل ممارسة للوقاية من حقن SQL؟",
+     "options": [
+      "استخدام الاستعلامات المعدّة (Prepared Statements)",
+      "دمج النصوص مباشرة",
+      "تعطيل التحقق",
+      "إخفاء الأخطاء فقط"
+     ],
+     "correctIndex": 0,
+     "explanation": "الاستعلامات المعدّة والربط المعاملاتي تمنع تفسير المدخلات كأوامر SQL.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الأمن"
+     ],
+     "id": "eng_it-0004",
+     "bankId": "eng_it-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "هندسة البرمجيات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما أهم خصيصة في نمط REST؟",
+     "options": [
+      "انعدام الحالة Stateless",
+      "الاعتماد على الجلسات",
+      "بروتوكول خاص",
+      "حالة مشتركة إجبارية"
+     ],
+     "correctIndex": 0,
+     "explanation": "REST مبني على انعدام الحالة؛ كل طلب يحمل ما يلزمه من معلومات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "هندسة البرمجيات"
+     ],
+     "id": "eng_it-0005",
+     "bankId": "eng_it-b1"
+    }
+   ]
+  }
+ ]
+}

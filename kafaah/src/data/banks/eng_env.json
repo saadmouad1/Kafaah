@@ -1,0 +1,133 @@
+{
+ "specId": "eng_env",
+ "sectorId": "engineering",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "eng_env-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "engineering",
+     "specId": "eng_env",
+     "subject": "جودة المياه",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ماذا يعني الطلب الحيوي على الأكسجين BOD؟",
+     "options": [
+      "كمية الأكسجين التي تستهلكها الكائنات لتحليل المواد العضوية",
+      "كمية الكلور المضافة",
+      "نسبة الأملاح",
+      "درجة الحرارة"
+     ],
+     "correctIndex": 0,
+     "explanation": "BOD مؤشر على تلوّث المياه بالمواد العضوية القابلة للتحلل الحيوي.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "جودة المياه"
+     ],
+     "id": "eng_env-0001",
+     "bankId": "eng_env-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_env",
+     "subject": "المعالجة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الهدف الأساسي من عملية الحمأة المنشّطة؟",
+     "options": [
+      "إزالة المواد العضوية حيويًا",
+      "زيادة العكارة",
+      "إضافة ملوحة",
+      "رفع الحرارة"
+     ],
+     "correctIndex": 0,
+     "explanation": "الحمأة المنشّطة نظام حيوي هوائي يزيل المواد العضوية الذائبة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المعالجة"
+     ],
+     "id": "eng_env-0002",
+     "bankId": "eng_env-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_env",
+     "subject": "كيمياء المياه",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما سبب عسر الماء (Hardness)؟",
+     "options": [
+      "أملاح الكالسيوم والمغنيسيوم",
+      "الصوديوم فقط",
+      "الكلور",
+      "الأكسجين"
+     ],
+     "correctIndex": 0,
+     "explanation": "العسر ناتج عن أملاح الكالسيوم والمغنيسيوم المذابة في الماء.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "كيمياء المياه"
+     ],
+     "id": "eng_env-0003",
+     "bankId": "eng_env-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_env",
+     "subject": "المعالجة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما وحدة قياس عكارة مياه الشرب؟",
+     "options": [
+      "NTU",
+      "mg/L",
+      "PSI",
+      "كيلوغرام"
+     ],
+     "correctIndex": 0,
+     "explanation": "وحدة العكارة القياسية هي NTU (الوحدة العكرية القياسية).",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المعالجة"
+     ],
+     "id": "eng_env-0004",
+     "bankId": "eng_env-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_env",
+     "subject": "تلوث الهواء",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يقيسه PM2.5؟",
+     "options": [
+      "الجسيمات العالقة الدقيقة قطر 2.5 ميكرون أو أقل",
+      "ثاني أكسيد الكربون",
+      "الأوزون فقط",
+      "الرصاص"
+     ],
+     "correctIndex": 0,
+     "explanation": "PM2.5 جسيمات دقيقة جدًا تخترق الجهاز التنفسي السفلي وتُعدّ من أخطر ملوّثات الهواء.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "تلوث الهواء"
+     ],
+     "id": "eng_env-0005",
+     "bankId": "eng_env-b1"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "specId": "edu_subject",
+ "sectorId": "education",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "edu_subject-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "education",
+     "specId": "edu_subject",
+     "subject": "التخطيط",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما العنصر الذي لا يخلو منه خطة درس فعّالة؟",
+     "options": [
+      "الأهداف والأنشطة والتقويم والموارد",
+      "العنوان فقط",
+      "الواجب فقط",
+      "التاريخ فقط"
+     ],
+     "correctIndex": 0,
+     "explanation": "خطة الدرس تشمل أهدافًا واضحة وأنشطة ووسائل وتقويمًا متناسقًا.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التخطيط"
+     ],
+     "id": "edu_subject-0001",
+     "bankId": "edu_subject-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_subject",
+     "subject": "المناهج",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي تعنيه معايير المنهج؟",
+     "options": [
+      "تحديد ما يجب أن يعرفه المتعلّم ويقدر عليه في كل محور",
+      "قائمة الكتب فقط",
+      "توزيع الحصص",
+      "أسماء المعلمين"
+     ],
+     "correctIndex": 0,
+     "explanation": "معايير المنهج تصف مخرجات التعلّم المتوقعة ومستوياتها.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المناهج"
+     ],
+     "id": "edu_subject-0002",
+     "bankId": "edu_subject-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_subject",
+     "subject": "التقويم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ماذا يعني صدق أداة التقويم (Validity)؟",
+     "options": [
+      "قياس الأداة لما وُضعت لقياسه فعلًا",
+      "سهولة الاستخدام",
+      "طول الأداة",
+      "سرعة التصحيح"
+     ],
+     "correctIndex": 0,
+     "explanation": "الصدق = قياس الأداة للهدف المحدّد بدقة، أما الثبات فاتساق النتائج.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التقويم"
+     ],
+     "id": "edu_subject-0003",
+     "bankId": "edu_subject-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_subject",
+     "subject": "التقنية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الفائدة التربوية الأساسية للتعلم الرقمي؟",
+     "options": [
+      "إثراء التعلّم عبر التفاعل والوصول والوسائط المتعددة",
+      "الاستغناء عن المعلم",
+      "تقليل التفكير",
+      "إهمال التقويم"
+     ],
+     "correctIndex": 0,
+     "explanation": "التقنية تثري التعلّم وتزيد التفاعل والوصول والوسائط، وتدعم لا تلغي دور المعلم.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التقنية"
+     ],
+     "id": "edu_subject-0004",
+     "bankId": "edu_subject-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_subject",
+     "subject": "بناء الأسئلة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يرفع جودة السؤال الاختباري؟",
+     "options": [
+      "وضوح الصياغة وتدرّج الصعوبة والابتعاد عن الإيحاء",
+      "الغموض",
+      "خيارات متطابقة",
+      "إيحاء الإجابة في السؤال"
+     ],
+     "correctIndex": 0,
+     "explanation": "السؤال الجيد واضح، بلا إيحاء، بخيارات متماثلة ومتدرّج الصعوبة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "بناء الأسئلة"
+     ],
+     "id": "edu_subject-0005",
+     "bankId": "edu_subject-b1"
+    }
+   ]
+  }
+ ]
+}

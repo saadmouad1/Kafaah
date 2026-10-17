@@ -1,0 +1,133 @@
+{
+ "specId": "cpa",
+ "sectorId": "finance",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "cpa-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "المحاسبة المالية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما المعادلة المحاسبية الأساسية؟",
+     "options": [
+      "الأصول = الخصوم + حقوق الملكية",
+      "الأصول = الإيرادات − المصروفات",
+      "الأصول + الخصوم = صفر",
+      "حقوق الملكية = الأصول × 2"
+     ],
+     "correctIndex": 0,
+     "explanation": "المعادلة: الأصول = الالتزامات + حقوق الملكية، وهي أساس القيد المزدوج.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المحاسبة المالية"
+     ],
+     "id": "cpa-0001",
+     "bankId": "cpa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "أساس الاستحقاق",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يميّز أساس الاستحقاق Accrual؟",
+     "options": [
+      "إثبات الإيراد والمصروف عند تحققه لا عند النقد",
+      "الإثبات عند تحصيل النقد فقط",
+      "إهمال المصروفات",
+      "الاعتماد على النقد فقط"
+     ],
+     "correctIndex": 0,
+     "explanation": "أساس الاستحقاق يثبت العمليات عند تحققها لا عند تدفق النقد.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "أساس الاستحقاق"
+     ],
+     "id": "cpa-0002",
+     "bankId": "cpa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "التدقيق",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما أنواع رأي المدقق الشائعة؟",
+     "options": [
+      "رأي غير معدّل، متحفّظ، معاكس، وامتناع عن الرأي",
+      "رأي واحد فقط",
+      "لا يصدر المدقق رأيًا",
+      "رأي إداري"
+     ],
+     "correctIndex": 0,
+     "explanation": "أراء المدقق: غير معدّل، متحفّظ (أهمية)، معاكس، أو الامتناع عن إبداء الرأي.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التدقيق"
+     ],
+     "id": "cpa-0003",
+     "bankId": "cpa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "الأصول",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما طرق إهلاك الأصول الثابتة الشائعة؟",
+     "options": [
+      "القسط الثابت والمتناقص ووحدات الإنتاج",
+      "القسط الثابت فقط",
+      "المتوسط المرجّح",
+      "الاستحقاق الدوري"
+     ],
+     "correctIndex": 0,
+     "explanation": "تشمل الطرق القسط الثابت والمتناقص ووحدات الإنتاج، حسب نمط الاستفادة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الأصول"
+     ],
+     "id": "cpa-0004",
+     "bankId": "cpa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "المعايير",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الفرق الجوهري بين IFRS وUS GAAP في جوهرهما؟",
+     "options": [
+      "IFRS مبادئ عامة وGAAP أكثر تفصيلًا بالقواعد",
+      "لا فرق إطلاقًا",
+      "IFRS أمريكية",
+      "GAAP عالمية فقط"
+     ],
+     "correctIndex": 0,
+     "explanation": "IFRS يقترب من المبادئ العامة بينما US GAAP أكثر تفصيلًا بالقواعد الخاصة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المعايير"
+     ],
+     "id": "cpa-0005",
+     "bankId": "cpa-b1"
+    }
+   ]
+  }
+ ]
+}

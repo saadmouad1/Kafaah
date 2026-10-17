@@ -1,0 +1,2291 @@
+{
+ "specId": "dentistry",
+ "sectorId": "medical",
+ "updatedAt": "2026-10-17",
+ "count": 85,
+ "banks": [
+  {
+   "id": "dentistry-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "1-A patient comes to you with medium pain of tooth filled with Composite resin as a result of cold or hot drinks, what your initial management will be?",
+     "options": [
+      "Remove the restorative material and start an Endodontic treatment",
+      "Remove the restorative material and place a sedative temporary material",
+      "Place a coat of bonding material on the old composite",
+      "No one."
+     ],
+     "correctIndex": 1,
+     "explanation": "For postoperative thermal sensitivity after a composite restoration, a conservative initial approach is reassessment and, when indicated, replacement with a sedative temporary restoration; immediate endodontic treatment is not automatic.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0001",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "2. When you serape the posterior palatal area on the master cast, all of the followinas are true. Except:",
+     "options": [
+      "The deepest areas are located on either side of midline, one third the distance anteriorly from the posterior vibrating line.",
+      "This technique is a physiologic technique because you scrape the cast according to the compressibility of the palatal tissues",
+      "The scraping tapers to a feather edge as it approaches the anterior vibrating line",
+      "The tissue covering the medial palatal raphe is scraped to a lesser depth than the lateral areas."
+     ],
+     "correctIndex": 0,
+     "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0002",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "3. A water spray is used with rotary instruments to: (all are true Except)",
+     "options": [
+      "Reduce heating of the dentine.",
+      "Reduce clogging of burs.",
+      "Minimize movement of fluid in dentinal tubules",
+      "Remove debris away from operative site."
+     ],
+     "correctIndex": 2,
+     "explanation": "Water spray cools the tooth, reduces debris/bur clogging, and flushes the field; minimizing movement of fluid in dentinal tubules is not its primary purpose, making C the exception.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0003",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Powder Component",
+     "topic": "Acrylic Resin",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "4. The powder used in mixing acmylic resin is referred to as the:",
+     "options": [
+      "Dimer. 13. Initiator.",
+      "Polymer.",
+      "Monomer."
+     ],
+     "correctIndex": 1,
+     "explanation": "The powder component of conventional acrylic resin is polymer.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Dental Materials",
+      "Acrylic Resin",
+      "Powder Component",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0004",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Causes of Root Perforation",
+     "topic": "Root Perforation",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "5. Root perforations are usually caused by:",
+     "options": [
+      "Creating a ledge and persisting until a perforation develops. R. Canal stripping,",
+      "Using an extra-long 11-tile.",
+      "Creating a ledge and persisting until a perforation develops and Canal stripping"
+     ],
+     "correctIndex": 2,
+     "explanation": "Root perforation commonly results from persistent instrumentation through a ledge and/or stripping of thin canal walls; the combined option best captures these mechanisms.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Perforation",
+      "Causes of Root Perforation",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0005",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "6. You are restoring a vital lower first permanent molar with a deep carious cavity. In order to minim the risk of bacteria gaining access to the pulp you could plan to:",
+     "options": [
+      "Curry out direct pulp capping.",
+      "Remove caries from the cavity wall before the cavity floor.",
+      "Remove caries from the floor of the cavity before the cavity walls.",
+      "Give the patient a course of antibiotics for a week"
+     ],
+     "correctIndex": 1,
+     "explanation": "Removing caries from the cavity walls before the pulpal floor reduces contamination and risk of pulpal exposure.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0006",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "7. The shape and amount of the distobuccal extension of a complete mandibular tulous impression is determined during border molding by",
+     "options": [
+      "Remus of the mandible.",
+      "Position of the masseter muscle",
+      "Size and location of the buccal frenam.",
+      "Lateral pterygoid muscle"
+     ],
+     "correctIndex": 1,
+     "explanation": "The distobuccal flange is shaped by the functional action and position of the masseter muscle.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0007",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "8. Regarding porcelain veneers all are true Except: A They are more durable than composite veneers in terms of colour and surface gloss",
+     "options": [
+      "The occlusion is not usually affected as they do not cover the palatul aspect of the teeth.",
+      "They are less likely to fracture than composite veneers.",
+      "They are more conservative of moth tissue than crown preparations."
+     ],
+     "correctIndex": 1,
+     "explanation": "Porcelain veneers have superior color/surface stability and are conservative compared with crowns, but they are not universally less fracture-prone than composite veneers; C is the intended exception.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0008",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Thermafil",
+     "topic": "Root Canal Obturation",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "9. Thermafil is:",
+     "options": [
+      "An endodontic obturator.",
+      "An enlarging instrument.",
+      "An instrument to remove pulp.",
+      "Is a cold gutta-percha technique."
+     ],
+     "correctIndex": 0,
+     "explanation": "Thermafil is a heated carrier-based gutta-percha obturation system, so it is an endodontic obturator.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Obturation",
+      "Thermafil",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0009",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "10. Posterior composite restorations are successful in al all of i the situations, Except:",
+     "options": [
+      "No occlusal contact",
+      "Moisture is not controlled",
+      "Isthmus not wider than one-third of intercuspal distance",
+      "Gingival extension is sound enamel"
+     ],
+     "correctIndex": 1,
+     "explanation": "Posterior composites are less predictable when moisture cannot be controlled; isolation is critical for adhesive restorative procedures.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0010",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "11. The important property of the restorative material of a posterior tooth should be?",
+     "options": [
+      "Inexpensive.",
+      "Esthetic.",
+      "Durability.",
+      "No one"
+     ],
+     "correctIndex": 2,
+     "explanation": "Durability is an important property for posterior restorative materials because they must withstand substantial functional loading.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0011",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "12. The major cause of rotary lustrument separation is.",
+     "options": [
+      "Operator dependent.",
+      "Instrument fatigue.",
+      "Using non torque motors",
+      "Cuting dry."
+     ],
+     "correctIndex": 1,
+     "explanation": "Instrument separation is strongly associated with cyclic/torsional fatigue, especially after repeated use.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0012",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "13. Inadequate incisal reduction during tooth preparation of a metal-ceramic restoration result is:",
+     "options": [
+      "Inadequate path of insertion",
+      "Less resistance and retention of the restoration.",
+      "Poor incisal translucency in the final restoration.",
+      "All are truc."
+     ],
+     "correctIndex": 2,
+     "explanation": "Insufficient incisal reduction in a metal-ceramic crown limits space for porcelain and can compromise incisal translucency and esthetics.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0013",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "14. Preparation of a tooth for metal ceramic restoration should be done in:",
+     "options": [
+      "One plane for esthetic",
+      "Two plane by follow the.morphology.",
+      "D. No Parallel one. To long axis."
+     ],
+     "correctIndex": 1,
+     "explanation": "Metal-ceramic preparation follows tooth morphology and generally uses two-plane facial reduction to provide uniform material thickness.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0014",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "15. This bridge is more conservative of tooth tis sue than the other.",
+     "options": [
+      "Resin bonded FPD",
+      "Fixed-fixed PD.",
+      "Fixed-movable PD.",
+      "Simple cantilever FPD"
+     ],
+     "correctIndex": 0,
+     "explanation": "Resin-bonded fixed partial dentures usually require the least tooth reduction among the listed fixed prostheses.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0015",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "16. Regarding biologic compatibility the best restorative material is:",
+     "options": [
+      "composite",
+      "amalgam",
+      "glass ionomer",
+      "No one"
+     ],
+     "correctIndex": 2,
+     "explanation": "Glass ionomer has favorable biologic compatibility and is generally well tolerated among the listed restorative materials.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0016",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "17. The primary reasons for obtaining the most _extensive areal coverage for a mandibular complete denture are:",
+     "options": [
+      "To increase the capacity of the underlying structures to withstand the stress due to hiting force and to increase the effectiveness of the seal.",
+      "To increase the capacity of the underlying structures to withstand the stress due to biting force and to improve appearance.",
+      "To provide balanced occlusion and to increase tongue space.",
+      "To improve retention and increase toungue space."
+     ],
+     "correctIndex": 0,
+     "explanation": "Extensive mandibular denture coverage distributes occlusal forces over a larger area and improves the effectiveness of the denture base/seal.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0017",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Root Canal Treatment and Pulp Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "18. Endodontically treated teeth that have been restored with a cast post and core, and crown, are subiected to the high incidence of:",
+     "options": [
+      "Periodontal disease",
+      "Recurrent caries.",
+      "Vertical root fracture",
+      "The need for an apicoectomy."
+     ],
+     "correctIndex": 2,
+     "explanation": "Endodontically treated teeth restored with posts and crowns have an important risk of vertical root fracture.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Treatment and Pulp Disease",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0018",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "19. The posterior palatal seal for a maxillary dentures:",
+     "options": [
+      "Is placed 3 mm posterior to the vibrating line.",
+      "Is not necessary when fabricating a complete denture on a patient with a flut.",
+      "Is not necessary if a metal base is used.",
+      "Will vary in outline and depth according to the palatal form of the patient"
+     ],
+     "correctIndex": 3,
+     "explanation": "The posterior palatal seal varies in outline and depth according to the anatomy and compressibility of the patient’s palate.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0019",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Ideal Crown-to-Root Ratio",
+     "topic": "Fixed Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "20. The ideal crown-to-root-ratio of a tooth to be utilized as bridge abutment:",
+     "options": [
+      "2:3.",
+      "2:1.",
+      "1:2.",
+      "1:1."
+     ],
+     "correctIndex": 0,
+     "explanation": "The classic ideal crown-to-root ratio for a bridge abutment is approximately 2:3.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed Prosthodontics",
+      "Ideal Crown-to-Root Ratio",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0020",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Compensating Curve",
+     "topic": "Complete Denture Occlusion",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "21. The anterioposterior curvature in the median plane) and the mediolateral curvature (in the frontal plane) in the alianment of the occluding surfaces and incisal edges of artificial teeth that are to develop balanced occlusion is called:",
+     "options": [
+      "Curve of Spee",
+      "Curve of Wilson.",
+      "Curve of Pleasure",
+      "Compensating Curve."
+     ],
+     "correctIndex": 3,
+     "explanation": "The combination of anteroposterior and mediolateral curves used to achieve balanced occlusion is the compensating curve.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Complete Denture Occlusion",
+      "Compensating Curve",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0021",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Oral Hygiene and Tooth Wear",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "22. Attrition tooth wear most frequently affects which of the following tooth surfaces?",
+     "options": [
+      "Buccal and Incisal.",
+      "Incisal and Occlusal.",
+      "Lingual and Incisal.",
+      "Occlusal and Buccal."
+     ],
+     "correctIndex": 1,
+     "explanation": "Attrition from tooth-to-tooth contact most commonly affects incisal and occlusal surfaces.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Preventive Dentistry",
+      "Oral Hygiene and Tooth Wear",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0022",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Root Canal Treatment and Pulp Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "23. According_to the root canal _ preparation _ the instrumentation in apical coronal technique:",
+     "options": [
+      "Storts at the apex and go back to the coronal portion",
+      "Starts at the coronal portion and go on to the apex",
+      "Starts at mid third.",
+      "No one."
+     ],
+     "correctIndex": 0,
+     "explanation": "Apical-coronal instrumentation begins at the apical portion and progresses toward the coronal portion.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Treatment and Pulp Disease",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0023",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Proximal Caries Detection",
+     "topic": "Dental Caries Imaging",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "24. Best method to diuanose proximal caries:",
+     "options": [
+      "Bitowing radiograph",
+      "Periapical radiograph",
+      "Examine for loss of translucency of enamel. O- Panorama radiograph."
+     ],
+     "correctIndex": 0,
+     "explanation": "Bitewing radiographs are particularly useful for detecting proximal caries because they visualize the crowns and interproximal contacts.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Oral Radiology",
+      "Dental Caries Imaging",
+      "Proximal Caries Detection",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0024",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Root Canal Treatment and Pulp Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "25. The canal can be obturate when it has the following features Except:",
+     "options": [
+      "Canal is enlargeć u optimum size.",
+      "Canal is dry.",
+      "Tooth is symptomatic.",
+      "No foul odour or swelling."
+     ],
+     "correctIndex": 2,
+     "explanation": "A symptomatic tooth is not an ideal candidate for obturation; obturation is generally performed after symptoms and active infection are controlled and the canal is properly prepared and dry.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Treatment and Pulp Disease",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0025",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "26. Which one of the following is an ideal abutment?",
+     "options": [
+      "Endodontically treated tooth.",
+      "Tooth with cervical erosion.",
+      "Un-restored caries free tooth.",
+      "Tooth with caries on single surface."
+     ],
+     "correctIndex": 2,
+     "explanation": "An unrestored, caries-free tooth with sound periodontal support is the preferred abutment among the listed choices.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0026",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Dry Oven Cycle",
+     "topic": "Dry Heat Sterilization",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "27. Sterilization in dry oven:",
+     "options": [
+      "One hour at 100 c H. 90 minutes at 160 c",
+      "Two hour at160 c.",
+      "No one"
+     ],
+     "correctIndex": 1,
+     "explanation": "A conventional dry-heat cycle is approximately 160°C for 2 hours, making C the intended answer.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Dental Infection Control",
+      "Dry Heat Sterilization",
+      "Dry Oven Cycle",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0027",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "28. Incorrect determination of working lenath results in:",
+     "options": [
+      "Acute apical inflammation.",
+      "Inter treatment flare-ups.",
+      "Destruction of the anatomical constriction.",
+      "All are true."
+     ],
+     "correctIndex": 3,
+     "explanation": "Incorrect working length can cause apical inflammation, flare-ups, and loss of the apical constriction, so all listed consequences can occur.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0028",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "29. Which one of the conditions would delay a dentist's decision of taking full mouth X- ray examination?",
+     "options": [
+      "Patient had full mouth examination by X-ray 6 months ago.",
+      "Patient will receive X-ray-6 next week."
+     ],
+     "correctIndex": 0,
+     "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0029",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "30. The main difference between composite and amalgam as restorative material is:",
+     "options": [
+      "Occlusal wear.",
+      "Cost.",
+      "Retention",
+      "Manipulation."
+     ],
+     "correctIndex": 2,
+     "explanation": "Composite restorations rely on adhesive bonding and therefore differ from amalgam in retention requirements.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0030",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "31. 0verhang in in class ll amalgam restoration could be due to.",
+     "options": [
+      "Lack of carving",
+      "Lack of burnishing",
+      "Inadequate using matrix band system and wedge",
+      "Allare true"
+     ],
+     "correctIndex": 3,
+     "explanation": "Class II amalgam overhangs may result from inadequate matrix/wedge adaptation, insufficient contouring, or inadequate carving/burnishing; the intended answer is all of the above.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0031",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "32. The T-Band matrix system is designed to be on which teeth?",
+     "options": [
+      "Primary premolars",
+      "Primary molars.",
+      "Permanent premolars",
+      "Permanent molars."
+     ],
+     "correctIndex": 1,
+     "explanation": "The T-band matrix system is designed primarily for primary molars.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0032",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Root Canal Treatment and Pulp Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "33. An ideal root canal filling material would have which of the following properties Except?",
+     "options": [
+      "Non-irritant to the periapical tissues.",
+      "Absorb moisture.",
+      "Be easily introduced into the root canal system.",
+      "Not visible through the dentine."
+     ],
+     "correctIndex": 0,
+     "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Treatment and Pulp Disease",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0033",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Scatter Radiation",
+     "topic": "Radiation Protection",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "34. A lead apron with a thyroid collar with proteet a patient from what type of radiation?",
+     "options": [
+      "Thermal",
+      "Solar",
+      "Primary.",
+      "Scatter"
+     ],
+     "correctIndex": 3,
+     "explanation": "Lead aprons and thyroid collars primarily reduce scatter radiation reaching the patient’s tissues.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Oral Radiology",
+      "Radiation Protection",
+      "Scatter Radiation",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0034",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Oral Hygiene and Tooth Wear",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "35. Pits and fissure sealants are indicated in:",
+     "options": [
+      "Deep pits and fissure.",
+      "Newly erupted teeth.",
+      "Shallow and deep cavity.",
+      "Deep pits and fissure and Newly erupted teeth"
+     ],
+     "correctIndex": 3,
+     "explanation": "Pit and fissure sealants are especially useful for deep susceptible fissures and newly erupted permanent teeth with appropriate caries risk.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Preventive Dentistry",
+      "Oral Hygiene and Tooth Wear",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0035",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Enamel Etching",
+     "topic": "Laminate Veneers",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "36. During the cementation of laminate veneer etching of the enamel surface using",
+     "options": [
+      "10% phosphoric acid",
+      "37% hydrofluoric acid",
+      "37% phosphoric acid",
+      "10% hydrofluoric acid"
+     ],
+     "correctIndex": 2,
+     "explanation": "For enamel etching before laminate veneer bonding, phosphoric acid is used; 37% is the conventional concentration listed.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Laminate Veneers",
+      "Enamel Etching",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0036",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "37. When treatment planning for Fixed Prosthodontics, all of the following information can be obtained by studying diagnostic casts Except:",
+     "options": [
+      "The length of the abutment teeth can be accurately gauged.",
+      "The true inclination of the abutment teeth will be evident."
+     ],
+     "correctIndex": 0,
+     "explanation": "Diagnostic casts do not allow accurate assessment of actual root/abutment length; radiographs and clinical examination are needed for that.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0037",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "38. Depths of Plague Removal for Various Oral Hygiene Devices is :",
+     "options": [
+      "Toothbrush 2.5 mm, Floss 0.5 mm, Water irrigation device 4.0 mm.",
+      "Toothbrush 4.0 mm, Floss 2.5 mm, Water irrigation device 0.5 mm.",
+      "Toothbrush 0.5 mm, Floss 4.0 mm, Water irrigation device 2.5 mm.",
+      "Toothbrush 0.5 mm, Floss 2.5 mm, Water irrigation device 4.0 mm."
+     ],
+     "correctIndex": 3,
+     "explanation": "The source’s listed pattern that best matches standard oral-hygiene access is toothbrush about 0.5 mm, floss about 2.5 mm, and water irrigation about 4 mm.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0038",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "39. About the pontic, which of the following statements is incurrecti or it the Sailors of bridge:",
+     "options": [
+      "Excessive tissue contact is a major future in failure of bridge",
+      "The area of the contact between the pontic and ridge should be small and convex",
+      "There should be small space between pontic and soft tissue.",
+      "The tip of the pontic must be seated to keratinized gingiva"
+     ],
+     "correctIndex": 2,
+     "explanation": "A pontic should have limited, hygienic tissue contact; the statement about a space between pontic and soft tissue is not generally correct for tissue-contact pontic designs, making C the intended incorrect statement.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0039",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "40. Methods to Correct Biological Width Violation:",
+     "options": [
+      "Surgical removing bone away from proximity to the restorative margin.",
+      "Orthodontically by moving the tooth and thus moving the margin away from the bone",
+      "Replacement of restoration",
+      "All are true."
+     ],
+     "correctIndex": 3,
+     "explanation": "Biologic-width violation can be managed by surgical crown lengthening, orthodontic extrusion, and correction/replacement of the restoration as indicated.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0040",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Retention of Porcelain Veneers",
+     "topic": "Porcelain Veneers",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "41. The primary source of retention of porcelain veneer.",
+     "options": [
+      "mechanical retention from under cut",
+      "micromechanical bond from etching of enamel and porcelain",
+      "mechanicni retention from secondary retentive features",
+      "chemical bond hy saline coupling agent."
+     ],
+     "correctIndex": 1,
+     "explanation": "Porcelain veneers obtain primary retention from micromechanical bonding after etching, together with the adhesive/silane system.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Porcelain Veneers",
+      "Retention of Porcelain Veneers",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0041",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "42. Cohesive fracture of ceramic in metal ceramic restoration occurs due to:",
+     "options": [
+      "Increased thickness of ceramic.",
+      "Increased thickness of metal.",
+      "Decreased of occlusal contact.",
+      "All are true."
+     ],
+     "correctIndex": 0,
+     "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0042",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "43. Regarding to Zirconia Ceramic restoration (all are true Except):",
+     "options": [
+      "More expensive than metal ceramic restoration.",
+      "High expensive than the other all-ceramic restoration",
+      "High esthetic than all ceramic restoration",
+      "Less strength than metal restoration."
+     ],
+     "correctIndex": 0,
+     "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0043",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Cross-infection Prevention",
+     "topic": "Barrier Technique",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "44. The technigue used for the protection of patient and dentist against HIV and HBV infection is called:",
+     "options": [
+      "Barrier technique",
+      "Technology transfer program",
+      "Imernatiotal sterilization, inforntiation program.",
+      "Recent sterilization technique."
+     ],
+     "correctIndex": 0,
+     "explanation": "Barrier technique is a core infection-control strategy for reducing transmission of blood-borne pathogens such as HIV and HBV.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Dental Infection Control",
+      "Barrier Technique",
+      "Cross-infection Prevention",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0044",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "45. The advantages of using a high-copper amalgam over a low-copper amalgam are:",
+     "options": [
+      "High copper amalgaon has more gamma-2 phase and is therefore stronger thun low copper amalgam",
+      "High copper amalgams show less corrosion than low copper amalgams."
+     ],
+     "correctIndex": 1,
+     "explanation": "High-copper amalgams reduce or eliminate the weak gamma-2 phase and therefore improve corrosion resistance and mechanical properties.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0045",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "46. Over-contoured crowns are most often the result of",
+     "options": [
+      "The need for added retention",
+      "Insufficient tooth reduction",
+      "Overbuilding by dental technicians",
+      "Periodontal considerations."
+     ],
+     "correctIndex": 1,
+     "explanation": "Over-contoured crowns are commonly caused by insufficient tooth reduction, leaving inadequate space for restorative material.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0046",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "47. A complete denture patient complains of irritation on the crest of after delivery of a maxillary complete denture. The least likely cause is:",
+     "options": [
+      "Bony spicules on site of irritation.",
+      "Premature occlusal contacts.",
+      "frregularities on the tissue surface of the denture",
+      "Anterior occlusal interference in protrusion."
+     ],
+     "correctIndex": 3,
+     "explanation": "Anterior occlusal interference in protrusion is less likely to cause a focal sore spot on the crest of the maxillary denture-bearing area than tissue or occlusal errors directly affecting the site.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0047",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Curved Canals",
+     "topic": "Canal Instrumentation",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "48. To improve decuracy, negotiate curved causis, and reduce force of instrumentation, the following tools are recommended:",
+     "options": [
+      "Carbon steel files.",
+      "Nickel titanium instruments",
+      "Reamers",
+      "Hedstrom files."
+     ],
+     "correctIndex": 1,
+     "explanation": "Nickel-titanium instruments are flexible and better suited to negotiating curved canals while reducing excessive instrumentation forces.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Canal Instrumentation",
+      "Curved Canals",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0048",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Chemical Bonding to Tooth Structure",
+     "topic": "Luting Cements",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "49. Choose the cement that actually bond to tooth structure:",
+     "options": [
+      "ZOE R. Calcium hydroxide.",
+      "Zine polycarboxylate",
+      "Zine phosphate."
+     ],
+     "correctIndex": 1,
+     "explanation": "Zinc polycarboxylate cement can chemically interact with tooth calcium and provides true adhesion relative to the other listed conventional cements.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Dental Materials",
+      "Luting Cements",
+      "Chemical Bonding to Tooth Structure",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0049",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Mandibular Foramen Position in Children",
+     "topic": "Inferior Alveolar Nerve Block",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "50. When you want to give inferior alveolar block for a child you have to take attention that the mandibular foramen is:",
+     "options": [
+      "At level of occlusal plane.",
+      "Above the level of occlusal plane.",
+      "Below the level of occlusal plane.",
+      "No one."
+     ],
+     "correctIndex": 2,
+     "explanation": "In children the mandibular foramen is positioned relatively lower than the occlusal plane, so the injection landmark is adjusted accordingly.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Pediatric Dentistry",
+      "Inferior Alveolar Nerve Block",
+      "Mandibular Foramen Position in Children",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0050",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Metamerism",
+     "topic": "Optical Properties",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "1-When the color is matched under one light source but it is unmatched under a different light source, this is called:-",
+     "options": [
+      "1-Fluorescence",
+      "2-Radioopacity",
+      "3-Transluscency",
+      "4-metamerism ✔"
+     ],
+     "correctIndex": 3,
+     "explanation": "Metamerism is the phenomenon in which two colors match under one illuminant but appear different under another.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Dental Materials",
+      "Optical Properties",
+      "Metamerism",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0051",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Celluloid Crowns",
+     "topic": "Prefabricated Crowns",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "2-Prefabricated crowns mainly used for anterior teeth and they are supplied in different size and shape:-",
+     "options": [
+      "1-Polycarbonate crowns",
+      "2-Celluloid crowns✔",
+      "3-Nickel-chromium"
+     ],
+     "correctIndex": 1,
+     "explanation": "Celluloid crowns are prefabricated anterior crowns available in different sizes and shapes.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Prefabricated Crowns",
+      "Celluloid Crowns",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0052",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Masseteric Notch",
+     "topic": "Complete Denture Border Molding",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "3-When designing a lower complete denture, what should we take into consideration while performing the border molding in the distobuccal region:-",
+     "options": [
+      "1-The masseter muscle attachment✔",
+      "2-The height of the buccal frenum",
+      "3-the attachment of leteral pytergiod",
+      "4-The ramus of the mandible"
+     ],
+     "correctIndex": 0,
+     "explanation": "The masseter muscle influences the distobuccal extension of a mandibular complete-denture border during functional molding.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Complete Denture Border Molding",
+      "Masseteric Notch",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0053",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "4-The overdenture has several advantages over the complete denture( all are true except):-",
+     "options": [
+      "1-It give a better sensory feedback",
+      "2-Less bone resorption",
+      "3-increase biting forces",
+      "4-more esthetic ✔"
+     ],
+     "correctIndex": 3,
+     "explanation": "Overdentures can improve sensory feedback, reduce bone resorption, and improve function, but increased esthetics is not a universal advantage over complete dentures.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0054",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "5-The quality of a restoration being firm, stady, and does not change in position under occlusal forces:-",
+     "options": [
+      "1-Retention",
+      "2-stability✔"
+     ],
+     "correctIndex": 1,
+     "explanation": "Stability describes resistance to horizontal or rotational displacement under functional forces; retention primarily resists dislodgement along the path of insertion.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0055",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Dental Materials and Instruments",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "6-About laser in dentistry",
+     "options": [
+      "1-efficient productivity",
+      "2-patient comfort",
+      "3-easy to work",
+      "4-all✔"
+     ],
+     "correctIndex": 3,
+     "explanation": "Dental lasers may improve efficiency and patient comfort in selected procedures, and the intended inclusive answer is “all.”",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Dental Materials",
+      "Dental Materials and Instruments",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0056",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "7-Which is ture about etching:-",
+     "options": [
+      "1-It decreases the surface area",
+      "2-It increases the surface area✔",
+      "3-It does not change the surface area",
+      "4-it increases the chemical bonding of composite"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acid etching increases enamel surface area and microporosity, improving micromechanical retention.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0057",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "8-which technique of the impression that requires medium single viscosity with special tray",
+     "options": [
+      "1-Double mix in one step",
+      "3-Double mix in two step",
+      "3-single mix impression technique✔",
+      "4-No one"
+     ],
+     "correctIndex": 2,
+     "explanation": "The intended impression technique in the source is the single-mix technique using a medium-viscosity material with a special tray.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0058",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Periodontal Health and Therapy",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "9-Which of the following is in the basic periodontal treatment in the general dental practice(all except one):-",
+     "options": [
+      "1-using anti-smoker device",
+      "2-removal of the plaque from the tooth surface",
+      "3-Changing the plaque-retentive surfaces",
+      "4-surgical periodontal treatment✔"
+     ],
+     "correctIndex": 3,
+     "explanation": "Basic periodontal therapy includes plaque control and correction of plaque-retentive factors; surgical periodontal therapy is not basic non-surgical care.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Periodontology",
+      "Periodontal Health and Therapy",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0059",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Dental Radiology",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "10-The device that is used in the capturing of digital radiograph is called:-",
+     "options": [
+      "1-Convential film with digital radiograph",
+      "2-MRI sensor",
+      "3-Electronic sensor✔",
+      "4-No one"
+     ],
+     "correctIndex": 2,
+     "explanation": "Digital intraoral radiography uses an electronic sensor rather than conventional film.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Oral Radiology",
+      "Dental Radiology",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0060",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "11-The burs used in preparation of a lower posterior teeth for full metal restoration (all except):-",
+     "options": [
+      "1-should diamond✔",
+      "2-Chamfer diamond",
+      "3-Chamfer carbide",
+      "4-short needle"
+     ],
+     "correctIndex": 0,
+     "explanation": "A shoulder diamond is not the typical bur for a lower posterior full-metal crown preparation; chamfer instruments are used for a chamfer finish line.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0061",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "12-which of the following is true about porcelain fused to metal (all except one):-",
+     "options": [
+      "1-Stronger than porcelain jacket crown",
+      "2-It resists wear extremely well",
+      "3-it can be used in anterior and posterior teeth",
+      "4-excellent esthetics✔"
+     ],
+     "correctIndex": 3,
+     "explanation": "PFM restorations are strong and versatile and can be used anteriorly and posteriorly; excellent esthetics is less characteristic than with modern all-ceramic restorations.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0062",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Dimensions of Biologic Width",
+     "topic": "Biologic Width",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "13-The measurement of a biological width is:-",
+     "options": [
+      "1-.97",
+      "2-1.66",
+      "3-2.04✔"
+     ],
+     "correctIndex": 2,
+     "explanation": "The classic combined biologic width is approximately 2.04 mm.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Biologic Width",
+      "Dimensions of Biologic Width",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0063",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "16-Which of the following is inelastic impresion material:-",
+     "options": [
+      "1-alginate",
+      "2-addisional silicone",
+      "3-ZOE✔",
+      "4-polysulfide"
+     ],
+     "correctIndex": 2,
+     "explanation": "Zinc oxide-eugenol impression material is rigid/essentially inelastic after setting compared with elastomeric materials.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0064",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "17-an anterior tooth is extensively restored, which restoration is the proper type in this case:-",
+     "options": [
+      "1-Laminate veneer",
+      "2-Partial covarge crown",
+      "3-full coverge crown✔"
+     ],
+     "correctIndex": 2,
+     "explanation": "An extensively restored anterior tooth generally requires a full-coverage restoration when clinically indicated.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0065",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Root Canal Treatment and Pulp Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "23- Constructed on endodontically treated teeth to restore the coronal part of the anatomical crown & extending inside the root canal portion of the tooth:-",
+     "options": [
+      "1-intaradicular restoration 👍",
+      "2-extra-coronal restoration",
+      "3-complete veneer crown",
+      "4-laminate veneer"
+     ],
+     "correctIndex": 0,
+     "explanation": "An intraradicular restoration extends into the root canal and restores the coronal portion of an endodontically treated tooth.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Treatment and Pulp Disease",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0066",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Irreversible Pulpitis",
+     "topic": "Pulpal Diagnosis",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "24- all are true about irreversible pulpitis , except :-",
+     "options": [
+      "1-sever shooting pain",
+      "2-spontaneous pain",
+      "3-welll localized pain 👍",
+      "4-pain on heat"
+     ],
+     "correctIndex": 2,
+     "explanation": "Irreversible pulpitis is classically associated with spontaneous, lingering, and often poorly localized pain; well-localized pain is the exception.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Pulpal Diagnosis",
+      "Irreversible Pulpitis",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0067",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Root Canal Treatment and Pulp Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "25+26 - The most cause of canal perforation:",
+     "options": [
+      "1-Creating ledge than continous until perforationand stripping👍",
+      "2-long H file",
+      "3-creating ledge than continous until perforation",
+      "4-stripping"
+     ],
+     "correctIndex": 0,
+     "explanation": "The source marks the first option for the canal-perforation question; ledge formation followed by continued instrumentation and/or stripping can cause perforation.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Treatment and Pulp Disease",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0068",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "27 - powder in mix of acrylic resin is as :-",
+     "options": [
+      "1-polymer 👍",
+      "2-monomer",
+      "3-all",
+      "4-water"
+     ],
+     "correctIndex": 0,
+     "explanation": "The powder component of conventional acrylic resin is the polymer; the liquid component is primarily monomer.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0069",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "28- which of the following statement is true :-",
+     "options": [
+      "1-attrition caused by non bacterial chemical cause",
+      "2-abrasion caused by the surface of teeth",
+      "3-abrasion caused by surface other than of teeth 👍",
+      "3-erosion caused by other surface of teeth"
+     ],
+     "correctIndex": 2,
+     "explanation": "Abrasion is tooth wear caused by an external mechanical agent other than tooth-to-tooth contact.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0070",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "29- periapical healing by :-",
+     "options": [
+      "1-calcium hydroxide 👍",
+      "2-corticosteroids",
+      "3-eugenol",
+      "4-none"
+     ],
+     "correctIndex": 0,
+     "explanation": "Calcium hydroxide is used in endodontics in contexts related to intracanal disinfection and periapical healing.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0071",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Fixed and Removable Prosthodontics",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "30- disadvantage of porcelain:-",
+     "options": [
+      "1-expensive",
+      "2-brittleness👍",
+      "3-esthetic",
+      "4-good color"
+     ],
+     "correctIndex": 1,
+     "explanation": "Porcelain is highly esthetic but relatively brittle compared with ductile metal-based materials.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Fixed and Removable Prosthodontics",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0072",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "32- Comperison b/w Full Metad and PFM is:-",
+     "options": [
+      "The incisal reduction is the same.",
+      "The Finishing Line is the same.",
+      "less reduction from Lingual surface in PFM.👍",
+      "The Facial reduction is the same"
+     ],
+     "correctIndex": 2,
+     "explanation": "The source answer states less lingual reduction for PFM than for the comparison restoration; the original wording is preserved.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0073",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Periodontal Health and Therapy",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "33-Maintaining of periodontal health by :-",
+     "options": [
+      "reshaping",
+      "recontact",
+      "recontovering",
+      "All👍"
+     ],
+     "correctIndex": 3,
+     "explanation": "Periodontal health around restorations is supported by appropriate reshaping/recontouring and contact management; the source answer is “all.”",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Periodontology",
+      "Periodontal Health and Therapy",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0074",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "34- Mesiopalatal Cusp of upper 6 occluded in:-",
+     "options": [
+      "distal Fossa of lower 6",
+      "Mesial Fossa of lower 6 Central fossa of lower 6👍",
+      "Mesral fossa of lower 7"
+     ],
+     "correctIndex": 0,
+     "explanation": "The mesiolingual/mesiopalatal cusp of the maxillary first molar normally contacts the central fossa region of the mandibular first molar in ideal occlusion.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0075",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Periodontal Health and Therapy",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "35 -after subgingival margin tooth prepration ,We do:-",
+     "options": [
+      "Final imperssion",
+      "retraction Cord👍",
+      "bite registration",
+      "None"
+     ],
+     "correctIndex": 1,
+     "explanation": "After preparing a subgingival margin, gingival retraction is performed before the definitive impression.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Periodontology",
+      "Periodontal Health and Therapy",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0076",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "36-in Chemico-mechanical retruction the tissue well be :",
+     "options": [
+      "displaced laterally from the tooth👍",
+      "preserved From Inflamation.",
+      "displaced vertically from the tooth",
+      "None"
+     ],
+     "correctIndex": 0,
+     "explanation": "Chemicomechanical retraction displaces gingival tissue laterally away from the tooth to expose the finish line.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0077",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "37- prepration All tooth except thre mesiobuccal Cusp of upper First molar is:",
+     "options": [
+      "7/8 Crown👍",
+      "314 Crown",
+      "revese 3/4 crown",
+      "none"
+     ],
+     "correctIndex": 0,
+     "explanation": "A 7/8 crown is a partial-coverage restoration used to preserve the specified cusp pattern in the source question.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0078",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Periodontal Health and Therapy",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "38-indication of subgingival margin except-",
+     "options": [
+      "dental Caries extend subgingivally",
+      "root Sensitivity C There is enough retention👍",
+      "Unclear in source."
+     ],
+     "correctIndex": 0,
+     "explanation": "Adequate retention is not an indication for placing a subgingival margin; subgingival placement is used for specific clinical indications.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Periodontology",
+      "Periodontal Health and Therapy",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0079",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "39- preservation of tooth structure except :-",
+     "options": [
+      "use full Cavarage restoration rather than partial covering 👍",
+      "avore of annecessary apical extension",
+      "prepration of teeth with minimum tapering.",
+      "Reduction of occlusal scarface followi The anatomical plane"
+     ],
+     "correctIndex": 0,
+     "explanation": "The source also contains a stray second question numbered 39: respiratory rate in children is generally higher than in adults.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0080",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "General Dental Knowledge",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "40- 10 years old patient lost his primary lower second molar we need to:",
+     "options": [
+      "do band and loop",
+      "we make radiograph then decide👍",
+      "3-all",
+      "4-none"
+     ],
+     "correctIndex": 1,
+     "explanation": "At age 10, loss of a primary second molar requires assessment of eruption status and successor development; a radiograph helps determine the appropriate space-management decision.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "General Dentistry",
+      "General Dental Knowledge",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0081",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Root Canal Treatment and Pulp Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "41-we obturate canal if (all correct) except:",
+     "options": [
+      "dry canal",
+      "no odur",
+      "sympatomatic👍",
+      "the canal is optimum shaping"
+     ],
+     "correctIndex": 2,
+     "explanation": "A root canal is generally obturated when it is adequately shaped, dry, asymptomatic, and free of signs such as foul odor or swelling.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Treatment and Pulp Disease",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0082",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Restorative Dentistry",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "42- to restoration tooth with deep caries during preparation we removal :-",
+     "options": [
+      "1-we start to remove caries from walls of cavity then from the pulpal floor 👍",
+      "2-we start to remove caries from pulp floor then from the walls cavity .",
+      "3-direct pulp caping"
+     ],
+     "correctIndex": 0,
+     "explanation": "In deep caries, peripheral caries is removed before caries close to the pulpal floor to reduce the risk of pulpal exposure.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Operative Dentistry",
+      "Restorative Dentistry",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0083",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "General Dental Concept",
+     "topic": "Root Canal Treatment and Pulp Disease",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "43.All are true about reversible pulpitis except:",
+     "options": [
+      "Pain on percussion👍",
+      "Short duration of pain",
+      "pain with heat",
+      "Unclear in source."
+     ],
+     "correctIndex": 0,
+     "explanation": "Pain on percussion suggests apical/periodontal involvement rather than uncomplicated reversible pulpitis.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Endodontics",
+      "Root Canal Treatment and Pulp Disease",
+      "General Dental Concept",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0084",
+     "bankId": "dentistry-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "dentistry",
+     "subject": "Finish Line for Full Porcelain Crown",
+     "topic": "Ceramic Crown Preparation",
+     "difficulty": "medium",
+     "language": "en",
+     "text": "44-The Finishing Line of full porceline:",
+     "options": [
+      "Shoulder with bevel",
+      "Chamfer",
+      "Rounel or Radial Shoulder👍"
+     ],
+     "correctIndex": 2,
+     "explanation": "A rounded/radial shoulder is a standard finish-line design for many full-porcelain crowns.",
+     "source": "Yemen Medical Licensure",
+     "tags": [
+      "Prosthodontics",
+      "Ceramic Crown Preparation",
+      "Finish Line for Full Porcelain Crown",
+      "Yemen Dental Licensure",
+      "2024"
+     ],
+     "id": "dentistry-0085",
+     "bankId": "dentistry-b1"
+    }
+   ]
+  }
+ ]
+}

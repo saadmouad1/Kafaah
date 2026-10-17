@@ -1,0 +1,133 @@
+{
+ "specId": "cfa",
+ "sectorId": "finance",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "cfa-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "القيمة الزمنية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما مبدأ القيمة الزمنية للنقود؟",
+     "options": [
+      "قيمة النقود اليوم أعلى من نفس المبلغ مستقبلًا",
+      "القيمة ثابتة دائمًا",
+      "المستقبل أفضل دائمًا",
+      "لا فرق"
+     ],
+     "correctIndex": 0,
+     "explanation": "النقود المتاحة الآن يمكن استثمارها فتكسب عائدًا، لذا قيمتها الحالية أعلى.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "القيمة الزمنية"
+     ],
+     "id": "cfa-0001",
+     "bankId": "cfa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "التسعير",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يحدّده نموذج CAPM؟",
+     "options": [
+      "العائد المتوقع مقابل المخاطر المنهجية",
+      "العائد على السندات",
+      "نسبة التضخم",
+      "الأرباح الموزعة"
+     ],
+     "correctIndex": 0,
+     "explanation": "CAPM يربط العائد المتوقع بمعدل خالٍ من المخاطر + علاوة المخاطر المنهجية (بيتا).",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التسعير"
+     ],
+     "id": "cfa-0002",
+     "bankId": "cfa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "المحافظ",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما فائدة التنويع في المحفظة؟",
+     "options": [
+      "تقليل المخاطر غير المنهجية",
+      "زيادة المخاطر المنهجية",
+      "إلغاء المردود",
+      "لا فائدة"
+     ],
+     "correctIndex": 0,
+     "explanation": "التنويع يقلّل المخاطر الخاصة/غير المنهجية دون التضحية بالعائد المتوقع.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المحافظ"
+     ],
+     "id": "cfa-0003",
+     "bankId": "cfa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "الدخل الثابت",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما مدة السند (Duration)؟",
+     "options": [
+      "قياس حساسية سعر السند لتغيرات العائد",
+      "تاريخ الاستحقاق",
+      "قيمة القسيمة",
+      "التصنيف الائتماني"
+     ],
+     "correctIndex": 0,
+     "explanation": "المدة تقدّر حساسية سعر السند للتغيرات الصغيرة في أسعار الفائدة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الدخل الثابت"
+     ],
+     "id": "cfa-0004",
+     "bankId": "cfa-b1"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "الأخلاقيات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما جوهر معايير الأخلاق في CFA؟",
+     "options": [
+      "النزاهة والكفاءة وخدمة العميل قبل المصلحة الشخصية",
+      "تعظيم الأتعاب فقط",
+      "إخفاء المعلومات",
+      "الدعاية المبالغة"
+     ],
+     "correctIndex": 0,
+     "explanation": "معايير الأخلاق ترتكز على النزاهة والكفاءة والمسؤولية تجاه العملاء والأسواق.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الأخلاقيات"
+     ],
+     "id": "cfa-0005",
+     "bankId": "cfa-b1"
+    }
+   ]
+  }
+ ]
+}

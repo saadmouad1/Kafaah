@@ -1,197 +1,178 @@
 'use client';
-import { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useQuestions, shuffle, checkIsEnglish } from '../../../lib/useData';
-import { CheckCircle2, XCircle, ArrowLeft, BrainCircuit } from 'lucide-react';
+import { useEffect, useMemo, useState } from 'react';
+import Link from 'next/link';
+import { ArrowLeft, RefreshCw, SlidersHorizontal, CheckCircle2, XCircle, Trophy, Play } from 'lucide-react';
+import { useKafaah } from '../../../lib/context/KafaahProvider';
+import { useQuestions, useSpecBanks, shuffle } from '../../../lib/useData';
+import { recordAnswer, getProgress, subscribe, toggleSaved, isSaved } from '../../../lib/progress';
+import QuestionView from '../../../components/QuestionView';
 
 export default function PracticePage() {
-  const { questions, loading } = useQuestions();
-  const practiceQuestions = useMemo(() => {
-    if (questions.length === 0) return [];
-    return shuffle(questions).slice(0, 20);
-  }, [questions]);
+  const { profile, spec, t, locale, specName, bankName } = useKafaah();
+  const { banks } = useSpecBanks(profile?.specId);
+  const [bank, setBank] = useState('all');
+  const [difficulty, setDifficulty] = useState('all');
+  const [started, setStarted] = useState(false);
+  const [seed, setSeed] = useState(0);
 
-  const [currentIdx, setCurrentIdx] = useState(0);
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [showExplanation, setShowExplanation] = useState(false);
+  // نجلب دائمًا (حتى قبل البدء) لمعرفة العدد المتاح
+  const { questions, total, loading } = useQuestions({
+    bank, difficulty, limit: 100, offset: seed, enabled: true,
+  });
 
-  const q = practiceQuestions[currentIdx];
+  const deck = useMemo(() => shuffle(questions).slice(0, 25), [questions]);
+  const [idx, setIdx] = useState(0);
+  const [selected, setSelected] = useState(null);
+  const [savedIds, setSavedIds] = useState({});
+  const [score, setScore] = useState({ c: 0, w: 0 });
+  const [done, setDone] = useState(false);
 
-  const handleSelect = (idx) => {
-    if (selectedOption !== null) return;
-    setSelectedOption(idx);
-    setShowExplanation(true);
-  };
+  useEffect(() => {
+    setSavedIds(getProgress().saved);
+    return subscribe((s) => setSavedIds({ ...s.saved }));
+  }, []);
 
-  const handleNext = () => {
-    setSelectedOption(null);
-    setShowExplanation(false);
-    if (currentIdx < practiceQuestions.length - 1) {
-      setCurrentIdx(currentIdx + 1);
+  const q = deck[idx];
+  const reveal = selected !== null;
+
+  function choose(i) {
+    if (reveal) return;
+    setSelected(i);
+    const correct = i === (q.correctIndex ?? q.correct_index ?? 0);
+    setScore((s) => ({ c: s.c + (correct ? 1 : 0), w: s.w + (correct ? 0 : 1) }));
+    recordAnswer(q, correct, i);
+  }
+
+  function next() {
+    if (idx < deck.length - 1) {
+      setIdx(idx + 1);
+      setSelected(null);
+    } else {
+      setDone(true);
     }
-  };
+  }
 
-  if (loading) return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400 }}>
-      <div style={{ textAlign: 'center' }}>
-        <div style={{ width: 48, height: 48, border: '4px solid var(--emerald)', borderTopColor: 'transparent', borderRadius: '50%', animation: 'spin 0.8s linear infinite', margin: '0 auto 16px' }} />
-        <p style={{ color: 'var(--text-muted)', fontWeight: 700 }}>جاري تحميل الأسئلة من قاعدة البيانات...</p>
-      </div>
-    </div>
-  );
+  function begin() {
+    // عيّنة عشوائية من كامل البنك
+    const maxOff = Math.max(0, total - 100);
+    setSeed(maxOff > 0 ? Math.floor(Math.random() * maxOff) : 0);
+    setStarted(true);
+    setIdx(0);
+    setSelected(null);
+    setScore({ c: 0, w: 0 });
+    setDone(false);
+  }
 
-  if (!q) return <div style={{ padding: 40, textAlign: 'center' }}>لا توجد أسئلة متاحة.</div>;
+  function restart() {
+    setStarted(false); setDone(false); setIdx(0); setSelected(null); setScore({ c: 0, w: 0 });
+  }
 
-  const isEngQuestion = checkIsEnglish(q.text);
-  const correctIdx = q.correctIndex ?? q.correct_index ?? 0;
-
-  return (
-    <div style={{ maxWidth: 800, margin: '0 auto' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24, background: '#fff', padding: '16px 24px', borderRadius: 20, boxShadow: 'var(--shadow-subtle)', border: '1px solid var(--border-subtle)' }}>
+  if (!started) {
+    return (
+      <div className="stack" style={{ gap: 18 }}>
         <div>
-          <span style={{ fontSize: 13, fontWeight: 800, color: 'var(--emerald-dark)', background: 'var(--emerald-light)', padding: '4px 12px', borderRadius: 999 }}>
-            {q.sectorId || q.category || 'عام'}
-          </span>
-        </div>
-        <div style={{ fontSize: 15, fontWeight: 800, color: 'var(--text-muted)', fontFamily: 'var(--font-numbers)' }}>
-          سؤال {currentIdx + 1} / {practiceQuestions.length}
-        </div>
-      </div>
-
-      <motion.div
-        key={q.id || currentIdx}
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        style={{
-          background: '#fff',
-          borderRadius: 24,
-          padding: 'clamp(1.5rem, 4vw, 2.5rem)',
-          boxShadow: 'var(--shadow-card)',
-          border: '1px solid var(--border-subtle)',
-          marginBottom: 24
-        }}
-      >
-        <h2 style={{
-          fontSize: 'clamp(18px, 3vw, 22px)',
-          fontWeight: 800,
-          color: 'var(--text)',
-          marginBottom: 32,
-          lineHeight: 1.6,
-          direction: isEngQuestion ? 'ltr' : 'rtl',
-          textAlign: isEngQuestion ? 'left' : 'right',
-          fontFamily: isEngQuestion ? 'system-ui' : 'var(--font-heading)'
-        }}>
-          {q.text}
-        </h2>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-          {(q.options || []).map((opt, idx) => {
-            const isSelected = selectedOption === idx;
-            const isCorrect = idx === correctIdx;
-            const isEngOpt = checkIsEnglish(opt);
-
-            let bg = 'var(--bg-subtle)';
-            let borderColor = 'var(--border)';
-            let icon = null;
-
-            if (selectedOption !== null) {
-              if (isCorrect) {
-                bg = 'var(--emerald-light)';
-                borderColor = 'var(--emerald)';
-                icon = <CheckCircle2 color="var(--emerald)" size={20} />;
-              } else if (isSelected) {
-                bg = 'var(--danger-light)';
-                borderColor = 'var(--danger)';
-                icon = <XCircle color="var(--danger)" size={20} />;
-              } else {
-                bg = '#fff';
-              }
-            }
-
-            return (
-              <button
-                key={idx}
-                onClick={() => handleSelect(idx)}
-                disabled={selectedOption !== null}
-                style={{
-                  width: '100%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '16px 20px',
-                  borderRadius: 12,
-                  background: bg,
-                  border: `1.5px solid ${borderColor}`,
-                  cursor: selectedOption !== null ? 'default' : 'pointer',
-                  transition: 'all 0.2s',
-                  direction: isEngOpt ? 'ltr' : 'rtl',
-                  textAlign: isEngOpt ? 'left' : 'right',
-                  fontSize: 16,
-                  fontWeight: 600,
-                  color: 'var(--text)',
-                  fontFamily: isEngOpt ? 'system-ui' : 'var(--font-body)'
-                }}
-              >
-                <span style={{ flex: 1 }}>{opt}</span>
-                {icon && <span style={{ marginRight: isEngOpt ? 0 : 12, marginLeft: isEngOpt ? 12 : 0 }}>{icon}</span>}
-              </button>
-            );
-          })}
+          <h1 className="page-title">{t('nav.practice')}</h1>
+          <p className="text-muted mt-1">{t('practice.sub')}</p>
         </div>
 
-        <AnimatePresence>
-          {showExplanation && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              style={{ overflow: 'hidden', marginTop: 24 }}
-            >
-              <div style={{
-                padding: 20,
-                borderRadius: 16,
-                background: 'var(--blue-light)',
-                border: '1px solid rgba(2, 132, 199, 0.2)'
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--blue-sky)', fontWeight: 800, marginBottom: 8 }}>
-                  <BrainCircuit size={20} />
-                  الشرح
-                </div>
-                <p style={{
-                  color: 'var(--text-secondary)',
-                  fontWeight: 600,
-                  lineHeight: 1.6,
-                  direction: checkIsEnglish(q.explanation) ? 'ltr' : 'rtl',
-                  textAlign: checkIsEnglish(q.explanation) ? 'left' : 'right'
-                }}>
-                  {q.explanation || 'لا يوجد شرح متوفر لهذا السؤال.'}
-                </p>
+        <div className="card">
+          <div className="row" style={{ gap: 8, marginBottom: 12 }}>
+            <SlidersHorizontal size={17} style={{ color: 'var(--sector)' }} />
+            <h3 style={{ fontSize: 15.5 }}>{t('practice.setup')}</h3>
+          </div>
+
+          <div className="field mb-3">
+            <label className="label">{t('practice.chooseBank')}</label>
+            <div className="chip-row">
+              <span className={`chip${bank === 'all' ? ' active' : ''}`} onClick={() => setBank('all')}>{t('practice.allBanks')}</span>
+              {banks.map((b) => (
+                <span key={b.id} className={`chip${bank === b.id ? ' active' : ''}`} onClick={() => setBank(b.id)}>{bankName(b)}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="field mb-3">
+            <label className="label">{t('common.difficulty')}</label>
+            <div className="chip-row">
+              {[['all', t('common.all')], ['easy', t('common.easy')], ['medium', t('common.medium')], ['hard', t('common.hard')]].map(([v, l]) => (
+                <span key={v} className={`chip${difficulty === v ? ' active' : ''}`} onClick={() => setDifficulty(v)}>{l}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="row-between card soft-sector" style={{ padding: 14 }}>
+            <div className="row" style={{ gap: 10 }}>
+              <Trophy size={18} style={{ color: 'var(--sector)' }} />
+              <div>
+                <div style={{ fontWeight: 800, fontSize: 14 }}>{specName(spec)}</div>
+                <div className="text-muted" style={{ fontSize: 12.5 }}>{t('practice.sessionInfo')}</div>
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.div>
+            </div>
+            <span className="badge badge-brand">{t('practice.available', { n: total.toLocaleString(locale) })}</span>
+          </div>
 
-      {selectedOption !== null && (
-        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <button
-            onClick={handleNext}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 8,
-              padding: '14px 28px',
-              borderRadius: 999,
-              background: 'var(--text)',
-              color: '#fff',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: 16,
-              fontWeight: 800
-            }}
-          >
-            السؤال التالي <ArrowLeft size={18} />
+          <button className="btn btn-primary btn-lg btn-block mt-3" onClick={begin} disabled={total === 0}>
+            <Play size={17} /> {t('practice.start')}
           </button>
         </div>
+      </div>
+    );
+  }
+
+  if (loading) {
+    return <div className="stack" style={{ gap: 14 }}>
+      <div className="skeleton" style={{ height: 60 }} />
+      <div className="skeleton" style={{ height: 300 }} />
+    </div>;
+  }
+
+  if (done || !q) {
+    const totalQ = score.c + score.w;
+    const pct = totalQ ? Math.round((score.c / totalQ) * 100) : 0;
+    return (
+      <div className="card card-pad-lg text-center" style={{ maxWidth: 520, margin: '0 auto' }}>
+        <div style={{ fontSize: 56 }}>{pct >= 70 ? '🎉' : pct >= 50 ? '👍' : '💪'}</div>
+        <h2 className="mt-2">{t('practice.finished')}</h2>
+        <p className="text-muted">{t('practice.sessionScore')}</p>
+        <div className="stat-num mt-3" style={{ fontSize: '2.6rem', color: 'var(--sector)' }}>{pct}%</div>
+        <div className="row" style={{ justifyContent: 'center', gap: 18, marginTop: 12 }}>
+          <div className="row" style={{ gap: 6, color: 'var(--success)', fontWeight: 800 }}><CheckCircle2 size={17} /> {t('practice.correct', { n: score.c })}</div>
+          <div className="row" style={{ gap: 6, color: 'var(--danger)', fontWeight: 800 }}><XCircle size={17} /> {t('practice.wrong', { n: score.w })}</div>
+        </div>
+        <div className="row" style={{ gap: 10, marginTop: 22, justifyContent: 'center' }}>
+          <button className="btn btn-primary" onClick={restart}><RefreshCw size={15} /> {t('practice.newSession')}</button>
+          <Link href="/dashboard/mistakes" className="btn btn-ghost">{t('practice.reviewMistakes')}</Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="stack" style={{ gap: 16, maxWidth: 760, margin: '0 auto' }}>
+      <div className="card" style={{ padding: 12 }}>
+        <div className="row-between mb-2">
+          <span className="badge badge-brand">{t('practice.questionOf', { i: idx + 1, n: deck.length })}</span>
+          <span className="row" style={{ gap: 10, fontWeight: 800, fontSize: 13 }}>
+            <span style={{ color: 'var(--success)' }}>{score.c}✓</span>
+            <span style={{ color: 'var(--danger)' }}>{score.w}✕</span>
+          </span>
+        </div>
+        <div className="progress"><span style={{ width: `${((idx + (reveal ? 1 : 0)) / deck.length) * 100}%` }} /></div>
+      </div>
+
+      <QuestionView
+        question={q}
+        selected={selected}
+        onSelect={choose}
+        reveal={reveal}
+        saved={!!savedIds[q.id]}
+        onToggleSave={(qq) => toggleSaved(qq)}
+      />
+
+      {reveal && (
+        <button className="btn btn-primary btn-lg btn-block" onClick={next}>
+          {idx < deck.length - 1 ? t('practice.nextQuestion') : t('practice.endSession')} <ArrowLeft size={17} />
+        </button>
       )}
     </div>
   );

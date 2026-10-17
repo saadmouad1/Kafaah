@@ -1,135 +1,171 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { useQuestions } from '../../lib/useData';
+import { useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
 import {
-  BrainCircuit, Activity, BookOpen, BarChart3,
-  TrendingUp, Target, Zap, ArrowLeft, Clock
+  BrainCircuit, Activity, BookOpen, BarChart3, AlertTriangle, Star,
+  Flame, Target, TrendingUp, Sparkles, ArrowLeft, Repeat, Award, ListChecks,
 } from 'lucide-react';
+import { useKafaah } from '../../lib/context/KafaahProvider';
+import { useBanks } from '../../lib/useData';
+import { getStats, subscribe } from '../../lib/progress';
 
-export default function Dashboard() {
-  const [user, setUser] = useState({
-    name: 'طالب كفاءة',
-    stats: {
-      medical: { total: 0, correct: 0 },
-      overall: { level: 'مبتدئ', nextExam: 'غير محدد' }
-    }
-  });
-
-  const { questions, loading } = useQuestions();
-  const totalQuestions = questions.length;
+export default function DashboardHome() {
+  const { profile, sector, spec, t, locale, sectorName, specName } = useKafaah();
+  const { index } = useBanks();
+  const [stats, setStats] = useState(null);
 
   useEffect(() => {
-    const session = localStorage.getItem('kafaah_session');
-    if (session) {
-      try {
-        const data = JSON.parse(session);
-        setUser({
-          name: data.name || 'طالب كفاءة',
-          stats: {
-            medical: { total: 120, correct: 85 },
-            overall: { level: 'متوسط', nextExam: '2026-11-15' }
-          }
-        });
-      } catch (e) {}
-    }
+    setStats(getStats());
+    return subscribe(() => setStats(getStats()));
   }, []);
 
-  const answered = user.stats.medical.total;
-  const correct = user.stats.medical.correct;
-  const accuracy = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+  const specCount = useMemo(
+    () => index?.items?.find((i) => i.specId === profile.specId)?.count || 0,
+    [index, profile.specId],
+  );
+  const sectorCount = index?.bySector?.[profile.sectorId] || 0;
+
+  const d = stats || { answered: 0, correct: 0, accuracy: 0, mistakes: 0, saved: 0, mocks: 0, bestMock: 0, avgMock: 0, streak: 0, last7: [] };
+  const maxDaily = Math.max(1, ...d.last7.map((x) => x.a));
+
+  const actions = [
+    { href: '/dashboard/practice', icon: BrainCircuit, title: t('nav.practice'), desc: t('practice.sub'), tone: 'var(--sector)' },
+    { href: '/dashboard/mock', icon: Activity, title: t('nav.mock'), desc: t('home.mockDesc', { pass: spec?.blueprint?.passScore || 60 }), tone: '#f59e0b' },
+    { href: '/dashboard/bank', icon: BookOpen, title: t('nav.bank'), desc: t('home.bankDesc'), tone: '#3b82f6' },
+    { href: '/dashboard/analytics', icon: BarChart3, title: t('nav.analytics'), desc: t('home.analyticsDesc'), tone: '#8b5cf6' },
+    { href: '/dashboard/mistakes', icon: AlertTriangle, title: t('nav.mistakes'), desc: t('home.mistakesDesc', { n: d.mistakes }), tone: '#ef4444' },
+    { href: '/dashboard/saved', icon: Star, title: t('nav.saved'), desc: t('home.savedDesc', { n: d.saved }), tone: '#eab308' },
+  ];
 
   return (
-    <div>
-      <div style={{ marginBottom: 32 }}>
-        <h1 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', fontWeight: 900, color: 'var(--text)', marginBottom: 8, fontFamily: 'var(--font-display)' }}>
-          أهلاً بك، {user.name} 👋
-        </h1>
-        <p style={{ fontSize: 16, color: 'var(--text-secondary)', fontWeight: 600 }}>
-          مستعد لمواصلة التعلم؟ {loading ? 'جاري تحميل الأسئلة...' : `${totalQuestions.toLocaleString()} سؤال بانتظارك.`}
-        </p>
+    <div className="stack" style={{ gap: 20 }}>
+      {/* Hero */}
+      <div className="card card-pad-lg" style={{ background: 'linear-gradient(135deg, color-mix(in srgb, var(--sector) 12%, var(--surface)), var(--surface))' }}>
+        <div className="row-between wrap" style={{ gap: 14 }}>
+          <div>
+            <div className="row" style={{ gap: 8, marginBottom: 6 }}>
+              <span className="badge badge-brand">{sectorName(sector)}</span>
+              <span className="badge badge-muted">{specName(spec)}</span>
+            </div>
+            <h1 style={{ fontSize: 'clamp(1.3rem, 4.5vw, 1.9rem)', fontWeight: 900 }}>
+              {t('home.hello', { name: profile.name?.split(' ')[0] || '' })}
+            </h1>
+            <p className="text-muted" style={{ fontWeight: 600, marginTop: 4 }}>
+              {t('home.statsLine', {
+                sector: sectorCount.toLocaleString(locale),
+                spec: specCount.toLocaleString(locale),
+                specName: specName(spec),
+              })}
+            </p>
+          </div>
+          <Link href="/onboarding" className="btn btn-ghost btn-sm">
+            <Repeat size={14} /> {t('home.changeSpec')}
+          </Link>
+        </div>
+
+        <div className="grid grid-4" style={{ marginTop: 18 }}>
+          {[
+            { icon: ListChecks, label: t('home.answered'), value: d.answered, color: 'var(--sector)' },
+            { icon: Target, label: t('home.accuracy'), value: `${d.accuracy}%`, color: '#3b82f6' },
+            { icon: Flame, label: t('home.streak'), value: d.streak, color: '#f59e0b' },
+            { icon: Award, label: t('home.bestMock'), value: `${d.bestMock}%`, color: '#8b5cf6' },
+          ].map((s, i) => (
+            <div key={i} className="stat-card">
+              <div className="row-between">
+                <s.icon size={20} style={{ color: s.color }} />
+              </div>
+              <div className="stat-num mt-2" style={{ color: 'var(--text)' }}>{s.value}</div>
+              <div className="stat-label">{s.label}</div>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20, marginBottom: 40 }}>
-        {[
-          { label: 'الأسئلة المجابة', val: answered + ' / ' + totalQuestions, icon: Target, color: 'var(--blue-sky)', bg: 'var(--blue-light)' },
-          { label: 'الإجابات الصحيحة', val: correct, icon: TrendingUp, color: 'var(--emerald)', bg: 'var(--emerald-light)' },
-          { label: 'نسبة الدقة', val: accuracy + '%', icon: Zap, color: 'var(--gold)', bg: 'var(--gold-light)' },
-          { label: 'وقت المذاكرة', val: '24 ساعة', icon: Clock, color: 'var(--rose)', bg: 'var(--rose-light)' },
-        ].map((s, i) => (
-          <motion.div key={i} whileHover={{ y: -4 }} style={{
-            background: '#fff',
-            borderRadius: 20,
-            padding: 24,
-            boxShadow: 'var(--shadow-card)',
-            border: '1px solid var(--border-subtle)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: 16
-          }}>
-            <div style={{ width: 54, height: 54, borderRadius: 16, background: s.bg, color: s.color, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <s.icon size={28} />
+      {/* Diagnostic plan */}
+      {profile.plan && (
+        <div className="card">
+          <div className="row" style={{ gap: 10, marginBottom: 8 }}>
+            <div style={{ width: 36, height: 36, borderRadius: 11, background: 'var(--gold-soft)', color: 'var(--gold-dark)', display: 'grid', placeItems: 'center' }}>
+              <Sparkles size={18} />
             </div>
             <div>
-              <div style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-muted)', marginBottom: 4 }}>{s.label}</div>
-              <div style={{ fontSize: 24, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-numbers)' }}>{s.val}</div>
+              <h3 style={{ fontSize: 16 }}>{t('home.yourPlan')}</h3>
+              <p className="text-muted" style={{ fontSize: 12.5 }}>
+                {t('home.planMeta')}{profile.planGeneratedAt ? ` · ${new Date(profile.planGeneratedAt).toLocaleDateString(locale)}` : ''}
+              </p>
             </div>
-          </motion.div>
-        ))}
+          </div>
+          {profile.plan.summary && <p style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>{profile.plan.summary}</p>}
+          {Array.isArray(profile.plan.focusAreas) && profile.plan.focusAreas.length > 0 && (
+            <div className="row wrap" style={{ gap: 6, marginTop: 10 }}>
+              {profile.plan.focusAreas.map((a, i) => (
+                <span key={i} className="chip" style={{ cursor: 'default' }}>{typeof a === 'string' ? a : a.title || a.name}</span>
+              ))}
+            </div>
+          )}
+          {Array.isArray(profile.plan.weeks) && (
+            <div className="stack mt-3" style={{ gap: 10 }}>
+              {profile.plan.weeks.slice(0, 3).map((w, i) => (
+                <div key={i} className="row" style={{ gap: 12, alignItems: 'flex-start' }}>
+                  <span className="badge badge-brand" style={{ marginTop: 2 }}>{t('home.week', { n: i + 1 })}</span>
+                  <div>
+                    <div style={{ fontWeight: 800, fontSize: 14 }}>{w.title || w.focus}</div>
+                    {w.tasks && <div className="text-muted" style={{ fontSize: 13 }}>{Array.isArray(w.tasks) ? w.tasks.join(' · ') : w.tasks}</div>}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          <Link href="/dashboard/practice" className="btn btn-primary btn-sm mt-3">
+            {t('home.startPractice')} <ArrowLeft size={14} />
+          </Link>
+        </div>
+      )}
+
+      {/* Quick actions */}
+      <div>
+        <h2 style={{ fontSize: 18, marginBottom: 12 }}>{t('home.startNow')}</h2>
+        <div className="grid grid-3">
+          {actions.map(({ href, icon: Icon, title, desc, tone }) => (
+            <Link key={href} href={href} className="card card-hover" style={{ display: 'block' }}>
+              <div style={{ width: 42, height: 42, borderRadius: 13, background: `color-mix(in srgb, ${tone} 14%, transparent)`, color: tone, display: 'grid', placeItems: 'center', marginBottom: 10 }}>
+                <Icon size={21} />
+              </div>
+              <h3 style={{ fontSize: 15.5 }}>{title}</h3>
+              <p className="text-muted" style={{ fontSize: 13, marginTop: 2 }}>{desc}</p>
+            </Link>
+          ))}
+        </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 20 }}>
-        <Link href="/dashboard/practice" style={{ textDecoration: 'none' }}>
-          <motion.div whileHover={{ scale: 1.02 }} style={{
-            background: 'linear-gradient(135deg, var(--emerald) 0%, var(--emerald-dark) 100%)',
-            borderRadius: 24, padding: 32, color: '#fff',
-            boxShadow: '0 12px 24px var(--emerald-glow)', height: '100%'
-          }}>
-            <BrainCircuit size={40} style={{ marginBottom: 16, opacity: 0.9 }} />
-            <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 8 }}>التدريب الذكي</h2>
-            <p style={{ opacity: 0.9, lineHeight: 1.6, marginBottom: 24, fontSize: 14 }}>
-              تدرب على أسئلة حقيقية من البورد مع شروحات تفصيلية فورية لكل سؤال.
-            </p>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontWeight: 700, fontSize: 14, background: 'rgba(255,255,255,0.2)', padding: '8px 16px', borderRadius: 999, width: 'fit-content' }}>
-              ابدأ الآن <ArrowLeft size={16} />
+      {/* Weekly activity */}
+      <div className="card">
+        <div className="row-between" style={{ marginBottom: 14 }}>
+          <h3 style={{ fontSize: 16 }} className="row" style={{ gap: 8 }}>
+            <TrendingUp size={17} style={{ color: 'var(--sector)' }} /> {t('home.weeklyActivity')}
+          </h3>
+          <Link href="/dashboard/analytics" className="btn btn-ghost btn-sm">{t('home.details')}</Link>
+        </div>
+        <div className="row" style={{ alignItems: 'flex-end', gap: 10, height: 130 }}>
+          {d.last7.map((x, i) => (
+            <div key={i} style={{ flex: 1, textAlign: 'center' }}>
+              <div style={{ height: 100, display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
+                <div
+                  title={t('home.questionTooltip', { a: x.a, c: x.c })}
+                  style={{
+                    width: '70%', maxWidth: 34, borderRadius: 8,
+                    height: `${Math.max(4, (x.a / maxDaily) * 100)}%`,
+                    background: x.c > 0 ? 'linear-gradient(180deg, var(--sector-1), var(--sector-2))' : 'var(--surface-3)',
+                    transition: 'height .4s ease',
+                  }}
+                />
+              </div>
+              <div className="text-dim" style={{ fontSize: 10.5, marginTop: 6 }}>
+                {new Date(x.date).toLocaleDateString(locale, { weekday: 'short' })}
+              </div>
             </div>
-          </motion.div>
-        </Link>
-
-        <Link href="/dashboard/mock" style={{ textDecoration: 'none' }}>
-          <motion.div whileHover={{ scale: 1.02 }} style={{
-            background: 'linear-gradient(135deg, var(--blue-sky) 0%, #0369a1 100%)',
-            borderRadius: 24, padding: 32, color: '#fff',
-            boxShadow: '0 12px 24px rgba(2, 132, 199, 0.25)', height: '100%'
-          }}>
-            <Activity size={40} style={{ marginBottom: 16, opacity: 0.9 }} />
-            <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 8 }}>محاكاة الاختبار</h2>
-            <p style={{ opacity: 0.9, lineHeight: 1.6, marginBottom: 24, fontSize: 14 }}>
-              اختبر نفسك في بيئة مطابقة لامتحان الهيئة السعودية والتصنيف المهني.
-            </p>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontWeight: 700, fontSize: 14, background: 'rgba(255,255,255,0.2)', padding: '8px 16px', borderRadius: 999, width: 'fit-content' }}>
-              اختبر جاهزيتك <ArrowLeft size={16} />
-            </div>
-          </motion.div>
-        </Link>
-
-        <Link href="/dashboard/bank" style={{ textDecoration: 'none' }}>
-          <motion.div whileHover={{ scale: 1.02 }} style={{
-            background: 'linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%)',
-            borderRadius: 24, padding: 32, color: '#fff',
-            boxShadow: '0 12px 24px var(--gold-glow)', height: '100%'
-          }}>
-            <BookOpen size={40} style={{ marginBottom: 16, opacity: 0.9 }} />
-            <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 8 }}>بنك الأسئلة الشامل</h2>
-            <p style={{ opacity: 0.9, lineHeight: 1.6, marginBottom: 24, fontSize: 14 }}>
-              تصفح جميع الأسئلة البالغ عددها {loading ? '...' : totalQuestions.toLocaleString()} سؤالاً مع الفلاتر المتقدمة.
-            </p>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontWeight: 700, fontSize: 14, background: 'rgba(255,255,255,0.2)', padding: '8px 16px', borderRadius: 999, width: 'fit-content' }}>
-              تصفح البنك <ArrowLeft size={16} />
-            </div>
-          </motion.div>
-        </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

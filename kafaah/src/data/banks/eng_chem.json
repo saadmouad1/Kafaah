@@ -1,0 +1,133 @@
+{
+ "specId": "eng_chem",
+ "sectorId": "engineering",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "eng_chem-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "engineering",
+     "specId": "eng_chem",
+     "subject": "التوازن",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما مبدأ لوشاتلييه؟",
+     "options": [
+      "إن التوازن يقاوم التغيير المفروض عليه",
+      "التوازن لا يتأثر بالحرارة",
+      "الضغط لا يؤثر أبدًا",
+      "التركيز لا يؤثر"
+     ],
+     "correctIndex": 0,
+     "explanation": "عند إحداث تغيير (تركيز/ضغط/حرارة) يزيح النظام التوازن في الاتجاه المعاكس للمقاومة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التوازن"
+     ],
+     "id": "eng_chem-0001",
+     "bankId": "eng_chem-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_chem",
+     "subject": "الحركية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما وحدة ثابت معدل التفاعل من الرتبة الأولى؟",
+     "options": [
+      "1/زمن (s⁻¹)",
+      "مول/لتر",
+      "لتر/(مول·ث)",
+      "بلا وحدة"
+     ],
+     "correctIndex": 0,
+     "explanation": "لتفاعل من الرتبة الأولى يكون ثابت المعدل بوحدة معكوس الزمن (s⁻¹).",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الحركية"
+     ],
+     "id": "eng_chem-0002",
+     "bankId": "eng_chem-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_chem",
+     "subject": "عمليات الفصل",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "على أي أساس تعتمد عملية التقطير؟",
+     "options": [
+      "اختلاف درجات الغليان",
+      "اختلاف الكثافة",
+      "اختلاف اللون",
+      "اختلاف الشحنة"
+     ],
+     "correctIndex": 0,
+     "explanation": "التقطير يفصل المكوّنات حسب فرق درجات غليانها/تطايرها.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "عمليات الفصل"
+     ],
+     "id": "eng_chem-0003",
+     "bankId": "eng_chem-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_chem",
+     "subject": "اتزان المادة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما مبدأ اتزان المادة في العمليات الكيميائية؟",
+     "options": [
+      "الداخل = الخارج + التراكم",
+      "الداخل دائمًا أكبر",
+      "الخارج دائمًا أكبر",
+      "لا حفظ للمادة"
+     ],
+     "correctIndex": 0,
+     "explanation": "قانون حفظ المادة: ما يدخل = ما يخرج + التراكم داخل النظام.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "اتزان المادة"
+     ],
+     "id": "eng_chem-0004",
+     "bankId": "eng_chem-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_chem",
+     "subject": "الكيمياء التحليلية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ماذا يقيس الرقم الهيدروجيني pH؟",
+     "options": [
+      "سالب لوغاريتم تركيز أيونات الهيدروجين",
+      "تركيز الأكسجين",
+      "الحرارة",
+      "الضغط"
+     ],
+     "correctIndex": 0,
+     "explanation": "pH = −log[H⁺] ويقيس حموضة/قلوية المحلول.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الكيمياء التحليلية"
+     ],
+     "id": "eng_chem-0005",
+     "bankId": "eng_chem-b1"
+    }
+   ]
+  }
+ ]
+}

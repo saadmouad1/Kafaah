@@ -1,0 +1,133 @@
+{
+ "specId": "emergency",
+ "sectorId": "medical",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "emergency-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "medical",
+     "specId": "emergency",
+     "subject": "الإنعاش القلبي",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الهرمون/الدواء الأساسي خلال الإنعاش القلبي للرجفان البطيني؟",
+     "options": [
+      "إبينفرين وريدي",
+      "أتروبين",
+      "حاصرات بيتا",
+      "نيتروغليسرين"
+     ],
+     "correctIndex": 0,
+     "explanation": "الإبينفرين هو الدواء الأساسي في الإنعاش المتقدم، يُعطى مع إزالة الرجفان.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإنعاش القلبي"
+     ],
+     "id": "emergency-0001",
+     "bankId": "emergency-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "emergency",
+     "subject": "الإنعاش القلبي",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "أي النظم التالية قابلة لإزالة الرجفان (Shockable)؟",
+     "options": [
+      "الرجفان البطيني والتسرّع البطيني بلا نبض",
+      "التوقف الانقباضي Asystole",
+      "النشاط الكهربائي بلا نبض PEA",
+      "بطء القلب الجيبي"
+     ],
+     "correctIndex": 0,
+     "explanation": "النظم القابلة للصدمة هي VP و pulseless VT؛ أما Asystole و PEA فغير قابلة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإنعاش القلبي"
+     ],
+     "id": "emergency-0002",
+     "bankId": "emergency-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "emergency",
+     "subject": "الطوارئ",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "في الانهيار العصبي التأقي (Anaphylaxis) يُعطى الإبينفرين بجرعة البالغ:",
+     "options": [
+      "0.5 ملغم عضلي 1:1000",
+      "1 ملغم وريدي مباشر دائمًا",
+      "0.1 ملغم تحت الجلد",
+      "5 ملغم عضلي"
+     ],
+     "correctIndex": 0,
+     "explanation": "الجرعة المعتمدة 0.5 ملغم عضلي (0.5 مل من 1:1000) في الفخذ الأمامي الوحشي.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الطوارئ"
+     ],
+     "id": "emergency-0003",
+     "bankId": "emergency-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "emergency",
+     "subject": "الطوارئ",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الإجراء الفوري في استرواح الصدر الضاغط؟",
+     "options": [
+      "تفريغ بالإبرة ثم أنبوب صدري",
+      "أشعة صدر قبل أي تدخل",
+      "أكسجين فقط",
+      "مضاد حيوي"
+     ],
+     "correctIndex": 0,
+     "explanation": "استرواح الصدر الضاغط حالة إسعافية تُعالج بتفريغ فوري بالإبرة يتبعه أنبوب صدري.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الطوارئ"
+     ],
+     "id": "emergency-0004",
+     "bankId": "emergency-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "emergency",
+     "subject": "الإنتان",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "مما تتضمن حزمة الساعة الأولى في الإنتان؟",
+     "options": [
+      "قياس اللاكتات والزرع والمضادات الحيوية والسوائل",
+      "الانتظار حتى تأكيد الزرع",
+      "الستيرويد وحده",
+      "الحديد الوريدي"
+     ],
+     "correctIndex": 0,
+     "explanation": "حزمة الإنتان: لاكتات، زرع الدم، مضادات حيوية واسعة، وسوائل وريدية خلال الساعة الأولى.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإنتان"
+     ],
+     "id": "emergency-0005",
+     "bankId": "emergency-b1"
+    }
+   ]
+  }
+ ]
+}

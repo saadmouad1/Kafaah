@@ -1,12 +1,57 @@
 'use client';
-export default function EmptyPage() {
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { Award, Flame, Target, BookOpen, Building2, CalendarDays, Repeat, GraduationCap } from 'lucide-react';
+import { useKafaah } from '../../../lib/context/KafaahProvider';
+import { getStats, subscribe } from '../../../lib/progress';
+
+export default function ProfilePage() {
+  const { profile, sector, spec } = useKafaah();
+  const [s, setS] = useState(null);
+  useEffect(() => { setS(getStats()); return subscribe(() => setS(getStats())); }, []);
+  const stats = s || { answered: 0, accuracy: 0, streak: 0, saved: 0, bestMock: 0 };
+  const initials = (profile.name || 'ك').trim().charAt(0);
+
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60vh', textAlign: 'center' }}>
-      <div>
-        <div style={{ fontSize: 48, marginBottom: 16 }}>🚧</div>
-        <h2 style={{ fontSize: 24, fontWeight: 800, color: 'var(--text)', marginBottom: 8, fontFamily: 'var(--font-display)' }}>هذه الصفحة قيد التطوير</h2>
-        <p style={{ color: 'var(--text-muted)', fontWeight: 600 }}>سيتم إضافة الميزات قريباً في التحديث القادم.</p>
+    <div className="stack" style={{ gap: 18, maxWidth: 720 }}>
+      <div className="card card-pad-lg text-center" style={{ background: 'linear-gradient(135deg, color-mix(in srgb, var(--sector) 12%, var(--surface)), var(--surface))' }}>
+        <div style={{ width: 84, height: 84, borderRadius: 26, margin: '0 auto', background: 'linear-gradient(135deg, var(--sector-1), var(--sector-2))', color: '#fff', display: 'grid', placeItems: 'center', fontSize: 34, fontWeight: 900 }}>{initials}</div>
+        <h1 className="mt-3" style={{ fontSize: 22 }}>{profile.name || 'مستخدم كفاءة'}</h1>
+        <p className="text-muted">{profile.email}</p>
+        <div className="row" style={{ justifyContent: 'center', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
+          <span className="badge badge-brand">{sector?.label}</span>
+          <span className="badge badge-muted">{spec?.label}</span>
+        </div>
+        <Link href="/onboarding" className="btn btn-ghost btn-sm mt-3"><Repeat size={14} /> تعديل التخصص</Link>
+      </div>
+
+      <div className="grid grid-4">
+        {[
+          { icon: BookOpen, label: 'مُجابة', value: stats.answered },
+          { icon: Target, label: 'الدقة', value: `${stats.accuracy}%` },
+          { icon: Flame, label: 'أيام متتالية', value: stats.streak },
+          { icon: Award, label: 'أفضل محاكاة', value: `${stats.bestMock}%` },
+        ].map((x, i) => (
+          <div key={i} className="stat-card"><x.icon size={19} style={{ color: 'var(--sector)' }} /><div className="stat-num mt-2">{x.value}</div><div className="stat-label">{x.label}</div></div>
+        ))}
+      </div>
+
+      <div className="card">
+        <h3 style={{ fontSize: 15.5, marginBottom: 12 }}>تفاصيل التخصص</h3>
+        <div className="stack" style={{ gap: 12 }}>
+          {[
+            { icon: GraduationCap, label: 'التخصص', value: spec?.label },
+            { icon: Building2, label: 'جهة الترخيص', value: spec?.authority },
+            { icon: CalendarDays, label: 'الدولة', value: spec?.country },
+            { icon: Target, label: 'مخطط الامتحان', value: spec?.blueprint ? `${spec.blueprint.questions} سؤال · ${spec.blueprint.minutes} دقيقة · نجاح ${spec.blueprint.passScore}%` : '—' },
+          ].map((r, i) => (
+            <div key={i} className="row" style={{ gap: 12 }}>
+              <div style={{ width: 36, height: 36, borderRadius: 11, background: 'var(--surface-3)', display: 'grid', placeItems: 'center', color: 'var(--sector)' }}><r.icon size={17} /></div>
+              <div><div className="text-muted" style={{ fontSize: 12 }}>{r.label}</div><div style={{ fontWeight: 700, fontSize: 14 }}>{r.value || '—'}</div></div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  )
+  );
 }

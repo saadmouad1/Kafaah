@@ -1,226 +1,237 @@
 'use client';
-import { useState, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Timer, CheckCircle2, XCircle, RotateCcw, ChevronRight, ChevronLeft, AlertTriangle, Flag, Award } from 'lucide-react';
-import { useQuestions, shuffle, checkIsEnglish } from '../../../lib/useData';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import Link from 'next/link';
+import { Timer, Play, Flag, ChevronLeft, ChevronRight, CheckCircle2, RotateCcw, Award } from 'lucide-react';
+import { useKafaah } from '../../../lib/context/KafaahProvider';
+import { useQuestions, useSpecBanks, shuffle } from '../../../lib/useData';
+import { recordMock } from '../../../lib/progress';
+import QuestionView from '../../../components/QuestionView';
 
-const EXAM_SIZE = 40;
-const EXAM_MINUTES = 60;
+const fmt = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
-export default function MockExamPage() {
-  const [phase, setPhase] = useState('setup'); // setup | exam | review
-  const [examQuestions, setExamQuestions] = useState([]);
-  const [currentIdx, setCurrentIdx] = useState(0);
+export default function MockPage() {
+  const { profile, spec, t, locale, bankName } = useKafaah();
+  const { banks } = useSpecBanks(profile?.specId);
+  const bp = spec?.blueprint || { questions: 40, minutes: 60, passScore: 60 };
+
+  const [bank, setBank] = useState('all');
+  const [difficulty, setDifficulty] = useState('all');
+  const [count, setCount] = useState(Math.min(bp.questions, 60));
+  const [started, setStarted] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [seed, setSeed] = useState(0);
+
+  const { questions, total, loading } = useQuestions({ bank, difficulty, limit: 100, offset: seed, enabled: true });
+  const deck = useMemo(() => shuffle(questions).slice(0, count), [questions, count]);
+
+  const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [flagged, setFlagged] = useState({});
-  const [timeLeft, setTimeLeft] = useState(EXAM_MINUTES * 60);
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [flags, setFlags] = useState({});
+  const [secondsLeft, setSecondsLeft] = useState(bp.minutes * 60);
+  const resultsRef = useRef(null);
 
-  const { questions: allQuestions, loading } = useQuestions();
-
-  const categories = [
-    { id: 'all', label: 'جميع التخصصات' },
-    { id: 'medical', label: 'القطاع الصحي والطبي' },
-    { id: 'engineering', label: 'الهندسة والتقنية' },
-    { id: 'law', label: 'القانون' },
-    { id: 'finance', label: 'المحاسبة والمالية' },
-  ];
-
-  const startExam = useCallback(() => {
-    const pool = selectedCategory === 'all'
-      ? allQuestions
-      : allQuestions.filter(q => (q.sectorId || q.category) === selectedCategory);
-    const selected = shuffle(pool).slice(0, Math.min(EXAM_SIZE, pool.length));
-    setExamQuestions(selected);
-    setAnswers({});
-    setFlagged({});
-    setCurrentIdx(0);
-    setTimeLeft(EXAM_MINUTES * 60);
-    setPhase('exam');
-  }, [selectedCategory, allQuestions]);
-
-  // Timer
   useEffect(() => {
-    if (phase !== 'exam') return;
-    if (timeLeft <= 0) { setPhase('review'); return; }
-    const t = setTimeout(() => setTimeLeft(s => s - 1), 1000);
-    return () => clearTimeout(t);
-  }, [phase, timeLeft]);
+    if (!started || submitted) return;
+    if (secondsLeft <= 0) { setSubmitted(true); return; }
+    const timer = setTimeout(() => setSecondsLeft((s) => s - 1), 1000);
+    return () => clearTimeout(timer);
+  }, [started, submitted, secondsLeft]);
 
-  const formatTime = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+  const answeredCount = Object.keys(answers).length;
 
-  // ─── SETUP PHASE ───────────────────────────────────────────────────────────
-  if (phase === 'setup') {
-    return (
-      <div style={{ maxWidth: 640, margin: '0 auto', paddingTop: 40 }}>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-          style={{ background: '#fff', borderRadius: 28, padding: 40, boxShadow: 'var(--shadow-card)', border: '1px solid var(--border-subtle)' }}>
-          <div style={{ textAlign: 'center', marginBottom: 36 }}>
-            <div style={{ width: 72, height: 72, borderRadius: 22, background: 'linear-gradient(135deg,#ef4444,#dc2626)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 18px', boxShadow: '0 8px 24px rgba(239,68,68,0.3)' }}>
-              <AlertTriangle size={34} color="#fff" />
-            </div>
-            <h1 style={{ fontSize: 26, fontWeight: 900, color: 'var(--text)', marginBottom: 8, fontFamily: 'var(--font-display)' }}>الاختبار التجريبي الشامل</h1>
-            <p style={{ color: 'var(--text-muted)', fontWeight: 600, lineHeight: 1.6 }}>
-              {loading ? 'جاري تحميل الأسئلة...' : `${allQuestions.length} سؤال متاح • سيتم اختيار ${EXAM_SIZE} سؤال عشوائياً`}
-            </p>
-          </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginBottom: 32 }}>
-            <div style={{ background: 'var(--bg-subtle)', borderRadius: 16, padding: '14px 20px', display: 'flex', justifyContent: 'space-between' }}>
-              <span style={{ fontWeight: 700, color: 'var(--text-secondary)' }}>عدد الأسئلة</span>
-              <span style={{ fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-numbers)' }}>{Math.min(EXAM_SIZE, allQuestions.length)} سؤال</span>
-            </div>
-            <div style={{ background: 'var(--bg-subtle)', borderRadius: 16, padding: '14px 20px', display: 'flex', justifyContent: 'space-between' }}>
-              <span style={{ fontWeight: 700, color: 'var(--text-secondary)' }}>الوقت المحدد</span>
-              <span style={{ fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-numbers)' }}>{EXAM_MINUTES} دقيقة</span>
-            </div>
-          </div>
-
-          <div style={{ marginBottom: 28 }}>
-            <label style={{ display: 'block', fontWeight: 800, color: 'var(--text-secondary)', marginBottom: 10, fontSize: 14 }}>اختر القسم</label>
-            <select value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)}
-              style={{ width: '100%', padding: '14px 18px', borderRadius: 12, border: '1px solid var(--border)', fontSize: 15, fontFamily: 'var(--font-body)', outline: 'none', background: '#fff' }}>
-              {categories.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
-            </select>
-          </div>
-
-          <button onClick={startExam} disabled={loading || allQuestions.length === 0}
-            style={{ width: '100%', padding: '18px 0', borderRadius: 14, background: loading ? '#94a3b8' : 'linear-gradient(135deg,#ef4444,#dc2626)', color: '#fff', border: 'none', fontSize: 18, fontWeight: 900, cursor: loading ? 'not-allowed' : 'pointer', boxShadow: '0 8px 24px rgba(239,68,68,0.35)' }}>
-            {loading ? 'جاري التحميل...' : 'ابدأ الاختبار الآن'}
-          </button>
-        </motion.div>
-      </div>
-    );
+  function submit() {
+    if (submitted) return;
+    setSubmitted(true);
+    setIdx(0);
+    resultsRef.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
-  // ─── EXAM PHASE ────────────────────────────────────────────────────────────
-  if (phase === 'exam') {
-    const q = examQuestions[currentIdx];
-    if (!q) return null;
-    const isEng = checkIsEnglish(q.text);
-    const correctIdx = q.correctIndex ?? q.correct_index ?? 0;
-    const answered = answers[currentIdx];
-    const isFlagged = flagged[currentIdx];
+  const result = useMemo(() => {
+    if (!submitted) return null;
+    let c = 0;
+    const byBank = {};
+    deck.forEach((q) => {
+      const correct = q.correctIndex ?? q.correct_index ?? 0;
+      const ok = answers[q.id] === correct;
+      if (ok) c++;
+      const key = bankName({ specId: q.specId, title: q.bankTitle, auto: q.bankAuto }) || t('common.general');
+      byBank[key] = byBank[key] || { c: 0, t: 0 };
+      byBank[key].t++;
+      if (ok) byBank[key].c++;
+    });
+    const pct = deck.length ? Math.round((c / deck.length) * 100) : 0;
+    return { correct: c, total: deck.length, pct, passed: pct >= bp.passScore, byBank };
+  }, [submitted, deck, answers, bp.passScore]);
 
+  useEffect(() => {
+    if (submitted && result && result.total) {
+      recordMock({ total: result.total, correct: result.correct, specId: spec?.id, minutes: Math.round((bp.minutes * 60 - secondsLeft) / 60), passScore: bp.passScore, passed: result.passed });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [submitted]);
+
+  function begin() {
+    const eff = total > 0 ? Math.min(count, total) : count;
+    setCount(eff);
+    const maxOff = Math.max(0, total - 100);
+    setSeed(maxOff > 0 ? Math.floor(Math.random() * maxOff) : 0);
+    setSecondsLeft((Math.round((eff / bp.questions) * bp.minutes) || bp.minutes) * 60);
+    setStarted(true);
+  }
+
+  function restart() {
+    setStarted(false); setSubmitted(false); setAnswers({}); setFlags({}); setIdx(0); setSecondsLeft(bp.minutes * 60);
+  }
+
+  // ── شاشة الإعداد ──
+  if (!started) {
     return (
-      <div style={{ maxWidth: 860, margin: '0 auto' }}>
-        {/* Timer + progress */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20, background: '#fff', borderRadius: 20, padding: '14px 24px', boxShadow: 'var(--shadow-subtle)', border: '1px solid var(--border-subtle)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: timeLeft < 300 ? '#ef4444' : 'var(--text-secondary)', fontWeight: 900, fontFamily: 'var(--font-numbers)', fontSize: 18 }}>
-            <Timer size={20} /> {formatTime(timeLeft)}
+      <div className="stack" style={{ gap: 18 }}>
+        <div>
+          <h1 className="page-title">{t('nav.mock')}</h1>
+          <p className="text-muted mt-1">{t('mock.sub')}</p>
+        </div>
+        <div className="card">
+          <div className="grid grid-3">
+            <div className="stat-card"><div className="stat-label">{t('mock.questionCount')}</div><div className="stat-num">{count}</div></div>
+            <div className="stat-card"><div className="stat-label">{t('mock.duration')}</div><div className="stat-num">{bp.minutes}<span style={{ fontSize: 14 }}> {t('common.minutesShort')}</span></div></div>
+            <div className="stat-card"><div className="stat-label">{t('mock.passScore')}</div><div className="stat-num">{bp.passScore}%</div></div>
           </div>
-          <div style={{ fontWeight: 800, color: 'var(--text-muted)', fontSize: 14 }}>{currentIdx + 1} / {examQuestions.length}</div>
-          <button onClick={() => setFlagged(f => ({ ...f, [currentIdx]: !isFlagged }))}
-            style={{ padding: '8px 14px', borderRadius: 10, border: `1px solid ${isFlagged ? '#f59e0b' : 'var(--border)'}`, background: isFlagged ? '#fef3c7' : 'transparent', color: isFlagged ? '#d97706' : 'var(--text-muted)', cursor: 'pointer', fontWeight: 700, display: 'flex', alignItems: 'center', gap: 6 }}>
-            <Flag size={15} /> {isFlagged ? 'مُعلَّم' : 'تعليم'}
-          </button>
-        </div>
 
-        {/* Progress bar */}
-        <div style={{ height: 6, background: 'var(--bg-subtle)', borderRadius: 999, marginBottom: 24, overflow: 'hidden' }}>
-          <motion.div animate={{ width: `${((currentIdx + 1) / examQuestions.length) * 100}%` }}
-            style={{ height: '100%', background: 'linear-gradient(90deg,#10b981,#059669)', borderRadius: 999 }} />
-        </div>
+          <div className="field mt-4">
+            <label className="label">{t('mock.questionCount')} <span className="text-muted" style={{ fontWeight: 600 }}>({t('mock.available', { n: loading ? '…' : total.toLocaleString(locale) })})</span></label>
+            <input type="range" min={10} max={Math.max(10, Math.min(80, total || bp.questions))} step={5} value={Math.min(count, total || count || 10)} onChange={(e) => setCount(+e.target.value)} style={{ width: '100%', accentColor: 'var(--sector)' }} />
+            <div className="text-muted" style={{ fontSize: 12.5 }}>{t('mock.selectCount', { n: Math.min(count, total || count), m: Math.round((Math.min(count, total || count) / bp.questions) * bp.minutes) || bp.minutes })}</div>
+          </div>
 
-        {/* Question card */}
-        <AnimatePresence mode="wait">
-          <motion.div key={currentIdx} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -30 }}
-            style={{ background: '#fff', borderRadius: 24, padding: 36, boxShadow: 'var(--shadow-card)', border: '1px solid var(--border-subtle)', marginBottom: 24 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, color: 'var(--text)', marginBottom: 28, lineHeight: 1.7, direction: isEng ? 'ltr' : 'rtl', textAlign: isEng ? 'left' : 'right' }}>
-              {q.text}
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-              {(q.options || []).map((opt, idx) => {
-                const isSelected = answered === idx;
-                const isEngOpt = checkIsEnglish(opt);
-                return (
-                  <button key={idx} onClick={() => setAnswers(a => ({ ...a, [currentIdx]: idx }))}
-                    style={{
-                      width: '100%', padding: '15px 20px', borderRadius: 14, textAlign: isEngOpt ? 'left' : 'right', direction: isEngOpt ? 'ltr' : 'rtl',
-                      background: isSelected ? 'linear-gradient(135deg,#dbeafe,#eff6ff)' : 'var(--bg-subtle)',
-                      border: `2px solid ${isSelected ? '#3b82f6' : 'transparent'}`,
-                      color: isSelected ? '#1d4ed8' : 'var(--text)', fontWeight: isSelected ? 800 : 600,
-                      cursor: 'pointer', fontSize: 15, transition: 'all 0.18s',
-                      fontFamily: isEngOpt ? 'system-ui' : 'var(--font-body)'
-                    }}>
-                    {opt}
-                  </button>
-                );
-              })}
+          <div className="field mt-3">
+            <label className="label">{t('mock.bankOptional')}</label>
+            <div className="chip-row">
+              <span className={`chip${bank === 'all' ? ' active' : ''}`} onClick={() => setBank('all')}>{t('mock.allBanks')}</span>
+              {banks.map((b) => <span key={b.id} className={`chip${bank === b.id ? ' active' : ''}`} onClick={() => setBank(b.id)}>{bankName(b)}</span>)}
             </div>
-          </motion.div>
-        </AnimatePresence>
+          </div>
 
-        {/* Navigation */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12 }}>
-          <button onClick={() => setCurrentIdx(i => Math.max(0, i - 1))} disabled={currentIdx === 0}
-            style={{ padding: '13px 24px', borderRadius: 12, border: '1px solid var(--border)', background: '#fff', cursor: currentIdx === 0 ? 'not-allowed' : 'pointer', opacity: currentIdx === 0 ? 0.4 : 1, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8 }}>
-            <ChevronRight size={18} /> السابق
+          <div className="field mt-3">
+            <label className="label">{t('mock.difficultyOptional')}</label>
+            <div className="chip-row">
+              {[['all', t('common.allDifficulties')], ['easy', t('common.easy')], ['medium', t('common.medium')], ['hard', t('common.hard')]].map(([v, l]) => (
+                <span key={v} className={`chip${difficulty === v ? ' active' : ''}`} onClick={() => setDifficulty(v)}>{l}</span>
+              ))}
+            </div>
+          </div>
+
+          <button className="btn btn-primary btn-lg btn-block mt-4" onClick={begin} disabled={loading || total === 0}>
+            <Play size={17} /> {t('mock.start')}
           </button>
-          {currentIdx === examQuestions.length - 1 ? (
-            <button onClick={() => setPhase('review')}
-              style={{ padding: '13px 28px', borderRadius: 12, background: '#10b981', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 900, fontSize: 15, boxShadow: '0 4px 16px rgba(16,185,129,0.3)' }}>
-              إنهاء وعرض النتائج
-            </button>
-          ) : (
-            <button onClick={() => setCurrentIdx(i => Math.min(examQuestions.length - 1, i + 1))}
-              style={{ padding: '13px 24px', borderRadius: 12, background: 'var(--text)', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8 }}>
-              التالي <ChevronLeft size={18} />
-            </button>
-          )}
+          {total === 0 && !loading && <p className="text-muted text-center mt-2" style={{ fontSize: 13 }}>{bank !== 'all' ? t('mock.notEnoughBank') : t('mock.notEnough', { subject: '' })}</p>}
         </div>
       </div>
     );
   }
 
-  // ─── REVIEW PHASE ──────────────────────────────────────────────────────────
-  if (phase === 'review') {
-    const correct = examQuestions.filter((q, i) => answers[i] === (q.correctIndex ?? q.correct_index ?? 0)).length;
-    const total = examQuestions.length;
-    const pct = Math.round((correct / total) * 100);
-    const passed = pct >= 60;
+  if (loading) return <div className="skeleton" style={{ height: 380 }} />;
 
+  // ── شاشة النتائج ──
+  if (submitted && result) {
     return (
-      <div style={{ maxWidth: 720, margin: '0 auto' }}>
-        <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
-          style={{ background: '#fff', borderRadius: 28, padding: 48, boxShadow: 'var(--shadow-float)', border: '1px solid var(--border-subtle)', textAlign: 'center', marginBottom: 32 }}>
-          <div style={{ width: 88, height: 88, borderRadius: 26, background: passed ? 'linear-gradient(135deg,#10b981,#059669)' : 'linear-gradient(135deg,#ef4444,#dc2626)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px', boxShadow: passed ? '0 8px 28px rgba(16,185,129,0.35)' : '0 8px 28px rgba(239,68,68,0.35)' }}>
-            <Award size={44} color="#fff" />
+      <div className="stack" ref={resultsRef} style={{ gap: 16 }}>
+        <div className="card card-pad-lg text-center">
+          <div style={{ fontSize: 54 }}>{result.passed ? '🏆' : '📚'}</div>
+          <h2 className="mt-2">{result.passed ? t('mock.passed') : t('mock.failed')}</h2>
+          <div className="stat-num" style={{ fontSize: '3rem', color: result.passed ? 'var(--success)' : 'var(--danger)' }}>{result.pct}%</div>
+          <p className="text-muted">{t('mock.resultLine', { c: result.correct, t: result.total, p: bp.passScore })}</p>
+          <div className="row" style={{ gap: 10, justifyContent: 'center', marginTop: 18 }}>
+            <button className="btn btn-primary" onClick={restart}><RotateCcw size={15} /> {t('mock.newExam')}</button>
+            <Link href="/dashboard/analytics" className="btn btn-ghost"><Award size={15} /> {t('mock.analytics')}</Link>
           </div>
-          <h1 style={{ fontSize: 28, fontWeight: 900, marginBottom: 8, color: 'var(--text)', fontFamily: 'var(--font-display)' }}>{passed ? 'أحسنت! اجتزت الاختبار' : 'لم تجتز الاختبار هذه المرة'}</h1>
-          <div style={{ fontSize: 64, fontWeight: 900, color: passed ? '#10b981' : '#ef4444', fontFamily: 'var(--font-numbers)', lineHeight: 1, marginBottom: 8 }}>{pct}%</div>
-          <p style={{ color: 'var(--text-muted)', fontWeight: 700 }}>{correct} صحيح من {total} سؤال</p>
-          <button onClick={() => setPhase('setup')} style={{ marginTop: 28, padding: '14px 32px', borderRadius: 14, background: 'var(--text)', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 800, fontSize: 16, display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-            <RotateCcw size={18} /> اختبار جديد
-          </button>
-        </motion.div>
+        </div>
 
-        {/* Review list */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          {examQuestions.map((q, i) => {
-            const userAns = answers[i];
-            const correctIdx = q.correctIndex ?? q.correct_index ?? 0;
-            const isRight = userAns === correctIdx;
-            const isEng = checkIsEnglish(q.text);
-            return (
-              <div key={i} style={{ background: '#fff', borderRadius: 20, padding: 24, border: `1.5px solid ${isRight ? '#10b98140' : '#ef444440'}`, boxShadow: 'var(--shadow-subtle)' }}>
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
-                  <div style={{ flexShrink: 0, width: 32, height: 32, borderRadius: 10, background: isRight ? '#d1fae5' : '#fee2e2', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    {isRight ? <CheckCircle2 size={18} color="#10b981" /> : <XCircle size={18} color="#ef4444" />}
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <p style={{ fontWeight: 700, color: 'var(--text)', marginBottom: 12, direction: isEng ? 'ltr' : 'rtl', textAlign: isEng ? 'left' : 'right' }}>{q.text}</p>
-                    {!isRight && userAns !== undefined && (
-                      <p style={{ fontSize: 13, color: '#ef4444', fontWeight: 700, marginBottom: 6 }}>إجابتك: {q.options?.[userAns]}</p>
-                    )}
-                    <p style={{ fontSize: 13, color: '#10b981', fontWeight: 700 }}>الصحيحة: {q.options?.[correctIdx]}</p>
-                  </div>
+        <div className="card">
+          <h3 style={{ fontSize: 16, marginBottom: 12 }}>{t('mock.byBank')}</h3>
+          <div className="stack" style={{ gap: 12 }}>
+            {Object.entries(result.byBank).map(([s, v]) => (
+              <div key={s}>
+                <div className="row-between" style={{ fontSize: 13.5, fontWeight: 700, marginBottom: 4 }}>
+                  <span>{s}</span><span>{v.c}/{v.t}</span>
                 </div>
+                <div className="progress"><span style={{ width: `${(v.c / v.t) * 100}%` }} /></div>
               </div>
+            ))}
+          </div>
+        </div>
+
+        <h3 style={{ fontSize: 16 }}>{t('mock.reviewAnswers')}</h3>
+        {deck.map((q, i) => (
+          <div key={q.id}>
+            <div className="text-muted mb-1" style={{ fontSize: 12.5, fontWeight: 700 }}>{t('mock.questionN', { n: i + 1 })}</div>
+            <QuestionView question={q} selected={answers[q.id] ?? null} reveal />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // ── شاشة الامتحان ──
+  const q = deck[idx];
+  if (!q) return <div className="card">{t('mock.notEnoughExam')}</div>;
+
+  return (
+    <div className="stack" style={{ gap: 14, maxWidth: 780, margin: '0 auto' }}>
+      <div className="card" style={{ padding: 12, position: 'sticky', top: 70, zIndex: 20 }}>
+        <div className="row-between">
+          <span className={`badge ${secondsLeft < 60 ? 'badge-danger' : 'badge-brand'}`} style={{ fontFamily: 'var(--font-numbers)', fontSize: 14 }}>
+            <Timer size={14} /> {fmt(secondsLeft)}
+          </span>
+          <span className="text-muted" style={{ fontWeight: 700, fontSize: 13 }}>{t('mock.answered', { a: answeredCount, t: deck.length })}</span>
+          <button className="btn btn-danger btn-sm" onClick={submit}>{t('mock.submit')}</button>
+        </div>
+      </div>
+
+      <QuestionView
+        question={q}
+        selected={answers[q.id] ?? null}
+        onSelect={(i) => setAnswers((a) => ({ ...a, [q.id]: i }))}
+        reveal={false}
+        saved={false}
+      />
+
+      <div className="row-between">
+        <button className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>
+          <ChevronRight size={16} /> {t('mock.prev')}
+        </button>
+        <button className={`btn ${flags[q.id] ? 'btn-gold' : 'btn-ghost'}`} onClick={() => setFlags((f) => ({ ...f, [q.id]: !f[q.id] }))}>
+          <Flag size={15} /> {flags[q.id] ? t('mock.flagged') : t('mock.flag')}
+        </button>
+        {idx < deck.length - 1 ? (
+          <button className="btn btn-primary" onClick={() => setIdx(idx + 1)}>{t('mock.next')} <ChevronLeft size={16} /></button>
+        ) : (
+          <button className="btn btn-primary" onClick={submit}>{t('mock.submit')} <CheckCircle2 size={16} /></button>
+        )}
+      </div>
+
+      {/* ورقة الإجابات */}
+      <div className="card">
+        <div className="row" style={{ gap: 6, flexWrap: 'wrap' }}>
+          {deck.map((qq, i) => {
+            const st = answers[qq.id] !== undefined ? 'answered' : flags[qq.id] ? 'flag' : 'idle';
+            return (
+              <button
+                key={qq.id}
+                onClick={() => setIdx(i)}
+                style={{
+                  width: 34, height: 34, borderRadius: 9, fontWeight: 800, fontSize: 12.5, cursor: 'pointer',
+                  border: i === idx ? '2px solid var(--sector)' : '1px solid var(--border)',
+                  background: st === 'answered' ? 'color-mix(in srgb, var(--sector) 16%, transparent)' : st === 'flag' ? 'var(--warning-soft)' : 'var(--surface)',
+                  color: 'var(--text)',
+                }}
+              >
+                {i + 1}
+              </button>
             );
           })}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }

@@ -1,0 +1,793 @@
+// ─────────────────────────────────────────────────────────────────────────────
+//  kafaah · i18n
+//  دعم العربية والإنجليزية لواجهة التطبيق (القوائم، الأزرار، العناوين، الرسائل).
+//  محتوى الأسئلة يبقى كما هو. الصفحة التعريفية التسويقية تبقى عربية.
+// ─────────────────────────────────────────────────────────────────────────────
+import { getSpec } from './content';
+
+export const LANGS = [
+  { id: 'ar', label: 'العربية', short: 'AR', locale: 'ar-EG', dir: 'rtl' },
+  { id: 'en', label: 'English', short: 'EN', locale: 'en-US', dir: 'ltr' },
+];
+
+export function localeOf(lang) {
+  return lang === 'en' ? 'en-US' : 'ar-EG';
+}
+
+export function dirOf(lang) {
+  return lang === 'en' ? 'ltr' : 'rtl';
+}
+
+// ── أسماء الأقسام بالإنجليزية ────────────────────────────────────────────────
+export const SECTOR_EN = {
+  medical: 'Healthcare & Medical',
+  engineering: 'Engineering & Technology',
+  law: 'Law & Advocacy',
+  finance: 'Accounting & Finance',
+  education: 'Education & Teaching',
+};
+
+export const SECTOR_SHORT_EN = {
+  medical: 'Health',
+  engineering: 'Engineering',
+  law: 'Law',
+  finance: 'Finance',
+  education: 'Education',
+};
+
+export const SECTOR_TAGLINE_EN = {
+  medical: 'Medical licensing & board exams',
+  engineering: 'Engineering classification & accreditation',
+  law: 'Bar admission & judiciary license',
+  finance: 'Professional fellowships & accountants',
+  education: 'Teachers professional license',
+};
+
+// ── أسماء التخصصات الدقيقة بالإنجليزية ───────────────────────────────────────
+export const SPEC_EN = {
+  gms: 'General Medicine & Surgery',
+  dentistry: 'Oral & Dental Surgery',
+  pharmacy: 'Clinical Pharmacy',
+  nursing: 'Nursing & Critical Care',
+  lab: 'Medical Laboratory Sciences',
+  pt: 'Physical Therapy & Rehabilitation',
+  radiology: 'Medical Imaging & Radiology',
+  emergency: 'Emergency Medicine & Intensive Care',
+  eng_civil: 'Civil & Structural Engineering',
+  eng_arch: 'Architecture & Planning',
+  eng_elec: 'Electrical & Electronic Engineering',
+  eng_mech: 'Mechanical & Industrial Engineering',
+  eng_it: 'Software & IT Engineering',
+  eng_chem: 'Chemical Engineering',
+  eng_env: 'Environmental & Water Engineering',
+  law_bar: 'Bar Admission License',
+  law_commercial: 'Commercial & Corporate Law',
+  law_criminal: 'Criminal Law & Litigation',
+  law_judiciary: 'Judiciary & Public Prosecution',
+  law_arbitration: 'International Arbitration & Mediation',
+  cpa: 'Certified Public Accountant (CPA)',
+  cma: 'Certified Management Accountant (CMA)',
+  socpa: 'SOCPA Fellowship',
+  cfa: 'Chartered Financial Analyst (CFA)',
+  tax: 'Zakat & Tax',
+  edu_general: 'Teacher Professional License',
+  edu_subject: 'Subject Teacher License',
+  edu_leadership: 'School Leadership & Administration',
+  edu_counsel: 'Student Counseling & Guidance',
+};
+
+// ── ترجمة النصوص المركّبة (الدولة/جهة الترخيص) عبر استبدال المقاطع ─────────────
+// مرتّبة من الأطول إلى الأقصر لتفادي الاستبدال الجزئي.
+const TOKENS_AR_EN = [
+  ['الهيئة السعودية للتخصصات', 'Saudi Commission for Health Specialties'],
+  ['هيئة تقويم التعليم والتدريب', 'Education & Training Evaluation Commission'],
+  ['هيئة الزكاة والضريبة والجمارك', 'Zakat, Tax and Customs Authority'],
+  ['الهيئة السعودية للمحاسبين', 'SOCPA'],
+  ['هيئات التحكيم المعتمدة', 'Recognized Arbitration Bodies'],
+  ['لجنة المحامين التجاريين', 'Commercial Lawyers Committee'],
+  ['هيئات تطوير التعليم', 'Education Development Authorities'],
+  ['الشهادات الدولية', 'International Certifications'],
+  ['هيئة المهندسين', 'Saudi Council of Engineers'],
+  ['المعهد العالي للقضاء', 'Higher Judicial Institute'],
+  ['المجلس الطبي', 'Medical Council'],
+  ['نقابة المحامين', 'Bar Association'],
+  ['وزارة العدل', 'Ministry of Justice'],
+  ['اليمن', 'Yemen'],
+  ['السعودية', 'Saudi Arabia'],
+  ['الخليج', 'Gulf'],
+  ['دولي', 'International'],
+  ['عام', 'General'],
+];
+
+export function localizeText(str, lang) {
+  if (!str || lang !== 'en') return str;
+  let out = String(str);
+  for (const [ar, en] of TOKENS_AR_EN) out = out.split(ar).join(en);
+  return out;
+}
+
+export function sectorLabel(sector, lang) {
+  if (!sector) return '';
+  return lang === 'en' ? SECTOR_EN[sector.id] || sector.label : sector.label;
+}
+
+export function sectorShort(sector, lang) {
+  if (!sector) return '';
+  return lang === 'en' ? SECTOR_SHORT_EN[sector.id] || sector.short : sector.short;
+}
+
+export function sectorTagline(sector, lang) {
+  if (!sector) return '';
+  return lang === 'en' ? SECTOR_TAGLINE_EN[sector.id] || sector.tagline : sector.tagline;
+}
+
+export function specLabel(spec, lang) {
+  if (!spec) return '';
+  return lang === 'en' ? SPEC_EN[spec.id] || spec.label : spec.label;
+}
+
+// عنوان البنك المعروض: البنوك المُنشأة يدويًا تحمل عنوانها، والبنك الافتراضي
+// (auto) يُعرض باسم التخصص المُعرّف.
+export function bankLabel(bank, lang) {
+  if (!bank) return '';
+  if (!bank.auto && bank.title) return bank.title;
+  const spec = bank.specId ? getSpec(bank.specId) : null;
+  return spec ? specLabel(spec, lang) : bank.title || '';
+}
+
+// ── القاموس ──────────────────────────────────────────────────────────────────
+const ar = {
+  // الهيكل
+  'nav.home': 'الرئيسية',
+  'nav.practice': 'التدريب',
+  'nav.mock': 'محاكاة الامتحان',
+  'nav.bank': 'بنك الأسئلة',
+  'nav.analytics': 'تحليل الأداء',
+  'nav.search': 'البحث',
+  'nav.mistakes': 'سجل الأخطاء',
+  'nav.saved': 'المفضلة',
+  'nav.menu': 'القائمة',
+  'nav.account': 'الحساب',
+  'nav.settings': 'الإعدادات',
+  'nav.profile': 'الملف الشخصي',
+  'nav.lightMode': 'الوضع الفاتح',
+  'nav.darkMode': 'الوضع الليلي',
+  'nav.logout': 'تسجيل الخروج',
+  'nav.changeSection': 'تغيير القسم',
+  'nav.changeSectionSpec': 'تغيير القسم أو التخصص',
+  'nav.toggleTheme': 'تبديل المظهر',
+  'nav.bottomAria': 'التنقل السفلي',
+  'nav.user': 'مستخدم',
+  'nav.brandSub': 'تراخيص مزاولة المهن والاعتماد المهني',
+  'nav.sectors': 'التخصصات',
+  'nav.features': 'المميزات',
+  'nav.app': 'التطبيق',
+  'nav.myDashboard': 'لوحتي',
+
+  'bottom.home': 'الرئيسية',
+  'bottom.practice': 'تدريب',
+  'bottom.mock': 'امتحان',
+  'bottom.bank': 'البنك',
+  'bottom.account': 'حسابي',
+
+  'lang.label': 'اللغة',
+  'lang.ar': 'العربية',
+  'lang.en': 'English',
+
+  // عام
+  'common.save': 'حفظ',
+  'common.loading': 'جاري التحميل…',
+  'common.all': 'الكل',
+  'common.allSubjects': 'كل المواد',
+  'common.easy': 'سهل',
+  'common.medium': 'متوسط',
+  'common.hard': 'صعب',
+  'common.allDifficulties': 'كل الصعوبات',
+  'common.subject': 'المادة',
+  'common.difficulty': 'الصعوبة',
+  'common.general': 'عام',
+  'common.explanation': 'الشرح',
+  'common.showAnswer': 'عرض الإجابة',
+  'common.hideAnswer': 'إخفاء الإجابة',
+  'common.showAnswerExplanation': 'عرض الإجابة والشرح',
+  'common.revealExplanation': 'إظهار الإجابة والشرح',
+  'common.optional': 'اختياري',
+  'common.questions': 'أسئلة',
+  'common.question': 'سؤال',
+  'common.minutesShort': 'د',
+  'common.bank': 'بنك',
+  'common.banks': 'بنوك',
+  'common.allBanks': 'كل البنوك',
+  'common.questionCount': '{n} سؤال',
+
+  // الرئيسية
+  'home.hello': 'أهلاً {name} 👋',
+  'home.statsLine': '{sector} سؤال في قسمك · {spec} في {specName}',
+  'home.changeSpec': 'تغيير التخصص',
+  'home.answered': 'أسئلة مُجابة',
+  'home.accuracy': 'الدقة',
+  'home.streak': 'أيام متتالية',
+  'home.bestMock': 'أفضل محاكاة',
+  'home.yourPlan': 'خطتك المخصّصة',
+  'home.planMeta': 'مُولّدة بالذكاء الاصطناعي',
+  'home.week': 'أسبوع {n}',
+  'home.startPractice': 'ابدأ التدريب',
+  'home.startNow': 'ابدأ الآن',
+  'home.mockDesc': 'امتحان كامل بمؤقّت ودرجة نجاح {pass}%',
+  'home.bankDesc': 'تصفّح جميع الأسئلة مع الشرح',
+  'home.analyticsDesc': 'نقاط قوتك وفرص التحسين',
+  'home.mistakesDesc': '{n} سؤال يحتاج مراجعة',
+  'home.savedDesc': '{n} سؤال محفوظ',
+  'home.weeklyActivity': 'نشاط آخر ٧ أيام',
+  'home.details': 'التفاصيل',
+  'home.questionTooltip': '{a} سؤال · {c} صحيح',
+
+  // التدريب
+  'practice.sub': 'تدريب على أسئلة تخصصك مع شرح فوري لكل خيار.',
+  'practice.setup': 'اضبط جلستك',
+  'practice.sessionInfo': 'جلسة من ٢٥ سؤالًا بشرح فوري',
+  'practice.available': '{n} متاح',
+  'practice.start': 'ابدأ الجلسة',
+  'practice.finished': 'أنهيت الجلسة',
+  'practice.sessionScore': 'نتيجتك في هذه الجلسة',
+  'practice.correct': '{n} صحيح',
+  'practice.wrong': '{n} خطأ',
+  'practice.newSession': 'جلسة جديدة',
+  'practice.reviewMistakes': 'مراجعة الأخطاء',
+  'practice.questionOf': 'سؤال {i} من {n}',
+  'practice.nextQuestion': 'السؤال التالي',
+  'practice.endSession': 'إنهاء الجلسة',
+  'practice.chooseBank': 'بنك الأسئلة',
+  'practice.allBanks': 'كل البنوك',
+
+  // المحاكاة
+  'mock.sub': 'امتحان كامل يحاكي بيئة الاختبار — بمؤقّت ودرجة نجاح.',
+  'mock.questionCount': 'عدد الأسئلة',
+  'mock.duration': 'المدة',
+  'mock.passScore': 'درجة النجاح',
+  'mock.available': 'المتاح: {n}',
+  'mock.selectCount': 'اخترت {n} سؤالًا · المدة المقترحة {m} دقيقة',
+  'mock.subjectOptional': 'المادة (اختياري)',
+  'mock.bankOptional': 'بنك الأسئلة',
+  'mock.allBanks': 'كل البنوك',
+  'mock.difficultyOptional': 'الصعوبة',
+  'mock.start': 'ابدأ الامتحان',
+  'mock.notEnough': 'لا توجد أسئلة كافية لهذا التخصص{subject}.',
+  'mock.inThisSubject': ' في هذه المادة',
+  'mock.inThisBank': ' في هذا البنك',
+  'mock.notEnoughBank': 'لا توجد أسئلة كافية في هذا البنك.',
+  'mock.byBank': 'النتيجة حسب البنك',
+  'mock.passed': 'مبارك، اجتزت!',
+  'mock.failed': 'تحتاج مزيدًا من الاستعداد',
+  'mock.resultLine': 'أجبت {c} من {t} · درجة النجاح {p}%',
+  'mock.newExam': 'امتحان جديد',
+  'mock.analytics': 'تحليل الأداء',
+  'mock.bySubject': 'النتيجة حسب المادة',
+  'mock.reviewAnswers': 'مراجعة الإجابات',
+  'mock.questionN': 'سؤال {n}',
+  'mock.notEnoughExam': 'لا توجد أسئلة كافية لهذا الامتحان.',
+  'mock.answered': 'أجبت {a}/{t}',
+  'mock.submit': 'تسليم',
+  'mock.prev': 'السابق',
+  'mock.next': 'التالي',
+  'mock.flagged': 'معلّم',
+  'mock.flag': 'تعليم للمراجعة',
+
+  // بنك الأسئلة
+  'bank.count': '{n} سؤال يطابق اختيارك',
+  'bank.searchPlaceholder': 'ابحث بالكلمة المفتاحية…',
+  'bank.noMatch': 'لا توجد أسئلة مطابقة.',
+  'bank.loadMore': 'تحميل المزيد',
+  'bank.title': 'بنك الأسئلة',
+  'bank.sub': 'بنوك تخصصك — اختر بنكًا لعرض أسئلته والتدريب عليها.',
+  'bank.selectBank': 'بنوك {spec}',
+  'bank.questionsInBank': 'أسئلة البنك',
+  'bank.openBank': 'تصفّح البنك',
+  'bank.back': 'كل البنوك',
+  'bank.noBanks': 'لا توجد بنوك بعد لهذا التخصص.',
+  'bank.noBanksDesc': 'أنشئ بنكًا جديدًا من لوحة المالك، وسمّه باسم واضح وأضف أسئلته الخاصة.',
+  'bank.autoNote': 'بنك رئيسي — بعنوان التخصص',
+  'bank.noSpec': 'اختر تخصصك أولًا لعرض بنوكه.',
+
+  // التحليلات
+  'analytics.sub': 'لوحة تقدّمك في {spec}.',
+  'analytics.readiness': 'مؤشر الجهوزية',
+  'analytics.readinessDesc': 'تقدير استعدادك بناءً على دقتك وحجم تدريبك ونتائج المحاكاة.',
+  'analytics.startMock': 'ابدأ محاكاة',
+  'analytics.mistakesForReview': 'أخطاء للمراجعة',
+  'analytics.last7': 'آخر ٧ أيام',
+  'analytics.topWrong': 'أكثر المواد خطأً',
+  'analytics.noMistakes': 'لا توجد أخطاء بعد — أداء ممتاز! 👏',
+  'analytics.mockLog': 'سجل المحاكاة',
+  'analytics.noMocks': 'لم تُجرِ أي محاكاة بعد.',
+  'analytics.pass': 'ناجح',
+  'analytics.fail': 'راسب',
+
+  // الأخطاء
+  'mistakes.empty': 'لا توجد أخطاء مسجّلة',
+  'mistakes.emptyDesc': 'رائع! كل إجاباتك صحيحة حتى الآن. استمر.',
+  'mistakes.count': '{n} سؤالًا يحتاج مراجعة — راجعها لتثبيت المعلومة.',
+  'mistakes.clearAll': 'مسح الكل',
+  'mistakes.clearConfirm': 'مسح كل سجل الأخطاء؟',
+  'mistakes.wrongTimes': 'أخطأت {n} مرة',
+  'mistakes.mastered': 'أتقنته',
+
+  // المفضلة
+  'saved.empty': 'لا توجد أسئلة محفوظة',
+  'saved.emptyDesc': 'احفظ الأسئلة المهمة أثناء التدريب لتجدها هنا.',
+  'saved.browse': 'تصفّح بنك الأسئلة',
+  'saved.count': '{n} سؤال محفوظ',
+  'saved.badge': 'محفوظ',
+  'saved.remove': 'إزالة',
+
+  // الملف الشخصي
+  'profile.defaultName': 'مستخدم كفاءة',
+  'profile.editSpec': 'تعديل التخصص',
+  'profile.answeredShort': 'مُجابة',
+  'profile.details': 'تفاصيل التخصص',
+  'profile.spec': 'التخصص',
+  'profile.authority': 'جهة الترخيص',
+  'profile.country': 'الدولة',
+  'profile.blueprint': 'مخطط الامتحان',
+  'profile.blueprintFmt': '{q} سؤال · {m} دقيقة · نجاح {p}%',
+
+  // البحث
+  'search.title': 'البحث الذكي في بنك الأسئلة',
+  'search.sub': 'اكتب سؤالًا أو جزءًا منه، وسنخبرك كم مرة تكرّر وفي أي بنك ظهر — مع الإجابة والشرح.',
+  'search.scope': 'نطاق البحث — تخصصات {sector}:',
+  'search.yourSection': 'قسمك',
+  'search.selectAll': 'تحديد الكل',
+  'search.clearAll': 'إلغاء الكل',
+  'search.changeSectionSpec': 'تغيير القسم/التخصص',
+  'search.pickOne': 'حدّد تخصصًا واحدًا على الأقل للبدء.',
+  'search.placeholder': 'اكتب كلمة مفتاحية أو نص السؤال…',
+  'search.try': 'جرّب:',
+  'search.searching': 'جاري البحث…',
+  'search.matched': 'نتائج مطابقة',
+  'search.unique': 'أسئلة فريدة',
+  'search.duplicated': 'مكرّرة في أكثر من بنك',
+  'search.banksInvolved': 'بنوك شملها البحث',
+  'search.dupNotice': 'يوجد {n} سؤالًا مكرّرًا في أكثر من تخصص/بنك.',
+  'search.showAll': 'عرض الكل',
+  'search.showDupOnly': 'عرض المكرّرة فقط',
+  'search.repeated': 'تكرّر {n}×',
+  'search.banksCount': '{n} بنوك',
+  'search.appearedIn': 'ظهر في:',
+  'search.showAllBanks': 'عرض كل البنوك ({n})',
+  'search.truncated': 'تظهر أول {n} نتيجة — دقّق كلمات البحث لعرض نتائج أدق.',
+  'search.noResults': 'لا توجد نتائج مطابقة داخل التخصصات المحددة. جرّب صياغة أخرى.',
+  'search.startTyping': 'ابدأ بكتابة كلمتين على الأقل للبحث في {spec}.',
+  'search.clearAria': 'مسح',
+  'search.saveAria': 'حفظ',
+  'search.bankScope': 'نطاق البنوك:',
+  'search.allBanks': 'كل البنوك',
+
+  // عرض السؤال
+  'q.saveAria': 'حفظ السؤال',
+  'q.noExplanation': 'لا يوجد شرح مُسجّل لهذا السؤال.',
+  'q.askTutor': 'اسأل المدرّس الذكي',
+  'q.tutorError': 'تعذّر الحصول على الشرح.',
+  'q.tutorErrorConn': 'تعذّر الاتصال بالمدرّس الذكي.',
+
+  // الإعدادات
+  'settings.account': 'الحساب',
+  'settings.name': 'الاسم',
+  'settings.email': 'البريد الإلكتروني',
+  'settings.domain': 'المجال والتخصص',
+  'settings.section': 'القسم',
+  'settings.chooseSection': '— اختر القسم —',
+  'settings.spec': 'التخصص الدقيق',
+  'settings.chooseSpec': '— اختر التخصص —',
+  'settings.saveDomain': 'حفظ القسم والتخصص',
+  'settings.viaWizard': 'عبر معالج الإعداد',
+  'settings.appearance': 'المظهر',
+  'settings.light': 'فاتح',
+  'settings.dark': 'ليلي',
+  'settings.subscription': 'اشتراكي',
+  'settings.activeSub': 'اشتراك نشط',
+  'settings.expires': 'تنتهي في {date}',
+  'settings.active': 'نشط',
+  'settings.myData': 'بياناتي',
+  'settings.export': 'تصدير التقدّم',
+  'settings.import': 'استيراد التقدّم',
+  'settings.reset': 'إعادة تعيين',
+  'settings.resetConfirm': 'إعادة تعيين كل تقدّمك؟',
+  'settings.savedIdentity': 'تم الحفظ ✓',
+  'settings.savedDomain': 'تم تحديث القسم والتخصص ✓',
+  'settings.imported': 'تم استيراد التقدّم ✓',
+  'settings.invalidFile': 'ملف غير صالح ✕',
+  'settings.resetDone': 'تمت إعادة التعيين',
+
+  // الدخول والتسجيل
+  'auth.welcomeBack': 'مرحبًا بعودتك',
+  'auth.loginSub': 'سجّل الدخول لمتابعة تدريبك.',
+  'auth.email': 'البريد الإلكتروني',
+  'auth.password': 'كلمة المرور',
+  'auth.login': 'تسجيل الدخول',
+  'auth.noAccount': 'ليس لديك حساب؟',
+  'auth.createOne': 'أنشئ حسابًا',
+  'auth.loginLink': 'سجّل الدخول',
+  'auth.haveAccount': 'لديك حساب؟',
+  'register.title': 'أنشئ حسابك في كفاءة',
+  'register.sub': 'أنشئ حسابك وابدأ التدريب فورًا.',
+  'register.fullName': 'الاسم الكامل',
+  'register.namePlaceholder': 'مثال: أحمد محمد',
+  'register.passwordPlaceholder': '٦ أحرف على الأقل',
+  'register.create': 'إنشاء الحساب',
+  'register.privacy': 'بياناتك محفوظة على جهازك فقط في هذه النسخة.',
+
+  // معالج الإعداد
+  'onb.step0': 'القسم',
+  'onb.step1': 'التخصص',
+  'onb.step2': 'خطتك',
+  'onb.chooseField': 'اختر مجالك',
+  'onb.chooseFieldSub': 'سنخصّص لك الأسئلة والمعجم وخطة التدريب حسب تخصصك.',
+  'onb.specCount': '{n} تخصص',
+  'onb.chooseSpec': 'اختر تخصصك الدقيق',
+  'onb.questionBadge': '{n} سؤال',
+  'onb.minutesBadge': '{n} دقيقة',
+  'onb.passBadge': 'نجاح {n}%',
+  'onb.next': 'التالي',
+  'onb.back': 'رجوع',
+  'onb.lastStep': 'لمسة أخيرة',
+  'onb.lastStepSub': 'جهّزنا لك خطة مخصّصة لـ {spec}.',
+  'onb.yourName': 'اسمك',
+  'onb.namePlaceholder': 'اسمك الكامل',
+  'onb.yourLevel': 'مستواك الحالي',
+  'onb.level.student': 'طالب',
+  'onb.level.graduate': 'خريج',
+  'onb.level.practitioner': 'ممارس',
+  'onb.examDate': 'تاريخ الامتحان (اختياري)',
+  'onb.planReady': 'خطتك المخصّصة جاهزة',
+  'onb.readiness': 'الجهوزية',
+  'onb.dailyTarget': 'هدف يومي',
+  'onb.generatePlan': 'توليد خطة تدريب ذكية (اختياري)',
+  'onb.startTraining': 'ابدأ التدريب',
+
+  // بدون اتصال + التطبيق
+  'offline.title': 'لا يوجد اتصال بالإنترنت',
+  'offline.desc': 'يبدو أنك غير متصل. الأسئلة التي تدربت عليها سابقًا محفوظة ويمكنك الوصول إليها، وسنعيد الاتصال تلقائيًا عند عودة الشبكة.',
+  'offline.backHome': 'العودة للرئيسية',
+  'offline.continue': 'متابعة التدريب',
+  'pwa.offline': 'أنت غير متصل بالإنترنت — نعرض المحتوى المحفوظ، وسنعيد المزامنة تلقائيًا.',
+  'pwa.install': 'ثبّت تطبيق كفاءة',
+  'pwa.installSub': 'وصول أسرع وتجربة كالتطبيقات',
+  'pwa.installBtn': 'تثبيت',
+  'pwa.installAria': 'تثبيت التطبيق',
+  'pwa.close': 'إغلاق',
+};
+
+const en = {
+  // Shell
+  'nav.home': 'Home',
+  'nav.practice': 'Practice',
+  'nav.mock': 'Mock Exam',
+  'nav.bank': 'Question Bank',
+  'nav.analytics': 'Analytics',
+  'nav.search': 'Search',
+  'nav.mistakes': 'Mistakes',
+  'nav.saved': 'Saved',
+  'nav.menu': 'Menu',
+  'nav.account': 'Account',
+  'nav.settings': 'Settings',
+  'nav.profile': 'Profile',
+  'nav.lightMode': 'Light mode',
+  'nav.darkMode': 'Dark mode',
+  'nav.logout': 'Log out',
+  'nav.changeSection': 'Change section',
+  'nav.changeSectionSpec': 'Change section or specialization',
+  'nav.toggleTheme': 'Toggle theme',
+  'nav.bottomAria': 'Bottom navigation',
+  'nav.user': 'User',
+  'nav.brandSub': 'Professional licensing & accreditation',
+  'nav.sectors': 'Specializations',
+  'nav.features': 'Features',
+  'nav.app': 'App',
+  'nav.myDashboard': 'My dashboard',
+
+  'bottom.home': 'Home',
+  'bottom.practice': 'Practice',
+  'bottom.mock': 'Exam',
+  'bottom.bank': 'Bank',
+  'bottom.account': 'Account',
+
+  'lang.label': 'Language',
+  'lang.ar': 'العربية',
+  'lang.en': 'English',
+
+  // Common
+  'common.save': 'Save',
+  'common.loading': 'Loading…',
+  'common.all': 'All',
+  'common.allSubjects': 'All subjects',
+  'common.easy': 'Easy',
+  'common.medium': 'Medium',
+  'common.hard': 'Hard',
+  'common.allDifficulties': 'All difficulties',
+  'common.subject': 'Subject',
+  'common.difficulty': 'Difficulty',
+  'common.general': 'General',
+  'common.explanation': 'Explanation',
+  'common.showAnswer': 'Show answer',
+  'common.hideAnswer': 'Hide answer',
+  'common.showAnswerExplanation': 'Show answer & explanation',
+  'common.revealExplanation': 'Reveal answer & explanation',
+  'common.optional': 'optional',
+  'common.questions': 'questions',
+  'common.question': 'question',
+  'common.minutesShort': 'min',
+  'common.bank': 'bank',
+  'common.banks': 'banks',
+  'common.allBanks': 'All banks',
+  'common.questionCount': '{n} questions',
+
+  // Home
+  'home.hello': 'Welcome, {name} 👋',
+  'home.statsLine': '{sector} questions in your section · {spec} in {specName}',
+  'home.changeSpec': 'Change specialization',
+  'home.answered': 'Questions answered',
+  'home.accuracy': 'Accuracy',
+  'home.streak': 'Day streak',
+  'home.bestMock': 'Best mock',
+  'home.yourPlan': 'Your personalized plan',
+  'home.planMeta': 'AI-generated',
+  'home.week': 'Week {n}',
+  'home.startPractice': 'Start practice',
+  'home.startNow': 'Get started',
+  'home.mockDesc': 'Full timed exam with a {pass}% pass score',
+  'home.bankDesc': 'Browse all questions with explanations',
+  'home.analyticsDesc': 'Your strengths and areas to improve',
+  'home.mistakesDesc': '{n} questions need review',
+  'home.savedDesc': '{n} saved questions',
+  'home.weeklyActivity': 'Last 7 days activity',
+  'home.details': 'Details',
+  'home.questionTooltip': '{a} questions · {c} correct',
+
+  // Practice
+  'practice.sub': 'Practice questions from your specialization with instant explanations.',
+  'practice.setup': 'Set up your session',
+  'practice.sessionInfo': 'A 25-question session with instant explanations',
+  'practice.available': '{n} available',
+  'practice.start': 'Start session',
+  'practice.finished': 'Session complete',
+  'practice.sessionScore': 'Your score in this session',
+  'practice.correct': '{n} correct',
+  'practice.wrong': '{n} wrong',
+  'practice.newSession': 'New session',
+  'practice.reviewMistakes': 'Review mistakes',
+  'practice.questionOf': 'Question {i} of {n}',
+  'practice.nextQuestion': 'Next question',
+  'practice.endSession': 'Finish session',
+  'practice.chooseBank': 'Question bank',
+  'practice.allBanks': 'All banks',
+
+  // Mock
+  'mock.sub': 'A full exam simulating the real test environment — timed with a pass score.',
+  'mock.questionCount': 'Number of questions',
+  'mock.duration': 'Duration',
+  'mock.passScore': 'Pass score',
+  'mock.available': 'Available: {n}',
+  'mock.selectCount': 'Selected {n} questions · suggested duration {m} min',
+  'mock.subjectOptional': 'Subject (optional)',
+  'mock.bankOptional': 'Question bank',
+  'mock.allBanks': 'All banks',
+  'mock.difficultyOptional': 'Difficulty',
+  'mock.start': 'Start exam',
+  'mock.notEnough': 'Not enough questions for this specialization{subject}.',
+  'mock.inThisSubject': ' in this subject',
+  'mock.inThisBank': ' in this bank',
+  'mock.notEnoughBank': 'Not enough questions in this bank.',
+  'mock.byBank': 'Score by bank',
+  'mock.passed': 'Congratulations, you passed!',
+  'mock.failed': 'You need more preparation',
+  'mock.resultLine': 'Answered {c} of {t} · pass score {p}%',
+  'mock.newExam': 'New exam',
+  'mock.analytics': 'Analytics',
+  'mock.bySubject': 'Score by subject',
+  'mock.reviewAnswers': 'Review answers',
+  'mock.questionN': 'Question {n}',
+  'mock.notEnoughExam': 'Not enough questions for this exam.',
+  'mock.answered': 'Answered {a}/{t}',
+  'mock.submit': 'Submit',
+  'mock.prev': 'Previous',
+  'mock.next': 'Next',
+  'mock.flagged': 'Flagged',
+  'mock.flag': 'Flag for review',
+
+  // Bank
+  'bank.count': '{n} questions match your filters',
+  'bank.searchPlaceholder': 'Search by keyword…',
+  'bank.noMatch': 'No matching questions.',
+  'bank.loadMore': 'Load more',
+  'bank.title': 'Question Bank',
+  'bank.sub': "Your specialization's banks — pick a bank to browse and practice its questions.",
+  'bank.selectBank': '{spec} banks',
+  'bank.questionsInBank': 'Bank questions',
+  'bank.openBank': 'Open bank',
+  'bank.back': 'All banks',
+  'bank.noBanks': 'No banks yet for this specialization.',
+  'bank.noBanksDesc': 'Create a new bank from the owner panel, give it a clear title, and add its own questions.',
+  'bank.autoNote': 'Main bank — titled after the specialization',
+  'bank.noSpec': 'Choose your specialization first to see its banks.',
+
+  // Analytics
+  'analytics.sub': 'Your progress dashboard in {spec}.',
+  'analytics.readiness': 'Readiness score',
+  'analytics.readinessDesc': 'An estimate of your readiness based on accuracy, practice volume, and mock results.',
+  'analytics.startMock': 'Start mock',
+  'analytics.mistakesForReview': 'Mistakes to review',
+  'analytics.last7': 'Last 7 days',
+  'analytics.topWrong': 'Most-missed subjects',
+  'analytics.noMistakes': 'No mistakes yet — excellent! 👏',
+  'analytics.mockLog': 'Mock log',
+  'analytics.noMocks': "You haven't taken any mock exam yet.",
+  'analytics.pass': 'Passed',
+  'analytics.fail': 'Failed',
+
+  // Mistakes
+  'mistakes.empty': 'No recorded mistakes',
+  'mistakes.emptyDesc': 'Great! All your answers are correct so far. Keep going.',
+  'mistakes.count': '{n} questions need review — go over them to reinforce.',
+  'mistakes.clearAll': 'Clear all',
+  'mistakes.clearConfirm': 'Clear the entire mistakes log?',
+  'mistakes.wrongTimes': 'Wrong {n} time(s)',
+  'mistakes.mastered': 'Mastered',
+
+  // Saved
+  'saved.empty': 'No saved questions',
+  'saved.emptyDesc': 'Save important questions while practicing to find them here.',
+  'saved.browse': 'Browse question bank',
+  'saved.count': '{n} saved questions',
+  'saved.badge': 'Saved',
+  'saved.remove': 'Remove',
+
+  // Profile
+  'profile.defaultName': 'Kafaah user',
+  'profile.editSpec': 'Edit specialization',
+  'profile.answeredShort': 'Answered',
+  'profile.details': 'Specialization details',
+  'profile.spec': 'Specialization',
+  'profile.authority': 'Licensing authority',
+  'profile.country': 'Country',
+  'profile.blueprint': 'Exam blueprint',
+  'profile.blueprintFmt': '{q} questions · {m} min · pass {p}%',
+
+  // Search
+  'search.title': 'Smart search in the question bank',
+  'search.sub': "Type a question or part of it, and we'll tell you how many times it repeats and in which bank it appeared — with the answer and explanation.",
+  'search.scope': 'Search scope — {sector} specializations:',
+  'search.yourSection': 'your section',
+  'search.selectAll': 'Select all',
+  'search.clearAll': 'Clear all',
+  'search.changeSectionSpec': 'Change section/specialization',
+  'search.pickOne': 'Select at least one specialization to start.',
+  'search.placeholder': 'Type a keyword or question text…',
+  'search.try': 'Try:',
+  'search.searching': 'Searching…',
+  'search.matched': 'Matches',
+  'search.unique': 'Unique questions',
+  'search.duplicated': 'In multiple banks',
+  'search.banksInvolved': 'Banks searched',
+  'search.dupNotice': '{n} questions are duplicated across specializations/banks.',
+  'search.showAll': 'Show all',
+  'search.showDupOnly': 'Show duplicated only',
+  'search.repeated': 'Repeated {n}×',
+  'search.banksCount': '{n} banks',
+  'search.appearedIn': 'Appeared in:',
+  'search.showAllBanks': 'Show all banks ({n})',
+  'search.truncated': 'Showing the first {n} results — refine your keywords for more precise results.',
+  'search.noResults': 'No matching results within the selected specializations. Try another phrasing.',
+  'search.startTyping': 'Start typing at least two words to search in {spec}.',
+  'search.clearAria': 'Clear',
+  'search.saveAria': 'Save',
+  'search.bankScope': 'Bank scope:',
+  'search.allBanks': 'All banks',
+
+  // Question view
+  'q.saveAria': 'Save question',
+  'q.noExplanation': 'No explanation recorded for this question.',
+  'q.askTutor': 'Ask the AI tutor',
+  'q.tutorError': "Couldn't get an explanation.",
+  'q.tutorErrorConn': "Couldn't reach the AI tutor.",
+
+  // Settings
+  'settings.account': 'Account',
+  'settings.name': 'Name',
+  'settings.email': 'Email',
+  'settings.domain': 'Domain & specialization',
+  'settings.section': 'Section',
+  'settings.chooseSection': '— Select section —',
+  'settings.spec': 'Specialization',
+  'settings.chooseSpec': '— Select specialization —',
+  'settings.saveDomain': 'Save section & specialization',
+  'settings.viaWizard': 'Via setup wizard',
+  'settings.appearance': 'Appearance',
+  'settings.light': 'Light',
+  'settings.dark': 'Dark',
+  'settings.subscription': 'My subscription',
+  'settings.activeSub': 'Active subscription',
+  'settings.expires': 'Expires on {date}',
+  'settings.active': 'Active',
+  'settings.myData': 'My data',
+  'settings.export': 'Export progress',
+  'settings.import': 'Import progress',
+  'settings.reset': 'Reset',
+  'settings.resetConfirm': 'Reset all your progress?',
+  'settings.savedIdentity': 'Saved ✓',
+  'settings.savedDomain': 'Section & specialization updated ✓',
+  'settings.imported': 'Progress imported ✓',
+  'settings.invalidFile': 'Invalid file ✕',
+  'settings.resetDone': 'Reset done',
+
+  // Auth
+  'auth.welcomeBack': 'Welcome back',
+  'auth.loginSub': 'Sign in to continue your practice.',
+  'auth.email': 'Email',
+  'auth.password': 'Password',
+  'auth.login': 'Sign in',
+  'auth.noAccount': "Don't have an account?",
+  'auth.createOne': 'Create one',
+  'auth.loginLink': 'Sign in',
+  'auth.haveAccount': 'Already have an account?',
+  'register.title': 'Create your Kafaah account',
+  'register.sub': 'Create your account and start practicing right away.',
+  'register.fullName': 'Full name',
+  'register.namePlaceholder': 'e.g. Ahmed Mohammed',
+  'register.passwordPlaceholder': 'At least 6 characters',
+  'register.create': 'Create account',
+  'register.privacy': 'Your data is stored on your device only in this version.',
+
+  // Onboarding
+  'onb.step0': 'Section',
+  'onb.step1': 'Specialization',
+  'onb.step2': 'Your plan',
+  'onb.chooseField': 'Choose your field',
+  'onb.chooseFieldSub': "We'll tailor the questions, terminology, and training plan to your specialization.",
+  'onb.specCount': '{n} specializations',
+  'onb.chooseSpec': 'Choose your exact specialization',
+  'onb.questionBadge': '{n} questions',
+  'onb.minutesBadge': '{n} min',
+  'onb.passBadge': 'pass {n}%',
+  'onb.next': 'Next',
+  'onb.back': 'Back',
+  'onb.lastStep': 'One last step',
+  'onb.lastStepSub': "We've prepared a personalized plan for {spec}.",
+  'onb.yourName': 'Your name',
+  'onb.namePlaceholder': 'Your full name',
+  'onb.yourLevel': 'Your current level',
+  'onb.level.student': 'Student',
+  'onb.level.graduate': 'Graduate',
+  'onb.level.practitioner': 'Practitioner',
+  'onb.examDate': 'Exam date (optional)',
+  'onb.planReady': 'Your personalized plan is ready',
+  'onb.readiness': 'Readiness',
+  'onb.dailyTarget': 'Daily target',
+  'onb.generatePlan': 'Generate a smart training plan (optional)',
+  'onb.startTraining': 'Start practice',
+
+  // Offline + PWA
+  'offline.title': 'No internet connection',
+  'offline.desc': "Looks like you're offline. Questions you practiced before are saved and accessible, and we'll reconnect automatically when the network returns.",
+  'offline.backHome': 'Back to home',
+  'offline.continue': 'Continue practice',
+  'pwa.offline': "You're offline — showing saved content; we'll resync automatically.",
+  'pwa.install': 'Install the Kafaah app',
+  'pwa.installSub': 'Faster access and an app-like experience',
+  'pwa.installBtn': 'Install',
+  'pwa.installAria': 'Install app',
+  'pwa.close': 'Close',
+};
+
+export const DICT = { ar, en };
+
+export function translate(lang, key, vars) {
+  const l = lang === 'en' ? 'en' : 'ar';
+  let s = DICT[l][key];
+  if (s == null) s = DICT.ar[key] != null ? DICT.ar[key] : key;
+  if (vars) {
+    for (const k of Object.keys(vars)) {
+      s = s.split('{' + k + '}').join(String(vars[k]));
+    }
+  }
+  return s;
+}

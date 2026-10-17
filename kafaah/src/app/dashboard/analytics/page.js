@@ -1,122 +1,129 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { BarChart3, TrendingUp, Target, Clock, BookOpen, Zap, Award, AlertCircle } from 'lucide-react';
-import questionsData from '../../../data/questions.json';
-
-const STORAGE_KEY = 'kafaah_session';
-
-function getSession() {
-  if (typeof window === 'undefined') return null;
-  try {
-    return JSON.parse(sessionStorage.getItem(STORAGE_KEY)) || null;
-  } catch { return null; }
-}
+import { useEffect, useMemo, useState } from 'react';
+import Link from 'next/link';
+import { TrendingUp, Target, Flame, Award, AlertTriangle, BookOpen, BarChart3 } from 'lucide-react';
+import { useKafaah } from '../../../lib/context/KafaahProvider';
+import { getProgress, subscribe, getStats } from '../../../lib/progress';
 
 export default function AnalyticsPage() {
-  const [session, setSession] = useState(null);
-  const [mounted, setMounted] = useState(false);
+  const { profile, spec, lexicon } = useKafaah();
+  const [state, setState] = useState(null);
 
   useEffect(() => {
-    setMounted(true);
-    setSession(getSession());
+    setState(getStats());
+    return subscribe(() => setState(getStats()));
   }, []);
 
-  const totalQuestions = questionsData.length;
-  const catCounts = questionsData.reduce((acc, q) => {
-    acc[q.category] = (acc[q.category] || 0) + 1;
-    return acc;
-  }, {});
+  const s = state || { answered: 0, correct: 0, accuracy: 0, mistakes: 0, saved: 0, mocks: 0, bestMock: 0, avgMock: 0, streak: 0, last7: [] };
+  const p = getProgress();
+  const maxDaily = Math.max(1, ...s.last7.map((x) => x.a));
 
-  const categories = [
-    { id: 'medical', label: 'القطاع الصحي والطبي', color: 'var(--emerald)', bg: 'var(--emerald-light)' },
-    { id: 'engineering', label: 'الهندسة والتقنية', color: 'var(--blue-sky)', bg: 'var(--blue-light)' },
-    { id: 'law', label: 'القانون', color: 'var(--gold)', bg: 'var(--gold-light)' },
-    { id: 'finance', label: 'المحاسبة والمالية', color: 'var(--rose)', bg: 'var(--rose-light)' },
-  ];
+  const bySubject = useMemo(() => {
+    const map = {};
+    Object.entries(p.mistakes || {}).forEach(([id, m]) => {
+      const k = m.subject || 'عام';
+      map[k] = map[k] || { wrong: 0 };
+      map[k].wrong += m.count || 1;
+    });
+    return Object.entries(map).sort((a, b) => b[1].wrong - a[1].wrong).slice(0, 6);
+  }, [state]);
 
-  if (!mounted) return null;
+  const readiness = Math.round(s.accuracy * 0.6 + Math.min(100, s.answered / 2) * 0.2 + Math.min(100, s.bestMock) * 0.2);
 
-  if (!session) {
-    return (
-      <div style={{ maxWidth: 800, margin: '0 auto' }}>
-        <div style={{ marginBottom: 32 }}>
-          <h1 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)', marginBottom: 8 }}>
-            تحليل الأداء
-          </h1>
-          <p style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>
-            تتبع أداءك ونتائجك في التدريب والاختبارات
-          </p>
-        </div>
+  return (
+    <div className="stack" style={{ gap: 18 }}>
+      <div>
+        <h1 className="page-title">تحليل الأداء</h1>
+        <p className="text-muted mt-1">لوحة تقدّمك في {spec?.label}.</p>
+      </div>
 
-        {/* Empty state */}
-        <div style={{ background: '#fff', borderRadius: 24, padding: '60px 32px', textAlign: 'center', border: '1px solid var(--border)', boxShadow: 'var(--shadow-card)' }}>
-          <BarChart3 size={56} style={{ color: 'var(--text-dim)', marginBottom: 20 }} />
-          <h2 style={{ fontSize: 20, fontWeight: 800, color: 'var(--text)', marginBottom: 12 }}>لا توجد بيانات أداء بعد</h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: 15, fontWeight: 600, lineHeight: 1.7, maxWidth: 400, margin: '0 auto' }}>
-            ابدأ بالتدريب أو إجراء اختبار محاكاة ليتم تسجيل نتائجك وعرض تحليل مفصل لأدائك هنا.
-          </p>
-          <a href="/dashboard/practice" style={{
-            display: 'inline-block', marginTop: 24, padding: '14px 32px', borderRadius: 12,
-            background: 'var(--emerald)', color: '#fff', fontWeight: 800, textDecoration: 'none', fontSize: 15
-          }}>
-            ابدأ التدريب الآن
-          </a>
-        </div>
-
-        {/* Bank statistics */}
-        <div style={{ marginTop: 32 }}>
-          <h2 style={{ fontSize: 18, fontWeight: 800, color: 'var(--text)', marginBottom: 20 }}>إحصائيات بنك كفاءة</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16, marginBottom: 24 }}>
-            <div style={{ background: '#fff', borderRadius: 20, padding: 24, border: '1px solid var(--border)', boxShadow: 'var(--shadow-card)', display: 'flex', alignItems: 'center', gap: 16 }}>
-              <div style={{ width: 48, height: 48, borderRadius: 14, background: 'var(--emerald-light)', color: 'var(--emerald)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <BookOpen size={24} />
-              </div>
-              <div>
-                <div style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-muted)', marginBottom: 4 }}>إجمالي الأسئلة</div>
-                <div style={{ fontSize: 28, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-numbers)' }}>{totalQuestions.toLocaleString()}</div>
-              </div>
+      {/* readiness */}
+      <div className="card card-pad-lg soft-sector">
+        <div className="row-between wrap" style={{ gap: 16 }}>
+          <div style={{ flex: 1, minWidth: 220 }}>
+            <div className="row" style={{ gap: 8, marginBottom: 6 }}>
+              <Target size={18} style={{ color: 'var(--sector)' }} />
+              <h3 style={{ fontSize: 16 }}>مؤشر الجهوزية</h3>
             </div>
-            <div style={{ background: '#fff', borderRadius: 20, padding: 24, border: '1px solid var(--border)', boxShadow: 'var(--shadow-card)', display: 'flex', alignItems: 'center', gap: 16 }}>
-              <div style={{ width: 48, height: 48, borderRadius: 14, background: 'var(--blue-light)', color: 'var(--blue-sky)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Target size={24} />
-              </div>
-              <div>
-                <div style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-muted)', marginBottom: 4 }}>التخصصات</div>
-                <div style={{ fontSize: 28, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-numbers)' }}>
-                  {Object.keys(catCounts).length}
-                </div>
-              </div>
-            </div>
+            <div className="stat-num" style={{ fontSize: '2.6rem', color: 'var(--sector)' }}>{readiness}%</div>
+            <p className="text-muted" style={{ fontSize: 13 }}>تقدير استعدادك بناءً على دقتك وحجم تدريبك ونتائج المحاكاة.</p>
+            <div className="progress mt-2"><span style={{ width: `${readiness}%` }} /></div>
           </div>
+          <Link href="/dashboard/mock" className="btn btn-primary">ابدأ محاكاة <Award size={15} /></Link>
+        </div>
+      </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            {categories.map(cat => {
-              const count = catCounts[cat.id] || 0;
-              const pct = Math.round((count / totalQuestions) * 100);
+      <div className="grid grid-4">
+        {[
+          { icon: BookOpen, label: 'أسئلة مُجابة', value: s.answered, color: 'var(--sector)' },
+          { icon: Target, label: 'الدقة', value: `${s.accuracy}%`, color: '#3b82f6' },
+          { icon: Flame, label: 'أيام متتالية', value: s.streak, color: '#f59e0b' },
+          { icon: AlertTriangle, label: 'أخطاء للمراجعة', value: s.mistakes, color: '#ef4444' },
+        ].map((x, i) => (
+          <div key={i} className="stat-card">
+            <x.icon size={20} style={{ color: x.color }} />
+            <div className="stat-num mt-2">{x.value}</div>
+            <div className="stat-label">{x.label}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="grid grid-2" style={{ alignItems: 'start' }}>
+        <div className="card">
+          <h3 style={{ fontSize: 16, marginBottom: 14 }} className="row"><TrendingUp size={17} style={{ color: 'var(--sector)' }} /> آخر ٧ أيام</h3>
+          <div className="row" style={{ alignItems: 'flex-end', gap: 10, height: 150 }}>
+            {s.last7.map((x, i) => (
+              <div key={i} style={{ flex: 1, textAlign: 'center' }}>
+                <div style={{ height: 110, display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
+                  <div style={{ width: '68%', borderRadius: 8, height: `${Math.max(4, (x.a / maxDaily) * 100)}%`, background: x.c > 0 ? 'linear-gradient(180deg, var(--sector-1), var(--sector-2))' : 'var(--surface-3)' }} />
+                </div>
+                <div className="text-dim" style={{ fontSize: 10.5, marginTop: 6 }}>{new Date(x.date).toLocaleDateString('ar-EG', { weekday: 'short' })}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="card">
+          <h3 style={{ fontSize: 16, marginBottom: 14 }} className="row"><BarChart3 size={17} style={{ color: 'var(--danger)' }} /> أكثر المواد خطأً</h3>
+          {bySubject.length === 0 ? (
+            <p className="text-muted">لا توجد أخطاء بعد — أداء ممتاز! 👏</p>
+          ) : (
+            <div className="stack" style={{ gap: 12 }}>
+              {bySubject.map(([k, v]) => {
+                const max = bySubject[0][1].wrong;
+                return (
+                  <div key={k}>
+                    <div className="row-between" style={{ fontSize: 13, fontWeight: 700, marginBottom: 4 }}><span>{k}</span><span>{v.wrong}</span></div>
+                    <div className="progress"><span style={{ width: `${(v.wrong / max) * 100}%`, background: 'linear-gradient(90deg,#f87171,#ef4444)' }} /></div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="card">
+        <h3 style={{ fontSize: 16, marginBottom: 12 }}>سجل المحاكاة</h3>
+        {(p.mocks || []).length === 0 ? (
+          <p className="text-muted">لم تُجرِ أي محاكاة بعد.</p>
+        ) : (
+          <div className="stack" style={{ gap: 10 }}>
+            {p.mocks.slice(0, 8).map((m, i) => {
+              const pct = m.total ? Math.round((m.correct / m.total) * 100) : 0;
               return (
-                <div key={cat.id} style={{ background: '#fff', borderRadius: 16, padding: '20px 24px', border: '1px solid var(--border)' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12 }}>
-                    <span style={{ fontWeight: 800, color: 'var(--text)', fontSize: 15 }}>{cat.label}</span>
-                    <span style={{ fontFamily: 'var(--font-numbers)', fontWeight: 800, color: cat.color }}>{count} سؤال</span>
+                <div key={i} className="row-between card" style={{ padding: 12 }}>
+                  <div>
+                    <div style={{ fontWeight: 800, fontSize: 14 }}>{new Date(m.at).toLocaleDateString('ar-EG', { dateStyle: 'medium' })}</div>
+                    <div className="text-muted" style={{ fontSize: 12.5 }}>{m.correct}/{m.total} · {m.minutes} دقيقة</div>
                   </div>
-                  <div style={{ height: 8, background: 'var(--bg-subtle)', borderRadius: 999, overflow: 'hidden' }}>
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={{ width: `${pct}%` }}
-                      transition={{ duration: 0.8, delay: 0.2 }}
-                      style={{ height: '100%', background: cat.color, borderRadius: 999 }}
-                    />
-                  </div>
-                  <div style={{ marginTop: 6, fontSize: 12, color: 'var(--text-muted)', fontWeight: 700 }}>{pct}% من البنك</div>
+                  <span className={`badge ${m.passed ? 'badge-success' : 'badge-danger'}`} style={{ fontSize: 13 }}>{pct}% {m.passed ? 'ناجح' : 'راسب'}</span>
                 </div>
               );
             })}
           </div>
-        </div>
+        )}
       </div>
-    );
-  }
-
-  return null;
+    </div>
+  );
 }

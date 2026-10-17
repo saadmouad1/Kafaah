@@ -1,0 +1,133 @@
+{
+ "specId": "eng_arch",
+ "sectorId": "engineering",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "eng_arch-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "engineering",
+     "specId": "eng_arch",
+     "subject": "التصميم المعماري",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما قيمة النسبة الذهبية التقريبية المستخدمة في التناسب المعماري؟",
+     "options": [
+      "1.618",
+      "2.500",
+      "0.500",
+      "3.141"
+     ],
+     "correctIndex": 0,
+     "explanation": "النسبة الذهبية ≈ 1.618 وتُستخدم لتحقيق تناسب بصري مريح.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التصميم المعماري"
+     ],
+     "id": "eng_arch-0001",
+     "bankId": "eng_arch-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_arch",
+     "subject": "التصميم المناخي",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "في المناخ الحار، ما الاتجاه الأفضل لتقليل الحمل الحراري عادة؟",
+     "options": [
+      "تقليل الفتحات المعرّضة للشمس الغربية وتوجيه المبنى بذكاء",
+      "زيادة الزجاج الجنوبي دائمًا",
+      "تجاهل اتجاه الرياح",
+      "استخدام أسطح معدنية غير معزولة"
+     ],
+     "correctIndex": 0,
+     "explanation": "تقليل التعرض للإشعاع الغربي والتوجيه الصحيح يقلل الحمل الحراري.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التصميم المناخي"
+     ],
+     "id": "eng_arch-0002",
+     "bankId": "eng_arch-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_arch",
+     "subject": "اشتراطات السلامة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الهدف الأساسي من مخططات مخارج الطوارئ؟",
+     "options": [
+      "إخلاء آمن وسريع للسكان",
+      "تحسين الشكل الجمالي",
+      "تقليل التكلفة",
+      "زيادة الإضاءة فقط"
+     ],
+     "correctIndex": 0,
+     "explanation": "مخارج الطوارئ تضمن إخلاءً آمنًا وسريعًا وفق اشتراطات الدفاع المدني.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "اشتراطات السلامة"
+     ],
+     "id": "eng_arch-0003",
+     "bankId": "eng_arch-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_arch",
+     "subject": "الصوتيات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما العامل الأهم في التحكم بالصوت داخل القاعات؟",
+     "options": [
+      "زمن الصدى وموازنة الأسطح الماصة للصوت",
+      "لون الجدران",
+      "ارتفاع المبنى",
+      "نوع الأرضيات فقط"
+     ],
+     "correctIndex": 0,
+     "explanation": "ضبط زمن الصدى عبر مواد ماصة/عاكسة متوازنة لتحسين وضوح الصوت.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الصوتيات"
+     ],
+     "id": "eng_arch-0004",
+     "bankId": "eng_arch-b1"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_arch",
+     "subject": "الرسم الهندسي",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ماذا يعني مقياس الرسم 1:100؟",
+     "options": [
+      "كل 1 سم على الورق يمثل 100 سم على الطبيعة",
+      "الرسم أصغر 100 مرة من الطبيعة",
+      "الخياران صحيحان",
+      "الرسم أكبر 100 مرة"
+     ],
+     "correctIndex": 2,
+     "explanation": "بمقياس 1:100 يكون الرسم مصغّرًا 100 مرة، أي 1 سم ورقي = 100 سم حقيقي.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الرسم الهندسي"
+     ],
+     "id": "eng_arch-0005",
+     "bankId": "eng_arch-b1"
+    }
+   ]
+  }
+ ]
+}

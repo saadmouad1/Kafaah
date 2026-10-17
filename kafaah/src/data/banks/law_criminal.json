@@ -1,0 +1,133 @@
+{
+ "specId": "law_criminal",
+ "sectorId": "law",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "law_criminal-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "law",
+     "specId": "law_criminal",
+     "subject": "المبادئ العامة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما القاعدة الأساسية في الإثبات الجزائي؟",
+     "options": [
+      "الأصل براءة المتهم ولا يُدان إلا بيقين كافٍ",
+      "المتهم مطالب بإثبات براءته",
+      "الشك يُفسَّر ضد المتهم",
+      "لا حاجة لأدلة"
+     ],
+     "correctIndex": 0,
+     "explanation": "مبدأ البراءة الأصلية والشك يُفسَّر لصالح المتهم في المواد الجنائية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المبادئ العامة"
+     ],
+     "id": "law_criminal-0001",
+     "bankId": "law_criminal-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_criminal",
+     "subject": "أركان الجريمة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الركنان المكوّنان للجريمة عادة؟",
+     "options": [
+      "الركن المادي والركن المعنوي",
+      "الركن المادي فقط",
+      "الركن المعنوي فقط",
+      "الشكل والأتعاب"
+     ],
+     "correctIndex": 0,
+     "explanation": "تتكوّن الجريمة من سلوك مادي (الفعل) وقصد معنوي (الإرادة/العلم).",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "أركان الجريمة"
+     ],
+     "id": "law_criminal-0002",
+     "bankId": "law_criminal-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_criminal",
+     "subject": "الدفع الشرعي",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "متى يباح الدفاع الشرعي عن النفس؟",
+     "options": [
+      "عند الضرورة والتناسب مع الخطر",
+      "إذا سبق الاعتداء بأي مدة",
+      "إذا انتُهي الاعتداء",
+      "لا يباح أبدًا"
+     ],
+     "correctIndex": 0,
+     "explanation": "يشترط الدفاع الشرعي وجود اعتداء حال وضرورة وتناسب الردّ مع الخطر.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الدفع الشرعي"
+     ],
+     "id": "law_criminal-0003",
+     "bankId": "law_criminal-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_criminal",
+     "subject": "الإجراءات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يحكم سقوط الدعوى الجزائية بتقادم الزمن؟",
+     "options": [
+      "مدة التقادم حسب الجريمة والعقوبة",
+      "لا يوجد تقادم جزائي",
+      "التقادم يوم واحد",
+      "بتصرّف المتهم"
+     ],
+     "correctIndex": 0,
+     "explanation": "تنقضي الدعوى الجزائية بمضي المدة التي يحددها النظام حسب جسامة الجريمة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإجراءات"
+     ],
+     "id": "law_criminal-0004",
+     "bankId": "law_criminal-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_criminal",
+     "subject": "العقوبات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الفرق بين الحد والتعزير؟",
+     "options": [
+      "الحد مقدّر شرعًا والتعزير متروك تقديره للقاضي",
+      "لا فرق بينهما",
+      "التعزير مقدّر شرعًا",
+      "الحدّ اجتهادي"
+     ],
+     "correctIndex": 0,
+     "explanation": "الحدود مقدّرة شرعًا بشروط محدّدة، أما التعزير فتقديره للقاضي حسب المصلحة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "العقوبات"
+     ],
+     "id": "law_criminal-0005",
+     "bankId": "law_criminal-b1"
+    }
+   ]
+  }
+ ]
+}

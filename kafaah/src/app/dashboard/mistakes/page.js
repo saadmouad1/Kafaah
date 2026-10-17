@@ -1,146 +1,64 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { AlertTriangle, ChevronDown, Trash2, RotateCcw, BookOpen } from 'lucide-react';
-
-const MISTAKES_KEY = 'kafaah_mistakes';
-
-function getMistakes() {
-  if (typeof window === 'undefined') return [];
-  try {
-    return JSON.parse(localStorage.getItem(MISTAKES_KEY)) || [];
-  } catch { return []; }
-}
-
-function checkIsEnglish(text) {
-  if (!text) return false;
-  const arabic = (text.match(/[\u0600-\u06FF]/g) || []).length;
-  const latin = (text.match(/[a-zA-Z]/g) || []).length;
-  return latin > arabic;
-}
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { AlertTriangle, Trash2, RotateCcw, BrainCircuit, Check } from 'lucide-react';
+import { getProgress, subscribe, removeMistake, clearMistakes } from '../../../lib/progress';
+import QuestionView from '../../../components/QuestionView';
 
 export default function MistakesPage() {
-  const [mistakes, setMistakes] = useState([]);
-  const [expanded, setExpanded] = useState(null);
-  const [mounted, setMounted] = useState(false);
+  const [mistakes, setMistakes] = useState({});
+  const [reveal, setReveal] = useState({});
 
   useEffect(() => {
-    setMounted(true);
-    setMistakes(getMistakes());
+    const load = (p) => setMistakes({ ...p.mistakes });
+    setMistakes({ ...getProgress().mistakes });
+    return subscribe(load);
   }, []);
 
-  const clearAll = () => {
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem(MISTAKES_KEY);
-      setMistakes([]);
-    }
-  };
+  const list = Object.entries(mistakes).map(([id, m]) => ({ id, ...m })).sort((a, b) => (b.count - a.count) || (new Date(b.lastAt) - new Date(a.lastAt)));
 
-  const removeOne = (id) => {
-    const updated = mistakes.filter(m => m.id !== id);
-    setMistakes(updated);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(MISTAKES_KEY, JSON.stringify(updated));
-    }
-  };
-
-  if (!mounted) return null;
+  if (list.length === 0) {
+    return (
+      <div className="card text-center card-pad-lg" style={{ maxWidth: 520, margin: '0 auto' }}>
+        <div style={{ fontSize: 50 }}>🎯</div>
+        <h2 className="mt-2">لا توجد أخطاء مسجّلة</h2>
+        <p className="text-muted">رائع! كل إجاباتك صحيحة حتى الآن. استمر.</p>
+        <Link href="/dashboard/practice" className="btn btn-primary mt-3"><BrainCircuit size={15} /> ابدأ التدريب</Link>
+      </div>
+    );
+  }
 
   return (
-    <div style={{ maxWidth: 800, margin: '0 auto' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 32, flexWrap: 'wrap', gap: 12 }}>
+    <div className="stack" style={{ gap: 16 }}>
+      <div className="row-between wrap">
         <div>
-          <h1 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)', marginBottom: 8 }}>
-            سجل الأخطاء
-          </h1>
-          <p style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>
-            الأسئلة التي أخطأت فيها خلال جلسات التدريب والاختبارات
-          </p>
+          <h1 className="page-title">سجل الأخطاء</h1>
+          <p className="text-muted mt-1">{list.length} سؤالًا يحتاج مراجعة — راجعها لتثبيت المعلومة.</p>
         </div>
-        {mistakes.length > 0 && (
-          <button onClick={clearAll} style={{
-            display: 'flex', alignItems: 'center', gap: 8, padding: '10px 18px', borderRadius: 10,
-            background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)',
-            color: 'var(--danger)', fontWeight: 700, fontSize: 13, cursor: 'pointer'
-          }}>
-            <Trash2 size={16} /> مسح السجل
-          </button>
-        )}
+        <button className="btn btn-ghost btn-sm" onClick={() => { if (confirm('مسح كل سجل الأخطاء؟')) clearMistakes(); }}>
+          <Trash2 size={14} /> مسح الكل
+        </button>
       </div>
 
-      {mistakes.length === 0 ? (
-        <div style={{ background: '#fff', borderRadius: 24, padding: '60px 32px', textAlign: 'center', border: '1px solid var(--border)', boxShadow: 'var(--shadow-card)' }}>
-          <AlertTriangle size={56} style={{ color: 'var(--text-dim)', marginBottom: 20 }} />
-          <h2 style={{ fontSize: 20, fontWeight: 800, color: 'var(--text)', marginBottom: 12 }}>لا توجد أخطاء مسجلة</h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: 15, fontWeight: 600, lineHeight: 1.7, maxWidth: 400, margin: '0 auto' }}>
-            يتم تسجيل الأسئلة التي تُخطئ فيها تلقائياً هنا عند التدريب أو الاختبار، لمراجعتها لاحقاً.
-          </p>
-          <a href="/dashboard/practice" style={{
-            display: 'inline-block', marginTop: 24, padding: '14px 32px', borderRadius: 12,
-            background: 'var(--emerald)', color: '#fff', fontWeight: 800, textDecoration: 'none', fontSize: 15
-          }}>
-            ابدأ التدريب
-          </a>
-        </div>
-      ) : (
-        <div>
-          <p style={{ fontSize: 14, color: 'var(--text-muted)', fontWeight: 700, marginBottom: 16 }}>
-            {mistakes.length} سؤال في السجل
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            <AnimatePresence>
-              {mistakes.map((q, i) => {
-                const isEn = checkIsEnglish(q.text);
-                const isOpen = expanded === i;
-                return (
-                  <motion.div key={q.id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-                    style={{ background: '#fff', borderRadius: 16, border: '1px solid rgba(239,68,68,0.2)', borderRight: '4px solid #ef4444', overflow: 'hidden' }}
-                  >
-                    <button onClick={() => setExpanded(isOpen ? null : i)} style={{
-                      width: '100%', padding: '18px 20px', display: 'flex', justifyContent: 'space-between',
-                      alignItems: 'flex-start', gap: 12, background: 'none', border: 'none', cursor: 'pointer', textAlign: 'right'
-                    }}>
-                      <p style={{ flex: 1, fontSize: 14, color: 'var(--text)', fontWeight: 600, lineHeight: 1.7, direction: isEn ? 'ltr' : 'rtl', textAlign: isEn ? 'left' : 'right', margin: 0 }}>
-                        {q.text}
-                      </p>
-                      <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
-                        <button onClick={(e) => { e.stopPropagation(); removeOne(q.id); }} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-dim)', padding: 4 }}>
-                          <Trash2 size={16} />
-                        </button>
-                        <ChevronDown size={18} style={{ color: 'var(--text-muted)', transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s', marginTop: 2 }} />
-                      </div>
-                    </button>
-                    {isOpen && (
-                      <div style={{ padding: '0 20px 20px', borderTop: '1px solid var(--border-subtle)' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 16 }}>
-                          {q.options?.map((opt, idx) => (
-                            <div key={idx} style={{
-                              padding: '10px 14px', borderRadius: 10, fontSize: 13, fontWeight: 600,
-                              background: idx === q.correct_index ? 'var(--emerald-light)' : (idx === q.user_answer ? 'rgba(239,68,68,0.08)' : 'var(--bg-subtle)'),
-                              color: idx === q.correct_index ? 'var(--emerald-dark)' : (idx === q.user_answer ? '#ef4444' : 'var(--text-secondary)'),
-                              border: `1px solid ${idx === q.correct_index ? 'rgba(16,185,129,0.3)' : (idx === q.user_answer ? 'rgba(239,68,68,0.2)' : 'transparent')}`,
-                              direction: isEn ? 'ltr' : 'rtl'
-                            }}>
-                              {opt}
-                              {idx === q.correct_index && ' ✓'}
-                              {idx === q.user_answer && idx !== q.correct_index && ' ✗'}
-                            </div>
-                          ))}
-                        </div>
-                        {q.explanation && (
-                          <p style={{ marginTop: 12, fontSize: 13, color: 'var(--text-muted)', fontStyle: 'italic', background: 'var(--bg-subtle)', padding: '10px 14px', borderRadius: 10 }}>
-                            {q.explanation}
-                          </p>
-                        )}
-                      </div>
-                    )}
-                  </motion.div>
-                );
-              })}
-            </AnimatePresence>
+      {list.map((m) => (
+        <div key={m.id} className="card">
+          <div className="row-between" style={{ marginBottom: 8 }}>
+            <span className="badge badge-danger"><AlertTriangle size={12} /> أخطأت {m.count} مرة</span>
+            <button className="btn btn-ghost btn-sm" onClick={() => removeMistake(m.id)}><Check size={13} /> أتقنته</button>
           </div>
+          <QuestionView
+            question={m.q}
+            selected={null}
+            onSelect={() => {}}
+            reveal={!!reveal[m.id]}
+          />
+          {!reveal[m.id] && (
+            <button className="btn btn-soft btn-block mt-2" onClick={() => setReveal((r) => ({ ...r, [m.id]: true }))}>
+              <RotateCcw size={14} /> إظهار الإجابة والشرح
+            </button>
+          )}
         </div>
-      )}
+      ))}
     </div>
   );
 }

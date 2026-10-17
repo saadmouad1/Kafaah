@@ -1,276 +1,144 @@
 'use client';
-
-import { useState, useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ShieldAlert, Users, Database, Plus, Search, BarChart3, LogOut,
-  ArrowRight, Edit3, Trash2, ChevronDown, ChevronRight, X,
-  BookOpen, Layers, Settings, Eye, Filter, CheckCircle2, XCircle,
-  Building2, GraduationCap, Scale, Coins, Heart
+  LayoutDashboard, PlusCircle, Upload, ListChecks, Search, Trash2, Save,
+  Loader2, LogOut, Database, CheckCircle2, AlertTriangle, FileJson, FileSpreadsheet,
+  X, Pencil, Layers, FolderPlus,
 } from 'lucide-react';
-// Removed mock imports
+import { useSpecBanks } from '../../lib/useData';
 
-// ─── helpers ────────────────────────────────────────────────────────────────
-const SECTOR_ICONS = { medical: Heart, engineering: Settings, law: Scale, finance: Coins, education: GraduationCap };
-const SECTOR_COLORS = { medical: '#10b981', engineering: '#3b82f6', law: '#f59e0b', finance: '#8b5cf6', education: '#ec4899' };
-
-function checkIsEnglish(text) {
-  if (!text) return false;
-  const ar = (text.match(/[\u0600-\u06FF]/g) || []).length;
-  const en = (text.match(/[a-zA-Z]/g) || []).length;
-  return en > ar;
-}
-
-// ─── Sub-components ──────────────────────────────────────────────────────────
-function StatCard({ label, value, sub, color, Icon }) {
-  return (
-    <motion.div whileHover={{ y: -3 }} style={{
-      background: '#fff', borderRadius: 20, padding: '22px 24px',
-      border: '1px solid var(--border)', boxShadow: 'var(--shadow-card)',
-      display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12
-    }}>
-      <div>
-        <div style={{ fontSize: 12, fontWeight: 800, color: 'var(--text-muted)', marginBottom: 6, textTransform: 'uppercase', letterSpacing: 1 }}>{label}</div>
-        <div style={{ fontSize: 30, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-numbers)', lineHeight: 1 }}>{value}</div>
-        {sub && <div style={{ fontSize: 12, color, fontWeight: 700, marginTop: 4 }}>{sub}</div>}
-      </div>
-      <div style={{ width: 50, height: 50, borderRadius: 16, background: color + '18', color, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-        <Icon size={26} />
-      </div>
-    </motion.div>
-  );
-}
-
-// ─── TABS ────────────────────────────────────────────────────────────────────
 const TABS = [
-  { id: 'overview',  label: 'نظرة عامة',       icon: BarChart3 },
-  { id: 'users',     label: 'إدارة العملاء',    icon: Users },
-  { id: 'sectors',   label: 'الأقسام والتخصصات', icon: Layers },
-  { id: 'questions', label: 'إدارة الأسئلة',    icon: Database },
+  { id: 'overview', label: 'نظرة عامة', icon: LayoutDashboard },
+  { id: 'banks', label: 'إدارة البنوك', icon: Layers },
+  { id: 'manual', label: 'إضافة يدوية', icon: PlusCircle },
+  { id: 'bulk', label: 'استيراد جماعي', icon: Upload },
+  { id: 'manage', label: 'إدارة الأسئلة', icon: ListChecks },
 ];
 
-// ═══════════════════════════════════════════════════════════════════════════════
-export default function AdminDashboardPage() {
+export default function AdminPage() {
   const router = useRouter();
-  const [sessionChecked, setSessionChecked] = useState(false);
-  const [activeTab, setActiveTab] = useState('overview');
-  const [data, setData] = useState({ sectors: [], questions: [], users: [] });
-  const [loadingData, setLoadingData] = useState(true);
+  const [ready, setReady] = useState(false);
+  const [tab, setTab] = useState('overview');
+  const [stats, setStats] = useState(null);
+  const [content, setContent] = useState({ sectors: [], specs: [] });
+  const [msg, setMsg] = useState(null);
+  const [specId, setSpecId] = useState('');
+  const [bankId, setBankId] = useState('');
 
   useEffect(() => {
-    fetch('/api/admin/data')
-      .then(res => res.json())
-      .then(d => {
-        setData(d);
-        setLoadingData(false);
-      });
+    if (!document.cookie.includes('kafaah_admin_session=authenticated')) {
+      router.replace('/admin/login');
+      return;
+    }
+    setReady(true);
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // ── AUTH guard ──
-  useEffect(() => {
-    const ok = document.cookie.includes('kafaah_admin_session=authenticated');
-    if (!ok) router.replace('/admin/login');
-    else setSessionChecked(true);
-  }, [router]);
+  async function load() {
+    try {
+      const r = await fetch('/api/admin/banks');
+      const d = await r.json();
+      if (d.error) { setMsg({ type: 'err', text: d.error }); return; }
+      setStats(d.stats);
+      setContent(d.content || { sectors: [], specs: [] });
+      if (!specId) setSpecId(d.content?.specs?.[0]?.id || '');
+    } catch {
+      setMsg({ type: 'err', text: 'تعذّر الاتصال بالخادم' });
+    }
+  }
 
-  const handleLogout = async () => {
-    await fetch('/api/admin-logout', { method: 'POST' });
-    router.replace('/admin/login');
+  function flash(type, text) {
+    setMsg({ type, text });
+    setTimeout(() => setMsg(null), 3500);
+  }
+
+  if (!ready) return <div className="container page"><div className="skeleton" style={{ height: 300, marginTop: 20 }} /></div>;
+
+  const childProps = {
+    specs: content.specs,
+    specId,
+    setSpecId: (v) => { setSpecId(v); setBankId(''); },
+    bankId,
+    setBankId,
+    onDone: (m) => { flash('ok', m); load(); },
+    onErr: (m) => flash('err', m),
   };
 
-  if (!sessionChecked) return (
-    <div style={{ minHeight: '100vh', background: '#0f172a', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: 16, fontWeight: 700 }}>جارٍ التحقق من الصلاحيات...</div>
-    </div>
-  );
-
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', flexDirection: 'column' }}>
-
-      {/* ── TOP BAR ── */}
-      <header style={{
-        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        padding: '0 2rem', height: 64,
-        background: '#fff', borderBottom: '1px solid var(--border)',
-        position: 'sticky', top: 0, zIndex: 200, boxShadow: 'var(--shadow-subtle)'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          <div style={{ width: 40, height: 40, borderRadius: 12, background: '#ef4444', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-            <ShieldAlert size={22} />
-          </div>
+    <div className="container page" style={{ maxWidth: 1100 }}>
+      <div className="row-between wrap mb-3">
+        <div className="row" style={{ gap: 10 }}>
+          <img src="/icon.svg" alt="" width="38" height="38" style={{ borderRadius: 11 }} />
           <div>
-            <div style={{ fontSize: 16, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)' }}>بوابة المشرفين — كفاءة</div>
-            <div style={{ fontSize: 11, color: '#ef4444', fontWeight: 700 }}>Admin Control Panel</div>
+            <h1 style={{ fontSize: 20 }}>لوحة المالك</h1>
+            <p className="text-muted" style={{ fontSize: 12.5 }}>إدارة بنوك الأسئلة والتخصصات</p>
           </div>
         </div>
-        <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-          <a href="/dashboard" style={{ padding: '8px 16px', borderRadius: 10, background: 'var(--bg-subtle)', color: 'var(--text-secondary)', border: '1px solid var(--border)', fontWeight: 700, cursor: 'pointer', textDecoration: 'none', fontSize: 13, display: 'flex', alignItems: 'center', gap: 6 }}>
-            <Eye size={15} /> معاينة الطالب
-          </a>
-          <button onClick={handleLogout} title="خروج" style={{ padding: '8px 14px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: '#ef4444', fontWeight: 700, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6, fontSize: 13 }}>
-            <LogOut size={15} /> خروج
+        <div className="row" style={{ gap: 8 }}>
+          <Link href="/dashboard" className="btn btn-ghost btn-sm">عرض المنصة</Link>
+          <button className="btn btn-danger btn-sm" onClick={async () => { await fetch('/api/admin-logout', { method: 'POST' }); router.replace('/admin/login'); }}>
+            <LogOut size={14} /> خروج
           </button>
         </div>
-      </header>
-
-      {/* ── SIDEBAR + CONTENT ── */}
-      <div style={{ display: 'flex', flex: 1 }}>
-
-        {/* Sidebar */}
-        <aside style={{ width: 220, background: '#fff', borderLeft: '1px solid var(--border)', flexShrink: 0, padding: '20px 12px', position: 'sticky', top: 64, height: 'calc(100vh - 64px)', overflowY: 'auto' }}>
-          <div style={{ fontSize: 11, fontWeight: 800, color: 'var(--text-dim)', marginBottom: 12, paddingRight: 8, letterSpacing: 1 }}>القائمة الرئيسية</div>
-          <nav style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-            {TABS.map(({ id, label, icon: Icon }) => {
-              const active = activeTab === id;
-              return (
-                <button key={id} onClick={() => setActiveTab(id)} style={{
-                  display: 'flex', alignItems: 'center', gap: 10, padding: '11px 14px', borderRadius: 12,
-                  background: active ? 'rgba(239,68,68,0.08)' : 'transparent',
-                  color: active ? '#ef4444' : 'var(--text-secondary)',
-                  fontWeight: active ? 800 : 600, fontSize: 14, border: 'none', cursor: 'pointer',
-                  width: '100%', textAlign: 'right',
-                  borderRight: active ? '3px solid #ef4444' : '3px solid transparent'
-                }}>
-                  <Icon size={18} />
-                  <span style={{ flex: 1 }}>{label}</span>
-                </button>
-              );
-            })}
-          </nav>
-        </aside>
-
-        {/* Main content */}
-        <main style={{ flex: 1, padding: '2rem', overflowY: 'auto', minHeight: 0 }}>
-          <AnimatePresence mode="wait">
-            {loadingData ? (
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
-                <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--text-muted)' }}>جاري جلب البيانات من القاعدة...</div>
-              </div>
-            ) : (
-              <motion.div key={activeTab} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
-                {activeTab === 'overview'  && <OverviewTab sectors={data.sectors} questions={data.questions} users={data.users} />}
-                {activeTab === 'users'     && <UsersTab users={data.users} />}
-                {activeTab === 'sectors'   && <SectorsTab sectors={data.sectors} questions={data.questions} />}
-                {activeTab === 'questions' && <QuestionsTab sectors={data.sectors} questions={data.questions} />}
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </main>
       </div>
+
+      {msg && (
+        <div className={`card ${msg.type === 'err' ? 'badge-danger' : 'badge-success'}`} style={{ marginBottom: 14, fontWeight: 800 }}>
+          <span className="row" style={{ gap: 8 }}>
+            {msg.type === 'err' ? <AlertTriangle size={16} /> : <CheckCircle2 size={16} />} {msg.text}
+          </span>
+        </div>
+      )}
+
+      <div className="chip-row mb-3">
+        {TABS.map((t) => (
+          <span key={t.id} className={`chip${tab === t.id ? ' active' : ''}`} onClick={() => setTab(t.id)}>
+            <t.icon size={14} /> {t.label}
+          </span>
+        ))}
+      </div>
+
+      {tab === 'overview' && <Overview stats={stats} onRefresh={load} />}
+      {tab === 'banks' && <BanksManager {...childProps} />}
+      {tab === 'manual' && <ManualAdd {...childProps} />}
+      {tab === 'bulk' && <BulkImport {...childProps} />}
+      {tab === 'manage' && <Manage {...childProps} />}
     </div>
   );
 }
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// TAB 1 — OVERVIEW
-// ═══════════════════════════════════════════════════════════════════════════════
-function OverviewTab({ sectors, questions, users }) {
-  const totalQ = questions.length;
-  const totalSpecs = sectors.reduce((s, c) => s + (c.specializations?.length || 0), 0);
-  const catCounts = useMemo(() => questions.reduce((a, q) => { const cat = q.sectorId || q.category; a[cat] = (a[cat] || 0) + 1; return a; }, {}), [questions]);
-
+// ─── نظرة عامة ────────────────────────────────────────────────────────────────
+function Overview({ stats, onRefresh }) {
+  if (!stats) return <div className="skeleton" style={{ height: 240 }} />;
   return (
-    <div>
-      <h1 style={{ fontSize: 22, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)', marginBottom: 6 }}>نظرة عامة على المنصة</h1>
-      <p style={{ color: 'var(--text-muted)', fontWeight: 600, marginBottom: 28 }}>إحصائيات حقيقية من بيانات كفاءة</p>
-
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 16, marginBottom: 32 }}>
-        <StatCard label="إجمالي الأسئلة" value={totalQ.toLocaleString()} sub="في بنك كفاءة" color="#10b981" Icon={Database} />
-        <StatCard label="الأقسام الرئيسية" value={sectors.length} sub="قطاع مهني" color="#3b82f6" Icon={Layers} />
-        <StatCard label="التخصصات" value={totalSpecs} sub="تخصص في كل الأقسام" color="#f59e0b" Icon={GraduationCap} />
-        <StatCard label="المشتركون" value={users.length} sub="عميل مسجل" color="#ef4444" Icon={Users} />
+    <div className="stack" style={{ gap: 16 }}>
+      <div className="grid grid-4">
+        {[
+          { l: 'إجمالي الأسئلة', v: stats.total },
+          { l: 'بنوك الأسئلة', v: stats.banks ?? 0 },
+          { l: 'تخصصات مفعّلة', v: stats.specs },
+          { l: 'قطاعات', v: Object.keys(stats.bySector || {}).length },
+        ].map((x, i) => (
+          <div key={i} className="stat-card"><div className="stat-num">{x.v.toLocaleString('ar-EG')}</div><div className="stat-label">{x.l}</div></div>
+        ))}
       </div>
 
-      {/* Sector breakdown */}
-      <h2 style={{ fontSize: 16, fontWeight: 800, color: 'var(--text)', marginBottom: 16 }}>توزيع الأسئلة على الأقسام</h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-        {sectors.map(sector => {
-          const count = catCounts[sector.id] || 0;
-          const pct = totalQ > 0 ? Math.round((count / totalQ) * 100) : 0;
-          const Icon = SECTOR_ICONS[sector.id] || Layers;
-          return (
-            <div key={sector.id} style={{ background: '#fff', borderRadius: 16, padding: '18px 22px', border: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: 16 }}>
-              <div style={{ width: 44, height: 44, borderRadius: 12, background: SECTOR_COLORS[sector.id] + '18', color: SECTOR_COLORS[sector.id], display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                <Icon size={22} />
-              </div>
-              <div style={{ flex: 1 }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
-                  <span style={{ fontWeight: 800, fontSize: 14, color: 'var(--text)' }}>{sector.label}</span>
-                  <span style={{ fontFamily: 'var(--font-numbers)', fontWeight: 900, color: SECTOR_COLORS[sector.id], fontSize: 14 }}>{count} سؤال</span>
-                </div>
-                <div style={{ height: 6, background: 'var(--bg-subtle)', borderRadius: 999, overflow: 'hidden' }}>
-                  <motion.div initial={{ width: 0 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.8 }}
-                    style={{ height: '100%', background: SECTOR_COLORS[sector.id], borderRadius: 999 }} />
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
-                  <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 600 }}>{sector.specializations.length} تخصص</span>
-                  <span style={{ fontSize: 12, color: 'var(--text-dim)', fontWeight: 700 }}>{pct}%</span>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
-// ═══════════════════════════════════════════════════════════════════════════════
-// TAB 2 — USERS
-// ═══════════════════════════════════════════════════════════════════════════════
-function UsersTab({ users }) {
-  return (
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 24, gap: 12, flexWrap: 'wrap' }}>
-        <div>
-          <h1 style={{ fontSize: 22, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)', marginBottom: 6 }}>إدارة العملاء والمشتركين</h1>
-          <p style={{ color: 'var(--text-muted)', fontWeight: 600 }}>عرض وإدارة جميع المشتركين في المنصة</p>
+      <div className="card">
+        <div className="row-between mb-3">
+          <h3 style={{ fontSize: 16 }} className="row"><Database size={17} style={{ color: 'var(--sector)' }} /> البنوك حسب التخصص</h3>
+          <button className="btn btn-ghost btn-sm" onClick={onRefresh}>تحديث</button>
         </div>
-        <button style={{ padding: '12px 20px', borderRadius: 12, background: '#ef4444', color: '#fff', border: 'none', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8, fontSize: 14 }}>
-          <Plus size={18} /> إضافة مشترك يدوياً
-        </button>
-      </div>
-
-      <div style={{ background: '#fff', borderRadius: 20, border: '1px solid var(--border)', overflow: 'hidden', boxShadow: 'var(--shadow-subtle)' }}>
-        {/* Table header */}
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1.8fr 1.2fr 1fr 1fr', padding: '14px 22px', background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border)', fontSize: 12, fontWeight: 800, color: 'var(--text-muted)' }}>
-          <div>المشترك</div><div>التخصص</div><div>تاريخ التسجيل</div><div>الحالة</div><div>إجراءات</div>
-        </div>
-
-        {users.length === 0 ? (
-          <div style={{ padding: '70px 24px', textAlign: 'center' }}>
-            <div style={{ width: 72, height: 72, borderRadius: 20, background: 'var(--bg-subtle)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
-              <Users size={36} style={{ color: 'var(--text-dim)' }} />
-            </div>
-            <p style={{ fontSize: 17, fontWeight: 800, color: 'var(--text)', marginBottom: 8 }}>لا يوجد مشتركون مسجلون بعد</p>
-          </div>
-        ) : (
-          users.map((u, i) => (
-            <div key={i} style={{ display: 'grid', gridTemplateColumns: '2fr 1.8fr 1.2fr 1fr 1fr', padding: '14px 22px', borderBottom: '1px solid var(--border-subtle)', fontSize: 13, alignItems: 'center' }}>
-              <div style={{ fontWeight: 700, color: 'var(--text)' }}>{u.name} <br/><span style={{ fontSize: 11, color: 'var(--text-muted)' }}>{u.email}</span></div>
-              <div style={{ color: 'var(--text-muted)', fontWeight: 600 }}>{u.specializationId || '-'}</div>
-              <div style={{ color: 'var(--text-muted)', fontWeight: 600 }}>{new Date(u.createdAt).toLocaleDateString()}</div>
-              <div><span style={{ padding: '4px 10px', borderRadius: 6, background: '#10b98120', color: '#10b981', fontSize: 11, fontWeight: 700 }}>نشط</span></div>
-              <div style={{ color: 'var(--text-muted)' }}>-</div>
-            </div>
-          ))
-        )}
-      </div>
-
-      {/* Subscription plans info */}
-      <div style={{ marginTop: 28 }}>
-        <h2 style={{ fontSize: 16, fontWeight: 800, color: 'var(--text)', marginBottom: 16 }}>خطط الاشتراك المتوفرة</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 14 }}>
-          {[
-            { plan: 'التجربة المجانية', duration: '3 أشهر', price: 'مجاناً', color: '#10b981', desc: 'وصول كامل لجميع الأسئلة' },
-            { plan: 'الاشتراك الشهري', duration: '30 يوم', price: 'بعد التفعيل', color: '#3b82f6', desc: 'تجديد تلقائي شهرياً' },
-            { plan: 'الاشتراك السنوي', duration: '365 يوم', price: 'بعد التفعيل', color: '#f59e0b', desc: 'خصم خاص للسنة الكاملة' },
-          ].map((p, i) => (
-            <div key={i} style={{ background: '#fff', borderRadius: 16, padding: '20px 22px', border: `1px solid ${p.color}30`, borderTop: `3px solid ${p.color}` }}>
-              <div style={{ fontWeight: 800, color: 'var(--text)', marginBottom: 4 }}>{p.plan}</div>
-              <div style={{ fontSize: 22, fontWeight: 900, color: p.color, fontFamily: 'var(--font-numbers)', marginBottom: 6 }}>{p.price}</div>
-              <div style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 600 }}>{p.duration} • {p.desc}</div>
+        <div className="stack" style={{ gap: 8 }}>
+          {(stats.items || []).map((it) => (
+            <div key={it.specId} className="row-between" style={{ padding: '8px 0', borderBottom: '1px solid var(--border)' }}>
+              <div>
+                <div style={{ fontWeight: 700 }}>{it.label}</div>
+                <div className="text-muted" style={{ fontSize: 12 }}>{it.sectorLabel} · {it.specId} · {it.bankCount || 0} بنك</div>
+              </div>
+              <span className={`badge ${it.count > 5 ? 'badge-success' : 'badge-warning'}`}>{it.count.toLocaleString('ar-EG')} سؤال</span>
             </div>
           ))}
         </div>
@@ -279,314 +147,450 @@ function UsersTab({ users }) {
   );
 }
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// TAB 3 — SECTORS & SPECIALIZATIONS
-// ═══════════════════════════════════════════════════════════════════════════════
-function SectorsTab({ sectors, questions }) {
-  const [expandedSector, setExpandedSector] = useState('medical');
-  const catCounts = useMemo(() => questions.reduce((a, q) => { const cat = q.sectorId || q.category; a[cat] = (a[cat] || 0) + 1; return a; }, {}), [questions]);
+// ─── اختيار البنك (مشترك) ────────────────────────────────────────────────────
+function BankPicker({ specId, bankId, setBankId, allowAll = false, onErr, onCreated }) {
+  const { banks, refetch } = useSpecBanks(specId);
+  const [creating, setCreating] = useState(false);
+  const [title, setTitle] = useState('');
+  const [busy, setBusy] = useState(false);
+
+  // اختيار أول بنك تلقائيًا إن لم يُحدّد (إلا في وضع «كل البنوك»)
+  useEffect(() => {
+    if (allowAll) return;
+    if (!bankId && banks.length) setBankId(banks[0].id);
+    else if (bankId && banks.length && !banks.some((b) => b.id === bankId)) setBankId(banks[0].id);
+  }, [banks, bankId, allowAll, setBankId]);
+
+  async function create() {
+    if (!specId) return onErr?.('اختر التخصص أولًا');
+    if (!title.trim()) return onErr?.('اكتب عنوان البنك');
+    setBusy(true);
+    try {
+      const r = await fetch('/api/admin/banks', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'createBank', specId, title }),
+      });
+      const d = await r.json();
+      if (d.error) return onErr?.(d.error);
+      setTitle(''); setCreating(false);
+      await refetch();
+      setBankId(d.bank.id);
+      onCreated?.(d.bank);
+    } catch { onErr?.('فشل إنشاء البنك'); }
+    finally { setBusy(false); }
+  }
 
   return (
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 24, gap: 12, flexWrap: 'wrap' }}>
-        <div>
-          <h1 style={{ fontSize: 22, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)', marginBottom: 6 }}>إدارة الأقسام والتخصصات</h1>
-          <p style={{ color: 'var(--text-muted)', fontWeight: 600 }}>هيكل المنصة المهنية — كل قسم يحوي تخصصات مستقلة</p>
+    <div className="field">
+      <label className="label">بنك الأسئلة</label>
+      <div className="row" style={{ gap: 8 }}>
+        <select className="select" value={bankId} onChange={(e) => setBankId(e.target.value)} style={{ flex: 1 }}>
+          {allowAll && <option value="">— كل البنوك —</option>}
+          {!allowAll && !banks.length && <option value="">— لا توجد بنوك —</option>}
+          {banks.map((b) => (
+            <option key={b.id} value={b.id}>
+              {b.auto ? `${b.specId} — البنك الرئيسي` : b.title} ({b.count} سؤال)
+            </option>
+          ))}
+        </select>
+        <button className="btn btn-ghost" onClick={() => setCreating((v) => !v)} title="بنك جديد"><FolderPlus size={15} /> بنك جديد</button>
+      </div>
+      {creating && (
+        <div className="row mt-2" style={{ gap: 8 }}>
+          <input className="input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="عنوان البنك، مثال: الأحياء الدقيقة" autoFocus />
+          <button className="btn btn-primary btn-sm" onClick={create} disabled={busy}>{busy ? <Loader2 size={14} className="spin" /> : <Save size={14} />} إنشاء</button>
         </div>
-        <button style={{ padding: '12px 20px', borderRadius: 12, background: '#ef4444', color: '#fff', border: 'none', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8, fontSize: 14 }}>
-          <Plus size={18} /> إضافة قسم جديد
-        </button>
+      )}
+      {!banks.length && !creating && (
+        <p className="text-muted mt-2" style={{ fontSize: 12.5 }}>لا يوجد بنك لهذا التخصص بعد — أنشئ بنكًا أولًا.</p>
+      )}
+    </div>
+  );
+}
+
+// ─── إدارة البنوك ─────────────────────────────────────────────────────────────
+function BanksManager({ specs, specId, setSpecId, onDone, onErr }) {
+  const { banks, loading, refetch } = useSpecBanks(specId);
+  const [title, setTitle] = useState('');
+  const [desc, setDesc] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [edit, setEdit] = useState(null);
+
+  async function call(body) {
+    setBusy(true);
+    try {
+      const r = await fetch('/api/admin/banks', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ specId, ...body }),
+      });
+      const d = await r.json();
+      if (d.error) { onErr(d.error); return false; }
+      await refetch();
+      return true;
+    } catch { onErr('فشل الطلب'); return false; }
+    finally { setBusy(false); }
+  }
+
+  async function create() {
+    if (!specId) return onErr('اختر التخصص أولًا');
+    if (!title.trim()) return onErr('اكتب عنوان البنك');
+    if (await call({ action: 'createBank', title, description: desc })) {
+      setTitle(''); setDesc('');
+      onDone('أُنشئ البنك بنجاح');
+    }
+  }
+
+  async function saveEdit() {
+    if (!edit.title.trim()) return onErr('عنوان البنك مطلوب');
+    if (await call({ action: 'updateBank', bankId: edit.id, title: edit.title, description: edit.description })) {
+      setEdit(null);
+      onDone('حُدّث البنك');
+    }
+  }
+
+  async function remove(b) {
+    if (!confirm(`حذف البنك «${b.title || b.specId}» وكل أسئلته؟ لا يمكن التراجع.`)) return;
+    if (await call({ action: 'deleteBank', bankId: b.id })) onDone('حُذف البنك');
+  }
+
+  return (
+    <div className="stack" style={{ gap: 14 }}>
+      <div className="card">
+        <SpecPicker specs={specs} specId={specId} setSpecId={setSpecId} />
+        <div className="grid grid-2 mt-3">
+          <div className="field"><label className="label">عنوان البنك الجديد</label><input className="input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="مثال: الأحياء الدقيقة" /></div>
+          <div className="field"><label className="label">وصف مختصر (اختياري)</label><input className="input" value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="نطاق البنك…" /></div>
+        </div>
+        <button className="btn btn-primary mt-2" onClick={create} disabled={busy}><FolderPlus size={16} /> إنشاء بنك</button>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-        {sectors.map(sector => {
-          const Icon = SECTOR_ICONS[sector.id] || Layers;
-          const color = SECTOR_COLORS[sector.id];
-          const qCount = catCounts[sector.id] || 0;
-          const isOpen = expandedSector === sector.id;
-
-          return (
-            <div key={sector.id} style={{ background: '#fff', borderRadius: 20, border: '1px solid var(--border)', overflow: 'hidden', boxShadow: 'var(--shadow-subtle)' }}>
-              {/* Sector header */}
-              <div
-                onClick={() => setExpandedSector(isOpen ? null : sector.id)}
-                style={{ width: '100%', padding: '20px 24px', display: 'flex', alignItems: 'center', gap: 16, background: 'none', border: 'none', cursor: 'pointer', textAlign: 'right' }}
-              >
-                <div style={{ width: 48, height: 48, borderRadius: 14, background: color + '18', color, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <Icon size={24} />
-                </div>
-                <div style={{ flex: 1, textAlign: 'right' }}>
-                  <div style={{ fontSize: 16, fontWeight: 900, color: 'var(--text)', marginBottom: 4 }}>{sector.label}</div>
-                  <div style={{ display: 'flex', gap: 14 }}>
-                    <span style={{ fontSize: 13, color: 'var(--text-muted)', fontWeight: 700 }}>{sector.specializations?.length || 0} تخصص</span>
-                    <span style={{ fontSize: 13, color, fontWeight: 800 }}>{qCount} سؤال</span>
+      {loading ? <div className="skeleton" style={{ height: 160 }} /> : (
+        <div className="stack" style={{ gap: 10 }}>
+          {banks.length === 0 && <div className="card text-center text-muted" style={{ padding: 30 }}>لا توجد بنوك لهذا التخصص بعد.</div>}
+          {banks.map((b) => (
+            <div key={b.id} className="card" style={{ padding: 14 }}>
+              <div className="row-between" style={{ gap: 10, flexWrap: 'wrap' }}>
+                <div style={{ flex: 1, minWidth: 200 }}>
+                  <div className="row" style={{ gap: 6, flexWrap: 'wrap', marginBottom: 3 }}>
+                    <span className="badge badge-brand"><Layers size={11} /> {b.id}</span>
+                    {b.auto && <span className="badge badge-muted">رئيسي (بعنوان التخصص)</span>}
+                    <span className="badge badge-info">{b.count} سؤال</span>
                   </div>
+                  <div style={{ fontWeight: 800 }}>{b.title || b.specId}</div>
+                  {b.description && <div className="text-muted" style={{ fontSize: 12.5 }}>{b.description}</div>}
                 </div>
-                <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-                  <button onClick={e => { e.stopPropagation(); /* Add action */ }} style={{ padding: '7px 14px', borderRadius: 8, background: color + '18', color, border: 'none', fontWeight: 800, fontSize: 12, cursor: 'pointer' }}>
-                    + تخصص
-                  </button>
-                  <ChevronDown size={20} style={{ color: 'var(--text-muted)', transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
+                <div className="row" style={{ gap: 6 }}>
+                  <button className="icon-btn" onClick={() => setEdit({ id: b.id, title: b.title || b.specId, description: b.description || '' })}><Pencil size={15} /></button>
+                  <button className="icon-btn" style={{ color: 'var(--danger)' }} onClick={() => remove(b)}><Trash2 size={15} /></button>
                 </div>
               </div>
-
-              {/* Specializations grid */}
-              {isOpen && (
-                <div style={{ padding: '0 24px 20px', borderTop: '1px solid var(--border-subtle)' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 10, marginTop: 16 }}>
-                    {(sector.specializations || []).map(spec => (
-                      <div key={spec.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px 16px', borderRadius: 12, background: 'var(--bg-subtle)', border: '1px solid var(--border-subtle)' }}>
-                        <div>
-                          <div style={{ fontSize: 13, fontWeight: 800, color: 'var(--text)', marginBottom: 2 }}>{spec.label}</div>
-                          <div style={{ fontSize: 11, color, fontWeight: 700, background: color + '18', padding: '1px 8px', borderRadius: 999, display: 'inline-block' }}>{spec.country}</div>
-                        </div>
-                        <div style={{ display: 'flex', gap: 8 }}>
-                          <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-dim)', padding: 4 }}><Edit3 size={15} /></button>
-                          <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#ef4444', padding: 4 }}><Trash2 size={15} /></button>
-                        </div>
-                      </div>
-                    ))}
-                    {/* Add specialization */}
-                    <button style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '12px 16px', borderRadius: 12, border: `2px dashed ${color}50`, background: color + '06', color, fontWeight: 800, fontSize: 13, cursor: 'pointer' }}>
-                      <Plus size={16} /> إضافة تخصص
-                    </button>
-                  </div>
-                </div>
-              )}
             </div>
-          );
-        })}
+          ))}
+        </div>
+      )}
+
+      {edit && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(11,18,32,.5)', zIndex: 500, display: 'grid', placeItems: 'center', padding: 16 }} onClick={() => setEdit(null)}>
+          <div className="card" style={{ maxWidth: 560, width: '100%' }} onClick={(e) => e.stopPropagation()}>
+            <div className="row-between mb-3"><h3 style={{ fontSize: 16 }}>تعديل البنك</h3><button className="icon-btn" onClick={() => setEdit(null)}><X size={16} /></button></div>
+            <div className="stack" style={{ gap: 10 }}>
+              <div className="field"><label className="label">العنوان</label><input className="input" value={edit.title} onChange={(e) => setEdit({ ...edit, title: e.target.value })} /></div>
+              <div className="field"><label className="label">الوصف</label><input className="input" value={edit.description} onChange={(e) => setEdit({ ...edit, description: e.target.value })} /></div>
+              <button className="btn btn-primary" onClick={saveEdit} disabled={busy}><Save size={16} /> حفظ</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── إضافة يدوية ──────────────────────────────────────────────────────────────
+function emptyQ() {
+  return { subject: '', difficulty: 'medium', text: '', options: ['', '', '', ''], correctIndex: 0, explanation: '', source: '', tags: '' };
+}
+
+function ManualAdd({ specs, specId, setSpecId, bankId, setBankId, onDone, onErr }) {
+  const [q, setQ] = useState(emptyQ());
+  const [busy, setBusy] = useState(false);
+
+  function setOpt(i, v) { const o = [...q.options]; o[i] = v; setQ({ ...q, options: o }); }
+
+  async function save(addAnother) {
+    if (!specId) return onErr('اختر التخصص أولًا');
+    if (!bankId) return onErr('أنشئ بنكًا أو اختر بنكًا أولًا');
+    if (!q.text.trim()) return onErr('نص السؤال مطلوب');
+    const options = q.options.map((o) => o.trim()).filter(Boolean);
+    if (options.length < 2) return onErr('أدخل خيارين على الأقل');
+    if (q.correctIndex >= options.length) return onErr('حدّد الإجابة الصحيحة');
+    setBusy(true);
+    try {
+      const r = await fetch('/api/admin/banks', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'add', specId, bankId, questions: [{ ...q, options, tags: q.tags ? q.tags.split(',').map((t) => t.trim()) : [] }] }),
+      });
+      const d = await r.json();
+      if (d.error) return onErr(d.error);
+      onDone(`أُضيف السؤال إلى البنك — إجمالي البنك ${d.total}`);
+      if (addAnother) setQ(emptyQ());
+    } catch { onErr('فشل الحفظ'); }
+    finally { setBusy(false); }
+  }
+
+  return (
+    <div className="card">
+      <SpecPicker specs={specs} specId={specId} setSpecId={setSpecId} />
+      <div className="mt-3">
+        <BankPicker specId={specId} bankId={bankId} setBankId={setBankId} onErr={onErr} />
+      </div>
+      <div className="stack mt-3" style={{ gap: 12 }}>
+        <div className="grid grid-2">
+          <div className="field"><label className="label">المادة</label><input className="input" value={q.subject} onChange={(e) => setQ({ ...q, subject: e.target.value })} placeholder="مثال: باطنة" /></div>
+          <div className="field"><label className="label">الصعوبة</label>
+            <select className="select" value={q.difficulty} onChange={(e) => setQ({ ...q, difficulty: e.target.value })}>
+              <option value="easy">سهل</option><option value="medium">متوسط</option><option value="hard">صعب</option>
+            </select>
+          </div>
+        </div>
+        <div className="field"><label className="label">نص السؤال</label><textarea className="textarea" value={q.text} onChange={(e) => setQ({ ...q, text: e.target.value })} placeholder="اكتب السؤال…" /></div>
+        <div className="field">
+          <label className="label">الخيارات (اختر الصحيح)</label>
+          {q.options.map((o, i) => (
+            <div className="row" key={i} style={{ gap: 8, marginBottom: 6 }}>
+              <button className="icon-btn" style={{ borderColor: q.correctIndex === i ? 'var(--success)' : 'var(--border)', background: q.correctIndex === i ? 'var(--success-soft)' : 'var(--surface)', color: q.correctIndex === i ? '#047857' : 'inherit' }} onClick={() => setQ({ ...q, correctIndex: i })}>
+                <CheckCircle2 size={17} />
+              </button>
+              <input className="input" value={o} onChange={(e) => setOpt(i, e.target.value)} placeholder={`الخيار ${i + 1}`} />
+              {q.options.length > 2 && <button className="icon-btn" onClick={() => { const o = q.options.filter((_, x) => x !== i); setQ({ ...q, options: o, correctIndex: q.correctIndex >= o.length ? 0 : q.correctIndex }); }}><X size={15} /></button>}
+            </div>
+          ))}
+          <button className="btn btn-ghost btn-sm" onClick={() => setQ({ ...q, options: [...q.options, ''] })}><PlusCircle size={14} /> إضافة خيار</button>
+        </div>
+        <div className="field"><label className="label">الشرح</label><textarea className="textarea" value={q.explanation} onChange={(e) => setQ({ ...q, explanation: e.target.value })} placeholder="شرح الإجابة الصحيحة…" /></div>
+        <div className="grid grid-2">
+          <div className="field"><label className="label">المصدر (اختياري)</label><input className="input" value={q.source} onChange={(e) => setQ({ ...q, source: e.target.value })} /></div>
+          <div className="field"><label className="label">الوسوم (فاصلة)</label><input className="input" value={q.tags} onChange={(e) => setQ({ ...q, tags: e.target.value })} placeholder="قلب, طوارئ" /></div>
+        </div>
+        <div className="row" style={{ gap: 10 }}>
+          <button className="btn btn-primary" onClick={() => save(true)} disabled={busy}>{busy ? <Loader2 size={16} className="spin" /> : <Save size={16} />} حفظ وإضافة آخر</button>
+          <button className="btn btn-ghost" onClick={() => save(false)} disabled={busy}>حفظ</button>
+        </div>
       </div>
     </div>
   );
 }
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// TAB 4 — QUESTIONS MANAGEMENT
-// ═══════════════════════════════════════════════════════════════════════════════
-function QuestionsTab({ sectors, questions }) {
-  const [filterSector, setFilterSector] = useState('all');
-  const [filterSpec, setFilterSpec] = useState('all');
-  const [searchQ, setSearchQ] = useState('');
-  const [showModal, setShowModal] = useState(false);
-  const [page, setPage] = useState(1);
+// ─── استيراد جماعي ────────────────────────────────────────────────────────────
+function BulkImport({ specs, specId, setSpecId, bankId, setBankId, onDone, onErr }) {
+  const [mode, setMode] = useState('json');
+  const [text, setText] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [replace, setReplace] = useState(false);
 
-  // Question form state
-  const [form, setForm] = useState({ sector: 'medical', spec: 'smle', text: '', options: ['', '', '', ''], correct: 0, explanation: '' });
-  const [extraQuestions, setExtraQuestions] = useState([]);
+  function parseJSON(t) {
+    const data = JSON.parse(t);
+    return Array.isArray(data) ? data : data.questions || [];
+  }
+  function parseCSV(t) {
+    const lines = t.split(/\r?\n/).filter((l) => l.trim());
+    return lines.map((line) => {
+      const cells = line.split(',').map((c) => c.trim().replace(/^"|"$/g, ''));
+      const [question, ...rest] = cells;
+      const explanation = '';
+      let ci = 0; let opts = rest;
+      if (/^\d+$/.test(rest[rest.length - 1])) { ci = parseInt(rest[rest.length - 1], 10); opts = rest.slice(0, -1); }
+      return { text: question, options: opts, correctIndex: ci, explanation };
+    });
+  }
 
-  const allQuestions = useMemo(() => [...extraQuestions, ...questions], [extraQuestions, questions]);
+  async function importData() {
+    if (!specId) return onErr('اختر التخصص');
+    if (!bankId) return onErr('أنشئ بنكًا أو اختر بنكًا أولًا');
+    if (!text.trim()) return onErr('الصق البيانات أو ارفع ملفًا');
+    if (replace && !confirm('سيتم حذف كل أسئلة هذا البنك واستبدالها بالبيانات الجديدة. متابعة؟')) return;
+    setBusy(true);
+    try {
+      let list;
+      try { list = mode === 'json' ? parseJSON(text) : parseCSV(text); }
+      catch { return onErr('تعذّر تحليل البيانات — تحقّق من الصيغة'); }
+      if (!list.length) return onErr('لا توجد أسئلة في البيانات');
+      const r = await fetch('/api/admin/banks', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: replace ? 'replace' : 'add', specId, bankId, questions: list }),
+      });
+      const d = await r.json();
+      if (d.error) return onErr(d.error);
+      if (replace) onDone(`تم استبدال البنك بالكامل — الإجمالي الآن ${d.total} سؤال`);
+      else onDone(`تم الاستيراد: أُضيف ${d.added} وتم تخطّي ${d.skipped || 0} — إجمالي البنك ${d.total}`);
+      setText('');
+    } catch { onErr('فشل الاستيراد'); }
+    finally { setBusy(false); }
+  }
 
-  const currentSector = sectors.find(s => s.id === filterSector);
+  function onFile(e) {
+    const f = e.target.files?.[0]; if (!f) return;
+    const r = new FileReader();
+    r.onload = () => { setText(String(r.result)); setMode(f.name.endsWith('.csv') ? 'csv' : 'json'); };
+    r.readAsText(f);
+  }
 
-  const filtered = useMemo(() => {
-    let q = allQuestions;
-    if (filterSector !== 'all') q = q.filter(x => x.category === filterSector || x.sectorId === filterSector);
-    if (filterSpec !== 'all') q = q.filter(x => x.specialty === filterSpec || x.specialization === filterSpec);
-    if (searchQ.trim()) {
-      const s = searchQ.toLowerCase();
-      q = q.filter(x => x.text?.toLowerCase().includes(s) || x.id?.toLowerCase().includes(s));
-    }
-    return q;
-  }, [allQuestions, filterSector, filterSpec, searchQ]);
-
-  const PAGE_SIZE = 20;
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const paged = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-
-  const handleAddQuestion = (e) => {
-    e.preventDefault();
-    const newQ = {
-      id: `KAF-${Date.now()}`,
-      category: form.sector,
-      sector: form.sector,
-      specialty: form.spec,
-      text: form.text,
-      options: form.options,
-      correct_index: form.correct,
-      explanation: form.explanation,
-      addedAt: new Date().toISOString().split('T')[0]
-    };
-    setExtraQuestions(prev => [newQ, ...prev]);
-    setShowModal(false);
-    setForm({ sector: 'medical', spec: 'smle', text: '', options: ['', '', '', ''], correct: 0, explanation: '' });
-    setFilterSector(newQ.sector);
-    setPage(1);
-  };
-
-  const sectorLabel = (id) => sectors.find(s => s.id === id)?.label || id;
-  const color = filterSector !== 'all' ? (SECTOR_COLORS[filterSector] || '#10b981') : '#10b981';
+  const sample = mode === 'json'
+    ? '[{"subject":"باطنة","text":"...","options":["أ","ب","ج","د"],"correctIndex":1,"explanation":"...","difficulty":"medium"}]'
+    : 'ما هي عاصمة اليمن؟,صنعاء,عدن,تعز,الحديدة,0';
 
   return (
-    <div>
-      {/* Header */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 24, gap: 12, flexWrap: 'wrap' }}>
-        <div>
-          <h1 style={{ fontSize: 22, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)', marginBottom: 6 }}>إدارة بنك الأسئلة</h1>
-          <p style={{ color: 'var(--text-muted)', fontWeight: 600 }}>{filtered.length.toLocaleString()} سؤال • مفلتر حسب القسم والتخصص</p>
-        </div>
-        <button onClick={() => setShowModal(true)} style={{ padding: '12px 22px', borderRadius: 12, background: '#ef4444', color: '#fff', border: 'none', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8, fontSize: 14, boxShadow: '0 8px 20px rgba(239,68,68,0.25)' }}>
-          <Plus size={18} /> إضافة سؤال جديد
-        </button>
+    <div className="card">
+      <SpecPicker specs={specs} specId={specId} setSpecId={setSpecId} />
+      <div className="mt-3">
+        <BankPicker specId={specId} bankId={bankId} setBankId={setBankId} onErr={onErr} />
       </div>
-
-      {/* Filter bar */}
-      <div style={{ background: '#fff', borderRadius: 16, padding: '16px 20px', border: '1px solid var(--border)', marginBottom: 20, display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
-        {/* Search */}
-        <div style={{ position: 'relative', minWidth: 260, flex: 1 }}>
-          <Search size={16} style={{ position: 'absolute', right: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
-          <input type="text" value={searchQ} onChange={e => { setSearchQ(e.target.value); setPage(1); }} placeholder="ابحث بنص السؤال أو المعرف..."
-            style={{ width: '100%', padding: '10px 38px 10px 12px', borderRadius: 10, border: '1px solid var(--border)', outline: 'none', fontSize: 14, fontFamily: 'inherit', boxSizing: 'border-box' }} />
-        </div>
-
-        {/* Sector filter */}
-        <select value={filterSector} onChange={e => { setFilterSector(e.target.value); setFilterSpec('all'); setPage(1); }}
-          style={{ padding: '10px 14px', borderRadius: 10, border: '1px solid var(--border)', outline: 'none', fontSize: 14, fontFamily: 'inherit', background: '#fff', minWidth: 180, cursor: 'pointer' }}>
-          <option value="all">جميع الأقسام</option>
-          {sectors.map(s => <option key={s.id} value={s.id}>{s.label}</option>)}
-        </select>
-
-        {/* Spec filter */}
-        <select value={filterSpec} onChange={e => { setFilterSpec(e.target.value); setPage(1); }}
-          disabled={filterSector === 'all'}
-          style={{ padding: '10px 14px', borderRadius: 10, border: '1px solid var(--border)', outline: 'none', fontSize: 14, fontFamily: 'inherit', background: '#fff', minWidth: 200, cursor: filterSector === 'all' ? 'not-allowed' : 'pointer', opacity: filterSector === 'all' ? 0.5 : 1 }}>
-          <option value="all">جميع التخصصات</option>
-          {(currentSector?.specializations || []).map(sp => <option key={sp.id} value={sp.id}>{sp.label}</option>)}
-        </select>
+      <div className="row wrap mt-3" style={{ gap: 8 }}>
+        <span className={`chip${mode === 'json' ? ' active' : ''}`} onClick={() => setMode('json')}><FileJson size={14} /> JSON</span>
+        <span className={`chip${mode === 'csv' ? ' active' : ''}`} onClick={() => setMode('csv')}><FileSpreadsheet size={14} /> CSV</span>
+        <label className="btn btn-ghost btn-sm" style={{ cursor: 'pointer' }}><Upload size={14} /> رفع ملف<input type="file" accept=".json,.csv" hidden onChange={onFile} /></label>
       </div>
+      <p className="text-muted mt-2" style={{ fontSize: 12.5 }}>
+        {mode === 'json' ? 'مصفوفة JSON من الأسئلة (أو كائن يحتوي على questions).' : 'كل سطر: نص السؤال, خيار1, خيار2, ..., رقم الإجابة الصحيحة (يبدأ من 0).'}
+      </p>
+      <textarea className="textarea mt-2" style={{ minHeight: 200, fontFamily: 'monospace', direction: 'ltr', textAlign: 'left' }} value={text} onChange={(e) => setText(e.target.value)} placeholder={sample} />
+      <label className="row mt-2" style={{ gap: 8, cursor: 'pointer', fontWeight: 700, fontSize: 13.5, color: replace ? 'var(--danger)' : 'var(--text-muted)' }}>
+        <input type="checkbox" checked={replace} onChange={(e) => setReplace(e.target.checked)} />
+        استبدال بنك الأسئلة المحدّد بالكامل (حذف الأسئلة الحالية في هذا البنك)
+      </label>
+      <button className={`btn mt-3 ${replace ? 'btn-danger' : 'btn-primary'}`} onClick={importData} disabled={busy}>
+        {busy ? <Loader2 size={16} className="spin" /> : <Upload size={16} />} {replace ? 'استبدال البنك' : 'استيراد وإضافة'}
+      </button>
+    </div>
+  );
+}
 
-      {/* Questions table */}
-      <div style={{ background: '#fff', borderRadius: 20, border: '1px solid var(--border)', overflow: 'hidden', boxShadow: 'var(--shadow-subtle)' }}>
-        {/* Table header */}
-        <div style={{ display: 'grid', gridTemplateColumns: '140px 140px 1fr 80px', padding: '14px 22px', background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border)', fontSize: 12, fontWeight: 800, color: 'var(--text-muted)' }}>
-          <div>المعرف</div><div>القسم</div><div>نص السؤال</div><div>إجراءات</div>
+// ─── إدارة الأسئلة ────────────────────────────────────────────────────────────
+function Manage({ specs, specId, setSpecId, bankId, setBankId, onDone, onErr }) {
+  const [search, setSearch] = useState('');
+  const [data, setData] = useState({ questions: [], total: 0, hasMore: false, banks: [] });
+  const [loading, setLoading] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const [editing, setEditing] = useState(null);
+
+  const load = async (off = 0, term = search, bank = bankId) => {
+    if (!specId) return;
+    setLoading(true);
+    try {
+      const p = new URLSearchParams({ spec: specId, limit: 30, offset: off });
+      if (term) p.set('search', term);
+      if (bank) p.set('bank', bank);
+      const r = await fetch(`/api/admin/banks?${p}`);
+      const d = await r.json();
+      setData(d);
+      setOffset(off);
+    } catch { onErr('تعذّر التحميل'); }
+    finally { setLoading(false); }
+  };
+
+  useEffect(() => { if (specId) load(0, '', ''); /* eslint-disable-next-line */ }, [specId]);
+  useEffect(() => { if (specId) load(0, search, bankId); /* eslint-disable-next-line */ }, [bankId]);
+
+  async function del(id) {
+    if (!confirm('حذف هذا السؤال نهائيًا؟')) return;
+    const r = await fetch('/api/admin/banks', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'delete', specId, id }) });
+    const d = await r.json();
+    if (d.error) return onErr(d.error);
+    onDone('حُذف السؤال');
+    load(offset, search, bankId);
+  }
+
+  async function saveEdit() {
+    const r = await fetch('/api/admin/banks', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'update', specId, bankId: editing.bankId, id: editing.id, patch: editing }) });
+    const d = await r.json();
+    if (d.error) return onErr(d.error);
+    onDone('تم التحديث');
+    setEditing(null);
+    load(offset, search, bankId);
+  }
+
+  return (
+    <div className="stack" style={{ gap: 14 }}>
+      <div className="card">
+        <SpecPicker specs={specs} specId={specId} setSpecId={setSpecId} />
+        <div className="mt-3">
+          <BankPicker specId={specId} bankId={bankId} setBankId={setBankId} allowAll onErr={onErr} />
         </div>
-
-        {paged.length === 0 ? (
-          <div style={{ padding: '60px 24px', textAlign: 'center' }}>
-            <Database size={44} style={{ color: 'var(--text-dim)', marginBottom: 14 }} />
-            <p style={{ fontSize: 16, fontWeight: 800, color: 'var(--text)', marginBottom: 6 }}>لا توجد أسئلة لهذا التصفية</p>
-            <p style={{ fontSize: 14, color: 'var(--text-muted)', fontWeight: 600 }}>جرب تغيير الفلاتر أو أضف أسئلة لهذا التخصص</p>
+        <div className="row mt-3" style={{ gap: 8 }}>
+          <div style={{ position: 'relative', flex: 1 }}>
+            <Search size={17} style={{ position: 'absolute', insetInlineStart: 13, top: 14, color: 'var(--text-muted)' }} />
+            <input className="input" style={{ paddingInlineStart: 40 }} placeholder="ابحث في أسئلة البنك…" value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && load(0, search, bankId)} />
           </div>
-        ) : (
-          paged.map((q, i) => {
-            const isEn = checkIsEnglish(q.text);
-            return (
-              <div key={q.id || i} style={{
-                display: 'grid', gridTemplateColumns: '140px 140px 1fr 80px',
-                padding: '14px 22px', borderBottom: '1px solid var(--border-subtle)',
-                alignItems: 'center', fontSize: 13
-              }}>
-                <div style={{ fontFamily: 'monospace', color: 'var(--text-muted)', fontWeight: 700, fontSize: 11 }}>{q.id}</div>
-                <div>
-                  <span style={{ padding: '3px 10px', borderRadius: 6, background: (SECTOR_COLORS[q.sectorId || q.category] || '#10b981') + '18', color: SECTOR_COLORS[q.sectorId || q.category] || '#10b981', fontSize: 11, fontWeight: 700 }}>
-                    {sectorLabel(q.sectorId || q.category)}
-                  </span>
+          <button className="btn btn-primary" onClick={() => load(0, search, bankId)}>بحث</button>
+        </div>
+        <p className="text-muted mt-2" style={{ fontSize: 12.5 }}>{data.total?.toLocaleString('ar-EG')} سؤال في النطاق المحدّد</p>
+      </div>
+
+      {loading ? <div className="skeleton" style={{ height: 200 }} /> : (
+        <div className="stack" style={{ gap: 10 }}>
+          {(data.questions || []).map((q) => (
+            <div key={q.id} className="card" style={{ padding: 14 }}>
+              <div className="row-between" style={{ marginBottom: 6 }}>
+                <div className="row" style={{ gap: 6, flexWrap: 'wrap' }}>
+                  <span className="badge badge-brand">{q.bankTitle || q.bankId}</span>
+                  <span className="badge badge-muted">{q.subject}</span>
+                  <span className="badge badge-muted">{q.id}</span>
                 </div>
-                <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', paddingLeft: 20, color: 'var(--text)', fontWeight: 600, direction: isEn ? 'ltr' : 'rtl' }}>
-                  {q.text}
-                </div>
-                <div style={{ display: 'flex', gap: 8 }}>
-                  <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-dim)' }}><Edit3 size={16} /></button>
-                  <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#ef4444' }}><Trash2 size={16} /></button>
+                <div className="row" style={{ gap: 6 }}>
+                  <button className="icon-btn" onClick={() => setEditing({ ...q })}><Pencil size={15} /></button>
+                  <button className="icon-btn" style={{ color: 'var(--danger)' }} onClick={() => del(q.id)}><Trash2 size={15} /></button>
                 </div>
               </div>
-            );
-          })
-        )}
-      </div>
-
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 8, marginTop: 20 }}>
-          <button onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}
-            style={{ padding: '8px 16px', borderRadius: 8, border: '1px solid var(--border)', background: '#fff', cursor: page === 1 ? 'not-allowed' : 'pointer', opacity: page === 1 ? 0.4 : 1, fontWeight: 700 }}>
-            السابق
-          </button>
-          <span style={{ padding: '8px 16px', fontWeight: 800, color: 'var(--text-muted)', fontSize: 14 }}>
-            {page} / {totalPages}
-          </span>
-          <button onClick={() => setPage(p => Math.min(totalPages, p + 1))} disabled={page === totalPages}
-            style={{ padding: '8px 16px', borderRadius: 8, border: '1px solid var(--border)', background: '#fff', cursor: page === totalPages ? 'not-allowed' : 'pointer', opacity: page === totalPages ? 0.4 : 1, fontWeight: 700 }}>
-            التالي
-          </button>
+              <p style={{ fontWeight: 600, fontSize: 14, lineHeight: 1.6 }}>{q.text}</p>
+            </div>
+          ))}
+          <div className="row" style={{ justifyContent: 'center', gap: 10 }}>
+            <button className="btn btn-ghost btn-sm" disabled={offset === 0} onClick={() => load(Math.max(0, offset - 30), search, bankId)}>السابق</button>
+            <button className="btn btn-ghost btn-sm" disabled={!data.hasMore} onClick={() => load(offset + 30, search, bankId)}>التالي</button>
+          </div>
         </div>
       )}
 
-      {/* ── ADD QUESTION MODAL ── */}
-      <AnimatePresence>
-        {showModal && (
-          <div style={{ position: 'fixed', inset: 0, background: 'rgba(15,23,42,0.5)', backdropFilter: 'blur(6px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 999, padding: 20 }}>
-            <motion.div initial={{ scale: 0.94, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.94, opacity: 0 }}
-              style={{ background: '#fff', borderRadius: 24, padding: 32, maxWidth: 640, width: '100%', maxHeight: '90vh', overflowY: 'auto', boxShadow: 'var(--shadow-float)' }}>
-
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
-                <h3 style={{ fontSize: 20, fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)' }}>إضافة سؤال جديد للبنك</h3>
-                <button onClick={() => setShowModal(false)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)' }}><X size={24} /></button>
-              </div>
-
-              <form onSubmit={handleAddQuestion} style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                {/* Sector + Spec */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
-                  <div>
-                    <label style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-secondary)', display: 'block', marginBottom: 8 }}>القسم الرئيسي *</label>
-                    <select value={form.sector} onChange={e => setForm(f => ({ ...f, sector: e.target.value, spec: sectors.find(s => s.id === e.target.value)?.specializations[0]?.id || '' }))}
-                      style={{ width: '100%', padding: '12px 14px', borderRadius: 10, border: '1px solid var(--border)', outline: 'none', fontSize: 14, fontFamily: 'inherit' }}>
-                      {sectors.map(s => <option key={s.id} value={s.id}>{s.label}</option>)}
-                    </select>
-                  </div>
-                  <div>
-                    <label style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-secondary)', display: 'block', marginBottom: 8 }}>التخصص *</label>
-                    <select value={form.spec} onChange={e => setForm(f => ({ ...f, spec: e.target.value }))}
-                      style={{ width: '100%', padding: '12px 14px', borderRadius: 10, border: '1px solid var(--border)', outline: 'none', fontSize: 14, fontFamily: 'inherit' }}>
-                      {(sectors.find(s => s.id === form.sector)?.specializations || []).map(sp => <option key={sp.id} value={sp.id}>{sp.label}</option>)}
-                    </select>
-                  </div>
+      {editing && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(11,18,32,.5)', zIndex: 500, display: 'grid', placeItems: 'center', padding: 16 }} onClick={() => setEditing(null)}>
+          <div className="card" style={{ maxWidth: 620, width: '100%', maxHeight: '90vh', overflowY: 'auto' }} onClick={(e) => e.stopPropagation()}>
+            <div className="row-between mb-3"><h3 style={{ fontSize: 16 }}>تعديل السؤال</h3><button className="icon-btn" onClick={() => setEditing(null)}><X size={16} /></button></div>
+            <div className="stack" style={{ gap: 10 }}>
+              <div className="field"><label className="label">المادة</label><input className="input" value={editing.subject || ''} onChange={(e) => setEditing({ ...editing, subject: e.target.value })} /></div>
+              <div className="field"><label className="label">النص</label><textarea className="textarea" value={editing.text || ''} onChange={(e) => setEditing({ ...editing, text: e.target.value })} /></div>
+              {(editing.options || []).map((o, i) => (
+                <div className="row" key={i} style={{ gap: 8 }}>
+                  <button className="icon-btn" style={{ borderColor: editing.correctIndex === i ? 'var(--success)' : 'var(--border)' }} onClick={() => setEditing({ ...editing, correctIndex: i })}><CheckCircle2 size={16} /></button>
+                  <input className="input" value={o} onChange={(e) => { const opts = [...editing.options]; opts[i] = e.target.value; setEditing({ ...editing, options: opts }); }} />
                 </div>
-
-                {/* Question text */}
-                <div>
-                  <label style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-secondary)', display: 'block', marginBottom: 8 }}>نص السؤال / الحالة السريرية *</label>
-                  <textarea rows={4} required value={form.text} onChange={e => setForm(f => ({ ...f, text: e.target.value }))} placeholder="اكتب نص السؤال بدقة..."
-                    style={{ width: '100%', padding: '12px 14px', borderRadius: 10, border: '1px solid var(--border)', outline: 'none', fontSize: 14, fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} />
-                </div>
-
-                {/* Options */}
-                <div>
-                  <label style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-secondary)', display: 'block', marginBottom: 8 }}>الخيارات — حدد الإجابة الصحيحة ✓</label>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                    {form.options.map((opt, idx) => (
-                      <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                        <input type="radio" name="correct" checked={form.correct === idx} onChange={() => setForm(f => ({ ...f, correct: idx }))}
-                          style={{ width: 18, height: 18, accentColor: '#10b981', flexShrink: 0 }} />
-                        <input type="text" required value={opt} onChange={e => { const opts = [...form.options]; opts[idx] = e.target.value; setForm(f => ({ ...f, options: opts })); }}
-                          placeholder={`الخيار ${idx + 1}`}
-                          style={{ flex: 1, padding: '10px 12px', borderRadius: 10, border: `1px solid ${form.correct === idx ? '#10b981' : 'var(--border)'}`, outline: 'none', fontSize: 14, fontFamily: 'inherit', background: form.correct === idx ? '#f0fdf4' : '#fff' }} />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Explanation */}
-                <div>
-                  <label style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-secondary)', display: 'block', marginBottom: 8 }}>الشرح التفصيلي (يظهر للطالب بعد الإجابة)</label>
-                  <textarea rows={2} value={form.explanation} onChange={e => setForm(f => ({ ...f, explanation: e.target.value }))} placeholder="اكتب الشرح العلمي..."
-                    style={{ width: '100%', padding: '12px 14px', borderRadius: 10, border: '1px solid var(--border)', outline: 'none', fontSize: 14, fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} />
-                </div>
-
-                {/* Actions */}
-                <div style={{ display: 'flex', gap: 12, justifyContent: 'flex-end', marginTop: 8 }}>
-                  <button type="button" onClick={() => setShowModal(false)} style={{ padding: '12px 22px', borderRadius: 12, border: '1px solid var(--border)', background: 'var(--bg-subtle)', color: 'var(--text-secondary)', fontWeight: 800, cursor: 'pointer', fontSize: 14 }}>إلغاء</button>
-                  <button type="submit" style={{ padding: '12px 28px', borderRadius: 12, border: 'none', background: '#ef4444', color: '#fff', fontWeight: 800, cursor: 'pointer', fontSize: 14, boxShadow: '0 8px 20px rgba(239,68,68,0.25)' }}>
-                    <Plus size={16} style={{ display: 'inline', marginLeft: 6 }} />
-                    حفظ السؤال
-                  </button>
-                </div>
-              </form>
-            </motion.div>
+              ))}
+              <div className="field"><label className="label">الشرح</label><textarea className="textarea" value={editing.explanation || ''} onChange={(e) => setEditing({ ...editing, explanation: e.target.value })} /></div>
+              <button className="btn btn-primary" onClick={saveEdit}><Save size={16} /> حفظ التغييرات</button>
+            </div>
           </div>
-        )}
-      </AnimatePresence>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SpecPicker({ specs, specId, setSpecId }) {
+  const grouped = useMemo(() => {
+    const g = {};
+    (specs || []).forEach((s) => { g[s.sectorLabel] = g[s.sectorLabel] || []; g[s.sectorLabel].push(s); });
+    return g;
+  }, [specs]);
+  return (
+    <div className="field">
+      <label className="label">التخصص المستهدف</label>
+      <select className="select" value={specId} onChange={(e) => setSpecId(e.target.value)}>
+        <option value="">— اختر التخصص —</option>
+        {Object.entries(grouped).map(([sector, list]) => (
+          <optgroup key={sector} label={sector}>
+            {list.map((s) => <option key={s.id} value={s.id}>{s.label} ({s.count} سؤال)</option>)}
+          </optgroup>
+        ))}
+      </select>
     </div>
   );
 }

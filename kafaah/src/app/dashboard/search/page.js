@@ -1,171 +1,358 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Search as SearchIcon, Filter, ChevronDown, X } from 'lucide-react';
-import questionsData from '../../../data/questions.json';
+import { useState, useEffect, useMemo, useRef } from 'react';
+import Link from 'next/link';
+import {
+  Search, Loader2, Star, BookOpen, Layers, Copy, TrendingUp, X, Sparkles, Repeat, Check,
+} from 'lucide-react';
+import { useKafaah } from '../../../lib/context/KafaahProvider';
+import { useScopeBanks, isEnglish, fmtNum } from '../../../lib/useData';
+import { toggleSaved, isSaved } from '../../../lib/progress';
 
-function checkIsEnglish(text) {
-  if (!text) return false;
-  const arabic = (text.match(/[\u0600-\u06FF]/g) || []).length;
-  const latin = (text.match(/[a-zA-Z]/g) || []).length;
-  return latin > arabic;
+function escapeRe(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 export default function SearchPage() {
-  const [query, setQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [results, setResults] = useState([]);
-  const [expanded, setExpanded] = useState(null);
+  const { sector, spec, t, locale, sectorName, specName, bankName } = useKafaah();
+  const specsOfSection = sector?.specializations || [];
 
-  const categories = [
-    { id: 'all', label: 'الكل' },
-    { id: 'medical', label: 'طبي' },
-    { id: 'engineering', label: 'هندسي' },
-    { id: 'law', label: 'قانوني' },
-    { id: 'finance', label: 'مالي' },
-  ];
+  const [query, setQuery] = useState('');
+  const [selected, setSelected] = useState([]);
+  const [selectedBanks, setSelectedBanks] = useState([]);
+  const [dupOnly, setDupOnly] = useState(false);
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [suggestions, setSuggestions] = useState([]);
+  const [open, setOpen] = useState({});
+  const [showAll, setShowAll] = useState({});
+  const reqId = useRef(0);
+
+  // كل تخصصات قسمك محددة تلقائيًا
+  useEffect(() => {
+    setSelected(specsOfSection.map((s) => s.id));
+    setSelectedBanks([]);
+  }, [sector?.id]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const allSelected = selected.length === specsOfSection.length && selected.length > 0;
+
+  // بنوك النطاق المحدد (لتحديد «من أي بنك أبحث»)
+  const { banks: scopeBanks } = useScopeBanks(
+    allSelected
+      ? { sector: sector?.id }
+      : { specs: selected.length ? selected : null },
+  );
+
+  // إعادة تعيين اختيار البنوك عند تغيّر النطاق
+  useEffect(() => { setSelectedBanks([]); }, [selected.join(',')]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const params = useMemo(() => {
+    const p = new URLSearchParams();
+    if (!selected.length) return p; // لا تخصصات محددة => لا بحث
+    if (allSelected && sector?.id) p.set('sector', sector.id);
+    else p.set('specs', selected.join(','));
+    if (selectedBanks.length) p.set('banks', selectedBanks.join(','));
+    return p;
+  }, [selected, allSelected, sector?.id, selectedBanks]);
 
   useEffect(() => {
-    if (!query.trim()) {
-      setResults([]);
+    if (!params.toString()) { setSuggestions([]); return; }
+    fetch(`/api/search?${params.toString()}&suggest=1`)
+      .then((r) => r.json())
+      .then((d) => setSuggestions(d.suggestions || []))
+      .catch(() => setSuggestions([]));
+  }, [params]);
+
+  useEffect(() => {
+    const q = query.trim();
+    if (q.length < 2 || !params.toString()) {
+      setData(null);
+      setLoading(false);
       return;
     }
-    const q = query.toLowerCase();
-    const filtered = questionsData.filter(item => {
-      const matchCat = selectedCategory === 'all' || item.category === selectedCategory;
-      const matchText = item.text?.toLowerCase().includes(q)
-        || item.explanation?.toLowerCase().includes(q)
-        || item.options?.some(o => o?.toLowerCase().includes(q));
-      return matchCat && matchText;
-    }).slice(0, 30);
-    setResults(filtered);
-  }, [query, selectedCategory]);
+    setLoading(true);
+    const id = ++reqId.current;
+    const h = setTimeout(() => {
+      fetch(`/api/search?${params.toString()}&q=${encodeURIComponent(q)}`)
+        .then((r) => r.json())
+        .then((d) => { if (id === reqId.current) setData(d); })
+        .catch(() => {})
+        .finally(() => id === reqId.current && setLoading(false));
+    }, 320);
+    return () => clearTimeout(h);
+  }, [query, params]);
+
+  const tokens = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return q.split(/\s+/).filter((t) => t.length >= 2).map(escapeRe);
+  }, [query]);
+
+  function Highlight({ text }) {
+    if (!tokens.length) return <>{text}</>;
+    let parts;
+    try {
+      parts = String(text).split(new RegExp(`(${tokens.join('|')})`, 'gi'));
+    } catch {
+      return <>{text}</>;
+    }
+    return (
+      <>
+        {parts.map((p, i) =>
+          tokens.some((t) => new RegExp(`^${t}$`, 'i').test(p)) ? (
+            <mark key={i} className="hl">{p}</mark>
+          ) : (
+            <span key={i}>{p}</span>
+          ),
+        )}
+      </>
+    );
+  }
+
+  function toggleSpec(id) {
+    setSelected((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
+  }
+
+  function toggleBank(id) {
+    setSelectedBanks((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
+  }
+
+  const diffLabel = (dv) => (dv === 'easy' ? t('common.easy') : dv === 'hard' ? t('common.hard') : t('common.medium'));
+
+  const d = data;
+  const groups = d ? (dupOnly ? d.groups.filter((g) => g.count > 1) : d.groups) : [];
+  const stats = d
+    ? [
+        { icon: Layers, label: t('search.matched'), value: fmtNum(d.matchedRows, locale), tone: 'brand' },
+        { icon: BookOpen, label: t('search.unique'), value: fmtNum(d.unique, locale), tone: 'muted' },
+        { icon: Copy, label: t('search.duplicated'), value: fmtNum(d.duplicated, locale), tone: 'warning' },
+        { icon: TrendingUp, label: t('search.banksInvolved'), value: fmtNum(d.banksInvolved, locale), tone: 'info' },
+      ]
+    : [];
 
   return (
-    <div style={{ maxWidth: 800, margin: '0 auto' }}>
-      <div style={{ marginBottom: 32 }}>
-        <h1 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 900, color: 'var(--text)', fontFamily: 'var(--font-display)', marginBottom: 8 }}>
-          البحث الشامل في الأسئلة
-        </h1>
-        <p style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>
-          ابحث في كامل بنك الأسئلة — {questionsData.length.toLocaleString()} سؤال متاح
-        </p>
+    <div className="stack" style={{ gap: 16 }}>
+      <div>
+        <h1 className="page-title">{t('search.title')}</h1>
+        <p className="text-muted mt-1">{t('search.sub')}</p>
       </div>
 
-      {/* Search box */}
-      <div style={{ position: 'relative', marginBottom: 20 }}>
-        <SearchIcon size={20} style={{ position: 'absolute', right: 18, top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-        <input
-          type="text"
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          placeholder="ابحث بالكلمة، التشخيص، العلاج، المادة..."
-          style={{
-            width: '100%', padding: '16px 52px 16px 16px', borderRadius: 16,
-            border: '2px solid var(--border)', outline: 'none', fontSize: 16,
-            fontFamily: 'var(--font-body)', background: '#fff', boxShadow: 'var(--shadow-subtle)',
-            transition: 'border-color 0.2s'
-          }}
-          onFocus={e => e.target.style.borderColor = 'var(--emerald)'}
-          onBlur={e => e.target.style.borderColor = 'var(--border)'}
-        />
-        {query && (
-          <button onClick={() => setQuery('')} style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)' }}>
-            <X size={20} />
-          </button>
+      {/* نطاق البحث: تخصصات قسمك فقط */}
+      <div className="card" style={{ padding: 14 }}>
+        <div className="row-between" style={{ flexWrap: 'wrap', gap: 8, marginBottom: 8 }}>
+          <span style={{ fontWeight: 800, fontSize: 13.5 }}>
+            {t('search.scope', { sector: sectorName(sector) || t('search.yourSection') })}
+          </span>
+          <div className="row" style={{ gap: 6 }}>
+            <button
+              className="chip"
+              onClick={() => setSelected(allSelected ? [] : specsOfSection.map((s) => s.id))}
+            >
+              {allSelected ? t('search.clearAll') : t('search.selectAll')}
+            </button>
+            <Link href="/onboarding" className="chip"><Repeat size={12} /> {t('search.changeSectionSpec')}</Link>
+          </div>
+        </div>
+        <div className="chip-row">
+          {specsOfSection.map((s) => {
+            const on = selected.includes(s.id);
+            return (
+              <span key={s.id} className={`chip${on ? ' active' : ''}`} onClick={() => toggleSpec(s.id)}>
+                {on && <Check size={12} />} {specName(s)}
+              </span>
+            );
+          })}
+        </div>
+        {!selected.length && (
+          <p className="text-muted mt-2" style={{ fontSize: 12.5, fontWeight: 700 }}>
+            {t('search.pickOne')}
+          </p>
+        )}
+
+        {/* نطاق البنوك: بنك محدّد أو كل البنوك */}
+        {scopeBanks.length > 0 && (
+          <div className="mt-3" style={{ borderTop: '1px solid var(--border)', paddingTop: 12 }}>
+            <span style={{ fontWeight: 800, fontSize: 13.5 }}>{t('search.bankScope')}</span>
+            <div className="chip-row mt-2">
+              <span
+                className={`chip${selectedBanks.length === 0 ? ' active' : ''}`}
+                onClick={() => setSelectedBanks([])}
+              >
+                {selectedBanks.length === 0 && <Check size={12} />} {t('search.allBanks')}
+              </span>
+              {scopeBanks.map((b) => {
+                const on = selectedBanks.includes(b.id);
+                return (
+                  <span key={b.id} className={`chip${on ? ' active' : ''}`} onClick={() => toggleBank(b.id)}>
+                    {on && <Check size={12} />} {bankName(b)}
+                    <span className="text-muted" style={{ fontSize: 11, fontWeight: 700 }}> ·{fmtNum(b.count, locale)}</span>
+                  </span>
+                );
+              })}
+            </div>
+          </div>
         )}
       </div>
 
-      {/* Category filter */}
-      <div style={{ display: 'flex', gap: 8, marginBottom: 28, flexWrap: 'wrap' }}>
-        {categories.map(c => (
-          <button key={c.id} onClick={() => setSelectedCategory(c.id)} style={{
-            padding: '8px 16px', borderRadius: 999, fontWeight: 700, fontSize: 13, cursor: 'pointer',
-            background: selectedCategory === c.id ? 'var(--text)' : '#fff',
-            color: selectedCategory === c.id ? '#fff' : 'var(--text-secondary)',
-            border: '1px solid var(--border)', transition: 'all 0.2s'
-          }}>
-            {c.label}
-          </button>
-        ))}
-      </div>
-
-      {/* Results */}
-      {!query && (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
-          <SearchIcon size={48} style={{ marginBottom: 16, opacity: 0.3 }} />
-          <p style={{ fontSize: 16, fontWeight: 700 }}>ابدأ الكتابة للبحث في الأسئلة</p>
+      <form className="card" style={{ padding: 14 }} onSubmit={(e) => e.preventDefault()}>
+        <div className="row" style={{ gap: 10, position: 'relative' }}>
+          <Search size={18} style={{ position: 'absolute', insetInlineStart: 14, color: 'var(--text-muted)' }} />
+          <input
+            className="input"
+            style={{ paddingInlineStart: 42, paddingInlineEnd: query ? 42 : 14 }}
+            placeholder={t('search.placeholder')}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            autoFocus
+          />
+          {query && (
+            <button
+              type="button"
+              className="icon-btn"
+              style={{ position: 'absolute', insetInlineEnd: 6, width: 32, height: 32 }}
+              onClick={() => setQuery('')}
+              aria-label={t('search.clearAria')}
+            >
+              <X size={16} />
+            </button>
+          )}
         </div>
+
+        {suggestions.length > 0 && !query && (
+          <div className="chip-row mt-2">
+            <span className="text-muted row" style={{ gap: 6, fontSize: 12.5, fontWeight: 800 }}>
+              <Sparkles size={14} /> {t('search.try')}
+            </span>
+            {suggestions.slice(0, 8).map((s) => (
+              <span key={s} className="chip" onClick={() => setQuery(s)}>{s}</span>
+            ))}
+          </div>
+        )}
+      </form>
+
+      {loading && (
+        <p className="text-muted row" style={{ gap: 8 }}>
+          <Loader2 size={16} className="spin" /> {t('search.searching')}
+        </p>
       )}
 
-      {query && results.length === 0 && (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
-          <p style={{ fontSize: 16, fontWeight: 700 }}>لم يُعثر على نتائج لـ "{query}"</p>
-          <p style={{ fontSize: 14, marginTop: 8 }}>جرب كلمات مختلفة أو غيّر الفئة</p>
-        </div>
-      )}
+      {d && !loading && (
+        <>
+          <div className="stat-grid">
+            {stats.map((s, i) => (
+              <div key={i} className="card stat-card-sm">
+                <span className={`stat-ico tone-${s.tone}`}><s.icon size={16} /></span>
+                <div>
+                  <div className="stat-value">{s.value}</div>
+                  <div className="stat-label">{s.label}</div>
+                </div>
+              </div>
+            ))}
+          </div>
 
-      {results.length > 0 && (
-        <div>
-          <p style={{ fontSize: 14, color: 'var(--text-muted)', fontWeight: 700, marginBottom: 16 }}>
-            {results.length} نتيجة
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {results.map((q, i) => {
-              const isEn = checkIsEnglish(q.text);
-              const isOpen = expanded === i;
+          {d.duplicated > 0 && (
+            <div className="row-between card soft-sector" style={{ padding: 12, gap: 10, flexWrap: 'wrap' }}>
+              <span className="row" style={{ gap: 8, fontSize: 13.5, fontWeight: 700 }}>
+                <Copy size={15} /> {t('search.dupNotice', { n: fmtNum(d.duplicated, locale) })}
+              </span>
+              <button className={`chip${dupOnly ? ' active' : ''}`} onClick={() => setDupOnly((v) => !v)}>
+                {dupOnly ? t('search.showAll') : t('search.showDupOnly')}
+              </button>
+            </div>
+          )}
+
+          <div className="stack" style={{ gap: 12 }}>
+            {groups.map((g) => {
+              const en = isEnglish(g.text);
+              const isOpen = open[g.key];
+              const listAll = showAll[g.key];
+              const occ = listAll ? g.occurrences : g.occurrences.slice(0, 4);
+              const rep = { id: g.occurrences[0]?.id, ...g };
               return (
-                <motion.div
-                  key={q.id}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.03 }}
-                  style={{ background: '#fff', borderRadius: 16, border: '1px solid var(--border)', overflow: 'hidden', boxShadow: 'var(--shadow-subtle)' }}
-                >
-                  <button
-                    onClick={() => setExpanded(isOpen ? null : i)}
-                    style={{
-                      width: '100%', padding: '18px 20px', display: 'flex', justifyContent: 'space-between',
-                      alignItems: 'flex-start', gap: 12, background: 'none', border: 'none', cursor: 'pointer', textAlign: 'right'
-                    }}
-                  >
-                    <div style={{ flex: 1 }}>
-                      <span style={{ fontSize: 11, fontWeight: 800, color: 'var(--emerald-dark)', background: 'var(--emerald-light)', padding: '2px 8px', borderRadius: 6, marginBottom: 8, display: 'inline-block' }}>
-                        {q.category === 'medical' ? 'طبي' : q.category === 'engineering' ? 'هندسي' : q.category}
-                      </span>
-                      <p style={{ fontSize: 14, color: 'var(--text)', fontWeight: 600, lineHeight: 1.7, direction: isEn ? 'ltr' : 'rtl', textAlign: isEn ? 'left' : 'right' }}>
-                        {q.text}
-                      </p>
+                <div key={g.key} className="card">
+                  <div className="row-between" style={{ marginBottom: 8, flexWrap: 'wrap', gap: 8 }}>
+                    <div className="row" style={{ gap: 6, flexWrap: 'wrap' }}>
+                      <span className="badge badge-brand">{g.subject}</span>
+                      {g.count > 1 && (
+                        <span className="badge badge-warning"><Copy size={11} /> {t('search.repeated', { n: fmtNum(g.count, locale) })}</span>
+                      )}
+                      {g.banks > 1 && <span className="badge badge-info">{t('search.banksCount', { n: fmtNum(g.banks, locale) })}</span>}
                     </div>
-                    <ChevronDown size={18} style={{ color: 'var(--text-muted)', transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s', flexShrink: 0, marginTop: 4 }} />
-                  </button>
+                    <button className="icon-btn" onClick={() => toggleSaved(rep)} aria-label={t('search.saveAria')}>
+                      <Star size={17} fill={isSaved(rep.id) ? 'var(--gold)' : 'none'} color={isSaved(rep.id) ? 'var(--gold)' : 'currentColor'} />
+                    </button>
+                  </div>
 
+                  <p style={{ fontWeight: 700, lineHeight: 1.8, direction: en ? 'ltr' : 'rtl', textAlign: en ? 'left' : 'right' }}>
+                    <Highlight text={g.text} />
+                  </p>
+
+                  <div className="stack" style={{ gap: 6, marginTop: 10 }}>
+                    <span className="text-muted" style={{ fontSize: 12.5, fontWeight: 800 }}>{t('search.appearedIn')}</span>
+                    <div className="stack" style={{ gap: 6 }}>
+                      {occ.map((o, i) => (
+                        <div key={i} className="occurrence">
+                          <BookOpen size={14} />
+                          <span style={{ fontWeight: 800 }}>{bankName({ specId: o.specId, title: o.bankTitle, auto: o.bankAuto })}</span>
+                          <span className="dot" style={{ background: 'var(--border-strong)' }} />
+                          <span className="text-muted">{o.specLabel}</span>
+                          <span className="badge badge-muted" style={{ marginInlineStart: 'auto' }}>{diffLabel(o.difficulty)}</span>
+                        </div>
+                      ))}
+                      {g.occurrences.length > 4 && !listAll && (
+                        <button className="btn btn-ghost btn-sm" onClick={() => setShowAll((s) => ({ ...s, [g.key]: true }))}>
+                          {t('search.showAllBanks', { n: fmtNum(g.occurrences.length, locale) })}
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  <button
+                    className="btn btn-ghost btn-sm mt-2"
+                    onClick={() => setOpen((o) => ({ ...o, [g.key]: !o[g.key] }))}
+                  >
+                    {isOpen ? t('common.hideAnswer') : t('common.showAnswerExplanation')}
+                  </button>
                   {isOpen && (
-                    <div style={{ padding: '0 20px 20px', borderTop: '1px solid var(--border-subtle)' }}>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 16 }}>
-                        {q.options.map((opt, idx) => (
-                          <div key={idx} style={{
-                            padding: '10px 14px', borderRadius: 10, fontSize: 13, fontWeight: 600,
-                            background: idx === q.correct_index ? 'var(--emerald-light)' : 'var(--bg-subtle)',
-                            color: idx === q.correct_index ? 'var(--emerald-dark)' : 'var(--text-secondary)',
-                            border: `1px solid ${idx === q.correct_index ? 'rgba(16,185,129,0.3)' : 'transparent'}`,
-                            direction: isEn ? 'ltr' : 'rtl'
-                          }}>
-                            {opt} {idx === q.correct_index && ' ✓'}
+                    <div className="mt-2 stack" style={{ gap: 8 }}>
+                      {(g.options || []).map((opt, i) => {
+                        const ok = i === (g.correctIndex ?? 0);
+                        const oen = isEnglish(opt);
+                        return (
+                          <div
+                            key={i}
+                            className={`option-static${ok ? ' correct' : ''}`}
+                            style={{ direction: oen ? 'ltr' : 'rtl', textAlign: oen ? 'left' : 'right' }}
+                          >
+                            {ok && '✓ '}{opt}
                           </div>
-                        ))}
-                      </div>
-                      {q.explanation && (
-                        <p style={{ marginTop: 12, fontSize: 13, color: 'var(--text-muted)', fontStyle: 'italic', background: 'var(--bg-subtle)', padding: '10px 14px', borderRadius: 10 }}>
-                          {q.explanation}
-                        </p>
+                        );
+                      })}
+                      {g.explanation && (
+                        <div className="card soft-sector" style={{ padding: 12, fontSize: 13.5, fontWeight: 600 }}>
+                          <strong style={{ display: 'block', marginBottom: 4 }}>{t('common.explanation')}:</strong>
+                          {g.explanation}
+                        </div>
                       )}
                     </div>
                   )}
-                </motion.div>
+                </div>
               );
             })}
+
+            {d.truncated && (
+              <p className="text-muted text-center">{t('search.truncated', { n: fmtNum(d.groups.length, locale) })}</p>
+            )}
+            {groups.length === 0 && (
+              <div className="card text-center text-muted" style={{ padding: 36 }}>
+                {t('search.noResults')}
+              </div>
+            )}
           </div>
+        </>
+      )}
+
+      {!d && !loading && query.trim().length < 2 && (
+        <div className="card text-center text-muted" style={{ padding: 36 }}>
+          {t('search.startTyping', { spec: spec ? specName(spec) : sectorName(sector) || t('search.yourSection') })}
         </div>
       )}
     </div>

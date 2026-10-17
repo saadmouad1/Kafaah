@@ -1,0 +1,133 @@
+{
+ "specId": "edu_general",
+ "sectorId": "education",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "edu_general-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "education",
+     "specId": "edu_general",
+     "subject": "الأهداف التعليمية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الذي يمثّله تصنيف بلوم (Bloom)؟",
+     "options": [
+      "تصنيف مستويات الأهداف المعرفية من التذكّر إلى الإبداع",
+      "أنواع التقويم",
+      "استراتيجيات الإدارة",
+      "أنواع المناهج"
+     ],
+     "correctIndex": 0,
+     "explanation": "بلوم يصنّف الأهداف المعرفية تصاعديًا: تذكّر، فهم، تطبيق، تحليل، تقييم، إبداع.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الأهداف التعليمية"
+     ],
+     "id": "edu_general-0001",
+     "bankId": "edu_general-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_general",
+     "subject": "نظريات التعلّم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما جوهر النظرية البنائية (Constructivism)؟",
+     "options": [
+      "يبني المتعلّم معرفته بنشاطه عبر الخبرة",
+      "المعلّم يلقّن والمتعلّم يتلقّى",
+      "التعلّم سلوكي بحت",
+      "المعرفة تُنقل جاهزة"
+     ],
+     "correctIndex": 0,
+     "explanation": "البنائية ترى أن المتعلّم يبني المعنى بنفسه من خلال التجربة والتأمل.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "نظريات التعلّم"
+     ],
+     "id": "edu_general-0002",
+     "bankId": "edu_general-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_general",
+     "subject": "التقويم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الفرق بين التقويم التكويني والختامي؟",
+     "options": [
+      "التكويني مستمر لتحسين التعلّم والختامي للحكم النهائي",
+      "لا فرق",
+      "التكويني نهائي",
+      "الختامي مستمر"
+     ],
+     "correctIndex": 0,
+     "explanation": "التكويني يوجّه التعلّم أثناء العملية، والختامي يقيس التحصيل في النهاية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التقويم"
+     ],
+     "id": "edu_general-0003",
+     "bankId": "edu_general-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_general",
+     "subject": "إدارة الصف",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما أفضل استراتيجية لضبط الصف؟",
+     "options": [
+      "توقعات واضحة وروتين منتظم وعلاقات إيجابية",
+      "العقاب المستمر",
+      "تجاهل السلوك",
+      "الصراخ"
+     ],
+     "correctIndex": 0,
+     "explanation": "الوقاية عبر التوقعات الواضحة والروتين والعلاقة الإيجابية أفضل من العقاب.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "إدارة الصف"
+     ],
+     "id": "edu_general-0004",
+     "bankId": "edu_general-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_general",
+     "subject": "التعلّم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما معنى التمايز في التدريس (Differentiation)؟",
+     "options": [
+      "تكييف المحتوى والأنشطة لمستويات واحتياجات المتعلّمين",
+      "تدريس الجميع بنفس الطريقة",
+      "تقليل المنهج",
+      "إلغاء التقويم"
+     ],
+     "correctIndex": 0,
+     "explanation": "التمايز يعني مواءمة المحتوى والعمليات والمخرجات لتنوّع المتعلّمين.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التعلّم"
+     ],
+     "id": "edu_general-0005",
+     "bankId": "edu_general-b1"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,151 @@
+{
+ "generatedAt": "2026-10-17T02:49:25.131Z",
+ "total": 3237,
+ "files": [
+  {
+   "specId": "cfa",
+   "sectorId": "finance",
+   "count": 5
+  },
+  {
+   "specId": "cma",
+   "sectorId": "finance",
+   "count": 5
+  },
+  {
+   "specId": "cpa",
+   "sectorId": "finance",
+   "count": 5
+  },
+  {
+   "specId": "dentistry",
+   "sectorId": "medical",
+   "count": 85
+  },
+  {
+   "specId": "edu_counsel",
+   "sectorId": "education",
+   "count": 5
+  },
+  {
+   "specId": "edu_general",
+   "sectorId": "education",
+   "count": 5
+  },
+  {
+   "specId": "edu_leadership",
+   "sectorId": "education",
+   "count": 5
+  },
+  {
+   "specId": "edu_subject",
+   "sectorId": "education",
+   "count": 5
+  },
+  {
+   "specId": "emergency",
+   "sectorId": "medical",
+   "count": 5
+  },
+  {
+   "specId": "eng_arch",
+   "sectorId": "engineering",
+   "count": 5
+  },
+  {
+   "specId": "eng_chem",
+   "sectorId": "engineering",
+   "count": 5
+  },
+  {
+   "specId": "eng_civil",
+   "sectorId": "engineering",
+   "count": 5
+  },
+  {
+   "specId": "eng_elec",
+   "sectorId": "engineering",
+   "count": 5
+  },
+  {
+   "specId": "eng_env",
+   "sectorId": "engineering",
+   "count": 5
+  },
+  {
+   "specId": "eng_it",
+   "sectorId": "engineering",
+   "count": 5
+  },
+  {
+   "specId": "eng_mech",
+   "sectorId": "engineering",
+   "count": 5
+  },
+  {
+   "specId": "gms",
+   "sectorId": "medical",
+   "count": 2991
+  },
+  {
+   "specId": "lab",
+   "sectorId": "medical",
+   "count": 31
+  },
+  {
+   "specId": "law_arbitration",
+   "sectorId": "law",
+   "count": 5
+  },
+  {
+   "specId": "law_bar",
+   "sectorId": "law",
+   "count": 5
+  },
+  {
+   "specId": "law_commercial",
+   "sectorId": "law",
+   "count": 5
+  },
+  {
+   "specId": "law_criminal",
+   "sectorId": "law",
+   "count": 5
+  },
+  {
+   "specId": "law_judiciary",
+   "sectorId": "law",
+   "count": 5
+  },
+  {
+   "specId": "nursing",
+   "sectorId": "medical",
+   "count": 5
+  },
+  {
+   "specId": "pharmacy",
+   "sectorId": "medical",
+   "count": 5
+  },
+  {
+   "specId": "pt",
+   "sectorId": "medical",
+   "count": 5
+  },
+  {
+   "specId": "radiology",
+   "sectorId": "medical",
+   "count": 5
+  },
+  {
+   "specId": "socpa",
+   "sectorId": "finance",
+   "count": 5
+  },
+  {
+   "specId": "tax",
+   "sectorId": "finance",
+   "count": 5
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "specId": "edu_counsel",
+ "sectorId": "education",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "edu_counsel-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "education",
+     "specId": "edu_counsel",
+     "subject": "التوجيه",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الفرق بين التوجيه والإرشاد؟",
+     "options": [
+      "التوجيه وقائي جمعي للجميع، والإرشاد علاجي أخصه فردي",
+      "لا فرق",
+      "الإرشاد جمعي دائمًا",
+      "التوجيه علاجي"
+     ],
+     "correctIndex": 0,
+     "explanation": "التوجيه خدمة وقائية شاملة، أما الإرشاد فرعلي/فردي أكثر عمقًا.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التوجيه"
+     ],
+     "id": "edu_counsel-0001",
+     "bankId": "edu_counsel-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_counsel",
+     "subject": "الأخلاقيات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما المبدأ الأساسي في الإرشاد الطلابي؟",
+     "options": [
+      "السرّية وحماية خصوصية الطالب ما لم يوجد خطر",
+      "إفشاء الأسرار",
+      "إبلاغ الطلاب عن بعضهم",
+      "النشر العلني"
+     ],
+     "correctIndex": 0,
+     "explanation": "السرّية أساس الثقة، ولا تُخترق إلا عند وجود ضرر/خطر يستوجب الحماية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الأخلاقيات"
+     ],
+     "id": "edu_counsel-0002",
+     "bankId": "edu_counsel-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_counsel",
+     "subject": "الإرشاد المهني",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما هدف الإرشاد المهني؟",
+     "options": [
+      "مواءمة ميول الطالب وقدره مع الفرص التعليمية والمهنية",
+      "تعيينه مباشرة",
+      "تقييد خياراته",
+      "إلغاء طموحه"
+     ],
+     "correctIndex": 0,
+     "explanation": "الإرشاد المهني يساعد الطالب على اكتشاف ميوله وقدراته وربطها بمسار ملائم.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإرشاد المهني"
+     ],
+     "id": "edu_counsel-0003",
+     "bankId": "edu_counsel-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_counsel",
+     "subject": "التدخل",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الخطوة الأولى عند اكتشاف حالة تنمّر؟",
+     "options": [
+      "ضمان أمان الطالب المستهدف ووقف السلوك ثم المعالجة",
+      "تجاهل الحالة",
+      "لوم الضحية",
+      "الإعلان العام",
+      "معاقبة الجميع"
+     ],
+     "correctIndex": 0,
+     "explanation": "أولوية التدخل: حماية الطالب المستهدف ووقف التنمّر ثم معالجة الأطراف والوقاية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التدخل"
+     ],
+     "id": "edu_counsel-0004",
+     "bankId": "edu_counsel-b1"
+    },
+    {
+     "sectorId": "education",
+     "specId": "edu_counsel",
+     "subject": "الإحالة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "متى تُحال الحالة إلى مختص خارجي؟",
+     "options": [
+      "عند تجاوز قدرات المرشد المدرسي أو وجود خطر نفسي جسيم",
+      "دائمًا",
+      "أبدًا",
+      "عند كل مشكلة سلوكية"
+     ],
+     "correctIndex": 0,
+     "explanation": "تُحال عند الحاجة لتخصص أعمق أو وجود خطر نفسي/صحي يتجاوز نطاق المرشد.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإحالة"
+     ],
+     "id": "edu_counsel-0005",
+     "bankId": "edu_counsel-b1"
+    }
+   ]
+  }
+ ]
+}

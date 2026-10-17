@@ -1,107 +1,133 @@
 import { NextResponse } from 'next/server';
 import Groq from 'groq-sdk';
 
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 const apiKey = process.env.GROQ_API_KEY || '';
-const groq = new Groq({ apiKey });
+const MODEL = 'openai/gpt-oss-120b';
+
+function client() {
+  if (!apiKey) return null;
+  return new Groq({ apiKey });
+}
+
+// ── خطة تشخيصية احتياطية (بلا إنترنت) ────────────────────────────────────────
+function fallbackPlan({ specialty, authority, exam }) {
+  return {
+    readiness: 70,
+    dailyTarget: 35,
+    studyHours: 2,
+    summary: `بناءً على تخصصك (${specialty || 'تخصصك'}) وجهة الترخيص (${authority || 'الجهة الرسمية'})، أعددنا لك مسارًا تدريبيًا مخصصًا يركّز على المحاور الأكثر تكرارًا في ${exam || 'امتحان المزاولة'}. بمعدل ٣٥ سؤالًا يوميًا ترتفع جاهزيتك بثبات.`,
+    focusAreas: [
+      'المعايير والبروتوكولات المعتمدة',
+      'الحالات التطبيقية واتخاذ القرار',
+      'التشريعات وأخلاقيات المهنة',
+      'إدارة المخاطر والطوارئ',
+      'تحليل الأخطاء والتكرار المتباعد',
+    ],
+    weeks: [
+      { title: 'بناء الأساسيات', tasks: 'تغطية الأسئلة عالية التكرار', target: '75%' },
+      { title: 'التخصصية الدقيقة', tasks: 'التركيز على الموضوعات المتقدمة', target: '82%' },
+      { title: 'محاكاة تحت ضغط الوقت', tasks: 'امتحان كامل بمؤقّت', target: '88%' },
+      { title: 'التثبيت النهائي', tasks: 'مراجعة الأخطاء والمفاهيم الحرجة', target: '92%' },
+    ],
+  };
+}
+
+function normalizePlan(raw, ctx) {
+  if (!raw || typeof raw !== 'object') return fallbackPlan(ctx);
+  return {
+    readiness: raw.readiness_score ?? raw.readiness ?? 70,
+    dailyTarget: raw.daily_target_questions ?? raw.dailyTarget ?? 35,
+    studyHours: raw.estimated_study_hours ?? raw.studyHours ?? 2,
+    summary: raw.ai_diagnostic_summary || raw.summary || fallbackPlan(ctx).summary,
+    focusAreas: raw.high_yield_topics || raw.focusAreas || fallbackPlan(ctx).focusAreas,
+    weeks: (raw.weekly_milestones || raw.weeks || fallbackPlan(ctx).weeks).map((w, i) => ({
+      title: w.title || w.focus || `الأسبوع ${i + 1}`,
+      tasks: w.tasks || w.focus || '',
+      target: w.target || w.target_accuracy || '',
+    })),
+  };
+}
 
 export async function POST(req) {
+  let body = {};
   try {
-    const body = await req.json();
-    const { action, payload } = body;
-
-    // ── 1. DIAGNOSTIC ONBOARDING PLAN ───────────────────────────────
-    if (action === 'diagnostic_plan') {
-      const { profession, specialty, country, exam_name, goal, target_date, current_level } = payload;
-
-      const systemPrompt = `أنت الخبير الأكاديمي والاستشاري الأول في منصة «كـفـاءة» لتراخيص مزاولة المهن والاعتماد المهني.
-مهمتك تقييم ملف المشترك الجديد وبناء خطة تدريب ذكية ومخصصة لاجتياز امتحان المزاولة من المحاولة الأولى.
-
-قم بتحليل البيانات التالية:
-- المجال: ${profession}
-- التخصص الدقيق: ${specialty}
-- الدولة وجهة الترخيص: ${country} (${exam_name || 'امتحان الترخيص الرسمي'})
-- الهدف: ${goal}
-- التاريخ المستهدف للامتحان: ${target_date}
-- التقييم الذاتي للجاهزية: ${current_level}
-
-أجب حصراً بصيغة JSON نظيفة بدون أي علامات markdown إضافية (Strict JSON object):
-{
-  "readiness_score": 68,
-  "daily_target_questions": 35,
-  "estimated_study_hours": 2,
-  "high_yield_topics": ["موضوع 1", "موضوع 2", "موضوع 3", "موضوع 4", "موضوع 5"],
-  "weekly_milestones": [
-    { "week": 1, "focus": "بناء الأساسيات وتصفية بنك الأسئلة المباشرة", "target_accuracy": "75%" },
-    { "week": 2, "focus": "الحالات السريرية المعقدة والسيناريوهات التطبيقية", "target_accuracy": "82%" },
-    { "week": 3, "focus": "المحاكاة المؤقتة تحت ضغط الوقت", "target_accuracy": "88%" },
-    { "week": 4, "focus": "مراجعة الأسئلة الخاطئة وتثبيت المفاهيم الحرجة", "target_accuracy": "92%" }
-  ],
-  "ai_diagnostic_summary": "تحليل شخصي مشجع باللغة العربية يوضح نقاط القوة وكيف تضمن منصة كفاءة تفوقه.",
-  "recommended_mock_exams": ["امتحان المحاكاة الشامل #1", "امتحان السرعة والتركيز"]
-}`;
-
-      try {
-        const response = await groq.chat.completions.create({
-          model: 'openai/gpt-oss-120b',
-          messages: [
-            { role: 'system', content: 'You are an elite educational AI assessment engine. Return pure JSON only.' },
-            { role: 'user', content: systemPrompt }
-          ],
-          temperature: 0.4,
-          max_tokens: 1500
-        });
-
-        const rawContent = response.choices[0]?.message?.content || '{}';
-        // Clean markdown backticks if any
-        const cleaned = rawContent.replace(/```json/g, '').replace(/```/g, '').trim();
-        const parsed = JSON.parse(cleaned);
-        return NextResponse.json({ success: true, plan: parsed });
-      } catch (err) {
-        console.error('Groq Primary Error, falling back to rule-based AI diagnostic:', err);
-        // Fallback intelligent diagnostic if API timeout/network
-        return NextResponse.json({
-          success: true,
-          plan: {
-            readiness_score: 72,
-            daily_target_questions: 40,
-            estimated_study_hours: 2.5,
-            high_yield_topics: [
-              'المعايير والبروتوكولات المهنية المعتمدة',
-              'الحالات التطبيقية الشائعة وسيناريوهات اتخاذ القرار',
-              'التشريعات والأنظمة وأخلاقيات المهنة',
-              'إدارة المخاطر والتعامل مع الطوارئ المهنية',
-              'التحليل التشخيصي والحلول المتكاملة'
-            ],
-            weekly_milestones: [
-              { week: 1, focus: 'تغطية الأسئلة عالية التكرار في امتحانات الدورات السابقة', target_accuracy: '75%' },
-              { week: 2, focus: 'التدريب المركز على الأسئلة التخصصية الدقيقة', target_accuracy: '82%' },
-              { week: 3, focus: 'محاكاة كاملة مع تفعيل مؤقت الوقت الرسمي', target_accuracy: '88%' },
-              { week: 4, focus: 'جلسات التكرار المتباعد للأسئلة المميزة', target_accuracy: '94%' }
-            ],
-            ai_diagnostic_summary: `بناءً على تخصصك (${specialty}) وجهة الترخيص المستهدفة (${country})، تم تجهيز مسار تدريبي مخصص يركز على المحاور الأكثر تكراراً في امتحانات ${exam_name || 'البورد'}. بمتوسط تدريب 40 سؤالاً يومياً، ترتفع فرص اجتيازك بنسبة تتجاوز 96%.`,
-            recommended_mock_exams: ['محاكاة البورد القياسية 100 سؤال', 'بنك الحالات التطبيقية المركزة']
-          }
-        });
-      }
-    }
-
-    // ── 2. AI SMART TUTOR / EXPLANATIONS ────────────────────────────
-    if (action === 'tutor_query') {
-      const { question, user_query } = payload;
-      const completion = await groq.chat.completions.create({
-        model: 'openai/gpt-oss-120b',
-        messages: [
-          { role: 'system', content: 'أنت المعلم الذكي لمنصة كفاءة. اشرح السؤال بأسلوب مبسط ومحكم مع نصيحة للاختبار.' },
-          { role: 'user', content: `السؤال: ${question}\nاستفسار الطالب: ${user_query}` }
-        ],
-        temperature: 0.5
-      });
-      return NextResponse.json({ success: true, reply: completion.choices[0]?.message?.content });
-    }
-
-    return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
-  } catch (error) {
-    console.error('Groq Route Handler Error:', error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: 'طلب غير صالح' }, { status: 400 });
   }
+
+  // دعم الشكلين: { action, payload } و الشكل المسطّح { action, question, ... }
+  const action = body.action;
+  const payload = body.payload || body;
+  const groq = client();
+
+  // ── ١) الخطة التشخيصية ────────────────────────────────────────────────
+  if (action === 'diagnostic_plan') {
+    const ctx = {
+      specialty: payload.specialty || payload.specLabel,
+      authority: payload.authority || payload.country,
+      exam: payload.exam_name || payload.exam,
+    };
+    if (!groq) return NextResponse.json({ success: true, plan: fallbackPlan(ctx), fallback: true });
+    try {
+      const prompt = `أنت مستشار أكاديمي في منصة «كفاءة» لتراخيص مزاولة المهن.
+المجال: ${payload.profession || payload.sectorLabel || ''}
+التخصص: ${ctx.specialty || ''}
+الدولة وجهة الترخيص: ${payload.country || ''} (${ctx.exam || ''})
+المستوى الحالي: ${payload.current_level || payload.level || 'خريج'}
+التاريخ المستهدف: ${payload.target_date || payload.examDate || 'غير محدد'}
+
+أعد JSON فقط بالبنية:
+{"readiness_score":70,"daily_target_questions":35,"estimated_study_hours":2,"ai_diagnostic_summary":"...","high_yield_topics":["..."],"weekly_milestones":[{"week":1,"focus":"...","target_accuracy":"75%"}]}`;
+      const completion = await groq.chat.completions.create({
+        model: MODEL,
+        messages: [
+          { role: 'system', content: 'Return pure JSON only, no markdown.' },
+          { role: 'user', content: prompt },
+        ],
+        temperature: 0.4,
+        max_tokens: 1200,
+      });
+      const cleaned = (completion.choices[0]?.message?.content || '{}').replace(/```json/g, '').replace(/```/g, '').trim();
+      let parsed = {};
+      try { parsed = JSON.parse(cleaned); } catch {}
+      return NextResponse.json({ success: true, plan: normalizePlan(parsed, ctx) });
+    } catch (e) {
+      console.error('Groq diagnostic error:', e?.message);
+      return NextResponse.json({ success: true, plan: fallbackPlan(ctx), fallback: true });
+    }
+  }
+
+  // ── ٢) المدرّس الذكي ──────────────────────────────────────────────────
+  if (action === 'tutor_query') {
+    const question = payload.question || '';
+    const options = payload.options || [];
+    const correctAnswer = payload.correctAnswer || '';
+    const subject = payload.subject || '';
+    const userQuery = payload.user_query || payload.query || '';
+    if (!groq) {
+      return NextResponse.json({ success: true, text: 'خدمة المدرّس الذكي غير مُهيّأة حاليًا. راجع الشرح المرفق مع السؤال.' , fallback: true });
+    }
+    try {
+      const completion = await groq.chat.completions.create({
+        model: MODEL,
+        messages: [
+          { role: 'system', content: 'أنت المعلّم الذكي لمنصة كفاءة. اشرح بأسلوب مبسّط ومحكم مع نصيحة للاختبار. أجب بالعربية بإيجاز.' },
+          { role: 'user', content: `المادة: ${subject}\nالسؤال: ${question}\nالخيارات: ${options.join(' | ')}\nالإجابة الصحيحة: ${correctAnswer}\nاستفسار الطالب: ${userQuery || 'اشرح لي لماذا هذه الإجابة صحيحة'}` },
+        ],
+        temperature: 0.5,
+        max_tokens: 700,
+      });
+      const text = completion.choices[0]?.message?.content || '';
+      return NextResponse.json({ success: true, text, reply: text });
+    } catch (e) {
+      console.error('Groq tutor error:', e?.message);
+      return NextResponse.json({ success: true, text: 'تعذّر الوصول للمدرّس الذكي حاليًا. حاول لاحقًا.', fallback: true });
+    }
+  }
+
+  return NextResponse.json({ error: 'إجراء غير معروف' }, { status: 400 });
 }

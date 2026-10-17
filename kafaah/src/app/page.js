@@ -99,35 +99,9 @@ export default function LandingPage() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: 'transparent', color: 'var(--text)' }}>
+    <div className="landing">
 
-      {/* ── 1. LAUNCH PROMOTIONAL BANNER (WARM GOLD & AMBER) ── */}
-      <div style={{
-        background: 'linear-gradient(90deg, #f59e0b 0%, #fbbf24 50%, #f59e0b 100%)',
-        color: '#0f172a',
-        padding: '11px 16px',
-        textAlign: 'center',
-        fontSize: 'clamp(12.5px, 2.5vw, 14px)',
-        fontWeight: 800,
-        boxShadow: '0 2px 10px rgba(245, 158, 11, 0.25)'
-      }}>
-        🎉 <strong>بمناسبة التدشين الرسمي:</strong> وصول مجاني كامل وغير محدود لمدة <strong>3 أشهر</strong> لجميع بنوك الأسئلة وامتحانات المحاكاة لكافة التخصصات!
-        <Link href="/register" style={{
-          marginRight: 12,
-          background: '#0f172a',
-          color: '#ffffff',
-          padding: '4px 14px',
-          borderRadius: 999,
-          textDecoration: 'none',
-          fontSize: 12,
-          fontWeight: 800,
-          display: 'inline-block'
-        }}>
-          سجّل الآن واستفد من العرض
-        </Link>
-      </div>
-
-      {/* ── 2. HERO SECTION (SUNLIT & BRIGHT) ── */}
+      {/* ── HERO SECTION ── */}
       <section style={{
         padding: 'clamp(3rem, 7vw, 6rem) 1.5rem clamp(2.5rem, 6vw, 4.5rem)',
         borderBottom: '1px solid var(--border)',
@@ -186,7 +160,7 @@ export default function LandingPage() {
             fontWeight: 600
           }}>
             المنصة الشاملة لكافة التخصصات (الصحية، الهندسية، القانونية، المالية، والتربوية). 
-            بنوك أسئلة سريرية وتطبيقية محكمة، محاكاة دقيقة لقاعة الامتحان، ومعالج ذكي مدعوم بـ <strong style={{ color: '#059669' }}>Groq AI</strong> لبناء خطتك الأكاديمية وقياس جاهزيتك.
+            بنوك أسئلة معتمدة وتطبيقية محكمة، محاكاة دقيقة لقاعة الامتحان، ومعالج ذكي مدعوم بـ <strong style={{ color: '#059669' }}>Groq AI</strong> لبناء خطتك الأكاديمية وقياس جاهزيتك.
           </p>
 
           {/* Bright Multi-Color CTAs */}
@@ -200,7 +174,7 @@ export default function LandingPage() {
           }}>
             <Link href="/register" className="btn btn-emerald" style={{ padding: '16px 36px', fontSize: 16 }}>
               <Sparkles size={18} />
-              ابدأ الآن مجاناً (عرض 3 أشهر بالكامل)
+              ابدأ رحلتك الآن
               <ArrowLeft size={16} />
             </Link>
 
@@ -226,7 +200,7 @@ export default function LandingPage() {
               { num: '+26,500', label: 'سؤال تخصصي معتمد', color: '#059669', bg: '#ecfdf5', border: '#10b981' },
               { num: '5 مجالات', label: 'كافة المهن الوطنية', color: '#ea580c', bg: '#fff7ed', border: '#f97316' },
               { num: '99.4%', label: 'نسبة اجتياز المشتركين', color: '#d97706', bg: '#fffbeb', border: '#f59e0b' },
-              { num: '3 أشهر', label: 'مجاناً بالكامل بمناسبة التدشين', color: '#e11d48', bg: '#fff1f2', border: '#f43f5e' }
+              { num: '24/7', label: 'متاح في أي وقت وعلى كل جهاز', color: '#e11d48', bg: '#fff1f2', border: '#f43f5e' }
             ].map((st, i) => (
               <div
                 key={i}
@@ -423,7 +397,7 @@ export default function LandingPage() {
                   boxShadow: `0 4px 18px ${currentDisc.themeColor}40`
                 }}
               >
-                ابدأ التدريب على هذا التخصص مجاناً
+                ابدأ التدريب على هذا التخصص
                 <ArrowLeft size={16} />
               </Link>
             </div>
@@ -858,7 +832,7 @@ export default function LandingPage() {
                     className="input"
                     style={{ background: 'rgba(255, 255, 255, 0.9)' }}
                   >
-                    <option>استفسار عن تفعيل الحساب والاشتراك المجاني (3 أشهر)</option>
+                    <option>استفسار عن تفعيل الحساب والاشتراك</option>
                     <option>ملاحظة أو تدقيق على سؤال أو إجابة في بنك الأسئلة</option>
                     <option>طلب إضافة تخصص أو دورة امتحانية جديدة</option>
                     <option>مشكلة تقنية في الموقع أو التطبيق</option>
@@ -944,7 +918,7 @@ export default function LandingPage() {
           }}>
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 14, textDecoration: 'none' }}>
               <img 
-                src="/kafaah-icon.svg" 
+                src="/icon.svg" 
                 alt="شعار كفاءة" 
                 style={{ width: 46, height: 46 }}
               />
@@ -967,7 +941,7 @@ export default function LandingPage() {
               <a href="#app" style={{ color: '#475569', textDecoration: 'none', fontSize: 14, fontWeight: 700 }}>تطبيق الجوال</a>
               <a href="#contact" style={{ color: '#475569', textDecoration: 'none', fontSize: 14, fontWeight: 700 }}>تواصل معنا</a>
               <Link href="/login" style={{ color: '#475569', textDecoration: 'none', fontSize: 14, fontWeight: 700 }}>تسجيل الدخول</Link>
-              <Link href="/register" style={{ color: '#059669', textDecoration: 'none', fontSize: 14, fontWeight: 800 }}>إنشاء حساب (3 أشهر مجاناً)</Link>
+              <Link href="/register" style={{ color: '#059669', textDecoration: 'none', fontSize: 14, fontWeight: 800 }}>إنشاء حساب</Link>
             </div>
           </div>
 

@@ -1,0 +1,133 @@
+{
+ "specId": "law_judiciary",
+ "sectorId": "law",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "law_judiciary-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "law",
+     "specId": "law_judiciary",
+     "subject": "الاختصاص",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما المقصود بالاختصاص المكاني للمحكمة؟",
+     "options": [
+      "المحكمة المختصة بحسب موقع النزاع/المدعى عليه",
+      "المحكمة الأعلى درجة",
+      "محكمة الاستئناف دائمًا",
+      "لا معيار"
+     ],
+     "correctIndex": 0,
+     "explanation": "الاختصاص المكاني يحدّد أي محكمة في أي موقع تنظر الدعوى حسب الأنظمة الإجرائية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الاختصاص"
+     ],
+     "id": "law_judiciary-0001",
+     "bankId": "law_judiciary-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_judiciary",
+     "subject": "التنحّي",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "متى يجب على القاضي التنحّي عن نظر الدعوى؟",
+     "options": [
+      "عند وجود مصلحة أو قرابة أو عداوة تخلّ بالحياد",
+      "عند صعوبة القضية",
+      "عند كثرة الأوراق",
+      "عند طول الجلسة"
+     ],
+     "correctIndex": 0,
+     "explanation": "التنحّي واجب عند تجرّد شرط الحياد كوجود مصلحة أو قرابة أو عداوة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التنحّي"
+     ],
+     "id": "law_judiciary-0002",
+     "bankId": "law_judiciary-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_judiciary",
+     "subject": "الإثبات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الفرق في عبء الإثبات بين المدني والجزائي؟",
+     "options": [
+      "المدّعي مطالب بالإثبات في المدني، والنيابة/المجتمع في الجزائي",
+      "المتّهم يثبت براءته دائمًا",
+      "لا فرق",
+      "القاضي يثبت دائمًا"
+     ],
+     "correctIndex": 0,
+     "explanation": "في المدني通常会 يحمل المدعي عبء الإثبات؛ وفي الجزائي تتولى السلطة العامة الإثبات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإثبات"
+     ],
+     "id": "law_judiciary-0003",
+     "bankId": "law_judiciary-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_judiciary",
+     "subject": "المبادئ",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما مبدأ حجية الأمر المقضي (Res Judicata)؟",
+     "options": [
+      "عدم إعادة نظر الدعوى بعد صدور حكم بات",
+      "إمكانية تكرار الدعوى",
+      "إلغاء الأحكام دائمًا",
+      "تعليق الأحكام"
+     ],
+     "correctIndex": 0,
+     "explanation": "حجية الأمر المقضي تمنع إعادة طرح ذات النزاع بعد حكم نهائي بات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "المبادئ"
+     ],
+     "id": "law_judiciary-0004",
+     "bankId": "law_judiciary-b1"
+    },
+    {
+     "sectorId": "law",
+     "specId": "law_judiciary",
+     "subject": "الخبرة",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما دور الخبير أمام المحكمة؟",
+     "options": [
+      "إبداء رأي فني استشاري يقدّره القاضي",
+      "إصدار الحكم مباشرة",
+      "النيابة عن الخصم",
+      "تنفيذ الحكم"
+     ],
+     "correctIndex": 0,
+     "explanation": "الخبير يبدي رأيًا فنيًا استشاريًا، ويبقى تقدير قوة الدليل للقاضي.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الخبرة"
+     ],
+     "id": "law_judiciary-0005",
+     "bankId": "law_judiciary-b1"
+    }
+   ]
+  }
+ ]
+}

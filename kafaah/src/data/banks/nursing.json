@@ -1,0 +1,133 @@
+{
+ "specId": "nursing",
+ "sectorId": "medical",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "nursing-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "medical",
+     "specId": "nursing",
+     "subject": "العلامات الحيوية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما النطاق الطبيعي لمعدل ضربات القلب عند البالغ في الراحة؟",
+     "options": [
+      "60-100 نبضة/دقيقة",
+      "40-60 نبضة/دقيقة",
+      "100-140 نبضة/دقيقة",
+      "20-40 نبضة/دقيقة"
+     ],
+     "correctIndex": 0,
+     "explanation": "المعدل الطبيعي للبالغ 60-100 نبضة/دقيقة؛ أقل من 60 بطء، وأكثر من 100 تسرّع.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "العلامات الحيوية"
+     ],
+     "id": "nursing-0001",
+     "bankId": "nursing-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "nursing",
+     "subject": "الإنعاش",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما أول إجراء عند العثور على مريض فاقد الوعي لا يستجيب؟",
+     "options": [
+      "التأكد من الاستجابة وطلب المساعدة",
+      "إعطاء أدوية فورًا",
+      "سحب دم للتحليل",
+      "تركيب قسطرة وريدية"
+     ],
+     "correctIndex": 0,
+     "explanation": "يبدأ التقييم بالتأكد من الاستجابة وطلب المساعدة (نظام استجابة الطوارئ) قبل أي تدخل.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الإنعاش"
+     ],
+     "id": "nursing-0002",
+     "bankId": "nursing-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "nursing",
+     "subject": "الحقن",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما الموقع الأكثر أمانًا للحقن العضلي عند البالغ؟",
+     "options": [
+      "المنطقة الألوية الأمامية الوحشية (Ventrogluteal)",
+      "العضلة الألوية الظهرية",
+      "الفخذ الأمامي دائمًا",
+      "الذراع تحت الجلد"
+     ],
+     "correctIndex": 0,
+     "explanation": "الموقع الألوية الأمامية الوحشية الأكثر أمانًا لبعده عن الأعصاب والأوعية الكبرى.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الحقن"
+     ],
+     "id": "nursing-0003",
+     "bankId": "nursing-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "nursing",
+     "subject": "العناية بالجرح",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما أهم إجراء للوقاية من عدوى المستشفيات؟",
+     "options": [
+      "نظافة اليدين الصحيحة",
+      "إعطاء مضادات حيوية وقائية",
+      "عزل كل المرضى",
+      "تعقيم الغرف يوميًا"
+     ],
+     "correctIndex": 0,
+     "explanation": "نظافة اليدين هي التدخل الأكثر فعالية للوقاية من العدوى المرتبطة بالرعاية الصحية.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "العناية بالجرح"
+     ],
+     "id": "nursing-0004",
+     "bankId": "nursing-b1"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "nursing",
+     "subject": "التقييم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "قرحة الفراش التي تمتد عبر الجلد وتصل للعضلة تُصنَّف:",
+     "options": [
+      "المرحلة الثالثة",
+      "المرحلة الأولى",
+      "المرحلة الثانية",
+      "مرحلة الاحمرار"
+     ],
+     "correctIndex": 0,
+     "explanation": "المرحلة الثالثة = فقدان كامل لسماكة الجلد مع امتداد للنسيج تحت الجلد دون الوصول للعظم.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "التقييم"
+     ],
+     "id": "nursing-0005",
+     "bankId": "nursing-b1"
+    }
+   ]
+  }
+ ]
+}

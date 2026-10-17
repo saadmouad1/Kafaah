@@ -1,0 +1,143 @@
+{
+ "specId": "pharmacy",
+ "sectorId": "medical",
+ "updatedAt": "2026-10-17",
+ "count": 5,
+ "banks": [
+  {
+   "id": "pharmacy-b1",
+   "title": "",
+   "description": "",
+   "auto": true,
+   "createdAt": "2026-10-17",
+   "updatedAt": "2026-10-17",
+   "questions": [
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "علم الأدوية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما هو العلاج الأولي لحالة التأق (Anaphylaxis) عند البالغين؟",
+     "options": [
+      "إبينفرين عضلي 0.5 ملغم بتركيز 1:1000",
+      "مضادات الهيستامين فمويًا",
+      "ستيرويد وريدي",
+      "موسّع قصبي بالاستنشاق فقط"
+     ],
+     "correctIndex": 0,
+     "explanation": "الإبينفرين العضلي (1:1000 بجرعة 0.5 ملغم للبالغ) هو الخط الأول فورًا، وتُكرّر كل 5-15 دقيقة عند الحاجة.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "علم الأدوية"
+     ],
+     "id": "pharmacy-0001",
+     "bankId": "pharmacy-b1",
+     "bankTitle": "",
+     "bankAuto": true
+    },
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "علم الأدوية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما هي آلية عمل الفانكومايسين؟",
+     "options": [
+      "تثبيط تصنيع جدار الخلية بالارتباط بـ D-Ala-D-Ala",
+      "تثبيط الريبوسوم 30S",
+      "تثبيط إنزيم DNA gyrase",
+      "إتلاف غشاء الخلية"
+     ],
+     "correctIndex": 0,
+     "explanation": "الفانكومايسين يثبّط تصنيع جدار الخلية البكتيري عبر الارتباط المباشر بسلسلة D-Ala-D-Ala.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "علم الأدوية"
+     ],
+     "id": "pharmacy-0002",
+     "bankId": "pharmacy-b1",
+     "bankTitle": "",
+     "bankAuto": true
+    },
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "السموم",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "أي مضاد حيوي من مجموعة الأمينوغليكوزيدات الأعلى خطرًا للسُّميّة الكلوية؟",
+     "options": [
+      "جنتاميسين",
+      "إريثرومايسين",
+      "سيفاليكسين",
+      "أموكسيسيلين"
+     ],
+     "correctIndex": 0,
+     "explanation": "الجنتاميسين من أكثر الأمينوغليكوزيدات سمية كلوية وسمعية، ويتطلب مراقبة وظائف الكلى والمستويات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "السموم"
+     ],
+     "id": "pharmacy-0003",
+     "bankId": "pharmacy-b1",
+     "bankTitle": "",
+     "bankAuto": true
+    },
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "الجرعات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما التحليل المستخدم لمراقبة فعالية الوارفارين؟",
+     "options": [
+      "زمن البروثرومبين و INR",
+      "زمن الثرومبوبلاستين الجزئي aPTT",
+      "عدد الصفائح",
+      "الهيموغلوبين السكري HbA1c"
+     ],
+     "correctIndex": 0,
+     "explanation": "يُراقَب الوارفارين عبر INR المشتق من زمن البروثرومبين، والهدف عادة 2-3 لمعظم الاستطبابات.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الجرعات"
+     ],
+     "id": "pharmacy-0004",
+     "bankId": "pharmacy-b1",
+     "bankTitle": "",
+     "bankAuto": true
+    },
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "الصيدلة السريرية",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما التوقيت الأمثل لأخذ الستاتين قصير المفعول مثل السيمفاستاتين؟",
+     "options": [
+      "مساءً",
+      "صباحًا على معدة فارغة",
+      "مع الغداء",
+      "أي وقت بالتساوي"
+     ],
+     "correctIndex": 0,
+     "explanation": "تُؤخذ الستاتينات قصيرة المفعول مساءً لأن تصنيع الكوليسترول يبلغ ذروته ليلًا.",
+     "source": "أسئلة تجريبية — كفاءة",
+     "tags": [
+      "الصيدلة السريرية"
+     ],
+     "id": "pharmacy-0005",
+     "bankId": "pharmacy-b1",
+     "bankTitle": "",
+     "bankAuto": true
+    }
+   ]
+  }
+ ]
+}
