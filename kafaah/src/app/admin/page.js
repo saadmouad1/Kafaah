@@ -5,16 +5,24 @@ import { useRouter } from 'next/navigation';
 import {
   LayoutDashboard, PlusCircle, Upload, ListChecks, Search, Trash2, Save,
   Loader2, LogOut, Database, CheckCircle2, AlertTriangle, FileJson, FileSpreadsheet,
-  X, Pencil, Layers, FolderPlus,
+  X, Pencil, Layers, FolderPlus, Users, Package, CreditCard, Building2,
 } from 'lucide-react';
 import { useSpecBanks } from '../../lib/useData';
+import ContentManager from '../../components/admin/ContentManager';
+import ClientsManager from '../../components/admin/ClientsManager';
+import PackagesManager from '../../components/admin/PackagesManager';
+import SubscriptionsManager from '../../components/admin/SubscriptionsManager';
 
 const TABS = [
   { id: 'overview', label: 'نظرة عامة', icon: LayoutDashboard },
+  { id: 'content', label: 'الأقسام والتخصصات', icon: Building2 },
   { id: 'banks', label: 'إدارة البنوك', icon: Layers },
   { id: 'manual', label: 'إضافة يدوية', icon: PlusCircle },
   { id: 'bulk', label: 'استيراد جماعي', icon: Upload },
   { id: 'manage', label: 'إدارة الأسئلة', icon: ListChecks },
+  { id: 'clients', label: 'العملاء', icon: Users },
+  { id: 'packages', label: 'الباقات', icon: Package },
+  { id: 'subscriptions', label: 'الاشتراكات', icon: CreditCard },
 ];
 
 export default function AdminPage() {
@@ -74,7 +82,7 @@ export default function AdminPage() {
           <img src="/icon.svg" alt="" width="38" height="38" style={{ borderRadius: 11 }} />
           <div>
             <h1 style={{ fontSize: 20 }}>لوحة المالك</h1>
-            <p className="text-muted" style={{ fontSize: 12.5 }}>إدارة بنوك الأسئلة والتخصصات</p>
+            <p className="text-muted" style={{ fontSize: 12.5 }}>إدارة الأقسام والتخصصات والبنوك والعملاء والباقات والاشتراكات</p>
           </div>
         </div>
         <div className="row" style={{ gap: 8 }}>
@@ -102,10 +110,14 @@ export default function AdminPage() {
       </div>
 
       {tab === 'overview' && <Overview stats={stats} onRefresh={load} />}
+      {tab === 'content' && <ContentManager onDone={(m) => { flash('ok', m); load(); }} onErr={(m) => flash('err', m)} />}
       {tab === 'banks' && <BanksManager {...childProps} />}
       {tab === 'manual' && <ManualAdd {...childProps} />}
       {tab === 'bulk' && <BulkImport {...childProps} />}
       {tab === 'manage' && <Manage {...childProps} />}
+      {tab === 'clients' && <ClientsManager onDone={(m) => flash('ok', m)} onErr={(m) => flash('err', m)} />}
+      {tab === 'packages' && <PackagesManager onDone={(m) => flash('ok', m)} onErr={(m) => flash('err', m)} />}
+      {tab === 'subscriptions' && <SubscriptionsManager onDone={(m) => flash('ok', m)} onErr={(m) => flash('err', m)} />}
     </div>
   );
 }

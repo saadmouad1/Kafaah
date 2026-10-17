@@ -163,6 +163,9 @@ const ar = {
   'nav.features': 'المميزات',
   'nav.app': 'التطبيق',
   'nav.myDashboard': 'لوحتي',
+  'nav.login': 'دخول',
+  'nav.startNow': 'ابدأ الآن',
+  'nav.chat': 'المساعد الذكي',
 
   'bottom.home': 'الرئيسية',
   'bottom.practice': 'تدريب',
@@ -455,6 +458,35 @@ const ar = {
   'pwa.installBtn': 'تثبيت',
   'pwa.installAria': 'تثبيت التطبيق',
   'pwa.close': 'إغلاق',
+
+  // المساعد الذكي (محادثة)
+  'chat.title': 'المساعد الذكي',
+  'chat.sub': 'تحدّث مع مساعد كفاءة عن تخصصك ومفاهيم الأسئلة وخطتك الدراسية.',
+  'chat.empty': 'ابدأ محادثة — اسأل عن أي مفهوم أو اطلب شرحًا مبسّطًا.',
+  'chat.placeholder': 'اكتب رسالتك…',
+  'chat.send': 'إرسال',
+  'chat.clear': 'محادثة جديدة',
+  'chat.thinking': 'يكتب…',
+  'chat.error': 'تعذّر الوصول إلى المساعد حاليًا. حاول لاحقًا.',
+  'chat.you': 'أنت',
+  'chat.assistant': 'المساعد',
+  'chat.s1': 'اشرح لي أهم المفاهيم في تخصصي',
+  'chat.s2': 'ضع لي خطة مراجعة لأسبوع واحد',
+  'chat.s3': 'كيف أرفع دقتي في الحالات التطبيقية؟',
+  'chat.s4': 'أعطني نصائح ليوم الامتحان',
+  'chat.regenerate': 'إعادة صياغة',
+
+  // الباقات
+  'pkg.title': 'الباقات',
+  'pkg.sub': 'اختر الباقة المناسبة لمتابعة تدريبك.',
+  'pkg.monthly': 'الاشتراك الشهري',
+  'pkg.perMonth': '/شهر',
+  'pkg.current': 'باقتك الحالية',
+  'pkg.subscribe': 'اشترك',
+  'pkg.comingSoon': 'الدفع قريبًا',
+  'pkg.noSub': 'لا يوجد اشتراك نشط',
+  'pkg.features': 'المميزات',
+  'pkg.noPkgs': 'لا توجد باقات متاحة حاليًا.',
 };
 
 const en = {
@@ -484,6 +516,9 @@ const en = {
   'nav.features': 'Features',
   'nav.app': 'App',
   'nav.myDashboard': 'My dashboard',
+  'nav.login': 'Sign in',
+  'nav.startNow': 'Get started',
+  'nav.chat': 'AI Assistant',
 
   'bottom.home': 'Home',
   'bottom.practice': 'Practice',
@@ -776,6 +811,35 @@ const en = {
   'pwa.installBtn': 'Install',
   'pwa.installAria': 'Install app',
   'pwa.close': 'Close',
+
+  // AI chat
+  'chat.title': 'AI Assistant',
+  'chat.sub': 'Talk to the Kafaah assistant about your specialization, question concepts, and study plan.',
+  'chat.empty': 'Start a conversation — ask about any concept or request a simple explanation.',
+  'chat.placeholder': 'Type your message…',
+  'chat.send': 'Send',
+  'chat.clear': 'New chat',
+  'chat.thinking': 'Typing…',
+  'chat.error': "Couldn't reach the assistant right now. Try again later.",
+  'chat.you': 'You',
+  'chat.assistant': 'Assistant',
+  'chat.s1': 'Explain the key concepts in my specialization',
+  'chat.s2': 'Make me a one-week revision plan',
+  'chat.s3': 'How do I improve accuracy on applied cases?',
+  'chat.s4': 'Give me exam-day tips',
+  'chat.regenerate': 'Regenerate',
+
+  // Packages
+  'pkg.title': 'Plans',
+  'pkg.sub': 'Choose the plan that fits your practice.',
+  'pkg.monthly': 'Monthly subscription',
+  'pkg.perMonth': '/month',
+  'pkg.current': 'Your current plan',
+  'pkg.subscribe': 'Subscribe',
+  'pkg.comingSoon': 'Payment coming soon',
+  'pkg.noSub': 'No active subscription',
+  'pkg.features': 'Features',
+  'pkg.noPkgs': 'No plans available yet.',
 };
 
 export const DICT = { ar, en };

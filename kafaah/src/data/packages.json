@@ -1,0 +1,25 @@
+{
+ "packages": [
+  {
+   "id": "monthly",
+   "name": "الاشتراك الشهري",
+   "nameEn": "Monthly subscription",
+   "price": 5,
+   "currency": "USD",
+   "interval": "month",
+   "features": [
+    "وصول كامل لبنوك الأسئلة",
+    "محاكاة امتحان غير محدودة",
+    "تحليل أداء ومساعد ذكي"
+   ],
+   "featuresEn": [
+    "Full access to question banks",
+    "Unlimited mock exams",
+    "Analytics & AI assistant"
+   ],
+   "active": true,
+   "createdBy": "system",
+   "createdAt": "2026-10-17"
+  }
+ ]
+}

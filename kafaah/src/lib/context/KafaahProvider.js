@@ -6,7 +6,7 @@
 //  kafaah_user_profile) التي كانت تسبب فقدان الاختيار وظهور اسم افتراضي.
 // ─────────────────────────────────────────────────────────────────────────────
 import { createContext, useContext, useEffect, useMemo, useState, useCallback } from 'react';
-import { SECTORS, getSector, getSpec, ALL_SPECS } from '../content';
+import { SECTORS, ALL_SPECS } from '../content';
 import {
   translate, localeOf, dirOf,
   sectorLabel as _sectorLabel, sectorShort as _sectorShort,
@@ -68,6 +68,24 @@ export function KafaahProvider({ children }) {
   const [profile, setProfileState] = useState(EMPTY);
   const [ready, setReady] = useState(false);
   const [lang, setLangState] = useState('ar');
+  // المحتوى (الأقسام/التخصصات) — يُحمّل من الخادم ليعكس تعديلات لوحة المالك
+  const [sectors, setSectors] = useState(SECTORS);
+  const [specs, setSpecs] = useState(ALL_SPECS);
+
+  useEffect(() => {
+    let alive = true;
+    fetch('/api/content')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!alive || !d) return;
+        if (Array.isArray(d.sectors) && d.sectors.length) setSectors(d.sectors);
+        if (Array.isArray(d.specs) && d.specs.length) setSpecs(d.specs);
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   useEffect(() => {
     const stored = readStored();
@@ -152,8 +170,8 @@ export function KafaahProvider({ children }) {
     } catch {}
   }, [persist]);
 
-  const sector = useMemo(() => (profile.sectorId ? getSector(profile.sectorId) : null), [profile.sectorId]);
-  const spec = useMemo(() => (profile.specId ? getSpec(profile.specId) : null), [profile.specId]);
+  const sector = useMemo(() => (profile.sectorId ? sectors.find((s) => s.id === profile.sectorId) || null : null), [sectors, profile.sectorId]);
+  const spec = useMemo(() => (profile.specId ? specs.find((s) => s.id === profile.specId) || null : null), [specs, profile.specId]);
   const lexicon = sector?.lexicon || {
     field: 'المجال',
     practitioner: 'الممارس',
@@ -200,8 +218,8 @@ export function KafaahProvider({ children }) {
       sector,
       spec,
       lexicon,
-      sectors: SECTORS,
-      allSpecs: ALL_SPECS,
+      sectors,
+      allSpecs: specs,
       // i18n
       lang,
       setLang,
@@ -216,6 +234,7 @@ export function KafaahProvider({ children }) {
       bankName,
     }),
     [profile, setProfile, login, logout, ready, hasProfile, hasName, sector, spec, lexicon,
+     sectors, specs,
      lang, setLang, t, locale, dir, sectorName, specName, sectorShortName, sectorTagline, localize, bankName],
   );
 

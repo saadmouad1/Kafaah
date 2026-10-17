@@ -129,5 +129,57 @@ export async function POST(req) {
     }
   }
 
+  // ── ٣) محادثة المساعد الذكي (Chat) ──────────────────────────────────────
+  if (action === 'chat') {
+    const incoming = Array.isArray(payload.messages) ? payload.messages : [];
+    const ctx = payload.context || {};
+    const lang = payload.lang === 'en' ? 'en' : 'ar';
+    const clean = incoming
+      .filter((m) => m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string')
+      .slice(-20)
+      .map((m) => ({ role: m.role, content: String(m.content).slice(0, 4000) }));
+
+    if (!clean.length) {
+      return NextResponse.json({ error: 'لا توجد رسائل' }, { status: 400 });
+    }
+
+    const ctxLine = [
+      ctx.sectorLabel ? (lang === 'en' ? `Sector: ${ctx.sectorLabel}` : `القطاع: ${ctx.sectorLabel}`) : '',
+      ctx.specLabel ? (lang === 'en' ? `Specialization: ${ctx.specLabel}` : `التخصص: ${ctx.specLabel}`) : '',
+      ctx.authority ? (lang === 'en' ? `Licensing authority: ${ctx.authority}` : `جهة الترخيص: ${ctx.authority}`) : '',
+    ].filter(Boolean).join(lang === 'en' ? '\n' : '\n');
+
+    const system = lang === 'en'
+      ? `You are "Kafaah" AI assistant, a professional study companion for licensing and professional accreditation exams. Be accurate, concise, and encouraging. Use clear structure (short paragraphs or bullet points). If a question is outside exams/professions, gently steer back.${ctxLine ? '\n\nStudent context:\n' + ctxLine : ''}`
+      : `أنت «المساعد الذكي» في منصة كفاءة، مرافق دراسي احترافي لامتحانات الترخيص والاعتماد المهني. كن دقيقًا ومختصرًا ومحفّزًا، ورتّب إجابتك في فقرات قصيرة أو نقاط. إن كان السؤال خارج نطاق المهن والامتحانات فوجّه بلطف.${ctxLine ? '\n\nسياق الطالب:\n' + ctxLine : ''}`;
+
+    if (!groq) {
+      return NextResponse.json({
+        success: true,
+        text: lang === 'en'
+          ? 'The AI assistant is not configured right now. Please try again later.'
+          : 'المساعد الذكي غير مُهيّأ حاليًا. حاول لاحقًا.',
+        fallback: true,
+      });
+    }
+    try {
+      const completion = await groq.chat.completions.create({
+        model: MODEL,
+        messages: [{ role: 'system', content: system }, ...clean],
+        temperature: 0.6,
+        max_tokens: 1200,
+      });
+      const text = completion.choices[0]?.message?.content || '';
+      return NextResponse.json({ success: true, text });
+    } catch (e) {
+      console.error('Groq chat error:', e?.message);
+      return NextResponse.json({
+        success: true,
+        text: lang === 'en' ? "Couldn't reach the assistant right now. Try again later." : 'تعذّر الوصول إلى المساعد حاليًا. حاول لاحقًا.',
+        fallback: true,
+      });
+    }
+  }
+
   return NextResponse.json({ error: 'إجراء غير معروف' }, { status: 400 });
 }

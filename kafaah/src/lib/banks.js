@@ -14,12 +14,12 @@
 // ─────────────────────────────────────────────────────────────────────────────
 import fs from 'node:fs';
 import path from 'node:path';
-import { ALL_SPECS, getSpec, findSectorIdBySpec } from './content.js';
+import { loadContent, getContentSpec, findSectorIdBySpec, contentSpecIds } from './contentStore.js';
 
 const BANKS_DIR = path.join(process.cwd(), 'src', 'data', 'banks');
 
 const today = () => new Date().toISOString().slice(0, 10);
-const ALL_SPEC_IDS = new Set(ALL_SPECS.map((s) => s.id));
+const specIdSet = () => new Set(contentSpecIds());
 
 // ── in-memory cache (يُبطَل عند تغيّر زمن التعديل) ────────────────────────────
 const cache = new Map(); // specId -> { mtimeMs, data }
@@ -153,7 +153,7 @@ export function listBanks(specId) {
 export function banksFor({ sector = null, spec = null, specs = null } = {}) {
   const out = [];
   for (const id of resolveSpecs({ sector, spec, specs })) {
-    const meta = getSpec(id);
+    const meta = getContentSpec(id);
     for (const b of listBanks(id)) {
       out.push({ ...b, specLabel: meta?.label || id });
     }
@@ -168,7 +168,7 @@ let indexCacheAt = 0;
 export function getBankIndex({ fresh = false } = {}) {
   const now = Date.now();
   if (!fresh && indexCache && now - indexCacheAt < 1500) return indexCache;
-  const items = ALL_SPECS.map((spec) => {
+  const items = loadContent().specs.map((spec) => {
     const data = readSpec(spec.id);
     const banks = data.banks.map((b) => bankMeta(spec.id, b));
     const count = banks.reduce((s, b) => s + b.count, 0);
@@ -198,16 +198,19 @@ function normText(s) {
 }
 
 function toSpecList(specs) {
+  const ids = specIdSet();
   const raw = Array.isArray(specs) ? specs : String(specs ?? '').split(',');
-  return raw.map((s) => String(s).trim()).filter((s) => ALL_SPEC_IDS.has(s));
+  return raw.map((s) => String(s).trim()).filter((s) => ids.has(s));
 }
 
 function resolveSpecs({ sector = null, spec = null, specs = null } = {}) {
+  const ids = specIdSet();
+  const all = loadContent().specs;
   const hasSpecs = specs != null && String(specs).trim() !== '';
   if (hasSpecs) return toSpecList(specs); // فلتر صريح: قد يكون فارغًا => لا نتائج
-  if (spec && spec !== 'all' && ALL_SPEC_IDS.has(spec)) return [spec];
-  if (sector && sector !== 'all') return ALL_SPECS.filter((s) => s.sectorId === sector).map((s) => s.id);
-  return ALL_SPECS.map((s) => s.id);
+  if (spec && spec !== 'all' && ids.has(spec)) return [spec];
+  if (sector && sector !== 'all') return all.filter((s) => s.sectorId === sector).map((s) => s.id);
+  return all.map((s) => s.id);
 }
 
 // فلتر البنوك: null/undefined = كل البنوك، مصفوفة (قد تكون فارغة) = صريح.
@@ -341,7 +344,7 @@ function nextBankId(specId, banks) {
 
 // ── إدارة البنوك ─────────────────────────────────────────────────────────────
 export function createBank(specId, { title, description } = {}) {
-  if (!getSpec(specId)) throw new Error('تخصص غير معروف');
+  if (!getContentSpec(specId)) throw new Error('تخصص غير معروف');
   const cleanTitle = String(title || '').trim();
   if (!cleanTitle) throw new Error('عنوان البنك مطلوب');
   const data = readSpec(specId);
@@ -386,7 +389,7 @@ export function deleteBank(specId, bankId) {
 
 // ── إدارة الأسئلة داخل بنك ───────────────────────────────────────────────────
 export function addQuestions(specId, bankId, list, { merge = false } = {}) {
-  if (!getSpec(specId)) throw new Error('تخصص غير معروف');
+  if (!getContentSpec(specId)) throw new Error('تخصص غير معروف');
   const data = readSpec(specId);
   const bank = ensureBank(data, specId, bankId);
   const incoming = (Array.isArray(list) ? list : [list])
@@ -436,7 +439,7 @@ export function deleteQuestion(specId, bankId, id) {
 }
 
 export function replaceBankQuestions(specId, bankId, questions) {
-  if (!getSpec(specId)) throw new Error('تخصص غير معروف');
+  if (!getContentSpec(specId)) throw new Error('تخصص غير معروف');
   const data = readSpec(specId);
   const bank = ensureBank(data, specId, bankId);
   const clean = (questions || [])
@@ -496,7 +499,7 @@ export function deepSearch({
     const bankFilter = toBankList(bank ?? banks);
     for (const id of resolveSpecs({ sector, spec, specs })) {
       const data = readSpec(id);
-      const meta = getSpec(id);
+      const meta = getContentSpec(id);
       for (const b of data.banks) {
         if (bankFilter && !bankFilter.includes(b.id)) continue;
         for (const item of b.questions) {

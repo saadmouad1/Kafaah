@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import {
   LayoutDashboard, BrainCircuit, Activity, BookOpen, BarChart3, Search,
   AlertTriangle, Star, Settings, LogOut, UserRound, Moon, Sun, Repeat, Languages,
+  MessageCircle,
 } from 'lucide-react';
 import { useKafaah } from '../../lib/context/KafaahProvider';
 
@@ -44,6 +45,7 @@ export default function DashboardLayout({ children }) {
     { label: t('nav.bank'), path: '/dashboard/bank', icon: BookOpen },
     { label: t('nav.analytics'), path: '/dashboard/analytics', icon: BarChart3 },
     { label: t('nav.search'), path: '/dashboard/search', icon: Search },
+    { label: t('nav.chat'), path: '/dashboard/chat', icon: MessageCircle },
     { label: t('nav.mistakes'), path: '/dashboard/mistakes', icon: AlertTriangle },
     { label: t('nav.saved'), path: '/dashboard/saved', icon: Star },
   ];

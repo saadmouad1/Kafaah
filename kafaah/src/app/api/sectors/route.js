@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { SECTORS, ALL_SPECS } from '@/lib/content';
+import { loadContent } from '@/lib/contentStore';
 import { getBankIndex } from '@/lib/banks';
 
 export const runtime = 'nodejs';
@@ -8,6 +8,7 @@ export const dynamic = 'force-dynamic';
 // GET /api/sectors  → نموذج المحتوى الموحّد + عدد الأسئلة لكل تخصص
 export async function GET() {
   try {
+    const { sectors: SECTORS, specs: ALL_SPECS } = loadContent();
     const index = getBankIndex();
     const counts = Object.fromEntries(index.items.map((i) => [i.specId, i.count]));
 

@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
 import {
   BrainCircuit, Activity, BookOpen, BarChart3, AlertTriangle, Star,
-  Flame, Target, TrendingUp, Sparkles, ArrowLeft, Repeat, Award, ListChecks,
+  Flame, Target, TrendingUp, Sparkles, ArrowLeft, Repeat, Award, ListChecks, MessageCircle,
 } from 'lucide-react';
 import { useKafaah } from '../../lib/context/KafaahProvider';
 import { useBanks } from '../../lib/useData';
@@ -32,6 +32,7 @@ export default function DashboardHome() {
     { href: '/dashboard/practice', icon: BrainCircuit, title: t('nav.practice'), desc: t('practice.sub'), tone: 'var(--sector)' },
     { href: '/dashboard/mock', icon: Activity, title: t('nav.mock'), desc: t('home.mockDesc', { pass: spec?.blueprint?.passScore || 60 }), tone: '#f59e0b' },
     { href: '/dashboard/bank', icon: BookOpen, title: t('nav.bank'), desc: t('home.bankDesc'), tone: '#3b82f6' },
+    { href: '/dashboard/chat', icon: MessageCircle, title: t('nav.chat'), desc: t('chat.sub'), tone: '#14b8a6' },
     { href: '/dashboard/analytics', icon: BarChart3, title: t('nav.analytics'), desc: t('home.analyticsDesc'), tone: '#8b5cf6' },
     { href: '/dashboard/mistakes', icon: AlertTriangle, title: t('nav.mistakes'), desc: t('home.mistakesDesc', { n: d.mistakes }), tone: '#ef4444' },
     { href: '/dashboard/saved', icon: Star, title: t('nav.saved'), desc: t('home.savedDesc', { n: d.saved }), tone: '#eab308' },

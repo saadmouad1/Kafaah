@@ -5,7 +5,7 @@ import {
   createBank, updateBank, deleteBank, listBanks,
   bankStats, subjectsFor, queryQuestions,
 } from '@/lib/banks';
-import { ALL_SPECS, SECTORS } from '@/lib/content';
+import { loadContent } from '@/lib/contentStore';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -48,7 +48,7 @@ export async function GET(request) {
         }),
       });
     }
-    return NextResponse.json({ stats: bankStats(), content: { sectors: SECTORS, specs: ALL_SPECS } });
+    return NextResponse.json({ stats: bankStats(), content: loadContent() });
   } catch (error) {
     console.error('Admin banks GET error:', error);
     return NextResponse.json({ error: 'تعذّر تحميل البيانات' }, { status: 500 });

@@ -13,7 +13,7 @@ const ICONS = { health: HeartPulse, engineering: HardHat, law: Scale, finance: L
 
 export default function OnboardingPage() {
   const router = useRouter();
-  const { profile, setProfile, sectors: ctxSectors } = useKafaah();
+  const { profile, setProfile, sectors: ctxSectors, t, sectorName, specName, sectorTagline, localize } = useKafaah();
   const sectors = ctxSectors || SECTORS;
 
   const [step, setStep] = useState(0);
@@ -37,11 +37,11 @@ export default function OnboardingPage() {
         body: JSON.stringify({
           action: 'diagnostic_plan',
           payload: {
-            profession: sector?.label,
-            specialty: spec?.label,
-            country: spec?.country,
-            authority: spec?.authority,
-            exam_name: `${spec?.authority} — ${spec?.label}`,
+            profession: sectorName(sector),
+            specialty: specName(spec),
+            country: localize(spec?.country),
+            authority: localize(spec?.authority),
+            exam_name: `${localize(spec?.authority)} — ${specName(spec)}`,
             level,
             examDate,
           },
@@ -63,7 +63,8 @@ export default function OnboardingPage() {
     router.push('/dashboard');
   }
 
-  const steps = ['القسم', 'التخصص', 'خطتك'];
+  const steps = [t('onb.step0'), t('onb.step1'), t('onb.step2')];
+  const levels = [['student', t('onb.level.student')], ['graduate', t('onb.level.graduate')], ['practitioner', t('onb.level.practitioner')]];
 
   return (
     <div className="container container-narrow page" style={{ maxWidth: 760 }}>
@@ -88,8 +89,8 @@ export default function OnboardingPage() {
       {step === 0 && (
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
           <div className="text-center mb-3">
-            <h1 style={{ fontSize: 23 }}>اختر مجالك</h1>
-            <p className="text-muted mt-1">سنخصّص لك الأسئلة والمعجم وخطة التدريب حسب تخصصك.</p>
+            <h1 style={{ fontSize: 23 }}>{t('onb.chooseField')}</h1>
+            <p className="text-muted mt-1">{t('onb.chooseFieldSub')}</p>
           </div>
           <div className="grid grid-2">
             {sectors.map((s) => {
@@ -97,14 +98,14 @@ export default function OnboardingPage() {
               const active = sectorId === s.id;
               return (
                 <button key={s.id} className="card card-hover" onClick={() => { setSectorId(s.id); setSpecId(null); }}
-                  style={{ textAlign: 'right', cursor: 'pointer', borderColor: active ? s.color : 'var(--border)', background: active ? `color-mix(in srgb, ${s.color} 10%, var(--surface))` : 'var(--surface)' }}>
+                  style={{ textAlign: 'start', cursor: 'pointer', borderColor: active ? s.color : 'var(--border)', background: active ? `color-mix(in srgb, ${s.color} 10%, var(--surface))` : 'var(--surface)' }}>
                   <div className="row" style={{ gap: 12 }}>
                     <div style={{ width: 46, height: 46, borderRadius: 14, background: `color-mix(in srgb, ${s.color} 16%, transparent)`, color: s.color, display: 'grid', placeItems: 'center' }}>
                       <Icon size={24} />
                     </div>
                     <div style={{ minWidth: 0 }}>
-                      <div style={{ fontWeight: 800, fontSize: 15 }}>{s.label}</div>
-                      <div className="text-muted" style={{ fontSize: 12.5 }}>{s.specializations.length} تخصص · {s.tagline}</div>
+                      <div style={{ fontWeight: 800, fontSize: 15 }}>{sectorName(s)}</div>
+                      <div className="text-muted" style={{ fontSize: 12.5 }}>{t('onb.specCount', { n: s.specializations.length })} · {sectorTagline(s)}</div>
                     </div>
                   </div>
                 </button>
@@ -112,7 +113,7 @@ export default function OnboardingPage() {
             })}
           </div>
           <button className="btn btn-primary btn-lg btn-block mt-3" disabled={!sectorId} onClick={() => setStep(1)}>
-            التالي <ArrowLeft size={17} />
+            {t('onb.next')} <ArrowLeft size={17} />
           </button>
         </motion.div>
       )}
@@ -121,38 +122,38 @@ export default function OnboardingPage() {
       {step === 1 && sector && (
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
           <div className="text-center mb-3">
-            <span className="badge badge-brand" style={{ background: `color-mix(in srgb, ${sector.color} 14%, transparent)`, color: sector.color }}>{sector.label}</span>
-            <h1 className="mt-2" style={{ fontSize: 23 }}>اختر تخصصك الدقيق</h1>
+            <span className="badge badge-brand" style={{ background: `color-mix(in srgb, ${sector.color} 14%, transparent)`, color: sector.color }}>{sectorName(sector)}</span>
+            <h1 className="mt-2" style={{ fontSize: 23 }}>{t('onb.chooseSpec')}</h1>
           </div>
           <div className="stack" style={{ gap: 10 }}>
             {sector.specializations.map((sp) => {
               const active = specId === sp.id;
               return (
                 <button key={sp.id} className="card card-hover" onClick={() => setSpecId(sp.id)}
-                  style={{ textAlign: 'right', cursor: 'pointer', borderColor: active ? sector.color : 'var(--border)', background: active ? `color-mix(in srgb, ${sector.color} 9%, var(--surface))` : 'var(--surface)' }}>
+                  style={{ textAlign: 'start', cursor: 'pointer', borderColor: active ? sector.color : 'var(--border)', background: active ? `color-mix(in srgb, ${sector.color} 9%, var(--surface))` : 'var(--surface)' }}>
                   <div className="row-between">
                     <div style={{ minWidth: 0 }}>
-                      <div style={{ fontWeight: 800, fontSize: 15 }}>{sp.label}</div>
+                      <div style={{ fontWeight: 800, fontSize: 15 }}>{specName(sp)}</div>
                       <div className="text-muted row" style={{ fontSize: 12.5, gap: 6, marginTop: 2, flexWrap: 'wrap' }}>
-                        <span className="row" style={{ gap: 4 }}><Building2 size={12} /> {sp.authority}</span>
+                        <span className="row" style={{ gap: 4 }}><Building2 size={12} /> {localize(sp.authority)}</span>
                         <span>·</span>
-                        <span>{sp.country}</span>
+                        <span>{localize(sp.country)}</span>
                       </div>
                     </div>
                     {active && <span style={{ color: sector.color }}><Check size={20} /></span>}
                   </div>
                   <div className="row wrap" style={{ gap: 6, marginTop: 8 }}>
-                    <span className="badge badge-muted"><Target size={11} /> {sp.blueprint?.questions} سؤال</span>
-                    <span className="badge badge-muted">{sp.blueprint?.minutes} دقيقة</span>
-                    <span className="badge badge-muted">نجاح {sp.blueprint?.passScore}%</span>
+                    <span className="badge badge-muted"><Target size={11} /> {t('onb.questionBadge', { n: sp.blueprint?.questions })}</span>
+                    <span className="badge badge-muted">{t('onb.minutesBadge', { n: sp.blueprint?.minutes })}</span>
+                    <span className="badge badge-muted">{t('onb.passBadge', { n: sp.blueprint?.passScore })}</span>
                   </div>
                 </button>
               );
             })}
           </div>
           <div className="row" style={{ gap: 10, marginTop: 16 }}>
-            <button className="btn btn-ghost" onClick={() => setStep(0)}><ArrowRight size={16} /> رجوع</button>
-            <button className="btn btn-primary flex-1" disabled={!specId} onClick={() => setStep(2)}>التالي <ArrowLeft size={17} /></button>
+            <button className="btn btn-ghost" onClick={() => setStep(0)}><ArrowRight size={16} /> {t('onb.back')}</button>
+            <button className="btn btn-primary flex-1" disabled={!specId} onClick={() => setStep(2)}>{t('onb.next')} <ArrowLeft size={17} /></button>
           </div>
         </motion.div>
       )}
@@ -161,32 +162,32 @@ export default function OnboardingPage() {
       {step === 2 && spec && (
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="stack" style={{ gap: 16 }}>
           <div className="text-center">
-            <h1 style={{ fontSize: 23 }}>لمسة أخيرة</h1>
-            <p className="text-muted mt-1">جهّزنا لك خطة مخصّصة لـ {spec.label}.</p>
+            <h1 style={{ fontSize: 23 }}>{t('onb.lastStep')}</h1>
+            <p className="text-muted mt-1">{t('onb.lastStepSub', { spec: specName(spec) })}</p>
           </div>
 
           <div className="card">
             <div className="stack" style={{ gap: 12 }}>
               <div className="field">
-                <label className="label">اسمك</label>
+                <label className="label">{t('onb.yourName')}</label>
                 <div style={{ position: 'relative' }}>
-                  <UserRound size={17} style={{ position: 'absolute', right: 14, top: 15, color: 'var(--text-muted)' }} />
-                  <input className="input" style={{ paddingRight: 42 }} value={name} onChange={(e) => setName(e.target.value)} placeholder="اسمك الكامل" />
+                  <UserRound size={17} style={{ position: 'absolute', insetInlineStart: 14, top: 15, color: 'var(--text-muted)' }} />
+                  <input className="input" style={{ paddingInlineStart: 42 }} value={name} onChange={(e) => setName(e.target.value)} placeholder={t('onb.namePlaceholder')} />
                 </div>
               </div>
               <div className="field">
-                <label className="label">مستواك الحالي</label>
+                <label className="label">{t('onb.yourLevel')}</label>
                 <div className="chip-row">
-                  {[['student', 'طالب'], ['graduate', 'خريج'], ['practitioner', 'ممارس']].map(([v, l]) => (
+                  {levels.map(([v, l]) => (
                     <span key={v} className={`chip${level === v ? ' active' : ''}`} onClick={() => setLevel(v)}>{l}</span>
                   ))}
                 </div>
               </div>
               <div className="field">
-                <label className="label">تاريخ الامتحان (اختياري)</label>
+                <label className="label">{t('onb.examDate')}</label>
                 <div style={{ position: 'relative' }}>
-                  <CalendarDays size={17} style={{ position: 'absolute', right: 14, top: 15, color: 'var(--text-muted)' }} />
-                  <input type="date" className="input" style={{ paddingRight: 42 }} value={examDate} onChange={(e) => setExamDate(e.target.value)} />
+                  <CalendarDays size={17} style={{ position: 'absolute', insetInlineStart: 14, top: 15, color: 'var(--text-muted)' }} />
+                  <input type="date" className="input" style={{ paddingInlineStart: 42 }} value={examDate} onChange={(e) => setExamDate(e.target.value)} />
                 </div>
               </div>
             </div>
@@ -194,23 +195,23 @@ export default function OnboardingPage() {
 
           {plan ? (
             <div className="card soft-sector">
-              <div className="row" style={{ gap: 8, marginBottom: 8 }}><Sparkles size={17} style={{ color: 'var(--gold-dark)' }} /><h3 style={{ fontSize: 16 }}>خطتك المخصّصة جاهزة</h3></div>
+              <div className="row" style={{ gap: 8, marginBottom: 8 }}><Sparkles size={17} style={{ color: 'var(--gold-dark)' }} /><h3 style={{ fontSize: 16 }}>{t('onb.planReady')}</h3></div>
               <div className="row" style={{ gap: 16, marginBottom: 8 }}>
-                <div><div className="stat-label">الجهوزية</div><div className="stat-num" style={{ color: 'var(--sector)' }}>{plan.readiness}%</div></div>
-                <div><div className="stat-label">هدف يومي</div><div className="stat-num">{plan.dailyTarget}</div></div>
+                <div><div className="stat-label">{t('onb.readiness')}</div><div className="stat-num" style={{ color: 'var(--sector)' }}>{plan.readiness}%</div></div>
+                <div><div className="stat-label">{t('onb.dailyTarget')}</div><div className="stat-num">{plan.dailyTarget}</div></div>
               </div>
               {plan.summary && <p style={{ fontWeight: 600, color: 'var(--text-secondary)', fontSize: 14 }}>{plan.summary}</p>}
             </div>
           ) : (
             <button className="btn btn-ghost btn-block" onClick={generatePlan} disabled={busy}>
-              {busy ? <Loader2 size={16} className="spin" /> : <Sparkles size={16} />} توليد خطة تدريب ذكية (اختياري)
+              {busy ? <Loader2 size={16} className="spin" /> : <Sparkles size={16} />} {t('onb.generatePlan')}
             </button>
           )}
 
           <div className="row" style={{ gap: 10 }}>
-            <button className="btn btn-ghost" onClick={() => setStep(1)}><ArrowRight size={16} /> رجوع</button>
+            <button className="btn btn-ghost" onClick={() => setStep(1)}><ArrowRight size={16} /> {t('onb.back')}</button>
             <button className="btn btn-primary btn-lg flex-1" onClick={finish} disabled={busy}>
-              {busy ? <Loader2 size={17} className="spin" /> : <Check size={17} />} ابدأ التدريب
+              {busy ? <Loader2 size={17} className="spin" /> : <Check size={17} />} {t('onb.startTraining')}
             </button>
           </div>
         </motion.div>

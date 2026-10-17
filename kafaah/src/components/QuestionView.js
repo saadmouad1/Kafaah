@@ -7,7 +7,7 @@ import { useKafaah } from '../lib/context/KafaahProvider';
 const KEYS = ['أ', 'ب', 'ج', 'د', 'هـ', 'و'];
 
 export default function QuestionView({ question, selected, onSelect, reveal = false, onToggleSave, saved = false }) {
-  const { lexicon } = useKafaah();
+  const { t } = useKafaah();
   const [tutor, setTutor] = useState(null);
   const [tutorLoading, setTutorLoading] = useState(false);
 
@@ -32,9 +32,9 @@ export default function QuestionView({ question, selected, onSelect, reveal = fa
         }),
       });
       const data = await res.json();
-      setTutor(data.text || data.answer || 'تعذّر الحصول على الشرح.');
+      setTutor(data.text || data.answer || t('q.tutorError'));
     } catch {
-      setTutor('تعذّر الاتصال بالمدرّس الذكي.');
+      setTutor(t('q.tutorErrorConn'));
     } finally {
       setTutorLoading(false);
     }
@@ -47,12 +47,12 @@ export default function QuestionView({ question, selected, onSelect, reveal = fa
           {q.subject && <span className="badge badge-brand">{q.subject}</span>}
           {q.difficulty && (
             <span className={`badge ${q.difficulty === 'hard' ? 'badge-danger' : q.difficulty === 'easy' ? 'badge-success' : 'badge-warning'}`}>
-              {q.difficulty === 'hard' ? 'صعب' : q.difficulty === 'easy' ? 'سهل' : 'متوسط'}
+              {q.difficulty === 'hard' ? t('common.hard') : q.difficulty === 'easy' ? t('common.easy') : t('common.medium')}
             </span>
           )}
         </div>
         {onToggleSave && (
-          <button className="icon-btn" onClick={() => onToggleSave(q)} aria-label="حفظ السؤال" title="حفظ">
+          <button className="icon-btn" onClick={() => onToggleSave(q)} aria-label={t('q.saveAria')} title={t('q.saveAria')}>
             <Star size={18} fill={saved ? 'var(--gold)' : 'none'} color={saved ? 'var(--gold)' : 'currentColor'} />
           </button>
         )}
@@ -95,14 +95,14 @@ export default function QuestionView({ question, selected, onSelect, reveal = fa
       {reveal && (
         <div className="mt-3" style={{ background: 'var(--info-soft)', border: '1px solid color-mix(in srgb, var(--info) 25%, transparent)', borderRadius: 16, padding: 16 }}>
           <div className="row" style={{ gap: 8, color: '#1d4ed8', fontWeight: 800, marginBottom: 6 }}>
-            <BookOpen size={17} /> الشرح
+            <BookOpen size={17} /> {t('common.explanation')}
           </div>
           <p style={{ color: 'var(--text-secondary)', fontWeight: 600, lineHeight: 1.75 }}>
-            {q.explanation || 'لا يوجد شرح مُسجّل لهذا السؤال.'}
+            {q.explanation || t('q.noExplanation')}
           </p>
           <button className="btn btn-ghost btn-sm mt-2" onClick={askTutor} disabled={tutorLoading}>
             {tutorLoading ? <Loader2 size={14} className="spin" /> : <Sparkles size={14} />}
-            اسأل المدرّس الذكي
+            {t('q.askTutor')}
           </button>
           {tutor && (
             <div className="mt-2" style={{ background: 'var(--surface)', borderRadius: 12, padding: 14, border: '1px solid var(--border)', whiteSpace: 'pre-wrap', fontWeight: 600, color: 'var(--text-secondary)' }}>

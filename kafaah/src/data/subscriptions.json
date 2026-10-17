@@ -1,0 +1,18 @@
+{
+ "subscriptions": [
+  {
+   "id": "sub_mvbv4lslnqho1",
+   "clientId": null,
+   "email": "t@e.com",
+   "clientName": "طبيب تجربة",
+   "packageId": "monthly",
+   "packageName": "الاشتراك الشهري",
+   "price": 5,
+   "currency": "USD",
+   "status": "active",
+   "startedAt": "2026-10-17T03:54:44.225Z",
+   "expiresAt": "2026-11-17T03:54:44.225Z",
+   "createdAt": "2026-10-17T03:54:33.429Z"
+  }
+ ]
+}

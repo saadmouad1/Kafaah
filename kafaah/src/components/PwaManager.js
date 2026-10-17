@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { WifiOff, Download, X } from 'lucide-react';
+import { useKafaah } from '../lib/context/KafaahProvider';
 
 /**
  * مدير تجربة التطبيق (PWA):
@@ -10,6 +11,7 @@ import { WifiOff, Download, X } from 'lucide-react';
  * - زر «ثبّت التطبيق» عند إتاحة المتصفح لذلك.
  */
 export default function PwaManager() {
+  const { t } = useKafaah();
   const [offline, setOffline] = useState(false);
   const [installEvt, setInstallEvt] = useState(null);
   const [dismissed, setDismissed] = useState(false);
@@ -66,29 +68,29 @@ export default function PwaManager() {
       {offline && (
         <div className="offline-banner" role="status" aria-live="polite">
           <WifiOff size={15} />
-          <span>أنت غير متصل بالإنترنت — نعرض المحتوى المحفوظ، وسنعيد المزامنة تلقائيًا.</span>
+          <span>{t('pwa.offline')}</span>
         </div>
       )}
 
       {installEvt && !dismissed && (
-        <div className="install-fab" role="dialog" aria-label="تثبيت التطبيق">
+        <div className="install-fab" role="dialog" aria-label={t('pwa.installAria')}>
           <div className="row" style={{ gap: 10 }}>
             <span className="install-fab-icon" aria-hidden>
               <Download size={18} />
             </span>
             <span style={{ lineHeight: 1.45, textAlign: 'start' }}>
-              <strong style={{ display: 'block', fontSize: 14 }}>ثبّت تطبيق كفاءة</strong>
-              <span style={{ fontSize: 12, opacity: 0.85 }}>وصول أسرع وتجربة كالتطبيقات</span>
+              <strong style={{ display: 'block', fontSize: 14 }}>{t('pwa.install')}</strong>
+              <span style={{ fontSize: 12, opacity: 0.85 }}>{t('pwa.installSub')}</span>
             </span>
           </div>
           <div className="row" style={{ gap: 8 }}>
             <button className="btn btn-primary btn-sm" onClick={install}>
-              تثبيت
+              {t('pwa.installBtn')}
             </button>
             <button
               className="btn btn-ghost btn-sm"
               onClick={() => setDismissed(true)}
-              aria-label="إغلاق"
+              aria-label={t('pwa.close')}
             >
               <X size={16} />
             </button>

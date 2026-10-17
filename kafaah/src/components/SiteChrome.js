@@ -7,7 +7,7 @@ import { useKafaah } from '../lib/context/KafaahProvider';
 // الشريط العلوي العام للصفحات العامة فقط (لوحة التحكم لها هيكلها الخاص)
 export default function SiteChrome({ children }) {
   const pathname = usePathname() || '/';
-  const { hasName } = useKafaah();
+  const { hasName, t } = useKafaah();
 
   const isDashboard = pathname.startsWith('/dashboard');
   const isAdmin = pathname.startsWith('/admin');
@@ -24,29 +24,29 @@ export default function SiteChrome({ children }) {
               <span className="brand-title">
                 كـفـاءة<span className="brand-dot" />
               </span>
-              {!isAuth && <span className="brand-subtitle desktop-only">تراخيص مزاولة المهن والاعتماد المهني</span>}
+              {!isAuth && <span className="brand-subtitle desktop-only">{t('nav.brandSub')}</span>}
             </span>
           </Link>
 
           <nav className="topbar-right">
             {!isAuth && (
               <>
-                <Link href="/#sectors" className="btn btn-ghost btn-sm desktop-only">التخصصات</Link>
-                <Link href="/#features" className="btn btn-ghost btn-sm desktop-only">المميزات</Link>
-                <Link href="/#app" className="btn btn-ghost btn-sm desktop-only">التطبيق</Link>
+                <Link href="/#sectors" className="btn btn-ghost btn-sm desktop-only">{t('nav.sectors')}</Link>
+                <Link href="/#features" className="btn btn-ghost btn-sm desktop-only">{t('nav.features')}</Link>
+                <Link href="/#app" className="btn btn-ghost btn-sm desktop-only">{t('nav.app')}</Link>
               </>
             )}
             {hasName ? (
               <Link href="/dashboard" className="btn btn-primary btn-sm">
                 <LayoutDashboard size={15} />
-                لوحتي
+                {t('nav.myDashboard')}
               </Link>
             ) : (
               <>
-                <Link href="/login" className="btn btn-ghost btn-sm">دخول</Link>
+                <Link href="/login" className="btn btn-ghost btn-sm">{t('nav.login')}</Link>
                 <Link href="/register" className="btn btn-gold btn-sm">
                   <Sparkles size={14} />
-                  ابدأ الآن
+                  {t('nav.startNow')}
                 </Link>
               </>
             )}
