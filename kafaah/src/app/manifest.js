@@ -2,7 +2,7 @@
 // ref: node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions/01-metadata/manifest.md
 export default function manifest() {
   return {
-    name: 'كفاءة — تراخيص مزاولة المهن والاعتماد المهني',
+    name: 'كفاءة — منصة التدريب والاستعداد لامتحانات مزاولة المهن',
     short_name: 'كفاءة',
     description:
       'استعد لامتحان مزاولة مهنتك في كل التخصصات: بنوك أسئلة حقيقية، محاكاة امتحان، وتحليل أداء ذكي.',

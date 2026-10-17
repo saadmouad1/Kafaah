@@ -38,7 +38,7 @@
     <circle cx="76" cy="28" r="6" fill="#10b981"/>
 
     <text x="520" y="34" font-family="'Cairo', sans-serif" font-size="14" font-weight="800" fill="#0f172a" text-anchor="end">
-      اختبار مزاولة المهنة والاعتماد المهني — جلسة المحاكاة الرسمية
+      محاكاة امتحان مزاولة المهنة — بيئة تدريب تفاعلية واقعية
     </text>
 
     <!-- Timer Badge -->
@@ -51,13 +51,13 @@
     <g transform="translate(30, 76)">
       <rect x="0" y="0" width="500" height="96" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
       <text x="480" y="28" font-family="'Cairo', sans-serif" font-size="13" font-weight="900" fill="#059669" text-anchor="end">
-        السؤال 35 من 100 • حالة تطبيقية متكررة في امتحانات الترخيص
+        السؤال 35 من 100 • حالة تطبيقية متكررة في امتحانات المزاولة
       </text>
       <text x="480" y="52" font-family="'Cairo', sans-serif" font-size="13.5" font-weight="600" fill="#1e293b" text-anchor="end">
-        وفقاً لأحدث الإرشادات والمعايير الوطنية المعتمدة، ما هو الإجراء التنفيذي والمهني الأول
+        وفقاً لأحدث الإرشادات والمعايير السريرية المعتمدة، ما هو الإجراء التشخيصي والعلاجي الأول
       </text>
       <text x="480" y="74" font-family="'Cairo', sans-serif" font-size="13.5" font-weight="600" fill="#1e293b" text-anchor="end">
-        الواجب اتخاذه للحد من المخاطر وضمان الامتثال التام قبل بدء المرحلة التشغيلية؟
+        الواجب اتخاذه للحد من المضاعفات وتأكيد التشخيص السليم للحالة المعروضة؟
       </text>
     </g>
 
@@ -65,15 +65,15 @@
     <g transform="translate(30, 190)">
       <!-- Choice A -->
       <rect x="0" y="0" width="500" height="38" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
-      <text x="475" y="24" font-family="'Cairo', sans-serif" font-size="12.5" fill="#64748b" text-anchor="end">أ. المتابعة الدورية دون اتخاذ تدابير استباقية معتمدة</text>
+      <text x="475" y="24" font-family="'Cairo', sans-serif" font-size="12.5" fill="#64748b" text-anchor="end">أ. الملاحظة الدورية فقط دون تدخل فوري</text>
 
       <!-- Choice B (Correct highlighted in Emerald) -->
       <rect x="0" y="48" width="500" height="38" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="1.8"/>
-      <text x="475" y="72" font-family="'Cairo', sans-serif" font-size="12.5" font-weight="800" fill="#059669" text-anchor="end">✓ ب. تطبيق مصفوفة تقييم المخاطر وتفعيل بروتوكول التدخل المعتمد فوراً</text>
+      <text x="475" y="72" font-family="'Cairo', sans-serif" font-size="12.5" font-weight="800" fill="#059669" text-anchor="end">✓ ب. البدء الفوري ببروتوكول العلاج التخصصي ومراقبة المؤشرات الحيوية</text>
 
       <!-- Choice C -->
       <rect x="0" y="96" width="500" height="38" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
-      <text x="475" y="120" font-family="'Cairo', sans-serif" font-size="12.5" fill="#64748b" text-anchor="end">ج. تفويض المسؤولية لطرف ثالث دون التحقق من رخصة المزاولة</text>
+      <text x="475" y="120" font-family="'Cairo', sans-serif" font-size="12.5" fill="#64748b" text-anchor="end">ج. تأجيل الفحوصات لحين استقرار الحالة سريرياً</text>
     </g>
   </g>
 
@@ -94,10 +94,10 @@
   <g transform="translate(700, 110)" filter="url(#floatShadow)">
     <rect x="0" y="0" width="180" height="160" rx="20" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5"/>
     <circle cx="90" cy="50" r="28" fill="#fef3c7"/>
-    <text x="90" y="58" font-size="24" text-anchor="middle">🏆</text>
-    <text x="90" y="105" font-family="'Cairo', sans-serif" font-size="14" font-weight="900" fill="#0f172a" text-anchor="middle">رخصة معتمدة</text>
-    <text x="90" y="124" font-family="'Cairo', sans-serif" font-size="11" font-weight="700" fill="#d97706" text-anchor="middle">معايير البورد 2026</text>
-    <text x="90" y="142" font-family="'Cairo', sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">اليمن • SMLE • DHA</text>
+    <text x="90" y="58" font-size="24" text-anchor="middle">🎯</text>
+    <text x="90" y="105" font-family="'Cairo', sans-serif" font-size="14" font-weight="900" fill="#0f172a" text-anchor="middle">جاهزية الامتحان</text>
+    <text x="90" y="124" font-family="'Cairo', sans-serif" font-size="11" font-weight="700" fill="#d97706" text-anchor="middle">نماذج حديثة 2026</text>
+    <text x="90" y="142" font-family="'Cairo', sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">اليمن • SMLE • برومترك</text>
   </g>
 
   <!-- FLOATING CARD 3: CORAL & ROSE ENGINEERING & LAW (BOTTOM RIGHT) -->
@@ -116,16 +116,16 @@
     <rect x="0" y="0" width="440" height="60" rx="30" fill="#ffffff" stroke="#e2e8f0"/>
     
     <text x="375" y="26" font-family="sans-serif" font-size="16" font-weight="900" fill="#059669" text-anchor="middle">+26,500</text>
-    <text x="375" y="44" font-family="'Cairo', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">سؤال معتمد</text>
+    <text x="375" y="44" font-family="'Cairo', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">سؤال مشروح</text>
 
     <line x1="310" y1="12" x2="310" y2="48" stroke="#e2e8f0"/>
 
     <text x="220" y="26" font-family="sans-serif" font-size="16" font-weight="900" fill="#f59e0b" text-anchor="middle">5 مجالات</text>
-    <text x="220" y="44" font-family="'Cairo', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">كافة المهن الوطنية</text>
+    <text x="220" y="44" font-family="'Cairo', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">تغطية تخصصية شاملة</text>
 
     <line x1="130" y1="12" x2="130" y2="48" stroke="#e2e8f0"/>
 
-    <text x="65" y="26" font-family="sans-serif" font-size="16" font-weight="900" fill="#ea580c" text-anchor="middle">3 أشهر</text>
-    <text x="65" y="44" font-family="'Cairo', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">مجاناً بالكامل</text>
+    <text x="65" y="26" font-family="sans-serif" font-size="16" font-weight="900" fill="#ea580c" text-anchor="middle">تدريب ذكي</text>
+    <text x="65" y="44" font-family="'Cairo', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">محاكاة وتحليل أداء</text>
   </g>
 </svg>

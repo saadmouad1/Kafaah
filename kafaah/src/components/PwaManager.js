@@ -5,10 +5,10 @@ import { WifiOff, Download, X } from 'lucide-react';
 import { useKafaah } from '../lib/context/KafaahProvider';
 
 /**
- * مدير تجربة التطبيق (PWA):
- * - تسجيل Service Worker للعمل دون اتصال وتسريع التحميل.
- * - شريط تنبيه عند انقطاع الاتصال.
- * - زر «ثبّت التطبيق» عند إتاحة المتصفح لذلك.
+ * PwaManager:
+ * - يدير تثبيت التطبيق على الشاشة الرئيسية للهواتف.
+ * - ينظف الكاش القديم ويلغي أي Service Workers قديمة لمنع أخطاء الحزم.
+ * - ينبه المستخدم بلطف في حال انقطاع الاتصال بالإنترنت لإعادة الاتصال.
  */
 export default function PwaManager() {
   const { t } = useKafaah();
@@ -17,14 +17,22 @@ export default function PwaManager() {
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
-    // تسجيل Service Worker في الإنتاج فقط (لتفادي إزعاج التطوير)
-    if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
-      const register = () =>
-        navigator.serviceWorker
-          .register('/sw.js', { scope: '/', updateViaCache: 'none' })
-          .catch(() => {});
-      if (document.readyState === 'complete') register();
-      else window.addEventListener('load', register, { once: true });
+    // إلغاء أي Service Worker قديم وحذف الكاش غير المتزامن لمنع أخطاء الذاكرة المؤقتة
+    if (typeof window !== 'undefined') {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (const reg of registrations) {
+            reg.unregister().catch(() => {});
+          }
+        }).catch(() => {});
+      }
+      if ('caches' in window) {
+        caches.keys().then((names) => {
+          for (const name of names) {
+            caches.delete(name).catch(() => {});
+          }
+        }).catch(() => {});
+      }
     }
 
     const goOffline = () => setOffline(true);
@@ -41,7 +49,6 @@ export default function PwaManager() {
     window.addEventListener('beforeinstallprompt', onPrompt);
     window.addEventListener('appinstalled', onInstalled);
 
-    // لا نُظهر زر التثبيت إن كان التطبيق مثبّتًا أصلًا
     try {
       if (window.matchMedia('(display-mode: standalone)').matches) setDismissed(true);
     } catch {}
@@ -68,7 +75,7 @@ export default function PwaManager() {
       {offline && (
         <div className="offline-banner" role="status" aria-live="polite">
           <WifiOff size={15} />
-          <span>{t('pwa.offline')}</span>
+          <span>انقطع الاتصال بالإنترنت — يُرجى إعادة الاتصال لمتابعة التدريب وحفظ النتائج</span>
         </div>
       )}
 

@@ -59,9 +59,6 @@ export default function DashboardHome() {
               })}
             </p>
           </div>
-          <Link href="/onboarding" className="btn btn-ghost btn-sm">
-            <Repeat size={14} /> {t('home.changeSpec')}
-          </Link>
         </div>
 
         <div className="grid grid-4" style={{ marginTop: 18 }}>

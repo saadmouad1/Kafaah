@@ -50,7 +50,7 @@ export default function BankPage() {
       <div className="card text-center" style={{ padding: 44 }}>
         <Library size={40} style={{ color: 'var(--sector)', marginBottom: 10 }} />
         <p style={{ fontWeight: 800, marginBottom: 14 }}>{t('bank.noSpec')}</p>
-        <Link href="/onboarding" className="btn btn-primary"><Repeat size={15} /> {t('nav.changeSectionSpec')}</Link>
+        <Link href="/dashboard" className="btn btn-primary">{t('nav.home')}</Link>
       </div>
     );
   }

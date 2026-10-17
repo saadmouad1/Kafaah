@@ -53,7 +53,9 @@ export function assignSubscription({ email, clientName, clientId, packageId, sta
     sub.currency = pkg.currency;
     sub.status = status;
     sub.startedAt = now;
-    sub.expiresAt = addInterval(now, pkg.interval);
+    // إذا كان الاشتراك ساريًا، يُمدَّد من تاريخ الانتهاء الحالي؛ وإن كان منتهيًا يُمدَّد من الآن
+    const baseDate = (sub.expiresAt && new Date(sub.expiresAt) > new Date()) ? sub.expiresAt : now;
+    sub.expiresAt = addInterval(baseDate, pkg.interval);
     sub.clientName = clientName || sub.clientName || '';
     if (clientId) sub.clientId = clientId;
   } else {

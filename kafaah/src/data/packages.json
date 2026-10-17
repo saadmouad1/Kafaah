@@ -1,25 +1,34 @@
 {
- "packages": [
-  {
-   "id": "monthly",
-   "name": "الاشتراك الشهري",
-   "nameEn": "Monthly subscription",
-   "price": 5,
-   "currency": "USD",
-   "interval": "month",
-   "features": [
-    "وصول كامل لبنوك الأسئلة",
-    "محاكاة امتحان غير محدودة",
-    "تحليل أداء ومساعد ذكي"
-   ],
-   "featuresEn": [
-    "Full access to question banks",
-    "Unlimited mock exams",
-    "Analytics & AI assistant"
-   ],
-   "active": true,
-   "createdBy": "system",
-   "createdAt": "2026-10-17"
-  }
- ]
+  "packages": [
+    {
+      "id": "monthly",
+      "name": "باقة كفاءة الشاملة",
+      "nameEn": "Kafaah Comprehensive Plan",
+      "price": 5,
+      "originalPrice": 10,
+      "discount": "50%",
+      "currency": "USD",
+      "interval": "month",
+      "badge": "الأكثر طلباً · خصم 50%",
+      "features": [
+        "وصول كامل وغير محدود لجميع بنوك الأسئلة المعتمدة في تخصصك",
+        "محاكاة امتحانات تجريبية غير محدودة مطابقة لبيئة الاختبار الفعلي",
+        "تحليل أداء تفصيلي واكتشاف نقاط الضعف ونسبة الجاهزية",
+        "مساعد ذكي AI مدعوم بالذكاء الاصطناعي لشرح الأسئلة وتفسير الخيارات",
+        "سجل الأخطاء التفاعلي وبنك الأسئلة المفضلة مع حفظ التقدم التلقائي",
+        "تطبيق ويب سريع متجاوب للهواتف الذكية مع مزامنة سحابية وتحديثات مستمرة"
+      ],
+      "featuresEn": [
+        "Unlimited access to all accredited question banks in your specialization",
+        "Unlimited realistic mock exams mimicking official testing blueprints",
+        "Advanced performance analytics, weakness detection & exam readiness",
+        "AI smart assistant for instant case explanations and rationale",
+        "Interactive mistakes bank & saved questions with progress persistence",
+        "Fast responsive mobile app with instant cloud sync & continuous updates"
+      ],
+      "active": true,
+      "createdBy": "system",
+      "createdAt": "2026-10-17"
+    }
+  ]
 }

@@ -2,7 +2,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import {
-  Search, Loader2, Star, BookOpen, Layers, Copy, TrendingUp, X, Sparkles, Repeat, Check,
+  Search, Loader2, Star, BookOpen, Layers, Copy, TrendingUp, X, Sparkles, Check,
 } from 'lucide-react';
 import { useKafaah } from '../../../lib/context/KafaahProvider';
 import { useScopeBanks, isEnglish, fmtNum } from '../../../lib/useData';
@@ -148,7 +148,6 @@ export default function SearchPage() {
             >
               {allSelected ? t('search.clearAll') : t('search.selectAll')}
             </button>
-            <Link href="/onboarding" className="chip"><Repeat size={12} /> {t('search.changeSectionSpec')}</Link>
           </div>
         </div>
         <div className="chip-row">

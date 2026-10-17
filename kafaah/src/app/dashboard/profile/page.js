@@ -26,7 +26,6 @@ export default function ProfilePage() {
           <span className="badge badge-brand">{sectorName(sector)}</span>
           <span className="badge badge-muted">{specName(spec)}</span>
         </div>
-        <Link href="/onboarding" className="btn btn-ghost btn-sm mt-3"><Repeat size={14} /> {t('profile.editSpec')}</Link>
       </div>
 
       <div className="grid grid-4">
@@ -45,9 +44,8 @@ export default function ProfilePage() {
         <div className="stack" style={{ gap: 12 }}>
           {[
             { icon: GraduationCap, label: t('profile.spec'), value: specName(spec) },
-            { icon: Building2, label: t('profile.authority'), value: localize(spec?.authority) },
-            { icon: CalendarDays, label: t('profile.country'), value: localize(spec?.country) },
             { icon: Target, label: t('profile.blueprint'), value: bp },
+            { icon: BookOpen, label: 'الهدف والمسار', value: 'التدريب المكثف والمحاكاة لاجتياز امتحان المزاولة بنجاح' },
           ].map((r, i) => (
             <div key={i} className="row" style={{ gap: 12 }}>
               <div style={{ width: 36, height: 36, borderRadius: 11, background: 'var(--surface-3)', display: 'grid', placeItems: 'center', color: 'var(--sector)' }}><r.icon size={17} /></div>

@@ -9,13 +9,30 @@ const FILE = 'packages.json';
 const DEFAULT_PACKAGES = [
   {
     id: 'monthly',
-    name: 'الاشتراك الشهري',
-    nameEn: 'Monthly subscription',
+    name: 'باقة كفاءة الشاملة',
+    nameEn: 'Kafaah Comprehensive Plan',
     price: 5,
+    originalPrice: 10,
+    discount: '50%',
+    badge: 'الأكثر طلباً · خصم 50%',
     currency: 'USD',
     interval: 'month',
-    features: ['وصول كامل لبنوك الأسئلة', 'محاكاة امتحان غير محدودة', 'تحليل أداء ومساعد ذكي'],
-    featuresEn: ['Full access to question banks', 'Unlimited mock exams', 'Analytics & AI assistant'],
+    features: [
+      'وصول كامل وغير محدود لجميع بنوك الأسئلة المعتمدة في تخصصك',
+      'محاكاة امتحانات تجريبية غير محدودة مطابقة لبيئة الاختبار الفعلي',
+      'تحليل أداء تفصيلي واكتشاف نقاط الضعف ونسبة الجاهزية',
+      'مساعد ذكي AI مدعوم بالذكاء الاصطناعي لشرح الأسئلة وتفسير الخيارات',
+      'سجل الأخطاء التفاعلي وبنك الأسئلة المفضلة مع حفظ التقدم التلقائي',
+      'تطبيق ويب سريع متجاوب للهواتف الذكية مع مزامنة سحابية وتحديثات مستمرة',
+    ],
+    featuresEn: [
+      'Unlimited access to all accredited question banks in your specialization',
+      'Unlimited realistic mock exams mimicking official testing blueprints',
+      'Advanced performance analytics, weakness detection & exam readiness',
+      'AI smart assistant for instant case explanations and rationale',
+      'Interactive mistakes bank & saved questions with progress persistence',
+      'Fast responsive mobile app with instant cloud sync & continuous updates',
+    ],
     active: true,
     createdBy: 'system',
     createdAt: today(),
@@ -59,6 +76,9 @@ export function createPackage(input = {}) {
     name,
     nameEn: String(input.nameEn || '').trim(),
     price,
+    originalPrice: Number(input.originalPrice) || (price * 2),
+    discount: input.discount ? String(input.discount).trim() : '50%',
+    badge: input.badge ? String(input.badge).trim() : '',
     currency: String(input.currency || 'USD').trim().toUpperCase(),
     interval: ['month', 'year', 'once'].includes(input.interval) ? input.interval : 'month',
     features: Array.isArray(input.features) ? input.features.map((f) => String(f).trim()).filter(Boolean) : [],
@@ -87,6 +107,9 @@ export function updatePackage(id, patch = {}) {
     if (!Number.isFinite(price) || price < 0) throw new Error('السعر غير صالح');
     pkg.price = price;
   }
+  if (patch.originalPrice !== undefined) pkg.originalPrice = Number(patch.originalPrice) || 0;
+  if (patch.discount !== undefined) pkg.discount = String(patch.discount || '').trim();
+  if (patch.badge !== undefined) pkg.badge = String(patch.badge || '').trim();
   if (patch.currency !== undefined) pkg.currency = String(patch.currency || 'USD').trim().toUpperCase();
   if (patch.interval !== undefined) pkg.interval = ['month', 'year', 'once'].includes(patch.interval) ? patch.interval : pkg.interval;
   if (patch.features !== undefined) pkg.features = Array.isArray(patch.features) ? patch.features.map((f) => String(f).trim()).filter(Boolean) : [];

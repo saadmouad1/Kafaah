@@ -84,9 +84,9 @@ export default function DashboardLayout({ children }) {
               <div style={{ fontSize: 11.5, color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{specName(spec)}</div>
             </div>
           </div>
-          <Link href="/onboarding" className="btn btn-ghost btn-sm btn-block" style={{ marginTop: 10 }}>
-            <Repeat size={13} /> {t('nav.changeSection')}
-          </Link>
+          <div className="badge badge-brand" style={{ marginTop: 10, width: '100%', justifyContent: 'center', fontSize: 11.5 }}>
+            {sectorShortName(sector)}
+          </div>
         </div>
 
         <div className="side-group">{t('nav.menu')}</div>
@@ -109,16 +109,6 @@ export default function DashboardLayout({ children }) {
 
         <div style={{ marginTop: 'auto', paddingTop: 14 }}>
           <button
-            onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
-            className="side-link"
-            style={{ width: '100%', border: 0, background: 'none', cursor: 'pointer' }}
-          >
-            <Languages size={18} /> {nextLangLabel}
-          </button>
-          <button onClick={toggle} className="side-link" style={{ width: '100%', border: 0, background: 'none', cursor: 'pointer' }}>
-            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />} {theme === 'dark' ? t('nav.lightMode') : t('nav.darkMode')}
-          </button>
-          <button
             onClick={() => { logout(); router.replace('/'); }}
             className="side-link"
             style={{ width: '100%', border: 0, background: 'none', cursor: 'pointer', color: 'var(--danger)' }}
@@ -138,21 +128,9 @@ export default function DashboardLayout({ children }) {
           </Link>
           <div className="row" style={{ gap: 8 }}>
             <span className="badge badge-brand">{sectorShortName(sector)}</span>
-            <button
-              className="icon-btn"
-              onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
-              aria-label={nextLangLabel}
-              title={nextLangLabel}
-              style={{ fontWeight: 900, fontSize: 12 }}
-            >
-              {lang === 'ar' ? 'EN' : 'ع'}
-            </button>
-            <Link href="/onboarding" className="icon-btn" aria-label={t('nav.changeSectionSpec')} title={t('nav.changeSectionSpec')}>
-              <Repeat size={18} />
+            <Link href="/dashboard/settings" className="icon-btn" aria-label={t('nav.settings')} title={t('nav.settings')}>
+              <Settings size={18} />
             </Link>
-            <button className="icon-btn" onClick={toggle} aria-label={t('nav.toggleTheme')}>
-              {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
           </div>
         </div>
 

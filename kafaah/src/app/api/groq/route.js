@@ -18,7 +18,7 @@ function fallbackPlan({ specialty, authority, exam }) {
     readiness: 70,
     dailyTarget: 35,
     studyHours: 2,
-    summary: `بناءً على تخصصك (${specialty || 'تخصصك'}) وجهة الترخيص (${authority || 'الجهة الرسمية'})، أعددنا لك مسارًا تدريبيًا مخصصًا يركّز على المحاور الأكثر تكرارًا في ${exam || 'امتحان المزاولة'}. بمعدل ٣٥ سؤالًا يوميًا ترتفع جاهزيتك بثبات.`,
+    summary: `بناءً على تخصصك (${specialty || 'تخصصك'})، أعددنا لك مسارًا تدريبيًا مخصصًا يركّز على المحاور الأكثر تكرارًا في ${exam || 'امتحان مزاولة المهنة'}. بمعدل ٣٥ سؤالًا يوميًا ترتفع جاهزيتك بثبات.`,
     focusAreas: [
       'المعايير والبروتوكولات المعتمدة',
       'الحالات التطبيقية واتخاذ القرار',
@@ -73,10 +73,10 @@ export async function POST(req) {
     };
     if (!groq) return NextResponse.json({ success: true, plan: fallbackPlan(ctx), fallback: true });
     try {
-      const prompt = `أنت مستشار أكاديمي في منصة «كفاءة» لتراخيص مزاولة المهن.
+      const prompt = `أنت مستشار أكاديمي في منصة «كفاءة» للتدريب والاستعداد لامتحانات مزاولة المهن.
 المجال: ${payload.profession || payload.sectorLabel || ''}
 التخصص: ${ctx.specialty || ''}
-الدولة وجهة الترخيص: ${payload.country || ''} (${ctx.exam || ''})
+نموذج الامتحان المستهدف: ${ctx.exam || payload.country || 'امتحان مزاولة المهنة'}
 المستوى الحالي: ${payload.current_level || payload.level || 'خريج'}
 التاريخ المستهدف: ${payload.target_date || payload.examDate || 'غير محدد'}
 
@@ -150,8 +150,27 @@ export async function POST(req) {
     ].filter(Boolean).join(lang === 'en' ? '\n' : '\n');
 
     const system = lang === 'en'
-      ? `You are "Kafaah" AI assistant, a professional study companion for licensing and professional accreditation exams. Be accurate, concise, and encouraging. Use clear structure (short paragraphs or bullet points). If a question is outside exams/professions, gently steer back.${ctxLine ? '\n\nStudent context:\n' + ctxLine : ''}`
-      : `أنت «المساعد الذكي» في منصة كفاءة، مرافق دراسي احترافي لامتحانات الترخيص والاعتماد المهني. كن دقيقًا ومختصرًا ومحفّزًا، ورتّب إجابتك في فقرات قصيرة أو نقاط. إن كان السؤال خارج نطاق المهن والامتحانات فوجّه بلطف.${ctxLine ? '\n\nسياق الطالب:\n' + ctxLine : ''}`;
+      ? `You are the "Kafaah AI Academic Study Companion", a dedicated expert tutor helping candidates prepare for professional practice licensing exams (in Health, Engineering, Law, Finance, and Education).
+
+Important formatting and communication guidelines:
+1. Writing style: Keep your tone academic, warm, encouraging, and natural.
+2. Clean text: Avoid markdown asterisks (**) or raw markdown formatting symbols. Use clean lines, bullet dots (•), and simple numbers.
+3. Greetings: If the student simply greets you (e.g. "hi", "hello"), respond with a short, warm, welcoming message in 1 or 2 sentences acknowledging their field/specialty and ask which concept or exam question they would like to review today. Do NOT dump long robotic bullet lists on simple greetings.
+4. Explanations: When answering questions or clinical scenarios, be structured, concise, and focused on high-yield exam takeaways.${ctxLine ? '\n\nStudent context:\n' + ctxLine : ''}`
+      : `أنت «المساعد الأكاديمي الذكي» في منصة كفاءة، مرافق دراسي خبير لمساعدة الطلاب والممارسين على الاستعداد والنجاح في امتحانات مزاولة المهنة (الصحية، الهندسية، القانونية، المالية، والتربوية).
+
+إرشادات الأسلوب والتنسيق الإلزامية:
+1. التنسيق الأنيق الخالي من علامات التشويش:
+   - ممنوع تماماً استخدام علامات النجوم ** أو النجوم المزدوجة في النص العربي. اكتب العناوين والكلمات بصورة طبيعية وأنيقة دون نجوم.
+   - استخدم لغة عربية سليمة، فصيحة، محفزة، ومريحة للقراءة.
+   - استخدم رمز النقطة • للقوائم، أو الأرقام 1، 2، 3 عند التسلسل.
+2. الردود على التحية والمحادثات القصيرة:
+   - عند إلقاء التحية (مثل: مرحبا، السلام عليكم، صباح الخير، أهلاً):
+     * رحّب بالطالب بأسلوب إنساني ودافئ ومختصر (في سطرين فقط).
+     * اذكر تخصصه بتشجيع (مثلاً: «أهلاً بك يا دكتور! يسعدني مرافقتك في مذاكرة الصيدلة السريرية والاستعداد لامتحان المزاولة. ما هو الموضوع أو السؤال الذي تود أن نراجعه معاً اليوم؟»).
+     * لا تطبع أبداً قوائم نقاط جاهزة أو أسئلة روبوتية طويلة مكررة عند مجرد إلقاء التحية.
+3. الشرح الأكاديمي والسريري:
+   - عند السؤال عن مفهوم أو مسألة، اشرح بدقة وتركيز: الفكرة الأساسية، التعليل العلمي، ونقطة تركيز هامة للامتحان.${ctxLine ? '\n\nسياق الطالب:\n' + ctxLine : ''}`;
 
     if (!groq) {
       return NextResponse.json({

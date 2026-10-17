@@ -1,27 +1,34 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Download, Upload, Trash2, LogOut, Moon, Sun, Repeat, Save, ShieldCheck, Sparkles } from 'lucide-react';
+import {
+  Download, Upload, Trash2, LogOut, Moon, Sun, Repeat, Save,
+  ShieldCheck, Sparkles, CheckCircle2, Clock, Calendar, AlertCircle,
+  CreditCard, Check, RefreshCw, Languages, Laptop, ChevronRight, X, Building2
+} from 'lucide-react';
 import { useKafaah } from '../../../lib/context/KafaahProvider';
-import { exportProgress, importProgress, resetProgress } from '../../../lib/progress';
+import { exportProgress, importProgress, resetProgress, getStats } from '../../../lib/progress';
 
 export default function SettingsPage() {
   const router = useRouter();
-  const { profile, setProfile, sector, spec, logout, sectors, t, locale, sectorName, specName, localize, lang } = useKafaah();
+  const {
+    profile, setProfile, sector, spec, logout, sectors, t, locale,
+    sectorName, specName, localize, lang, setLang
+  } = useKafaah();
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [theme, setTheme] = useState('light');
   const [savedMsg, setSavedMsg] = useState('');
-  const [sid, setSid] = useState('');
-  const [spid, setSpid] = useState('');
   const [packages, setPackages] = useState([]);
+  const [showRenewModal, setShowRenewModal] = useState(false);
+  const [selectedPkg, setSelectedPkg] = useState(null);
+  const [isRenewing, setIsRenewing] = useState(false);
 
   useEffect(() => {
     setName(profile.name || '');
     setEmail(profile.email || '');
-    setSid(profile.sectorId || '');
-    setSpid(profile.specId || '');
     const th = localStorage.getItem('kafaah_theme') || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     setTheme(th);
   }, [profile]);
@@ -29,29 +36,55 @@ export default function SettingsPage() {
   useEffect(() => {
     fetch('/api/packages')
       .then((r) => r.json())
-      .then((d) => setPackages((d.packages || []).filter((p) => p.active !== false)))
+      .then((d) => {
+        const pkgs = (d.packages || []).filter((p) => p.active !== false);
+        setPackages(pkgs);
+        if (pkgs.length > 0 && !selectedPkg) {
+          setSelectedPkg(pkgs[0]);
+        }
+      })
       .catch(() => {});
   }, []);
 
   function applyTheme(th) {
     setTheme(th);
     localStorage.setItem('kafaah_theme', th);
-    document.documentElement.dataset.theme = th === 'dark' ? 'dark' : 'light';
+    if (th === 'auto') {
+      const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
+    } else {
+      document.documentElement.dataset.theme = th === 'dark' ? 'dark' : 'light';
+    }
+    flash(lang === 'en' ? 'Theme updated ✓' : 'تم تحديث المظهر ✓');
   }
 
-  function flash(msg, ms = 2000) {
+  function handleLanguageChange(newLang) {
+    if (newLang === lang) return;
+    setLang(newLang);
+    flash(newLang === 'en' ? 'Language switched to English ✓' : 'تم تغيير اللغة إلى العربية ✓');
+  }
+
+  function flash(msg, ms = 2500) {
     setSavedMsg(msg);
     setTimeout(() => setSavedMsg(''), ms);
   }
 
   function saveIdentity() {
     setProfile({ name: name.trim(), email: email.trim() });
+    if (email.trim()) {
+      fetch('/api/clients', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'touch',
+          email: email.trim(),
+          name: name.trim(),
+          sectorId: profile.sectorId,
+          specId: profile.specId
+        }),
+      }).catch(() => {});
+    }
     flash(t('settings.savedIdentity'));
-  }
-
-  function saveDomain() {
-    setProfile({ sectorId: sid, specId: spid });
-    flash(t('settings.savedDomain'), 2200);
   }
 
   function doExport() {
@@ -59,7 +92,9 @@ export default function SettingsPage() {
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = `kafaah-progress-${Date.now()}.json`; a.click();
+    a.href = url;
+    a.download = `kafaah-progress-${Date.now()}.json`;
+    a.click();
     URL.revokeObjectURL(url);
   }
 
@@ -68,136 +103,565 @@ export default function SettingsPage() {
     if (!file) return;
     const r = new FileReader();
     r.onload = () => {
-      try { importProgress(JSON.parse(r.result)); flash(t('settings.imported'), 2500); }
-      catch { flash(t('settings.invalidFile'), 2500); }
+      try {
+        importProgress(JSON.parse(r.result));
+        flash(t('settings.imported'), 2500);
+      } catch {
+        flash(t('settings.invalidFile'), 2500);
+      }
     };
     r.readAsText(file);
   }
 
-  function subscribe(pkg) {
-    const d = new Date();
-    d.setMonth(d.getMonth() + 1);
-    setProfile({ subscription: { plan: pkg.id, planName: pkg.name, startedAt: new Date().toISOString(), expiresAt: d.toISOString() } });
+  // تجديد / تفعيل الاشتراك مع ضمان الحفاظ التام على مستوى المستخدم وتقدمه
+  function handleRenewSubscription(pkgToSubscribe) {
+    const targetPkg = pkgToSubscribe || selectedPkg || packages[0];
+    if (!targetPkg) return;
+
+    setIsRenewing(true);
+
+    const now = new Date();
+    const currentExpires = profile.subscription?.expiresAt ? new Date(profile.subscription.expiresAt) : null;
+    
+    // إذا كان الاشتراك سارياً ومتبقي فيه أيام، نمدد من تاريخ الانتهاء الحالي، وإن كان منتهياً أو جديداً نبدأ من الآن
+    const baseDate = (currentExpires && currentExpires > now) ? new Date(currentExpires) : new Date(now);
+    baseDate.setMonth(baseDate.getMonth() + 1);
+
+    const updatedSub = {
+      plan: targetPkg.id,
+      planName: (lang === 'en' && targetPkg.nameEn) ? targetPkg.nameEn : targetPkg.name,
+      startedAt: profile.subscription?.startedAt || now.toISOString(),
+      expiresAt: baseDate.toISOString(),
+      renewedAt: now.toISOString(),
+      price: targetPkg.price,
+      currency: targetPkg.currency || 'USD',
+    };
+
+    // نحدث فقط بيانات الاشتراك في البروفايل، ولا نلمس بيانات التدريب نهائياً
+    setProfile({ subscription: updatedSub });
+
+    // مزامنة مع الخادم
     if (profile.email) {
       fetch('/api/subscriptions', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: profile.email, name: profile.name, packageId: pkg.id }),
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: profile.email,
+          name: profile.name,
+          packageId: targetPkg.id
+        }),
       }).catch(() => {});
     }
-    flash(t('settings.savedIdentity'));
+
+    setTimeout(() => {
+      setIsRenewing(false);
+      setShowRenewModal(false);
+      flash(lang === 'en' 
+        ? 'Subscription renewed successfully! All your progress and answers are fully preserved.'
+        : 'تم تجديد الاشتراك بنجاح! جميع بياناتك ومستواك التدريبي محفوظ بنسبة 100% ✓', 3500);
+    }, 600);
   }
 
   const sub = profile.subscription;
+  const now = new Date();
+  const expiresDate = sub?.expiresAt ? new Date(sub.expiresAt) : null;
+  const isExpired = expiresDate ? expiresDate.getTime() < now.getTime() : false;
+  const daysLeft = expiresDate ? Math.max(0, Math.ceil((expiresDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))) : 0;
+
+  // نسبة الفترة الزمنية المتبقية
+  const periodProgress = useMemo(() => {
+    if (!expiresDate) return 0;
+    const started = sub?.startedAt ? new Date(sub.startedAt) : new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+    const totalMs = expiresDate.getTime() - started.getTime();
+    if (totalMs <= 0) return 0;
+    const remainingMs = expiresDate.getTime() - now.getTime();
+    return Math.max(0, Math.min(100, Math.round((remainingMs / totalMs) * 100)));
+  }, [expiresDate, sub, now]);
 
   return (
-    <div className="stack" style={{ gap: 18, maxWidth: 720 }}>
-      <h1 className="page-title">{t('nav.settings')}</h1>
-
-      {savedMsg && <div className="card badge-success" style={{ fontWeight: 800 }}>{savedMsg}</div>}
-
-      <div className="card">
-        <h3 style={{ fontSize: 15.5, marginBottom: 12 }}>{t('settings.account')}</h3>
-        <div className="stack" style={{ gap: 12 }}>
-          <div className="field"><label className="label">{t('settings.name')}</label><input className="input" value={name} onChange={(e) => setName(e.target.value)} /></div>
-          <div className="field"><label className="label">{t('settings.email')}</label><input className="input" dir="ltr" value={email} onChange={(e) => setEmail(e.target.value)} /></div>
-          <button className="btn btn-primary" onClick={saveIdentity}><Save size={15} /> {t('common.save')}</button>
+    <div className="stack" style={{ gap: 20, maxWidth: 740, marginInline: 'auto' }}>
+      <div className="row-between wrap" style={{ gap: 10 }}>
+        <div>
+          <h1 className="page-title">{t('nav.settings')}</h1>
+          <p className="text-muted" style={{ fontSize: 13.5, marginTop: 4 }}>
+            {lang === 'en'
+              ? 'Manage your account, preferences, appearance, and subscription.'
+              : 'إدارة حسابك، وتفضيلات اللغة والمظهر، وبيانات اشتراكك.'}
+          </p>
         </div>
       </div>
 
-      <div className="card">
-        <h3 style={{ fontSize: 15.5, marginBottom: 12 }}>{t('settings.domain')}</h3>
-        <div className="stack" style={{ gap: 12 }}>
-          <div className="field">
-            <label className="label">{t('settings.section')}</label>
-            <select className="input" value={sid} onChange={(e) => { setSid(e.target.value); setSpid(''); }}>
-              <option value="">{t('settings.chooseSection')}</option>
-              {(sectors || []).map((s) => <option key={s.id} value={s.id}>{sectorName(s)}</option>)}
-            </select>
-          </div>
-          <div className="field">
-            <label className="label">{t('settings.spec')}</label>
-            <select className="input" value={spid} onChange={(e) => setSpid(e.target.value)} disabled={!sid}>
-              <option value="">{t('settings.chooseSpec')}</option>
-              {((sectors || []).find((s) => s.id === sid)?.specializations || []).map((sp) => (
-                <option key={sp.id} value={sp.id}>{specName(sp)}</option>
-              ))}
-            </select>
-          </div>
-          <div className="row" style={{ gap: 10, flexWrap: 'wrap' }}>
-            <button className="btn btn-primary" disabled={!sid || !spid} onClick={saveDomain}>
-              <Save size={15} /> {t('settings.saveDomain')}
-            </button>
-            <Link href="/onboarding" className="btn btn-ghost"><Repeat size={14} /> {t('settings.viaWizard')}</Link>
-          </div>
-          <div className="row-between card soft-sector" style={{ padding: 12 }}>
+      {savedMsg && (
+        <div className="card badge-success fade-up" style={{ fontWeight: 800, padding: '12px 16px', display: 'flex', alignItems: 'center', gap: 8 }}>
+          <CheckCircle2 size={18} />
+          <span>{savedMsg}</span>
+        </div>
+      )}
+
+      {/* ── بطاقة الاشتراك (مطورة بالكامل مع الأيام المتبقية وإعادة الاشتراك) ── */}
+      <div className="card" style={{ border: isExpired ? '1px solid var(--danger)' : '1px solid var(--border)', background: 'var(--surface)' }}>
+        <div className="row-between wrap" style={{ marginBottom: 14, gap: 10 }}>
+          <div className="row" style={{ gap: 8 }}>
+            <div style={{ width: 36, height: 36, borderRadius: 10, background: 'var(--gold-soft)', color: 'var(--gold-dark)', display: 'grid', placeItems: 'center' }}>
+              <ShieldCheck size={20} />
+            </div>
             <div>
-              <div style={{ fontWeight: 800 }}>{sectorName(sector) || '—'}</div>
-              <div className="text-muted" style={{ fontSize: 13 }}>{specName(spec)} · {localize(spec?.authority)}</div>
+              <h3 style={{ fontSize: 16, fontWeight: 900 }}>{t('settings.subscription')}</h3>
+              <p className="text-muted" style={{ fontSize: 12 }}>
+                {lang === 'en' ? 'Your active plan & license status' : 'بيانات خطة اشتراكك وصلاحية الحساب'}
+              </p>
+            </div>
+          </div>
+          <span className={`badge ${isExpired ? 'badge-danger' : 'badge-success'}`} style={{ padding: '6px 12px', fontSize: 12.5, fontWeight: 800 }}>
+            {isExpired
+              ? (lang === 'en' ? 'Expired' : 'منتهي')
+              : (lang === 'en' ? 'Active' : 'نشط')}
+          </span>
+        </div>
+
+        {/* ملخص الاشتراك الحالي */}
+        <div className="card soft-sector" style={{ padding: 16, borderRadius: 14, marginBottom: 14 }}>
+          <div className="row-between wrap" style={{ gap: 12 }}>
+            <div>
+              <div className="row" style={{ gap: 8, alignItems: 'center' }}>
+                <Sparkles size={16} style={{ color: 'var(--gold-dark)' }} />
+                <span style={{ fontWeight: 900, fontSize: 16 }}>
+                  {sub?.planName || (lang === 'en' ? 'Kafaah Comprehensive Plan' : 'باقة كفاءة الشاملة')}
+                </span>
+                <span className="badge badge-gold" style={{ fontSize: 11 }}>
+                  {lang === 'en' ? '50% OFF Applied' : 'خصم 50% مطبّق'}
+                </span>
+              </div>
+              <div className="text-muted" style={{ fontSize: 13, marginTop: 4 }}>
+                {expiresDate ? (
+                  <span className="row" style={{ gap: 6, display: 'inline-flex', alignItems: 'center' }}>
+                    <Calendar size={14} />
+                    <span>
+                      {isExpired
+                        ? (lang === 'en' ? `Expired on ${expiresDate.toLocaleDateString(locale)}` : `انتهى في ${expiresDate.toLocaleDateString(locale)}`)
+                        : (lang === 'en' ? `Expires on ${expiresDate.toLocaleDateString(locale)}` : `ينتهي في ${expiresDate.toLocaleDateString(locale)}`)}
+                    </span>
+                  </span>
+                ) : (
+                  <span>{lang === 'en' ? 'No expiration set' : 'لم يتم تحديد تاريخ انتهاء'}</span>
+                )}
+              </div>
+            </div>
+
+            {/* الأيام المتبقية */}
+            <div style={{ textAlign: lang === 'en' ? 'left' : 'right' }}>
+              <div className="row" style={{ gap: 6, alignItems: 'center', justifyContent: 'flex-end' }}>
+                <Clock size={16} style={{ color: isExpired ? 'var(--danger)' : 'var(--sector)' }} />
+                <span style={{ fontSize: 17, fontWeight: 900, color: isExpired ? 'var(--danger)' : 'var(--sector)' }}>
+                  {isExpired
+                    ? (lang === 'en' ? 'Expired' : 'انتهى الاشتراك')
+                    : (lang === 'en' ? `${daysLeft} Days Left` : `متبقي ${daysLeft} يومًا`)}
+                </span>
+              </div>
+              <div className="text-muted" style={{ fontSize: 11.5, marginTop: 2 }}>
+                {isExpired
+                  ? (lang === 'en' ? 'Renew now to restore full access' : 'جدّد الآن لاستعادة الوصول الكامل')
+                  : (lang === 'en' ? 'Full access to all question banks & mocks' : 'وصول كامل لجميع بنوك الأسئلة والمحاكاة')}
+              </div>
+            </div>
+          </div>
+
+          {/* شريط التقدم الزمني للاشتراك */}
+          {!isExpired && expiresDate && (
+            <div style={{ marginTop: 14 }}>
+              <div className="row-between" style={{ fontSize: 11.5, color: 'var(--text-muted)', marginBottom: 4 }}>
+                <span>{lang === 'en' ? 'Remaining time in current cycle' : 'المدة المتبقية في الدورة الحالية'}</span>
+                <span style={{ fontWeight: 800 }}>{periodProgress}%</span>
+              </div>
+              <div className="progress" style={{ height: 8, borderRadius: 99, background: 'var(--surface-3)' }}>
+                <span style={{ width: `${periodProgress}%`, background: periodProgress > 25 ? 'var(--sector)' : 'var(--warning, #f59e0b)' }} />
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* ضمان حفظ المستوى وعدم الحذف */}
+        <div style={{ background: 'color-mix(in srgb, var(--sector) 8%, var(--surface))', border: '1px solid color-mix(in srgb, var(--sector) 25%, transparent)', borderRadius: 12, padding: '12px 14px', marginBottom: 14 }}>
+          <div className="row" style={{ gap: 8, alignItems: 'flex-start' }}>
+            <CheckCircle2 size={18} style={{ color: 'var(--sector)', flexShrink: 0, marginTop: 2 }} />
+            <div style={{ fontSize: 12.5, lineHeight: 1.6, color: 'var(--text-secondary)' }}>
+              <strong>{lang === 'en' ? 'Progress Protection Guarantee: ' : 'ضمان حفظ المستوى: '}</strong>
+              {lang === 'en'
+                ? 'Renewing or extending your subscription will never reset your progress. All your answered questions, mistake logs, saved items, and performance stats are permanently preserved.'
+                : 'تجديد أو تمديد الاشتراك يمدد فترة الصلاحية فقط، وجميع إجاباتك، ومحاكاتك السابقة، وبنك أخطائك، ومستواك التدريبي محفوظ بنسبة 100% ولن يتأثر إطلاقاً.'}
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="card">
-        <h3 style={{ fontSize: 15.5, marginBottom: 12 }}>{t('settings.appearance')}</h3>
-        <div className="row" style={{ gap: 10 }}>
-          <button className={`btn ${theme === 'light' ? 'btn-primary' : 'btn-ghost'}`} onClick={() => applyTheme('light')}><Sun size={15} /> {t('settings.light')}</button>
-          <button className={`btn ${theme === 'dark' ? 'btn-primary' : 'btn-ghost'}`} onClick={() => applyTheme('dark')}><Moon size={15} /> {t('settings.dark')}</button>
-        </div>
-      </div>
-
-      <div className="card">
-        <h3 style={{ fontSize: 15.5, marginBottom: 12 }} className="row"><ShieldCheck size={17} style={{ color: 'var(--sector)' }} /> {t('settings.subscription')}</h3>
-        <div className="row-between" style={{ marginBottom: 12 }}>
-          <div>
-            <div style={{ fontWeight: 800 }}>{sub?.planName || (sub?.plan && sub.plan !== 'active' ? sub.plan : t('settings.activeSub'))}</div>
-            {sub?.expiresAt && <div className="text-muted" style={{ fontSize: 13 }}>{t('settings.expires', { date: new Date(sub.expiresAt).toLocaleDateString(locale) })}</div>}
+        {/* أزرار الإجراءات الخاصة بالاشتراك */}
+        <div className="row-between wrap" style={{ gap: 10 }}>
+          <div className="row" style={{ gap: 6 }}>
+            <span style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-muted)' }}>
+              {lang === 'en' ? 'Special Rate:' : 'السعر الترويجي:'}
+            </span>
+            <span style={{ textDecoration: 'line-through', color: 'var(--text-dim)', fontSize: 13 }}>$10</span>
+            <span style={{ fontWeight: 900, color: 'var(--sector)', fontSize: 15 }}>5 USD / {lang === 'en' ? 'month' : 'شهر'}</span>
           </div>
-          <span className="badge badge-success">{t('settings.active')}</span>
+
+          <button
+            className={`btn ${isExpired ? 'btn-danger' : 'btn-primary'}`}
+            onClick={() => setShowRenewModal(true)}
+            style={{ fontWeight: 800 }}
+          >
+            <RefreshCw size={15} />
+            {isExpired
+              ? (lang === 'en' ? 'Renew Subscription Now ($5)' : 'إعادة الاشتراك والتجديد (5$)')
+              : (lang === 'en' ? 'Extend Subscription ($5)' : 'تمديد الاشتراك الحالي (5$)')}
+          </button>
+        </div>
+      </div>
+
+      {/* ── قسم اللغة والاتجاه (Language & Direction) ── */}
+      <div className="card">
+        <div className="row-between wrap" style={{ marginBottom: 12, gap: 8 }}>
+          <div className="row" style={{ gap: 8 }}>
+            <Languages size={18} style={{ color: 'var(--sector)' }} />
+            <h3 style={{ fontSize: 15.5, fontWeight: 800 }}>
+              {lang === 'en' ? 'Language & Direction' : 'اللغة واتجاه العرض'}
+            </h3>
+          </div>
+          <span className="badge badge-muted" style={{ fontSize: 11 }}>
+            {lang === 'en' ? 'Instant Switch' : 'تطبيق فوري'}
+          </span>
         </div>
 
-        {packages.length > 0 && (
-          <div className="stack" style={{ gap: 10 }}>
-            {packages.map((p) => (
-              <div key={p.id} className="card soft-sector row-between" style={{ padding: 14, gap: 12, flexWrap: 'wrap' }}>
-                <div style={{ minWidth: 180 }}>
-                  <div className="row" style={{ gap: 6 }}>
-                    <Sparkles size={15} style={{ color: 'var(--sector)' }} />
-                    <span style={{ fontWeight: 800 }}>{(lang === 'en' && p.nameEn) ? p.nameEn : p.name}</span>
-                  </div>
-                  <div className="text-muted" style={{ fontSize: 12.5 }}>
-                    {(p.price ?? 0)} {p.currency || 'USD'} {t('pkg.perMonth')}
-                    {(() => {
-                      const feats = (lang === 'en' && p.featuresEn?.length) ? p.featuresEn : (p.features || []);
-                      return feats.length ? ` · ${feats.join(' · ')}` : '';
-                    })()}
-                  </div>
-                </div>
-                <button className="btn btn-primary btn-sm" onClick={() => subscribe(p)}>{t('pkg.subscribe')}</button>
+        <p className="text-muted" style={{ fontSize: 13, marginBottom: 14 }}>
+          {lang === 'en'
+            ? 'Choose your interface language. The layout direction adjusts automatically (RTL for Arabic, LTR for English).'
+            : 'اختر لغة واجهة التطبيق. يتم ضبط اتجاه النصوص والقوائم تلقائياً (من اليمين لليسار للعربية، ومن اليسار لليمين للإنجليزية).'}
+        </p>
+
+        <div className="grid grid-2" style={{ gap: 12 }}>
+          <button
+            type="button"
+            className={`card ${lang === 'ar' ? 'soft-sector' : ''}`}
+            onClick={() => handleLanguageChange('ar')}
+            style={{
+              padding: '14px 16px',
+              border: lang === 'ar' ? '2px solid var(--sector)' : '1px solid var(--border)',
+              cursor: 'pointer',
+              textAlign: 'start',
+              background: lang === 'ar' ? 'color-mix(in srgb, var(--sector) 10%, var(--surface))' : 'var(--surface)',
+              borderRadius: 12,
+              transition: 'all 0.2s ease',
+            }}
+          >
+            <div className="row-between">
+              <div className="row" style={{ gap: 8 }}>
+                <span style={{ fontSize: 18 }}>🇸🇦</span>
+                <span style={{ fontWeight: 900, fontSize: 14.5 }}>العربية (Arabic)</span>
               </div>
-            ))}
-            <p className="text-dim" style={{ fontSize: 12 }}>{t('pkg.comingSoon')}</p>
-          </div>
-        )}
+              {lang === 'ar' && <CheckCircle2 size={18} style={{ color: 'var(--sector)' }} />}
+            </div>
+            <p className="text-muted" style={{ fontSize: 12, marginTop: 4 }}>
+              واجهة كاملة باللغة العربية مع اتجاه من اليمين إلى اليسار (RTL)
+            </p>
+          </button>
+
+          <button
+            type="button"
+            className={`card ${lang === 'en' ? 'soft-sector' : ''}`}
+            onClick={() => handleLanguageChange('en')}
+            style={{
+              padding: '14px 16px',
+              border: lang === 'en' ? '2px solid var(--sector)' : '1px solid var(--border)',
+              cursor: 'pointer',
+              textAlign: 'start',
+              background: lang === 'en' ? 'color-mix(in srgb, var(--sector) 10%, var(--surface))' : 'var(--surface)',
+              borderRadius: 12,
+              transition: 'all 0.2s ease',
+            }}
+          >
+            <div className="row-between">
+              <div className="row" style={{ gap: 8 }}>
+                <span style={{ fontSize: 18 }}>🇬🇧</span>
+                <span style={{ fontWeight: 900, fontSize: 14.5 }}>English</span>
+              </div>
+              {lang === 'en' && <CheckCircle2 size={18} style={{ color: 'var(--sector)' }} />}
+            </div>
+            <p className="text-muted" style={{ fontSize: 12, marginTop: 4 }}>
+              English interface with Left-to-Right (LTR) layout
+            </p>
+          </button>
+        </div>
       </div>
 
+      {/* ── قسم المظهر والسمة (Appearance & Theme) ── */}
       <div className="card">
-        <h3 style={{ fontSize: 15.5, marginBottom: 12 }}>{t('settings.myData')}</h3>
+        <div className="row-between wrap" style={{ marginBottom: 12, gap: 8 }}>
+          <div className="row" style={{ gap: 8 }}>
+            <Sun size={18} style={{ color: 'var(--sector)' }} />
+            <h3 style={{ fontSize: 15.5, fontWeight: 800 }}>{t('settings.appearance')}</h3>
+          </div>
+          <span className="badge badge-muted" style={{ fontSize: 11 }}>
+            {lang === 'en' ? 'Theme Mode' : 'وضع السمة'}
+          </span>
+        </div>
+
+        <p className="text-muted" style={{ fontSize: 13, marginBottom: 14 }}>
+          {lang === 'en'
+            ? 'Select your preferred visual theme for reading questions and taking mock exams comfortably.'
+            : 'اختر المظهر المريح لعينيك أثناء قراءة الأسئلة وحل الامتحانات التجريبية.'}
+        </p>
+
+        <div className="grid grid-3" style={{ gap: 10 }}>
+          <button
+            type="button"
+            className={`btn ${theme === 'light' ? 'btn-primary' : 'btn-ghost'}`}
+            onClick={() => applyTheme('light')}
+            style={{ padding: '12px 14px', borderRadius: 12, justifyContent: 'center' }}
+          >
+            <Sun size={16} />
+            <span>{t('settings.light')}</span>
+          </button>
+
+          <button
+            type="button"
+            className={`btn ${theme === 'dark' ? 'btn-primary' : 'btn-ghost'}`}
+            onClick={() => applyTheme('dark')}
+            style={{ padding: '12px 14px', borderRadius: 12, justifyContent: 'center' }}
+          >
+            <Moon size={16} />
+            <span>{t('settings.dark')}</span>
+          </button>
+
+          <button
+            type="button"
+            className={`btn ${theme === 'auto' ? 'btn-primary' : 'btn-ghost'}`}
+            onClick={() => applyTheme('auto')}
+            style={{ padding: '12px 14px', borderRadius: 12, justifyContent: 'center' }}
+          >
+            <Laptop size={16} />
+            <span>{lang === 'en' ? 'System' : 'تلقائي'}</span>
+          </button>
+        </div>
+      </div>
+
+      {/* ── الحساب والهوية ── */}
+      <div className="card">
+        <h3 style={{ fontSize: 15.5, marginBottom: 12, fontWeight: 800 }}>{t('settings.account')}</h3>
+        <div className="stack" style={{ gap: 12 }}>
+          <div className="field">
+            <label className="label">{t('settings.name')}</label>
+            <input className="input" value={name} onChange={(e) => setName(e.target.value)} />
+          </div>
+          <div className="field">
+            <label className="label">{t('settings.email')}</label>
+            <input className="input" dir="ltr" value={email} onChange={(e) => setEmail(e.target.value)} />
+          </div>
+          <button className="btn btn-primary" onClick={saveIdentity} style={{ width: 'fit-content' }}>
+            <Save size={15} /> {t('common.save')}
+          </button>
+        </div>
+      </div>
+
+      {/* ── المجال والتخصص المعتمد (ثابت ومحمي) ── */}
+      <div className="card">
+        <div className="row-between wrap" style={{ marginBottom: 12, gap: 8 }}>
+          <div className="row" style={{ gap: 8 }}>
+            <Building2 size={18} style={{ color: 'var(--sector)' }} />
+            <h3 style={{ fontSize: 15.5, fontWeight: 800 }}>
+              {lang === 'en' ? 'Accredited Specialization' : 'المجال والتخصص المعتمد'}
+            </h3>
+          </div>
+          <span className="badge badge-brand" style={{ fontSize: 11 }}>
+            {lang === 'en' ? 'Certified & Fixed' : 'معتمد وثابت'}
+          </span>
+        </div>
+
+        <div className="card soft-sector" style={{ padding: 16, borderRadius: 14 }}>
+          <div className="row-between wrap" style={{ gap: 14 }}>
+            <div>
+              <div style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 700 }}>
+                {lang === 'en' ? 'Sector & Discipline' : 'القسم والمجال المهني'}
+              </div>
+              <div style={{ fontSize: 16, fontWeight: 900, marginTop: 2 }}>
+                {sectorName(sector) || '—'}
+              </div>
+            </div>
+
+            <div>
+              <div style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 700 }}>
+                {lang === 'en' ? 'Exact Specialty' : 'التخصص الدقيق'}
+              </div>
+              <div style={{ fontSize: 16, fontWeight: 900, marginTop: 2, color: 'var(--sector)' }}>
+                {specName(spec) || '—'}
+              </div>
+            </div>
+
+            <div>
+              <div style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 700 }}>
+                {lang === 'en' ? 'Exam Blueprint' : 'نموذج التدريب والامتحان'}
+              </div>
+              <div style={{ fontSize: 14, fontWeight: 800, marginTop: 2 }}>
+                {spec?.blueprint ? `${spec.blueprint.questions} سؤال · ${spec.blueprint.minutes} دقيقة` : (lang === 'en' ? 'Comprehensive Banks' : 'شامل لجميع بنوك التخصص')}
+              </div>
+            </div>
+          </div>
+
+          <div style={{ marginTop: 14, paddingTop: 12, borderTop: '1px solid color-mix(in srgb, var(--sector) 20%, transparent)', fontSize: 12, color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: 6 }}>
+            <span>🔒</span>
+            <span>
+              {lang === 'en'
+                ? 'Your professional specialization is linked to your question banks and training track, and is fixed for your account.'
+                : 'التخصص المهني مرتبط بنماذج الأسئلة وبنوك التدريب الخاصة بك، وهو ثابت للحساب لضمان دقة التقييم والمحاكاة.'}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* ── إدارة البيانات والنسخ الاحتياطي ── */}
+      <div className="card">
+        <h3 style={{ fontSize: 15.5, marginBottom: 12, fontWeight: 800 }}>{t('settings.myData')}</h3>
+        <p className="text-muted" style={{ fontSize: 13, marginBottom: 12 }}>
+          {lang === 'en'
+            ? 'Export your questions progress, answers history, and mock results to a local file, or restore from a backup.'
+            : 'تصدير سجلك التدريبي وأجوبتك ونتائج المحاكاة في ملف محلي، أو استعادة سجلك في أي وقت.'}
+        </p>
         <div className="row wrap" style={{ gap: 10 }}>
-          <button className="btn btn-ghost btn-sm" onClick={doExport}><Download size={14} /> {t('settings.export')}</button>
+          <button className="btn btn-ghost btn-sm" onClick={doExport}>
+            <Download size={14} /> {t('settings.export')}
+          </button>
           <label className="btn btn-ghost btn-sm" style={{ cursor: 'pointer' }}>
             <Upload size={14} /> {t('settings.import')}
             <input type="file" accept="application/json" hidden onChange={doImport} />
           </label>
-          <button className="btn btn-danger btn-sm" onClick={() => { if (confirm(t('settings.resetConfirm'))) { resetProgress(); flash(t('settings.resetDone')); } }}>
+          <button
+            className="btn btn-danger btn-sm"
+            onClick={() => {
+              if (confirm(t('settings.resetConfirm'))) {
+                resetProgress();
+                flash(t('settings.resetDone'));
+              }
+            }}
+          >
             <Trash2 size={14} /> {t('settings.reset')}
           </button>
         </div>
       </div>
 
-      <button className="btn btn-danger btn-block" onClick={() => { logout(); router.replace('/'); }}>
+      <button className="btn btn-danger btn-block" onClick={() => { logout(); router.replace('/'); }} style={{ marginTop: 8 }}>
         <LogOut size={16} /> {t('nav.logout')}
       </button>
+
+      {/* ── نافذة الدفع والتجديد المنبثقة (Renewal Modal) ── */}
+      {showRenewModal && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 9999,
+            background: 'rgba(0, 0, 0, 0.7)',
+            backdropFilter: 'blur(5px)',
+            display: 'grid',
+            placeItems: 'center',
+            padding: 16,
+          }}
+          onClick={() => setShowRenewModal(false)}
+        >
+          <div
+            className="card fade-up"
+            style={{
+              maxWidth: 500,
+              width: '100%',
+              borderRadius: 20,
+              padding: 24,
+              background: 'var(--surface)',
+              border: '1px solid var(--border)',
+              boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="row-between" style={{ marginBottom: 16 }}>
+              <div className="row" style={{ gap: 8 }}>
+                <Sparkles size={20} style={{ color: 'var(--sector)' }} />
+                <h3 style={{ fontSize: 18, fontWeight: 900 }}>
+                  {lang === 'en' ? 'Renew Your Kafaah Subscription' : 'تجديد باقة كفاءة الشاملة'}
+                </h3>
+              </div>
+              <button className="icon-btn" onClick={() => setShowRenewModal(false)} aria-label="Close">
+                <X size={18} />
+              </button>
+            </div>
+
+            <div className="card soft-sector" style={{ padding: 16, borderRadius: 14, marginBottom: 16 }}>
+              <div className="row-between">
+                <div>
+                  <div style={{ fontWeight: 900, fontSize: 16 }}>
+                    {selectedPkg?.name || 'باقة كفاءة الشاملة'}
+                  </div>
+                  <div className="text-muted" style={{ fontSize: 12.5, marginTop: 4 }}>
+                    {lang === 'en' ? 'Monthly auto-renewal · Cancel anytime' : 'اشتراك شهري شامل · وصول غير محدود لجميع البنوك'}
+                  </div>
+                </div>
+                <div style={{ textAlign: 'end' }}>
+                  <div style={{ textDecoration: 'line-through', color: 'var(--text-dim)', fontSize: 13 }}>$10</div>
+                  <div style={{ fontSize: 20, fontWeight: 900, color: 'var(--sector)' }}>
+                    {selectedPkg?.price || 5} {selectedPkg?.currency || 'USD'}
+                  </div>
+                  <span className="badge badge-gold" style={{ fontSize: 10 }}>خصم 50%</span>
+                </div>
+              </div>
+            </div>
+
+            {/* إشعار بوابات الدفع */}
+            <div style={{ marginBottom: 16 }}>
+              <label className="label" style={{ fontSize: 12.5, marginBottom: 8, display: 'block' }}>
+                {lang === 'en' ? 'Accepted Payment Methods' : 'طرق الدفع المدعومة'}
+              </label>
+              <div className="row wrap" style={{ gap: 8, padding: '10px 14px', background: 'var(--surface-2)', borderRadius: 10 }}>
+                <span className="badge badge-muted" style={{ fontWeight: 800 }}>💳 مدى Mada</span>
+                <span className="badge badge-muted" style={{ fontWeight: 800 }}>💳 Visa / Mastercard</span>
+                <span className="badge badge-muted" style={{ fontWeight: 800 }}> Apple Pay</span>
+              </div>
+              <p className="text-muted" style={{ fontSize: 11.5, marginTop: 6, lineHeight: 1.5 }}>
+                {lang === 'en'
+                  ? 'Payment gateway integration is currently in rollout. Clicking confirm will instantly activate your 30-day extension.'
+                  : 'بوابات الدفع الإلكتروني قيد التفعيل النهائي — النقر على تأكيد يمنحك تمديداً فورياً لمدة ۳۰ يوماً مع الحفاظ الكامل على كافة بياناتك.'}
+              </p>
+            </div>
+
+            {/* تأكيد حماية البيانات */}
+            <div style={{ background: 'color-mix(in srgb, var(--sector) 10%, var(--surface))', padding: '10px 12px', borderRadius: 10, marginBottom: 18, fontSize: 12, color: 'var(--text-secondary)' }}>
+              🛡️ <strong>{lang === 'en' ? 'Note: ' : 'تأكيد أمان: '}</strong>
+              {lang === 'en'
+                ? 'Your learning level, exam results, and mistake logs will never be reset.'
+                : 'مستواك التدريبي، أخطاؤك، ونتائج امتحاناتك محفوظة بالكامل ولن تُحذف إطلاقاً.'}
+            </div>
+
+            <div className="row" style={{ gap: 10 }}>
+              <button
+                className="btn btn-ghost"
+                style={{ flex: 1 }}
+                onClick={() => setShowRenewModal(false)}
+                disabled={isRenewing}
+              >
+                {lang === 'en' ? 'Cancel' : 'إلغاء'}
+              </button>
+              <button
+                className="btn btn-primary"
+                style={{ flex: 2, fontWeight: 900 }}
+                onClick={() => handleRenewSubscription()}
+                disabled={isRenewing}
+              >
+                {isRenewing ? (
+                  lang === 'en' ? 'Renewing...' : 'جاري التجديد...'
+                ) : (
+                  <>
+                    <Check size={16} />
+                    {lang === 'en' ? 'Confirm & Extend 30 Days' : 'تأكيد التجديد وتمديد ۳۰ يوماً'}
+                  </>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

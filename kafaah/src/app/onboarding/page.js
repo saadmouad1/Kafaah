@@ -1,5 +1,5 @@
 'use client';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import {
@@ -13,8 +13,15 @@ const ICONS = { health: HeartPulse, engineering: HardHat, law: Scale, finance: L
 
 export default function OnboardingPage() {
   const router = useRouter();
-  const { profile, setProfile, sectors: ctxSectors, t, sectorName, specName, sectorTagline, localize } = useKafaah();
+  const { profile, setProfile, sectors: ctxSectors, t, lang, sectorName, specName, sectorTagline, localize } = useKafaah();
   const sectors = ctxSectors || SECTORS;
+
+  // إذا كان المستخدم قد اختار تخصصه مسبقاً، يُمنع من إعادة فتح صفحة التهيئة ويُوجّه مباشرة للوحة التحكم
+  useEffect(() => {
+    if (profile?.specId && profile?.sectorId) {
+      router.replace('/dashboard');
+    }
+  }, [profile?.specId, profile?.sectorId, router]);
 
   const [step, setStep] = useState(0);
   const [sectorId, setSectorId] = useState(profile.sectorId || null);
@@ -193,27 +200,50 @@ export default function OnboardingPage() {
             </div>
           </div>
 
-          {plan ? (
-            <div className="card soft-sector">
-              <div className="row" style={{ gap: 8, marginBottom: 8 }}><Sparkles size={17} style={{ color: 'var(--gold-dark)' }} /><h3 style={{ fontSize: 16 }}>{t('onb.planReady')}</h3></div>
+          {plan && (
+            <div className="card soft-sector fade-up">
+              <div className="row" style={{ gap: 8, marginBottom: 8 }}>
+                <Sparkles size={17} style={{ color: 'var(--gold-dark)' }} />
+                <h3 style={{ fontSize: 16 }}>{t('onb.planReady')}</h3>
+              </div>
               <div className="row" style={{ gap: 16, marginBottom: 8 }}>
                 <div><div className="stat-label">{t('onb.readiness')}</div><div className="stat-num" style={{ color: 'var(--sector)' }}>{plan.readiness}%</div></div>
                 <div><div className="stat-label">{t('onb.dailyTarget')}</div><div className="stat-num">{plan.dailyTarget}</div></div>
               </div>
               {plan.summary && <p style={{ fontWeight: 600, color: 'var(--text-secondary)', fontSize: 14 }}>{plan.summary}</p>}
             </div>
-          ) : (
-            <button className="btn btn-ghost btn-block" onClick={generatePlan} disabled={busy}>
-              {busy ? <Loader2 size={16} className="spin" /> : <Sparkles size={16} />} {t('onb.generatePlan')}
-            </button>
           )}
 
           <div className="row" style={{ gap: 10 }}>
-            <button className="btn btn-ghost" onClick={() => setStep(1)}><ArrowRight size={16} /> {t('onb.back')}</button>
-            <button className="btn btn-primary btn-lg flex-1" onClick={finish} disabled={busy}>
-              {busy ? <Loader2 size={17} className="spin" /> : <Check size={17} />} {t('onb.startTraining')}
+            <button className="btn btn-ghost" onClick={() => setStep(1)} disabled={busy}>
+              <ArrowRight size={16} /> {t('onb.back')}
+            </button>
+            <button
+              className="btn btn-primary btn-lg flex-1"
+              onClick={finish}
+              disabled={busy}
+              style={{ fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}
+            >
+              {busy ? (
+                <>
+                  <Loader2 size={18} className="spin" />
+                  <span>{lang === 'en' ? 'Generating smart plan & preparing dashboard...' : 'جاري بناء خطتك الذكية وإعداد لوحة التحكم...'}</span>
+                </>
+              ) : (
+                <>
+                  <Sparkles size={18} />
+                  <span>{plan ? t('onb.startTraining') : (lang === 'en' ? 'Generate Smart Plan & Start Training' : 'توليد الخطة الذكية وبدء التدريب')}</span>
+                  <ArrowLeft size={18} />
+                </>
+              )}
             </button>
           </div>
+
+          <p className="text-center text-muted" style={{ fontSize: 12.5, marginTop: 4 }}>
+            ⚡ {lang === 'en'
+              ? 'AI will tailor a diagnostic study plan for your exam date and level, then navigate directly to your dashboard.'
+              : 'سيقوم المساعد الذكي بتوليد خطة مذاكرة مخصصة لاختبارك ومستواك المهني ونقلك فوراً للوحة التحكم.'}
+          </p>
         </motion.div>
       )}
     </div>
