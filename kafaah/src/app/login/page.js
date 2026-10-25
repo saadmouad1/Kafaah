@@ -162,6 +162,10 @@ export default function LoginPage() {
         body: JSON.stringify({ action: 'touch', email: email.trim().toLowerCase(), name: clientName }),
       }).catch(() => {});
 
+      if (data.token) {
+        try { localStorage.setItem('kafaah_user_token', data.token); } catch {}
+      }
+
       // تسجيل الدخول في السياق الكلي للمنصة
       const next = login({
         ...profile,

@@ -6,6 +6,7 @@ import {
   getAccountByEmail
 } from '@/lib/serverAccounts';
 import { readJson, writeJson } from '@/lib/store';
+import { signUserSession } from '@/lib/apiSecurity';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -25,7 +26,16 @@ export async function POST(req) {
   if (action === 'verify_credentials') {
     try {
       const user = verifyCredentials(cleanEmail, password);
-      return NextResponse.json({ ok: true, user });
+      const token = signUserSession(user.email);
+      const res = NextResponse.json({ ok: true, user, token });
+      res.cookies.set('kafaah_user_session', token, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'lax',
+        path: '/',
+        maxAge: 60 * 24 * 60 * 60,
+      });
+      return res;
     } catch (err) {
       return NextResponse.json({ ok: false, error: err.message }, { status: 400 });
     }
@@ -42,7 +52,16 @@ export async function POST(req) {
         sectorId,
         specId,
       });
-      return NextResponse.json({ ok: true, user });
+      const token = signUserSession(user.email);
+      const res = NextResponse.json({ ok: true, user, token });
+      res.cookies.set('kafaah_user_session', token, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'lax',
+        path: '/',
+        maxAge: 60 * 24 * 60 * 60,
+      });
+      return res;
     } catch (err) {
       return NextResponse.json({ ok: false, error: err.message }, { status: 400 });
     }

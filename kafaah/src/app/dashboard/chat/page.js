@@ -170,9 +170,15 @@ export default function ChatPage() {
     }
 
     try {
+      const headers = { 'Content-Type': 'application/json' };
+      try {
+        const tok = localStorage.getItem('kafaah_user_token');
+        if (tok) headers['x-kafaah-token'] = tok;
+      } catch {}
+
       const res = await fetch('/api/groq', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({
           action: 'chat',
           lang,

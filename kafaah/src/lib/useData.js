@@ -60,7 +60,14 @@ export function useQuestions({
     if (!enabled) return;
     let alive = true;
     setLoading(true);
-    fetch(`/api/questions?${params}`)
+
+    const headers = {};
+    try {
+      const token = localStorage.getItem('kafaah_user_token');
+      if (token) headers['x-kafaah-token'] = token;
+    } catch {}
+
+    fetch(`/api/questions?${params}`, { headers })
       .then((r) => r.json())
       .then((d) => {
         if (!alive) return;

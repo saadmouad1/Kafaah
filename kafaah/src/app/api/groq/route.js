@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import Groq from 'groq-sdk';
+import { authenticateAndVerifySubscription, checkRateLimit } from '@/lib/apiSecurity';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -96,6 +97,27 @@ export async function POST(req) {
 
   const action = body.action;
   const payload = body.payload || body;
+
+  // فحص معدل الطلبات لحماية رصيد الذكاء الاصطناعي من الاستنزاف
+  const clientIp = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'internal_ip';
+  const rate = checkRateLimit(`ai_${clientIp}`, 35, 60000);
+  if (!rate.ok) {
+    return NextResponse.json({
+      error: `تم تجاوز معدل استخدام الذكاء الاصطناعي. يرجى الانتظار ${rate.retryAfterSec} ثانية.`,
+    }, { status: 429 });
+  }
+
+  // خدمات المساعد الذكي وحل الأسئلة تتطلب اشتراكاً نشطاً ومؤكداً
+  if (action === 'tutor_query' || action === 'chat') {
+    const auth = await authenticateAndVerifySubscription(req);
+    if (!auth.authorized) {
+      return NextResponse.json({
+        error: auth.error || 'خدمة المساعد الذكي التفاعلي متاحة للمشتركين المؤكدين فقط.',
+        unauthorized: true,
+      }, { status: auth.status || 403 });
+    }
+  }
+
   const groq = client();
 
   // ── ١) الخطة التشخيصية الذكية ──────────────────────────────────────────

@@ -72,7 +72,13 @@ export default function SearchPage() {
     setLoading(true);
     const id = ++reqId.current;
     const h = setTimeout(() => {
-      fetch(`/api/search?${params.toString()}&q=${encodeURIComponent(q)}`)
+      const headers = {};
+      try {
+        const tok = localStorage.getItem('kafaah_user_token');
+        if (tok) headers['x-kafaah-token'] = tok;
+      } catch {}
+
+      fetch(`/api/search?${params.toString()}&q=${encodeURIComponent(q)}`, { headers })
         .then((r) => r.json())
         .then((d) => { if (id === reqId.current) setData(d); })
         .catch(() => {})

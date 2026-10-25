@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { readJson, writeJson } from '@/lib/store';
 import { sendOtpEmail } from '@/lib/email';
+import { signUserSession } from '@/lib/apiSecurity';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -130,12 +131,24 @@ export async function POST(req) {
     store.otps = store.otps.filter((item) => item.email !== cleanEmail);
     saveOtpStore(store);
 
-    return NextResponse.json({
+    const token = signUserSession(cleanEmail);
+    const res = NextResponse.json({
       ok: true,
       verified: true,
       email: cleanEmail,
+      token,
       message: 'تم التحقق بنجاح ✓',
     });
+
+    res.cookies.set('kafaah_user_session', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      path: '/',
+      maxAge: 60 * 24 * 60 * 60, // 60 days
+    });
+
+    return res;
   }
 
   return NextResponse.json({ error: 'إجراء غير مدعوم' }, { status: 400 });

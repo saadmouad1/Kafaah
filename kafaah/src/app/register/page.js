@@ -214,6 +214,10 @@ function RegisterForm() {
         specId: selectedSpec,
       });
 
+      if (accData.token) {
+        try { localStorage.setItem('kafaah_user_token', accData.token); } catch {}
+      }
+
       login({
         ...profile,
         name: cleanName,

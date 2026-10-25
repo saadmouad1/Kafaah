@@ -32,7 +32,7 @@ export async function POST(request) {
               name: body.name || emailLower.split('@')[0],
               phone: body.phone || null,
               specialization: body.specId || null,
-              subscription: 'trial',
+              subscription: 'none',
               role: 'user',
             }
           });
