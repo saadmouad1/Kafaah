@@ -7,6 +7,7 @@ import {
   AlertTriangle, Star, Settings, LogOut, UserRound, Moon, Sun, Repeat, Languages,
   MessageCircle,
 } from 'lucide-react';
+import SubscriptionGatekeeper from '../../components/dashboard/SubscriptionGatekeeper';
 import { useKafaah } from '../../lib/context/KafaahProvider';
 
 function useTheme() {
@@ -29,7 +30,11 @@ function useTheme() {
 export default function DashboardLayout({ children }) {
   const pathname = usePathname();
   const router = useRouter();
-  const { profile, sector, spec, logout, ready, hasName, t, lang, setLang, sectorShortName, specName } = useKafaah();
+  const {
+    profile, sector, spec, logout, ready, hasName,
+    isSubscribed, subStatus, checkSubscription,
+    t, lang, setLang, sectorShortName, specName
+  } = useKafaah();
   const { theme, toggle } = useTheme();
 
   useEffect(() => {
@@ -37,6 +42,88 @@ export default function DashboardLayout({ children }) {
     if (!hasName) router.replace('/login');
     else if (!profile.specId) router.replace('/onboarding');
   }, [ready, hasName, profile.specId, router]);
+
+  if (!ready) {
+    return (
+      <div style={{ minHeight: '100vh', display: 'grid', placeItems: 'center', background: 'var(--bg)' }}>
+        <div className="skeleton" style={{ width: 320, height: 260, borderRadius: 24 }} />
+      </div>
+    );
+  }
+
+  if (!hasName) {
+    return null;
+  }
+
+  // حماية صارمة: لا يمكن لأي مستخدم رؤية أي صفحة أو بنك أسئلة دون اشتراك مفعل ومؤكد
+  if (!isSubscribed) {
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg)' }}>
+        <header
+          style={{
+            padding: '12px 20px',
+            background: 'var(--surface)',
+            borderBottom: '1px solid var(--border)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            position: 'sticky',
+            top: 0,
+            zIndex: 40,
+          }}
+        >
+          <Link href="/" className="brand" style={{ gap: 8 }}>
+            <img src="/icon.svg" alt="كفاءة" className="brand-logo-img" width="34" height="34" />
+            <span className="brand-title" style={{ fontSize: '1.1rem' }}>
+              كـفـاءة<span className="brand-dot" />
+            </span>
+          </Link>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <span
+              style={{
+                background: subStatus === 'pending' ? 'rgba(245, 158, 11, 0.12)' : 'rgba(239, 68, 68, 0.12)',
+                color: subStatus === 'pending' ? '#b45309' : '#dc2626',
+                fontWeight: 800,
+                fontSize: 12,
+                padding: '4px 10px',
+                borderRadius: 999,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 5,
+              }}
+            >
+              {subStatus === 'pending' ? '⏳ قيد المراجعة والمطابقة' : '🔒 اشتراك غير مفعل'}
+            </span>
+
+            <button
+              type="button"
+              onClick={() => {
+                logout();
+                router.replace('/');
+              }}
+              className="btn btn-ghost btn-sm"
+              style={{ color: 'var(--danger)', fontSize: 13 }}
+            >
+              <LogOut size={15} /> خروج
+            </button>
+          </div>
+        </header>
+
+        <main style={{ flex: 1, padding: '20px 16px' }}>
+          <SubscriptionGatekeeper
+            profile={profile}
+            subStatus={subStatus}
+            onRefresh={() => checkSubscription(profile.email)}
+            logout={() => {
+              logout();
+              router.replace('/');
+            }}
+          />
+        </main>
+      </div>
+    );
+  }
 
   const nav = [
     { label: t('nav.home'), path: '/dashboard', icon: LayoutDashboard },

@@ -143,23 +143,63 @@ export function KafaahProvider({ children }) {
     [],
   );
 
+  const [subLoading, setSubLoading] = useState(false);
+
+  const checkSubscription = useCallback(async (targetEmail) => {
+    const emailToUse = targetEmail || profile.email;
+    if (!emailToUse) return { isSubscribed: false, status: 'none' };
+    setSubLoading(true);
+    try {
+      const res = await fetch(`/api/subscriptions?email=${encodeURIComponent(emailToUse.trim().toLowerCase())}`);
+      const data = await res.json();
+      if (data.ok) {
+        setProfileState((prev) => {
+          const next = {
+            ...prev,
+            subscription: data.subscription,
+            isSubscribed: data.isSubscribed,
+            subStatus: data.status,
+            pendingPayment: data.pendingPayment,
+            latestPayment: data.latestPayment,
+          };
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+          } catch {}
+          return next;
+        });
+        return data;
+      }
+    } catch (err) {
+      console.warn('Subscription sync warning:', err);
+    } finally {
+      setSubLoading(false);
+    }
+    return { isSubscribed: false, status: 'none' };
+  }, [profile.email]);
+
+  // فحص حالة الاشتراك المعتمد من الخادم تلقائياً عند توفر البريد
+  useEffect(() => {
+    if (profile.email) {
+      checkSubscription(profile.email);
+    }
+  }, [profile.email]);
+
   const login = useCallback((data) => {
     const next = {
       ...EMPTY,
       createdAt: new Date().toISOString(),
       ...data,
-      subscription:
-        data.subscription ||
-        JSON.parse(JSON.stringify({ plan: 'active', startedAt: new Date().toISOString() })),
+      // لا نمنح أي اشتراك نشط مجاناً أبداً — يجب أن يُعتمد من الخادم
+      subscription: data.subscription || null,
+      isSubscribed: Boolean(data.subscription?.status === 'active' && data.subscription?.expiresAt && new Date(data.subscription.expiresAt) > new Date()),
+      subStatus: data.subscription?.status || 'pending',
     };
-    if (!next.subscription.expiresAt) {
-      const d = new Date();
-      d.setMonth(d.getMonth() + 3);
-      next.subscription.expiresAt = d.toISOString();
-    }
     persist(next);
+    if (next.email) {
+      checkSubscription(next.email);
+    }
     return next;
-  }, [persist]);
+  }, [persist, checkSubscription]);
 
   const logout = useCallback(() => {
     persist(EMPTY);
@@ -169,6 +209,15 @@ export function KafaahProvider({ children }) {
       );
     } catch {}
   }, [persist]);
+
+  const isSubscribed = Boolean(
+    profile.isSubscribed ||
+    (profile.subscription?.status === 'active' &&
+     profile.subscription?.expiresAt &&
+     new Date(profile.subscription.expiresAt) > new Date())
+  );
+
+  const subStatus = profile.subStatus || (isSubscribed ? 'active' : profile.pendingPayment ? 'pending' : 'none');
 
   const sector = useMemo(() => (profile.sectorId ? sectors.find((s) => s.id === profile.sectorId) || null : null), [sectors, profile.sectorId]);
   const spec = useMemo(() => (profile.specId ? specs.find((s) => s.id === profile.specId) || null : null), [specs, profile.specId]);
@@ -215,6 +264,10 @@ export function KafaahProvider({ children }) {
       ready,
       hasProfile,
       hasName,
+      isSubscribed,
+      subStatus,
+      subLoading,
+      checkSubscription,
       sector,
       spec,
       lexicon,
@@ -233,7 +286,7 @@ export function KafaahProvider({ children }) {
       localize,
       bankName,
     }),
-    [profile, setProfile, login, logout, ready, hasProfile, hasName, sector, spec, lexicon,
+    [profile, setProfile, login, logout, ready, hasProfile, hasName, isSubscribed, subStatus, subLoading, checkSubscription, sector, spec, lexicon,
      sectors, specs,
      lang, setLang, t, locale, dir, sectorName, specName, sectorShortName, sectorTagline, localize, bankName],
   );

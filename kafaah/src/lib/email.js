@@ -1,10 +1,12 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  kafaah · email (نظام الإشعارات والبريد الإلكتروني المعتمد)
 //  مرتبط عبر Gmail SMTP الرسمي: almikhlafiprogrammer@gmail.com
+//  تصميم بريد احترافي معتمد يحمل شعار منصة كفاءة الرسمي وهويتها البصرية
 // ─────────────────────────────────────────────────────────────────────────────
 import nodemailer from 'nodemailer';
+import path from 'node:path';
+import fs from 'node:fs';
 
-// إعداد ناقل SMTP
 function getTransporter() {
   const user = process.env.SMTP_USER || process.env.GMAIL_USER || 'almikhlafiprogrammer@gmail.com';
   const pass = process.env.SMTP_PASS || process.env.GMAIL_APP_PASSWORD || 'bitiurmfzxcbttht';
@@ -23,6 +25,23 @@ function getTransporter() {
 }
 
 const FROM_HEADER = `"منصة كفاءة | Kafaah" <${process.env.SMTP_USER || 'almikhlafiprogrammer@gmail.com'}>`;
+const LOGO_WEB_URL = 'https://kafaah-three.vercel.app/icon-512.png';
+
+function getLogoAttachments() {
+  try {
+    const localLogoPath = path.join(process.cwd(), 'public', 'icon-512.png');
+    if (fs.existsSync(localLogoPath)) {
+      return [
+        {
+          filename: 'kafaah-logo.png',
+          path: localLogoPath,
+          cid: 'kafaahLogo',
+        },
+      ];
+    }
+  } catch {}
+  return [];
+}
 
 // ── ١) إرسال رمز التحقق الأمني OTP (دخول، استعادة كلمة المرور، أو تسجيل جديد) ──
 export async function sendOtpEmail({ email, code, name, purpose = 'login' }) {
@@ -34,61 +53,85 @@ export async function sendOtpEmail({ email, code, name, purpose = 'login' }) {
   let title = 'رمز التحقق لتسجيل الدخول';
   let desc = 'استخدم رمز الأمان التالي لإتمام تسجيل الدخول إلى حسابك ومتابعة تدريبك:';
   let subject = `🔐 رمز التحقق لتسجيل الدخول إلى كفاءة: ${code}`;
+  let badgeText = 'تحقق أمني معتمد';
 
   if (purpose === 'reset') {
     title = 'إعادة تعيين كلمة المرور';
-    desc = 'لقد طلبت إعادة تعيين كلمة المرور لحسابك في منصة كفاءة. أدخل الرمز التالي لتعيين كلمة مرور جديدة:';
+    desc = 'لقد تلقينا طلباً لإعادة تعيين كلمة المرور لحسابك في منصة كفاءة. أدخل الرمز التالي لتعيين كلمة مرورك الجديدة:';
     subject = `🔑 رمز إعادة تعيين كلمة المرور - منصة كفاءة: ${code}`;
+    badgeText = 'استعادة الحساب';
   } else if (purpose === 'register') {
     title = 'تأكيد الحساب والبريد الإلكتروني';
-    desc = 'أهلاً بك في منصة كفاءة! استخدم رمز التحقق التالي لتأكيد بريدك الإلكتروني والبدء في تفعيل اشتراكك:';
+    desc = 'أهلاً بك في منصة كفاءة! استخدم رمز التحقق السري التالي لتأكيد ملكية بريدك الإلكتروني ومتابعة تفعيل اشتراكك:';
     subject = `✨ رمز تأكيد بريدك الإلكتروني - منصة كفاءة: ${code}`;
+    badgeText = 'تأكيد الحساب الجديد';
   }
 
   const html = `
-    <div dir="rtl" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'IBM Plex Sans Arabic', Arial, sans-serif; max-width: 580px; margin: 0 auto; padding: 32px 24px; background: #0b1324; border-radius: 20px; border: 1px solid #1e293b; color: #f8fafc; line-height: 1.7;">
-      
-      <!-- Logo & Header -->
-      <div style="text-align: center; margin-bottom: 28px;">
-        <div style="display: inline-block; width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, #0d9488, #059669); line-height: 56px; color: #ffffff; font-size: 26px; font-weight: 900; margin-bottom: 12px; box-shadow: 0 10px 25px -5px rgba(13, 148, 136, 0.5);">
-          ك
-        </div>
-        <h2 style="color: #ffffff; font-size: 22px; font-weight: 900; margin: 0 0 6px;">${title}</h2>
-        <p style="color: #94a3b8; font-size: 14px; margin: 0;">أهلاً بك ${clientName} في منصة كفاءة</p>
-      </div>
-
-      <!-- Main Box -->
-      <div style="background: #111e38; border-radius: 16px; padding: 26px; border: 1px solid #1e3a5f; margin-bottom: 22px; text-align: center;">
-        <p style="font-size: 14.5px; color: #cbd5e1; margin-top: 0; margin-bottom: 18px;">
-          ${desc}
-        </p>
-
-        <!-- OTP Code Big Display -->
-        <div style="display: inline-block; background: #064e3b; border: 2px dashed #10b981; border-radius: 14px; padding: 14px 32px; margin-bottom: 18px;">
-          <span style="font-family: 'Courier New', Courier, monospace; font-size: 34px; font-weight: 900; letter-spacing: 10px; color: #34d399;">
-            ${code}
-          </span>
+    <!DOCTYPE html>
+    <html dir="rtl" lang="ar">
+    <head><meta charset="UTF-8"></head>
+    <body style="margin: 0; padding: 24px 12px; background-color: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'IBM Plex Sans Arabic', Arial, sans-serif; direction: rtl; text-align: right;">
+      <div style="max-width: 560px; margin: 0 auto; background-color: #ffffff; border-radius: 24px; border: 1.5px solid #e2e8f0; overflow: hidden; box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.08);">
+        
+        <!-- Header Bar with Emerald Accent -->
+        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%); padding: 32px 24px 28px; text-align: center;">
+          <img src="${LOGO_WEB_URL}" alt="منصة كفاءة" width="76" height="76" style="width: 76px; height: 76px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); border: 2.5px solid rgba(255, 255, 255, 0.9); margin-bottom: 12px; display: inline-block;" />
+          <h1 style="color: #ffffff; font-size: 24px; font-weight: 900; margin: 0 0 6px; letter-spacing: -0.5px;">مـنـصـة كـفـاءة</h1>
+          <p style="color: rgba(255, 255, 255, 0.9); font-size: 13.5px; margin: 0; font-weight: 600;">المنصة المعتمدة لاجتياز امتحانات مزاولة المهن الرسمية</p>
         </div>
 
-        <div style="color: #fbbf24; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 6px;">
-          ⏱️ هذا الرمز صالح لمدة 10 دقائق فقط لمرة واحدة
+        <!-- Body Content -->
+        <div style="padding: 32px 28px;">
+          <div style="display: inline-block; background-color: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 999px; padding: 4px 14px; color: #047857; font-size: 12px; font-weight: 800; margin-bottom: 14px;">
+            ${badgeText}
+          </div>
+
+          <h2 style="color: #0f172a; font-size: 20px; font-weight: 900; margin: 0 0 10px;">${title}</h2>
+          <p style="color: #334155; font-size: 14.5px; line-height: 1.7; margin: 0 0 20px;">
+            مرحباً بك ${clientName}،<br/>${desc}
+          </p>
+
+          <!-- OTP Code Box -->
+          <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%); border: 2px dashed #10b981; border-radius: 18px; padding: 22px; text-align: center; margin: 24px 0;">
+            <div style="color: #065f46; font-size: 13px; font-weight: 800; margin-bottom: 8px;">رمز التحقق السري (OTP)</div>
+            <div style="font-family: 'Courier New', Courier, monospace; font-size: 38px; font-weight: 900; letter-spacing: 12px; color: #047857; direction: ltr; margin: 6px 0 10px;">
+              ${code}
+            </div>
+            <div style="color: #d97706; font-size: 12.5px; font-weight: 700;">
+              ⏱️ هذا الرمز صالح لمدة 10 دقائق فقط للاستخدام لمرة واحدة
+            </div>
+          </div>
+
+          <!-- Security Caution Box -->
+          <div style="background-color: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; padding: 12px 16px; margin-bottom: 24px;">
+            <p style="font-size: 12.5px; color: #991b1b; margin: 0; line-height: 1.6;">
+              🔒 <strong>تنبيه أمان:</strong> لا تشارك هذا الرمز مع أي شخص إطلاقاً. فريق منصة كفاءة لن يطلب منك هذا الرمز تحت أي ظرف.
+            </p>
+          </div>
+
+          <div style="border-top: 1px solid #e2e8f0; padding-top: 18px; text-align: center;">
+            <p style="font-size: 12.5px; color: #64748b; margin: 0 0 6px;">
+              فريق الدعم الفني معك دائماً للمساعدة:
+            </p>
+            <a href="https://wa.me/967772686817" style="color: #059669; font-weight: 800; text-decoration: none; font-size: 13px;">
+              واتساب خدمة المشتركين: 772686817 967+
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="background-color: #f8fafc; border-top: 1px solid #e2e8f0; padding: 16px 24px; text-align: center;">
+          <p style="font-size: 11.5px; color: #94a3b8; margin: 0;">
+            منصة كفاءة © 2026 · جميع الحقوق محفوظة لتدريب وتأهيل الممارسين المهنيين
+          </p>
         </div>
       </div>
-
-      <!-- Security Notice -->
-      <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 12px; padding: 14px 18px; margin-bottom: 24px;">
-        <p style="font-size: 12.5px; color: #fca5a5; margin: 0;">
-          🔒 <strong>تنبيه أمني:</strong> لا تشارك هذا الرمز مع أي شخص. فريق منصة كفاءة لن يطلب منك هذا الرمز إطلاقاً تحت أي ظرف.
-        </p>
-      </div>
-
-      <div style="text-align: center; border-top: 1px solid #1e293b; padding-top: 18px;">
-        <p style="font-size: 12px; color: #64748b; margin: 0;">
-          منصة كفاءة لاجتياز امتحانات مزاولة المهن الرسمية · اليمن والمملكة العربية السعودية
-        </p>
-      </div>
-    </div>
+    </body>
+    </html>
   `;
+
+  const attachments = getLogoAttachments();
 
   if (!transporter) {
     console.log('[OTP Email Simulated]:', { to: email, code, purpose });
@@ -100,10 +143,11 @@ export async function sendOtpEmail({ email, code, name, purpose = 'login' }) {
     to: email,
     subject,
     html,
+    attachments,
   });
 }
 
-// ── ٢) إشعار العميل فور إرسال إشعار الدفع (الكريمي / جيب) ─────────────────────
+// ── ٢) إشعار العميل فور إرسال إشعار التحويل البنكي (الكريمي / جيب) ───────────
 export async function sendPaymentSubmittedEmailToClient(payment) {
   if (!payment.email) return;
   const transporter = getTransporter();
@@ -112,45 +156,60 @@ export async function sendPaymentSubmittedEmailToClient(payment) {
   const name = payment.clientName || 'عزيزنا الممارس';
 
   const html = `
-    <div dir="rtl" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'IBM Plex Sans Arabic', Arial, sans-serif; max-width: 580px; margin: 0 auto; padding: 32px 24px; background: #ffffff; border-radius: 20px; border: 1px solid #e2e8f0; color: #1e293b; line-height: 1.7;">
-      
-      <div style="text-align: center; margin-bottom: 24px;">
-        <div style="display: inline-block; width: 56px; height: 56px; border-radius: 16px; background: #0284c7; line-height: 56px; color: #ffffff; font-size: 26px; font-weight: 900; margin-bottom: 12px;">
-          ⏳
+    <!DOCTYPE html>
+    <html dir="rtl" lang="ar">
+    <head><meta charset="UTF-8"></head>
+    <body style="margin: 0; padding: 24px 12px; background-color: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'IBM Plex Sans Arabic', Arial, sans-serif; direction: rtl; text-align: right;">
+      <div style="max-width: 580px; margin: 0 auto; background-color: #ffffff; border-radius: 24px; border: 1.5px solid #e2e8f0; overflow: hidden; box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.08);">
+        
+        <div style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); padding: 32px 24px 28px; text-align: center;">
+          <img src="${LOGO_WEB_URL}" alt="منصة كفاءة" width="76" height="76" style="width: 76px; height: 76px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); border: 2.5px solid rgba(255, 255, 255, 0.9); margin-bottom: 12px; display: inline-block;" />
+          <h1 style="color: #ffffff; font-size: 23px; font-weight: 900; margin: 0 0 6px;">تم استلام إشعار السداد بنجاح</h1>
+          <p style="color: rgba(255, 255, 255, 0.9); font-size: 13.5px; margin: 0; font-weight: 600;">شكراً لك يا ${name}، طلبك قيد المراجعة والمطابقة الفورية</p>
         </div>
-        <h2 style="color: #0f172a; font-size: 22px; font-weight: 900; margin: 0 0 6px;">تم استلام إشعار التحويل بنجاح</h2>
-        <p style="color: #64748b; font-size: 14px; margin: 0;">شكراً لك يا <strong>${name}</strong>، جارٍ التحقق من الحوالة</p>
-      </div>
 
-      <div style="background: #f8fafc; border-radius: 14px; padding: 22px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
-        <p style="font-size: 14.5px; color: #334155; margin-top: 0;">
-          لقد استلمنا بيانات إشعار السداد الخاص باشتراكك في <strong>${payment.packageName}</strong> بقيمة <strong>$${payment.amount}</strong> عبر <strong>${methodLabel}</strong>.
-        </p>
+        <div style="padding: 32px 28px;">
+          <p style="font-size: 14.5px; color: #334155; line-height: 1.7; margin-top: 0;">
+            لقد تم استلام بيانات إشعار السداد الخاص باشتراكك في <strong>${payment.packageName}</strong> بقيمة <strong>$${payment.amount}</strong> عبر <strong>${methodLabel}</strong>.
+          </p>
 
-        <div style="background: #ffffff; border-radius: 10px; padding: 14px; border: 1px solid #cbd5e1; margin-top: 14px; font-size: 13.5px;">
-          <div style="color: #64748b; margin-bottom: 4px;">بيانات العملية المرسلة:</div>
-          <div style="color: #0f172a; font-weight: bold;">
-            ${payment.transactionNumber ? `رقم العملية: ${payment.transactionNumber}` : `اسم المحول: ${payment.senderName}`}
+          <div style="background: #f8fafc; border-radius: 14px; padding: 18px; border: 1px solid #e2e8f0; margin: 18px 0;">
+            <div style="font-size: 12.5px; color: #64748b; margin-bottom: 6px; font-weight: 700;">بيانات التحويل المسجلة:</div>
+            <div style="font-size: 15px; color: #0f172a; font-weight: 900;">
+              ${payment.transactionNumber ? `رقم العملية: ${payment.transactionNumber}` : `اسم المحول: ${payment.senderName}`}
+            </div>
+            <div style="font-size: 12.5px; color: #64748b; margin-top: 6px;">
+              الحالة الحالية: <span style="color: #d97706; font-weight: 800;">بانتظار مطابقة المشرف وتأكيد التفعيل</span>
+            </div>
+          </div>
+
+          <div style="background-color: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 12px; padding: 14px 18px; margin-bottom: 24px;">
+            <p style="font-size: 13.5px; color: #065f46; margin: 0; line-height: 1.6;">
+              ⚡ <strong>ماذا بعد؟</strong> يقوم المشرف بمطابقة الحوالة عبر كشف الحساب وتفعيل كامل مميزات المنصة لك فوراً، وسيصلك بريد إلكتروني رسمي بالتفعيل.
+            </p>
+          </div>
+
+          <div style="text-align: center; border-top: 1px solid #e2e8f0; padding-top: 18px;">
+            <p style="font-size: 13px; color: #64748b; margin: 0 0 10px;">
+              لتسريع التفعيل أو إرسال صورة السند مباشرة:
+            </p>
+            <a href="https://wa.me/967772686817?text=${encodeURIComponent(`السلام عليكم، قمت بإرسال حوالة اشتراك في منصة كفاءة باسم: ${payment.clientName} بقيمة $${payment.amount}`)}" style="display: inline-block; background: #25D366; color: #ffffff; padding: 10px 24px; border-radius: 10px; font-size: 13.5px; font-weight: 900; text-decoration: none;">
+              واتساب الدعم الفني المباشر 💬
+            </a>
           </div>
         </div>
-      </div>
 
-      <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 12px; padding: 14px 18px; margin-bottom: 24px;">
-        <p style="font-size: 13px; color: #065f46; margin: 0;">
-          ⚡ <strong>ماذا بعد؟</strong> يقوم فريق الإدارة بمطابقة العملية فوراً، وسيصلك بريد إلكتروني رسمي فور تفعيل حسابك لتبدأ التدريب مباشرة.
-        </p>
+        <div style="background-color: #f8fafc; border-top: 1px solid #e2e8f0; padding: 16px 24px; text-align: center;">
+          <p style="font-size: 11.5px; color: #94a3b8; margin: 0;">
+            منصة كفاءة © 2026 · جميع الحقوق محفوظة
+          </p>
+        </div>
       </div>
-
-      <div style="text-align: center; border-top: 1px solid #e2e8f0; padding-top: 18px;">
-        <p style="font-size: 12.5px; color: #64748b; margin: 0 0 8px;">
-          لأي استفسار أو تسريع التفعيل، يسعدنا تواصلك مع خدمة العملاء عبر واتساب:
-        </p>
-        <a href="https://wa.me/967772686817?text=${encodeURIComponent(`مرحباً، قمت بإرسال حوالة اشتراك في منصة كفاءة باسم: ${payment.clientName}`)}" style="display: inline-block; background: #25D366; color: #ffffff; padding: 8px 20px; border-radius: 8px; font-size: 13px; font-weight: bold; text-decoration: none;">
-          واتساب الدعم الفني المباشر
-        </a>
-      </div>
-    </div>
+    </body>
+    </html>
   `;
+
+  const attachments = getLogoAttachments();
 
   if (!transporter) return { ok: true, simulated: true };
 
@@ -159,10 +218,11 @@ export async function sendPaymentSubmittedEmailToClient(payment) {
     to: payment.email,
     subject: `⏳ استلمنا إشعار التحويل الخاص بك بنجاح | منصة كفاءة`,
     html,
+    attachments,
   });
 }
 
-// ── ٣) تنبيه فوري للمالك بوجود عملية دفع جديدة ───────────────────────────────
+// ── ٣) تنبيه فوري للمالك بوجود عملية دفع جديدة تنتظر التفعيل ────────────────
 export async function sendPaymentAlertToAdmin(payment) {
   const adminEmails = [
     process.env.ADMIN_NOTIFY_EMAIL || 'almikhlafiprogrammer@gmail.com',
@@ -177,48 +237,58 @@ export async function sendPaymentAlertToAdmin(payment) {
     : `اسم المحول: <strong>${payment.senderName}</strong>`;
 
   const html = `
-    <div dir="rtl" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 26px; background: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; color: #1e293b;">
-      <div style="text-align: center; margin-bottom: 20px;">
-        <h2 style="color: #0f172a; margin: 0 0 6px;">🔔 إشعار تحويل جديد ينتظر المراجعة</h2>
-        <p style="color: #64748b; font-size: 14px; margin: 0;">منصة كفاءة للتدريب على مزاولة المهن</p>
-      </div>
+    <!DOCTYPE html>
+    <html dir="rtl" lang="ar">
+    <head><meta charset="UTF-8"></head>
+    <body style="margin: 0; padding: 24px 12px; background-color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; direction: rtl; text-align: right;">
+      <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1.5px solid #e2e8f0; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
+        
+        <div style="background: #0f172a; padding: 24px; text-align: center; color: #ffffff;">
+          <img src="${LOGO_WEB_URL}" alt="منصة كفاءة" width="60" height="60" style="width: 60px; height: 60px; border-radius: 16px; margin-bottom: 8px;" />
+          <h2 style="margin: 0 0 4px; font-size: 20px; color: #ffffff;">🔔 طلب سداد اشتراك جديد بانتظار التأكيد</h2>
+          <p style="margin: 0; font-size: 13px; color: #94a3b8;">منصة كفاءة — لوحة تحكم المالك</p>
+        </div>
 
-      <div style="background: #ffffff; border-radius: 12px; padding: 20px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
-        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-          <tr>
-            <td style="padding: 8px 0; color: #64748b; width: 140px;">اسم العميل:</td>
-            <td style="padding: 8px 0; font-weight: bold; color: #0f172a;">${payment.clientName || 'غير مسجل'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 0; color: #64748b;">البريد الإلكتروني:</td>
-            <td style="padding: 8px 0; font-weight: bold; color: #0f172a; direction: ltr; text-align: right;">${payment.email}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 0; color: #64748b;">رقم الهاتف / واتساب:</td>
-            <td style="padding: 8px 0; font-weight: bold; color: #0f172a; direction: ltr; text-align: right;">${payment.phone || 'غير مسجل'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 0; color: #64748b;">طريقة الدفع:</td>
-            <td style="padding: 8px 0; font-weight: bold; color: #0284c7;">${methodLabel} (${payment.accountType || ''})</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 0; color: #64748b;">بيانات التحقق:</td>
-            <td style="padding: 8px 0; font-weight: bold; color: #d97706;">${identifierText}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 0; color: #64748b;">الباقة والمبلغ:</td>
-            <td style="padding: 8px 0; font-weight: bold; color: #059669; font-size: 16px;">${payment.packageName} — $${payment.amount}</td>
-          </tr>
-        </table>
-      </div>
+        <div style="padding: 24px;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+            <tr style="border-bottom: 1px solid #f1f5f9;">
+              <td style="padding: 10px 0; color: #64748b; width: 140px;">اسم المشترك:</td>
+              <td style="padding: 10px 0; font-weight: 900; color: #0f172a;">${payment.clientName || 'غير مسجل'}</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f1f5f9;">
+              <td style="padding: 10px 0; color: #64748b;">البريد الإلكتروني:</td>
+              <td style="padding: 10px 0; font-weight: 700; color: #0f172a; direction: ltr; text-align: right;">${payment.email}</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f1f5f9;">
+              <td style="padding: 10px 0; color: #64748b;">رقم الهاتف / واتساب:</td>
+              <td style="padding: 10px 0; font-weight: 700; color: #0f172a; direction: ltr; text-align: right;">${payment.phone || 'غير مسجل'}</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f1f5f9;">
+              <td style="padding: 10px 0; color: #64748b;">طريقة التحويل:</td>
+              <td style="padding: 10px 0; font-weight: 800; color: #0284c7;">${methodLabel} (${payment.accountType || ''})</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f1f5f9;">
+              <td style="padding: 10px 0; color: #64748b;">بيانات السند:</td>
+              <td style="padding: 10px 0; font-weight: 900; color: #d97706;">${identifierText}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 0; color: #64748b;">الباقة والمبلغ:</td>
+              <td style="padding: 10px 0; font-weight: 900; color: #059669; font-size: 16px;">${payment.packageName} — $${payment.amount}</td>
+            </tr>
+          </table>
 
-      <div style="text-align: center; margin-top: 20px;">
-        <a href="https://kafaah-three.vercel.app/admin" style="background: #059669; color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 10px; font-weight: bold; display: inline-block;">
-          فتح لوحة تحكم الإدارة وتفعيل الحساب ⚡
-        </a>
+          <div style="text-align: center; margin-top: 24px;">
+            <a href="https://kafaah-three.vercel.app/admin" style="background: #059669; color: #ffffff; text-decoration: none; padding: 13px 32px; border-radius: 12px; font-weight: 900; display: inline-block; font-size: 14.5px;">
+              فتح لوحة المالك وتأكيد وتفعيل الحساب فوراً ⚡
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </body>
+    </html>
   `;
+
+  const attachments = getLogoAttachments();
 
   if (!transporter) {
     console.log('[Email Simulation] Admin Notification:', payment);
@@ -230,10 +300,11 @@ export async function sendPaymentAlertToAdmin(payment) {
     to: adminEmails.join(','),
     subject: `🔔 طلب دفع جديد (${methodLabel}): ${payment.clientName || payment.email} ($${payment.amount})`,
     html,
+    attachments,
   });
 }
 
-// ── ٤) البريد الاحترافي الفخم: شكر العميل + تأكيد التفعيل الكامل ─────────────
+// ── ٤) بريد تأكيد التفعيل الرسمي والمفصل للعميل بعد موافقة المشرف ──────────
 export async function sendApprovalNoticeToClient(payment, subscription) {
   if (!payment.email) return;
   const transporter = getTransporter();
@@ -241,115 +312,83 @@ export async function sendApprovalNoticeToClient(payment, subscription) {
   const clientName = payment.clientName ? payment.clientName.trim() : 'زميلنا الممارس العزيز';
   const expiresDate = subscription?.expiresAt
     ? new Date(subscription.expiresAt).toLocaleDateString('ar-YE', { year: 'numeric', month: 'long', day: 'numeric' })
-    : 'لمدة شهر كامل';
+    : 'لمدة الصلاحية الكاملة';
 
   const methodLabel = payment.method === 'kuraimi' ? 'بنك الكريمي' : 'محفظة جيب';
 
   const html = `
-    <div dir="rtl" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'IBM Plex Sans Arabic', Arial, sans-serif; max-width: 620px; margin: 0 auto; padding: 32px 24px; background: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; color: #1e293b; line-height: 1.8;">
-      
-      <!-- Top Brand Header -->
-      <div style="text-align: center; margin-bottom: 28px;">
-        <div style="display: inline-block; width: 62px; height: 62px; border-radius: 18px; background: linear-gradient(135deg, #0d9488, #059669); line-height: 62px; color: #ffffff; font-size: 30px; font-weight: 900; margin-bottom: 14px; box-shadow: 0 12px 28px -6px rgba(13, 148, 136, 0.45);">
-          🎓
-        </div>
-        <div style="display: inline-block; padding: 4px 14px; background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 999px; color: #047857; font-size: 12px; font-weight: 800; margin-bottom: 10px;">
-          ✓ تم تأكيد الحوالة وتفعيل الحساب بنجاح
-        </div>
-        <h1 style="color: #0f172a; font-size: 24px; font-weight: 900; margin: 0 0 8px;">
-          مرحباً بك في منصة كفاءة!
-        </h1>
-        <p style="color: #64748b; font-size: 15px; margin: 0;">
-          خطوتك الموثوقة لاجتياز امتحان مزاولة المهنة بامتياز
-        </p>
-      </div>
-
-      <!-- Warm Letter of Gratitude -->
-      <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); border-radius: 16px; padding: 24px; border: 1px solid #bbf7d0; margin-bottom: 22px;">
-        <h3 style="color: #065f46; font-size: 17px; margin-top: 0; margin-bottom: 10px; font-weight: 800;">
-          عزيزنا الممارس / ${clientName}،
-        </h3>
-        <p style="font-size: 14.5px; color: #334155; margin: 0 0 12px;">
-          يسعدنا ويشرفنا انضمامك إلى منصة <strong>«كفاءة»</strong>. نود أن نشكرك من القلب على ثقتك واختيارك لمنصتنا لتكون رفيقتك الأكاديمية الأولى في الاستعداد لاختبار مزاولة المهنة.
-        </p>
-        <p style="font-size: 14.5px; color: #334155; margin: 0;">
-          نحن ندرك تماماً أهمية هذا الامتحان في مسيرتك المهنية ومستقبلك، ولهذا وضعنا بين يديك بنوك أسئلة حقيقية من دورات السنوات السابقة (صنعاء، عدن، والمملكة العربية السعودية)، مع نظام محاكاة دقيق ومساعد ذكاء اصطناعي يحلل مستواك ويوجهك حتى لحظة دخولك قاعة الامتحان وأنت في قمة الجاهزية.
-        </p>
-      </div>
-
-      <!-- Official Subscription Receipt Card -->
-      <div style="background: #f8fafc; border-radius: 16px; padding: 22px; border: 1px solid #e2e8f0; margin-bottom: 24px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 14px;">
-          <strong style="color: #0f172a; font-size: 15px;">🧾 تفاصيل إيصال الاشتراك المعتمد:</strong>
-          <span style="font-size: 12px; background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 6px;">حساب نشط</span>
-        </div>
-
-        <table style="width: 100%; border-collapse: collapse; font-size: 13.5px;">
-          <tr>
-            <td style="padding: 6px 0; color: #64748b;">اسم المشترك:</td>
-            <td style="padding: 6px 0; font-weight: bold; color: #0f172a;">${clientName}</td>
-          </tr>
-          <tr>
-            <td style="padding: 6px 0; color: #64748b;">الباقة المفعلة:</td>
-            <td style="padding: 6px 0; font-weight: bold; color: #059669;">${payment.packageName || 'باقة كفاءة الشاملة'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 6px 0; color: #64748b;">المبلغ المدفوع:</td>
-            <td style="padding: 6px 0; font-weight: bold; color: #0f172a;">$${payment.amount}</td>
-          </tr>
-          <tr>
-            <td style="padding: 6px 0; color: #64748b;">طريقة السداد:</td>
-            <td style="padding: 6px 0; font-weight: bold; color: #0284c7;">${methodLabel}</td>
-          </tr>
-          <tr>
-            <td style="padding: 6px 0; color: #64748b;">صلاحية الوصول الكامل:</td>
-            <td style="padding: 6px 0; font-weight: bold; color: #b45309;">حتى ${expiresDate}</td>
-          </tr>
-        </table>
-      </div>
-
-      <!-- 3 Steps to Success -->
-      <div style="background: #ffffff; border-radius: 16px; padding: 20px; border: 1.5px solid #e0e7ff; margin-bottom: 26px;">
-        <h4 style="color: #3730a3; font-size: 15px; margin-top: 0; margin-bottom: 14px; font-weight: 800;">
-          🚀 خطتك السريعة للانطلاق اليوم:
-        </h4>
-        <div style="font-size: 13.5px; color: #334155;">
-          <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-            <span style="background: #4f46e5; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; font-size: 12px; font-weight: bold; flex-shrink: 0;">1</span>
-            <span><strong>ابدأ بامتحان تجريبي لتشخيص مستواك:</strong> اختر مركزك (صنعاء، عدن، أو السعودية) واختبر نفسك في بيئة موقوتة مطابقة للواقع.</span>
+    <!DOCTYPE html>
+    <html dir="rtl" lang="ar">
+    <head><meta charset="UTF-8"></head>
+    <body style="margin: 0; padding: 24px 12px; background-color: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'IBM Plex Sans Arabic', Arial, sans-serif; direction: rtl; text-align: right;">
+      <div style="max-width: 620px; margin: 0 auto; background-color: #ffffff; border-radius: 24px; border: 1.5px solid #e2e8f0; overflow: hidden; box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.08);">
+        
+        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 36px 24px 30px; text-align: center;">
+          <img src="${LOGO_WEB_URL}" alt="منصة كفاءة" width="82" height="82" style="width: 82px; height: 82px; border-radius: 22px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); border: 3px solid rgba(255, 255, 255, 0.95); margin-bottom: 12px; display: inline-block;" />
+          <div style="display: inline-block; padding: 4px 14px; background: rgba(255, 255, 255, 0.2); border-radius: 999px; color: #ffffff; font-size: 12px; font-weight: 900; margin-bottom: 10px;">
+            ✓ تم تأكيد الحوالة وتفعيل الحساب بنجاح
           </div>
-          <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-            <span style="background: #4f46e5; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; font-size: 12px; font-weight: bold; flex-shrink: 0;">2</span>
-            <span><strong>ركّز على بنك الأخطاء:</strong> كل سؤال تخطئ فيه يتم حفظه تلقائياً لتتمكن من مراجعته وإتقانه حتى لا يتكرر.</span>
+          <h1 style="color: #ffffff; font-size: 24px; font-weight: 900; margin: 0 0 6px;">مرحباً بك في منصة كفاءة!</h1>
+          <p style="color: rgba(255, 255, 255, 0.9); font-size: 14px; margin: 0; font-weight: 600;">خطوتك المعتمدة لاجتياز امتحان مزاولة المهنة بامتياز</p>
+        </div>
+
+        <div style="padding: 32px 28px;">
+          <div style="background: #f0fdf4; border-radius: 16px; padding: 22px; border: 1px solid #bbf7d0; margin-bottom: 22px;">
+            <h3 style="color: #065f46; font-size: 16.5px; margin-top: 0; margin-bottom: 10px; font-weight: 900;">
+              عزيزنا الممارس / ${clientName}،
+            </h3>
+            <p style="font-size: 14.5px; color: #334155; line-height: 1.8; margin: 0;">
+              يسعدنا إبلاغك بأنه قد تم تأكيد حوالتك وتفعيل كامل بنوك الأسئلة والمحاكيات الامتحانية والمساعد الذكي لحسابك بنجاح. يمكنك الآن الدخول فوراً وبدء التدريب التخصصي.
+            </p>
           </div>
-          <div style="display: flex; gap: 10px;">
-            <span style="background: #4f46e5; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; font-size: 12px; font-weight: bold; flex-shrink: 0;">3</span>
-            <span><strong>استشر المساعد الأكاديمي الذكي:</strong> اطرح أي استفسار سريري أو تخصصي لتحصل على شرح مبسّط وموجه للامتحان.</span>
+
+          <!-- Official Receipt -->
+          <div style="background: #f8fafc; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0; margin-bottom: 24px;">
+            <strong style="color: #0f172a; font-size: 14.5px; display: block; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">
+              🧾 تفاصيل إيصال الاشتراك الرسمي:
+            </strong>
+            <table style="width: 100%; border-collapse: collapse; font-size: 13.5px;">
+              <tr>
+                <td style="padding: 6px 0; color: #64748b;">اسم المشترك:</td>
+                <td style="padding: 6px 0; font-weight: bold; color: #0f172a;">${clientName}</td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 0; color: #64748b;">الباقة المفعلة:</td>
+                <td style="padding: 6px 0; font-weight: bold; color: #059669;">${payment.packageName || 'باقة كفاءة الشاملة'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 0; color: #64748b;">المبلغ المدفوع:</td>
+                <td style="padding: 6px 0; font-weight: bold; color: #0f172a;">$${payment.amount}</td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 0; color: #64748b;">طريقة السداد:</td>
+                <td style="padding: 6px 0; font-weight: bold; color: #0284c7;">${methodLabel}</td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 0; color: #64748b;">صلاحية الوصول الكامل:</td>
+                <td style="padding: 6px 0; font-weight: bold; color: #b45309;">حتى ${expiresDate}</td>
+              </tr>
+            </table>
+          </div>
+
+          <div style="text-align: center; margin-bottom: 24px;">
+            <a href="https://kafaah-three.vercel.app/dashboard" style="background: linear-gradient(135deg, #059669, #047857); color: #ffffff; text-decoration: none; padding: 15px 36px; border-radius: 14px; font-weight: 900; font-size: 16px; display: inline-block; box-shadow: 0 10px 25px rgba(5, 150, 105, 0.35);">
+              الدخول للوحة التحكم وبدء التدريب 🚀
+            </a>
           </div>
         </div>
-      </div>
 
-      <!-- Action Button -->
-      <div style="text-align: center; margin-bottom: 28px;">
-        <a href="https://kafaah-three.vercel.app/dashboard" style="background: linear-gradient(135deg, #059669, #0d9488); color: #ffffff; text-decoration: none; padding: 15px 36px; border-radius: 14px; font-weight: 900; font-size: 16px; display: inline-block; box-shadow: 0 10px 24px -6px rgba(5, 150, 105, 0.4);">
-          ابدأ التدريب الآن على حسابك 🚀
-        </a>
+        <div style="background-color: #f8fafc; border-top: 1px solid #e2e8f0; padding: 16px 24px; text-align: center;">
+          <p style="font-size: 11.5px; color: #94a3b8; margin: 0;">
+            منصة كفاءة © 2026 · جميع الحقوق محفوظة
+          </p>
+        </div>
       </div>
-
-      <!-- Support Footer -->
-      <div style="text-align: center; border-top: 1px solid #e2e8f0; padding-top: 20px;">
-        <p style="font-size: 13px; color: #64748b; margin: 0 0 8px;">
-          فريق كفاءة معك في كل خطوة. للتواصل المباشر مع فريق الدعم الفني:
-        </p>
-        <a href="https://wa.me/967772686817" style="color: #059669; font-weight: bold; text-decoration: none; font-size: 13.5px;">
-          📱 واتساب الدعم الفني: 772686817 967+
-        </a>
-        <p style="font-size: 11.5px; color: #94a3b8; margin-top: 14px;">
-          منصة كفاءة © 2026 — جميع الحقوق محفوظة
-        </p>
-      </div>
-    </div>
+    </body>
+    </html>
   `;
+
+  const attachments = getLogoAttachments();
 
   if (!transporter) {
     console.log('[Email Simulation] Client Activation Notice:', { to: payment.email });
@@ -361,5 +400,6 @@ export async function sendApprovalNoticeToClient(payment, subscription) {
     to: payment.email,
     subject: `🎓 مرحباً بك يا ${clientName}! تم تفعيل اشتراكك الشامل في منصة كفاءة ✨`,
     html,
+    attachments,
   });
 }

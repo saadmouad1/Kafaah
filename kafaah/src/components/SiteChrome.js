@@ -13,7 +13,7 @@ import { useKafaah } from '../lib/context/KafaahProvider';
 // الشريط العلوي العام للصفحات العامة + القائمة الجانبية المنزلقة للجوال
 export default function SiteChrome({ children }) {
   const pathname = usePathname() || '/';
-  const { hasName, profile, t } = useKafaah();
+  const { hasName, profile, t, isSubscribed, subStatus } = useKafaah();
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const isDashboard = pathname.startsWith('/dashboard');
@@ -64,10 +64,22 @@ export default function SiteChrome({ children }) {
               </>
             )}
             {hasName ? (
-              <Link href="/dashboard" className="btn btn-primary btn-sm desktop-only">
-                <LayoutDashboard size={15} />
-                {t('nav.myDashboard')}
-              </Link>
+              isSubscribed ? (
+                <Link href="/dashboard" className="btn btn-primary btn-sm desktop-only">
+                  <LayoutDashboard size={15} />
+                  {t('nav.myDashboard')}
+                </Link>
+              ) : subStatus === 'pending' ? (
+                <Link href="/dashboard" className="btn btn-sm desktop-only" style={{ background: '#f59e0b', color: '#ffffff', fontWeight: 800 }}>
+                  <ShieldCheck size={15} />
+                  بانتظار تأكيد الدفع ⏳
+                </Link>
+              ) : (
+                <Link href="/dashboard" className="btn btn-emerald btn-sm desktop-only" style={{ fontWeight: 800 }}>
+                  <CreditCard size={15} />
+                  تفعيل الاشتراك 🔒
+                </Link>
+              )
             ) : (
               <div className="desktop-only" style={{ display: 'flex', gap: 8 }}>
                 <Link href="/login" className="btn btn-ghost btn-sm">{t('nav.login')}</Link>
@@ -186,8 +198,8 @@ export default function SiteChrome({ children }) {
                 {/* User Status Snippet (If Logged In) */}
                 {hasName && (
                   <div style={{
-                    background: 'rgba(16, 185, 129, 0.08)',
-                    border: '1px solid rgba(16, 185, 129, 0.3)',
+                    background: isSubscribed ? 'rgba(16, 185, 129, 0.08)' : subStatus === 'pending' ? 'rgba(245, 158, 11, 0.08)' : 'rgba(239, 68, 68, 0.08)',
+                    border: `1px solid ${isSubscribed ? 'rgba(16, 185, 129, 0.3)' : subStatus === 'pending' ? 'rgba(245, 158, 11, 0.3)' : 'rgba(239, 68, 68, 0.3)'}`,
                     borderRadius: 14,
                     padding: '12px 14px',
                     marginBottom: 18,
@@ -199,7 +211,7 @@ export default function SiteChrome({ children }) {
                       width: 38,
                       height: 38,
                       borderRadius: 10,
-                      background: '#10b981',
+                      background: isSubscribed ? '#10b981' : subStatus === 'pending' ? '#f59e0b' : '#ef4444',
                       color: '#ffffff',
                       display: 'grid',
                       placeItems: 'center',
@@ -209,12 +221,25 @@ export default function SiteChrome({ children }) {
                       {profile.name ? profile.name.charAt(0) : 'ك'}
                     </div>
                     <div style={{ flex: 1, minWidth: 0 }}>
-                      <div style={{ fontSize: 13.5, fontWeight: 900, color: '#0f172a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                      <div style={{ fontSize: 13.5, fontWeight: 900, color: 'var(--text, #0f172a)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                         {profile.name}
                       </div>
-                      <div style={{ fontSize: 11.5, color: '#059669', fontWeight: 700, display: 'flex', alignItems: 'center', gap: 4 }}>
-                        <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#10b981', display: 'inline-block' }} />
-                        جلسة نشطة
+                      <div style={{
+                        fontSize: 11.5,
+                        color: isSubscribed ? '#059669' : subStatus === 'pending' ? '#b45309' : '#dc2626',
+                        fontWeight: 700,
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 4
+                      }}>
+                        <span style={{
+                          width: 6,
+                          height: 6,
+                          borderRadius: '50%',
+                          background: isSubscribed ? '#10b981' : subStatus === 'pending' ? '#f59e0b' : '#ef4444',
+                          display: 'inline-block'
+                        }} />
+                        {isSubscribed ? 'اشتراك مفعل ✓' : subStatus === 'pending' ? 'بانتظار تأكيد الحوالة ⏳' : 'غير مشترك — يلزم التفعيل 🔒'}
                       </div>
                     </div>
                   </div>
@@ -276,23 +301,63 @@ export default function SiteChrome({ children }) {
                 gap: 10
               }}>
                 {hasName ? (
-                  <Link
-                    href="/dashboard"
-                    onClick={() => setDrawerOpen(false)}
-                    className="btn btn-emerald btn-lg"
-                    style={{
-                      width: '100%',
-                      justifyContent: 'center',
-                      fontSize: 14.5,
-                      fontWeight: 900,
-                      borderRadius: 12,
-                      padding: '12px'
-                    }}
-                  >
-                    <LayoutDashboard size={17} />
-                    لوحة التحكم الخاصة بي
-                    <ArrowLeft size={15} />
-                  </Link>
+                  isSubscribed ? (
+                    <Link
+                      href="/dashboard"
+                      onClick={() => setDrawerOpen(false)}
+                      className="btn btn-emerald btn-lg"
+                      style={{
+                        width: '100%',
+                        justifyContent: 'center',
+                        fontSize: 14.5,
+                        fontWeight: 900,
+                        borderRadius: 12,
+                        padding: '12px'
+                      }}
+                    >
+                      <LayoutDashboard size={17} />
+                      لوحة التحكم الخاصة بي
+                      <ArrowLeft size={15} />
+                    </Link>
+                  ) : subStatus === 'pending' ? (
+                    <Link
+                      href="/dashboard"
+                      onClick={() => setDrawerOpen(false)}
+                      className="btn btn-lg"
+                      style={{
+                        width: '100%',
+                        justifyContent: 'center',
+                        fontSize: 14,
+                        fontWeight: 900,
+                        borderRadius: 12,
+                        padding: '12px',
+                        background: '#f59e0b',
+                        color: '#ffffff'
+                      }}
+                    >
+                      <ShieldCheck size={17} />
+                      متابعة حالة تفعيل الحساب ⏳
+                      <ArrowLeft size={15} />
+                    </Link>
+                  ) : (
+                    <Link
+                      href="/dashboard"
+                      onClick={() => setDrawerOpen(false)}
+                      className="btn btn-emerald btn-lg"
+                      style={{
+                        width: '100%',
+                        justifyContent: 'center',
+                        fontSize: 14,
+                        fontWeight: 900,
+                        borderRadius: 12,
+                        padding: '12px'
+                      }}
+                    >
+                      <CreditCard size={17} />
+                      سداد الاشتراك وتفعيل الحساب 🔒
+                      <ArrowLeft size={15} />
+                    </Link>
+                  )
                 ) : (
                   <>
                     <Link
