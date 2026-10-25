@@ -6,6 +6,7 @@ import {
   LayoutDashboard, PlusCircle, Upload, ListChecks, Search, Trash2, Save,
   Loader2, LogOut, Database, CheckCircle2, AlertTriangle, FileJson, FileSpreadsheet,
   X, Pencil, Layers, FolderPlus, Users, Package, CreditCard, Building2,
+  ShieldCheck, Settings,
 } from 'lucide-react';
 import { useSpecBanks } from '../../lib/useData';
 import ContentManager from '../../components/admin/ContentManager';
@@ -13,9 +14,13 @@ import ClientsManager from '../../components/admin/ClientsManager';
 import PackagesManager from '../../components/admin/PackagesManager';
 import SubscriptionsManager from '../../components/admin/SubscriptionsManager';
 import PaymentsManager from '../../components/admin/PaymentsManager';
+import SecurityVaultManager from '../../components/admin/SecurityVaultManager';
+import PaymentConfigManager from '../../components/admin/PaymentConfigManager';
 
 const TABS = [
   { id: 'overview', label: 'نظرة عامة', icon: LayoutDashboard },
+  { id: 'security', label: 'مركز الأمان ومكافحة الكشط 🛡️', icon: ShieldCheck },
+  { id: 'payment_settings', label: 'إعدادات الحسابات والبريد ⚙️', icon: Settings },
   { id: 'payments', label: 'طلبات الدفع (الكريمي وجيب)', icon: CreditCard },
   { id: 'subscriptions', label: 'الاشتراكات المفعلة', icon: CheckCircle2 },
   { id: 'content', label: 'الأقسام والتخصصات', icon: Building2 },
@@ -112,6 +117,8 @@ export default function AdminPage() {
       </div>
 
       {tab === 'overview' && <Overview stats={stats} onRefresh={load} />}
+      {tab === 'security' && <SecurityVaultManager />}
+      {tab === 'payment_settings' && <PaymentConfigManager onDone={(m) => flash('ok', m)} onErr={(m) => flash('err', m)} />}
       {tab === 'content' && <ContentManager onDone={(m) => { flash('ok', m); load(); }} onErr={(m) => flash('err', m)} />}
       {tab === 'banks' && <BanksManager {...childProps} />}
       {tab === 'manual' && <ManualAdd {...childProps} />}

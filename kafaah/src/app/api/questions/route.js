@@ -53,7 +53,7 @@ export async function GET(request) {
 
     // ٤) حماية صارمة ضد الكشط: تحديد سقف أعلى لعدد الأسئلة المسترجعة بالطلب الواحد
     const requestedLimit = parseInt(sp.get('limit') || '20', 10);
-    const safeLimit = Math.min(Math.max(isNaN(requestedLimit) ? 20 : requestedLimit, 1), 100);
+    const safeLimit = Math.min(Math.max(isNaN(requestedLimit) ? 20 : requestedLimit, 1), 250);
     const requestedOffset = parseInt(sp.get('offset') || '0', 10);
     const safeOffset = Math.max(isNaN(requestedOffset) ? 0 : requestedOffset, 0);
 
