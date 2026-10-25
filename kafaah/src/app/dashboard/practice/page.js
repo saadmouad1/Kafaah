@@ -11,16 +11,27 @@ export default function PracticePage() {
   const { profile, spec, t, locale, specName, bankName } = useKafaah();
   const { banks } = useSpecBanks(profile?.specId);
   const [bank, setBank] = useState('all');
+  const [location, setLocation] = useState('all');
+  const [language, setLanguage] = useState('all');
   const [difficulty, setDifficulty] = useState('all');
+  const [count, setCount] = useState(25);
   const [started, setStarted] = useState(false);
   const [seed, setSeed] = useState(0);
 
   // نجلب دائمًا (حتى قبل البدء) لمعرفة العدد المتاح
+  const reqLimit = Math.min(5000, Math.max(count || 25, 25));
   const { questions, total, loading } = useQuestions({
-    bank, difficulty, limit: 100, offset: seed, enabled: true,
+    bank,
+    location: location !== 'all' ? location : null,
+    language: language !== 'all' ? language : null,
+    difficulty,
+    limit: reqLimit,
+    offset: seed,
+    enabled: true,
   });
 
-  const deck = useMemo(() => shuffle(questions).slice(0, 25), [questions]);
+  const effCount = total > 0 ? Math.min(count, total) : count;
+  const deck = useMemo(() => shuffle(questions).slice(0, effCount), [questions, effCount]);
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState(null);
   const [savedIds, setSavedIds] = useState({});
@@ -53,8 +64,9 @@ export default function PracticePage() {
   }
 
   function begin() {
-    // عيّنة عشوائية من كامل البنك
-    const maxOff = Math.max(0, total - 100);
+    const eff = total > 0 ? Math.min(count, total) : count;
+    setCount(eff);
+    const maxOff = Math.max(0, total - eff);
     setSeed(maxOff > 0 ? Math.floor(Math.random() * maxOff) : 0);
     setStarted(true);
     setIdx(0);
@@ -82,6 +94,33 @@ export default function PracticePage() {
           </div>
 
           <div className="field mb-3">
+            <label className="label">{locale === 'ar' ? 'جهة / مركز الاختبار' : 'Exam Location / Council'}</label>
+            <div className="chip-row">
+              {[
+                ['all', locale === 'ar' ? 'كل المراكز' : 'All Centers'],
+                ['صنعاء', locale === 'ar' ? 'صنعاء (المجلس الطبي)' : "Sana'a"],
+                ['عدن', locale === 'ar' ? 'عدن (المجلس الطبي)' : 'Aden'],
+                ['السعودية', locale === 'ar' ? 'السعودية (برومترك / الهيئة)' : 'Saudi (Prometric)']
+              ].map(([v, l]) => (
+                <span key={v} className={`chip${location === v ? ' active' : ''}`} onClick={() => setLocation(v)}>{l}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="field mb-3">
+            <label className="label">{locale === 'ar' ? 'لغة الأسئلة الأصلية' : 'Original Question Language'}</label>
+            <div className="chip-row">
+              {[
+                ['all', locale === 'ar' ? 'كل اللغات' : 'All'],
+                ['ar', locale === 'ar' ? 'العربية' : 'Arabic'],
+                ['en', 'English']
+              ].map(([v, l]) => (
+                <span key={v} className={`chip${language === v ? ' active' : ''}`} onClick={() => setLanguage(v)}>{l}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="field mb-3">
             <label className="label">{t('practice.chooseBank')}</label>
             <div className="chip-row">
               <span className={`chip${bank === 'all' ? ' active' : ''}`} onClick={() => setBank('all')}>{t('practice.allBanks')}</span>
@@ -100,6 +139,27 @@ export default function PracticePage() {
             </div>
           </div>
 
+          <div className="field mb-3">
+            <label className="label">حجم جلسة التدريب</label>
+            <div className="chip-row">
+              {[
+                [10, '10 أسئلة'],
+                [25, '25 سؤالاً (الافتراضي)'],
+                [50, '50 سؤالاً'],
+                [100, '100 سؤال'],
+                ...(total > 100 ? [[total, `كل الأسئلة المتاحة (${total.toLocaleString(locale)})`]] : []),
+              ].map(([v, l]) => (
+                <span
+                  key={v}
+                  className={`chip${effCount === v ? ' active' : ''}`}
+                  onClick={() => setCount(v)}
+                >
+                  {l}
+                </span>
+              ))}
+            </div>
+          </div>
+
           <div className="row-between card soft-sector" style={{ padding: 14 }}>
             <div className="row" style={{ gap: 10 }}>
               <Trophy size={18} style={{ color: 'var(--sector)' }} />
@@ -112,7 +172,7 @@ export default function PracticePage() {
           </div>
 
           <button className="btn btn-primary btn-lg btn-block mt-3" onClick={begin} disabled={total === 0}>
-            <Play size={17} /> {t('practice.start')}
+            <Play size={17} /> {t('practice.start')} ({effCount} سؤال)
           </button>
         </div>
       </div>

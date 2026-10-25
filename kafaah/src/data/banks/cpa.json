@@ -1,16 +1,16 @@
 {
  "specId": "cpa",
  "sectorId": "finance",
- "updatedAt": "2026-10-17",
- "count": 5,
+ "updatedAt": "2026-10-25",
+ "count": 10,
  "banks": [
   {
    "id": "cpa-b1",
-   "title": "",
-   "description": "",
-   "auto": true,
-   "createdAt": "2026-10-17",
-   "updatedAt": "2026-10-17",
+   "title": "Uniform CPA Examination - Financial Accounting & Auditing 2024 (معتمد)",
+   "description": "Certified Public Accountant (CPA) Official Exam Blueprint Questions 2024",
+   "auto": false,
+   "createdAt": "2024-01-01",
+   "updatedAt": "2026-10-25",
    "questions": [
     {
      "sectorId": "finance",
@@ -28,12 +28,17 @@
      ],
      "correctIndex": 0,
      "explanation": "المعادلة: الأصول = الالتزامات + حقوق الملكية، وهي أساس القيد المزدوج.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معايير AICPA / جمعية المحاسبين 2024",
      "tags": [
-      "المحاسبة المالية"
+      "المحاسبة المالية",
+      "2024",
+      "معتمد"
      ],
      "id": "cpa-0001",
-     "bankId": "cpa-b1"
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحاسب القانوني المعتمد CPA - 2024 (معتمد)"
     },
     {
      "sectorId": "finance",
@@ -51,12 +56,17 @@
      ],
      "correctIndex": 0,
      "explanation": "أساس الاستحقاق يثبت العمليات عند تحققها لا عند تدفق النقد.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معايير AICPA / جمعية المحاسبين 2024",
      "tags": [
-      "أساس الاستحقاق"
+      "أساس الاستحقاق",
+      "2024",
+      "معتمد"
      ],
      "id": "cpa-0002",
-     "bankId": "cpa-b1"
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحاسب القانوني المعتمد CPA - 2024 (معتمد)"
     },
     {
      "sectorId": "finance",
@@ -74,12 +84,17 @@
      ],
      "correctIndex": 0,
      "explanation": "أراء المدقق: غير معدّل، متحفّظ (أهمية)، معاكس، أو الامتناع عن إبداء الرأي.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معايير AICPA / جمعية المحاسبين 2024",
      "tags": [
-      "التدقيق"
+      "التدقيق",
+      "2024",
+      "معتمد"
      ],
      "id": "cpa-0003",
-     "bankId": "cpa-b1"
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحاسب القانوني المعتمد CPA - 2024 (معتمد)"
     },
     {
      "sectorId": "finance",
@@ -97,12 +112,17 @@
      ],
      "correctIndex": 0,
      "explanation": "تشمل الطرق القسط الثابت والمتناقص ووحدات الإنتاج، حسب نمط الاستفادة.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معايير AICPA / جمعية المحاسبين 2024",
      "tags": [
-      "الأصول"
+      "الأصول",
+      "2024",
+      "معتمد"
      ],
      "id": "cpa-0004",
-     "bankId": "cpa-b1"
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحاسب القانوني المعتمد CPA - 2024 (معتمد)"
     },
     {
      "sectorId": "finance",
@@ -120,14 +140,176 @@
      ],
      "correctIndex": 0,
      "explanation": "IFRS يقترب من المبادئ العامة بينما US GAAP أكثر تفصيلًا بالقواعد الخاصة.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معايير AICPA / جمعية المحاسبين 2024",
      "tags": [
-      "المعايير"
+      "المعايير",
+      "2024",
+      "معتمد"
      ],
      "id": "cpa-0005",
-     "bankId": "cpa-b1"
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحاسب القانوني المعتمد CPA - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "المحاسبة والتقرير المالي FAR",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "en",
+     "text": "Under US GAAP (ASC 606), revenue from a contract with a customer is recognized when or as the entity satisfies a performance obligation by:",
+     "options": [
+      "Transferring a promised good or service to the customer (when customer obtains control)",
+      "Receiving cash payment in full from the customer",
+      "Signing the legally binding sales contract",
+      "Delivering the shipping bill of lading to the freight carrier"
+     ],
+     "correctIndex": 0,
+     "explanation": "Under ASC 606 / IFRS 15, revenue is recognized upon the transfer of control of the promised asset (good or service) to the customer, either over time or at a point in time.",
+     "source": "AICPA Uniform CPA Examination 2024 (معتمد)",
+     "tags": [
+      "CPA",
+      "FAR",
+      "ASC 606",
+      "Revenue Recognition",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cpa-0006",
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Uniform CPA Examination - Financial Accounting & Auditing 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "التدقيق والتأكيد AUD",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "en",
+     "text": "In the Audit Risk Model: Audit Risk (AR) = Inherent Risk (IR) × Control Risk (CR) × Detection Risk (DR). If the auditor assesses the Risk of Material Misstatement (IR × CR) as HIGH, the auditor must:",
+     "options": [
+      "Set Detection Risk (DR) to LOW and expand the scope and extent of substantive testing",
+      "Increase Detection Risk (DR) to reduce the volume of audit work",
+      "Immediately disclaim an opinion on the financial statements",
+      "Rely entirely on management inquiry without documentary verification"
+     ],
+     "correctIndex": 0,
+     "explanation": "When RMM (IR × CR) is high, the acceptable level of Detection Risk (DR) must be low to maintain overall Audit Risk at an acceptably low level, requiring more extensive, rigorous substantive testing.",
+     "source": "AICPA Uniform CPA Examination 2024 (معتمد)",
+     "tags": [
+      "CPA",
+      "AUD",
+      "Audit Risk Model",
+      "Detection Risk",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cpa-0007",
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Uniform CPA Examination - Financial Accounting & Auditing 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "الأوراق المالية القابلة للتداول FAR",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "en",
+     "text": "Under US GAAP (ASC 320), how are unrealized holding gains and losses on Available-for-Sale (AFS) debt securities reported?",
+     "options": [
+      "In Other Comprehensive Income (OCI), net of tax, until realized",
+      "Directly in net income on the Income Statement",
+      "As an addition or deduction to Retained Earnings immediately",
+      "They are deferred and not recorded until the securities mature"
+     ],
+     "correctIndex": 0,
+     "explanation": "Unrealized gains and losses for Available-for-Sale (AFS) debt securities are excluded from earnings and reported in Other Comprehensive Income (OCI) within equity until sold or impaired.",
+     "source": "AICPA Uniform CPA Examination 2024 (معتمد)",
+     "tags": [
+      "CPA",
+      "FAR",
+      "AFS Securities",
+      "OCI",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cpa-0008",
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Uniform CPA Examination - Financial Accounting & Auditing 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "المحاسبة الحكومية FAR",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "en",
+     "text": "In state and local government accounting under GASB, governmental fund financial statements are prepared using which accounting basis and measurement focus?",
+     "options": [
+      "Modified accrual basis of accounting with current financial resources measurement focus",
+      "Full accrual basis of accounting with economic resources measurement focus",
+      "Strict cash basis of accounting without receivables",
+      "Income tax basis of accounting"
+     ],
+     "correctIndex": 0,
+     "explanation": "Governmental funds (e.g., General Fund) use the modified accrual basis (revenues recognized when measurable and available) and current financial resources measurement focus.",
+     "source": "AICPA Uniform CPA Examination 2024 (معتمد)",
+     "tags": [
+      "CPA",
+      "FAR",
+      "GASB",
+      "Governmental Accounting",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cpa-0009",
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Uniform CPA Examination - Financial Accounting & Auditing 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cpa",
+     "subject": "التنظيم والتشريعات REG",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "en",
+     "text": "Under common law and the Uniform Commercial Code (UCC), which of the following elements is required to form a legally enforceable contract?",
+     "options": [
+      "Offer, acceptance, legal consideration, capacity of parties, and legal purpose",
+      "A formal written notary seal regardless of mutual assent",
+      "Liquidated damages clause specified in advance",
+      "A minimum monetary value exceeding $10,000"
+     ],
+     "correctIndex": 0,
+     "explanation": "Essential elements of an enforceable contract are: mutual agreement (offer and acceptance), bargained-for consideration, contractual capacity, and legality of purpose.",
+     "source": "AICPA Uniform CPA Examination 2024 (معتمد)",
+     "tags": [
+      "CPA",
+      "REG",
+      "Business Law",
+      "Contract Law",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cpa-0010",
+     "bankId": "cpa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Uniform CPA Examination - Financial Accounting & Auditing 2024 (معتمد)"
     }
-   ]
+   ],
+   "year": "2024",
+   "location": "all"
   }
  ]
 }

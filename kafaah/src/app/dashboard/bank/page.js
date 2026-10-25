@@ -33,12 +33,16 @@ export default function BankPage() {
   const [activeBank, setActiveBank] = useState(null);
   const [search, setSearch] = useState('');
   const [difficulty, setDifficulty] = useState('all');
+  const [location, setLocation] = useState('all');
+  const [language, setLanguage] = useState('all');
   const [limit, setLimit] = useState(20);
   const [open, setOpen] = useState({});
 
   const { questions, total, hasMore, loading } = useQuestions({
     spec: specId,
     bank: activeBank,
+    location: location !== 'all' ? location : null,
+    language: language !== 'all' ? language : null,
     difficulty,
     search: search || null,
     limit,
@@ -141,10 +145,64 @@ export default function BankPage() {
             onChange={(e) => { setSearch(e.target.value); setLimit(20); }}
           />
         </div>
-        <div className="mt-2 chip-row">
-          {[['all', t('common.allDifficulties')], ['easy', t('common.easy')], ['medium', t('common.medium')], ['hard', t('common.hard')]].map(([v, l]) => (
-            <span key={v} className={`chip${difficulty === v ? ' active' : ''}`} onClick={() => { setDifficulty(v); setLimit(20); }}>{l}</span>
+        {/* فلترة المركز / الجهة */}
+        <div className="mt-2 row wrap" style={{ gap: 6, alignItems: 'center' }}>
+          <span style={{ fontSize: 12, fontWeight: 800, color: 'var(--text-muted)' }}>المركز:</span>
+          {[
+            ['all', '🌐 كل المراكز'],
+            ['sanaa', '🇾🇪 صنعاء'],
+            ['aden', '🇾🇪 عدن'],
+            ['ksa', '🇸🇦 السعودية'],
+          ].map(([v, l]) => (
+            <span
+              key={v}
+              className={`chip${location === v ? ' active' : ''}`}
+              onClick={() => { setLocation(v); setLimit(20); }}
+              style={{ fontSize: 12 }}
+            >
+              {l}
+            </span>
           ))}
+        </div>
+
+        {/* فلترة اللغة والصعوبة */}
+        <div className="mt-2 row-between wrap" style={{ gap: 8 }}>
+          <div className="chip-row">
+            <span style={{ fontSize: 12, fontWeight: 800, color: 'var(--text-muted)' }}>اللغة:</span>
+            {[
+              ['all', 'الكل'],
+              ['ar', 'العربية'],
+              ['en', 'English'],
+            ].map(([v, l]) => (
+              <span
+                key={v}
+                className={`chip${language === v ? ' active' : ''}`}
+                onClick={() => { setLanguage(v); setLimit(20); }}
+                style={{ fontSize: 12 }}
+              >
+                {l}
+              </span>
+            ))}
+          </div>
+
+          <div className="chip-row">
+            <span style={{ fontSize: 12, fontWeight: 800, color: 'var(--text-muted)' }}>الصعوبة:</span>
+            {[
+              ['all', t('common.allDifficulties')],
+              ['easy', t('common.easy')],
+              ['medium', t('common.medium')],
+              ['hard', t('common.hard')],
+            ].map(([v, l]) => (
+              <span
+                key={v}
+                className={`chip${difficulty === v ? ' active' : ''}`}
+                onClick={() => { setDifficulty(v); setLimit(20); }}
+                style={{ fontSize: 12 }}
+              >
+                {l}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 

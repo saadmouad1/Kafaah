@@ -36,11 +36,34 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="container container-narrow page" style={{ maxWidth: 460 }}>
-      <div className="card card-pad-lg mt-4 fade-up">
+    <div className="container container-narrow page" style={{ maxWidth: 480 }}>
+      <div className="card glass-card-pro card-pad-lg mt-4 fade-up" style={{ borderRadius: 24, padding: 30 }}>
         <div className="text-center">
-          <img src="/icon.svg" alt="" width="56" height="56" style={{ borderRadius: 16 }} />
-          <h1 className="mt-2" style={{ fontSize: 23 }}>{t('register.title')}</h1>
+          <div style={{ position: 'relative', display: 'inline-block' }}>
+            <img
+              src="/icon.svg"
+              alt="Kafaah"
+              width="62"
+              height="62"
+              className="float-icon"
+              style={{ borderRadius: 18, boxShadow: '0 12px 24px -6px color-mix(in srgb, var(--sector) 40%, transparent)' }}
+            />
+            <span
+              style={{
+                position: 'absolute',
+                bottom: -2,
+                right: -2,
+                width: 14,
+                height: 14,
+                borderRadius: '50%',
+                background: 'var(--success)',
+                border: '2.5px solid var(--surface)',
+                boxShadow: '0 0 8px var(--success)',
+              }}
+            />
+          </div>
+
+          <h1 className="mt-2" style={{ fontSize: 24, fontWeight: 900 }}>{t('register.title')}</h1>
           <p className="text-muted mt-1">{t('register.sub')}</p>
         </div>
 

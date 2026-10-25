@@ -24,6 +24,7 @@ function save(subscriptions) {
 function addInterval(from, interval) {
   const d = new Date(from);
   if (interval === 'year') d.setFullYear(d.getFullYear() + 1);
+  else if (interval === '3_months' || interval === 'quarter' || interval === 'quarterly') d.setMonth(d.getMonth() + 3);
   else if (interval === 'once') d.setFullYear(d.getFullYear() + 100);
   else d.setMonth(d.getMonth() + 1);
   return d.toISOString();

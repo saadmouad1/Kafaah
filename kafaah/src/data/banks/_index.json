@@ -1,151 +1,1572 @@
 {
- "generatedAt": "2026-10-17T02:49:25.131Z",
- "total": 3237,
- "files": [
-  {
-   "specId": "cfa",
-   "sectorId": "finance",
-   "count": 5
+  "total": 3375,
+  "bySector": {
+    "medical": 3160,
+    "engineering": 70,
+    "law": 50,
+    "finance": 50,
+    "education": 45
   },
-  {
-   "specId": "cma",
-   "sectorId": "finance",
-   "count": 5
-  },
-  {
-   "specId": "cpa",
-   "sectorId": "finance",
-   "count": 5
-  },
-  {
-   "specId": "dentistry",
-   "sectorId": "medical",
-   "count": 85
-  },
-  {
-   "specId": "edu_counsel",
-   "sectorId": "education",
-   "count": 5
-  },
-  {
-   "specId": "edu_general",
-   "sectorId": "education",
-   "count": 5
-  },
-  {
-   "specId": "edu_leadership",
-   "sectorId": "education",
-   "count": 5
-  },
-  {
-   "specId": "edu_subject",
-   "sectorId": "education",
-   "count": 5
-  },
-  {
-   "specId": "emergency",
-   "sectorId": "medical",
-   "count": 5
-  },
-  {
-   "specId": "eng_arch",
-   "sectorId": "engineering",
-   "count": 5
-  },
-  {
-   "specId": "eng_chem",
-   "sectorId": "engineering",
-   "count": 5
-  },
-  {
-   "specId": "eng_civil",
-   "sectorId": "engineering",
-   "count": 5
-  },
-  {
-   "specId": "eng_elec",
-   "sectorId": "engineering",
-   "count": 5
-  },
-  {
-   "specId": "eng_env",
-   "sectorId": "engineering",
-   "count": 5
-  },
-  {
-   "specId": "eng_it",
-   "sectorId": "engineering",
-   "count": 5
-  },
-  {
-   "specId": "eng_mech",
-   "sectorId": "engineering",
-   "count": 5
-  },
-  {
-   "specId": "gms",
-   "sectorId": "medical",
-   "count": 2991
-  },
-  {
-   "specId": "lab",
-   "sectorId": "medical",
-   "count": 31
-  },
-  {
-   "specId": "law_arbitration",
-   "sectorId": "law",
-   "count": 5
-  },
-  {
-   "specId": "law_bar",
-   "sectorId": "law",
-   "count": 5
-  },
-  {
-   "specId": "law_commercial",
-   "sectorId": "law",
-   "count": 5
-  },
-  {
-   "specId": "law_criminal",
-   "sectorId": "law",
-   "count": 5
-  },
-  {
-   "specId": "law_judiciary",
-   "sectorId": "law",
-   "count": 5
-  },
-  {
-   "specId": "nursing",
-   "sectorId": "medical",
-   "count": 5
-  },
-  {
-   "specId": "pharmacy",
-   "sectorId": "medical",
-   "count": 5
-  },
-  {
-   "specId": "pt",
-   "sectorId": "medical",
-   "count": 5
-  },
-  {
-   "specId": "radiology",
-   "sectorId": "medical",
-   "count": 5
-  },
-  {
-   "specId": "socpa",
-   "sectorId": "finance",
-   "count": 5
-  },
-  {
-   "specId": "tax",
-   "sectorId": "finance",
-   "count": 5
-  }
- ]
+  "items": [
+    {
+      "specId": "gms",
+      "label": "الطب البشري والجراحة العامة",
+      "sectorId": "medical",
+      "sectorLabel": "القطاع الصحي والطبي",
+      "count": 2991,
+      "bankCount": 11,
+      "banks": [
+        {
+          "id": "gms-2025-sanaa",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي اليمني (صنعاء) - 2025 (معتمد)",
+          "description": "أسئلة ونماذج امتحانات الكفاءة الرسمية لمزاولة المهنة في صنعاء دورة 2025",
+          "auto": false,
+          "count": 150,
+          "difficulties": {
+            "easy": 0,
+            "medium": 150,
+            "hard": 0
+          },
+          "year": "2025",
+          "years": [
+            "2025"
+          ],
+          "location": "sanaa",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2025-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2025-aden",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي ووزارة الصحة (عدن) - 2025 (معتمد)",
+          "description": "امتحان الكفاءة المهنية لمزاولة الطب البشري المركز الرئيسي عدن دورة 2025",
+          "auto": false,
+          "count": 150,
+          "difficulties": {
+            "easy": 37,
+            "medium": 113,
+            "hard": 0
+          },
+          "year": "2025",
+          "years": [
+            "2025"
+          ],
+          "location": "aden",
+          "locations": [
+            "aden"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2025-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2025-ksa",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "اختبار الهيئة السعودية SMLE / برومترك - 2025 (معتمد)",
+          "description": "أسئلة التقييم الطبي السعودي المحاكية لامتحانات برومترك وهيئة التخصصات 2025",
+          "auto": false,
+          "count": 150,
+          "difficulties": {
+            "easy": 40,
+            "medium": 110,
+            "hard": 0
+          },
+          "year": "2025",
+          "years": [
+            "2025"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "en",
+            "ar"
+          ],
+          "createdAt": "2025-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2024-sanaa",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي اليمني (صنعاء) - 2024 (معتمد)",
+          "description": "أسئلة امتحانات الكفاءة الرسمية المعتمدة لمزاولة المهنة بصنعاء دورة 2024",
+          "auto": false,
+          "count": 200,
+          "difficulties": {
+            "easy": 2,
+            "medium": 198,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "sanaa",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2024-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2024-aden",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي (عدن) - 2024 (معتمد)",
+          "description": "النموذج المعتمد لاختبار مزاولة المهنة بمحافظة عدن دورة 2024",
+          "auto": false,
+          "count": 200,
+          "difficulties": {
+            "easy": 0,
+            "medium": 200,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "aden",
+          "locations": [
+            "aden"
+          ],
+          "languages": [
+            "en",
+            "ar"
+          ],
+          "createdAt": "2024-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2024-ksa",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "اختبار الهيئة السعودية للتخصصات SMLE - 2024 (معتمد)",
+          "description": "أسئلة بنك برومترك ونماذج البورد السعودي SMLE دورة 2024",
+          "auto": false,
+          "count": 200,
+          "difficulties": {
+            "easy": 0,
+            "medium": 200,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "en",
+            "ar"
+          ],
+          "createdAt": "2024-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2023-sanaa",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي اليمني (صنعاء) - 2023 (معتمد)",
+          "description": "الأسئلة الامتحانية المعتمدة لدورة مزاولة المهنة بصنعاء 2023",
+          "auto": false,
+          "count": 150,
+          "difficulties": {
+            "easy": 0,
+            "medium": 150,
+            "hard": 0
+          },
+          "year": "2023",
+          "years": [
+            "2023"
+          ],
+          "location": "sanaa",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2023-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2023-aden",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي (عدن) - 2023 (معتمد)",
+          "description": "الأسئلة الامتحانية المعتمدة لدورة مزاولة المهنة بعدن 2023",
+          "auto": false,
+          "count": 150,
+          "difficulties": {
+            "easy": 0,
+            "medium": 150,
+            "hard": 0
+          },
+          "year": "2023",
+          "years": [
+            "2023"
+          ],
+          "location": "aden",
+          "locations": [
+            "aden"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2023-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2023-ksa",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "اختبار الهيئة السعودية SMLE - 2023 (معتمد)",
+          "description": "أسئلة مزاولة المهنة المعتمدة للهيئة السعودية للتخصصات دورة 2023",
+          "auto": false,
+          "count": 150,
+          "difficulties": {
+            "easy": 0,
+            "medium": 150,
+            "hard": 0
+          },
+          "year": "2023",
+          "years": [
+            "2023"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2023-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-2022-yemen",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي اليمني العامة - 2022 (معتمد)",
+          "description": "النماذج الوزارية المشتركة لامتحان مزاولة المهنة لعام 2022",
+          "auto": false,
+          "count": 150,
+          "difficulties": {
+            "easy": 0,
+            "medium": 150,
+            "hard": 0
+          },
+          "year": "2022",
+          "years": [
+            "2022"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2022-01-15",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "gms-comprehensive",
+          "specId": "gms",
+          "sectorId": "medical",
+          "title": "بنك الحالات السريرية والجراحية الشاملة (معتمد)",
+          "description": "بنك أسئلة سريرية موسع يغطي الباطنية، الجراحة العامة، الأطفال، والنساء والتوليد",
+          "auto": false,
+          "count": 1341,
+          "difficulties": {
+            "easy": 7,
+            "medium": 1334,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "en",
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "dentistry",
+      "label": "طب وجراحة الفم والأسنان",
+      "sectorId": "medical",
+      "sectorLabel": "القطاع الصحي والطبي",
+      "count": 85,
+      "bankCount": 4,
+      "banks": [
+        {
+          "id": "dentistry-2024-sanaa",
+          "specId": "dentistry",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+          "description": "النموذج المعتمد لاختبار مزاولة مهنة طب وجراحة الفم والأسنان بصنعاء 2024",
+          "auto": false,
+          "count": 25,
+          "difficulties": {
+            "easy": 0,
+            "medium": 25,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "sanaa",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "dentistry-2024-aden",
+          "specId": "dentistry",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+          "description": "امتحان الكفاءة المهنية لمزاولة طب وجراحة الفم والأسنان بعدن 2024",
+          "auto": false,
+          "count": 25,
+          "difficulties": {
+            "easy": 0,
+            "medium": 25,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "aden",
+          "locations": [
+            "aden"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "dentistry-2024-ksa",
+          "specId": "dentistry",
+          "sectorId": "medical",
+          "title": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+          "description": "أسئلة بنك برومترك ونماذج البورد السعودي لطب الأسنان SDLE 2024",
+          "auto": false,
+          "count": 20,
+          "difficulties": {
+            "easy": 0,
+            "medium": 20,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "dentistry-2023-yemen",
+          "specId": "dentistry",
+          "sectorId": "medical",
+          "title": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+          "description": "النماذج الوزارية المشتركة لامتحان الكفاءة لعام 2023",
+          "auto": false,
+          "count": 15,
+          "difficulties": {
+            "easy": 0,
+            "medium": 15,
+            "hard": 0
+          },
+          "year": "2023",
+          "years": [
+            "2023"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "pharmacy",
+      "label": "الصيدلة السريرية والصيدلانية",
+      "sectorId": "medical",
+      "sectorLabel": "القطاع الصحي والطبي",
+      "count": 15,
+      "bankCount": 3,
+      "banks": [
+        {
+          "id": "pharmacy-2024-sanaa",
+          "specId": "pharmacy",
+          "sectorId": "medical",
+          "title": "اختبار رخصة الصيدلة السريرية SPLE / المجلس الطبي - 2024 (معتمد)",
+          "description": "النموذج المعتمد لاختبارات مزاولة مهنة الصيدلة السريرية والعلاج الدوائي 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 6,
+            "hard": 4
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "pharmacy-2024-aden",
+          "specId": "pharmacy",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي ووزارة الصحة (عدن) - 2024 (معتمد)",
+          "description": "امتحان الكفاءة المهنية لمزاولة مهنة الصيدلة المركز الرئيسي بعدن 2024",
+          "auto": false,
+          "count": 3,
+          "difficulties": {
+            "easy": 0,
+            "medium": 2,
+            "hard": 1
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "aden",
+          "locations": [
+            "aden"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "pharmacy-2024-ksa",
+          "specId": "pharmacy",
+          "sectorId": "medical",
+          "title": "اختبار رخصة الصيدلة السعودية SPLE / Prometric - 2024 (معتمد)",
+          "description": "أسئلة بنك برومترك واختبار التقييم المهني لهيئة التخصصات الصحية السعودية 2024",
+          "auto": false,
+          "count": 2,
+          "difficulties": {
+            "easy": 0,
+            "medium": 1,
+            "hard": 1
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "nursing",
+      "label": "التمريض والرعاية الحرجة",
+      "sectorId": "medical",
+      "sectorLabel": "القطاع الصحي والطبي",
+      "count": 8,
+      "bankCount": 2,
+      "banks": [
+        {
+          "id": "nursing-2024-sanaa",
+          "specId": "nursing",
+          "sectorId": "medical",
+          "title": "اختبار رخصة التمريض والرعاية الحرجة SNLE / المجلس الطبي - 2024 (معتمد)",
+          "description": "النموذج المعتمد لتمريض العناية المركزة والطوارئ وسلامة المرضى 2024",
+          "auto": false,
+          "count": 7,
+          "difficulties": {
+            "easy": 0,
+            "medium": 5,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "nursing-2024-ksa",
+          "specId": "nursing",
+          "sectorId": "medical",
+          "title": "اختبار رخصة التمريض السعودية SNLE / Prometric - 2024 (معتمد)",
+          "description": "أسئلة بنك برومترك ورخصة التمريض السعودية SNLE 2024",
+          "auto": false,
+          "count": 1,
+          "difficulties": {
+            "easy": 0,
+            "medium": 1,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "lab",
+      "label": "علوم المختبرات الطبية",
+      "sectorId": "medical",
+      "sectorLabel": "القطاع الصحي والطبي",
+      "count": 31,
+      "bankCount": 3,
+      "banks": [
+        {
+          "id": "lab-2024-sanaa",
+          "specId": "lab",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+          "description": "النموذج الوزاري المعتمد لمزاولة مهنة التحاليل والمختبرات الطبية بصنعاء 2024",
+          "auto": false,
+          "count": 15,
+          "difficulties": {
+            "easy": 0,
+            "medium": 15,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "sanaa",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "lab-2024-aden",
+          "specId": "lab",
+          "sectorId": "medical",
+          "title": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+          "description": "امتحان الكفاءة المهنية لمزاولة المختبرات الطبية المركز الرئيسي عدن 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 10,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "aden",
+          "locations": [
+            "aden"
+          ],
+          "languages": [
+            "en",
+            "ar"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        },
+        {
+          "id": "lab-2024-ksa",
+          "specId": "lab",
+          "sectorId": "medical",
+          "title": "اختبار رخصة المختبرات السعودية SLLE / Prometric - 2024 (معتمد)",
+          "description": "أسئلة بنك برومترك واختبار التقييم المهني للمختبرات SLLE 2024",
+          "auto": false,
+          "count": 6,
+          "difficulties": {
+            "easy": 0,
+            "medium": 6,
+            "hard": 0
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "en"
+          ],
+          "createdAt": "2026-10-25",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "pt",
+      "label": "العلاج الطبيعي والتأهيل",
+      "sectorId": "medical",
+      "sectorLabel": "القطاع الصحي والطبي",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "pt-b1",
+          "specId": "pt",
+          "sectorId": "medical",
+          "title": "اختبار رخصة مزاولة مهنة العلاج الطبيعي والتأهيل - 2024 (معتمد)",
+          "description": "النموذج المعتمد لتأهيل العظام والأعصاب والقلب والإصابات الرياضية 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "radiology",
+      "label": "التصوير الطبي والأشعة",
+      "sectorId": "medical",
+      "sectorLabel": "القطاع الصحي والطبي",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "radiology-b1",
+          "specId": "radiology",
+          "sectorId": "medical",
+          "title": "اختبار رخصة التصوير الطبي والأشعة التشخيصية - 2024 (معتمد)",
+          "description": "النموذج المعتمد للأشعة المقطعية والرنين المغناطيسي والموجات الصوتية والوقاية ALARA 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 1,
+            "medium": 7,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "emergency",
+      "label": "طب الطوارئ والعناية المركزة",
+      "sectorId": "medical",
+      "sectorLabel": "القطاع الصحي والطبي",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "emergency-b1",
+          "specId": "emergency",
+          "sectorId": "medical",
+          "title": "اختبار طب الطوارئ والعناية الحرجة والحوادث - 2024 (معتمد)",
+          "description": "النموذج المعتمد لإنعاش القلب المتقدم ACLS ودعم الحياة في الإصابات ATLS 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 6,
+            "hard": 4
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [
+            "sanaa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "eng_civil",
+      "label": "الهندسة المدنية والإنشائية",
+      "sectorId": "engineering",
+      "sectorLabel": "الهندسة والتقنية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "eng_civil-b1",
+          "specId": "eng_civil",
+          "sectorId": "engineering",
+          "title": "اختبار الاعتماد المهني للهندسة المدنية والإنشائية SCE - 2024 (معتمد)",
+          "description": "النموذج المعتمد لاختبارات التصنيف المهني للمهندسين الإنشائيين - هيئة المهندسين السعودية والكود الإنشائي 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "eng_arch",
+      "label": "الهندسة المعمارية والتخطيط",
+      "sectorId": "engineering",
+      "sectorLabel": "الهندسة والتقنية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "eng_arch-b1",
+          "specId": "eng_arch",
+          "sectorId": "engineering",
+          "title": "اختبار الاعتماد المهني للهندسة المعمارية والتخطيط SCE - 2024 (معتمد)",
+          "description": "النموذج المعتمد لكود البناء العام SBC 201 والاستدامة ونمذجة البناء BIM 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "eng_elec",
+      "label": "الهندسة الكهربائية والإلكترونية",
+      "sectorId": "engineering",
+      "sectorLabel": "الهندسة والتقنية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "eng_elec-b1",
+          "specId": "eng_elec",
+          "sectorId": "engineering",
+          "title": "اختبار الاعتماد المهني للهندسة الكهربائية والإلكترونية SCE - 2024 (معتمد)",
+          "description": "النموذج المعتمد لنظم القوى والآلات الكهربائية والتحكم الآلي 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "eng_mech",
+      "label": "الهندسة الميكانيكية والصناعية",
+      "sectorId": "engineering",
+      "sectorLabel": "الهندسة والتقنية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "eng_mech-b1",
+          "specId": "eng_mech",
+          "sectorId": "engineering",
+          "title": "اختبار الاعتماد المهني للهندسة الميكانيكية والصناعية SCE - 2024 (معتمد)",
+          "description": "النموذج المعتمد للديناميكا الحرارية وميكانيكا الموائع وتصميم الآلات والتكييف 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 7,
+            "hard": 3
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "eng_it",
+      "label": "هندسة البرمجيات وتقنية المعلومات",
+      "sectorId": "engineering",
+      "sectorLabel": "الهندسة والتقنية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "eng_it-b1",
+          "specId": "eng_it",
+          "sectorId": "engineering",
+          "title": "اختبار الاعتماد المهني لهندسة البرمجيات وتقنية المعلومات - 2024 (معتمد)",
+          "description": "النموذج المعتمد للنظم الموزعة وهياكل البيانات والأمن السيبراني وقواعد البيانات 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar",
+            "en"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "eng_chem",
+      "label": "الهندسة الكيميائية",
+      "sectorId": "engineering",
+      "sectorLabel": "الهندسة والتقنية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "eng_chem-b1",
+          "specId": "eng_chem",
+          "sectorId": "engineering",
+          "title": "اختبار الاعتماد المهني للهندسة الكيميائية SCE - 2024 (معتمد)",
+          "description": "النموذج المعتمد لهندسة التفاعلات وعمليات الفصل والديناميكا الكيميائية وسلامة العمليات 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "eng_env",
+      "label": "الهندسة البيئية والمياه",
+      "sectorId": "engineering",
+      "sectorLabel": "الهندسة والتقنية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "eng_env-b1",
+          "specId": "eng_env",
+          "sectorId": "engineering",
+          "title": "اختبار الاعتماد المهني للهندسة البيئية والمياه SCE - 2024 (معتمد)",
+          "description": "النموذج المعتمد لمعالجة المياه وجودة الهواء والمدافن الصحية ودراسات الأثر البيئي 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "law_bar",
+      "label": "رخصة مزاولة مهنة المحاماة",
+      "sectorId": "law",
+      "sectorLabel": "القانون والمحاماة",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "law_bar-b1",
+          "specId": "law_bar",
+          "sectorId": "law",
+          "title": "اختبار رخصة مزاولة مهنة المحاماة المعتمد - 2024 (معتمد)",
+          "description": "النموذج المعتمد لاختبار القبول المهني للمحامين - الهيئة السعودية للمحامين ووزارة العدل 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 1,
+            "medium": 7,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "law_commercial",
+      "label": "القانون التجاري والشركات",
+      "sectorId": "law",
+      "sectorLabel": "القانون والمحاماة",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "law_commercial-b1",
+          "specId": "law_commercial",
+          "sectorId": "law",
+          "title": "اختبار القانون التجاري ونظام الشركات المعتمد - 2024 (معتمد)",
+          "description": "النموذج المعتمد لنظام الشركات الجديد والأوراق التجارية والإفلاس 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "law_criminal",
+      "label": "القانون الجنائي والمرافعات",
+      "sectorId": "law",
+      "sectorLabel": "القانون والمحاماة",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "law_criminal-b1",
+          "specId": "law_criminal",
+          "sectorId": "law",
+          "title": "اختبار القانون الجنائي والإجراءات الجزائية المعتمد - 2024 (معتمد)",
+          "description": "النموذج المعتمد لنظام الإجراءات الجزائية وقواعد التحقيق الجنائي والمحاكمة العادلة 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "law_judiciary",
+      "label": "القضاء والنيابة العامة",
+      "sectorId": "law",
+      "sectorLabel": "القانون والمحاماة",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "law_judiciary-b1",
+          "specId": "law_judiciary",
+          "sectorId": "law",
+          "title": "اختبار القضاء وأصول المحاكمات والنيابة العامة المعتمد - 2024 (معتمد)",
+          "description": "النموذج المعتمد للاختصاص القضائي وتسبيب الأحكام والطعن أمام المحكمة العليا 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "law_arbitration",
+      "label": "التحكيم الدولي والوساطة",
+      "sectorId": "law",
+      "sectorLabel": "القانون والمحاماة",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "law_arbitration-b1",
+          "specId": "law_arbitration",
+          "sectorId": "law",
+          "title": "اختبار التحكيم التجاري الدولي والوساطة SCCA - 2024 (معتمد)",
+          "description": "النموذج المعتمد لقواعد التحكيم واتفاقية نيويورك ودعوى بطلان أحكام التحكيم 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "cpa",
+      "label": "المحاسب القانوني المعتمد CPA",
+      "sectorId": "finance",
+      "sectorLabel": "المحاسبة والمالية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "cpa-b1",
+          "specId": "cpa",
+          "sectorId": "finance",
+          "title": "Uniform CPA Examination - Financial Accounting & Auditing 2024 (معتمد)",
+          "description": "Certified Public Accountant (CPA) Official Exam Blueprint Questions 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar",
+            "en"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "cma",
+      "label": "المحاسب الإداري المعتمد CMA",
+      "sectorId": "finance",
+      "sectorLabel": "المحاسبة والمالية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "cma-b1",
+          "specId": "cma",
+          "sectorId": "finance",
+          "title": "Certified Management Accountant (CMA) - Exam 2024 (معتمد)",
+          "description": "النموذج المعتمد للمحاسب الإداري المعتمد CMA في التكاليف والموازنات والرقابة والقرارات المالية 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "socpa",
+      "label": "الزمالة السعودية SOCPA",
+      "sectorId": "finance",
+      "sectorLabel": "المحاسبة والمالية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "socpa-b1",
+          "specId": "socpa",
+          "sectorId": "finance",
+          "title": "اختبار الزمالة السعودية للمحاسبين والمراجعين SOCPA - 2024 (معتمد)",
+          "description": "النموذج المعتمد لزمالة SOCPA في المعايير الدولية IFRS والمعايير الدولية للمراجعة 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 7,
+            "hard": 3
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "cfa",
+      "label": "المحلل المالي المعتمد CFA",
+      "sectorId": "finance",
+      "sectorLabel": "المحاسبة والمالية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "cfa-b1",
+          "specId": "cfa",
+          "sectorId": "finance",
+          "title": "Chartered Financial Analyst (CFA) Level I - 2024 (معتمد)",
+          "description": "Official CFA Level I Curriculum Exam Questions in Equity, Fixed Income & Ethics 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 7,
+            "hard": 3
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [],
+          "languages": [
+            "ar",
+            "en"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "tax",
+      "label": "الزكاة والضرائب",
+      "sectorId": "finance",
+      "sectorLabel": "المحاسبة والمالية",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "tax-b1",
+          "specId": "tax",
+          "sectorId": "finance",
+          "title": "اختبار الزكاة وضريبة القيمة المضافة ZATCA - 2024 (معتمد)",
+          "description": "النموذج المعتمد لاختبارات أخصائي ضريبة القيمة المضافة وجباية الزكاة وهيئة الزكاة 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "all",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "edu_general",
+      "label": "الرخصة المهنية للمعلمين (عام)",
+      "sectorId": "education",
+      "sectorLabel": "التربية والتعليم",
+      "count": 15,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "edu_general-b1",
+          "specId": "edu_general",
+          "sectorId": "education",
+          "title": "اختبار الرخصة المهنية للمعلمين (المعايير التربوية العامة) - قياس 2024 (معتمد)",
+          "description": "النموذج المعتمد لاختبار المعايير التربوية العامة للمعلمين - هيئة تقويم التعليم والتدريب ETEC 2024",
+          "auto": false,
+          "count": 15,
+          "difficulties": {
+            "easy": 3,
+            "medium": 11,
+            "hard": 1
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "edu_subject",
+      "label": "رخصة المعلم التخصصية",
+      "sectorId": "education",
+      "sectorLabel": "التربية والتعليم",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "edu_subject-b1",
+          "specId": "edu_subject",
+          "sectorId": "education",
+          "title": "اختبار رخصة المعلم التخصصية وطرق تدريس التخصص - قياس 2024 (معتمد)",
+          "description": "النموذج المعتمد لمعايير التخصص وبناء جداول المواصفات وتحليل المحتوى - هيئة تقويم التعليم والتدريب 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 7,
+            "hard": 3
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "edu_leadership",
+      "label": "الإدارة والقيادة المدرسية",
+      "sectorId": "education",
+      "sectorLabel": "التربية والتعليم",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "edu_leadership-b1",
+          "specId": "edu_leadership",
+          "sectorId": "education",
+          "title": "اختبار القيادة والإدارة المدرسية المعتمد - قياس 2024 (معتمد)",
+          "description": "النموذج المعتمد للتخطيط الاستراتيجي ومجتمعات التعلم المهنية والإشراف التربوي - قياس 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    },
+    {
+      "specId": "edu_counsel",
+      "label": "الإرشاد الطلابي والتوجيه",
+      "sectorId": "education",
+      "sectorLabel": "التربية والتعليم",
+      "count": 10,
+      "bankCount": 1,
+      "banks": [
+        {
+          "id": "edu_counsel-b1",
+          "specId": "edu_counsel",
+          "sectorId": "education",
+          "title": "اختبار التوجيه والإرشاد الطلابي المدرسي المعتمد - قياس 2024 (معتمد)",
+          "description": "النموذج المعتمد لنظريات الإرشاد النفسي ودراسة الحالة وتعديل السلوك - قياس 2024",
+          "auto": false,
+          "count": 10,
+          "difficulties": {
+            "easy": 0,
+            "medium": 8,
+            "hard": 2
+          },
+          "year": "2024",
+          "years": [
+            "2024"
+          ],
+          "location": "ksa",
+          "locations": [
+            "ksa"
+          ],
+          "languages": [
+            "ar"
+          ],
+          "createdAt": "2024-01-01",
+          "updatedAt": "2026-10-25"
+        }
+      ],
+      "updatedAt": "2026-10-25"
+    }
+  ]
 }

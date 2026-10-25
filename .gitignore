@@ -59,3 +59,10 @@ kafaah/*.html
 *.zip
 *.rar
 *.tar.gz
+
+# Tool and agent symlinks
+.claude/
+kafaah/.claude/
+agent/
+kafaah/agent/
+

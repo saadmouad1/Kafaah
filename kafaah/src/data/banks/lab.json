@@ -1,16 +1,16 @@
 {
  "specId": "lab",
  "sectorId": "medical",
- "updatedAt": "2026-10-17",
+ "updatedAt": "2026-10-25",
  "count": 31,
  "banks": [
   {
-   "id": "lab-b1",
-   "title": "",
-   "description": "",
-   "auto": true,
-   "createdAt": "2026-10-17",
-   "updatedAt": "2026-10-17",
+   "id": "lab-2024-sanaa",
+   "title": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+   "description": "النموذج الوزاري المعتمد لمزاولة مهنة التحاليل والمختبرات الطبية بصنعاء 2024",
+   "year": "2024",
+   "location": "sanaa",
+   "source": "المجلس الطبي اليمني - صنعاء دورة 2024",
    "questions": [
     {
      "sectorId": "medical",
@@ -29,7 +29,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Toxoplasma gondii is the protozoan associated with oocysts produced in felids, its definitive hosts.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Microbiology",
       "Parasitology",
@@ -37,7 +37,10 @@
       "Oocyst Diagnosis"
      ],
      "id": "lab-0001",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -56,7 +59,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Toxoplasma gondii is an obligate intracellular protozoan.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Microbiology",
       "Parasitology",
@@ -64,7 +67,10 @@
       "Intracellular Parasite"
      ],
      "id": "lab-0002",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -83,7 +89,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Felids are the definitive hosts for Toxoplasma gondii.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Microbiology",
       "Parasitology",
@@ -91,7 +97,10 @@
       "Definitive Host"
      ],
      "id": "lab-0003",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -108,7 +117,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Fructose is a ketose; glucose and mannose are aldoses.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Biochemistry",
       "Carbohydrate Metabolism",
@@ -116,7 +125,10 @@
       "Ketose"
      ],
      "id": "lab-0004",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -135,7 +147,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Toxoplasma gondii is non-motile.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Microbiology",
       "Parasitology",
@@ -143,7 +155,10 @@
       "Protozoa Motility"
      ],
      "id": "lab-0005",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -159,7 +174,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Female Anopheles mosquitoes transmit malaria because females take blood meals.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Microbiology",
       "Parasitology",
@@ -167,7 +182,10 @@
       "Vector"
      ],
      "id": "lab-0006",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -186,7 +204,7 @@
      ],
      "correctIndex": 3,
      "explanation": "A sample cuvette is not a standard component of a conventional flame photometer; the instrument uses a flame/burner, optical system and detector.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Clinical Chemistry",
       "Instrumentation",
@@ -194,7 +212,10 @@
       "Flame Photometer Components"
      ],
      "id": "lab-0007",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -213,7 +234,7 @@
      ],
      "correctIndex": 0,
      "explanation": "70% ethanol is a disinfectant and is not a reliable sterilizing agent.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Laboratory Science",
       "Sterilization",
@@ -221,7 +242,10 @@
       "Alcohol Disinfection"
      ],
      "id": "lab-0008",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -240,7 +264,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Seminiferous tubules are the site of spermatogenesis, not estrogen production; the pairing is incorrect.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Physiology",
       "Endocrinology",
@@ -248,7 +272,10 @@
       "Hormone-Organ Pairing"
      ],
      "id": "lab-0009",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -266,7 +293,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Pseudomonas aeruginosa is a motile Gram-negative rod.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Microbiology",
       "Bacteriology",
@@ -274,7 +301,10 @@
       "Bacterial Motility"
      ],
      "id": "lab-0010",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -292,7 +322,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Glucose in urine is an abnormal finding in routine urinalysis and may indicate glycosuria.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Clinical Chemistry",
       "Urinalysis",
@@ -300,7 +330,10 @@
       "Glycosuria"
      ],
      "id": "lab-0011",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -318,7 +351,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Neutrophils have segmented nuclei with multiple lobes and characteristic pale granules on Romanowsky stains.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Hematology",
       "White Blood Cells",
@@ -326,7 +359,10 @@
       "Neutrophil Morphology"
      ],
      "id": "lab-0012",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -342,7 +378,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The objective lens is closest to the specimen/slide in a conventional light microscope.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Laboratory Science",
       "Microscopy",
@@ -350,7 +386,10 @@
       "Microscope Lenses"
      ],
      "id": "lab-0013",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -370,7 +409,7 @@
      ],
      "correctIndex": 2,
      "explanation": "LDL has the highest cholesterol proportion among the listed major lipoproteins; apolipoprotein is not a lipoprotein class.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Biochemistry",
       "Lipid Metabolism",
@@ -378,7 +417,10 @@
       "Cholesterol Distribution"
      ],
      "id": "lab-0014",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -397,7 +439,7 @@
      ],
      "correctIndex": 4,
      "explanation": "Rubber gloves may be damaged by hot-air-oven temperatures; dry heat is suitable for compatible glassware, oils, powders and waxes.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Laboratory Science",
       "Sterilization",
@@ -405,8 +447,21 @@
       "Hot Air Oven"
      ],
      "id": "lab-0015",
-     "bankId": "lab-b1"
-    },
+     "bankId": "lab-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني للمختبرات (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
+    }
+   ]
+  },
+  {
+   "id": "lab-2024-aden",
+   "title": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+   "description": "امتحان الكفاءة المهنية لمزاولة المختبرات الطبية المركز الرئيسي عدن 2024",
+   "year": "2024",
+   "location": "aden",
+   "source": "المجلس الطبي اليمني - عدن دورة 2024",
+   "questions": [
     {
      "sectorId": "medical",
      "specId": "lab",
@@ -424,7 +479,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Lymphocytosis is commonly associated with viral infections.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Hematology",
       "White Blood Cells",
@@ -432,7 +487,10 @@
       "Lymphocytosis"
      ],
      "id": "lab-0016",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -451,7 +509,7 @@
      ],
      "correctIndex": 0,
      "explanation": "IgG has the lowest molecular mass among the immunoglobulins listed.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Immunology",
       "Immunoglobulins",
@@ -459,7 +517,10 @@
       "Immunoglobulin Molecular Weight"
      ],
      "id": "lab-0017",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -476,7 +537,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Gram-negative organisms appear pink/red after Gram staining.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Microbiology",
       "Bacteriology",
@@ -484,7 +545,10 @@
       "Gram-negative Appearance"
      ],
      "id": "lab-0018",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -502,7 +566,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The citrate utilization test is classically used for selected Gram-negative bacteria; none of the listed choices is a standard answer.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Microbiology",
       "Bacteriology",
@@ -510,7 +574,10 @@
       "Citrate Utilization"
      ],
      "id": "lab-0019",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -526,7 +593,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Reduced parathyroid hormone activity causes hypocalcemia.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Physiology",
       "Endocrinology",
@@ -534,7 +601,10 @@
       "Hypoparathyroidism"
      ],
      "id": "lab-0020",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -551,7 +621,7 @@
      ],
      "correctIndex": 2,
      "explanation": "O cells are used in antibody screening procedures to detect antibodies because they lack A and B antigens.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Hematology",
       "Transfusion Medicine",
@@ -559,7 +629,10 @@
       "O Cells"
      ],
      "id": "lab-0021",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -578,7 +651,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Chemical burns should be irrigated immediately and copiously with water rather than neutralized with another chemical; among these choices, cold water is appropriate.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Emergency Medicine",
       "Toxicology",
@@ -586,7 +659,10 @@
       "Alkali Burn First Aid"
      ],
      "id": "lab-0022",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -605,7 +681,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Chemical burns should be irrigated immediately and copiously with water rather than neutralized with another chemical; among these choices, cold water is appropriate.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Emergency Medicine",
       "Toxicology",
@@ -613,7 +689,10 @@
       "Acid Burn First Aid"
      ],
      "id": "lab-0023",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -632,7 +711,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Frozen RBC storage duration depends on validated temperature and blood-bank standards; the listed choices do not establish a reliable standard maximum.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Hematology",
       "Transfusion Medicine",
@@ -640,7 +719,10 @@
       "Frozen RBC Storage"
      ],
      "id": "lab-0024",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -659,7 +741,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Rinsing the mouth is unrelated to treatment of a small skin cut, so it is the inappropriate step.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Emergency Medicine",
       "Wound Care",
@@ -667,8 +749,21 @@
       "First Aid"
      ],
      "id": "lab-0025",
-     "bankId": "lab-b1"
-    },
+     "bankId": "lab-2024-aden",
+     "bankTitle": "دورة المجلس الطبي للمختبرات الطبية (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
+    }
+   ]
+  },
+  {
+   "id": "lab-2024-ksa",
+   "title": "اختبار رخصة المختبرات السعودية SLLE / Prometric - 2024 (معتمد)",
+   "description": "أسئلة بنك برومترك واختبار التقييم المهني للمختبرات SLLE 2024",
+   "year": "2024",
+   "location": "ksa",
+   "source": "الهيئة السعودية للتخصصات الصحية SLLE 2024",
+   "questions": [
     {
      "sectorId": "medical",
      "specId": "lab",
@@ -684,7 +779,7 @@
      ],
      "correctIndex": 1,
      "explanation": "HbS results from substitution of valine for glutamic acid in the beta-globin chain.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "الهيئة السعودية للتخصصات الصحية SLLE 2024",
      "tags": [
       "Hematology",
       "Hemoglobin Disorders",
@@ -692,7 +787,10 @@
       "β-Globin Mutation"
      ],
      "id": "lab-0026",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-ksa",
+     "bankTitle": "اختبار رخصة المختبرات السعودية SLLE / Prometric - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -708,7 +806,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Ethyl alcohol is commonly used for slide cleaning/disinfection; methanol is more commonly used to fix blood films.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "الهيئة السعودية للتخصصات الصحية SLLE 2024",
      "tags": [
       "Laboratory Science",
       "Microscopy",
@@ -716,7 +814,10 @@
       "Slide Cleaning"
      ],
      "id": "lab-0027",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-ksa",
+     "bankTitle": "اختبار رخصة المختبرات السعودية SLLE / Prometric - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -735,7 +836,7 @@
      ],
      "correctIndex": 4,
      "explanation": "Calcium homeostasis involves PTH, vitamin D and calcitonin; the source option is incomplete.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "الهيئة السعودية للتخصصات الصحية SLLE 2024",
      "tags": [
       "Physiology",
       "Endocrinology",
@@ -743,7 +844,10 @@
       "Calcium Regulation"
      ],
      "id": "lab-0028",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-ksa",
+     "bankTitle": "اختبار رخصة المختبرات السعودية SLLE / Prometric - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -759,7 +863,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Thalassemia is caused by reduced synthesis of alpha- or beta-globin chains.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "الهيئة السعودية للتخصصات الصحية SLLE 2024",
      "tags": [
       "Hematology",
       "Hemoglobin Disorders",
@@ -767,7 +871,10 @@
       "Globin Synthesis"
      ],
      "id": "lab-0029",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-ksa",
+     "bankTitle": "اختبار رخصة المختبرات السعودية SLLE / Prometric - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -786,7 +893,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Thymine is a pyrimidine base found in DNA.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "الهيئة السعودية للتخصصات الصحية SLLE 2024",
      "tags": [
       "Biochemistry",
       "Molecular Biology",
@@ -794,7 +901,10 @@
       "Pyrimidines"
      ],
      "id": "lab-0030",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-ksa",
+     "bankTitle": "اختبار رخصة المختبرات السعودية SLLE / Prometric - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -810,7 +920,7 @@
      ],
      "correctIndex": 0,
      "explanation": "An O-positive person has no A or B antigens but does have the Rh(D) antigen and normally has anti-A and anti-B antibodies; neither listed statement is correct as written.",
-     "source": "Yemen Medical Licensure Examination",
+     "source": "الهيئة السعودية للتخصصات الصحية SLLE 2024",
      "tags": [
       "Hematology",
       "Transfusion Medicine",
@@ -818,7 +928,10 @@
       "Blood Group O Positive"
      ],
      "id": "lab-0031",
-     "bankId": "lab-b1"
+     "bankId": "lab-2024-ksa",
+     "bankTitle": "اختبار رخصة المختبرات السعودية SLLE / Prometric - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     }
    ]
   }

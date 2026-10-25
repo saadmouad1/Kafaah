@@ -14,6 +14,10 @@ export function useQuestions({
   subject = null,
   difficulty = null,
   search = null,
+  year = null,
+  years = null,
+  location = null,
+  language = null,
   limit = 20,
   offset = 0,
   autoProfile = true,
@@ -31,6 +35,8 @@ export function useQuestions({
   const [tick, setTick] = useState(0);
 
   const bankKey = Array.isArray(banks) ? banks.join(',') : banks;
+  const yearsKey = Array.isArray(years) ? years.join(',') : years;
+
   const params = useMemo(() => {
     const p = new URLSearchParams();
     if (effSector && effSector !== 'all') p.set('sector', effSector);
@@ -41,10 +47,14 @@ export function useQuestions({
     if (subject && subject !== 'all') p.set('subject', subject);
     if (difficulty && difficulty !== 'all') p.set('difficulty', difficulty);
     if (search) p.set('search', search);
+    if (year && year !== 'all') p.set('year', year);
+    if (yearsKey && yearsKey !== 'all') p.set('years', yearsKey);
+    if (location && location !== 'all') p.set('location', location);
+    if (language && language !== 'all') p.set('language', language);
     if (limit > 0) p.set('limit', limit);
     if (offset > 0) p.set('offset', offset);
     return p.toString();
-  }, [effSector, effSpec, specs, bank, bankKey, subject, difficulty, search, limit, offset]);
+  }, [effSector, effSpec, specs, bank, bankKey, subject, difficulty, search, year, yearsKey, location, language, limit, offset]);
 
   useEffect(() => {
     if (!enabled) return;
@@ -193,3 +203,30 @@ export function isEnglish(text) {
 export function fmtNum(n, locale = 'ar-EG') {
   return new Intl.NumberFormat(locale).format(n || 0);
 }
+
+// ── بيانات نماذج وسنوات ومراكز التخصص ───────────────────────────────────────
+export function useSpecMeta(specId) {
+  const [meta, setMeta] = useState({ models: [], years: [], modelsByYear: {}, locations: [] });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!specId) return;
+    let alive = true;
+    setLoading(true);
+    fetch(`/api/questions?spec=${encodeURIComponent(specId)}&meta=1`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (!alive || !d) return;
+        setMeta(d);
+      })
+      .catch(() => {})
+      .finally(() => alive && setLoading(false));
+
+    return () => {
+      alive = false;
+    };
+  }, [specId]);
+
+  return { ...meta, loading };
+}
+

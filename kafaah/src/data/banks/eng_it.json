@@ -1,16 +1,16 @@
 {
  "specId": "eng_it",
  "sectorId": "engineering",
- "updatedAt": "2026-10-17",
- "count": 5,
+ "updatedAt": "2026-10-25",
+ "count": 10,
  "banks": [
   {
    "id": "eng_it-b1",
-   "title": "",
-   "description": "",
-   "auto": true,
-   "createdAt": "2026-10-17",
-   "updatedAt": "2026-10-17",
+   "title": "اختبار الاعتماد المهني لهندسة البرمجيات وتقنية المعلومات - 2024 (معتمد)",
+   "description": "النموذج المعتمد للنظم الموزعة وهياكل البيانات والأمن السيبراني وقواعد البيانات 2024",
+   "auto": false,
+   "createdAt": "2024-01-01",
+   "updatedAt": "2026-10-25",
    "questions": [
     {
      "sectorId": "engineering",
@@ -28,12 +28,17 @@
      ],
      "correctIndex": 0,
      "explanation": "البحث الثنائي ينصّف مجال البحث في كل خطوة => تعقيد لوغاريتمي O(log n).",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "هيئة المهندسين SCE · تقنية المعلومات 2024",
      "tags": [
-      "الخوارزميات"
+      "الخوارزميات",
+      "2024",
+      "معتمد"
      ],
      "id": "eng_it-0001",
-     "bankId": "eng_it-b1"
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لتقنية المعلومات وهندسة البرمجيات - 2024 (معتمد)"
     },
     {
      "sectorId": "engineering",
@@ -51,12 +56,17 @@
      ],
      "correctIndex": 0,
      "explanation": "3NF يزيل الاعتمادات العابرة لتقليل التكرار وتناقض البيانات.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "هيئة المهندسين SCE · تقنية المعلومات 2024",
      "tags": [
-      "قواعد البيانات"
+      "قواعد البيانات",
+      "2024",
+      "معتمد"
      ],
      "id": "eng_it-0002",
-     "bankId": "eng_it-b1"
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لتقنية المعلومات وهندسة البرمجيات - 2024 (معتمد)"
     },
     {
      "sectorId": "engineering",
@@ -74,12 +84,17 @@
      ],
      "correctIndex": 0,
      "explanation": "TCP يضمن الوصول والترتيب عبر المصافحة، بينما UDP أخف وأسرع دون ضمانات.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "هيئة المهندسين SCE · تقنية المعلومات 2024",
      "tags": [
-      "الشبكات"
+      "الشبكات",
+      "2024",
+      "معتمد"
      ],
      "id": "eng_it-0003",
-     "bankId": "eng_it-b1"
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لتقنية المعلومات وهندسة البرمجيات - 2024 (معتمد)"
     },
     {
      "sectorId": "engineering",
@@ -97,12 +112,17 @@
      ],
      "correctIndex": 0,
      "explanation": "الاستعلامات المعدّة والربط المعاملاتي تمنع تفسير المدخلات كأوامر SQL.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "هيئة المهندسين SCE · تقنية المعلومات 2024",
      "tags": [
-      "الأمن"
+      "الأمن",
+      "2024",
+      "معتمد"
      ],
      "id": "eng_it-0004",
-     "bankId": "eng_it-b1"
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لتقنية المعلومات وهندسة البرمجيات - 2024 (معتمد)"
     },
     {
      "sectorId": "engineering",
@@ -120,14 +140,172 @@
      ],
      "correctIndex": 0,
      "explanation": "REST مبني على انعدام الحالة؛ كل طلب يحمل ما يلزمه من معلومات.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "هيئة المهندسين SCE · تقنية المعلومات 2024",
      "tags": [
-      "هندسة البرمجيات"
+      "هندسة البرمجيات",
+      "2024",
+      "معتمد"
      ],
      "id": "eng_it-0005",
-     "bankId": "eng_it-b1"
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لتقنية المعلومات وهندسة البرمجيات - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "هندسة البرمجيات والمعمارية الموزعة",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "ar",
+     "text": "في نظرية (CAP Theorem) للأنظمة وقواعد البيانات الموزعة، أي من الخصائص الثلاث يستحيل تحقيقها معاً في آن واحد عند حدوث انقسام في الشبكة (Network Partition)؟",
+     "options": [
+      "الاتساق (Consistency)، والتوافرية (Availability)، وتحمل انقسام الشبكة (Partition Tolerance)",
+      "السرعة، والتكلفة، وجودة الكود",
+      "الواجهة الأمامية، وقاعدة البيانات، وخادم التطبيقات",
+      "الأمان، والتوثيق، وشهادات SSL"
+     ],
+     "correctIndex": 0,
+     "explanation": "تنص مبرهنة CAP للعالم إريك بروير على أنه في أي نظام موزع، عند حدوث انقطاع في الاتصال الشبكي (P)، يجب على النظام المفاضلة إما بالتضحية بالاتساق الفوري لضمان التوافرية (AP) أو التضحية بالتوافرية لضمان الاتساق (CP).",
+     "source": "هيئة المهندسين · شهادات هندسة البرمجيات 2024 (معتمد)",
+     "tags": [
+      "هندسة البرمجيات",
+      "CAP Theorem",
+      "النظم الموزعة",
+      "2024",
+      "معتمد"
+     ],
+     "id": "eng_it-0006",
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لهندسة البرمجيات وتقنية المعلومات - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "هياكل البيانات والخوارزميات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "en",
+     "text": "What is the worst-case time complexity of searching for an element in a balanced binary search tree (such as an AVL tree or Red-Black tree) containing N elements?",
+     "options": [
+      "O(log N)",
+      "O(N)",
+      "O(1)",
+      "O(N²)"
+     ],
+     "correctIndex": 0,
+     "explanation": "Because self-balancing binary search trees maintain their height strictly bounded at approximately log2(N), the worst-case time complexity for search, insertion, and deletion is guaranteed to be O(log N).",
+     "source": "SCE Information Technology Certification 2024 (معتمد)",
+     "tags": [
+      "Data Structures",
+      "Algorithms",
+      "AVL Tree",
+      "Big-O",
+      "2024",
+      "معتمد"
+     ],
+     "id": "eng_it-0007",
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لهندسة البرمجيات وتقنية المعلومات - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "قواعد البيانات وعمليات ACID",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "في نظم إدارة قواعد البيانات العلائقية (RDBMS)، ما هي الخاصية في مبادئ (ACID) التي تضمن أن المعاملة المصرفية إما أن تنفذ بالكامل بجميع خطواتها أو تُلغى تماماً دون ترك أي أثر في حال حدوث عطل؟",
+     "options": [
+      "الذرية (Atomicity)",
+      "الاتساق (Consistency)",
+      "العزل (Isolation)",
+      "الاستمرارية والديمومة (Durability)"
+     ],
+     "correctIndex": 0,
+     "explanation": "خاصية الذرية (Atomicity) تعني مبدأ 'الكل أو لا شيء' (All-or-Nothing)؛ فإذا فشلت أي عملية فرعية داخل المعاملة، يتم التراجع الفوري (Rollback) عن كافة التغييرات لتبقى قاعدة البيانات في حالة صحيحة.",
+     "source": "هيئة المهندسين · قواعد البيانات 2024 (معتمد)",
+     "tags": [
+      "قواعد البيانات",
+      "ACID",
+      "Atomicity",
+      "2024",
+      "معتمد"
+     ],
+     "id": "eng_it-0008",
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لهندسة البرمجيات وتقنية المعلومات - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "الأمن السيبراني والتشفير",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "ar",
+     "text": "في التشفير غير المتماثل (Asymmetric Cryptography) المعتمد على المفتاح العام والمفتاح الخاص (مثل خوارزمية RSA)، عندما يريد شخص إرسال رسالة مشفرة لشخص آخر تضمن 'السرية التامة':",
+     "options": [
+      "يقوم بتشفير الرسالة باستخدام المفتاح العام للمستقبل، ولا يستطيع فك تشفيرها إلا المستقبل بمفتاحه الخاص السري",
+      "يقوم بتشفير الرسالة بمفتاحه الخاص ونشر المفتاح الخاص للعامة",
+      "يستخدم نفس المفتاح السري المشترك للطرفين",
+      "التشفير غير المتماثل لا يوفر سرية وإنما يستخدم فقط ككود تحقق"
+     ],
+     "correctIndex": 0,
+     "explanation": "لتحقيق السرية في التشفير اللاتناظري: يشفر المرسل البيانات باستخدام المفتاح العام المتاح للمستقبل (Public Key)، وبذلك لا يمكن لأي طرف في العالم فك شفرتها إلا صاحب المفتاح الخاص المقترن به (Private Key).",
+     "source": "الهيئة الوطنية للأمن السيبراني NCA · هيئة المهندسين 2024 (معتمد)",
+     "tags": [
+      "الأمن السيبراني",
+      "التشفير اللاتناظري",
+      "RSA",
+      "2024",
+      "معتمد"
+     ],
+     "id": "eng_it-0009",
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لهندسة البرمجيات وتقنية المعلومات - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "engineering",
+     "specId": "eng_it",
+     "subject": "شبكات الحاسب ونموذج OSI",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "في نموذج ربط الأنظمة المفتوحة (OSI 7 Layers)، في أي طبقة يعمل بروتوكول التحكم في الإرسال (TCP) وبروتوكول مخطط بيانات المستخدم (UDP)؟",
+     "options": [
+      "طبقة النقل (Transport Layer - Layer 4)",
+      "طبقة الشبكة (Network Layer - Layer 3)",
+      "طبقة ربط البيانات (Data Link Layer - Layer 2)",
+      "طبقة التطبيقات (Application Layer - Layer 7)"
+     ],
+     "correctIndex": 0,
+     "explanation": "بروتوكولات TCP و UDP تعمل في الطبقة الرابعة (طبقة النقل)، وهي المسؤولة عن التوصيل من طرف إلى طرف (End-to-End Delivery)، وإدارة المنافذ (Ports)، والتحكم في التدفق والازدحام.",
+     "source": "هيئة المهندسين · شبكات الحاسب 2024 (معتمد)",
+     "tags": [
+      "شبكات الحاسب",
+      "OSI Model",
+      "TCP/IP",
+      "2024",
+      "معتمد"
+     ],
+     "id": "eng_it-0010",
+     "bankId": "eng_it-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار الاعتماد المهني لهندسة البرمجيات وتقنية المعلومات - 2024 (معتمد)"
     }
-   ]
+   ],
+   "year": "2024",
+   "location": "all"
   }
  ]
 }

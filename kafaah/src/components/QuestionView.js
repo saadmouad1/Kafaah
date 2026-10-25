@@ -4,7 +4,8 @@ import { CheckCircle2, XCircle, Star, Sparkles, Loader2, BookOpen } from 'lucide
 import { isEnglish } from '../lib/useData';
 import { useKafaah } from '../lib/context/KafaahProvider';
 
-const KEYS = ['أ', 'ب', 'ج', 'د', 'هـ', 'و'];
+const AR_KEYS = ['أ', 'ب', 'ج', 'د', 'هـ', 'و'];
+const EN_KEYS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 export default function QuestionView({ question, selected, onSelect, reveal = false, onToggleSave, saved = false }) {
   const { t } = useKafaah();
@@ -15,6 +16,7 @@ export default function QuestionView({ question, selected, onSelect, reveal = fa
   const q = question;
   const correct = q.correctIndex ?? q.correct_index ?? 0;
   const isQEn = isEnglish(q.text);
+  const keys = isQEn ? EN_KEYS : AR_KEYS;
 
   async function askTutor() {
     setTutorLoading(true);
@@ -83,7 +85,7 @@ export default function QuestionView({ question, selected, onSelect, reveal = fa
               disabled={reveal}
               style={{ direction: optEn ? 'ltr' : 'rtl', textAlign: optEn ? 'left' : 'right', opacity: reveal && !isSel && !isCorrect ? 0.7 : 1 }}
             >
-              <span className="opt-key">{KEYS[idx]}</span>
+              <span className="opt-key">{keys[idx] || (idx + 1)}</span>
               <span style={{ flex: 1 }}>{opt}</span>
               {reveal && isCorrect && <CheckCircle2 size={19} color="var(--success)" />}
               {reveal && isSel && !isCorrect && <XCircle size={19} color="var(--danger)" />}

@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import {
   HeartPulse, HardHat, Scale, Landmark, GraduationCap, Check, ArrowLeft, ArrowRight,
-  Sparkles, Loader2, CalendarDays, Building2, Target, UserRound,
+  Sparkles, Loader2, CalendarDays, Building2, Target, UserRound, MapPin,
 } from 'lucide-react';
 import { useKafaah } from '../../lib/context/KafaahProvider';
 import { SECTORS } from '../../lib/content';
@@ -26,6 +26,7 @@ export default function OnboardingPage() {
   const [step, setStep] = useState(0);
   const [sectorId, setSectorId] = useState(profile.sectorId || null);
   const [specId, setSpecId] = useState(profile.specId || null);
+  const [targetLocation, setTargetLocation] = useState(profile.targetLocation || 'all');
   const [level, setLevel] = useState(profile.level || 'graduate');
   const [examDate, setExamDate] = useState(profile.examDate || '');
   const [name, setName] = useState(profile.name || '');
@@ -38,6 +39,11 @@ export default function OnboardingPage() {
   async function generatePlan() {
     setBusy(true);
     try {
+      const locLabel = targetLocation === 'صنعاء' ? 'المجلس الطبي بصنعاء'
+        : targetLocation === 'عدن' ? 'المجلس الطبي بعدن'
+        : targetLocation === 'السعودية' ? 'الهيئة السعودية للتخصصات الصحية (SCFHS) / برومترك'
+        : localize(spec?.authority);
+
       const res = await fetch('/api/groq', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -47,10 +53,12 @@ export default function OnboardingPage() {
             profession: sectorName(sector),
             specialty: specName(spec),
             country: localize(spec?.country),
-            authority: localize(spec?.authority),
-            exam_name: `${localize(spec?.authority)} — ${specName(spec)}`,
+            authority: locLabel,
+            exam_name: `${locLabel} — ${specName(spec)}`,
             level,
             examDate,
+            location: targetLocation,
+            examLocation: targetLocation,
           },
         }),
       });
@@ -66,7 +74,16 @@ export default function OnboardingPage() {
 
   async function finish() {
     const p = plan || (await generatePlan());
-    setProfile({ name: name.trim() || profile.name, sectorId, specId, level, examDate: examDate || null, plan: p || profile.plan, planGeneratedAt: new Date().toISOString() });
+    setProfile({
+      name: name.trim() || profile.name,
+      sectorId,
+      specId,
+      targetLocation,
+      level,
+      examDate: examDate || null,
+      plan: p || profile.plan,
+      planGeneratedAt: new Date().toISOString()
+    });
     router.push('/dashboard');
   }
 
@@ -187,6 +204,19 @@ export default function OnboardingPage() {
                 <div className="chip-row">
                   {levels.map(([v, l]) => (
                     <span key={v} className={`chip${level === v ? ' active' : ''}`} onClick={() => setLevel(v)}>{l}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="field">
+                <label className="label">{lang === 'en' ? 'Target Exam Center / Location' : 'مركز / جهة الامتحان المستهدفة'}</label>
+                <div className="chip-row">
+                  {[
+                    ['all', lang === 'en' ? 'General / All Centers' : 'عام / كل المراكز'],
+                    ['صنعاء', lang === 'en' ? "Sana'a (Medical Council)" : 'صنعاء (المجلس الطبي)'],
+                    ['عدن', lang === 'en' ? 'Aden (Medical Council)' : 'عدن (المجلس الطبي)'],
+                    ['السعودية', lang === 'en' ? 'Saudi Arabia (Prometric)' : 'السعودية (برومترك / الهيئة)'],
+                  ].map(([v, l]) => (
+                    <span key={v} className={`chip${targetLocation === v ? ' active' : ''}`} onClick={() => { setTargetLocation(v); setPlan(null); }}>{l}</span>
                   ))}
                 </div>
               </div>

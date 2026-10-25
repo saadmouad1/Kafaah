@@ -10,8 +10,9 @@ import {
   Download, Send, Mail, Phone, MessageSquare, Star, Zap,
   Check, X, HelpCircle, Layers, ShieldCheck, CreditCard,
   Target, BarChart3, AlertCircle, RefreshCw, CheckCheck,
-  ChevronLeft, FileText, WifiOff
+  ChevronLeft, FileText, WifiOff, MessageCircle, Flame
 } from 'lucide-react';
+import ExamCountdown from '../components/ExamCountdown';
 
 export default function LandingPage() {
   const [activeDiscipline, setActiveDiscipline] = useState('health');
@@ -654,6 +655,21 @@ export default function LandingPage() {
               </span>
             </div>
           </div>
+
+          {/* ── عداد تنازلي لموعد دورة الامتحان القادمة (Hero Urgency Widget) ── */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.3 }}
+            style={{ maxWidth: 960, margin: '0 auto 36px' }}
+          >
+            <ExamCountdown
+              title="العد التنازلي لدورة امتحانات مزاولة المهنة القادمة"
+              subtitle="المجلس الطبي اليمني وهيئة التخصصات السعودية — احسم قرارك اليوم وابدأ التحضير المكثف؛ الطلاب الذين يذاكرون مبكراً يحققون نسبة نجاح تتجاوز 92% من أول محاولة!"
+              ctaText="احسم اشتراكك وابدأ التحضير"
+              ctaHref="#pricing"
+            />
+          </motion.div>
 
           {/* ── HERO INTERACTIVE COMPONENT: LIVE PRACTICE SIMULATOR ── */}
           <motion.div
@@ -1582,169 +1598,302 @@ export default function LandingPage() {
             </p>
           </div>
 
-          {/* Single High-Converting Pricing Card */}
-          <div className="card" style={{
-            background: 'color-mix(in srgb, var(--surface, #ffffff) 90%, transparent)',
-            backdropFilter: 'blur(20px) saturate(160%)',
-            WebkitBackdropFilter: 'blur(20px) saturate(160%)',
-            border: '2px solid #10b981',
-            borderRadius: 24,
-            padding: 'clamp(1.8rem, 4vw, 2.8rem)',
-            boxShadow: '0 24px 50px -10px rgba(16, 185, 129, 0.18)',
-            position: 'relative'
+          {/* Two High-Converting Pricing Cards Grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))',
+            gap: 24,
+            marginBottom: 28,
+            alignItems: 'stretch',
           }}>
-            {/* Top Badge */}
-            <div style={{
-              position: 'absolute',
-              top: -14,
-              right: 28,
-              background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-              color: '#ffffff',
-              padding: '4px 16px',
-              borderRadius: 999,
-              fontSize: 12.5,
-              fontWeight: 900,
-              boxShadow: '0 4px 12px rgba(16, 185, 129, 0.3)'
-            }}>
-              الباقة الشاملة الأكثر طلباً
-            </div>
-
-            <div style={{
+            {/* Card 1: 3-Months Package (The Golden Hero) */}
+            <div className="card" style={{
+              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 253, 244, 0.95) 100%)',
+              backdropFilter: 'blur(20px) saturate(160%)',
+              border: '2.5px solid #10b981',
+              borderRadius: 24,
+              padding: 'clamp(1.8rem, 3.5vw, 2.5rem)',
+              boxShadow: '0 20px 45px -10px rgba(16, 185, 129, 0.25)',
+              position: 'relative',
               display: 'flex',
-              flexWrap: 'wrap',
+              flexDirection: 'column',
               justifyContent: 'space-between',
-              alignItems: 'baseline',
-              gap: 16,
-              paddingBottom: 22,
-              borderBottom: '1.5px solid #f1f5f9',
-              marginBottom: 24
             }}>
-              <div>
-                <h3 style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: 24,
-                  fontWeight: 900,
-                  color: '#0f172a',
-                  lineHeight: 1.2
-                }}>
-                  باقة كفاءة الشاملة
-                </h3>
-                <p style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: 14,
-                  color: '#64748b',
-                  fontWeight: 600,
-                  marginTop: 4
-                }}>
-                  وصول كامل لكافة بنوك تخصصك مع محاكاة غير محدودة
-                </p>
+              {/* Badge */}
+              <div style={{
+                position: 'absolute',
+                top: -14,
+                right: 24,
+                background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+                color: '#ffffff',
+                padding: '5px 16px',
+                borderRadius: 999,
+                fontSize: 12.5,
+                fontWeight: 900,
+                boxShadow: '0 4px 14px rgba(245, 158, 11, 0.4)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 5,
+              }}>
+                <Flame size={14} />
+                الأكثر طلباً للامتحان · وفر 40% 🔥
               </div>
 
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, justifyContent: 'flex-end' }}>
-                  <span style={{
-                    fontFamily: 'var(--font-numbers)',
-                    fontSize: 16,
-                    color: '#94a3b8',
-                    textDecoration: 'line-through',
-                    fontWeight: 800
-                  }}>
-                    $10 USD
-                  </span>
-                  <span style={{ background: '#ecfdf5', color: '#059669', border: '1px solid #10b981', padding: '2px 8px', borderRadius: 999, fontSize: 12, fontWeight: 900 }}>
-                    وفر 50%
-                  </span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'baseline', gap: 4, marginTop: 2 }}>
-                  <span style={{
-                    fontFamily: 'var(--font-numbers)',
-                    fontSize: 42,
-                    fontWeight: 900,
-                    color: '#059669',
-                    lineHeight: 1
-                  }}>$5</span>
-                  <span style={{ color: '#475569', fontSize: 14.5, fontWeight: 700 }}>USD / شهر</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Features Checklist */}
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 360px), 1fr))',
-              gap: 14,
-              marginBottom: 28
-            }}>
-              {[
-                'وصول كامل لجميع بنوك الأسئلة في تخصصك (+35,000 سؤال)',
-                'محاكاة اختبارات تجريبية غير محدودة مطابقة لتوقيت الاختبار',
-                'شروحات سريرية وتطبيقية مفصلة مع كل سؤال وخيار',
-                'تحليل فوري لمواطن الضعف ونسبة الجاهزية لدخول الامتحان',
-                'سجل الأخطاء التفاعلي والمراجعة الذكية للأسئلة الخاطئة',
-                'تطبيق ويب تقدمي متجاوب (PWA) للجوال مع مزامنة سحابية فورية',
-                'حفظ دائم لمستواك: لا يُحذف أي سجل أو تقدم عند التجديد',
-                'دعم فني واستشارات أكاديمية مستمرة عبر الواتساب'
-              ].map((feat, idx) => (
-                <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <div style={{ width: 22, height: 22, borderRadius: '50%', background: '#ecfdf5', color: '#059669', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-                    <Check size={14} strokeWidth={3} />
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 12 }}>
+                  <div>
+                    <h3 style={{ fontSize: 23, fontWeight: 900, color: '#0f172a', margin: 0 }}>
+                      باقة الـ 3 أشهر (المكثفة)
+                    </h3>
+                    <p style={{ fontSize: 13.5, color: '#059669', fontWeight: 800, marginTop: 4 }}>
+                      الخيار الأفضل للاستعداد الشامل لدورة الامتحان
+                    </p>
                   </div>
-                  <span style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: 14,
-                    color: '#1e293b',
-                    fontWeight: 700,
-                    lineHeight: 1.6
-                  }}>
-                    {feat}
-                  </span>
                 </div>
-              ))}
-            </div>
 
-            {/* Single Subscribe CTA */}
-            <div>
+                {/* Price Display */}
+                <div style={{ background: '#ecfdf5', borderRadius: 16, padding: '14px 18px', border: '1px solid #a7f3d0', marginBottom: 20 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <span style={{ fontSize: 16, color: '#94a3b8', textDecoration: 'line-through', fontWeight: 800 }}>
+                      $20 USD
+                    </span>
+                    <span style={{ background: '#10b981', color: '#fff', padding: '2px 8px', borderRadius: 999, fontSize: 11.5, fontWeight: 900 }}>
+                      وفر 40%
+                    </span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginTop: 4 }}>
+                    <span style={{ fontSize: 44, fontWeight: 900, color: '#047857', lineHeight: 1, fontFamily: 'var(--font-numbers)' }}>
+                      $12
+                    </span>
+                    <span style={{ fontSize: 14, color: '#065f46', fontWeight: 800 }}>
+                      USD / 3 أشهر كاملة (4$ شهرياً فقط!)
+                    </span>
+                  </div>
+                </div>
+
+                {/* Features */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 11, marginBottom: 26 }}>
+                  {[
+                    'صلاحية 90 يوماً متواصلة حتى موعد الامتحان',
+                    'وصول كامل لجميع بنوك تخصصك (+35,000 سؤال)',
+                    'كل النماذج الوزارية لسنوات (2020 - 2026)',
+                    'محاكيات امتحانية غير محدودة بدون قيود',
+                    'شروحات سريرية وتعليل علمي لكل خيار',
+                    'سجل الأخطاء التفاعلي والمراجعة الذكية',
+                    'دعم فني وتأكيد فوري عبر الواتساب',
+                    'حفظ دائم للمستوى: لا يُحذف أي تقدم عند التجديد',
+                  ].map((feat, idx) => (
+                    <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: 9 }}>
+                      <div style={{ width: 20, height: 20, borderRadius: '50%', background: '#10b981', color: '#fff', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+                        <Check size={13} strokeWidth={3} />
+                      </div>
+                      <span style={{ fontSize: 13.5, color: '#1e293b', fontWeight: 700 }}>{feat}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
               <Link
-                href="/register?plan=monthly"
+                href="/register?plan=quarterly"
                 className="btn btn-emerald btn-lg"
                 style={{
                   width: '100%',
-                  padding: '16px 28px',
-                  fontSize: 16.5,
+                  padding: '15px 24px',
+                  fontSize: 16,
                   fontWeight: 900,
                   borderRadius: 16,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  gap: 10,
-                  boxShadow: '0 10px 24px rgba(16, 185, 129, 0.3)'
+                  gap: 8,
+                  boxShadow: '0 8px 22px rgba(16, 185, 129, 0.35)',
                 }}
               >
-                <Sparkles size={19} />
-                اشترك الآن بخصم 50% ($5 فقط)
-                <ArrowLeft size={18} />
+                <Sparkles size={18} />
+                اشترك في باقة الـ 3 أشهر ($12)
+                <ArrowLeft size={16} />
               </Link>
-
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 20,
-                marginTop: 16,
-                fontSize: 13,
-                color: '#64748b',
-                fontWeight: 700,
-                flexWrap: 'wrap'
-              }}>
-                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <CheckCircle2 size={15} style={{ color: '#10b981' }} /> تفعيل فوري للحساب
-                </span>
-                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <ShieldCheck size={15} style={{ color: '#10b981' }} /> مستوى وسجل تدريب محفوظ دائماً
-                </span>
-              </div>
             </div>
 
+            {/* Card 2: 1-Month Package (Flexible) */}
+            <div className="card" style={{
+              background: 'color-mix(in srgb, var(--surface, #ffffff) 90%, transparent)',
+              backdropFilter: 'blur(20px) saturate(160%)',
+              border: '1.5px solid #cbd5e1',
+              borderRadius: 24,
+              padding: 'clamp(1.8rem, 3.5vw, 2.5rem)',
+              boxShadow: '0 10px 30px -10px rgba(15, 23, 42, 0.08)',
+              position: 'relative',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}>
+              {/* Badge */}
+              <div style={{
+                position: 'absolute',
+                top: -14,
+                right: 24,
+                background: '#64748b',
+                color: '#ffffff',
+                padding: '4px 14px',
+                borderRadius: 999,
+                fontSize: 12,
+                fontWeight: 800,
+              }}>
+                للمراجعة السريعة · تجديد شهري
+              </div>
+
+              <div>
+                <div style={{ marginBottom: 12 }}>
+                  <h3 style={{ fontSize: 22, fontWeight: 900, color: '#0f172a', margin: 0 }}>
+                    الباقة الشهرية
+                  </h3>
+                  <p style={{ fontSize: 13.5, color: '#64748b', fontWeight: 600, marginTop: 4 }}>
+                    مرونة عالية وتجديد شهر بشهر حسب رغبتك
+                  </p>
+                </div>
+
+                {/* Price Display */}
+                <div style={{ background: '#f8fafc', borderRadius: 16, padding: '14px 18px', border: '1px solid #e2e8f0', marginBottom: 20 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <span style={{ fontSize: 16, color: '#94a3b8', textDecoration: 'line-through', fontWeight: 800 }}>
+                      $10 USD
+                    </span>
+                    <span style={{ background: '#ecfdf5', color: '#059669', border: '1px solid #10b981', padding: '2px 8px', borderRadius: 999, fontSize: 11.5, fontWeight: 900 }}>
+                      وفر 50%
+                    </span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginTop: 4 }}>
+                    <span style={{ fontSize: 44, fontWeight: 900, color: '#0f172a', lineHeight: 1, fontFamily: 'var(--font-numbers)' }}>
+                      $5
+                    </span>
+                    <span style={{ fontSize: 14, color: '#475569', fontWeight: 700 }}>
+                      USD / شهر واحد
+                    </span>
+                  </div>
+                </div>
+
+                {/* Features */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 11, marginBottom: 26 }}>
+                  {[
+                    'صلاحية 30 يوماً كاملة من تاريخ التفعيل',
+                    'وصول كامل لجميع بنوك تخصصك',
+                    'محاكاة اختبارات تجريبية غير محدودة',
+                    'شروحات سريرية وتطبيقية لجميع الأسئلة',
+                    'سجل الأخطاء ومتابعة التقدم',
+                    'دعم فني عبر الواتساب',
+                    'حفظ دائم للمستوى التدريبي عند التجديد',
+                  ].map((feat, idx) => (
+                    <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: 9 }}>
+                      <div style={{ width: 20, height: 20, borderRadius: '50%', background: '#f1f5f9', color: '#475569', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+                        <Check size={13} strokeWidth={2.5} />
+                      </div>
+                      <span style={{ fontSize: 13.5, color: '#334155', fontWeight: 600 }}>{feat}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <Link
+                href="/register?plan=monthly"
+                className="btn btn-ghost"
+                style={{
+                  width: '100%',
+                  padding: '15px 24px',
+                  fontSize: 15.5,
+                  fontWeight: 800,
+                  borderRadius: 16,
+                  border: '1.5px solid #cbd5e1',
+                  background: '#ffffff',
+                  color: '#0f172a',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: 8,
+                }}
+              >
+                اشترك في الباقة الشهرية ($5)
+                <ArrowLeft size={16} />
+              </Link>
+            </div>
+          </div>
+
+          {/* شريط طرق الدفع المحلية المعتمدة مع زر الواتساب الفوري */}
+          <div style={{
+            padding: '18px 22px',
+            borderRadius: 18,
+            background: 'var(--surface, #ffffff)',
+            border: '1.5px solid #e2e8f0',
+            boxShadow: '0 6px 20px rgba(0,0,0,0.04)',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 14,
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <CreditCard size={20} style={{ color: '#059669' }} />
+                <span style={{ fontSize: 14, fontWeight: 900, color: '#0f172a' }}>
+                  طرق الدفع المحلية المعتمدة في اليمن (تحويل فوري بدون عمولات):
+                </span>
+              </div>
+
+              {/* زر واتساب للدعم السريع والتأكيد الفوري */}
+              <a
+                href="https://wa.me/967772686817?text=مرحباً%20منصة%20كفاءة،%20أريد%20الاستفسار%20عن%20طرق%20الدفع%20وتأكيد%20الاشتراك"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 8,
+                  background: '#25D366',
+                  color: '#ffffff',
+                  padding: '8px 18px',
+                  borderRadius: 999,
+                  fontSize: 13,
+                  fontWeight: 900,
+                  textDecoration: 'none',
+                  boxShadow: '0 4px 12px rgba(37, 211, 102, 0.35)',
+                }}
+              >
+                <MessageCircle size={16} />
+                تواصل سريع عبر واتساب للتأكيد: 772686817
+              </a>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+              <span style={{ fontSize: 12.5, fontWeight: 800, color: '#065f46', background: '#ecfdf5', border: '1px solid #a7f3d0', padding: '5px 14px', borderRadius: 999 }}>
+                🏦 بنك الكريمي (عدن وصنعاء)
+              </span>
+              <span style={{ fontSize: 12.5, fontWeight: 800, color: '#0369a1', background: '#f0f9ff', border: '1px solid #bae6fd', padding: '5px 14px', borderRadius: 999 }}>
+                📱 محفظة جيب (Jeeb)
+              </span>
+              <span style={{ fontSize: 12.5, fontWeight: 800, color: '#475569', background: '#f8fafc', border: '1px solid #e2e8f0', padding: '5px 14px', borderRadius: 999 }}>
+                المستفيد: أحمد محمد حمود عبدالله
+              </span>
+              <span style={{ fontSize: 12.5, fontWeight: 800, color: '#b45309', background: '#fef3c7', border: '1px solid #fde68a', padding: '5px 14px', borderRadius: 999 }}>
+                ⚡ يتم التفعيل فور إرسال إشعار التحويل
+              </span>
+            </div>
+
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 20,
+              marginTop: 4,
+              fontSize: 13,
+              color: '#64748b',
+              fontWeight: 700,
+              flexWrap: 'wrap'
+            }}>
+              <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                <CheckCircle2 size={15} style={{ color: '#10b981' }} /> تفعيل فوري وتأكيد سريع للحوالة
+              </span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                <ShieldCheck size={15} style={{ color: '#10b981' }} /> مستوى وسجل تدريب محفوظ دائماً
+              </span>
+            </div>
           </div>
 
         </div>

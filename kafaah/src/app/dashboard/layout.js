@@ -87,6 +87,15 @@ export default function DashboardLayout({ children }) {
           <div className="badge badge-brand" style={{ marginTop: 10, width: '100%', justifyContent: 'center', fontSize: 11.5 }}>
             {sectorShortName(sector)}
           </div>
+          {profile.subscription?.expiresAt && new Date(profile.subscription.expiresAt) > new Date() ? (
+            <div className="badge badge-success" style={{ marginTop: 6, width: '100%', justifyContent: 'center', fontSize: 11 }}>
+              ✓ باقة كفاءة مفعلة
+            </div>
+          ) : (
+            <Link href="/dashboard/settings" className="badge badge-gold" style={{ marginTop: 6, width: '100%', justifyContent: 'center', fontSize: 11, textDecoration: 'none' }}>
+              ⚡ ترقية الحساب (الكريمي / جيب)
+            </Link>
+          )}
         </div>
 
         <div className="side-group">{t('nav.menu')}</div>

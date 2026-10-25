@@ -1,16 +1,16 @@
 {
  "specId": "dentistry",
  "sectorId": "medical",
- "updatedAt": "2026-10-17",
+ "updatedAt": "2026-10-25",
  "count": 85,
  "banks": [
   {
-   "id": "dentistry-b1",
-   "title": "",
-   "description": "",
-   "auto": true,
-   "createdAt": "2026-10-17",
-   "updatedAt": "2026-10-17",
+   "id": "dentistry-2024-sanaa",
+   "title": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+   "description": "النموذج المعتمد لاختبار مزاولة مهنة طب وجراحة الفم والأسنان بصنعاء 2024",
+   "year": "2024",
+   "location": "sanaa",
+   "source": "المجلس الطبي اليمني - صنعاء دورة 2024",
    "questions": [
     {
      "sectorId": "medical",
@@ -28,7 +28,7 @@
      ],
      "correctIndex": 1,
      "explanation": "For postoperative thermal sensitivity after a composite restoration, a conservative initial approach is reassessment and, when indicated, replacement with a sedative temporary restoration; immediate endodontic treatment is not automatic.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -37,7 +37,10 @@
       "2024"
      ],
      "id": "dentistry-0001",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -55,7 +58,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -64,7 +67,10 @@
       "2024"
      ],
      "id": "dentistry-0002",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -82,7 +88,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Water spray cools the tooth, reduces debris/bur clogging, and flushes the field; minimizing movement of fluid in dentinal tubules is not its primary purpose, making C the exception.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -91,7 +97,10 @@
       "2024"
      ],
      "id": "dentistry-0003",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -108,7 +117,7 @@
      ],
      "correctIndex": 1,
      "explanation": "The powder component of conventional acrylic resin is polymer.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Dental Materials",
       "Acrylic Resin",
@@ -117,7 +126,10 @@
       "2024"
      ],
      "id": "dentistry-0004",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -134,7 +146,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Root perforation commonly results from persistent instrumentation through a ledge and/or stripping of thin canal walls; the combined option best captures these mechanisms.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Endodontics",
       "Root Perforation",
@@ -143,7 +155,10 @@
       "2024"
      ],
      "id": "dentistry-0005",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -161,7 +176,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Removing caries from the cavity walls before the pulpal floor reduces contamination and risk of pulpal exposure.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -170,7 +185,10 @@
       "2024"
      ],
      "id": "dentistry-0006",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -188,7 +206,7 @@
      ],
      "correctIndex": 1,
      "explanation": "The distobuccal flange is shaped by the functional action and position of the masseter muscle.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -197,7 +215,10 @@
       "2024"
      ],
      "id": "dentistry-0007",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -214,7 +235,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Porcelain veneers have superior color/surface stability and are conservative compared with crowns, but they are not universally less fracture-prone than composite veneers; C is the intended exception.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -223,7 +244,10 @@
       "2024"
      ],
      "id": "dentistry-0008",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -241,7 +265,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Thermafil is a heated carrier-based gutta-percha obturation system, so it is an endodontic obturator.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Endodontics",
       "Root Canal Obturation",
@@ -250,7 +274,10 @@
       "2024"
      ],
      "id": "dentistry-0009",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -268,7 +295,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Posterior composites are less predictable when moisture cannot be controlled; isolation is critical for adhesive restorative procedures.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -277,7 +304,10 @@
       "2024"
      ],
      "id": "dentistry-0010",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -295,7 +325,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Durability is an important property for posterior restorative materials because they must withstand substantial functional loading.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -304,7 +334,10 @@
       "2024"
      ],
      "id": "dentistry-0011",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -322,7 +355,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Instrument separation is strongly associated with cyclic/torsional fatigue, especially after repeated use.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -331,7 +364,10 @@
       "2024"
      ],
      "id": "dentistry-0012",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -349,7 +385,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Insufficient incisal reduction in a metal-ceramic crown limits space for porcelain and can compromise incisal translucency and esthetics.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -358,7 +394,10 @@
       "2024"
      ],
      "id": "dentistry-0013",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -375,7 +414,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Metal-ceramic preparation follows tooth morphology and generally uses two-plane facial reduction to provide uniform material thickness.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -384,7 +423,10 @@
       "2024"
      ],
      "id": "dentistry-0014",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -402,7 +444,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Resin-bonded fixed partial dentures usually require the least tooth reduction among the listed fixed prostheses.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -411,7 +453,10 @@
       "2024"
      ],
      "id": "dentistry-0015",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -429,7 +474,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Glass ionomer has favorable biologic compatibility and is generally well tolerated among the listed restorative materials.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -438,7 +483,10 @@
       "2024"
      ],
      "id": "dentistry-0016",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -456,7 +504,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Extensive mandibular denture coverage distributes occlusal forces over a larger area and improves the effectiveness of the denture base/seal.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -465,7 +513,10 @@
       "2024"
      ],
      "id": "dentistry-0017",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -483,7 +534,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Endodontically treated teeth restored with posts and crowns have an important risk of vertical root fracture.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Endodontics",
       "Root Canal Treatment and Pulp Disease",
@@ -492,7 +543,10 @@
       "2024"
      ],
      "id": "dentistry-0018",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -510,7 +564,7 @@
      ],
      "correctIndex": 3,
      "explanation": "The posterior palatal seal varies in outline and depth according to the anatomy and compressibility of the patient’s palate.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -519,7 +573,10 @@
       "2024"
      ],
      "id": "dentistry-0019",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -537,7 +594,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The classic ideal crown-to-root ratio for a bridge abutment is approximately 2:3.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Prosthodontics",
       "Fixed Prosthodontics",
@@ -546,7 +603,10 @@
       "2024"
      ],
      "id": "dentistry-0020",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -564,7 +624,7 @@
      ],
      "correctIndex": 3,
      "explanation": "The combination of anteroposterior and mediolateral curves used to achieve balanced occlusion is the compensating curve.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Prosthodontics",
       "Complete Denture Occlusion",
@@ -573,7 +633,10 @@
       "2024"
      ],
      "id": "dentistry-0021",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -591,7 +654,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Attrition from tooth-to-tooth contact most commonly affects incisal and occlusal surfaces.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Preventive Dentistry",
       "Oral Hygiene and Tooth Wear",
@@ -600,7 +663,10 @@
       "2024"
      ],
      "id": "dentistry-0022",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -618,7 +684,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Apical-coronal instrumentation begins at the apical portion and progresses toward the coronal portion.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Endodontics",
       "Root Canal Treatment and Pulp Disease",
@@ -627,7 +693,10 @@
       "2024"
      ],
      "id": "dentistry-0023",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -644,7 +713,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Bitewing radiographs are particularly useful for detecting proximal caries because they visualize the crowns and interproximal contacts.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Oral Radiology",
       "Dental Caries Imaging",
@@ -653,7 +722,10 @@
       "2024"
      ],
      "id": "dentistry-0024",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
     },
     {
      "sectorId": "medical",
@@ -671,7 +743,7 @@
      ],
      "correctIndex": 2,
      "explanation": "A symptomatic tooth is not an ideal candidate for obturation; obturation is generally performed after symptoms and active infection are controlled and the canal is properly prepared and dry.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - صنعاء 2024",
      "tags": [
       "Endodontics",
       "Root Canal Treatment and Pulp Disease",
@@ -680,8 +752,21 @@
       "2024"
      ],
      "id": "dentistry-0025",
-     "bankId": "dentistry-b1"
-    },
+     "bankId": "dentistry-2024-sanaa",
+     "bankTitle": "دورة المجلس الطبي اليمني لطب الأسنان (صنعاء) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "sanaa"
+    }
+   ]
+  },
+  {
+   "id": "dentistry-2024-aden",
+   "title": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+   "description": "امتحان الكفاءة المهنية لمزاولة طب وجراحة الفم والأسنان بعدن 2024",
+   "year": "2024",
+   "location": "aden",
+   "source": "المجلس الطبي اليمني - عدن دورة 2024",
+   "questions": [
     {
      "sectorId": "medical",
      "specId": "dentistry",
@@ -698,7 +783,7 @@
      ],
      "correctIndex": 2,
      "explanation": "An unrestored, caries-free tooth with sound periodontal support is the preferred abutment among the listed choices.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -707,7 +792,10 @@
       "2024"
      ],
      "id": "dentistry-0026",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -724,7 +812,7 @@
      ],
      "correctIndex": 1,
      "explanation": "A conventional dry-heat cycle is approximately 160°C for 2 hours, making C the intended answer.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Dental Infection Control",
       "Dry Heat Sterilization",
@@ -733,7 +821,10 @@
       "2024"
      ],
      "id": "dentistry-0027",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -751,7 +842,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Incorrect working length can cause apical inflammation, flare-ups, and loss of the apical constriction, so all listed consequences can occur.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -760,7 +851,10 @@
       "2024"
      ],
      "id": "dentistry-0028",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -776,7 +870,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -785,7 +879,10 @@
       "2024"
      ],
      "id": "dentistry-0029",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -803,7 +900,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Composite restorations rely on adhesive bonding and therefore differ from amalgam in retention requirements.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -812,7 +909,10 @@
       "2024"
      ],
      "id": "dentistry-0030",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -830,7 +930,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Class II amalgam overhangs may result from inadequate matrix/wedge adaptation, insufficient contouring, or inadequate carving/burnishing; the intended answer is all of the above.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -839,7 +939,10 @@
       "2024"
      ],
      "id": "dentistry-0031",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -857,7 +960,7 @@
      ],
      "correctIndex": 1,
      "explanation": "The T-band matrix system is designed primarily for primary molars.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -866,7 +969,10 @@
       "2024"
      ],
      "id": "dentistry-0032",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -884,7 +990,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Endodontics",
       "Root Canal Treatment and Pulp Disease",
@@ -893,7 +999,10 @@
       "2024"
      ],
      "id": "dentistry-0033",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -911,7 +1020,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Lead aprons and thyroid collars primarily reduce scatter radiation reaching the patient’s tissues.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Oral Radiology",
       "Radiation Protection",
@@ -920,7 +1029,10 @@
       "2024"
      ],
      "id": "dentistry-0034",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -938,7 +1050,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Pit and fissure sealants are especially useful for deep susceptible fissures and newly erupted permanent teeth with appropriate caries risk.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Preventive Dentistry",
       "Oral Hygiene and Tooth Wear",
@@ -947,7 +1059,10 @@
       "2024"
      ],
      "id": "dentistry-0035",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -965,7 +1080,7 @@
      ],
      "correctIndex": 2,
      "explanation": "For enamel etching before laminate veneer bonding, phosphoric acid is used; 37% is the conventional concentration listed.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Prosthodontics",
       "Laminate Veneers",
@@ -974,7 +1089,10 @@
       "2024"
      ],
      "id": "dentistry-0036",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -990,7 +1108,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Diagnostic casts do not allow accurate assessment of actual root/abutment length; radiographs and clinical examination are needed for that.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -999,7 +1117,10 @@
       "2024"
      ],
      "id": "dentistry-0037",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1017,7 +1138,7 @@
      ],
      "correctIndex": 3,
      "explanation": "The source’s listed pattern that best matches standard oral-hygiene access is toothbrush about 0.5 mm, floss about 2.5 mm, and water irrigation about 4 mm.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1026,7 +1147,10 @@
       "2024"
      ],
      "id": "dentistry-0038",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1044,7 +1168,7 @@
      ],
      "correctIndex": 2,
      "explanation": "A pontic should have limited, hygienic tissue contact; the statement about a space between pontic and soft tissue is not generally correct for tissue-contact pontic designs, making C the intended incorrect statement.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -1053,7 +1177,10 @@
       "2024"
      ],
      "id": "dentistry-0039",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1071,7 +1198,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Biologic-width violation can be managed by surgical crown lengthening, orthodontic extrusion, and correction/replacement of the restoration as indicated.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1080,7 +1207,10 @@
       "2024"
      ],
      "id": "dentistry-0040",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1098,7 +1228,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Porcelain veneers obtain primary retention from micromechanical bonding after etching, together with the adhesive/silane system.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Prosthodontics",
       "Porcelain Veneers",
@@ -1107,7 +1237,10 @@
       "2024"
      ],
      "id": "dentistry-0041",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1125,7 +1258,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1134,7 +1267,10 @@
       "2024"
      ],
      "id": "dentistry-0042",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1152,7 +1288,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The source wording is insufficient or unclear for a reliable independent verification.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -1161,7 +1297,10 @@
       "2024"
      ],
      "id": "dentistry-0043",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1179,7 +1318,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Barrier technique is a core infection-control strategy for reducing transmission of blood-borne pathogens such as HIV and HBV.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Dental Infection Control",
       "Barrier Technique",
@@ -1188,7 +1327,10 @@
       "2024"
      ],
      "id": "dentistry-0044",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1204,7 +1346,7 @@
      ],
      "correctIndex": 1,
      "explanation": "High-copper amalgams reduce or eliminate the weak gamma-2 phase and therefore improve corrosion resistance and mechanical properties.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -1213,7 +1355,10 @@
       "2024"
      ],
      "id": "dentistry-0045",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1231,7 +1376,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Over-contoured crowns are commonly caused by insufficient tooth reduction, leaving inadequate space for restorative material.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -1240,7 +1385,10 @@
       "2024"
      ],
      "id": "dentistry-0046",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1258,7 +1406,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Anterior occlusal interference in protrusion is less likely to cause a focal sore spot on the crest of the maxillary denture-bearing area than tissue or occlusal errors directly affecting the site.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -1267,7 +1415,10 @@
       "2024"
      ],
      "id": "dentistry-0047",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1285,7 +1436,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Nickel-titanium instruments are flexible and better suited to negotiating curved canals while reducing excessive instrumentation forces.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Endodontics",
       "Canal Instrumentation",
@@ -1294,7 +1445,10 @@
       "2024"
      ],
      "id": "dentistry-0048",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1311,7 +1465,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Zinc polycarboxylate cement can chemically interact with tooth calcium and provides true adhesion relative to the other listed conventional cements.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Dental Materials",
       "Luting Cements",
@@ -1320,7 +1474,10 @@
       "2024"
      ],
      "id": "dentistry-0049",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
     },
     {
      "sectorId": "medical",
@@ -1338,7 +1495,7 @@
      ],
      "correctIndex": 2,
      "explanation": "In children the mandibular foramen is positioned relatively lower than the occlusal plane, so the injection landmark is adjusted accordingly.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - عدن 2024",
      "tags": [
       "Pediatric Dentistry",
       "Inferior Alveolar Nerve Block",
@@ -1347,8 +1504,21 @@
       "2024"
      ],
      "id": "dentistry-0050",
-     "bankId": "dentistry-b1"
-    },
+     "bankId": "dentistry-2024-aden",
+     "bankTitle": "دورة المجلس الطبي لطب الأسنان (عدن) - 2024 (معتمد)",
+     "year": "2024",
+     "location": "aden"
+    }
+   ]
+  },
+  {
+   "id": "dentistry-2024-ksa",
+   "title": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+   "description": "أسئلة بنك برومترك ونماذج البورد السعودي لطب الأسنان SDLE 2024",
+   "year": "2024",
+   "location": "ksa",
+   "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
+   "questions": [
     {
      "sectorId": "medical",
      "specId": "dentistry",
@@ -1365,7 +1535,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Metamerism is the phenomenon in which two colors match under one illuminant but appear different under another.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Dental Materials",
       "Optical Properties",
@@ -1374,7 +1544,10 @@
       "2024"
      ],
      "id": "dentistry-0051",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1391,7 +1564,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Celluloid crowns are prefabricated anterior crowns available in different sizes and shapes.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Prosthodontics",
       "Prefabricated Crowns",
@@ -1400,7 +1573,10 @@
       "2024"
      ],
      "id": "dentistry-0052",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1418,7 +1594,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The masseter muscle influences the distobuccal extension of a mandibular complete-denture border during functional molding.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Prosthodontics",
       "Complete Denture Border Molding",
@@ -1427,7 +1603,10 @@
       "2024"
      ],
      "id": "dentistry-0053",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1445,7 +1624,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Overdentures can improve sensory feedback, reduce bone resorption, and improve function, but increased esthetics is not a universal advantage over complete dentures.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -1454,7 +1633,10 @@
       "2024"
      ],
      "id": "dentistry-0054",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1470,7 +1652,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Stability describes resistance to horizontal or rotational displacement under functional forces; retention primarily resists dislodgement along the path of insertion.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1479,7 +1661,10 @@
       "2024"
      ],
      "id": "dentistry-0055",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1497,7 +1682,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Dental lasers may improve efficiency and patient comfort in selected procedures, and the intended inclusive answer is “all.”",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Dental Materials",
       "Dental Materials and Instruments",
@@ -1506,7 +1691,10 @@
       "2024"
      ],
      "id": "dentistry-0056",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1524,7 +1712,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Acid etching increases enamel surface area and microporosity, improving micromechanical retention.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -1533,7 +1721,10 @@
       "2024"
      ],
      "id": "dentistry-0057",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1551,7 +1742,7 @@
      ],
      "correctIndex": 2,
      "explanation": "The intended impression technique in the source is the single-mix technique using a medium-viscosity material with a special tray.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1560,7 +1751,10 @@
       "2024"
      ],
      "id": "dentistry-0058",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1578,7 +1772,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Basic periodontal therapy includes plaque control and correction of plaque-retentive factors; surgical periodontal therapy is not basic non-surgical care.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Periodontology",
       "Periodontal Health and Therapy",
@@ -1587,7 +1781,10 @@
       "2024"
      ],
      "id": "dentistry-0059",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1605,7 +1802,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Digital intraoral radiography uses an electronic sensor rather than conventional film.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Oral Radiology",
       "Dental Radiology",
@@ -1614,7 +1811,10 @@
       "2024"
      ],
      "id": "dentistry-0060",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1632,7 +1832,7 @@
      ],
      "correctIndex": 0,
      "explanation": "A shoulder diamond is not the typical bur for a lower posterior full-metal crown preparation; chamfer instruments are used for a chamfer finish line.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1641,7 +1841,10 @@
       "2024"
      ],
      "id": "dentistry-0061",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1659,7 +1862,7 @@
      ],
      "correctIndex": 3,
      "explanation": "PFM restorations are strong and versatile and can be used anteriorly and posteriorly; excellent esthetics is less characteristic than with modern all-ceramic restorations.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -1668,7 +1871,10 @@
       "2024"
      ],
      "id": "dentistry-0062",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1685,7 +1891,7 @@
      ],
      "correctIndex": 2,
      "explanation": "The classic combined biologic width is approximately 2.04 mm.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Prosthodontics",
       "Biologic Width",
@@ -1694,7 +1900,10 @@
       "2024"
      ],
      "id": "dentistry-0063",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1712,7 +1921,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Zinc oxide-eugenol impression material is rigid/essentially inelastic after setting compared with elastomeric materials.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1721,7 +1930,10 @@
       "2024"
      ],
      "id": "dentistry-0064",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1738,7 +1950,7 @@
      ],
      "correctIndex": 2,
      "explanation": "An extensively restored anterior tooth generally requires a full-coverage restoration when clinically indicated.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1747,7 +1959,10 @@
       "2024"
      ],
      "id": "dentistry-0065",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1765,7 +1980,7 @@
      ],
      "correctIndex": 0,
      "explanation": "An intraradicular restoration extends into the root canal and restores the coronal portion of an endodontically treated tooth.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Endodontics",
       "Root Canal Treatment and Pulp Disease",
@@ -1774,7 +1989,10 @@
       "2024"
      ],
      "id": "dentistry-0066",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1792,7 +2010,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Irreversible pulpitis is classically associated with spontaneous, lingering, and often poorly localized pain; well-localized pain is the exception.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Endodontics",
       "Pulpal Diagnosis",
@@ -1801,7 +2019,10 @@
       "2024"
      ],
      "id": "dentistry-0067",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1819,7 +2040,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The source marks the first option for the canal-perforation question; ledge formation followed by continued instrumentation and/or stripping can cause perforation.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Endodontics",
       "Root Canal Treatment and Pulp Disease",
@@ -1828,7 +2049,10 @@
       "2024"
      ],
      "id": "dentistry-0068",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1846,7 +2070,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The powder component of conventional acrylic resin is the polymer; the liquid component is primarily monomer.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -1855,7 +2079,10 @@
       "2024"
      ],
      "id": "dentistry-0069",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
     },
     {
      "sectorId": "medical",
@@ -1873,7 +2100,7 @@
      ],
      "correctIndex": 2,
      "explanation": "Abrasion is tooth wear caused by an external mechanical agent other than tooth-to-tooth contact.",
-     "source": "Yemen Medical Licensure",
+     "source": "الهيئة السعودية للتخصصات الصحية SDLE 2024",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1882,8 +2109,21 @@
       "2024"
      ],
      "id": "dentistry-0070",
-     "bankId": "dentistry-b1"
-    },
+     "bankId": "dentistry-2024-ksa",
+     "bankTitle": "اختبار الهيئة السعودية لطب الأسنان SDLE - 2024 (معتمد)",
+     "year": "2024",
+     "location": "ksa"
+    }
+   ]
+  },
+  {
+   "id": "dentistry-2023-yemen",
+   "title": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+   "description": "النماذج الوزارية المشتركة لامتحان الكفاءة لعام 2023",
+   "year": "2023",
+   "location": "all",
+   "source": "المجلس الطبي اليمني - دورة 2023",
+   "questions": [
     {
      "sectorId": "medical",
      "specId": "dentistry",
@@ -1900,7 +2140,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Calcium hydroxide is used in endodontics in contexts related to intracanal disinfection and periapical healing.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1909,7 +2149,10 @@
       "2024"
      ],
      "id": "dentistry-0071",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -1927,7 +2170,7 @@
      ],
      "correctIndex": 1,
      "explanation": "Porcelain is highly esthetic but relatively brittle compared with ductile metal-based materials.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "Prosthodontics",
       "Fixed and Removable Prosthodontics",
@@ -1936,7 +2179,10 @@
       "2024"
      ],
      "id": "dentistry-0072",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -1954,7 +2200,7 @@
      ],
      "correctIndex": 2,
      "explanation": "The source answer states less lingual reduction for PFM than for the comparison restoration; the original wording is preserved.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -1963,7 +2209,10 @@
       "2024"
      ],
      "id": "dentistry-0073",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -1981,7 +2230,7 @@
      ],
      "correctIndex": 3,
      "explanation": "Periodontal health around restorations is supported by appropriate reshaping/recontouring and contact management; the source answer is “all.”",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "Periodontology",
       "Periodontal Health and Therapy",
@@ -1990,7 +2239,10 @@
       "2024"
      ],
      "id": "dentistry-0074",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2007,7 +2259,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The mesiolingual/mesiopalatal cusp of the maxillary first molar normally contacts the central fossa region of the mandibular first molar in ideal occlusion.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -2016,7 +2268,10 @@
       "2024"
      ],
      "id": "dentistry-0075",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2034,7 +2289,7 @@
      ],
      "correctIndex": 1,
      "explanation": "After preparing a subgingival margin, gingival retraction is performed before the definitive impression.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "Periodontology",
       "Periodontal Health and Therapy",
@@ -2043,7 +2298,10 @@
       "2024"
      ],
      "id": "dentistry-0076",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2061,7 +2319,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Chemicomechanical retraction displaces gingival tissue laterally away from the tooth to expose the finish line.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -2070,7 +2328,10 @@
       "2024"
      ],
      "id": "dentistry-0077",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2088,7 +2349,7 @@
      ],
      "correctIndex": 0,
      "explanation": "A 7/8 crown is a partial-coverage restoration used to preserve the specified cusp pattern in the source question.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -2097,7 +2358,10 @@
       "2024"
      ],
      "id": "dentistry-0078",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2114,7 +2378,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Adequate retention is not an indication for placing a subgingival margin; subgingival placement is used for specific clinical indications.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "Periodontology",
       "Periodontal Health and Therapy",
@@ -2123,7 +2387,10 @@
       "2024"
      ],
      "id": "dentistry-0079",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2141,7 +2408,7 @@
      ],
      "correctIndex": 0,
      "explanation": "The source also contains a stray second question numbered 39: respiratory rate in children is generally higher than in adults.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -2150,7 +2417,10 @@
       "2024"
      ],
      "id": "dentistry-0080",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2168,7 +2438,7 @@
      ],
      "correctIndex": 1,
      "explanation": "At age 10, loss of a primary second molar requires assessment of eruption status and successor development; a radiograph helps determine the appropriate space-management decision.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "General Dentistry",
       "General Dental Knowledge",
@@ -2177,7 +2447,10 @@
       "2024"
      ],
      "id": "dentistry-0081",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2195,7 +2468,7 @@
      ],
      "correctIndex": 2,
      "explanation": "A root canal is generally obturated when it is adequately shaped, dry, asymptomatic, and free of signs such as foul odor or swelling.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "Endodontics",
       "Root Canal Treatment and Pulp Disease",
@@ -2204,7 +2477,10 @@
       "2024"
      ],
      "id": "dentistry-0082",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2221,7 +2497,7 @@
      ],
      "correctIndex": 0,
      "explanation": "In deep caries, peripheral caries is removed before caries close to the pulpal floor to reduce the risk of pulpal exposure.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "Operative Dentistry",
       "Restorative Dentistry",
@@ -2230,7 +2506,10 @@
       "2024"
      ],
      "id": "dentistry-0083",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2248,7 +2527,7 @@
      ],
      "correctIndex": 0,
      "explanation": "Pain on percussion suggests apical/periodontal involvement rather than uncomplicated reversible pulpitis.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "Endodontics",
       "Root Canal Treatment and Pulp Disease",
@@ -2257,7 +2536,10 @@
       "2024"
      ],
      "id": "dentistry-0084",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     },
     {
      "sectorId": "medical",
@@ -2274,7 +2556,7 @@
      ],
      "correctIndex": 2,
      "explanation": "A rounded/radial shoulder is a standard finish-line design for many full-porcelain crowns.",
-     "source": "Yemen Medical Licensure",
+     "source": "المجلس الطبي اليمني - دورة 2023",
      "tags": [
       "Prosthodontics",
       "Ceramic Crown Preparation",
@@ -2283,7 +2565,10 @@
       "2024"
      ],
      "id": "dentistry-0085",
-     "bankId": "dentistry-b1"
+     "bankId": "dentistry-2023-yemen",
+     "bankTitle": "دورة امتحانات مزاولة طب الأسنان لعام 2023 (معتمد)",
+     "year": "2023",
+     "location": "all"
     }
    ]
   }

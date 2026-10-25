@@ -5,10 +5,12 @@ import Link from 'next/link';
 import {
   Download, Upload, Trash2, LogOut, Moon, Sun, Repeat, Save,
   ShieldCheck, Sparkles, CheckCircle2, Clock, Calendar, AlertCircle,
-  CreditCard, Check, RefreshCw, Languages, Laptop, ChevronRight, X, Building2
+  CreditCard, Check, RefreshCw, Languages, Laptop, ChevronRight, X, Building2,
+  MapPin, Loader2,
 } from 'lucide-react';
 import { useKafaah } from '../../../lib/context/KafaahProvider';
 import { exportProgress, importProgress, resetProgress, getStats } from '../../../lib/progress';
+import YemeniPaymentModal from '../../../components/payment/YemeniPaymentModal';
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -25,13 +27,57 @@ export default function SettingsPage() {
   const [showRenewModal, setShowRenewModal] = useState(false);
   const [selectedPkg, setSelectedPkg] = useState(null);
   const [isRenewing, setIsRenewing] = useState(false);
+  const [targetLocation, setTargetLocation] = useState(profile.targetLocation || 'all');
+  const [busyPlan, setBusyPlan] = useState(false);
 
   useEffect(() => {
     setName(profile.name || '');
     setEmail(profile.email || '');
+    if (profile.targetLocation) setTargetLocation(profile.targetLocation);
     const th = localStorage.getItem('kafaah_theme') || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     setTheme(th);
   }, [profile]);
+
+  async function regeneratePlan() {
+    setBusyPlan(true);
+    try {
+      const locLabel = targetLocation === 'صنعاء' ? 'المجلس الطبي بصنعاء'
+        : targetLocation === 'عدن' ? 'المجلس الطبي بعدن'
+        : targetLocation === 'السعودية' ? 'الهيئة السعودية للتخصصات الصحية (SCFHS) / برومترك'
+        : (spec?.authority ? localize(spec.authority) : 'مجلس مزاولة المهنة المعتمد');
+
+      const res = await fetch('/api/groq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'diagnostic_plan',
+          payload: {
+            profession: sectorName(sector),
+            specialty: specName(spec),
+            country: localize(spec?.country),
+            authority: locLabel,
+            exam_name: `${locLabel} — ${specName(spec)}`,
+            level: profile.level || 'خريج',
+            examDate: profile.examDate || '',
+            location: targetLocation,
+            examLocation: targetLocation,
+            lang,
+          },
+        }),
+      });
+      const data = await res.json();
+      if (data.plan) {
+        setProfile({ targetLocation, plan: data.plan, planGeneratedAt: new Date().toISOString() });
+        flash(lang === 'en' ? 'New smart study plan generated successfully ✓' : 'تم توليد خطة دراسية ذكية مخصصة بنجاح ✓', 3500);
+      } else {
+        flash(lang === 'en' ? 'Unable to generate plan right now' : 'تعذر توليد الخطة حالياً');
+      }
+    } catch {
+      flash(lang === 'en' ? 'Could not reach AI server. Try again.' : 'تعذر الاتصال بخادم الذكاء الاصطناعي');
+    } finally {
+      setBusyPlan(false);
+    }
+  }
 
   useEffect(() => {
     fetch('/api/packages')
@@ -295,12 +341,16 @@ export default function SettingsPage() {
 
         {/* أزرار الإجراءات الخاصة بالاشتراك */}
         <div className="row-between wrap" style={{ gap: 10 }}>
-          <div className="row" style={{ gap: 6 }}>
+          <div className="row wrap" style={{ gap: 8, alignItems: 'center' }}>
             <span style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-muted)' }}>
-              {lang === 'en' ? 'Special Rate:' : 'السعر الترويجي:'}
+              {lang === 'en' ? 'Exclusive Plans:' : 'الباقات المخفضة:'}
             </span>
-            <span style={{ textDecoration: 'line-through', color: 'var(--text-dim)', fontSize: 13 }}>$10</span>
-            <span style={{ fontWeight: 900, color: 'var(--sector)', fontSize: 15 }}>5 USD / {lang === 'en' ? 'month' : 'شهر'}</span>
+            <span className="badge badge-gold" style={{ fontSize: 12, fontWeight: 900 }}>
+              {lang === 'en' ? '3 Months: $12 (Save 40% 🔥)' : '3 أشهر بـ 12$ (وفر 40% 🔥)'}
+            </span>
+            <span style={{ fontSize: 12.5, color: 'var(--text-muted)', fontWeight: 700 }}>
+              {lang === 'en' ? 'or $5 / month' : 'أو 5$ شهرياً'}
+            </span>
           </div>
 
           <button
@@ -310,8 +360,8 @@ export default function SettingsPage() {
           >
             <RefreshCw size={15} />
             {isExpired
-              ? (lang === 'en' ? 'Renew Subscription Now ($5)' : 'إعادة الاشتراك والتجديد (5$)')
-              : (lang === 'en' ? 'Extend Subscription ($5)' : 'تمديد الاشتراك الحالي (5$)')}
+              ? (lang === 'en' ? 'Renew / Choose Plan' : 'تجديد أو اختيار الباقة (الكريمي / جيب)')
+              : (lang === 'en' ? 'Upgrade / Extend Plan' : 'ترقية أو تمديد الاشتراك (الكريمي / جيب)')}
           </button>
         </div>
       </div>
@@ -515,6 +565,67 @@ export default function SettingsPage() {
         </div>
       </div>
 
+      {/* ── جهة ومركز الاختبار وخطة الذكاء الاصطناعي ── */}
+      <div className="card">
+        <div className="row-between wrap" style={{ marginBottom: 12, gap: 8 }}>
+          <div className="row" style={{ gap: 8 }}>
+            <MapPin size={18} style={{ color: 'var(--sector)' }} />
+            <h3 style={{ fontSize: 15.5, fontWeight: 800 }}>
+              {lang === 'en' ? 'Target Exam Center & AI Study Plan' : 'مركز الاختبار المستهدف وخطة المذاكرة الذكية'}
+            </h3>
+          </div>
+          <span className="badge badge-brand" style={{ fontSize: 11 }}>
+            {lang === 'en' ? 'Customized Plan' : 'خطة مخصصة'}
+          </span>
+        </div>
+
+        <p className="text-muted" style={{ fontSize: 13, marginBottom: 14 }}>
+          {lang === 'en'
+            ? 'Choose your target exam center. The AI will customize high-yield blueprint priorities and tailored weekly milestones for you.'
+            : 'اختر المركز أو الهيئة التي ستختبر فيها (صنعاء، عدن، أو السعودية). سيقوم الذكاء الاصطناعي بتخصيص خطة المذاكرة وفق أحدث نماذج ذلك المركز.'}
+        </p>
+
+        <div className="field mb-3">
+          <label className="label">{lang === 'en' ? 'Target Exam Authority / Center' : 'جهة / مركز الامتحان المستهدف'}</label>
+          <div className="chip-row">
+            {[
+              ['all', lang === 'en' ? 'General / All Centers' : 'عام / كل المراكز'],
+              ['صنعاء', lang === 'en' ? "Sana'a (Medical Council)" : 'صنعاء (المجلس الطبي)'],
+              ['عدن', lang === 'en' ? 'Aden (Medical Council)' : 'عدن (المجلس الطبي)'],
+              ['السعودية', lang === 'en' ? 'Saudi Arabia (Prometric / SCFHS)' : 'السعودية (برومترك / الهيئة)'],
+            ].map(([v, l]) => (
+              <span
+                key={v}
+                className={`chip${targetLocation === v ? ' active' : ''}`}
+                onClick={() => {
+                  setTargetLocation(v);
+                  setProfile({ targetLocation: v });
+                }}
+              >
+                {l}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="row wrap" style={{ gap: 10, marginTop: 14 }}>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={regeneratePlan}
+            disabled={busyPlan}
+            style={{ fontWeight: 800, display: 'inline-flex', alignItems: 'center', gap: 8 }}
+          >
+            {busyPlan ? <Loader2 size={16} className="spin" /> : <Sparkles size={16} />}
+            <span>
+              {busyPlan
+                ? (lang === 'en' ? 'Generating Custom AI Plan...' : 'جاري بناء الخطة الذكية المخصصة...')
+                : (lang === 'en' ? 'Regenerate Custom AI Study Plan' : 'توليد / تحديث خطة المذاكرة الذكية للمركز المختار')}
+            </span>
+          </button>
+        </div>
+      </div>
+
       {/* ── إدارة البيانات والنسخ الاحتياطي ── */}
       <div className="card">
         <h3 style={{ fontSize: 15.5, marginBottom: 12, fontWeight: 800 }}>{t('settings.myData')}</h3>
@@ -549,119 +660,21 @@ export default function SettingsPage() {
         <LogOut size={16} /> {t('nav.logout')}
       </button>
 
-      {/* ── نافذة الدفع والتجديد المنبثقة (Renewal Modal) ── */}
-      {showRenewModal && (
-        <div
-          style={{
-            position: 'fixed',
-            inset: 0,
-            zIndex: 9999,
-            background: 'rgba(0, 0, 0, 0.7)',
-            backdropFilter: 'blur(5px)',
-            display: 'grid',
-            placeItems: 'center',
-            padding: 16,
-          }}
-          onClick={() => setShowRenewModal(false)}
-        >
-          <div
-            className="card fade-up"
-            style={{
-              maxWidth: 500,
-              width: '100%',
-              borderRadius: 20,
-              padding: 24,
-              background: 'var(--surface)',
-              border: '1px solid var(--border)',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="row-between" style={{ marginBottom: 16 }}>
-              <div className="row" style={{ gap: 8 }}>
-                <Sparkles size={20} style={{ color: 'var(--sector)' }} />
-                <h3 style={{ fontSize: 18, fontWeight: 900 }}>
-                  {lang === 'en' ? 'Renew Your Kafaah Subscription' : 'تجديد باقة كفاءة الشاملة'}
-                </h3>
-              </div>
-              <button className="icon-btn" onClick={() => setShowRenewModal(false)} aria-label="Close">
-                <X size={18} />
-              </button>
-            </div>
-
-            <div className="card soft-sector" style={{ padding: 16, borderRadius: 14, marginBottom: 16 }}>
-              <div className="row-between">
-                <div>
-                  <div style={{ fontWeight: 900, fontSize: 16 }}>
-                    {selectedPkg?.name || 'باقة كفاءة الشاملة'}
-                  </div>
-                  <div className="text-muted" style={{ fontSize: 12.5, marginTop: 4 }}>
-                    {lang === 'en' ? 'Monthly auto-renewal · Cancel anytime' : 'اشتراك شهري شامل · وصول غير محدود لجميع البنوك'}
-                  </div>
-                </div>
-                <div style={{ textAlign: 'end' }}>
-                  <div style={{ textDecoration: 'line-through', color: 'var(--text-dim)', fontSize: 13 }}>$10</div>
-                  <div style={{ fontSize: 20, fontWeight: 900, color: 'var(--sector)' }}>
-                    {selectedPkg?.price || 5} {selectedPkg?.currency || 'USD'}
-                  </div>
-                  <span className="badge badge-gold" style={{ fontSize: 10 }}>خصم 50%</span>
-                </div>
-              </div>
-            </div>
-
-            {/* إشعار بوابات الدفع */}
-            <div style={{ marginBottom: 16 }}>
-              <label className="label" style={{ fontSize: 12.5, marginBottom: 8, display: 'block' }}>
-                {lang === 'en' ? 'Accepted Payment Methods' : 'طرق الدفع المدعومة'}
-              </label>
-              <div className="row wrap" style={{ gap: 8, padding: '10px 14px', background: 'var(--surface-2)', borderRadius: 10 }}>
-                <span className="badge badge-muted" style={{ fontWeight: 800 }}>💳 مدى Mada</span>
-                <span className="badge badge-muted" style={{ fontWeight: 800 }}>💳 Visa / Mastercard</span>
-                <span className="badge badge-muted" style={{ fontWeight: 800 }}> Apple Pay</span>
-              </div>
-              <p className="text-muted" style={{ fontSize: 11.5, marginTop: 6, lineHeight: 1.5 }}>
-                {lang === 'en'
-                  ? 'Payment gateway integration is currently in rollout. Clicking confirm will instantly activate your 30-day extension.'
-                  : 'بوابات الدفع الإلكتروني قيد التفعيل النهائي — النقر على تأكيد يمنحك تمديداً فورياً لمدة ۳۰ يوماً مع الحفاظ الكامل على كافة بياناتك.'}
-              </p>
-            </div>
-
-            {/* تأكيد حماية البيانات */}
-            <div style={{ background: 'color-mix(in srgb, var(--sector) 10%, var(--surface))', padding: '10px 12px', borderRadius: 10, marginBottom: 18, fontSize: 12, color: 'var(--text-secondary)' }}>
-              🛡️ <strong>{lang === 'en' ? 'Note: ' : 'تأكيد أمان: '}</strong>
-              {lang === 'en'
-                ? 'Your learning level, exam results, and mistake logs will never be reset.'
-                : 'مستواك التدريبي، أخطاؤك، ونتائج امتحاناتك محفوظة بالكامل ولن تُحذف إطلاقاً.'}
-            </div>
-
-            <div className="row" style={{ gap: 10 }}>
-              <button
-                className="btn btn-ghost"
-                style={{ flex: 1 }}
-                onClick={() => setShowRenewModal(false)}
-                disabled={isRenewing}
-              >
-                {lang === 'en' ? 'Cancel' : 'إلغاء'}
-              </button>
-              <button
-                className="btn btn-primary"
-                style={{ flex: 2, fontWeight: 900 }}
-                onClick={() => handleRenewSubscription()}
-                disabled={isRenewing}
-              >
-                {isRenewing ? (
-                  lang === 'en' ? 'Renewing...' : 'جاري التجديد...'
-                ) : (
-                  <>
-                    <Check size={16} />
-                    {lang === 'en' ? 'Confirm & Extend 30 Days' : 'تأكيد التجديد وتمديد ۳۰ يوماً'}
-                  </>
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* ── نافذة الدفع والتجديد المحلية (الكريمي وجيب) ── */}
+      <YemeniPaymentModal
+        isOpen={showRenewModal}
+        onClose={() => setShowRenewModal(false)}
+        packageInfo={selectedPkg || packages[0] || { id: 'monthly', name: 'باقة كفاءة الشاملة', price: 5, currency: 'USD' }}
+        userProfile={profile}
+        onSuccess={() => {
+          flash(
+            lang === 'en'
+              ? 'Payment request sent! Your account will be activated once confirmed by administration.'
+              : 'تم إرسال إشعار الدفع بنجاح! سيتم تفعيل حسابك فور مطابقة الحوالة من قبل الإدارة.',
+            5000
+          );
+        }}
+      />
     </div>
   );
 }

@@ -8,6 +8,7 @@ import {
 import { useKafaah } from '../../lib/context/KafaahProvider';
 import { useBanks } from '../../lib/useData';
 import { getStats, subscribe } from '../../lib/progress';
+import ExamCountdown from '../../components/ExamCountdown';
 
 export default function DashboardHome() {
   const { profile, sector, spec, t, locale, sectorName, specName } = useKafaah();
@@ -40,6 +41,16 @@ export default function DashboardHome() {
 
   return (
     <div className="stack" style={{ gap: 20 }}>
+      {/* ── عداد تنازلي لموعد دورة الامتحان القادمة ── */}
+      <ExamCountdown
+        compact={true}
+        targetDate={profile.examDate || null}
+        title={`دورة امتحانات مزاولة المهنة القادمة (${specName(spec) || 'تخصصك المعتمد'})`}
+        subtitle="المجلس الطبي وهيئة التخصصات — كل يوم تدرّب فيه يرفع احتمالية اجتيازك من أول محاولة"
+        ctaHref="/dashboard/mock"
+        ctaText="ابدأ محاكاة جديدة"
+      />
+
       {/* Hero */}
       <div className="card card-pad-lg" style={{ background: 'linear-gradient(135deg, color-mix(in srgb, var(--sector) 12%, var(--surface)), var(--surface))' }}>
         <div className="row-between wrap" style={{ gap: 14 }}>

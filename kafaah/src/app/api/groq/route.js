@@ -5,48 +5,83 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const apiKey = process.env.GROQ_API_KEY || '';
-const MODEL = 'openai/gpt-oss-120b';
+const MODEL = 'qwen/qwen3.8-27b';
 
 function client() {
   if (!apiKey) return null;
   return new Groq({ apiKey });
 }
 
-// ── خطة تشخيصية احتياطية (بلا إنترنت) ────────────────────────────────────────
-function fallbackPlan({ specialty, authority, exam }) {
+// ── خطة تشخيصية ذكية واحترافية (باللغة العربية ومخصصة للمركز والتخصص) ──────────
+function fallbackPlan({ specialty, authority, location, exam, level = 'خريج', lang = 'ar' }) {
+  const locName = location === 'sanaa' ? 'المجلس الطبي بصنعاء'
+    : location === 'aden' ? 'المجلس الطبي بعدن'
+    : location === 'ksa' ? 'الهيئة السعودية للتخصصات الصحية (SCFHS)'
+    : (authority || 'مجلس مزاولة المهنة المعتمد');
+
+  const spec = specialty || 'تخصصك المهني';
+
+  if (lang === 'en') {
+    return {
+      readiness: 72,
+      dailyTarget: 35,
+      studyHours: 2.5,
+      summary: `Tailored study roadmap for ${spec} focused on the high-yield examination blueprint for ${locName}. By solving 35 questions daily and reviewing high-yield topics, you will steadily achieve full readiness.`,
+      focusAreas: [
+        'Core Principles & Clinical Guidelines',
+        'High-Yield Applied Case Scenarios',
+        'Ethics, Regulations & Patient Safety',
+        'Emergency Management & Critical Protocols',
+        'Mistake Log Mastery & Spaced Repetition',
+      ],
+      weeks: [
+        { title: 'Week 1: Core Fundamentals & Blueprint', tasks: 'Review high-frequency foundational questions and baseline concepts', target: '75%' },
+        { title: 'Week 2: Advanced Applied Scenarios', tasks: 'Focus on clinical cases and scenario decision-making', target: '82%' },
+        { title: 'Week 3: Timed Realistic Simulation', tasks: 'Complete full mock exams under official time constraints', target: '88%' },
+        { title: 'Week 4: Final Mastery & Rapid Review', tasks: 'Review personal mistake bank and critical high-yield takeaways', target: '94%' },
+      ],
+    };
+  }
+
   return {
-    readiness: 70,
+    readiness: 72,
     dailyTarget: 35,
-    studyHours: 2,
-    summary: `بناءً على تخصصك (${specialty || 'تخصصك'})، أعددنا لك مسارًا تدريبيًا مخصصًا يركّز على المحاور الأكثر تكرارًا في ${exam || 'امتحان مزاولة المهنة'}. بمعدل ٣٥ سؤالًا يوميًا ترتفع جاهزيتك بثبات.`,
+    studyHours: 2.5,
+    summary: `بناءً على تخصصك في «${spec}» واختيارك لمركز امتحان «${locName}»، قمنا بإعداد خطة دراسية متخصصة تركز على المعايير والنماذج الأكثر تكراراً في هذا المركز. بمعدل ٣٥ سؤالاً يومياً مع مراجعة الشروحات ستصل لنسبة جاهزية تتجاوز 90% بثقة تامة.`,
     focusAreas: [
-      'المعايير والبروتوكولات المعتمدة',
-      'الحالات التطبيقية واتخاذ القرار',
-      'التشريعات وأخلاقيات المهنة',
-      'إدارة المخاطر والطوارئ',
-      'تحليل الأخطاء والتكرار المتباعد',
+      `المعايير المعتمدة في امتحانات ${locName}`,
+      'الحالات التطبيقية الأكثر تكراراً في دورات السنوات السابقة',
+      'بروتوكولات الطوارئ والقرارات التشخيصية الحرجة',
+      'اللوائح وأخلاقيات الممارسة المهنية وسلامة المريض',
+      'تثبيت المفاهيم عبر سجل الأخطاء والمراجعة التكرارية',
     ],
     weeks: [
-      { title: 'بناء الأساسيات', tasks: 'تغطية الأسئلة عالية التكرار', target: '75%' },
-      { title: 'التخصصية الدقيقة', tasks: 'التركيز على الموضوعات المتقدمة', target: '82%' },
-      { title: 'محاكاة تحت ضغط الوقت', tasks: 'امتحان كامل بمؤقّت', target: '88%' },
-      { title: 'التثبيت النهائي', tasks: 'مراجعة الأخطاء والمفاهيم الحرجة', target: '92%' },
+      { title: 'الأسبوع الأول: الأساسيات والمعايير الأكثر تكراراً', tasks: `حل نماذج الأسئلة المتكررة واستيعاب خريطة أوزان امتحان ${locName}`, target: '75%' },
+      { title: 'الأسبوع الثاني: الحالات السريرية والتطبيقية المعقدة', tasks: 'التركيز على السيناريوهات والتشخيص التفريقي وخطوات العلاج الأولى', target: '82%' },
+      { title: 'الأسبوع الثالث: المحاكاة الواقعية تحت ضغط الوقت', tasks: 'إجراء امتحانات تجريبية كاملة بنفس مدة وعدد أسئلة الاختبار الفعلي', target: '88%' },
+      { title: 'الأسبوع الرابع: بنك الأخطاء والتثبيت النهائي', tasks: 'مراجعة كافة الأسئلة المحفوظة والأخطاء السابقة لضمان عدم تكرارها', target: '94%' },
     ],
   };
 }
 
 function normalizePlan(raw, ctx) {
-  if (!raw || typeof raw !== 'object') return fallbackPlan(ctx);
+  const fb = fallbackPlan(ctx);
+  if (!raw || typeof raw !== 'object') return fb;
+
   return {
-    readiness: raw.readiness_score ?? raw.readiness ?? 70,
-    dailyTarget: raw.daily_target_questions ?? raw.dailyTarget ?? 35,
-    studyHours: raw.estimated_study_hours ?? raw.studyHours ?? 2,
-    summary: raw.ai_diagnostic_summary || raw.summary || fallbackPlan(ctx).summary,
-    focusAreas: raw.high_yield_topics || raw.focusAreas || fallbackPlan(ctx).focusAreas,
-    weeks: (raw.weekly_milestones || raw.weeks || fallbackPlan(ctx).weeks).map((w, i) => ({
+    readiness: raw.readiness_score ?? raw.readiness ?? fb.readiness,
+    dailyTarget: raw.daily_target_questions ?? raw.dailyTarget ?? fb.dailyTarget,
+    studyHours: raw.estimated_study_hours ?? raw.studyHours ?? fb.studyHours,
+    summary: raw.ai_diagnostic_summary || raw.summary || fb.summary,
+    focusAreas: Array.isArray(raw.high_yield_topics) && raw.high_yield_topics.length
+      ? raw.high_yield_topics
+      : Array.isArray(raw.focusAreas) && raw.focusAreas.length
+      ? raw.focusAreas
+      : fb.focusAreas,
+    weeks: (raw.weekly_milestones || raw.weeks || fb.weeks).map((w, i) => ({
       title: w.title || w.focus || `الأسبوع ${i + 1}`,
-      tasks: w.tasks || w.focus || '',
-      target: w.target || w.target_accuracy || '',
+      tasks: w.tasks || w.focus || (fb.weeks[i]?.tasks || ''),
+      target: w.target || w.target_accuracy || `${75 + i * 6}%`,
     })),
   };
 }
@@ -59,42 +94,104 @@ export async function POST(req) {
     return NextResponse.json({ error: 'طلب غير صالح' }, { status: 400 });
   }
 
-  // دعم الشكلين: { action, payload } و الشكل المسطّح { action, question, ... }
   const action = body.action;
   const payload = body.payload || body;
   const groq = client();
 
-  // ── ١) الخطة التشخيصية ────────────────────────────────────────────────
+  // ── ١) الخطة التشخيصية الذكية ──────────────────────────────────────────
   if (action === 'diagnostic_plan') {
-    const ctx = {
-      specialty: payload.specialty || payload.specLabel,
-      authority: payload.authority || payload.country,
-      exam: payload.exam_name || payload.exam,
-    };
-    if (!groq) return NextResponse.json({ success: true, plan: fallbackPlan(ctx), fallback: true });
-    try {
-      const prompt = `أنت مستشار أكاديمي في منصة «كفاءة» للتدريب والاستعداد لامتحانات مزاولة المهن.
-المجال: ${payload.profession || payload.sectorLabel || ''}
-التخصص: ${ctx.specialty || ''}
-نموذج الامتحان المستهدف: ${ctx.exam || payload.country || 'امتحان مزاولة المهنة'}
-المستوى الحالي: ${payload.current_level || payload.level || 'خريج'}
-التاريخ المستهدف: ${payload.target_date || payload.examDate || 'غير محدد'}
+    const lang = payload.lang || 'ar';
+    const location = payload.location || payload.examLocation || 'all';
+    const locLabel = location === 'sanaa' ? 'المجلس الطبي بصنعاء (اليمن)'
+      : location === 'aden' ? 'المجلس الطبي بعدن (اليمن)'
+      : location === 'ksa' ? 'الهيئة السعودية للتخصصات الصحية SCFHS / برومترك (المملكة العربية السعودية)'
+      : (payload.authority || payload.country || 'اليمن والمملكة العربية السعودية');
 
-أعد JSON فقط بالبنية:
-{"readiness_score":70,"daily_target_questions":35,"estimated_study_hours":2,"ai_diagnostic_summary":"...","high_yield_topics":["..."],"weekly_milestones":[{"week":1,"focus":"...","target_accuracy":"75%"}]}`;
+    const ctx = {
+      specialty: payload.specialty || payload.specLabel || 'التخصص المهني',
+      authority: locLabel,
+      location,
+      exam: payload.exam_name || payload.exam || 'امتحان مزاولة المهنة',
+      level: payload.current_level || payload.level || 'خريج',
+      lang,
+    };
+
+    if (!groq) {
+      return NextResponse.json({ success: true, plan: fallbackPlan(ctx), fallback: true });
+    }
+
+    try {
+      const prompt = lang === 'en'
+        ? `You are a senior academic licensing advisor for the "Kafaah" preparation platform.
+Specialization: ${ctx.specialty}
+Target Examination Authority / Location: ${ctx.authority}
+Candidate Level: ${ctx.level}
+Target Exam Date: ${payload.target_date || payload.examDate || 'Upcoming session'}
+
+Generate a realistic, high-impact, professional study plan tailored specifically to the ${ctx.authority} blueprint.
+Output MUST be pure JSON with EXACTLY this structure, no code fences, no markdown formatting:
+{
+  "readiness_score": 75,
+  "daily_target_questions": 35,
+  "estimated_study_hours": 2.5,
+  "ai_diagnostic_summary": "Detailed strategic summary...",
+  "high_yield_topics": ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
+  "weekly_milestones": [
+    {"title": "Week 1: Core Fundamentals", "tasks": "Tasks description...", "target_accuracy": "75%"},
+    {"title": "Week 2: Clinical Scenarios", "tasks": "Tasks description...", "target_accuracy": "82%"},
+    {"title": "Week 3: Timed Mock Simulations", "tasks": "Tasks description...", "target_accuracy": "88%"},
+    {"title": "Week 4: Mistake Bank & Mastery", "tasks": "Tasks description...", "target_accuracy": "94%"}
+  ]
+}`
+        : `أنت مستشار أكاديمي خبير في منصة «كفاءة» للتدريب والاستعداد لامتحانات مزاولة المهن الرسمية.
+التخصص: ${ctx.specialty}
+مركز وهيئة الامتحان المستهدفة: ${ctx.authority}
+المستوى الدراسي: ${ctx.level}
+تاريخ الامتحان المستهدف: ${payload.target_date || payload.examDate || 'الدورة الامتحانية القادمة'}
+
+أعد خطة دراسية متقنة ومخصصة خصيصاً لمعايير هذا المركز باللغة العربية الفصحى الأنيقة الخالية من أي علامات نجوم (**).
+يجب أن يكون الناتج بتنسيق JSON نظيف وصحيح حصراً دون أي نص خارجي بالبنية التالية:
+{
+  "readiness_score": 75,
+  "daily_target_questions": 35,
+  "estimated_study_hours": 2.5,
+  "ai_diagnostic_summary": "ملخص تشخيصي دقيق واستراتيجي يوضح كيفية اجتياز امتحان ${ctx.authority}...",
+  "high_yield_topics": ["المحور الأول عالي التكرار", "المحور الثاني", "المحور الثالث", "المحور الرابع", "المحور الخامس"],
+  "weekly_milestones": [
+    {"title": "الأسبوع الأول: أساسيات المعايير", "tasks": "تفاصيل المهام الأسبوعية...", "target_accuracy": "75%"},
+    {"title": "الأسبوع الثاني: الحالات والسيناريوهات", "tasks": "تفاصيل المهام الأسبوعية...", "target_accuracy": "82%"},
+    {"title": "الأسبوع الثالث: المحاكاة الواقعية الموقوتة", "tasks": "تفاصيل المهام الأسبوعية...", "target_accuracy": "88%"},
+    {"title": "الأسبوع الرابع: تثبيت بنك الأخطاء والمفاهيم الحرجة", "tasks": "تفاصيل المهام الأسبوعية...", "target_accuracy": "94%"}
+  ]
+}`;
+
       const completion = await groq.chat.completions.create({
         model: MODEL,
         messages: [
-          { role: 'system', content: 'Return pure JSON only, no markdown.' },
+          { role: 'system', content: 'You are an academic exam advisor. Output strictly raw JSON. No markdown backticks, no explanations outside JSON.' },
           { role: 'user', content: prompt },
         ],
-        temperature: 0.4,
-        max_tokens: 1200,
+        temperature: 0.35,
+        max_tokens: 1500,
       });
-      const cleaned = (completion.choices[0]?.message?.content || '{}').replace(/```json/g, '').replace(/```/g, '').trim();
-      let parsed = {};
-      try { parsed = JSON.parse(cleaned); } catch {}
-      return NextResponse.json({ success: true, plan: normalizePlan(parsed, ctx) });
+
+      const rawContent = completion.choices[0]?.message?.content || '{}';
+      const cleaned = rawContent.replace(/```json/gi, '').replace(/```/gi, '').trim();
+      let parsed = null;
+      try {
+        parsed = JSON.parse(cleaned);
+      } catch {
+        const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          try { parsed = JSON.parse(jsonMatch[0]); } catch {}
+        }
+      }
+
+      if (parsed) {
+        return NextResponse.json({ success: true, plan: normalizePlan(parsed, ctx) });
+      }
+
+      return NextResponse.json({ success: true, plan: fallbackPlan(ctx), fallback: true });
     } catch (e) {
       console.error('Groq diagnostic error:', e?.message);
       return NextResponse.json({ success: true, plan: fallbackPlan(ctx), fallback: true });

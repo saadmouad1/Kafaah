@@ -12,9 +12,12 @@ import ContentManager from '../../components/admin/ContentManager';
 import ClientsManager from '../../components/admin/ClientsManager';
 import PackagesManager from '../../components/admin/PackagesManager';
 import SubscriptionsManager from '../../components/admin/SubscriptionsManager';
+import PaymentsManager from '../../components/admin/PaymentsManager';
 
 const TABS = [
   { id: 'overview', label: 'نظرة عامة', icon: LayoutDashboard },
+  { id: 'payments', label: 'طلبات الدفع (الكريمي وجيب)', icon: CreditCard },
+  { id: 'subscriptions', label: 'الاشتراكات المفعلة', icon: CheckCircle2 },
   { id: 'content', label: 'الأقسام والتخصصات', icon: Building2 },
   { id: 'banks', label: 'إدارة البنوك', icon: Layers },
   { id: 'manual', label: 'إضافة يدوية', icon: PlusCircle },
@@ -22,7 +25,6 @@ const TABS = [
   { id: 'manage', label: 'إدارة الأسئلة', icon: ListChecks },
   { id: 'clients', label: 'العملاء', icon: Users },
   { id: 'packages', label: 'الباقات', icon: Package },
-  { id: 'subscriptions', label: 'الاشتراكات', icon: CreditCard },
 ];
 
 export default function AdminPage() {
@@ -117,6 +119,7 @@ export default function AdminPage() {
       {tab === 'manage' && <Manage {...childProps} />}
       {tab === 'clients' && <ClientsManager onDone={(m) => flash('ok', m)} onErr={(m) => flash('err', m)} />}
       {tab === 'packages' && <PackagesManager onDone={(m) => flash('ok', m)} onErr={(m) => flash('err', m)} />}
+      {tab === 'payments' && <PaymentsManager onDone={(m) => { flash('ok', m); load(); }} onErr={(m) => flash('err', m)} />}
       {tab === 'subscriptions' && <SubscriptionsManager onDone={(m) => flash('ok', m)} onErr={(m) => flash('err', m)} />}
     </div>
   );

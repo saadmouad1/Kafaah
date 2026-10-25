@@ -1,141 +1,399 @@
 {
  "specId": "pharmacy",
  "sectorId": "medical",
- "updatedAt": "2026-10-17",
- "count": 5,
+ "updatedAt": "2026-10-25",
+ "count": 15,
  "banks": [
   {
-   "id": "pharmacy-b1",
-   "title": "",
-   "description": "",
-   "auto": true,
-   "createdAt": "2026-10-17",
-   "updatedAt": "2026-10-17",
+   "id": "pharmacy-2024-sanaa",
+   "title": "اختبار رخصة الصيدلة السريرية SPLE / المجلس الطبي - 2024 (معتمد)",
+   "description": "النموذج المعتمد لاختبارات مزاولة مهنة الصيدلة السريرية والعلاج الدوائي 2024",
+   "year": "2024",
+   "location": "sanaa",
+   "source": "المجلس الطبي اليمني - صنعاء دورة 2024",
    "questions": [
     {
+     "id": "ph-24-sn-01",
+     "subject": "علم الأدوية السريري",
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "مريض مصاب بداء السكري من النوع الثاني ولديه قصور كلوي مزمن مع معدل ترشيح كبيبي (eGFR) أقل من 30 ml/min. ما هو الإجراء الصحيح بخصوص عقار الميتفورمين (Metformin)؟",
+     "options": [
+      "إيقاف الدواء فوراً لتجنب خطر الحماض اللبني (Lactic Acidosis)",
+      "زيادة الجرعة إلى 2000 ملغم يومياً لتعويض نقص الإطراح",
+      "الاستمرار على نفس الجرعة دون أي تعديل",
+      "إعطاؤه عبر الوريد مع مدرات البول"
+     ],
+     "correctIndex": 0,
+     "explanation": "الميتفورمين يمنع استخدامه منعاً باتاً عندما يكون eGFR < 30 ml/min بسبب تراكمه وزيادة خطر حدوث الحماض اللبني المهدد للحياة.",
+     "source": "المجلس الطبي اليمني - دورة 2024",
+     "tags": [
+      "علم الأدوية",
+      "صنعاء",
+      "2024"
+     ]
+    },
+    {
+     "id": "ph-24-sn-02",
+     "subject": "المضادات الحيوية",
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما هو المضاد الحيوي المفضل لعلاج عدوى المكورات العنقودية الذهبية المقاومة للميثيسيلين (MRSA) في حالات العدوى الشديدة؟",
+     "options": [
+      "فانكومايسين (Vancomycin) وريدياً مع مراقبة التركيز القاعدي (Trough level)",
+      "أموكسيسيلين فموياً",
+      "سيفاليكسين بالحقن العضلي",
+      "أزيثروميسين فموياً"
+     ],
+     "correctIndex": 0,
+     "explanation": "الفانكومايسين هو الدواء المعياري الذهبي لعلاج عدوى MRSA الشديدة، ويشترط مراقبة تركيزه في مصل الدم لمنع السمية الكلوية.",
+     "source": "المجلس الطبي اليمني - دورة 2024",
+     "tags": [
+      "مضادات حيوية",
+      "صنعاء",
+      "2024"
+     ]
+    },
+    {
+     "id": "ph-24-sn-03",
+     "subject": "التداخلات الدوائية",
+     "difficulty": "hard",
+     "language": "ar",
+     "text": "أي من الأدوية التالية يسبب زيادة خطيرة في تركيز الوارفارين (Warfarin) في الدم مما يؤدي إلى ارتفاع خطر النزيف الحاد؟",
+     "options": [
+      "أميودارون (Amiodarone) وميترونيدازول (Metronidazole)",
+      "ريفامبيسين (Rifampicin)",
+      "كاربامازيبين (Carbamazepine)",
+      "مكملات فيتامين K"
+     ],
+     "correctIndex": 0,
+     "explanation": "الأميودارون والميترونيدازول من مثبطات إنزيمات الكبد CYP2C9 المسؤولة عن استقلاب الوارفارين، مما يؤدي إلى تراكمه وارتفاع INR وحدوث نزيف حاد.",
+     "source": "المجلس الطبي اليمني - دورة 2024",
+     "tags": [
+      "تداخلات دوائية",
+      "صنعاء",
+      "2024"
+     ]
+    },
+    {
+     "id": "ph-24-sn-04",
+     "subject": "الحركية الدوائية",
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما هو الترياق (Antidote) المحدد لعلاج التسمم الحاد بجرعة زائدة من الباراسيتامول (Acetaminophen)؟",
+     "options": [
+      "إن-أسيتيل سيستئين (N-Acetylcysteine) لتعويض مخزون الجلوتاثيون",
+      "نالوكسون (Naloxone)",
+      "فلومازينيل (Flumazenil)",
+      "أتروبين (Atropine)"
+     ],
+     "correctIndex": 0,
+     "explanation": "إن-أسيتيل سيستئين (NAC) يزود الكبد بالسيستئين الضروري لتصنيع الجلوتاثيون لمعادلة المستقلب السام NAPQI ومنع نخر الكبد الحاد.",
+     "source": "المجلس الطبي اليمني - دورة 2024",
+     "tags": [
+      "سموم",
+      "صنعاء",
+      "2024"
+     ]
+    },
+    {
+     "id": "ph-24-sn-05",
+     "subject": "أدوية القلب والأوعية",
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "مريض يعاني من ارتفاع ضغط الدم والربو الشعبي الشديد (Bronchial Asthma). أي من خافضات الضغط التالية يُمنع إعطاؤه لهذا المريض؟",
+     "options": [
+      "بروبرانولول (Propranolol) - حاصر بيتا غير انتقائي",
+      "أملوديبين (Amlodipine) - حاصر قنوات الكالسيوم",
+      "فالسارتان (Valsartan) - حاصر مستقبلات الأنجيوتنسين",
+      "هيدروكلوروثيازيد (Hydrochlorothiazide)"
+     ],
+     "correctIndex": 0,
+     "explanation": "حاصرات بيتا غير الانتقائية كـ Propranolol تحصر مستقبلات Beta-2 في القصبات الهوائية مما يسبب تشنجاً قصبياً حاداً ومميتاً لدى مرضى الربو.",
+     "source": "المجلس الطبي اليمني - دورة 2024",
+     "tags": [
+      "أدوية القلب",
+      "صنعاء",
+      "2024"
+     ]
+    },
+    {
      "sectorId": "medical",
      "specId": "pharmacy",
+     "subject": "حركية الدواء السريرية Pharmacokinetics",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "ar",
+     "text": "مريض يبلغ من العمر 65 عاماً مصاب بالسكري وارتفاع ضغط الدم، يحتاج لتعديل جرعة مضاد حيوي يُفرز كلياً عن طريق الكلى. ما هي المعادلة السريرية المعيارية المعتمدة لتقدير معدل تصفية الكرياتينين (CrCl)؟",
+     "options": [
+      "معادلة كوكروفت-جولت (Cockcroft-Gault Equation) بالاعتماد على العمر، الوزن، الكرياتينين المصلي، وتصحيح الجنس للإناث (× 0.85)",
+      "معادلة هيندرسون-هاسلباخ للحموضة",
+      "معادلة هاريس بينديكت لحساب السعرات",
+      "معادلة فريد لحساب جرعات الأطفال"
+     ],
+     "correctIndex": 0,
+     "explanation": "معادلة Cockcroft-Gault هي المعيار الدوائي المعتمد لحساب تصفية الكرياتينين وتعديل جرعات الأدوية الكلوية: CrCl = [(140 - Age) × Weight (kg)] / (72 × SCr)، وتضرب النتيجة في 0.85 للإناث بسبب انخفاض الكتلة العضلية.",
+     "source": "هيئة التخصصات الصحية السعودية SPLE / المجلس الطبي 2024 (معتمد)",
+     "tags": [
+      "الصيدلة السريرية",
+      "Cockcroft-Gault",
+      "CrCl",
+      "حركية الدواء",
+      "2024",
+      "معتمد"
+     ],
+     "id": "pharmacy-0006",
+     "bankId": "pharmacy-2024-sanaa",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار رخصة الصيدلة السريرية SPLE / المجلس الطبي - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "علم السموم ومضادات التسمم Antidotes",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "حضر مريض إلى الطوارئ بعد تناول جرعة زائدة حادة من الباراسيتامول (أسيتامينوفين) قبل 4 ساعات. ما هو الترياق النوعي (Antidote) المنقذ للكبد والموصى به فوراً؟",
+     "options": [
+      "إن-أسيتيل سيستئين (N-Acetylcysteine - NAC)",
+      "نالوكسون (Naloxone)",
+      "فلومازينيل (Flumazenil)",
+      "بروتامين سلفات (Protamine Sulfate)"
+     ],
+     "correctIndex": 0,
+     "explanation": "إن-أسيتيل سيستئين (NAC) يعمل كمولد للجلوتاثيون (Glutathione) في الكبد لربط المستقلب السام التفاعلي NAPQI وتحويله إلى مركب غير سام، ويمنع النخر الكبدي الحاد متى أُعطي خلال أول 8 إلى 10 ساعات.",
+     "source": "الهيئة السعودية للتخصصات الصحية SPLE 2024 (معتمد)",
+     "tags": [
+      "علم السموم",
+      "الباراسيتامول",
+      "NAC",
+      "ترياق",
+      "2024",
+      "معتمد"
+     ],
+     "id": "pharmacy-0007",
+     "bankId": "pharmacy-2024-sanaa",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار رخصة الصيدلة السريرية SPLE / المجلس الطبي - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "العلاج الدوائي القلبي والوعائي",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "ar",
+     "text": "مريض يتناول الوارفارين (Warfarin) للوقاية من الجلطات بعد استبدال صمام قلبي ميكانيكي. ما هو النطاق العلاجي المستهدف للنسبة المعيارية الدولية (INR) في هذه الحالة؟",
+     "options": [
+      "2.5 إلى 3.5 لمنع تكون الخثرات على الصمام الميكانيكي",
+      "1.0 إلى 1.5",
+      "4.5 إلى 6.0",
+      "أقل من 0.8 دائماً"
+     ],
+     "correctIndex": 0,
+     "explanation": "في صمامات القلب الميكانيكية (خاصة التاجي)، تكون احتمالية التخثر مرتفعة جداً؛ لذا يُستهدف نطاق INR أعلى يتراوح بين 2.5 - 3.5، مقارنة بنطاق 2.0 - 3.0 المعتاد في الرجفان الأذيني والصمامات البيولوجية.",
+     "source": "الهيئة السعودية للتخصصات الصحية SPLE / المجلس الطبي 2024 (معتمد)",
+     "tags": [
+      "الوارفارين",
+      "INR",
+      "مضادات التخثر",
+      "الصيدلة السريرية",
+      "2024",
+      "معتمد"
+     ],
+     "id": "pharmacy-0008",
+     "bankId": "pharmacy-2024-sanaa",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار رخصة الصيدلة السريرية SPLE / المجلس الطبي - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "العلاج بالمضادات الحيوية Antibiotic Stewardship",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "ar",
+     "text": "أي من المضادات الحيوية التالية يُعتبر خيار الخط الأول لعلاج العدوى الشديدة الناجمة عن المكورات العنقودية الذهبية المقاومة للميثيسيلين (MRSA) بالحقن الوريدي؟",
+     "options": [
+      "فانكومايسين (Vancomycin) أو دابتوميسين (Daptomycin)",
+      "أموكسيسيلين مع كلافولانات (Augmentin)",
+      "سيفازولين (Cefazolin)",
+      "أزيثرومايسين فموي"
+     ],
+     "correctIndex": 0,
+     "explanation": "بكتيريا MRSA تقاوم جميع البيتا-لاكتام (البنسلينات والسيفالوسبورينات) بسبب تحور بروتين PBP2a؛ ويُعد الفانكومايسين (جليكوببتيد) والدابتوميسين حجر الزاوية في علاج عدوى MRSA الجهازية.",
+     "source": "الهيئة السعودية للتخصصات الصحية SPLE 2024 (معتمد)",
+     "tags": [
+      "مضادات حيوية",
+      "MRSA",
+      "فانكومايسين",
+      "2024",
+      "معتمد"
+     ],
+     "id": "pharmacy-0009",
+     "bankId": "pharmacy-2024-sanaa",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار رخصة الصيدلة السريرية SPLE / المجلس الطبي - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "medical",
+     "specId": "pharmacy",
+     "subject": "التداخلات الدوائية الخطرة Drug Interactions",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "صرف مثبط استرداد السيروتونين الانتقائي (SSRI مثل فلوكسيتين) بالتزامن مع مثبط أكسيداز أحادي الأمين (MAOI) يحمل خطورة دوائية جسيمة قد تودي بحياة المريض تُعرف بـ:",
+     "options": [
+      "متلازمة السيروتونين الحادة (Serotonin Syndrome) المسببة لفرط الحرارة والتصلب والانهيار العصبي",
+      "نقص السكر في الدم الشديد",
+      "تساقط الشعر المفاجئ",
+      "تجلط الأوردة العميقة"
+     ],
+     "correctIndex": 0,
+     "explanation": "الجمع بين دواءين يرفعان مستويات السيروتونين بآليات مختلفة يؤدي إلى تراكم مفرط وسمي للسيروتونين في الجهاز العصبي المركزي مسبباً متلازمة السيروتونين المميتة، ويشترط فاصل زمني (Washout Period) لا يقل عن أسبوعين بينهما.",
+     "source": "الهيئة السعودية للتخصصات الصحية SPLE 2024 (معتمد)",
+     "tags": [
+      "التداخلات الدوائية",
+      "متلازمة السيروتونين",
+      "SSRI",
+      "2024",
+      "معتمد"
+     ],
+     "id": "pharmacy-0010",
+     "bankId": "pharmacy-2024-sanaa",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار رخصة الصيدلة السريرية SPLE / المجلس الطبي - 2024 (معتمد)"
+    }
+   ]
+  },
+  {
+   "id": "pharmacy-2024-aden",
+   "title": "دورة المجلس الطبي ووزارة الصحة (عدن) - 2024 (معتمد)",
+   "description": "امتحان الكفاءة المهنية لمزاولة مهنة الصيدلة المركز الرئيسي بعدن 2024",
+   "year": "2024",
+   "location": "aden",
+   "source": "المجلس الطبي اليمني - عدن دورة 2024",
+   "questions": [
+    {
+     "id": "ph-24-ad-01",
+     "subject": "صيدلة سريرية",
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "ما هو العرض الجانبي الأكثر شيوعاً الذي يستدعي إيقاف مثبطات الإنزيم المحول للأنجيوتنسين (ACE inhibitors) مثل كابتوبريل واستبدالها بحاصرات ARBs؟",
+     "options": [
+      "السعال الجاف المستمر (Persistent Dry Cough) بسبب تراكم البراديكينين",
+      "تساقط الشعر الحاد",
+      "انخفاض مستوى البوتاسيوم في الدم",
+      "ارتفاع سكر الدم"
+     ],
+     "correctIndex": 0,
+     "explanation": "مثبطات ACE تمنع تحطم البراديكينين في الرئتين مما يسبب سعالاً جافاً مزعجاً لدى 10-20% من المرضى، ويُحل بالتحويل إلى ARBs التي لا تؤثر على البراديكينين.",
+     "source": "المجلس الطبي اليمني - عدن دورة 2024",
+     "tags": [
+      "صيدلة سريرية",
+      "عدن",
+      "2024"
+     ]
+    },
+    {
+     "id": "ph-24-ad-02",
+     "subject": "الحسابات الصيدلانية",
+     "difficulty": "medium",
+     "language": "ar",
+     "text": "محلول ملحي نظامي بتركيز 0.9% NaCl حجمه 1000 مل. كم غراماً من كلوريد الصوديوم يحتوي هذا المحلول؟",
+     "options": [
+      "9 غرامات",
+      "0.9 غرام",
+      "90 غراماً",
+      "0.09 غرام"
+     ],
+     "correctIndex": 0,
+     "explanation": "تركيز 0.9% يعني وجود 0.9 غرام في كل 100 مل، وبالتالي في 1000 مل يوجد: (0.9 × 1000) ÷ 100 = 9 غرامات.",
+     "source": "المجلس الطبي اليمني - عدن دورة 2024",
+     "tags": [
+      "حسابات صيدلانية",
+      "عدن",
+      "2024"
+     ]
+    },
+    {
+     "id": "ph-24-ad-03",
      "subject": "علم الأدوية",
-     "topic": null,
-     "difficulty": "medium",
+     "difficulty": "hard",
      "language": "ar",
-     "text": "ما هو العلاج الأولي لحالة التأق (Anaphylaxis) عند البالغين؟",
+     "text": "أي من الستاتينات (Statins) التالية يتميز بأنه أطولها عمراً نصفياً ويمكن تناوله في أي وقت من اليوم دون اشتراط المساء؟",
      "options": [
-      "إبينفرين عضلي 0.5 ملغم بتركيز 1:1000",
-      "مضادات الهيستامين فمويًا",
-      "ستيرويد وريدي",
-      "موسّع قصبي بالاستنشاق فقط"
+      "أتورفاستاتين (Atorvastatin) وروسوفاستاتين (Rosuvastatin)",
+      "سيمفاستاتين (Simvastatin)",
+      "برافاستاتين (Pravastatin)",
+      "لوفاستاتين (Lovastatin)"
      ],
      "correctIndex": 0,
-     "explanation": "الإبينفرين العضلي (1:1000 بجرعة 0.5 ملغم للبالغ) هو الخط الأول فورًا، وتُكرّر كل 5-15 دقيقة عند الحاجة.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "explanation": "أتورفاستاتين وروسوفاستاتين يمتلكان عمراً نصفياً طويلاً (14-20 ساعة) يثبط إنزيم HMG-CoA reductase طوال 24 ساعة، بعكس السيمفاستاتين القصير الذي يشترط تناوله ليلاً.",
+     "source": "المجلس الطبي اليمني - عدن دورة 2024",
      "tags": [
-      "علم الأدوية"
+      "علم الأدوية",
+      "عدن",
+      "2024"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pharmacy-2024-ksa",
+   "title": "اختبار رخصة الصيدلة السعودية SPLE / Prometric - 2024 (معتمد)",
+   "description": "أسئلة بنك برومترك واختبار التقييم المهني لهيئة التخصصات الصحية السعودية 2024",
+   "year": "2024",
+   "location": "ksa",
+   "source": "الهيئة السعودية للتخصصات الصحية SPLE 2024",
+   "questions": [
+    {
+     "id": "ph-24-ksa-01",
+     "subject": "Clinical Pharmacotherapy",
+     "difficulty": "hard",
+     "language": "en",
+     "text": "A 62-year-old male with atrial fibrillation and CHA2DS2-VASc score of 3 is initiated on Apixaban. Which of the following is the standard recommended dose for non-valvular atrial fibrillation?",
+     "options": [
+      "5 mg orally twice daily",
+      "20 mg orally once daily with food",
+      "150 mg orally twice daily",
+      "2.5 mg once weekly"
      ],
-     "id": "pharmacy-0001",
-     "bankId": "pharmacy-b1",
-     "bankTitle": "",
-     "bankAuto": true
+     "correctIndex": 0,
+     "explanation": "Standard dose of Apixaban (Eliquis) for stroke prevention in non-valvular AF is 5 mg BID, reduced to 2.5 mg BID only if at least two criteria are met: age >= 80, weight <= 60 kg, or serum Cr >= 1.5 mg/dL.",
+     "source": "SCFHS Saudi Pharmacy Licensing Exam (SPLE)",
+     "tags": [
+      "Cardiology",
+      "SPLE",
+      "2024"
+     ]
     },
     {
-     "sectorId": "medical",
-     "specId": "pharmacy",
-     "subject": "علم الأدوية",
-     "topic": null,
+     "id": "ph-24-ksa-02",
+     "subject": "Pharmacokinetics",
      "difficulty": "medium",
-     "language": "ar",
-     "text": "ما هي آلية عمل الفانكومايسين؟",
+     "language": "en",
+     "text": "Which therapeutic drug monitoring parameter should be checked prior to the next scheduled dose to ensure clearance and prevent toxicity of aminoglycosides like Gentamicin?",
      "options": [
-      "تثبيط تصنيع جدار الخلية بالارتباط بـ D-Ala-D-Ala",
-      "تثبيط الريبوسوم 30S",
-      "تثبيط إنزيم DNA gyrase",
-      "إتلاف غشاء الخلية"
+      "Trough serum concentration (< 1-2 mcg/mL)",
+      "Peak serum concentration immediately after infusion",
+      "Random urine sodium",
+      "Serum bilirubin"
      ],
      "correctIndex": 0,
-     "explanation": "الفانكومايسين يثبّط تصنيع جدار الخلية البكتيري عبر الارتباط المباشر بسلسلة D-Ala-D-Ala.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "explanation": "Gentamicin trough level measured immediately before the next dose reflects drug clearance and prevents accumulation-induced nephrotoxicity and ototoxicity.",
+     "source": "SCFHS SPLE / Prometric Question Bank",
      "tags": [
-      "علم الأدوية"
-     ],
-     "id": "pharmacy-0002",
-     "bankId": "pharmacy-b1",
-     "bankTitle": "",
-     "bankAuto": true
-    },
-    {
-     "sectorId": "medical",
-     "specId": "pharmacy",
-     "subject": "السموم",
-     "topic": null,
-     "difficulty": "medium",
-     "language": "ar",
-     "text": "أي مضاد حيوي من مجموعة الأمينوغليكوزيدات الأعلى خطرًا للسُّميّة الكلوية؟",
-     "options": [
-      "جنتاميسين",
-      "إريثرومايسين",
-      "سيفاليكسين",
-      "أموكسيسيلين"
-     ],
-     "correctIndex": 0,
-     "explanation": "الجنتاميسين من أكثر الأمينوغليكوزيدات سمية كلوية وسمعية، ويتطلب مراقبة وظائف الكلى والمستويات.",
-     "source": "أسئلة تجريبية — كفاءة",
-     "tags": [
-      "السموم"
-     ],
-     "id": "pharmacy-0003",
-     "bankId": "pharmacy-b1",
-     "bankTitle": "",
-     "bankAuto": true
-    },
-    {
-     "sectorId": "medical",
-     "specId": "pharmacy",
-     "subject": "الجرعات",
-     "topic": null,
-     "difficulty": "medium",
-     "language": "ar",
-     "text": "ما التحليل المستخدم لمراقبة فعالية الوارفارين؟",
-     "options": [
-      "زمن البروثرومبين و INR",
-      "زمن الثرومبوبلاستين الجزئي aPTT",
-      "عدد الصفائح",
-      "الهيموغلوبين السكري HbA1c"
-     ],
-     "correctIndex": 0,
-     "explanation": "يُراقَب الوارفارين عبر INR المشتق من زمن البروثرومبين، والهدف عادة 2-3 لمعظم الاستطبابات.",
-     "source": "أسئلة تجريبية — كفاءة",
-     "tags": [
-      "الجرعات"
-     ],
-     "id": "pharmacy-0004",
-     "bankId": "pharmacy-b1",
-     "bankTitle": "",
-     "bankAuto": true
-    },
-    {
-     "sectorId": "medical",
-     "specId": "pharmacy",
-     "subject": "الصيدلة السريرية",
-     "topic": null,
-     "difficulty": "medium",
-     "language": "ar",
-     "text": "ما التوقيت الأمثل لأخذ الستاتين قصير المفعول مثل السيمفاستاتين؟",
-     "options": [
-      "مساءً",
-      "صباحًا على معدة فارغة",
-      "مع الغداء",
-      "أي وقت بالتساوي"
-     ],
-     "correctIndex": 0,
-     "explanation": "تُؤخذ الستاتينات قصيرة المفعول مساءً لأن تصنيع الكوليسترول يبلغ ذروته ليلًا.",
-     "source": "أسئلة تجريبية — كفاءة",
-     "tags": [
-      "الصيدلة السريرية"
-     ],
-     "id": "pharmacy-0005",
-     "bankId": "pharmacy-b1",
-     "bankTitle": "",
-     "bankAuto": true
+      "Pharmacokinetics",
+      "SPLE",
+      "2024"
+     ]
     }
    ]
   }

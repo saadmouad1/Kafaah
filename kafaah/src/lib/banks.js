@@ -124,13 +124,54 @@ export function writeSpec(specId, data) {
   return normalizeSpec(specId, payload);
 }
 
+// ── أدوات استخراج السنة والمركز واللغة ──────────────────────────────────────────
+export function detectYear(text = '', tags = [], fallback = '') {
+  const combined = `${text} ${(tags || []).join(' ')} ${fallback}`;
+  const m = /(202[0-9]|201[8-9])/.exec(combined);
+  return m ? m[1] : '2025';
+}
+
+export function detectLocation(text = '', tags = [], source = '', fallback = 'all') {
+  const combined = `${text} ${(tags || []).join(' ')} ${source} ${fallback}`.toLowerCase();
+  if (combined.includes('صنعاء') || combined.includes('sanaa') || combined.includes('sana\'a')) return 'sanaa';
+  if (combined.includes('عدن') || combined.includes('aden')) return 'aden';
+  if (
+    combined.includes('سعودي') ||
+    combined.includes('saudi') ||
+    combined.includes('scfhs') ||
+    combined.includes('prometric') ||
+    combined.includes('برومترك') ||
+    combined.includes('قياس')
+  ) {
+    return 'ksa';
+  }
+  return 'all';
+}
+
 // ── بيانات وصفية للبنك ───────────────────────────────────────────────────────
 export function bankMeta(specId, bank) {
   const difficulties = { easy: 0, medium: 0, hard: 0 };
+  const languagesSet = new Set();
+  const yearsSet = new Set();
+  const locationsSet = new Set();
+
   for (const q of bank.questions || []) {
     const d = q.difficulty === 'easy' ? 'easy' : q.difficulty === 'hard' ? 'hard' : 'medium';
     difficulties[d]++;
+
+    const lang = q.language || (/[\u0600-\u06FF]/.test(q.text || '') ? 'ar' : 'en');
+    languagesSet.add(lang);
+
+    const yr = q.year || detectYear(q.text, q.tags, bank.title || bank.createdAt);
+    if (yr) yearsSet.add(yr);
+
+    const loc = q.location || detectLocation(q.text, q.tags, q.source, bank.title);
+    if (loc && loc !== 'all') locationsSet.add(loc);
   }
+
+  const primaryYear = detectYear(bank.title, [], bank.createdAt ? bank.createdAt.slice(0, 4) : '2025');
+  const primaryLocation = detectLocation(bank.title, [], bank.description, 'all');
+
   return {
     id: bank.id,
     specId,
@@ -140,6 +181,11 @@ export function bankMeta(specId, bank) {
     auto: !!bank.auto,
     count: (bank.questions || []).length,
     difficulties,
+    year: primaryYear,
+    years: yearsSet.size ? [...yearsSet].sort().reverse() : [primaryYear],
+    location: primaryLocation,
+    locations: [...locationsSet],
+    languages: languagesSet.size ? [...languagesSet] : ['ar'],
     createdAt: bank.createdAt,
     updatedAt: bank.updatedAt,
   };
@@ -147,6 +193,48 @@ export function bankMeta(specId, bank) {
 
 export function listBanks(specId) {
   return readSpec(specId).banks.map((b) => bankMeta(specId, b));
+}
+
+// استخراج النماذج والسنوات والمراكز المتاحة لتخصص محدد
+export function specExamMeta(specId) {
+  const banks = listBanks(specId);
+  const yearsSet = new Set(['2026', '2025', '2024', '2023', '2022']);
+  const models = [];
+
+  banks.forEach((b, idx) => {
+    (b.years || []).forEach((y) => yearsSet.add(y));
+    const modelTitle = b.title || `نموذج اختبار معتمد (${idx + 1})`;
+    models.push({
+      id: b.id,
+      title: modelTitle,
+      description: b.description || 'نموذج محاكاة مطور وفق أسئلة مزاولة المهنة الرسمية',
+      year: b.year || '2025',
+      years: b.years || ['2025'],
+      location: b.location || 'all',
+      locations: b.locations || [],
+      languages: b.languages || ['ar'],
+      count: b.count || 0,
+      difficulties: b.difficulties,
+    });
+  });
+
+  const allYears = [...yearsSet].sort().reverse();
+  const modelsByYear = {};
+  allYears.forEach((yr) => {
+    modelsByYear[yr] = models.filter((m) => (m.years || []).includes(yr) || m.year === yr);
+  });
+
+  return {
+    models,
+    years: allYears,
+    modelsByYear,
+    locations: [
+      { id: 'all', label: 'جميع المراكز والجهات', shortLabel: 'الكل' },
+      { id: 'sanaa', label: 'صنعاء — المجلس الطبي اليمني', shortLabel: 'صنعاء' },
+      { id: 'aden', label: 'عدن — المجلس الطبي ووزارة الصحة', shortLabel: 'عدن' },
+      { id: 'ksa', label: 'السعودية — الهيئة Prometric', shortLabel: 'السعودية' },
+    ],
+  };
 }
 
 // بنوك نطاق معيّن (قسم/تخصصات) مع اسم التخصص — لاختيار البنك في البحث والمحاكاة.
@@ -230,6 +318,10 @@ export function queryQuestions({
   subject = null,
   difficulty = null,
   search = null,
+  year = null,
+  years = null,
+  location = null,
+  language = null,
   limit = 20,
   offset = 0,
 } = {}) {
@@ -242,6 +334,36 @@ export function queryQuestions({
       if (bankFilter && !bankFilter.includes(b.id)) continue;
       if (b.questions.length) pool = pool.concat(b.questions);
     }
+  }
+
+  // فلترة حسب السنة / السنوات المحددة
+  const yearsList = years ? (Array.isArray(years) ? years : String(years).split(',').map((y) => y.trim()).filter(Boolean)) : (year && year !== 'all' ? [year] : null);
+  if (yearsList && yearsList.length) {
+    pool = pool.filter((q) => {
+      const qYear = q.year || detectYear(q.text, q.tags, q.bankTitle);
+      return yearsList.includes(qYear) || (q.tags || []).some((t) => yearsList.includes(t));
+    });
+  }
+
+  // فلترة أو إعطاء أولوية حسب المكان / المركز
+  if (location && location !== 'all') {
+    const locLower = location.toLowerCase();
+    // فرز الأسئلة بحيث تظهر أسئلة المركز المختار في البداية
+    pool.sort((a, b) => {
+      const aLoc = a.location || detectLocation(a.text, a.tags, a.source, a.bankTitle);
+      const bLoc = b.location || detectLocation(b.text, b.tags, b.source, b.bankTitle);
+      const aMatch = aLoc === locLower ? 1 : 0;
+      const bMatch = bLoc === locLower ? 1 : 0;
+      return bMatch - aMatch;
+    });
+  }
+
+  // فلترة حسب لغة السؤال دون أي تغيير في نصه
+  if (language && language !== 'all') {
+    pool = pool.filter((q) => {
+      const qLang = q.language || (/[\u0600-\u06FF]/.test(q.text || '') ? 'ar' : 'en');
+      return qLang === language;
+    });
   }
 
   if (subject && subject !== 'all') {
@@ -262,7 +384,8 @@ export function queryQuestions({
   }
 
   const total = pool.length;
-  const lim = Math.min(Math.max(parseInt(limit, 10) || 20, 1), 100);
+  const parsedLimit = limit === 'all' || limit === '-1' ? total : parseInt(limit, 10);
+  const lim = Math.min(Math.max(parsedLimit || 20, 1), 5000);
   const off = Math.max(parseInt(offset, 10) || 0, 0);
   const page = pool.slice(off, off + lim);
 

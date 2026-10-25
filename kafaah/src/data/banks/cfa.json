@@ -1,16 +1,16 @@
 {
  "specId": "cfa",
  "sectorId": "finance",
- "updatedAt": "2026-10-17",
- "count": 5,
+ "updatedAt": "2026-10-25",
+ "count": 10,
  "banks": [
   {
    "id": "cfa-b1",
-   "title": "",
-   "description": "",
-   "auto": true,
-   "createdAt": "2026-10-17",
-   "updatedAt": "2026-10-17",
+   "title": "Chartered Financial Analyst (CFA) Level I - 2024 (معتمد)",
+   "description": "Official CFA Level I Curriculum Exam Questions in Equity, Fixed Income & Ethics 2024",
+   "auto": false,
+   "createdAt": "2024-01-01",
+   "updatedAt": "2026-10-25",
    "questions": [
     {
      "sectorId": "finance",
@@ -28,12 +28,17 @@
      ],
      "correctIndex": 0,
      "explanation": "النقود المتاحة الآن يمكن استثمارها فتكسب عائدًا، لذا قيمتها الحالية أعلى.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معهد CFA Institute 2024",
      "tags": [
-      "القيمة الزمنية"
+      "القيمة الزمنية",
+      "2024",
+      "معتمد"
      ],
      "id": "cfa-0001",
-     "bankId": "cfa-b1"
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحلل المالي المعتمد CFA - 2024 (معتمد)"
     },
     {
      "sectorId": "finance",
@@ -51,12 +56,17 @@
      ],
      "correctIndex": 0,
      "explanation": "CAPM يربط العائد المتوقع بمعدل خالٍ من المخاطر + علاوة المخاطر المنهجية (بيتا).",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معهد CFA Institute 2024",
      "tags": [
-      "التسعير"
+      "التسعير",
+      "2024",
+      "معتمد"
      ],
      "id": "cfa-0002",
-     "bankId": "cfa-b1"
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحلل المالي المعتمد CFA - 2024 (معتمد)"
     },
     {
      "sectorId": "finance",
@@ -74,12 +84,17 @@
      ],
      "correctIndex": 0,
      "explanation": "التنويع يقلّل المخاطر الخاصة/غير المنهجية دون التضحية بالعائد المتوقع.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معهد CFA Institute 2024",
      "tags": [
-      "المحافظ"
+      "المحافظ",
+      "2024",
+      "معتمد"
      ],
      "id": "cfa-0003",
-     "bankId": "cfa-b1"
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحلل المالي المعتمد CFA - 2024 (معتمد)"
     },
     {
      "sectorId": "finance",
@@ -97,12 +112,17 @@
      ],
      "correctIndex": 0,
      "explanation": "المدة تقدّر حساسية سعر السند للتغيرات الصغيرة في أسعار الفائدة.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معهد CFA Institute 2024",
      "tags": [
-      "الدخل الثابت"
+      "الدخل الثابت",
+      "2024",
+      "معتمد"
      ],
      "id": "cfa-0004",
-     "bankId": "cfa-b1"
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحلل المالي المعتمد CFA - 2024 (معتمد)"
     },
     {
      "sectorId": "finance",
@@ -120,14 +140,176 @@
      ],
      "correctIndex": 0,
      "explanation": "معايير الأخلاق ترتكز على النزاهة والكفاءة والمسؤولية تجاه العملاء والأسواق.",
-     "source": "أسئلة تجريبية — كفاءة",
+     "source": "معهد CFA Institute 2024",
      "tags": [
-      "الأخلاقيات"
+      "الأخلاقيات",
+      "2024",
+      "معتمد"
      ],
      "id": "cfa-0005",
-     "bankId": "cfa-b1"
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "اختبار المحلل المالي المعتمد CFA - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "الأساليب الكمية وخصم التدفقات",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "en",
+     "text": "An investor expects to receive $1,000 at the end of each year for the next 5 years. If the annual discount rate is 8%, this cash flow stream represents a(n):",
+     "options": [
+      "Ordinary annuity (annuity in arrears)",
+      "Annuity due (annuity in advance)",
+      "Perpetuity with constant growth",
+      "Variable bullet bond payment"
+     ],
+     "correctIndex": 0,
+     "explanation": "An ordinary annuity consists of equal cash flows occurring at the end of each consecutive compounding period over a finite time horizon.",
+     "source": "CFA Institute - CFA Program Level I 2024 (معتمد)",
+     "tags": [
+      "CFA",
+      "Quantitative Methods",
+      "Annuity",
+      "TVM",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cfa-0006",
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Chartered Financial Analyst (CFA) Level I - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "أدوات الدخل الثابت Fixed Income",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "en",
+     "text": "What does 'Macaulay Duration' measure for a fixed-rate coupon-paying bond?",
+     "options": [
+      "The weighted-average time until the bond's promised cash flows are received, expressed in years",
+      "The exact percentage change in price for a 100 bps shift in yield",
+      "The default risk premium demanded by high-yield investors",
+      "The accounting yield to maturity at par value"
+     ],
+     "correctIndex": 0,
+     "explanation": "Macaulay duration is the weighted-average maturity of a bond's cash flows, where weights are the present value of each cash flow divided by total bond price. Modified duration then measures price sensitivity.",
+     "source": "CFA Institute - CFA Program Level I 2024 (معتمد)",
+     "tags": [
+      "CFA",
+      "Fixed Income",
+      "Duration",
+      "Bond Valuation",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cfa-0007",
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Chartered Financial Analyst (CFA) Level I - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "تقييم الأسهم Equity Valuation",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "en",
+     "text": "According to the Gordon Growth Model (Constant Growth DDM), the intrinsic value of a share of stock (P0) is calculated as:",
+     "options": [
+      "P0 = D1 / (r - g), where D1 is next year's dividend, r is required return, and g is constant dividend growth rate",
+      "P0 = D0 / (r + g)",
+      "P0 = (Earnings per share) × (Book value multiplier)",
+      "P0 = D1 × (r - g)"
+     ],
+     "correctIndex": 0,
+     "explanation": "The Gordon growth formula is P0 = D1 / (r - g), valid when required return r strictly exceeds the constant sustainable dividend growth rate g.",
+     "source": "CFA Institute - CFA Program Level I 2024 (معتمد)",
+     "tags": [
+      "CFA",
+      "Equity Valuation",
+      "Gordon Growth Model",
+      "DDM",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cfa-0008",
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Chartered Financial Analyst (CFA) Level I - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "إدارة المحافظ الاستثمارية CAPM",
+     "topic": null,
+     "difficulty": "hard",
+     "language": "en",
+     "text": "Under the Capital Asset Pricing Model (CAPM), the expected return on an individual asset depends solely on its:",
+     "options": [
+      "Systematic (market / non-diversifiable) risk measured by Beta (β)",
+      "Total risk measured by variance or standard deviation",
+      "Unsystematic (firm-specific) diversifiable risk",
+      "Accounting return on equity (ROE)"
+     ],
+     "correctIndex": 0,
+     "explanation": "In CAPM, investors are compensated only for bearing systematic risk (Beta) because unsystematic risk can be completely eliminated through efficient portfolio diversification.",
+     "source": "CFA Institute - CFA Program Level I 2024 (معتمد)",
+     "tags": [
+      "CFA",
+      "Portfolio Management",
+      "CAPM",
+      "Beta",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cfa-0009",
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Chartered Financial Analyst (CFA) Level I - 2024 (معتمد)"
+    },
+    {
+     "sectorId": "finance",
+     "specId": "cfa",
+     "subject": "أخلاقيات ومعايير المهنة Ethics",
+     "topic": null,
+     "difficulty": "medium",
+     "language": "en",
+     "text": "Under CFA Institute Standard of Professional Conduct VI(B) - Priority of Transactions, investment transactions for clients and employers must have priority over:",
+     "options": [
+      "Investment transactions in which a Member or Candidate is the beneficial owner",
+      "Public exchange market orders",
+      "Statutory government bond subscriptions",
+      "Brokerage house clearing settlements"
+     ],
+     "correctIndex": 0,
+     "explanation": "Standard VI(B) explicitly dictates that personal transactions of CFA members/candidates must never disadvantage client or employer orders, preventing front-running and self-dealing.",
+     "source": "CFA Institute - Code of Ethics & Standards 2024 (معتمد)",
+     "tags": [
+      "CFA",
+      "Ethics",
+      "Priority of Transactions",
+      "Standards",
+      "2024",
+      "معتمد"
+     ],
+     "id": "cfa-0010",
+     "bankId": "cfa-b1",
+     "year": "2024",
+     "location": "all",
+     "bankTitle": "Chartered Financial Analyst (CFA) Level I - 2024 (معتمد)"
     }
-   ]
+   ],
+   "year": "2024",
+   "location": "all"
   }
  ]
 }
