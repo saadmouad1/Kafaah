@@ -81,25 +81,26 @@ export default function PwaManager() {
 
       {installEvt && !dismissed && (
         <div className="install-fab" role="dialog" aria-label={t('pwa.installAria')}>
-          <div className="row" style={{ gap: 10 }}>
+          <div className="install-fab-body">
             <span className="install-fab-icon" aria-hidden>
               <Download size={18} />
             </span>
-            <span style={{ lineHeight: 1.45, textAlign: 'start' }}>
-              <strong style={{ display: 'block', fontSize: 14 }}>{t('pwa.install')}</strong>
-              <span style={{ fontSize: 12, opacity: 0.85 }}>{t('pwa.installSub')}</span>
-            </span>
+            <div className="install-fab-text">
+              <strong className="install-fab-title">{t('pwa.install')}</strong>
+              <span className="install-fab-sub">{t('pwa.installSub')}</span>
+            </div>
           </div>
-          <div className="row" style={{ gap: 8 }}>
+          <div className="install-fab-actions">
             <button className="btn btn-primary btn-sm" onClick={install}>
               {t('pwa.installBtn')}
             </button>
             <button
-              className="btn btn-ghost btn-sm"
+              className="icon-btn"
+              style={{ width: 34, height: 34, borderRadius: 10, flexShrink: 0 }}
               onClick={() => setDismissed(true)}
               aria-label={t('pwa.close')}
             >
-              <X size={16} />
+              <X size={15} />
             </button>
           </div>
         </div>
