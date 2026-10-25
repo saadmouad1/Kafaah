@@ -24,12 +24,26 @@ function getTransporter() {
 
 const FROM_HEADER = `"منصة كفاءة | Kafaah" <${process.env.SMTP_USER || 'almikhlafiprogrammer@gmail.com'}>`;
 
-// ── ١) إرسال رمز التحقق الأمني OTP عند تسجيل الدخول ─────────────────────────
-export async function sendOtpEmail({ email, code, name }) {
+// ── ١) إرسال رمز التحقق الأمني OTP (دخول، استعادة كلمة المرور، أو تسجيل جديد) ──
+export async function sendOtpEmail({ email, code, name, purpose = 'login' }) {
   if (!email) return { ok: false, error: 'البريد الإلكتروني مطلوب' };
   const transporter = getTransporter();
 
   const clientName = name ? `يا ${name}` : 'عزيزنا الممارس';
+
+  let title = 'رمز التحقق لتسجيل الدخول';
+  let desc = 'استخدم رمز الأمان التالي لإتمام تسجيل الدخول إلى حسابك ومتابعة تدريبك:';
+  let subject = `🔐 رمز التحقق لتسجيل الدخول إلى كفاءة: ${code}`;
+
+  if (purpose === 'reset') {
+    title = 'إعادة تعيين كلمة المرور';
+    desc = 'لقد طلبت إعادة تعيين كلمة المرور لحسابك في منصة كفاءة. أدخل الرمز التالي لتعيين كلمة مرور جديدة:';
+    subject = `🔑 رمز إعادة تعيين كلمة المرور - منصة كفاءة: ${code}`;
+  } else if (purpose === 'register') {
+    title = 'تأكيد الحساب والبريد الإلكتروني';
+    desc = 'أهلاً بك في منصة كفاءة! استخدم رمز التحقق التالي لتأكيد بريدك الإلكتروني والبدء في تفعيل اشتراكك:';
+    subject = `✨ رمز تأكيد بريدك الإلكتروني - منصة كفاءة: ${code}`;
+  }
 
   const html = `
     <div dir="rtl" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'IBM Plex Sans Arabic', Arial, sans-serif; max-width: 580px; margin: 0 auto; padding: 32px 24px; background: #0b1324; border-radius: 20px; border: 1px solid #1e293b; color: #f8fafc; line-height: 1.7;">
@@ -39,14 +53,14 @@ export async function sendOtpEmail({ email, code, name }) {
         <div style="display: inline-block; width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, #0d9488, #059669); line-height: 56px; color: #ffffff; font-size: 26px; font-weight: 900; margin-bottom: 12px; box-shadow: 0 10px 25px -5px rgba(13, 148, 136, 0.5);">
           ك
         </div>
-        <h2 style="color: #ffffff; font-size: 22px; font-weight: 900; margin: 0 0 6px;">رمز التحقق لتسجيل الدخول</h2>
+        <h2 style="color: #ffffff; font-size: 22px; font-weight: 900; margin: 0 0 6px;">${title}</h2>
         <p style="color: #94a3b8; font-size: 14px; margin: 0;">أهلاً بك ${clientName} في منصة كفاءة</p>
       </div>
 
       <!-- Main Box -->
       <div style="background: #111e38; border-radius: 16px; padding: 26px; border: 1px solid #1e3a5f; margin-bottom: 22px; text-align: center;">
         <p style="font-size: 14.5px; color: #cbd5e1; margin-top: 0; margin-bottom: 18px;">
-          استخدم رمز الأمان التالي لإتمام تسجيل الدخول إلى حسابك ومتابعة تدريبك:
+          ${desc}
         </p>
 
         <!-- OTP Code Big Display -->
@@ -77,14 +91,14 @@ export async function sendOtpEmail({ email, code, name }) {
   `;
 
   if (!transporter) {
-    console.log('[OTP Email Simulated]:', { to: email, code });
+    console.log('[OTP Email Simulated]:', { to: email, code, purpose });
     return { ok: true, simulated: true };
   }
 
   return await transporter.sendMail({
     from: FROM_HEADER,
     to: email,
-    subject: `🔐 رمز التحقق الخاص بك لمنصة كفاءة: ${code}`,
+    subject,
     html,
   });
 }

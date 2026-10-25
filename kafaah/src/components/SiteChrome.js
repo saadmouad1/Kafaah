@@ -309,7 +309,7 @@ export default function SiteChrome({ children }) {
                       }}
                     >
                       <Sparkles size={16} />
-                      ابدأ التدريب الآن مجاناً
+                      اشترك الآن وابدأ التدريب
                     </Link>
                     <Link
                       href="/login"

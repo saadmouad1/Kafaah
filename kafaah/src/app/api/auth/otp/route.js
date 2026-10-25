@@ -32,7 +32,7 @@ export async function POST(req) {
     return NextResponse.json({ error: 'طلب غير صالح' }, { status: 400 });
   }
 
-  const { action, email, code, name } = body;
+  const { action, email, code, name, purpose } = body;
   const cleanEmail = (email || '').trim().toLowerCase();
 
   if (!cleanEmail || !cleanEmail.includes('@')) {
@@ -77,6 +77,7 @@ export async function POST(req) {
         email: cleanEmail,
         code: otpCode,
         name: name || cleanEmail.split('@')[0],
+        purpose: purpose || 'login',
       });
       return NextResponse.json({
         ok: true,

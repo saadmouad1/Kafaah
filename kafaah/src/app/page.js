@@ -610,7 +610,7 @@ export default function LandingPage() {
                 }}
               >
                 <Sparkles size={19} />
-                ابدأ التدريب مجاناً الآن
+                اشترك الآن وابدأ التدريب
                 <ArrowLeft size={18} />
               </Link>
 
@@ -645,7 +645,7 @@ export default function LandingPage() {
               fontWeight: 700
             }}>
               <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                <CheckCircle2 size={16} style={{ color: '#10b981' }} /> تجربة مجانية فورية بدون بطاقة
+                <CheckCircle2 size={16} style={{ color: '#10b981' }} /> تفعيل فوري للاشتراك عبر الكريمي وجيب
               </span>
               <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <CheckCircle2 size={16} style={{ color: '#10b981' }} /> يعمل على الجوال والحاسوب
@@ -1504,7 +1504,7 @@ export default function LandingPage() {
                   }}
                 >
                   <Download size={18} />
-                  تثبيت واستخدام التطبيق مجاناً
+                  تثبيت التطبيق والوصول السريع
                 </Link>
               </div>
 
